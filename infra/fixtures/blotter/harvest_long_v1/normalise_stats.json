@@ -1,0 +1,14 @@
+{
+  "n_opens": 531,
+  "n_legs": 531,
+  "n_manifest": 531,
+  "n_joined_exits": 530,
+  "open_coverage": 0.9981,
+  "n_quarantine": 1,
+  "costs_defaulted": [
+    "spread_proxy_3x",
+    "commission_0",
+    "swap_0",
+    "slippage_in_proxy"
+  ]
+}

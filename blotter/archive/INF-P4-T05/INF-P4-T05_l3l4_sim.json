@@ -1,0 +1,45 @@
+{
+  "engine_path": {
+    "halted": false,
+    "f_mult": 0.5,
+    "reason": "MAXDD_DERISK",
+    "l3_trips": [
+      "MaxDD_derisk"
+    ]
+  },
+  "cf_path": {
+    "halted": false,
+    "f_mult": 1.0,
+    "reason": "OK",
+    "l3_trips": []
+  },
+  "halt_demo": {
+    "halted": true,
+    "f_mult": 0.0,
+    "reason": "MAXDD_HALT",
+    "l3_trips": [
+      "BelowFrontier_f0",
+      "MaxDD_halt",
+      "FREQUENCY_STALL_warn"
+    ]
+  },
+  "apply_examples": {
+    "on_would_skip": {
+      "final_action": "HALT_NO_ENTRY",
+      "l2_decision": "WOULD_SKIP",
+      "l2_effective": false,
+      "l3_outranks": true,
+      "f_mult": 0.0,
+      "reason": "MAXDD_HALT"
+    },
+    "on_would_fire": {
+      "final_action": "HALT_NO_ENTRY",
+      "l2_decision": "WOULD_FIRE",
+      "l2_effective": false,
+      "l3_outranks": true,
+      "f_mult": 0.0,
+      "reason": "MAXDD_HALT"
+    }
+  },
+  "l3_outranks_l2": true
+}

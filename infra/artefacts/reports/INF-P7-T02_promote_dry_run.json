@@ -1,0 +1,27 @@
+{
+  "recipe": "INF-P7-T02_dry_run",
+  "pass": true,
+  "results": [
+    {
+      "name": "accept_challenger",
+      "expect_promote": true,
+      "got_promote": true,
+      "pass": true,
+      "reason": "ok"
+    },
+    {
+      "name": "reject_starving",
+      "expect_promote": false,
+      "got_promote": false,
+      "pass": true,
+      "reason": "scorecard_verdict_not_ACCEPT"
+    },
+    {
+      "name": "accept_with_waiver",
+      "expect_promote": true,
+      "got_promote": true,
+      "pass": true,
+      "reason": "ok"
+    }
+  ]
+}

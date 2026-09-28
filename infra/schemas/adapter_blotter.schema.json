@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bmrg://infra/schemas/adapter_blotter.schema.json",
+  "title": "BMRG adapter blotter leg",
+  "description": "One row per broker ticket/leg. Unified §8.1 + edge_framework §8.2 extras.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "leg_id",
+    "symbol",
+    "direction",
+    "entry_time",
+    "entry_price",
+    "exit_time",
+    "exit_price",
+    "volume",
+    "pnl_gross_ccy",
+    "cost_spread_ccy",
+    "cost_commission_ccy",
+    "cost_swap_ccy",
+    "cost_slippage_ccy",
+    "pnl_net_ccy"
+  ],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "leg_id": { "type": "string", "minLength": 1 },
+    "symbol": { "type": "string", "minLength": 1 },
+    "direction": { "type": "string", "enum": ["long", "short"] },
+    "entry_time": { "type": "string", "format": "date-time" },
+    "entry_price": { "type": "number" },
+    "entry_requested": { "type": ["number", "null"] },
+    "exit_time": { "type": "string", "format": "date-time" },
+    "exit_price": { "type": "number" },
+    "exit_requested": { "type": ["number", "null"] },
+    "initial_stop": { "type": ["number", "null"] },
+    "volume": { "type": "number", "exclusiveMinimum": 0 },
+    "pnl_gross_ccy": { "type": "number" },
+    "cost_spread_ccy": { "type": "number" },
+    "cost_commission_ccy": { "type": "number" },
+    "cost_swap_ccy": { "type": "number" },
+    "cost_slippage_ccy": { "type": "number" },
+    "pnl_net_ccy": { "type": "number" },
+    "exit_reason": {
+      "type": ["string", "null"],
+      "enum": ["TP", "SL", "MID", "DAILY_FLAT", "EQUITY_HALT", "MANUAL", "EOT", "OTHER", null]
+    },
+    "level_index": { "type": ["integer", "null"], "minimum": 0 },
+    "bb_dev": { "type": ["number", "null"] },
+    "spread_points_entry": { "type": ["number", "null"] },
+    "session_ok": { "type": ["boolean", "null"] },
+    "group_event_id": { "type": ["string", "null"] },
+    "signal_tag": { "type": ["string", "null"] },
+    "costs_defaulted": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

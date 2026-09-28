@@ -1,0 +1,8 @@
+{
+  "run_id": "promote_L2skip_inf_p92_20260927_223519",
+  "recipe_id": "INF-P7-T02_promote",
+  "baseline_id": "ENGINE_BASELINE_v1",
+  "scorecard_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\reports\\LATEST_EVAL.json",
+  "verdict": "ACCEPT",
+  "semver": "L2skip_inf_p92_20260927_223519"
+}

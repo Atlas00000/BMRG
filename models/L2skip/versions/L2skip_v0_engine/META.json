@@ -1,0 +1,10 @@
+{
+  "version_id": "L2skip_v0_engine",
+  "role": "champion_live",
+  "kind": "noop",
+  "description": "Engine-only: HARD DOW_TUE; no AI skip",
+  "skip_rate_target": 0.0,
+  "created_at": "2026-09-25",
+  "source": "AOS-P2 HARD map",
+  "status": "PINNED_LIVE"
+}

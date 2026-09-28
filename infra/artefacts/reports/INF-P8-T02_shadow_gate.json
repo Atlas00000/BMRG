@@ -1,0 +1,40 @@
+{
+  "semver": "L2skip_inf_p92_20260927_223519",
+  "scorecard": {
+    "verdict": "ACCEPT",
+    "checks": {
+      "long_ef_hold": true,
+      "fires_ge_70pct": true,
+      "fires_ge_50pct": true,
+      "no_payoff_trap": true,
+      "skip_audit_pass": false
+    },
+    "operator_waiver": true,
+    "waiver_note": "USER AUTHORISED GO",
+    "prove_verdict": "REJECT",
+    "frequency": {
+      "n_engine": 530,
+      "n_shadow": 491,
+      "n_skipped": 39,
+      "skip_rate_pct": 7.3585,
+      "fires_kept_pct": 92.6415
+    },
+    "deltas_long": {
+      "ef_pp": 0.6652,
+      "e_n": 0.013304,
+      "wr_pct": 0.6652,
+      "maxdd_pp": -4.1371
+    }
+  },
+  "prove_checks": {
+    "ef_held_or_lifted": true,
+    "ef_lifted": true,
+    "fires_ge_50pct": true,
+    "fires_ge_70pct": true,
+    "no_payoff_trap": true,
+    "skip_audit_pass": false,
+    "w250_present": true,
+    "w500_present": true,
+    "maxdd_not_worse_gt_2pp": true
+  }
+}

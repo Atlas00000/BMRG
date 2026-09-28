@@ -1,0 +1,12 @@
+{
+  "mode": "SHADOW_ADVISOR",
+  "live": false,
+  "proxy": "SL with hold_h<=2h as fast-adverse shape stand-in (not entry feature)",
+  "n_fast_sl": 78,
+  "pct_of_SL": 32.4,
+  "pct_of_all": 14.7,
+  "rewrites_entries": false,
+  "note": "L8 may advise flatten/block-add only; L3 can promote later. Offline ACCEPT as spec+proxy census.",
+  "accept_shadow_spec": true,
+  "accept_live": false
+}

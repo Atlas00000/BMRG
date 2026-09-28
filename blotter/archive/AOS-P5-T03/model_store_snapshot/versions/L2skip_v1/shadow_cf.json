@@ -1,0 +1,54 @@
+{
+  "mode": "shadow_counterfactual_OOS_skips",
+  "baseline_all": {
+    "n": 530,
+    "WR": 54.53,
+    "BM": 4.53,
+    "E_N": 0.0906,
+    "EF": 2.33,
+    "M": 4.24,
+    "zone": "Fragile"
+  },
+  "cf_apply_skips_all_tape": {
+    "n": 429,
+    "WR": 57.11,
+    "BM": 7.11,
+    "E_N": 0.1422,
+    "EF": 4.91,
+    "M": 4.68,
+    "zone": "Robust"
+  },
+  "baseline_oos_region": {
+    "n": 380,
+    "WR": 52.89,
+    "BM": 2.89,
+    "E_N": 0.0579,
+    "EF": 0.69,
+    "M": 5.02,
+    "zone": "Fragile"
+  },
+  "cf_oos_region": {
+    "n": 279,
+    "WR": 56.27,
+    "BM": 6.27,
+    "E_N": 0.1254,
+    "EF": 4.07,
+    "M": 5.82,
+    "zone": "Fragile"
+  },
+  "skip_count": 101,
+  "loose_bar": {
+    "remaining_n": 429,
+    "n_ok": true,
+    "EF_cf": 4.91,
+    "EF_base_labeled": 2.33,
+    "EF_hold_vs_AOS_BASELINE": true,
+    "fires_kept_pct": 80.9,
+    "freq_stall_warn": false,
+    "AL_base": 0.4547,
+    "AL_cf": 0.4289,
+    "AL_improved": true,
+    "payoff_trap": false
+  },
+  "eligible_for_live_gate": true
+}

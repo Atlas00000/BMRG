@@ -1,0 +1,133 @@
+{
+  "model_semver": "L2skip_inf_p92_20260927_223519",
+  "layer": "L2",
+  "mode": "shadow",
+  "skip_quantile": 0.92,
+  "uncertain_band": 0.03,
+  "thr_full_ref": 0.5761284981270531,
+  "algo": "LogisticRegression balanced C=0.5 + OHE",
+  "features_cat": [
+    "session_id",
+    "side",
+    "dow_name"
+  ],
+  "features_num": [
+    "hour_server",
+    "spread_pts",
+    "month",
+    "week_of_month",
+    "is_mon",
+    "is_fri",
+    "side_buy",
+    "spread_hi"
+  ],
+  "n_train_full": 530,
+  "n_oos": 380,
+  "skip_rate_oos": 0.10263157894736842,
+  "fires_kept_pct_oos": 89.73684210526316,
+  "loser_recall_oos": 0.11731843575418995,
+  "loser_precision_oos": 0.5384615384615384,
+  "auc_oos": 0.5078240084493733,
+  "folds": [
+    {
+      "fold": 1,
+      "train_n": 150,
+      "test_n": 80,
+      "thr": 0.5914199051892803,
+      "skip_rate": 0.2375,
+      "loser_recall": 0.30952380952380953,
+      "loser_precision": 0.6842105263157895,
+      "auc": 0.6102756892230576
+    },
+    {
+      "fold": 2,
+      "train_n": 230,
+      "test_n": 80,
+      "thr": 0.6497592758722321,
+      "skip_rate": 0.3875,
+      "loser_recall": 0.34782608695652173,
+      "loser_precision": 0.5161290322580645,
+      "auc": 0.47346547314578
+    },
+    {
+      "fold": 3,
+      "train_n": 310,
+      "test_n": 80,
+      "thr": 0.6577929970693045,
+      "skip_rate": 0.2125,
+      "loser_recall": 0.21875,
+      "loser_precision": 0.4117647058823529,
+      "auc": 0.46419270833333337
+    },
+    {
+      "fold": 4,
+      "train_n": 390,
+      "test_n": 80,
+      "thr": 0.6080019131643354,
+      "skip_rate": 0.0125,
+      "loser_recall": 0.02631578947368421,
+      "loser_precision": 1.0,
+      "auc": 0.3530701754385965
+    },
+    {
+      "fold": 5,
+      "train_n": 470,
+      "test_n": 60,
+      "thr": 0.586132876101434,
+      "skip_rate": 0.08333333333333333,
+      "loser_recall": 0.14285714285714285,
+      "loser_precision": 0.6,
+      "auc": 0.5482295482295483
+    }
+  ],
+  "wf": [
+    {
+      "fold_id": 1,
+      "train_start": 0,
+      "train_end": 150,
+      "test_start": 150,
+      "test_end": 230,
+      "train_n": 150,
+      "test_n": 80
+    },
+    {
+      "fold_id": 2,
+      "train_start": 0,
+      "train_end": 230,
+      "test_start": 230,
+      "test_end": 310,
+      "train_n": 230,
+      "test_n": 80
+    },
+    {
+      "fold_id": 3,
+      "train_start": 0,
+      "train_end": 310,
+      "test_start": 310,
+      "test_end": 390,
+      "train_n": 310,
+      "test_n": 80
+    },
+    {
+      "fold_id": 4,
+      "train_start": 0,
+      "train_end": 390,
+      "test_start": 390,
+      "test_end": 470,
+      "train_n": 390,
+      "test_n": 80
+    },
+    {
+      "fold_id": 5,
+      "train_start": 0,
+      "train_end": 470,
+      "test_start": 470,
+      "test_end": 530,
+      "train_n": 470,
+      "test_n": 60
+    }
+  ],
+  "created_at": "2026-09-27T22:35:19.106124+00:00",
+  "parent_semver": null,
+  "policy": "default_allow; skip only when p_lose >= thr; near-thr ALLOW_UNCERTAIN"
+}

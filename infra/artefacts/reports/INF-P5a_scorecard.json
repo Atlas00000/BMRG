@@ -1,0 +1,82 @@
+{
+  "task_ids": [
+    "INF-P5-T01",
+    "INF-P5-T02",
+    "INF-P5-T03"
+  ],
+  "recipe": "INF-P5a_obs_metrics_compose",
+  "correlation": {
+    "task_id": "INF-P5-T01",
+    "recipe": "INF-P5-T01_obs_jsonl_correlationIds",
+    "run_id": "p5a_20260927T231831Z_cef1b9db",
+    "event_id": "8210204-EURUSD-BUY-20250102153000-2",
+    "model_semver": "L2skip_inf_p92_20260927_223519",
+    "log_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\logs\\p5a_20260927T231831Z_cef1b9db.jsonl",
+    "latest_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\logs\\LATEST_CORRELATION.jsonl",
+    "stages": [
+      "ingest.normalise",
+      "ingest.load",
+      "features.tape",
+      "scorer.health",
+      "eval.cf"
+    ],
+    "required_stages": [
+      "ingest.normalise",
+      "ingest.load",
+      "features.tape",
+      "scorer.health",
+      "eval.cf"
+    ],
+    "trace_ok": true
+  },
+  "metrics": {
+    "recipe": "INF-P5-T02_obs_metricsSurface_evalJson",
+    "model_semver": null,
+    "fire_count": 341,
+    "skip_count": 39,
+    "skip_rate_pct": 10.2632,
+    "fires_kept_pct": 89.7368,
+    "feature_null_pct": 12.2456,
+    "n_null_cells": 2666,
+    "lag_ms_p50": null,
+    "lag_note": "host clock delta not instrumented in INF-P5a; key reserved",
+    "cost_drift_ratio": 1.0,
+    "cost_drift_halt": false,
+    "leak_pp": 2.2,
+    "leak_baseline_pp": 2.2,
+    "FREQUENCY_STALL": false,
+    "fires_90d": 341,
+    "baseline_fires_90d": 60,
+    "engine_ef_pp": 2.3283,
+    "cf_ef_pp": 2.9935,
+    "tape_coverage": 1.0,
+    "tape_skips_applied": 0
+  },
+  "required_metric_keys": [
+    "fire_count",
+    "skip_count",
+    "fires_kept_pct",
+    "feature_null_pct",
+    "FREQUENCY_STALL",
+    "cost_drift_ratio",
+    "lag_ms_p50"
+  ],
+  "compose": {
+    "image_lock_present": true,
+    "image_lock_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\IMAGE_LOCK.json",
+    "dockerfiles_ok": true,
+    "images_present": {
+      "bmrg-ingest:inf-w07": true,
+      "bmrg-features:inf-w07": true,
+      "bmrg-trainer:inf-w07": true,
+      "bmrg-scorer:inf-w07": true,
+      "bmrg-eval:inf-w07": true
+    },
+    "postgres_up": true,
+    "compose_cli": "docker-compose",
+    "smoke_ok": true
+  },
+  "prior_cf_ref": "artefacts/reports/INF-P4-T04_cf_scorecard.json",
+  "prior_cf_verdict": "ACCEPT",
+  "verdict": "ACCEPT"
+}

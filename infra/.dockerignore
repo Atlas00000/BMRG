@@ -1,0 +1,8 @@
+artefacts/
+landing/
+.pytest_cache/
+**/__pycache__/
+*.pyc
+.env
+.git/
+blotter/

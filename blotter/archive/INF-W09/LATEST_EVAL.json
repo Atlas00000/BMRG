@@ -1,0 +1,50 @@
+{
+  "task_ids": [
+    "INF-P6-T01",
+    "INF-P6-T02",
+    "INF-P6-T03"
+  ],
+  "recipe": "INF-P6_phaseProve_skipAudit_eligibility",
+  "metrics_verdict": "ACCEPT",
+  "prove_verdict": "REJECT",
+  "wiring_eligibility": "NO-GO",
+  "retrain_path": "INF-W05/W06 \u2014 reduce edge-cell false-positive skips (LON_NY/NY protect cells)",
+  "frequency": {
+    "n_engine": 530,
+    "n_shadow": 491,
+    "n_skipped": 39,
+    "skip_rate_pct": 7.3585,
+    "fires_kept_pct": 92.6415
+  },
+  "deltas_long": {
+    "ef_pp": 0.6652,
+    "e_n": 0.013304,
+    "wr_pct": 0.6652,
+    "maxdd_pp": -4.1371
+  },
+  "checks": {
+    "ef_held_or_lifted": true,
+    "ef_lifted": true,
+    "fires_ge_50pct": true,
+    "fires_ge_70pct": true,
+    "no_payoff_trap": true,
+    "skip_audit_pass": false,
+    "w250_present": true,
+    "w500_present": true,
+    "maxdd_not_worse_gt_2pp": true
+  },
+  "skip_audit_pass": false,
+  "n_clusters": 12,
+  "unjustified": [
+    "LON_NY|Mon|BUY",
+    "LON_NY|Thu|SELL",
+    "NY|Mon|BUY"
+  ],
+  "artefacts": {
+    "phase_prove": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\reports\\INF-P6-T01_phaseProve.json",
+    "skip_audit": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\reports\\INF-P6-T02_skip_audit.md",
+    "eligibility": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\doc\\infra_wiring_eligibility.md"
+  },
+  "live_preset": "FORBIDDEN",
+  "verdict": "ACCEPT"
+}

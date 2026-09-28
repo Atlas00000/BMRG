@@ -1,0 +1,23 @@
+{
+  "recipe": "INF-P5-T02_obs_metricsSurface_evalJson",
+  "model_semver": null,
+  "fire_count": 341,
+  "skip_count": 39,
+  "skip_rate_pct": 10.2632,
+  "fires_kept_pct": 89.7368,
+  "feature_null_pct": 12.2456,
+  "n_null_cells": 2666,
+  "lag_ms_p50": null,
+  "lag_note": "host clock delta not instrumented in INF-P5a; key reserved",
+  "cost_drift_ratio": 1.0,
+  "cost_drift_halt": false,
+  "leak_pp": 2.2,
+  "leak_baseline_pp": 2.2,
+  "FREQUENCY_STALL": false,
+  "fires_90d": 341,
+  "baseline_fires_90d": 60,
+  "engine_ef_pp": 2.3283,
+  "cf_ef_pp": 2.9935,
+  "tape_coverage": 1.0,
+  "tape_skips_applied": 0
+}

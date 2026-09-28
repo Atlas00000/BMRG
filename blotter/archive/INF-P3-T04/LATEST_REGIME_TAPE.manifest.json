@@ -1,0 +1,30 @@
+{
+  "task_ids": [
+    "INF-P3-T02",
+    "INF-P3-T03",
+    "INF-P3-T04"
+  ],
+  "tape_schema": "aos_l1_v0",
+  "n_events_source": 531,
+  "n_tape_rows": 531,
+  "n_labels": 531,
+  "n_joined": 531,
+  "coverage": 1.0,
+  "aos_fire_enrich_hits": 531,
+  "tue_count": 0,
+  "session_lon_ny_or_ny_share": 1.0,
+  "skips_applied": 0,
+  "fire_count_unchanged": true,
+  "paths": {
+    "tape": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\tape\\harvest_l1.parquet",
+    "labels": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\tape\\harvest_labels.parquet",
+    "joined": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\tape\\harvest_event_features.parquet",
+    "latest_regime_tape": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\tape\\LATEST_REGIME_TAPE.parquet"
+  },
+  "accept": {
+    "coverage_ge_0_95": true,
+    "tue_eq_0": true,
+    "session_ge_0_95": true,
+    "no_skips": true
+  }
+}

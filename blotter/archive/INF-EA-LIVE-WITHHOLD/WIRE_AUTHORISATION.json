@@ -1,0 +1,16 @@
+{
+  "authorised": true,
+  "note": "Operator authorised EA LIVE_WITHHOLD hook ship 2026-09-28",
+  "at": "2026-09-27T23:18:34.890776+00:00",
+  "allows": [
+    "INF-W10_design",
+    "INF-W11_retrain_shadow",
+    "promote_with_waiver",
+    "EA_LIVE_AI_GATE_SHIP"
+  ],
+  "forbids_unless_extra_auth": [
+    "AOS_LIVE_FT"
+  ],
+  "ea_version": "1.21",
+  "model": "L2skip_inf_p92_20260927_223519"
+}

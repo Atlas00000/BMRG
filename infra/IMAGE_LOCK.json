@@ -1,0 +1,31 @@
+{
+  "task_id": "INF-P5-T03",
+  "recipe": "INF-P5-T03_pack_compose_smoke_local",
+  "locked_at": "2026-09-27",
+  "built_tags_smoke": {
+    "bmrg-scorer:inf-w07": "ACCEPT ef=2.3283",
+    "bmrg-eval:inf-w07": "built",
+    "bmrg-ingest:inf-w07": "built",
+    "bmrg-features:inf-w07": "built",
+    "bmrg-trainer:inf-w07": "built"
+  },
+  "note": "Local = server image pins. Base digests below; service tags :inf-w07. Bump only with compose smoke green.",
+  "images": {
+    "python_base": {
+      "ref": "python:3.12-slim",
+      "digest": "sha256:423ed6ab25b1921a477529254bfeeabf5855151dc2c3141699a1bfc852199fbf"
+    },
+    "postgres": {
+      "ref": "postgres:16-alpine",
+      "digest": "sha256:57c72fd2a128e416c7fcc499958864df5301e940bca0a56f58fddf30ffc07777"
+    },
+    "bmrg_ingest": { "tag": "bmrg-ingest:inf-w07", "dockerfile": "images/ingest/Dockerfile" },
+    "bmrg_features": { "tag": "bmrg-features:inf-w07", "dockerfile": "images/features/Dockerfile" },
+    "bmrg_trainer": { "tag": "bmrg-trainer:inf-w07", "dockerfile": "images/trainer/Dockerfile" },
+    "bmrg_scorer": { "tag": "bmrg-scorer:inf-w07", "dockerfile": "images/scorer/Dockerfile" },
+    "bmrg_eval": { "tag": "bmrg-eval:inf-w07", "dockerfile": "images/eval/Dockerfile" },
+    "redis": { "ref": "redis:7-alpine" },
+    "bmrg_worker": { "tag": "bmrg-worker:inf-w08", "dockerfile": "images/worker/Dockerfile" }
+  },
+  "python_deps": "requirements.txt"
+}

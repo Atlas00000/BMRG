@@ -1,0 +1,13 @@
+{
+  "mode": "SOFT_VETO_SPEC",
+  "armed": false,
+  "inputs_required": [
+    "M5 tape",
+    "H1 structure",
+    "H4 regime vote"
+  ],
+  "rule_v0": "If H1/H4 vote conflicts with M5 fade side \u2192 soft veto into L2 (raise skip thresh); never bypass L3",
+  "offline_effect": "noop until multi-TF tape exists",
+  "accept_spec": true,
+  "accept_live": false
+}

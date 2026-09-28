@@ -1,0 +1,12 @@
+AOS PHASE VERIFY
+========================================
+P0: PASS 
+P1: PASS 
+P2: PASS 
+P3: PASS 
+P4: PASS 
+P5: PASS 
+P6: PASS 
+P7: PASS 
+aistack: PASS {'n': 317, 'WR': 57.1, 'EF': 4.9, 'M': np.float64(5.45), 'zone': 'Fragile'}
+ALL: PASS (0 fails)

@@ -1,0 +1,143 @@
+{
+  "task_id": "INF-P2-T04",
+  "recipe": "INF-P2-T04_data_e2eReplay_HarvestLong_2025-2026",
+  "fixture": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\fixtures\\blotter\\harvest_long_v1",
+  "normalise_stats": {
+    "n_opens": 531,
+    "n_legs": 531,
+    "n_manifest": 531,
+    "n_joined_exits": 530,
+    "open_coverage": 0.9981,
+    "n_quarantine": 1,
+    "costs_defaulted": [
+      "spread_proxy_3x",
+      "commission_0",
+      "swap_0",
+      "slippage_in_proxy"
+    ]
+  },
+  "load": {
+    "first": {
+      "sha256": "51a5fb18d49196359b2d9a3cdf1f713c7ac772fdd909d5245b893732ebc51895",
+      "landing_id": 1,
+      "landed_new": true,
+      "run_id": "load-51a5fb18d491-20260927222710",
+      "n_events": 531,
+      "n_legs": 531,
+      "n_landing_files": 1,
+      "n_pack_manifest": 531,
+      "n_pack_legs": 531
+    },
+    "second": {
+      "sha256": "51a5fb18d49196359b2d9a3cdf1f713c7ac772fdd909d5245b893732ebc51895",
+      "landing_id": 1,
+      "landed_new": false,
+      "run_id": "load-51a5fb18d491-20260927222711",
+      "n_events": 531,
+      "n_legs": 531,
+      "n_landing_files": 1,
+      "n_pack_manifest": 531,
+      "n_pack_legs": 531
+    },
+    "idempotent": true
+  },
+  "scorecard_baseline_proxy": {
+    "health_vector": {
+      "framework_bmrg": "1.1.2",
+      "baseline_id": "ENGINE_BASELINE_v1",
+      "n": 530,
+      "wr_pct": 54.5283,
+      "bwr_pct": 50.0,
+      "r": 1.0,
+      "rr": 1.0,
+      "bm_pp": 4.5283,
+      "leak_pp": 2.2,
+      "leak_policy": "baseline_proxy",
+      "leak_source": "ENGINE_BASELINE_v1.leak_proxy_pp",
+      "mean_c_r": 0.055019,
+      "ef_pp": 2.3283,
+      "m_pp": 4.2394,
+      "e_n": 0.090566,
+      "zone": "Fragile",
+      "costs_defaulted": [
+        "slippage_in_proxy",
+        "swap_0",
+        "spread_proxy_3x",
+        "commission_0"
+      ],
+      "cost_flags_present": true
+    },
+    "vs_baseline": {
+      "checks": {
+        "n": true,
+        "wr": true,
+        "r": true,
+        "leak_flagged": true,
+        "ef_vs_1_77": false,
+        "ef_identity": true
+      },
+      "deltas": {
+        "n": 0,
+        "wr_pct": 0.0283,
+        "r": 0.0,
+        "bm_pp": 0.0283,
+        "leak_pp": 0.0,
+        "ef_pp": 0.5583,
+        "e_n": -0.000434
+      },
+      "accept": true,
+      "note": "ENGINE_BASELINE ef_pp=1.77 is arithmetically inconsistent with bm\u2212leak (\u22484.5\u22122.2=2.3); rebuild matches identity under leak_proxy 2.2"
+    },
+    "verdict": "ACCEPT"
+  },
+  "scorecard_cost_c_r": {
+    "health_vector": {
+      "framework_bmrg": "1.1.2",
+      "baseline_id": "ENGINE_BASELINE_v1",
+      "n": 530,
+      "wr_pct": 54.5283,
+      "bwr_pct": 50.0,
+      "r": 1.0,
+      "rr": 1.0,
+      "bm_pp": 4.5283,
+      "leak_pp": 2.7509,
+      "leak_policy": "cost_c_r",
+      "leak_source": "mean_c_R_from_3x_spread_over_SL",
+      "mean_c_r": 0.055019,
+      "ef_pp": 1.7774,
+      "m_pp": 4.2394,
+      "e_n": 0.090566,
+      "zone": "Fragile",
+      "costs_defaulted": [
+        "slippage_in_proxy",
+        "swap_0",
+        "spread_proxy_3x",
+        "commission_0"
+      ],
+      "cost_flags_present": true
+    },
+    "vs_baseline": {
+      "checks": {
+        "n": true,
+        "wr": true,
+        "r": true,
+        "leak_flagged": true,
+        "ef_vs_1_77": true,
+        "ef_identity": true
+      },
+      "deltas": {
+        "n": 0,
+        "wr_pct": 0.0283,
+        "r": 0.0,
+        "bm_pp": 0.0283,
+        "leak_pp": 0.5509,
+        "ef_pp": 0.0074,
+        "e_n": -0.000434
+      },
+      "accept": true,
+      "note": null
+    },
+    "verdict": "ACCEPT"
+  },
+  "verdict": "ACCEPT"
+}

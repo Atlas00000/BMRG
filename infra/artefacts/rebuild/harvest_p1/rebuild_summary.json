@@ -1,0 +1,19 @@
+{
+  "task_id": "INF-P1-T04",
+  "recipe": "INF-P1-T04_store_eventId_1R_rebuild_Harvest",
+  "n_opens": 531,
+  "n_manifest": 531,
+  "n_blotter": 531,
+  "baseline_n": 530,
+  "n_delta": 1,
+  "sl_points_match_300_count": 531,
+  "sl_points_match_pct": 100.0,
+  "risk_ccy_unique": [
+    3.0
+  ],
+  "risk_ccy_expected_for_lot_0_01": 3.0,
+  "joined_exits": 530,
+  "event_id_sample": "8210204-EURUSD-BUY-20250102153000-2",
+  "deterministic_check": true,
+  "out_dir": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\rebuild\\harvest_p1"
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bmrg://infra/schemas/event_manifest.schema.json",
+  "title": "BMRG event manifest",
+  "description": "One row per trade event. Unified §8.2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "risk_ccy", "equity_at_open"],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "risk_ccy": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Declared 1R in account currency at event open"
+    },
+    "equity_at_open": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Account equity when the event opened"
+    },
+    "signal_tag": { "type": ["string", "null"] },
+    "exit_reason": {
+      "type": ["string", "null"],
+      "enum": ["TP", "SL", "MID", "DAILY_FLAT", "EQUITY_HALT", "MANUAL", "EOT", "OTHER", null]
+    },
+    "magic": { "type": ["integer", "null"] },
+    "symbol": { "type": ["string", "null"] },
+    "side": { "type": ["string", "null"], "enum": ["BUY", "SELL", "long", "short", null] },
+    "sl_points": { "type": ["number", "null"] },
+    "volume": { "type": ["number", "null"] },
+    "tick_value_per_point": { "type": ["number", "null"] },
+    "equity_source": {
+      "type": ["string", "null"],
+      "enum": ["measured", "deposit_ref_proxy", "walk_forward_proxy", null]
+    },
+    "costs_defaulted": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

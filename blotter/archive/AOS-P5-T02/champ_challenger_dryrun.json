@@ -1,0 +1,95 @@
+{
+  "task": "AOS-P5-T02",
+  "rule": {
+    "try_candidate": "W250_EF >= AOS_BASELINE_EF (1.77) AND MaxDD <= DD_limit+2pp",
+    "live_pin": "try_candidate AND AUC_oos>=0.60 AND NOT fold_harm AND L10 human OK",
+    "G2_G5_required_to_try": false,
+    "silent_overwrite": false
+  },
+  "baseline_ef": 1.77,
+  "dd_limit": 25.0,
+  "cases": [
+    {
+      "case": "L2skip_v1_shadow_CF",
+      "w250_ef": 4.91,
+      "maxdd_pp": 20.0,
+      "auc": 0.548,
+      "fold_harm": true,
+      "verdict": "PROMOTE_SHADOW_CANDIDATE",
+      "action": "shadow_only_no_live_pin",
+      "reasons": [
+        "EF>=baseline",
+        "MaxDD ok",
+        "live_blocked",
+        "AUC 0.548<0.60",
+        "fold_harm"
+      ],
+      "notes": "P4 shadow CF EF; AUC weak; fold2 hurt"
+    },
+    {
+      "case": "L2skip_v1_fold2_only",
+      "w250_ef": -14.27,
+      "maxdd_pp": 40.0,
+      "auc": 0.47,
+      "fold_harm": true,
+      "verdict": "REJECT",
+      "action": "keep_champion",
+      "reasons": [
+        "W250_EF -14.27 < baseline 1.77",
+        "MaxDD 40.0 > mandate+2"
+      ],
+      "notes": "Must REJECT"
+    },
+    {
+      "case": "engine_only_baseline",
+      "w250_ef": 4.2,
+      "maxdd_pp": 22.0,
+      "auc": null,
+      "fold_harm": false,
+      "verdict": "KEEP_CHAMPION",
+      "action": "no_change",
+      "reasons": [
+        "already_pinned_or_engine_parity"
+      ],
+      "notes": "P3 terminal W250 EF 4.2; keep pin"
+    },
+    {
+      "case": "hypothetical_L2skip_v2_strong",
+      "w250_ef": 3.5,
+      "maxdd_pp": 18.0,
+      "auc": 0.68,
+      "fold_harm": false,
+      "verdict": "PROMOTE_LIVE_CANDIDATE",
+      "action": "pin_challenger_pending_L10",
+      "reasons": [
+        "EF>=baseline",
+        "MaxDD ok",
+        "AUC>=0.60",
+        "no_fold_harm"
+      ],
+      "notes": "Would become LIVE candidate pending L10"
+    },
+    {
+      "case": "ef_ok_dd_breach",
+      "w250_ef": 2.0,
+      "maxdd_pp": 30.0,
+      "auc": 0.65,
+      "fold_harm": false,
+      "verdict": "REJECT",
+      "action": "keep_champion",
+      "reasons": [
+        "MaxDD 30.0 > mandate+2"
+      ],
+      "notes": "REJECT on MaxDD"
+    }
+  ],
+  "expected": {
+    "L2skip_v1_shadow_CF": "PROMOTE_SHADOW_CANDIDATE",
+    "L2skip_v1_fold2_only": "REJECT",
+    "engine_only_baseline": "KEEP_CHAMPION",
+    "hypothetical_L2skip_v2_strong": "PROMOTE_LIVE_CANDIDATE",
+    "ef_ok_dd_breach": "REJECT"
+  },
+  "dry_run_pass": true,
+  "ts": "2026-09-25T16:54:52.032679+00:00"
+}

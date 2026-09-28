@@ -1,0 +1,68 @@
+{
+  "task_id": "INF-P4-T02",
+  "recipe": "INF-P4-T02_train_L2shadow_skipRangeHighVol_harvest",
+  "model_semver": "L2skip_test_p92",
+  "skip_rate_oos": 0.10263157894736842,
+  "fires_kept_pct_oos": 89.73684210526316,
+  "auc_oos": 0.5078240084493733,
+  "n_oos": 380,
+  "n_remaining_if_skip": 341,
+  "protect_bar": {
+    "prefer_under_skip": true,
+    "warn_fires_below_70pct": false,
+    "stall_fires_below_50pct": false
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_n": 150,
+      "test_n": 80,
+      "thr": 0.5914199051892803,
+      "skip_rate": 0.2375,
+      "loser_recall": 0.30952380952380953,
+      "loser_precision": 0.6842105263157895,
+      "auc": 0.6102756892230576
+    },
+    {
+      "fold": 2,
+      "train_n": 230,
+      "test_n": 80,
+      "thr": 0.6497592758722321,
+      "skip_rate": 0.3875,
+      "loser_recall": 0.34782608695652173,
+      "loser_precision": 0.5161290322580645,
+      "auc": 0.47346547314578
+    },
+    {
+      "fold": 3,
+      "train_n": 310,
+      "test_n": 80,
+      "thr": 0.6577929970693045,
+      "skip_rate": 0.2125,
+      "loser_recall": 0.21875,
+      "loser_precision": 0.4117647058823529,
+      "auc": 0.46419270833333337
+    },
+    {
+      "fold": 4,
+      "train_n": 390,
+      "test_n": 80,
+      "thr": 0.6080019131643354,
+      "skip_rate": 0.0125,
+      "loser_recall": 0.02631578947368421,
+      "loser_precision": 1.0,
+      "auc": 0.3530701754385965
+    },
+    {
+      "fold": 5,
+      "train_n": 470,
+      "test_n": 60,
+      "thr": 0.586132876101434,
+      "skip_rate": 0.08333333333333333,
+      "loser_recall": 0.14285714285714285,
+      "loser_precision": 0.6,
+      "auc": 0.5482295482295483
+    }
+  ],
+  "verdict": "ACCEPT"
+}

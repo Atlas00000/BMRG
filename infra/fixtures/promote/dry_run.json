@@ -1,0 +1,52 @@
+{
+  "recipe": "INF-P7-T02_train_champChallenger_rollbackDesign",
+  "cases": [
+    {
+      "name": "accept_challenger",
+      "challenger_semver": "L2skip_inf_dry_accept",
+      "scorecard": {
+        "verdict": "ACCEPT",
+        "checks": {
+          "long_ef_hold": true,
+          "fires_ge_70pct": true,
+          "no_payoff_trap": true,
+          "skip_audit_pass": true
+        },
+        "operator_waiver": false
+      },
+      "expect_promote": true
+    },
+    {
+      "name": "reject_starving",
+      "challenger_semver": "L2skip_inf_dry_starve",
+      "scorecard": {
+        "verdict": "REJECT",
+        "checks": {
+          "long_ef_hold": true,
+          "fires_ge_70pct": false,
+          "fires_ge_50pct": false,
+          "no_payoff_trap": true,
+          "skip_audit_pass": true
+        },
+        "operator_waiver": false
+      },
+      "expect_promote": false
+    },
+    {
+      "name": "accept_with_waiver",
+      "challenger_semver": "L2skip_inf_p92_20260927_223519",
+      "scorecard": {
+        "verdict": "ACCEPT",
+        "checks": {
+          "long_ef_hold": true,
+          "fires_ge_70pct": true,
+          "no_payoff_trap": true,
+          "skip_audit_pass": false
+        },
+        "operator_waiver": true,
+        "waiver_note": "USER AUTHORISED GO 2026-09-28"
+      },
+      "expect_promote": true
+    }
+  ]
+}

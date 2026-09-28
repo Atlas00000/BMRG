@@ -1,0 +1,845 @@
+{
+  "baseline_ref": {
+    "AOS_BASELINE_long": {
+      "n": 530,
+      "WR": 54.5,
+      "EF": 1.77,
+      "zone": "Fragile"
+    },
+    "labeled_full_engine": {
+      "n": 530,
+      "WR": 54.53,
+      "E_N": 0.0906,
+      "EF": 2.33,
+      "M": 4.24,
+      "zone": "Fragile"
+    }
+  },
+  "comparisons": [
+    {
+      "window_start": "2026.01.01 00:00:00",
+      "aistack": {
+        "label": "aistack 2026.01.01",
+        "full": {
+          "n": 179,
+          "WR": 58.1,
+          "E_N": 0.162,
+          "EF": 5.9,
+          "M": 7.23,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 58.0,
+          "E_N": 0.16,
+          "EF": 5.8,
+          "M": 9.67,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 179,
+          "WR": 58.1,
+          "E_N": 0.162,
+          "EF": 5.9,
+          "M": 7.23,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 179,
+          "WR": 58.1,
+          "E_N": 0.162,
+          "EF": 5.9,
+          "M": 7.23,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "engine_same_calendar": {
+        "label": "engine 2026.01.01",
+        "full": {
+          "n": 181,
+          "WR": 58.56,
+          "E_N": 0.1713,
+          "EF": 6.36,
+          "M": 7.18,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 58.0,
+          "E_N": 0.16,
+          "EF": 5.8,
+          "M": 9.67,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 181,
+          "WR": 58.56,
+          "E_N": 0.1713,
+          "EF": 6.36,
+          "M": 7.18,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 181,
+          "WR": 58.56,
+          "E_N": 0.1713,
+          "EF": 6.36,
+          "M": 7.18,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "delta_EF_full": -0.46,
+      "delta_EF_W250": -0.46,
+      "delta_n": -2,
+      "aistack_W250_path_last": null,
+      "aistack_W250_min_max": [
+        null,
+        null
+      ],
+      "engine_W250_min_max": [
+        null,
+        null
+      ]
+    },
+    {
+      "window_start": "2026.07.01 00:00:00",
+      "aistack": {
+        "label": "aistack 2026.07.01",
+        "full": {
+          "n": 36,
+          "WR": 55.56,
+          "E_N": 0.1111,
+          "EF": 3.36,
+          "M": 16.23,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 36,
+          "WR": 55.56,
+          "E_N": 0.1111,
+          "EF": 3.36,
+          "M": 16.23,
+          "zone": "Fragile",
+          "_note": "n<100 used all"
+        },
+        "W250": {
+          "n": 36,
+          "WR": 55.56,
+          "E_N": 0.1111,
+          "EF": 3.36,
+          "M": 16.23,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 36,
+          "WR": 55.56,
+          "E_N": 0.1111,
+          "EF": 3.36,
+          "M": 16.23,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "engine_same_calendar": {
+        "label": "engine 2026.07.01",
+        "full": {
+          "n": 38,
+          "WR": 57.89,
+          "E_N": 0.1579,
+          "EF": 5.69,
+          "M": 15.7,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 38,
+          "WR": 57.89,
+          "E_N": 0.1579,
+          "EF": 5.69,
+          "M": 15.7,
+          "zone": "Fragile",
+          "_note": "n<100 used all"
+        },
+        "W250": {
+          "n": 38,
+          "WR": 57.89,
+          "E_N": 0.1579,
+          "EF": 5.69,
+          "M": 15.7,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 38,
+          "WR": 57.89,
+          "E_N": 0.1579,
+          "EF": 5.69,
+          "M": 15.7,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "delta_EF_full": -2.33,
+      "delta_EF_W250": -2.33,
+      "delta_n": -2,
+      "aistack_W250_path_last": null,
+      "aistack_W250_min_max": [
+        null,
+        null
+      ],
+      "engine_W250_min_max": [
+        null,
+        null
+      ]
+    },
+    {
+      "window_start": "2026.01.01 00:00:00",
+      "aistack": {
+        "label": "aistack 2026.01.01",
+        "full": {
+          "n": 179,
+          "WR": 58.1,
+          "E_N": 0.162,
+          "EF": 5.9,
+          "M": 7.23,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 58.0,
+          "E_N": 0.16,
+          "EF": 5.8,
+          "M": 9.67,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 179,
+          "WR": 58.1,
+          "E_N": 0.162,
+          "EF": 5.9,
+          "M": 7.23,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 179,
+          "WR": 58.1,
+          "E_N": 0.162,
+          "EF": 5.9,
+          "M": 7.23,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "engine_same_calendar": {
+        "label": "engine 2026.01.01",
+        "full": {
+          "n": 181,
+          "WR": 58.56,
+          "E_N": 0.1713,
+          "EF": 6.36,
+          "M": 7.18,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 58.0,
+          "E_N": 0.16,
+          "EF": 5.8,
+          "M": 9.67,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 181,
+          "WR": 58.56,
+          "E_N": 0.1713,
+          "EF": 6.36,
+          "M": 7.18,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 181,
+          "WR": 58.56,
+          "E_N": 0.1713,
+          "EF": 6.36,
+          "M": 7.18,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "delta_EF_full": -0.46,
+      "delta_EF_W250": -0.46,
+      "delta_n": -2,
+      "aistack_W250_path_last": null,
+      "aistack_W250_min_max": [
+        null,
+        null
+      ],
+      "engine_W250_min_max": [
+        null,
+        null
+      ]
+    },
+    {
+      "window_start": "2025.01.01 00:00:00",
+      "aistack": {
+        "label": "aistack 2025.01.01",
+        "full": {
+          "n": 527,
+          "WR": 54.84,
+          "E_N": 0.0968,
+          "EF": 2.64,
+          "M": 4.25,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 61.0,
+          "E_N": 0.22,
+          "EF": 8.8,
+          "M": 9.56,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 250,
+          "WR": 56.8,
+          "E_N": 0.136,
+          "EF": 4.6,
+          "M": 6.14,
+          "zone": "Fragile"
+        },
+        "W500": {
+          "n": 500,
+          "WR": 54.2,
+          "E_N": 0.084,
+          "EF": 2.0,
+          "M": 4.37,
+          "zone": "Fragile"
+        },
+        "W250_path_last": {
+          "i": 527,
+          "n": 250,
+          "WR": 56.8,
+          "E_N": 0.136,
+          "EF": 4.6,
+          "M": 6.14,
+          "zone": "Fragile"
+        },
+        "W250_path_min_EF": -3.4,
+        "W250_path_max_EF": 4.6
+      },
+      "engine_same_calendar": {
+        "label": "engine 2025.01.01",
+        "full": {
+          "n": 530,
+          "WR": 54.53,
+          "E_N": 0.0906,
+          "EF": 2.33,
+          "M": 4.24,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 61.0,
+          "E_N": 0.22,
+          "EF": 8.8,
+          "M": 9.56,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 250,
+          "WR": 56.4,
+          "E_N": 0.128,
+          "EF": 4.2,
+          "M": 6.15,
+          "zone": "Fragile"
+        },
+        "W500": {
+          "n": 500,
+          "WR": 53.6,
+          "E_N": 0.072,
+          "EF": 1.4,
+          "M": 4.37,
+          "zone": "Fragile"
+        },
+        "W250_path_last": {
+          "i": 530,
+          "n": 250,
+          "WR": 56.4,
+          "E_N": 0.128,
+          "EF": 4.2,
+          "M": 6.15,
+          "zone": "Fragile"
+        },
+        "W250_path_min_EF": -3.8,
+        "W250_path_max_EF": 4.6
+      },
+      "delta_EF_full": 0.31,
+      "delta_EF_W250": 0.4,
+      "delta_n": -3,
+      "aistack_W250_path_last": {
+        "i": 527,
+        "n": 250,
+        "WR": 56.8,
+        "E_N": 0.136,
+        "EF": 4.6,
+        "M": 6.14,
+        "zone": "Fragile"
+      },
+      "aistack_W250_min_max": [
+        -3.4,
+        4.6
+      ],
+      "engine_W250_min_max": [
+        -3.8,
+        4.6
+      ]
+    },
+    {
+      "window_start": "2026.01.01 00:00:00",
+      "aistack": {
+        "label": "aistack 2026.01.01",
+        "full": {
+          "n": 192,
+          "WR": 58.85,
+          "E_N": 0.1771,
+          "EF": 6.65,
+          "M": 6.96,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 61.0,
+          "E_N": 0.22,
+          "EF": 8.8,
+          "M": 9.56,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 192,
+          "WR": 58.85,
+          "E_N": 0.1771,
+          "EF": 6.65,
+          "M": 6.96,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 192,
+          "WR": 58.85,
+          "E_N": 0.1771,
+          "EF": 6.65,
+          "M": 6.96,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "engine_same_calendar": {
+        "label": "engine 2026.01.01",
+        "full": {
+          "n": 193,
+          "WR": 59.07,
+          "E_N": 0.1813,
+          "EF": 6.87,
+          "M": 6.94,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 61.0,
+          "E_N": 0.22,
+          "EF": 8.8,
+          "M": 9.56,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 193,
+          "WR": 59.07,
+          "E_N": 0.1813,
+          "EF": 6.87,
+          "M": 6.94,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 193,
+          "WR": 59.07,
+          "E_N": 0.1813,
+          "EF": 6.87,
+          "M": 6.94,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "delta_EF_full": -0.22,
+      "delta_EF_W250": -0.22,
+      "delta_n": -1,
+      "aistack_W250_path_last": null,
+      "aistack_W250_min_max": [
+        null,
+        null
+      ],
+      "engine_W250_min_max": [
+        null,
+        null
+      ]
+    },
+    {
+      "window_start": "2026.01.01 00:00:00",
+      "aistack": {
+        "label": "aistack 2026.01.01",
+        "full": {
+          "n": 189,
+          "WR": 59.26,
+          "E_N": 0.1852,
+          "EF": 7.06,
+          "M": 7.01,
+          "zone": "Robust"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 60.0,
+          "E_N": 0.2,
+          "EF": 7.8,
+          "M": 9.6,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 189,
+          "WR": 59.26,
+          "E_N": 0.1852,
+          "EF": 7.06,
+          "M": 7.01,
+          "zone": "Robust",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 189,
+          "WR": 59.26,
+          "E_N": 0.1852,
+          "EF": 7.06,
+          "M": 7.01,
+          "zone": "Robust",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "engine_same_calendar": {
+        "label": "engine 2026.01.01",
+        "full": {
+          "n": 193,
+          "WR": 59.07,
+          "E_N": 0.1813,
+          "EF": 6.87,
+          "M": 6.94,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 61.0,
+          "E_N": 0.22,
+          "EF": 8.8,
+          "M": 9.56,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 193,
+          "WR": 59.07,
+          "E_N": 0.1813,
+          "EF": 6.87,
+          "M": 6.94,
+          "zone": "Fragile",
+          "_note": "n<250 used all"
+        },
+        "W500": {
+          "n": 193,
+          "WR": 59.07,
+          "E_N": 0.1813,
+          "EF": 6.87,
+          "M": 6.94,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": null,
+        "W250_path_min_EF": null,
+        "W250_path_max_EF": null
+      },
+      "delta_EF_full": 0.19,
+      "delta_EF_W250": 0.19,
+      "delta_n": -4,
+      "aistack_W250_path_last": null,
+      "aistack_W250_min_max": [
+        null,
+        null
+      ],
+      "engine_W250_min_max": [
+        null,
+        null
+      ]
+    },
+    {
+      "window_start": "2025.01.01 00:00:00",
+      "aistack": {
+        "label": "aistack 2025.01.01",
+        "full": {
+          "n": 477,
+          "WR": 57.65,
+          "E_N": 0.153,
+          "EF": 5.45,
+          "M": 4.43,
+          "zone": "Robust"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 60.0,
+          "E_N": 0.2,
+          "EF": 7.8,
+          "M": 9.6,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 250,
+          "WR": 56.8,
+          "E_N": 0.136,
+          "EF": 4.6,
+          "M": 6.14,
+          "zone": "Fragile"
+        },
+        "W500": {
+          "n": 477,
+          "WR": 57.65,
+          "E_N": 0.153,
+          "EF": 5.45,
+          "M": 4.43,
+          "zone": "Robust",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": {
+          "i": 477,
+          "n": 250,
+          "WR": 56.8,
+          "E_N": 0.136,
+          "EF": 4.6,
+          "M": 6.14,
+          "zone": "Fragile"
+        },
+        "W250_path_min_EF": 1.8,
+        "W250_path_max_EF": 5.8
+      },
+      "engine_same_calendar": {
+        "label": "engine 2025.01.01",
+        "full": {
+          "n": 530,
+          "WR": 54.53,
+          "E_N": 0.0906,
+          "EF": 2.33,
+          "M": 4.24,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 61.0,
+          "E_N": 0.22,
+          "EF": 8.8,
+          "M": 9.56,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 250,
+          "WR": 56.4,
+          "E_N": 0.128,
+          "EF": 4.2,
+          "M": 6.15,
+          "zone": "Fragile"
+        },
+        "W500": {
+          "n": 500,
+          "WR": 53.6,
+          "E_N": 0.072,
+          "EF": 1.4,
+          "M": 4.37,
+          "zone": "Fragile"
+        },
+        "W250_path_last": {
+          "i": 530,
+          "n": 250,
+          "WR": 56.4,
+          "E_N": 0.128,
+          "EF": 4.2,
+          "M": 6.15,
+          "zone": "Fragile"
+        },
+        "W250_path_min_EF": -3.8,
+        "W250_path_max_EF": 4.6
+      },
+      "delta_EF_full": 3.12,
+      "delta_EF_W250": 0.4,
+      "delta_n": -53,
+      "aistack_W250_path_last": {
+        "i": 477,
+        "n": 250,
+        "WR": 56.8,
+        "E_N": 0.136,
+        "EF": 4.6,
+        "M": 6.14,
+        "zone": "Fragile"
+      },
+      "aistack_W250_min_max": [
+        1.8,
+        5.8
+      ],
+      "engine_W250_min_max": [
+        -3.8,
+        4.6
+      ]
+    },
+    {
+      "window_start": "2025.07.01 00:00:00",
+      "aistack": {
+        "label": "aistack 2025.07.01",
+        "full": {
+          "n": 288,
+          "WR": 56.25,
+          "E_N": 0.125,
+          "EF": 4.05,
+          "M": 5.73,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 61.0,
+          "E_N": 0.22,
+          "EF": 8.8,
+          "M": 9.56,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 250,
+          "WR": 57.2,
+          "E_N": 0.144,
+          "EF": 5.0,
+          "M": 6.13,
+          "zone": "Fragile"
+        },
+        "W500": {
+          "n": 288,
+          "WR": 56.25,
+          "E_N": 0.125,
+          "EF": 4.05,
+          "M": 5.73,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": {
+          "i": 288,
+          "n": 250,
+          "WR": 57.2,
+          "E_N": 0.144,
+          "EF": 5.0,
+          "M": 6.13,
+          "zone": "Fragile"
+        },
+        "W250_path_min_EF": 3.4,
+        "W250_path_max_EF": 5.0
+      },
+      "engine_same_calendar": {
+        "label": "engine 2025.07.01",
+        "full": {
+          "n": 331,
+          "WR": 53.78,
+          "E_N": 0.0755,
+          "EF": 1.58,
+          "M": 5.37,
+          "zone": "Fragile"
+        },
+        "W100": {
+          "n": 100,
+          "WR": 61.0,
+          "E_N": 0.22,
+          "EF": 8.8,
+          "M": 9.56,
+          "zone": "Fragile"
+        },
+        "W250": {
+          "n": 250,
+          "WR": 56.4,
+          "E_N": 0.128,
+          "EF": 4.2,
+          "M": 6.15,
+          "zone": "Fragile"
+        },
+        "W500": {
+          "n": 331,
+          "WR": 53.78,
+          "E_N": 0.0755,
+          "EF": 1.58,
+          "M": 5.37,
+          "zone": "Fragile",
+          "_note": "n<500 used all"
+        },
+        "W250_path_last": {
+          "i": 331,
+          "n": 250,
+          "WR": 56.4,
+          "E_N": 0.128,
+          "EF": 4.2,
+          "M": 6.15,
+          "zone": "Fragile"
+        },
+        "W250_path_min_EF": -1.0,
+        "W250_path_max_EF": 5.0
+      },
+      "delta_EF_full": 2.47,
+      "delta_EF_W250": 0.8,
+      "delta_n": -43,
+      "aistack_W250_path_last": {
+        "i": 288,
+        "n": 250,
+        "WR": 57.2,
+        "E_N": 0.144,
+        "EF": 5.0,
+        "M": 6.13,
+        "zone": "Fragile"
+      },
+      "aistack_W250_min_max": [
+        3.4,
+        5.0
+      ],
+      "engine_W250_min_max": [
+        -1.0,
+        5.0
+      ]
+    }
+  ]
+}

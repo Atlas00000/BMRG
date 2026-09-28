@@ -1,0 +1,98 @@
+{
+  "baseline_id": "ENGINE_BASELINE_v1",
+  "source_baseline_id": "AOS_BASELINE_v1",
+  "source_doc": "doc/ai_OS_baseline.md",
+  "frozen_at": "2026-09-27",
+  "task_id": "INF-P0-T02",
+  "recipe": "INF-P0-T02_obs_baselineLock_Harvest",
+  "engine": {
+    "role": "Harvest",
+    "magic_champion": 8210204,
+    "preset_id": "EDX-P2-T04_SL300_TP300_RR1_champFilters_G0_long",
+    "preset_path": "Profiles/Tester/BMRG/EDX-P2-T04_SL300_TP300_RR1_champFilters_G0_long.set",
+    "geometry": {
+      "sl_points": 300,
+      "tp_points": 300,
+      "rr": 1.0,
+      "bwr_pct": 50.0,
+      "bb_dev": 2.2,
+      "geometry_mode": "G0_SINGLE"
+    },
+    "filters": {
+      "start_hour": 12,
+      "end_hour": 20,
+      "trade_tue": false,
+      "cooldown_bars": 3,
+      "allow_buy": true,
+      "allow_sell": true,
+      "regime_filtered": true
+    },
+    "lot_mode": "risk_pct_0.5",
+    "symbol": "EURUSD",
+    "timeframe": "M5",
+    "deposit_ref_usd": 400,
+    "account_mode": "currency"
+  },
+  "costs": {
+    "leak_proxy_pp": 2.2,
+    "costs_defaulted": ["spread_proxy_3x", "slippage_in_proxy"],
+    "note": "Use same Leak policy for INF replay comparisons unless measured costs replace defaults"
+  },
+  "windows": {
+    "long": {
+      "start": "2025-01-01",
+      "end": "2026-09-24",
+      "n": 530,
+      "wr_pct": 54.5,
+      "bwr_pct": 50.0,
+      "r": 1.0,
+      "rr": 1.0,
+      "bm_pp": 4.5,
+      "leak_pp": 2.2,
+      "ef_pp": 1.77,
+      "m_pp_approx": 4.24,
+      "zone": "Fragile",
+      "e_n": 0.091,
+      "final_usd_approx": 533,
+      "fires_90d_band": [35, 80],
+      "maxdd_pp": null,
+      "maxdd_note": "TBD on first measured blotter under INF; until set, report and use +2pp bar only when measured"
+    },
+    "stress_3M": {
+      "start": "2026-07-01",
+      "end": "2026-09-24",
+      "n": 49,
+      "n_note": "thin — warn, not kill",
+      "wr_pct": 59.2,
+      "bwr_pct": 50.0,
+      "e_n": 0.184,
+      "ef_pp": 6.43,
+      "final_usd": 425.48,
+      "zone": "Strong_EF_thin_n"
+    }
+  },
+  "iteration_bar": {
+    "n_remaining_min": 100,
+    "n_warn_below": 385,
+    "w250_ef_floor_pp": 0.77,
+    "w250_ef_floor_rule": "baseline_ef_pp - 1.0",
+    "w250_maxdd_slack_pp": 2.0,
+    "fires_warn_below_pct_of_baseline": 70,
+    "fires_stall_below_pct_of_baseline": 50,
+    "reject_payoff_trap": true,
+    "full_g0_g5_required_for_infra_phase": false
+  },
+  "secondary_ref": {
+    "role": "Growth",
+    "magic": 8210401,
+    "preset_id": "EDX-P4-T01_champion_T05_currency_G0_long",
+    "long_ef_pp": 5.18,
+    "long_n": 420,
+    "note": "Not OS/INF default engine; optional Δ commentary only"
+  },
+  "notes": [
+    "INF evals MUST load this file as engine baseline.",
+    "Do not edit silently — bump baseline_id and open a new INF-P0 task if champion changes.",
+    "Labeled AOS shadow CF files may show EF≈2.33 under alternate Leak tagging; ENGINE_BASELINE_v1 stays aligned with AOS_BASELINE_v1 (1.77)."
+  ]
+}

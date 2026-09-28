@@ -1,0 +1,15 @@
+{
+  "image_lock_present": true,
+  "image_lock_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\IMAGE_LOCK.json",
+  "dockerfiles_ok": true,
+  "images_present": {
+    "bmrg-ingest:inf-w07": true,
+    "bmrg-features:inf-w07": true,
+    "bmrg-trainer:inf-w07": true,
+    "bmrg-scorer:inf-w07": true,
+    "bmrg-eval:inf-w07": true
+  },
+  "postgres_up": true,
+  "compose_cli": "docker-compose",
+  "smoke_ok": true
+}

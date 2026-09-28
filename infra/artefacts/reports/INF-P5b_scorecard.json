@@ -1,0 +1,27 @@
+{
+  "task_ids": [
+    "INF-P5-T04",
+    "INF-P5-T05",
+    "INF-P5-T06"
+  ],
+  "recipe": "INF-P5b_box_tests_agentAccess",
+  "queue": {
+    "mode": "redis",
+    "redis_up": true,
+    "enqueue": {
+      "job_id": "job_20260927T230039Z_bdce1be4",
+      "job": "p4_eval",
+      "enqueued_at": "2026-09-27T23:00:39.680090+00:00"
+    },
+    "job": {
+      "job_id": "job_20260927T230039Z_bdce1be4",
+      "status": "ok",
+      "tester_required": false,
+      "result_verdict": "ACCEPT",
+      "elapsed_s": 0.994
+    }
+  },
+  "box_md_present": true,
+  "agent_paths_present": true,
+  "verdict": "ACCEPT"
+}

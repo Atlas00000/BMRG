@@ -1,0 +1,24 @@
+{
+  "task_id": "INF-P5-T01",
+  "recipe": "INF-P5-T01_obs_jsonl_correlationIds",
+  "run_id": "p5a_20260927T225145Z_3da0cab5",
+  "event_id": "8210204-EURUSD-BUY-20250102153000-2",
+  "model_semver": "L2skip_inf_p92_20260927_223519",
+  "log_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\logs\\p5a_20260927T225145Z_3da0cab5.jsonl",
+  "latest_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\logs\\LATEST_CORRELATION.jsonl",
+  "stages": [
+    "ingest.normalise",
+    "ingest.load",
+    "features.tape",
+    "scorer.health",
+    "eval.cf"
+  ],
+  "required_stages": [
+    "ingest.normalise",
+    "ingest.load",
+    "features.tape",
+    "scorer.health",
+    "eval.cf"
+  ],
+  "trace_ok": true
+}

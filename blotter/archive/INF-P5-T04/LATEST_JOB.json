@@ -1,0 +1,19 @@
+{
+  "job_id": "job_20260927T230039Z_bdce1be4",
+  "job": "p4_eval",
+  "enqueued_at": "2026-09-27T23:00:39.680090+00:00",
+  "started_at": "2026-09-27T23:00:39.690831+00:00",
+  "finished_at": "2026-09-27T23:00:40.685197+00:00",
+  "elapsed_s": 0.994,
+  "status": "ok",
+  "error": null,
+  "result": {
+    "job": "p4_eval",
+    "verdict": "ACCEPT",
+    "cf_ef": 2.9935,
+    "engine_ef": 2.3283,
+    "scorecard": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\queue\\p4_eval_scorecard.json"
+  },
+  "tester_required": false,
+  "box_note": "heavy job on INF box; Strategy Tester idle"
+}

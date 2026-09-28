@@ -1,0 +1,87 @@
+{
+  "task_ids": [
+    "INF-P7-T01",
+    "INF-P7-T02",
+    "INF-P7-T03",
+    "INF-P8-T01",
+    "INF-P8-T02",
+    "INF-P8-T03"
+  ],
+  "recipe": "INF-W10_W11_wireAuth_retrainLoop",
+  "authorisation": {
+    "authorised": true,
+    "note": "Operator accepted offline CF metrics; authorised W10 design + W11 retrain 2026-09-28",
+    "at": "2026-09-27T23:18:34.890776+00:00",
+    "allows": [
+      "INF-W10_design",
+      "INF-W11_retrain_shadow",
+      "promote_with_waiver"
+    ],
+    "forbids_unless_extra_auth": [
+      "EA_LIVE_AI_GATE_SHIP",
+      "AOS_LIVE_FT"
+    ]
+  },
+  "promote_dry_run": {
+    "recipe": "INF-P7-T02_dry_run",
+    "pass": true,
+    "results": [
+      {
+        "name": "accept_challenger",
+        "expect_promote": true,
+        "got_promote": true,
+        "pass": true,
+        "reason": "ok"
+      },
+      {
+        "name": "reject_starving",
+        "expect_promote": false,
+        "got_promote": false,
+        "pass": true,
+        "reason": "scorecard_verdict_not_ACCEPT"
+      },
+      {
+        "name": "accept_with_waiver",
+        "expect_promote": true,
+        "got_promote": true,
+        "pass": true,
+        "reason": "ok"
+      }
+    ]
+  },
+  "live_pin": {
+    "action": "promote",
+    "semver": "L2skip_inf_p92_20260927_223519",
+    "allowed": true,
+    "reason": "ok",
+    "dry_run": false,
+    "ts": "2026-09-27T23:18:34.894774+00:00",
+    "pinned": true,
+    "pin": {
+      "live_semver": "L2skip_inf_p92_20260927_223519",
+      "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\models\\L2skip\\L2skip_inf_p92_20260927_223519",
+      "parent_semver": "L2skip_inf_p92_20260927_223519",
+      "promoted_at": "2026-09-27T23:18:34.895774+00:00",
+      "mode": "LIVE_WITHHOLD",
+      "operator_waiver": true
+    }
+  },
+  "retrain_loop": {
+    "sources": {
+      "offline_tape": true,
+      "landing_inbox_files": [
+        "ENGINE_BASELINE_v1.json"
+      ],
+      "realtime_available": true,
+      "mode": "mixed"
+    },
+    "semver": "L2skip_inf_p92_20260927_223519",
+    "live_pinned": true,
+    "verdict": "ACCEPT"
+  },
+  "failed_challenger_blocked": true,
+  "exp_preset": "Profiles/Tester/BMRG/EXP-P7-T03_export_Harvest_long.set",
+  "wiring_plan": "doc/infra_wiring_plan.md",
+  "live_ai_gate_shipped": false,
+  "verdict": "ACCEPT"
+}

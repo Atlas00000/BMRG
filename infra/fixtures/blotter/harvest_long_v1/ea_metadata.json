@@ -1,0 +1,22 @@
+{
+  "ea_name": "BMRG",
+  "ea_version": "1.20",
+  "designed_rr": 1.0,
+  "risk_definition": "hard_stop_points",
+  "regime_filtered": true,
+  "baseline_frequency": 60,
+  "costs_defaulted": [
+    "spread_proxy_3x",
+    "commission_0",
+    "swap_0",
+    "slippage_in_proxy"
+  ],
+  "preset_id": "EDX-P2-T04_SL300_TP300_RR1_champFilters_G0_long",
+  "geometry_mode": "G0_SINGLE",
+  "symbol": "EURUSD",
+  "timeframe": "M5",
+  "magic": 8210204,
+  "pool_role": "Harvest",
+  "sl_points": 300.0,
+  "tp_points": 300.0
+}

@@ -1,0 +1,145 @@
+{
+  "recipe": "INF_full_scaleup_regression",
+  "pytest": {
+    "returncode": 0,
+    "stdout_tail": ".................................................                        [100%]\n49 passed in 83.17s (0:01:23)",
+    "stderr_tail": "",
+    "pass": true
+  },
+  "artefacts": {
+    "pass": true,
+    "rows": [
+      {
+        "week": "INF-W01",
+        "path": "baselines\\ENGINE_BASELINE_v1.json",
+        "ok": true
+      },
+      {
+        "week": "INF-W01",
+        "path": "LIMITATIONS.md",
+        "ok": true
+      },
+      {
+        "week": "INF-W01",
+        "path": "PHASE_EXITS.md",
+        "ok": true
+      },
+      {
+        "week": "INF-W02",
+        "path": "schemas\\adapter_blotter.schema.json",
+        "ok": true
+      },
+      {
+        "week": "INF-W02",
+        "path": "migrations\\versions\\0001_core.py",
+        "ok": true
+      },
+      {
+        "week": "INF-W03",
+        "path": "fixtures\\blotter\\harvest_long_v1\\health_vector.json",
+        "ok": true
+      },
+      {
+        "week": "INF-W04",
+        "path": "artefacts\\tape\\LATEST_REGIME_TAPE.parquet",
+        "ok": true
+      },
+      {
+        "week": "INF-W05",
+        "path": "artefacts\\models\\L2skip\\LATEST_SHADOW\\PIN.json",
+        "ok": true
+      },
+      {
+        "week": "INF-W06",
+        "path": "artefacts\\reports\\INF-P4-T04_cf_scorecard.json",
+        "ok": true
+      },
+      {
+        "week": "INF-W07",
+        "path": "IMAGE_LOCK.json",
+        "ok": true
+      },
+      {
+        "week": "INF-W07",
+        "path": "artefacts\\logs\\LATEST_CORRELATION.jsonl",
+        "ok": true
+      },
+      {
+        "week": "INF-W08",
+        "path": "BOX.md",
+        "ok": true
+      },
+      {
+        "week": "INF-W08",
+        "path": "AGENT_PATHS.md",
+        "ok": true
+      },
+      {
+        "week": "INF-W09",
+        "path": "artefacts\\reports\\INF-P6-T01_phaseProve.json",
+        "ok": true
+      },
+      {
+        "week": "INF-W09",
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\doc\\infra_wiring_eligibility.md",
+        "ok": true
+      },
+      {
+        "week": "INF-W10",
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\doc\\infra_wiring_plan.md",
+        "ok": true
+      },
+      {
+        "week": "INF-W10",
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Profiles\\Tester\\BMRG\\EXP-P7-T03_export_Harvest_long.set",
+        "ok": true
+      },
+      {
+        "week": "INF-W11",
+        "path": "artefacts\\models\\L2skip\\LATEST_LIVE\\PIN.json",
+        "ok": true
+      },
+      {
+        "week": "INF-W11",
+        "path": "artefacts\\ops\\WIRE_AUTHORISATION.json",
+        "ok": true
+      }
+    ]
+  },
+  "smoke_e2e": {
+    "pass": true,
+    "steps": [
+      {
+        "step": "P2_score",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "step": "P4b_cf",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "step": "P5a_obs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "step": "P6_prove",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "step": "P7_dry",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "step": "P7P8_e2e",
+        "ok": true,
+        "code": 0
+      }
+    ]
+  },
+  "verdict": "ACCEPT"
+}

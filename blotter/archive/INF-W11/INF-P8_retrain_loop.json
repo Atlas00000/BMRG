@@ -1,0 +1,71 @@
+{
+  "task_ids": [
+    "INF-P8-T01",
+    "INF-P8-T02",
+    "INF-P8-T03"
+  ],
+  "recipe": "INF-P8_retrainLoop_offlinePlusRealtime_shadowGate",
+  "sources": {
+    "offline_tape": true,
+    "landing_inbox_files": [
+      "ENGINE_BASELINE_v1.json"
+    ],
+    "realtime_available": true,
+    "mode": "mixed"
+  },
+  "train": {
+    "ran": false,
+    "model_semver": "L2skip_inf_p92_20260927_223519",
+    "skip_quantile": null,
+    "metrics": {}
+  },
+  "shadow_gate": {
+    "scorecard": {
+      "verdict": "ACCEPT",
+      "checks": {
+        "long_ef_hold": true,
+        "fires_ge_70pct": true,
+        "fires_ge_50pct": true,
+        "no_payoff_trap": true,
+        "skip_audit_pass": false
+      },
+      "operator_waiver": true,
+      "waiver_note": "USER AUTHORISED GO",
+      "prove_verdict": "REJECT",
+      "frequency": {
+        "n_engine": 530,
+        "n_shadow": 491,
+        "n_skipped": 39,
+        "skip_rate_pct": 7.3585,
+        "fires_kept_pct": 92.6415
+      },
+      "deltas_long": {
+        "ef_pp": 0.6652,
+        "e_n": 0.013304,
+        "wr_pct": 0.6652,
+        "maxdd_pp": -4.1371
+      }
+    },
+    "promote": {
+      "action": "promote",
+      "semver": "L2skip_inf_p92_20260927_223519",
+      "allowed": true,
+      "reason": "ok",
+      "dry_run": false,
+      "ts": "2026-09-27T23:14:02.790833+00:00",
+      "pinned": true,
+      "pin": {
+        "live_semver": "L2skip_inf_p92_20260927_223519",
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\models\\L2skip\\L2skip_inf_p92_20260927_223519",
+        "parent_semver": "L2skip_inf_p92_20260927_223519",
+        "promoted_at": "2026-09-27T23:14:02.806596+00:00",
+        "mode": "LIVE_WITHHOLD",
+        "operator_waiver": true
+      }
+    },
+    "live_pinned": true
+  },
+  "live_swap": "none_silent",
+  "live_pinned": true,
+  "verdict": "ACCEPT"
+}

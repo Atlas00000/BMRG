@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bmrg://infra/schemas/ea_metadata.schema.json",
+  "title": "BMRG EA metadata",
+  "description": "Once per submission. Unified §8.3 + edge_framework §8.1.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ea_name",
+    "ea_version",
+    "designed_rr",
+    "risk_definition",
+    "regime_filtered",
+    "baseline_frequency",
+    "costs_defaulted",
+    "preset_id",
+    "geometry_mode",
+    "symbol",
+    "timeframe",
+    "magic"
+  ],
+  "properties": {
+    "ea_name": { "type": "string", "minLength": 1 },
+    "ea_version": { "type": "string", "minLength": 1 },
+    "designed_rr": { "type": "number", "exclusiveMinimum": 0 },
+    "risk_definition": {
+      "type": "string",
+      "enum": ["hard_stop_points", "declared_max_basket_risk", "other"]
+    },
+    "regime_filtered": { "type": "boolean" },
+    "baseline_frequency": { "type": "number", "exclusiveMinimum": 0 },
+    "costs_defaulted": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "preset_id": { "type": "string", "minLength": 1 },
+    "geometry_mode": {
+      "type": "string",
+      "enum": ["G0_SINGLE", "GRID_BASKET", "OTHER"]
+    },
+    "symbol": { "type": "string", "minLength": 1 },
+    "timeframe": { "type": "string", "minLength": 1 },
+    "magic": { "type": "integer" },
+    "pool_role": {
+      "type": ["string", "null"],
+      "enum": ["Harvest", "Growth", "Survival", "Scale", "Mid", "Other", null]
+    },
+    "sl_points": { "type": ["number", "null"] },
+    "tp_points": { "type": ["number", "null"] }
+  }
+}

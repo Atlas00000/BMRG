@@ -1,0 +1,38 @@
+{
+  "n": 530,
+  "n_TP": 289,
+  "n_SL": 241,
+  "lose_rate": 0.4547,
+  "win_rate": 0.5453,
+  "side_counts": {
+    "SELL": 271,
+    "BUY": 259
+  },
+  "session_counts": {
+    "LON_NY": 424,
+    "NY": 106
+  },
+  "dow_counts": {
+    "Wed": 147,
+    "Thu": 135,
+    "Fri": 127,
+    "Mon": 121
+  },
+  "baseline_n": 530,
+  "n_ge_baseline": true,
+  "entry_features": [
+    "hour",
+    "dow",
+    "session",
+    "side",
+    "spread",
+    "month",
+    "week_of_month",
+    "hour_bucket",
+    "spread_hi",
+    "is_mon",
+    "is_fri",
+    "side_buy"
+  ],
+  "note": "same_day_exit/hold_hours are labels-side diagnostics only \u2014 NOT used as entry skip features"
+}

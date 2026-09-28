@@ -1,0 +1,29 @@
+{
+  "source": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\Tester\\logs\\20260925.log",
+  "encoding": "utf-16",
+  "clean": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\blotter\\archive\\AOS-aistack-run\\tester_8399001_CLEAN.log",
+  "kept_lines": 577753,
+  "stats": {
+    "init_hits": 19,
+    "bar_skipped": 568149,
+    "OPEN": 2087,
+    "TP": 1179,
+    "SL": 888,
+    "CLOSE": 12,
+    "AOS_ON": 3,
+    "AOS_close": 961
+  },
+  "aos_block_reasons": [],
+  "open_sample": [
+    "LP\t0\t18:06:04.570\tCore 01\t2026.01.02 15:05:00   [BMRG][TRADE] OPEN SELL lot=0.01 price=1.17329 sl=1.17629 tp=1.17029 level=0 riskMode=1 spread=6 deal=2",
+    "LE\t0\t18:06:04.570\tCore 01\t2026.01.05 12:55:00   [BMRG][TRADE] OPEN BUY lot=0.01 price=1.16744 sl=1.16444 tp=1.17044 level=0 riskMode=1 spread=6 deal=4",
+    "FP\t0\t18:06:04.570\tCore 01\t2026.01.07 12:10:00   [BMRG][TRADE] OPEN BUY lot=0.01 price=1.16831 sl=1.16531 tp=1.17131 level=0 riskMode=1 spread=6 deal=6",
+    "PD\t0\t18:06:04.570\tCore 01\t2026.01.08 16:25:00   [BMRG][TRADE] OPEN BUY lot=0.01 price=1.16535 sl=1.16235 tp=1.16835 level=0 riskMode=1 spread=7 deal=8",
+    "MQ\t0\t18:06:04.570\tCore 01\t2026.01.09 18:35:00   [BMRG][TRADE] OPEN SELL lot=0.01 price=1.16359 sl=1.16659 tp=1.16059 level=0 riskMode=1 spread=7 deal=10"
+  ],
+  "open_tail": [
+    "CD\t0\t18:14:33.024\tCore 01\t2026.09.17 12:20:00   [BMRG][TRADE] OPEN SELL lot=0.01 price=1.14881 sl=1.15181 tp=1.14581 level=0 riskMode=1 spread=4 deal=584",
+    "KJ\t0\t18:14:33.024\tCore 01\t2026.09.18 15:20:00   [BMRG][TRADE] OPEN SELL lot=0.01 price=1.14675 sl=1.14975 tp=1.14375 level=0 riskMode=1 spread=4 deal=586",
+    "IH\t0\t18:14:33.024\tCore 01\t2026.09.23 13:50:00   [BMRG][TRADE] OPEN BUY lot=0.01 price=1.13948 sl=1.13648 tp=1.14248 level=0 riskMode=1 spread=4 deal=588"
+  ]
+}

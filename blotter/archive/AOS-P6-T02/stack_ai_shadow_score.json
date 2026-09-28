@@ -1,0 +1,36 @@
+{
+  "stack": "DET + L2ai SHADOW",
+  "live_pin": "L2skip_v0_engine",
+  "shadow": "L2skip_v1",
+  "actual_live_path": {
+    "n": 355,
+    "WR": 55.21,
+    "BM": 5.21,
+    "E_N": 0.1042,
+    "EF": 3.01,
+    "M": 5.17,
+    "zone": "Fragile"
+  },
+  "cf_if_ai_armed_on_det_fires": {
+    "n": 317,
+    "WR": 57.1,
+    "BM": 7.1,
+    "E_N": 0.142,
+    "EF": 4.9,
+    "M": 5.45,
+    "zone": "Fragile"
+  },
+  "ai_shadow_skips_on_det_fires": 38,
+  "loose_bar_cf": {
+    "remaining_n": 317,
+    "n_ok": true,
+    "EF_hold": true,
+    "fires_pct": 59.8,
+    "freq_stall_warn": false,
+    "payoff_trap": false
+  },
+  "ledger_complete": true,
+  "accept_shadow_stack": true,
+  "accept_live_ai": false,
+  "note": "AI remains SHADOW_ONLY per P4/P5"
+}

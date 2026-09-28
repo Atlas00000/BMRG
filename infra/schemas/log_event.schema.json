@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bmrg://infra/schemas/log_event.schema.json",
+  "title": "BMRG infra JSONL log event",
+  "type": "object",
+  "required": ["ts", "run_id", "service", "stage", "level", "msg"],
+  "properties": {
+    "ts": { "type": "string" },
+    "run_id": { "type": "string", "minLength": 8 },
+    "service": {
+      "type": "string",
+      "enum": ["ingest", "features", "trainer", "scorer", "eval", "obs"]
+    },
+    "stage": { "type": "string" },
+    "level": { "type": "string", "enum": ["DEBUG", "INFO", "WARN", "ERROR"] },
+    "msg": { "type": "string" },
+    "event_id": { "type": ["string", "null"] },
+    "model_semver": { "type": ["string", "null"] },
+    "reason_code": { "type": ["string", "null"] },
+    "decision": { "type": ["string", "null"] },
+    "extra": { "type": "object" }
+  },
+  "additionalProperties": true
+}

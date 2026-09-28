@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+credentials*.json
+*secret*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# MT5 binaries / runtime logs (rebuild locally)
+*.ex5
+*.ex4
+*.log
+
+# Infra runtime / heavy artefacts (keep fixtures + reports pointers)
+infra/landing/inbox/*
+!infra/landing/inbox/README.md
+infra/landing/processed/
+infra/artefacts/tape/*.parquet
+infra/artefacts/models/**/joblib
+infra/artefacts/models/**/*.pkl
+infra/artefacts/models/**/*.joblib
+**/LATEST_SHADOW/**/*.pkl
+**/LATEST_LIVE/**/*.pkl
+
+# Local DB / redis dumps
+*.sql.gz
+dump.rdb
+
+# Cursor local
+.cursor/

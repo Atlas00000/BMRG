@@ -1,0 +1,7 @@
+{
+  "pinned_version": "L2skip_v0_engine",
+  "shadow_version": "L2skip_v1",
+  "pinned_at": "2026-09-25T16:55:32.314336+00:00",
+  "note": "Rollback L2skip_v1 -> L2skip_v0_engine",
+  "rollback_of": "L2skip_v1"
+}

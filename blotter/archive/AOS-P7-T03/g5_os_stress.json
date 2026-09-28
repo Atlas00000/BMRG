@@ -1,0 +1,70 @@
+{
+  "method": "OS blotter stress (engine geometry held; OS L3 filter fixed)",
+  "stresses": {
+    "base_OS": {
+      "n": 355,
+      "WR": 55.21,
+      "BM": 5.21,
+      "E_N": 0.1042,
+      "EF": 3.01,
+      "M": 5.17,
+      "zone": "Fragile"
+    },
+    "cost_x1.5": {
+      "n": 355,
+      "WR": 55.21,
+      "BM": 5.21,
+      "E_N": 0.1042,
+      "EF": 1.91,
+      "M": 5.17,
+      "zone": "Fragile"
+    },
+    "R_minus10": {
+      "n": 355,
+      "WR": 55.21,
+      "BM": 5.21,
+      "E_N": 0.049,
+      "EF": 3.01,
+      "M": 5.17,
+      "zone": "Fragile"
+    },
+    "WR_minus10pp": {
+      "n": 355,
+      "WR": 45.07,
+      "BM": -4.93,
+      "E_N": -0.0986,
+      "EF": -7.13,
+      "M": 5.18,
+      "zone": "Below"
+    },
+    "cost_x1.5_and_R_minus10": {
+      "n": 355,
+      "WR": 55.21,
+      "BM": 5.21,
+      "E_N": 0.049,
+      "EF": 1.91,
+      "M": 5.17,
+      "zone": "Fragile"
+    },
+    "AI_CF_cost_x1.5": {
+      "n": 317,
+      "WR": 57.1,
+      "BM": 7.1,
+      "E_N": 0.142,
+      "EF": 3.8,
+      "M": 5.45,
+      "zone": "Fragile"
+    }
+  },
+  "EF_gt_0": {
+    "base_OS": true,
+    "cost_x1.5": true,
+    "R_minus10": true,
+    "WR_minus10pp": false,
+    "cost_x1.5_and_R_minus10": true,
+    "AI_CF_cost_x1.5": true
+  },
+  "G5_core_cost_and_R": "PASS",
+  "promote_bar": "EF>0 under cost x1.5 and R-10 core",
+  "verdict_T03": "PASS"
+}

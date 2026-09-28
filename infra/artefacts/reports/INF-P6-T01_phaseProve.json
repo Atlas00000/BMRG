@@ -1,0 +1,541 @@
+{
+  "task_id": "INF-P6-T01",
+  "recipe": "INF-P6-T01_obs_phaseProve_W250W500_shadowVsEngine",
+  "model_semver": "L2skip_inf_p92_20260927_223519",
+  "model_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\models\\L2skip\\L2skip_inf_p92_20260927_223519",
+  "engine": {
+    "long": {
+      "thin": false,
+      "window_n_requested": 530,
+      "n": 530,
+      "wr_pct": 54.5283,
+      "bm_pp": 4.5283,
+      "leak_pp": 2.2,
+      "ef_pp": 2.3283,
+      "e_n": 0.090566,
+      "m_pp": 4.2394,
+      "zone": "Fragile",
+      "maxdd_pp": 20.9774,
+      "health_vector": {
+        "framework_bmrg": "1.1.2",
+        "baseline_id": "ENGINE_BASELINE_v1",
+        "n": 530,
+        "wr_pct": 54.5283,
+        "bwr_pct": 50.0,
+        "r": 1.0,
+        "rr": 1.0,
+        "bm_pp": 4.5283,
+        "leak_pp": 2.2,
+        "leak_policy": "baseline_proxy",
+        "leak_source": "ENGINE_BASELINE_v1.leak_proxy_pp",
+        "mean_c_r": 0.055019,
+        "ef_pp": 2.3283,
+        "m_pp": 4.2394,
+        "e_n": 0.090566,
+        "zone": "Fragile",
+        "costs_defaulted": [
+          "spread_proxy_3x",
+          "swap_0",
+          "commission_0",
+          "slippage_in_proxy"
+        ],
+        "cost_flags_present": true
+      }
+    },
+    "w250": {
+      "thin": false,
+      "window_n_requested": 250,
+      "n": 250,
+      "wr_pct": 56.4,
+      "bm_pp": 6.4,
+      "leak_pp": 2.2,
+      "ef_pp": 4.2,
+      "e_n": 0.128,
+      "m_pp": 6.1471,
+      "zone": "Fragile",
+      "maxdd_pp": 9.042,
+      "health_vector": {
+        "framework_bmrg": "1.1.2",
+        "baseline_id": "ENGINE_BASELINE_v1",
+        "n": 250,
+        "wr_pct": 56.4,
+        "bwr_pct": 50.0,
+        "r": 1.0,
+        "rr": 1.0,
+        "bm_pp": 6.4,
+        "leak_pp": 2.2,
+        "leak_policy": "baseline_proxy",
+        "leak_source": "ENGINE_BASELINE_v1.leak_proxy_pp",
+        "mean_c_r": 0.04436,
+        "ef_pp": 4.2,
+        "m_pp": 6.1471,
+        "e_n": 0.128,
+        "zone": "Fragile",
+        "costs_defaulted": [
+          "spread_proxy_3x",
+          "swap_0",
+          "commission_0",
+          "slippage_in_proxy"
+        ],
+        "cost_flags_present": true
+      }
+    },
+    "w500": {
+      "thin": false,
+      "window_n_requested": 500,
+      "n": 500,
+      "wr_pct": 53.6,
+      "bm_pp": 3.6,
+      "leak_pp": 2.2,
+      "ef_pp": 1.4,
+      "e_n": 0.072,
+      "m_pp": 4.3713,
+      "zone": "Fragile",
+      "maxdd_pp": 22.5572,
+      "health_vector": {
+        "framework_bmrg": "1.1.2",
+        "baseline_id": "ENGINE_BASELINE_v1",
+        "n": 500,
+        "wr_pct": 53.6,
+        "bwr_pct": 50.0,
+        "r": 1.0,
+        "rr": 1.0,
+        "bm_pp": 3.6,
+        "leak_pp": 2.2,
+        "leak_policy": "baseline_proxy",
+        "leak_source": "ENGINE_BASELINE_v1.leak_proxy_pp",
+        "mean_c_r": 0.05592,
+        "ef_pp": 1.4,
+        "m_pp": 4.3713,
+        "e_n": 0.072,
+        "zone": "Fragile",
+        "costs_defaulted": [
+          "spread_proxy_3x",
+          "swap_0",
+          "commission_0",
+          "slippage_in_proxy"
+        ],
+        "cost_flags_present": true
+      }
+    },
+    "n_events": 530
+  },
+  "shadow_cf": {
+    "long": {
+      "thin": false,
+      "window_n_requested": 491,
+      "n": 491,
+      "wr_pct": 55.1935,
+      "bm_pp": 5.1935,
+      "leak_pp": 2.2,
+      "ef_pp": 2.9935,
+      "e_n": 0.10387,
+      "m_pp": 4.3988,
+      "zone": "Fragile",
+      "maxdd_pp": 16.8403,
+      "health_vector": {
+        "framework_bmrg": "1.1.2",
+        "baseline_id": "ENGINE_BASELINE_v1",
+        "n": 491,
+        "wr_pct": 55.1935,
+        "bwr_pct": 50.0,
+        "r": 1.0,
+        "rr": 1.0,
+        "bm_pp": 5.1935,
+        "leak_pp": 2.2,
+        "leak_policy": "baseline_proxy",
+        "leak_source": "ENGINE_BASELINE_v1.leak_proxy_pp",
+        "mean_c_r": 0.05558,
+        "ef_pp": 2.9935,
+        "m_pp": 4.3988,
+        "e_n": 0.10387,
+        "zone": "Fragile",
+        "costs_defaulted": [
+          "spread_proxy_3x",
+          "swap_0",
+          "commission_0",
+          "slippage_in_proxy"
+        ],
+        "cost_flags_present": true
+      }
+    },
+    "w250": {
+      "thin": false,
+      "window_n_requested": 250,
+      "n": 250,
+      "wr_pct": 56.4,
+      "bm_pp": 6.4,
+      "leak_pp": 2.2,
+      "ef_pp": 4.2,
+      "e_n": 0.128,
+      "m_pp": 6.1471,
+      "zone": "Fragile",
+      "maxdd_pp": 8.2747,
+      "health_vector": {
+        "framework_bmrg": "1.1.2",
+        "baseline_id": "ENGINE_BASELINE_v1",
+        "n": 250,
+        "wr_pct": 56.4,
+        "bwr_pct": 50.0,
+        "r": 1.0,
+        "rr": 1.0,
+        "bm_pp": 6.4,
+        "leak_pp": 2.2,
+        "leak_policy": "baseline_proxy",
+        "leak_source": "ENGINE_BASELINE_v1.leak_proxy_pp",
+        "mean_c_r": 0.0442,
+        "ef_pp": 4.2,
+        "m_pp": 6.1471,
+        "e_n": 0.128,
+        "zone": "Fragile",
+        "costs_defaulted": [
+          "spread_proxy_3x",
+          "swap_0",
+          "commission_0",
+          "slippage_in_proxy"
+        ],
+        "cost_flags_present": true
+      }
+    },
+    "w500": {
+      "thin": false,
+      "window_n_requested": 500,
+      "n": 491,
+      "wr_pct": 55.1935,
+      "bm_pp": 5.1935,
+      "leak_pp": 2.2,
+      "ef_pp": 2.9935,
+      "e_n": 0.10387,
+      "m_pp": 4.3988,
+      "zone": "Fragile",
+      "maxdd_pp": 16.8403,
+      "health_vector": {
+        "framework_bmrg": "1.1.2",
+        "baseline_id": "ENGINE_BASELINE_v1",
+        "n": 491,
+        "wr_pct": 55.1935,
+        "bwr_pct": 50.0,
+        "r": 1.0,
+        "rr": 1.0,
+        "bm_pp": 5.1935,
+        "leak_pp": 2.2,
+        "leak_policy": "baseline_proxy",
+        "leak_source": "ENGINE_BASELINE_v1.leak_proxy_pp",
+        "mean_c_r": 0.05558,
+        "ef_pp": 2.9935,
+        "m_pp": 4.3988,
+        "e_n": 0.10387,
+        "zone": "Fragile",
+        "costs_defaulted": [
+          "spread_proxy_3x",
+          "swap_0",
+          "commission_0",
+          "slippage_in_proxy"
+        ],
+        "cost_flags_present": true
+      }
+    },
+    "n_events": 491
+  },
+  "frequency": {
+    "n_engine": 530,
+    "n_shadow": 491,
+    "n_skipped": 39,
+    "skip_rate_pct": 7.3585,
+    "fires_kept_pct": 92.6415
+  },
+  "deltas_long": {
+    "ef_pp": 0.6652,
+    "e_n": 0.013304,
+    "wr_pct": 0.6652,
+    "maxdd_pp": -4.1371
+  },
+  "deltas_w250": {
+    "ef_pp": 0.0,
+    "e_n": 0.0
+  },
+  "deltas_w500": {
+    "ef_pp": 1.5935,
+    "e_n": 0.03187
+  },
+  "skip_audit": {
+    "n_skip_oos": 39,
+    "n_clusters": 12,
+    "clusters": [
+      {
+        "cluster_id": "LON_NY|Wed|SELL",
+        "session_id": "LON_NY",
+        "dow_name": "Wed",
+        "side": "SELL",
+        "n_skip": 9,
+        "loser_precision": 0.6667,
+        "mean_p_lose": 0.694341,
+        "cell_n": 55,
+        "cell_bm_pp": 8.1818,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": true,
+        "justified": true,
+        "justification": [
+          "modest-confidence losers: precision=0.667 mean_p_lose=0.694\u2265thr"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "LON_NY|Fri|SELL",
+        "session_id": "LON_NY",
+        "dow_name": "Fri",
+        "side": "SELL",
+        "n_skip": 8,
+        "loser_precision": 0.75,
+        "mean_p_lose": 0.712299,
+        "cell_n": 59,
+        "cell_bm_pp": 7.6271,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": true,
+        "justified": true,
+        "justification": [
+          "modest-confidence losers: precision=0.750 mean_p_lose=0.712\u2265thr"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "LON_NY|Mon|SELL",
+        "session_id": "LON_NY",
+        "dow_name": "Mon",
+        "side": "SELL",
+        "n_skip": 7,
+        "loser_precision": 0.5714,
+        "mean_p_lose": 0.728586,
+        "cell_n": 54,
+        "cell_bm_pp": 3.7037,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": true,
+        "justified": true,
+        "justification": [
+          "modest-confidence losers: precision=0.571 mean_p_lose=0.729\u2265thr"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "LON_NY|Thu|SELL",
+        "session_id": "LON_NY",
+        "dow_name": "Thu",
+        "side": "SELL",
+        "n_skip": 4,
+        "loser_precision": 0.25,
+        "mean_p_lose": 0.703144,
+        "cell_n": 55,
+        "cell_bm_pp": 6.3636,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": false,
+        "justified": false,
+        "justification": [
+          "UNJUSTIFIED edge overfilter \u2014 BM_cell=6.3636pp>0 loser_precision=0.250 (protect cell; not WR-only path claim)"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "LON_NY|Thu|BUY",
+        "session_id": "LON_NY",
+        "dow_name": "Thu",
+        "side": "BUY",
+        "n_skip": 2,
+        "loser_precision": 0.5,
+        "mean_p_lose": 0.685576,
+        "cell_n": 57,
+        "cell_bm_pp": -0.8772,
+        "hostile_cell": true,
+        "registry_hit": null,
+        "modest_confidence": true,
+        "justified": true,
+        "justification": [
+          "BM_cell=-0.8772pp\u22640 n=57\u226530 (hostile)",
+          "modest-confidence losers: precision=0.500 mean_p_lose=0.686\u2265thr"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "LON_NY|Wed|BUY",
+        "session_id": "LON_NY",
+        "dow_name": "Wed",
+        "side": "BUY",
+        "n_skip": 2,
+        "loser_precision": 0.5,
+        "mean_p_lose": 0.666319,
+        "cell_n": 54,
+        "cell_bm_pp": 1.8519,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": true,
+        "justified": true,
+        "justification": [
+          "modest-confidence losers: precision=0.500 mean_p_lose=0.666\u2265thr"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "NY|Wed|SELL",
+        "session_id": "NY",
+        "dow_name": "Wed",
+        "side": "SELL",
+        "n_skip": 2,
+        "loser_precision": 0.5,
+        "mean_p_lose": 0.705506,
+        "cell_n": 19,
+        "cell_bm_pp": -2.6316,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": true,
+        "justified": true,
+        "justification": [
+          "BM_cell=-2.6316pp\u22640 n=19<30 (thin hostile)",
+          "modest-confidence losers: precision=0.500 mean_p_lose=0.706\u2265thr"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "LON_NY|Fri|BUY",
+        "session_id": "LON_NY",
+        "dow_name": "Fri",
+        "side": "BUY",
+        "n_skip": 1,
+        "loser_precision": 1.0,
+        "mean_p_lose": 0.679956,
+        "cell_n": 45,
+        "cell_bm_pp": 5.5556,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": true,
+        "justified": true,
+        "justification": [
+          "modest-confidence losers: precision=1.000 mean_p_lose=0.680\u2265thr"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "LON_NY|Mon|BUY",
+        "session_id": "LON_NY",
+        "dow_name": "Mon",
+        "side": "BUY",
+        "n_skip": 1,
+        "loser_precision": 0.0,
+        "mean_p_lose": 0.699266,
+        "cell_n": 46,
+        "cell_bm_pp": 6.5217,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": false,
+        "justified": false,
+        "justification": [
+          "UNJUSTIFIED edge overfilter \u2014 BM_cell=6.5217pp>0 loser_precision=0.000 (protect cell; not WR-only path claim)"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "NY|Mon|BUY",
+        "session_id": "NY",
+        "dow_name": "Mon",
+        "side": "BUY",
+        "n_skip": 1,
+        "loser_precision": 0.0,
+        "mean_p_lose": 0.713521,
+        "cell_n": 12,
+        "cell_bm_pp": 25.0,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": false,
+        "justified": false,
+        "justification": [
+          "UNJUSTIFIED edge overfilter \u2014 BM_cell=25.0pp>0 loser_precision=0.000 (protect cell; not WR-only path claim)"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "NY|Thu|SELL",
+        "session_id": "NY",
+        "dow_name": "Thu",
+        "side": "SELL",
+        "n_skip": 1,
+        "loser_precision": 0.0,
+        "mean_p_lose": 0.643818,
+        "cell_n": 11,
+        "cell_bm_pp": -4.5455,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": false,
+        "justified": true,
+        "justification": [
+          "BM_cell=-4.5455pp\u22640 n=11<30 (thin hostile)"
+        ],
+        "wr_only_forbidden": true
+      },
+      {
+        "cluster_id": "NY|Wed|BUY",
+        "session_id": "NY",
+        "dow_name": "Wed",
+        "side": "BUY",
+        "n_skip": 1,
+        "loser_precision": 0.0,
+        "mean_p_lose": 0.703252,
+        "cell_n": 20,
+        "cell_bm_pp": -10.0,
+        "hostile_cell": false,
+        "registry_hit": null,
+        "modest_confidence": false,
+        "justified": true,
+        "justification": [
+          "BM_cell=-10.0pp\u22640 n=20<30 (thin hostile)"
+        ],
+        "wr_only_forbidden": true
+      }
+    ],
+    "unjustified_clusters": [
+      "LON_NY|Mon|BUY",
+      "LON_NY|Thu|SELL",
+      "NY|Mon|BUY"
+    ],
+    "audit_pass": false,
+    "rule": "Justify via BM_cell\u22640 / aos_bad_cells / modest-confidence loser precision \u2014 never WR-only"
+  },
+  "l3_sim_shadow_w250": {
+    "state": {
+      "halted": false,
+      "f_mult": 1.0,
+      "reason": "OK",
+      "l3_trips": []
+    },
+    "apply_would_skip": {
+      "final_action": "SKIP",
+      "l2_decision": "WOULD_SKIP",
+      "l2_effective": true,
+      "l3_outranks": false,
+      "f_mult": 1.0,
+      "reason": "L2_SKIP"
+    }
+  },
+  "bars": {
+    "engine_baseline_doc_ef": 1.77,
+    "ef_floor_engine_minus_1": 1.3283
+  },
+  "checks": {
+    "ef_held_or_lifted": true,
+    "ef_lifted": true,
+    "fires_ge_50pct": true,
+    "fires_ge_70pct": true,
+    "no_payoff_trap": true,
+    "skip_audit_pass": false,
+    "w250_present": true,
+    "w500_present": true,
+    "maxdd_not_worse_gt_2pp": true
+  },
+  "payoff_trap": false,
+  "metrics_verdict": "ACCEPT",
+  "prove_verdict": "REJECT",
+  "wiring_eligibility_hint": "NO-GO",
+  "retrain_path": "INF-W05/W06 \u2014 reduce edge-cell false-positive skips (LON_NY/NY protect cells)",
+  "live_preset": "FORBIDDEN"
+}

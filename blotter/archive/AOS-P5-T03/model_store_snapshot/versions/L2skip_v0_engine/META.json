@@ -1,0 +1,10 @@
+﻿{
+    "created_at":  "2026-09-25",
+    "skip_rate_target":  0,
+    "source":  "AOS-P2 HARD map",
+    "kind":  "noop",
+    "status":  "PINNED_LIVE",
+    "description":  "Engine-only: HARD DOW_TUE; no AI skip",
+    "role":  "champion_live",
+    "version_id":  "L2skip_v0_engine"
+}

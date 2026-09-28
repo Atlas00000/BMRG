@@ -1,0 +1,79 @@
+{
+  "candidate": "AOS_DET_STACK (P6-T01 L3-halted)",
+  "engine_labeled": {
+    "n": 530,
+    "WR": 54.53,
+    "BM": 4.53,
+    "E_N": 0.0906,
+    "EF": 2.33,
+    "M": 4.24,
+    "zone": "Fragile"
+  },
+  "engine_official_AOS_BASELINE": {
+    "n": 530,
+    "WR": 54.5,
+    "EF": 1.77,
+    "E_N": 0.091,
+    "zone": "Fragile"
+  },
+  "OS_det": {
+    "n": 355,
+    "WR": 55.21,
+    "BM": 5.21,
+    "E_N": 0.1042,
+    "EF": 3.01,
+    "M": 5.17,
+    "zone": "Fragile"
+  },
+  "OS_plus_AI_CF_shadow": {
+    "n": 317,
+    "WR": 57.1,
+    "BM": 7.1,
+    "E_N": 0.142,
+    "EF": 4.9,
+    "M": 5.45,
+    "zone": "Fragile"
+  },
+  "delta_OS_vs_labeled_engine": {
+    "dEF": 0.68,
+    "dEN": 0.0136,
+    "dn": -175,
+    "fires_kept_pct": 67.0
+  },
+  "Stage1": {
+    "OS_zone": "Fragile",
+    "EF_gt_0": true,
+    "EF_gt_M_promote_target": false,
+    "iterate_ok": true
+  },
+  "Stage2_OS": {
+    "W100": {
+      "n": 100,
+      "WR": 61.0,
+      "BM": 11.0,
+      "E_N": 0.22,
+      "EF": 8.8,
+      "M": 9.56,
+      "zone": "Fragile"
+    },
+    "W250": {
+      "n": 250,
+      "WR": 53.2,
+      "BM": 3.2,
+      "E_N": 0.064,
+      "EF": 1.0,
+      "M": 6.19,
+      "zone": "Fragile"
+    },
+    "W500": {
+      "n": 355,
+      "WR": 55.21,
+      "BM": 5.21,
+      "E_N": 0.1042,
+      "EF": 3.01,
+      "M": 5.17,
+      "zone": "Fragile"
+    }
+  },
+  "verdict_T01": "KEEP_ITERATING"
+}

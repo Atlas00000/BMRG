@@ -1,0 +1,13 @@
+{
+  "version_id": "L2skip_v1",
+  "role": "challenger_shadow",
+  "kind": "logistic_balanced",
+  "description": "WF logistic avoid-loser; SHADOW_ONLY",
+  "auc_oos": 0.5481,
+  "skip_rate_oos": 0.2658,
+  "created_at": "2026-09-25",
+  "source": "AOS-P4-T02",
+  "status": "SHADOW_ONLY",
+  "live_eligible": false,
+  "live_block_reason": "weak_OOS_AUC + fold2_harm + live_hooks_paused"
+}

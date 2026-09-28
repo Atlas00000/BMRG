@@ -1,0 +1,88 @@
+{
+  "phases": {
+    "P0": {
+      "pass": true,
+      "fails": []
+    },
+    "P1": {
+      "pass": true,
+      "fails": [],
+      "n_fires": 531
+    },
+    "P2": {
+      "pass": true,
+      "fails": [],
+      "score": {
+        "n": 530,
+        "WR": 54.53,
+        "EF": 2.33,
+        "M": 4.24,
+        "zone": "Fragile"
+      }
+    },
+    "P3": {
+      "pass": true,
+      "fails": [],
+      "terminal_W250_EF": 4.2,
+      "terminal_lifecycle": "Compressing",
+      "n_trips": 17
+    },
+    "P4": {
+      "pass": true,
+      "fails": [],
+      "auc_oos": 0.5481,
+      "cf_EF": 4.91
+    },
+    "P5": {
+      "pass": true,
+      "fails": [],
+      "LIVE": {
+        "pinned_version": "L2skip_v0_engine",
+        "shadow_version": "L2skip_v1",
+        "pinned_at": "2026-09-25T16:55:32.314336+00:00",
+        "note": "Rollback L2skip_v1 -> L2skip_v0_engine",
+        "rollback_of": "L2skip_v1"
+      }
+    },
+    "P6": {
+      "pass": true,
+      "fails": [],
+      "det": {
+        "n": 355,
+        "WR": 55.21,
+        "BM": 5.21,
+        "E_N": 0.1042,
+        "EF": 3.01,
+        "M": 5.17,
+        "zone": "Fragile"
+      },
+      "recompute": {
+        "n": 355,
+        "WR": 55.21,
+        "EF": 3.01,
+        "M": 5.17,
+        "zone": "Fragile"
+      }
+    },
+    "P7": {
+      "pass": true,
+      "fails": []
+    }
+  },
+  "aistack": {
+    "pass": true,
+    "fails": [],
+    "score": {
+      "n": 317,
+      "WR": 57.1,
+      "EF": 4.9,
+      "M": 5.45,
+      "zone": "Fragile"
+    },
+    "layers": "L1+L2det+L3+L4+L6 + L2skip_v1(CF) + L5pin_shadow + L7HarvestPrimary",
+    "live_ai_armed": false,
+    "expected_EF_approx": 4.9
+  },
+  "all_pass": true,
+  "fail_count": 0
+}

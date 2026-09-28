@@ -1,0 +1,33 @@
+{
+  "packet_id": "AOS_PROMOTE_PACKET_v0",
+  "AOS_LIVE_signed": false,
+  "signed_id": null,
+  "candidate": "AOS_DET_STACK",
+  "live_hooks": "DEFERRED",
+  "T01": "KEEP_ITERATING",
+  "T01_EF_gt_M": false,
+  "T02_G3": "PASS",
+  "T02_G4_light": "PASS",
+  "T03_G5": "PASS",
+  "blockers": [
+    "Stage1 zone Fragile (EF < M) \u2014 promote target Robust not met",
+    "Live EA hooks paused (AOS-P1-T03 deferred)",
+    "L10 human signature pending"
+  ],
+  "rollback_plan": {
+    "model_pin": "models/L2skip/LIVE.json -> L2skip_v0_engine",
+    "command": "python models/L2skip/rollback.py L2skip_v0_engine",
+    "engine": "EDX-P2-T04 Harvest unchanged",
+    "OS_layers": "disable L3 halt / L2 AI -> engine-only"
+  },
+  "L10_checklist": [
+    "Ledger sample audit (AOS-P6-T01 stack_det_ledger.csv)",
+    "Confirm EF>M Robust OR accept paper-only",
+    "Confirm G5 PASS",
+    "Confirm live EA hooks ready",
+    "Human signature"
+  ],
+  "recommendation": "STAY_PAPER",
+  "accept_T04_signoff": false,
+  "note": "Packet prepared; do NOT issue AOS_LIVE until blockers clear"
+}

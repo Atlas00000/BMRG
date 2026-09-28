@@ -1,0 +1,38 @@
+{
+  "policy": "Harvest_primary",
+  "sleeves": {
+    "Harvest": {
+      "magic": 8210204,
+      "weight": 1.0,
+      "status": "PRIMARY"
+    },
+    "Growth": {
+      "magic": 8210401,
+      "weight": 0.25,
+      "status": "OPTIONAL_THROTTLED"
+    },
+    "Survival": {
+      "magic": 8210201,
+      "weight": 0.0,
+      "status": "BLOCKED_costs_fragile"
+    },
+    "Mid": {
+      "magic": null,
+      "weight": 0.0,
+      "status": "BLOCKED"
+    }
+  },
+  "rules": [
+    "No Mid fires",
+    "Growth optional max weight 0.25 correlated cap",
+    "Survival off when 3M costs_fragile",
+    "Harvest weight 1.0 primary"
+  ],
+  "dry_run": {
+    "Mid_fires": 0,
+    "Survival_fires": 0,
+    "Harvest_allowed": true,
+    "Growth_allowed_throttled": true
+  },
+  "accept": true
+}

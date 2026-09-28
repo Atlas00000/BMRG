@@ -1,0 +1,25 @@
+{
+  "framework_bmrg": "1.1.2",
+  "baseline_id": "ENGINE_BASELINE_v1",
+  "n": 530,
+  "wr_pct": 54.5283,
+  "bwr_pct": 50.0,
+  "r": 1.0,
+  "rr": 1.0,
+  "bm_pp": 4.5283,
+  "leak_pp": 2.2,
+  "leak_policy": "baseline_proxy",
+  "leak_source": "ENGINE_BASELINE_v1.leak_proxy_pp",
+  "mean_c_r": 0.055019,
+  "ef_pp": 2.3283,
+  "m_pp": 4.2394,
+  "e_n": 0.090566,
+  "zone": "Fragile",
+  "costs_defaulted": [
+    "slippage_in_proxy",
+    "swap_0",
+    "spread_proxy_3x",
+    "commission_0"
+  ],
+  "cost_flags_present": true
+}

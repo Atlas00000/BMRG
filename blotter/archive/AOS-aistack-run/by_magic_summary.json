@@ -1,0 +1,24 @@
+{
+  "8399001": {
+    "seg": 1,
+    "OPEN": 964,
+    "BUY": 457,
+    "SELL": 507,
+    "TP": 549,
+    "SL": 405,
+    "AOS_ON": 2,
+    "AOS_close_TP": 549,
+    "AOS_close_SL": 412,
+    "first_open": "2026.01.02 15:05:00",
+    "last_open": "2026.09.23 13:50:00",
+    "wall_first": "18:13:26.679",
+    "wall_last": "18:14:32.972",
+    "init_count": 3,
+    "lots": {
+      "0.01": 964
+    },
+    "blocks_top": [],
+    "n_closed_broker": 954,
+    "WR_broker": 57.55
+  }
+}

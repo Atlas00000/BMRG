@@ -1,0 +1,10 @@
+TASK: INF-W01 / INF-P0-T01..T04
+PLANE: P-ACCESS / P-OBS / P-DATA
+RECIPE: INF-P0-T01_access_limitationMap_lock .. INF-P0-T04_data_inventoryAos_migratePlan
+ENGINE_BASELINE: ENGINE_BASELINE_v1 (AOS_BASELINE_v1)
+n=530 WR=54.5 R=1.0 BWR=50 BM=+4.5 Leak=2.2 EF=1.77 E_N=0.091
+vs BASELINE: lock only (no ?)
+ZONE: Fragile
+ACCEPT
+ARCHIVE: blotter/archive/INF-W01/
+ARTEFACTS: infra/LIMITATIONS.md · infra/baselines/ENGINE_BASELINE_v1.json · infra/PHASE_EXITS.md · infra/MIGRATE_FROM_AOS.md

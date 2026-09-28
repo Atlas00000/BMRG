@@ -1,0 +1,94 @@
+{
+  "model": "L2skip_v1",
+  "algo": "LogisticRegression balanced C=0.5 + OHE",
+  "features_cat": [
+    "dow",
+    "session",
+    "side",
+    "hour_bucket"
+  ],
+  "features_num": [
+    "hour",
+    "spread",
+    "month",
+    "week_of_month",
+    "spread_hi",
+    "is_mon",
+    "is_fri",
+    "side_buy"
+  ],
+  "wf": "expanding min_train=150 test_block=80",
+  "n_oos": 380,
+  "skip_rate_oos": 0.2658,
+  "loser_recall_oos": 0.3184,
+  "loser_precision_oos": 0.5644,
+  "auc_oos": 0.5481,
+  "folds": [
+    {
+      "fold": 1,
+      "train_n": 150,
+      "test_n": 80,
+      "thr": 0.5631,
+      "skip_rate": 0.375,
+      "loser_recall": 0.4762,
+      "loser_precision": 0.6667,
+      "auc": 0.6347,
+      "test_EF_all": -4.7,
+      "test_EF_kept": 3.8,
+      "test_n_kept": 50
+    },
+    {
+      "fold": 2,
+      "train_n": 230,
+      "test_n": 80,
+      "thr": 0.6223,
+      "skip_rate": 0.6375,
+      "loser_recall": 0.6087,
+      "loser_precision": 0.549,
+      "auc": 0.4658,
+      "test_EF_all": -9.7,
+      "test_EF_kept": -14.27,
+      "test_n_kept": 29
+    },
+    {
+      "fold": 3,
+      "train_n": 310,
+      "test_n": 80,
+      "thr": 0.6136,
+      "skip_rate": 0.2125,
+      "loser_recall": 0.25,
+      "loser_precision": 0.4706,
+      "auc": 0.4967,
+      "test_EF_all": 7.8,
+      "test_EF_kept": 9.7,
+      "test_n_kept": 63
+    },
+    {
+      "fold": 4,
+      "train_n": 390,
+      "test_n": 80,
+      "thr": 0.5924,
+      "skip_rate": 0.0,
+      "loser_recall": 0.0,
+      "loser_precision": 0.0,
+      "auc": 0.38,
+      "test_EF_all": 0.3,
+      "test_EF_kept": 0.3,
+      "test_n_kept": 80
+    },
+    {
+      "fold": 5,
+      "train_n": 470,
+      "test_n": 60,
+      "thr": 0.5755,
+      "skip_rate": 0.05,
+      "loser_recall": 0.0476,
+      "loser_precision": 0.3333,
+      "auc": 0.4786,
+      "test_EF_all": 12.8,
+      "test_EF_kept": 12.71,
+      "test_n_kept": 57
+    }
+  ],
+  "thr_full_ref": 0.5745
+}

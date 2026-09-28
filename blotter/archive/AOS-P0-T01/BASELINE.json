@@ -1,0 +1,39 @@
+{
+  "baseline_id": "AOS_BASELINE_v1",
+  "frozen_at": "2026-09-25",
+  "task": "AOS-P0-T01",
+  "engine_preset": "EDX-P2-T04_SL300_TP300_RR1_champFilters_G0_long.set",
+  "magic_champion": 8210204,
+  "verify_preset": "AOS-P0-T01_L0_baselineLock_Harvest_long.set",
+  "magic_verify": 8310001,
+  "leak_pp": 2.2,
+  "long": {
+    "from": "2025.01.01",
+    "to": "2026.09.24",
+    "n": 530,
+    "WR": 54.5,
+    "BWR": 50.0,
+    "R": 1.0,
+    "RR": 1.0,
+    "BM": 4.5,
+    "EF": 1.77,
+    "M_approx": 4.24,
+    "zone": "Fragile",
+    "E_N": 0.091,
+    "final_usd": 533
+  },
+  "m3": {
+    "from": "2026.07.01",
+    "to": "2026.09.24",
+    "n": 49,
+    "WR": 59.2,
+    "BWR": 50.0,
+    "E_N": 0.184,
+    "EF": 6.43,
+    "final_usd": 425.48
+  },
+  "sources": [
+    "blotter/archive/EDX-POOL_WINDOWS/SCORECARD_MATRIX.md",
+    "blotter/archive/EDX-P2-T04/"
+  ]
+}

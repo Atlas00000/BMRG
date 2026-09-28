@@ -1,0 +1,35 @@
+{
+  "stack": "L1+L2det+L3+L4+L6",
+  "baseline": {
+    "n": 530,
+    "WR": 54.53,
+    "BM": 4.53,
+    "E_N": 0.0906,
+    "EF": 2.33,
+    "M": 4.24,
+    "zone": "Fragile"
+  },
+  "det_after_L3_halts": {
+    "n": 355,
+    "WR": 55.21,
+    "BM": 5.21,
+    "E_N": 0.1042,
+    "EF": 3.01,
+    "M": 5.17,
+    "zone": "Fragile"
+  },
+  "skipped": 175,
+  "skip_breakdown": {
+    "DOW_TUE": 0,
+    "L3_HALT": 175
+  },
+  "loose_bar": {
+    "remaining_n": 355,
+    "n_ok": true,
+    "EF_hold": true,
+    "fires_pct": 67.0,
+    "freq_stall_warn": false,
+    "payoff_trap": false
+  },
+  "accept": true
+}

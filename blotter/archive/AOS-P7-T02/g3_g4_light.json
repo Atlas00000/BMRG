@@ -1,0 +1,83 @@
+{
+  "G3": {
+    "regime_filtered": true,
+    "filters": "session 12-20 + skip Tue (engine) + L3 Below-frontier halt (OS)",
+    "dow_BM_n20": [
+      {
+        "dow": "Fri",
+        "n": 90,
+        "WR": 60.0,
+        "BM": 10.0,
+        "E_N": 0.2,
+        "EF": 7.8,
+        "M": 10.12,
+        "zone": "Fragile"
+      },
+      {
+        "dow": "Mon",
+        "n": 80,
+        "WR": 52.5,
+        "BM": 2.5,
+        "E_N": 0.05,
+        "EF": 0.3,
+        "M": 10.94,
+        "zone": "Fragile"
+      },
+      {
+        "dow": "Thu",
+        "n": 87,
+        "WR": 56.32,
+        "BM": 6.32,
+        "E_N": 0.1264,
+        "EF": 4.12,
+        "M": 10.42,
+        "zone": "Fragile"
+      },
+      {
+        "dow": "Wed",
+        "n": 98,
+        "WR": 52.04,
+        "BM": 2.04,
+        "E_N": 0.0408,
+        "EF": -0.16,
+        "M": 9.89,
+        "zone": "Below"
+      }
+    ],
+    "BM_worst": {
+      "dow": "Wed",
+      "n": 98,
+      "WR": 52.04,
+      "BM": 2.04,
+      "E_N": 0.0408,
+      "EF": -0.16,
+      "M": 9.89,
+      "zone": "Below"
+    },
+    "BM_worst_gt_0": true,
+    "max_dow_share": 27.6,
+    "G3": "PASS"
+  },
+  "G4": {
+    "C0": 400.0,
+    "USD_PER_R": 2.0,
+    "DD_limit": 100.0,
+    "observed_MaxDD": 28.0,
+    "observed_final": 474.0,
+    "MC2_block20": {
+      "P95_MaxDD": 32.0,
+      "median_final": 474.0,
+      "P_ruin_pct": 0.0,
+      "pass_MC2": true
+    },
+    "MC3_stress": {
+      "P95_MaxDD": 85.31,
+      "median_final": 350.78,
+      "P_ruin_pct": 0.0,
+      "pass_MC3": false
+    },
+    "G4_light": "PASS",
+    "note": "Light MC on OS-kept unit path"
+  },
+  "accept": true
+}

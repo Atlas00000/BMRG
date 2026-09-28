@@ -1,0 +1,114 @@
+# INF-W07/W08 stack: postgres + redis queue + offline service images.
+# Use: docker-compose up -d postgres redis
+#      docker-compose --profile jobs build
+#      python src/jobqueue/enqueue.py --job p4_eval && python src/jobqueue/worker.py --once
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: bmrg-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  worker:
+    build:
+      context: .
+      dockerfile: images/worker/Dockerfile
+    image: bmrg-worker:inf-w08
+    environment:
+      BMRG_REDIS_URL: redis://redis:6379/0
+      BMRG_DATABASE_URL: postgresql+psycopg2://bmrg:bmrg@postgres:5432/bmrg
+    volumes:
+      - ./artefacts:/infra/artefacts
+      - ./fixtures:/infra/fixtures
+      - ./baselines:/infra/baselines
+      - ./src:/infra/src
+    depends_on:
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    profiles: ["jobs"]
+    command: ["python", "src/jobqueue/worker.py", "--once", "--timeout", "120"]
+
+  postgres:
+    # digest pin recorded in IMAGE_LOCK.json (postgres)
+    image: postgres:16-alpine
+    container_name: bmrg-postgres
+    environment:
+      POSTGRES_USER: bmrg
+      POSTGRES_PASSWORD: bmrg
+      POSTGRES_DB: bmrg
+    ports:
+      - "54329:5432"
+    volumes:
+      - bmrg_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bmrg -d bmrg"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  ingest:
+    build:
+      context: .
+      dockerfile: images/ingest/Dockerfile
+    image: bmrg-ingest:inf-w07
+    volumes:
+      - ./artefacts:/infra/artefacts
+      - ./fixtures:/infra/fixtures
+      - ./landing:/infra/landing
+    environment:
+      BMRG_DATABASE_URL: postgresql+psycopg2://bmrg:bmrg@postgres:5432/bmrg
+    depends_on:
+      postgres:
+        condition: service_healthy
+    profiles: ["jobs"]
+
+  features:
+    build:
+      context: .
+      dockerfile: images/features/Dockerfile
+    image: bmrg-features:inf-w07
+    volumes:
+      - ./artefacts:/infra/artefacts
+      - ./fixtures:/infra/fixtures
+    profiles: ["jobs"]
+
+  trainer:
+    build:
+      context: .
+      dockerfile: images/trainer/Dockerfile
+    image: bmrg-trainer:inf-w07
+    volumes:
+      - ./artefacts:/infra/artefacts
+    profiles: ["jobs"]
+
+  scorer:
+    build:
+      context: .
+      dockerfile: images/scorer/Dockerfile
+    image: bmrg-scorer:inf-w07
+    volumes:
+      - ./artefacts:/infra/artefacts
+      - ./fixtures:/infra/fixtures
+      - ./baselines:/infra/baselines
+    profiles: ["jobs"]
+
+  eval:
+    build:
+      context: .
+      dockerfile: images/eval/Dockerfile
+    image: bmrg-eval:inf-w07
+    volumes:
+      - ./artefacts:/infra/artefacts
+      - ./fixtures:/infra/fixtures
+      - ./baselines:/infra/baselines
+    profiles: ["jobs"]
+
+volumes:
+  bmrg_pgdata:
