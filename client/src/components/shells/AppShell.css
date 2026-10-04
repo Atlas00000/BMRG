@@ -1,0 +1,93 @@
+.ln-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.ln-skip-link {
+  position: absolute;
+  left: var(--ln-space-3);
+  top: -100%;
+  z-index: 100;
+  padding: var(--ln-space-2) var(--ln-space-3);
+  background: var(--ln-signal);
+  color: #f4f2ec;
+  font-size: var(--ln-text-label);
+  font-weight: 600;
+  border-radius: var(--ln-radius-md);
+  text-decoration: none;
+}
+
+.ln-skip-link:focus {
+  top: var(--ln-space-3);
+  text-decoration: none;
+}
+
+.ln-shell__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ln-space-4);
+  flex-wrap: wrap;
+  padding: var(--ln-space-4) var(--ln-space-6);
+  border-bottom: 1px solid var(--ln-hairline);
+  background: linear-gradient(180deg, var(--ln-chrome), var(--ln-chrome-deep));
+  backdrop-filter: blur(8px);
+}
+
+.ln-shell__brand {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--ln-space-3);
+  color: var(--ln-signal);
+}
+
+.ln-shell__wordmark {
+  font-size: 1.5rem !important;
+  line-height: 1 !important;
+}
+
+.ln-shell__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ln-space-1);
+}
+
+.ln-shell__link {
+  padding: var(--ln-space-2) var(--ln-space-3);
+  border-bottom: 2px solid transparent;
+  color: var(--ln-ink-muted);
+  font-size: var(--ln-text-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color var(--ln-dur-fast) var(--ln-ease-out),
+    border-color var(--ln-dur-fast) var(--ln-ease-out);
+}
+
+.ln-shell__link:hover {
+  color: var(--ln-ink);
+  text-decoration: none;
+}
+
+.ln-shell__link.is-active {
+  color: var(--ln-signal);
+  border-bottom-color: var(--ln-signal);
+}
+
+.ln-shell__stage {
+  flex: 1;
+  min-width: 0;
+  padding: var(--ln-space-5) var(--ln-space-6);
+}
+
+.ln-shell__footer {
+  display: flex;
+  align-items: center;
+  padding: var(--ln-space-4) var(--ln-space-6);
+  border-top: 1px solid var(--ln-hairline);
+  background: var(--ln-chrome-deep);
+}

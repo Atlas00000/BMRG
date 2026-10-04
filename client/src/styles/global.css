@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+@import '../../design/tokens.css';
+@import '../../design/motion.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ln-font-sans);
+  font-size: var(--ln-text-body);
+  line-height: var(--ln-leading-body);
+  color: var(--ln-ink);
+  background-color: var(--ln-canvas);
+  background-image:
+    radial-gradient(ellipse 70% 50% at 8% -8%, var(--ln-glow-a), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 0%, var(--ln-glow-b), transparent 50%),
+    linear-gradient(180deg, var(--ln-plane) 0%, var(--ln-canvas) 45%, var(--ln-canvas) 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    var(--ln-scan) 3px,
+    var(--ln-scan) 4px
+  );
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+a {
+  color: var(--ln-signal);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--ln-elevate-focus);
+}
+
+::selection {
+  background: var(--ln-signal-dim);
+  color: var(--ln-ink);
+}
+
+button,
+input {
+  font: inherit;
+}

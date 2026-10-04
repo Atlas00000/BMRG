@@ -1,0 +1,13 @@
+{
+  "current_path": "blotter/CURRENT.md",
+  "inbox": [],
+  "archives": [
+    { "task_id": "UI-P3-P10", "path": "blotter/archive/UI-P3-P10/", "verdict": "DONE" },
+    { "task_id": "UI-W03", "path": "blotter/archive/UI-W03/", "verdict": "DONE" },
+    { "task_id": "UI-W02", "path": "blotter/archive/UI-W02/", "verdict": "DONE" },
+    { "task_id": "UI-W01", "path": "blotter/archive/UI-W01/", "verdict": "DONE" },
+    { "task_id": "INF-EA-LIVE-WITHHOLD", "path": "blotter/archive/INF-EA-LIVE-WITHHOLD/", "verdict": "ACCEPT" },
+    { "task_id": "INF-FULL-REGRESSION", "path": "blotter/archive/INF-FULL-REGRESSION/", "verdict": "PASS" },
+    { "task_id": "EDX-P2-T04", "path": "blotter/archive/EDX-P2-T04/", "verdict": "CHAMPION" }
+  ]
+}

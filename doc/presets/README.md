@@ -21,6 +21,7 @@ Tester: EURUSD **M5** · every tick · **ACCOUNT CURRENCY**. Expert: `Experts\BM
 | **aistack (paper OS)** | `aistack.set` | **8399001** | AOS overlay · **STAY_PAPER** — not INF live wiring |
 | aistack Harvest long twin | `AOS_aistack_Harvest_long.set` | 8399001 | Same family · Harvest long window framing |
 | **INF LIVE_WITHHOLD** | `INF-LIVE_WITHHOLD_Harvest_long.set` | **8210204** | AOS ON · `InpAiOsMode=2` · baked L2 INF pin |
+| INF LIVE_WITHHOLD · ddl30 | `INF-LIVE_WITHHOLD_Harvest_long_ddl30.set` | **8210204** | Same as LIVE_WITHHOLD · `InpMaxDailyLossPct=30` |
 | INF export-only (no AI gate) | `EXP-P7-T03_export_Harvest_long.set` | 8210205 | Blotter refresh · engine logic unchanged |
 
 Locked metrics for Harvest engine: `infra/baselines/ENGINE_BASELINE_v1.json` · `doc/ai_OS_baseline.md` (EF **1.77** · n **530** · E_N **+0.091R**).

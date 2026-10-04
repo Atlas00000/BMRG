@@ -1,0 +1,47 @@
+.ln-metric-strip {
+  display: grid;
+  grid-template-columns: minmax(8rem, 1.35fr) repeat(4, minmax(4.5rem, 1fr)) auto;
+  gap: 0;
+  border: 1px solid var(--ln-hairline);
+  border-radius: var(--ln-radius-md);
+  background: linear-gradient(90deg, rgba(45, 212, 191, 0.06), transparent 28%), var(--ln-plane);
+  overflow: hidden;
+}
+
+.ln-metric-strip__cell {
+  padding: var(--ln-space-4) var(--ln-space-4);
+  border-right: 1px solid var(--ln-hairline);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ln-space-2);
+  min-width: 0;
+}
+
+.ln-metric-strip__cell:last-of-type {
+  border-right: none;
+}
+
+.ln-metric-strip__cell.is-lead {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.ln-metric-strip__lead-value {
+  font-size: 2rem !important;
+  color: var(--ln-signal);
+}
+
+.ln-metric-strip__trailing {
+  display: flex;
+  align-items: center;
+  padding: var(--ln-space-3) var(--ln-space-4);
+}
+
+@media (max-width: 900px) {
+  .ln-metric-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ln-metric-strip__cell {
+    border-bottom: 1px solid var(--ln-hairline);
+  }
+}

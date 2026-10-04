@@ -1,0 +1,11 @@
+# Railway service config for bmrg-api (deploy from repo root with Dockerfile path).
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "server/Dockerfile"
+watchPatterns = ["server/**", "infra/baselines/**", "infra/artefacts/**", "infra/fixtures/**", "client/fixtures/**", "blotter/CURRENT.md"]
+
+[deploy]
+healthcheckPath = "/healthz"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5

@@ -1,0 +1,37 @@
+.ln-surface {
+  position: relative;
+  background: var(--ln-plane);
+  box-shadow: var(--ln-elevate-plane);
+  border-radius: var(--ln-radius-md);
+}
+
+.ln-surface--flat {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.ln-surface--plane {
+  background: var(--ln-plane);
+}
+
+.ln-surface--plane2 {
+  background: var(--ln-plane-2);
+}
+
+.ln-surface--pad-none { padding: 0; }
+.ln-surface--pad-sm { padding: var(--ln-space-3); }
+.ln-surface--pad-md { padding: var(--ln-space-5); }
+.ln-surface--pad-lg { padding: var(--ln-space-6); }
+
+.ln-surface--accent-signal {
+  box-shadow: inset 3px 0 0 var(--ln-signal), var(--ln-elevate-plane);
+}
+
+.ln-surface--accent-warn {
+  box-shadow: inset 3px 0 0 var(--ln-warn), var(--ln-elevate-plane);
+}
+
+.ln-surface--accent-halt {
+  box-shadow: inset 3px 0 0 var(--ln-halt), var(--ln-elevate-plane);
+}

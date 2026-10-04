@@ -1,0 +1,155 @@
+/* Kyoto Ledger + Matcha Iron — design tokens
+ * Source: design/APP_THEME.md §5
+ * Light = :root default · Dark = prefers-color-scheme / [data-theme="dark"]
+ */
+:root {
+  color-scheme: light;
+
+  /* Colour — light */
+  --ln-canvas: #f4f2ec;
+  --ln-plane: #ebe7df;
+  --ln-plane-2: #e2ddd3;
+  --ln-hairline: #ded9cf;
+  --ln-hairline-strong: rgba(74, 93, 69, 0.35);
+  --ln-ink: #1c1c1a;
+  --ln-ink-muted: #5c5a54;
+  --ln-ink-faint: #8a867c;
+  --ln-signal: #4a5d45;
+  --ln-signal-dim: rgba(74, 93, 69, 0.12);
+  --ln-warn: #9a6b2f;
+  --ln-halt: #8b3a3a;
+  --ln-ok: #3d6b4a;
+  --ln-skip: #6b7168;
+  --ln-mark: #8b3a3a;
+
+  /* Space (4px base) */
+  --ln-space-0: 0;
+  --ln-space-1: 0.25rem;
+  --ln-space-2: 0.5rem;
+  --ln-space-3: 0.75rem;
+  --ln-space-4: 1rem;
+  --ln-space-5: 1.5rem;
+  --ln-space-6: 2rem;
+  --ln-space-7: 3rem;
+  --ln-space-8: 4.5rem;
+
+  /* Type */
+  --ln-font-display: "Fraunces", "Times New Roman", serif;
+  --ln-font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --ln-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --ln-text-display: 2.25rem;
+  --ln-text-title: 1.375rem;
+  --ln-text-body: 0.9375rem;
+  --ln-text-label: 0.75rem;
+  --ln-text-micro: 0.6875rem;
+  --ln-leading-tight: 1.15;
+  --ln-leading-body: 1.5;
+
+  /* Radius — restrained */
+  --ln-radius-sm: 2px;
+  --ln-radius-md: 4px;
+  --ln-radius-lg: 8px;
+
+  /* Elevation = tone + hairline (no soft multi-shadow stacks) */
+  --ln-elevate-plane: 0 0 0 1px var(--ln-hairline);
+  --ln-elevate-focus: 0 0 0 1px var(--ln-signal), 0 0 0 4px var(--ln-signal-dim);
+
+  /* Motion */
+  --ln-dur-fast: 180ms;
+  --ln-dur-base: 320ms;
+  --ln-dur-slow: 420ms;
+  --ln-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Shell geometry */
+  --ln-rail-width: 13.5rem;
+  --ln-header-height: 3.25rem;
+  --ln-stage-max: 72rem;
+
+  /* Atmosphere */
+  --ln-glow-a: rgba(74, 93, 69, 0.08);
+  --ln-glow-b: rgba(140, 58, 58, 0.04);
+  --ln-scan: rgba(28, 28, 26, 0.03);
+  --ln-chrome: rgba(244, 242, 236, 0.92);
+  --ln-chrome-deep: rgba(235, 231, 223, 0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --ln-canvas: #141513;
+    --ln-plane: #1c1d1a;
+    --ln-plane-2: #242522;
+    --ln-hairline: #2b2c28;
+    --ln-hairline-strong: rgba(143, 168, 138, 0.4);
+    --ln-ink: #eceae4;
+    --ln-ink-muted: #a8a59c;
+    --ln-ink-faint: #6e6b63;
+    --ln-signal: #8fa88a;
+    --ln-signal-dim: rgba(143, 168, 138, 0.14);
+    --ln-warn: #c4a06a;
+    --ln-halt: #c47a7a;
+    --ln-ok: #8fa88a;
+    --ln-skip: #7a8478;
+    --ln-mark: #c47a7a;
+
+    --ln-glow-a: rgba(143, 168, 138, 0.07);
+    --ln-glow-b: rgba(196, 122, 122, 0.05);
+    --ln-scan: rgba(255, 255, 255, 0.02);
+    --ln-chrome: rgba(20, 21, 19, 0.92);
+    --ln-chrome-deep: rgba(28, 29, 26, 0.88);
+  }
+}
+
+/* Explicit overrides (theme toggle later) */
+[data-theme='light'] {
+  color-scheme: light;
+
+  --ln-canvas: #f4f2ec;
+  --ln-plane: #ebe7df;
+  --ln-plane-2: #e2ddd3;
+  --ln-hairline: #ded9cf;
+  --ln-hairline-strong: rgba(74, 93, 69, 0.35);
+  --ln-ink: #1c1c1a;
+  --ln-ink-muted: #5c5a54;
+  --ln-ink-faint: #8a867c;
+  --ln-signal: #4a5d45;
+  --ln-signal-dim: rgba(74, 93, 69, 0.12);
+  --ln-warn: #9a6b2f;
+  --ln-halt: #8b3a3a;
+  --ln-ok: #3d6b4a;
+  --ln-skip: #6b7168;
+  --ln-mark: #8b3a3a;
+
+  --ln-glow-a: rgba(74, 93, 69, 0.08);
+  --ln-glow-b: rgba(140, 58, 58, 0.04);
+  --ln-scan: rgba(28, 28, 26, 0.03);
+  --ln-chrome: rgba(244, 242, 236, 0.92);
+  --ln-chrome-deep: rgba(235, 231, 223, 0.85);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --ln-canvas: #141513;
+  --ln-plane: #1c1d1a;
+  --ln-plane-2: #242522;
+  --ln-hairline: #2b2c28;
+  --ln-hairline-strong: rgba(143, 168, 138, 0.4);
+  --ln-ink: #eceae4;
+  --ln-ink-muted: #a8a59c;
+  --ln-ink-faint: #6e6b63;
+  --ln-signal: #8fa88a;
+  --ln-signal-dim: rgba(143, 168, 138, 0.14);
+  --ln-warn: #c4a06a;
+  --ln-halt: #c47a7a;
+  --ln-ok: #8fa88a;
+  --ln-skip: #7a8478;
+  --ln-mark: #c47a7a;
+
+  --ln-glow-a: rgba(143, 168, 138, 0.07);
+  --ln-glow-b: rgba(196, 122, 122, 0.05);
+  --ln-scan: rgba(255, 255, 255, 0.02);
+  --ln-chrome: rgba(20, 21, 19, 0.92);
+  --ln-chrome-deep: rgba(28, 29, 26, 0.88);
+}

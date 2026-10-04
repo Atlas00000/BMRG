@@ -1,0 +1,23 @@
+{
+  "magic": 8210204,
+  "preset_id": "INF-LIVE_WITHHOLD_Harvest_long",
+  "ea_version": "1.21",
+  "symbol": "EURUSD",
+  "timeframe": "M5",
+  "mode": "LIVE_WITHHOLD",
+  "kill_switch": false,
+  "model_semver": "L2skip_inf_p92_20260927_223519",
+  "attached": true,
+  "account": "28435",
+  "account_kind": "demo",
+  "fuses": {
+    "equity_halt": false,
+    "daily_loss_halt": false,
+    "l3_halt": false,
+    "pause": false,
+    "f_mult": 0.75,
+    "w250_ef": 0.0,
+    "note": "f=0.75 with W250 EF=0 observed in tester closes — flag for L4 stuck derisk"
+  },
+  "source": "client/fixtures/live/demo_status.json"
+}

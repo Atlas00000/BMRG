@@ -1,0 +1,41 @@
+{
+  "source": "MQL5/Logs/20260928.log · demo attach sample",
+  "path_hint": "C:/Users/emili/AppData/Roaming/MetaQuotes/Terminal/.../MQL5/Logs/20260928.log",
+  "lines": [
+    {
+      "t": "2026.09.28 15:06:12",
+      "level": "INFO",
+      "msg": "AOS ledger -> COMMON\\Files\\BMRG_AOS_ledger_8210204.csv"
+    },
+    {
+      "t": "2026.09.28 15:06:12",
+      "level": "INFO",
+      "msg": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519"
+    },
+    {
+      "t": "2026.09.28 15:06:12",
+      "level": "INFO",
+      "msg": "BMRG init OK | EURUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8210204 aos=1"
+    },
+    {
+      "t": "2026.09.28 15:06:13",
+      "level": "INFO",
+      "msg": "bar=2026.09.28 14:00 U=1.13756 M=1.13663 L=1.13570 C=1.13615 ATR=44.7pt BBw=0.16% side=NONE n=0 sig=0 no signal spr=7 halt=0 pause=0"
+    },
+    {
+      "t": "2026.09.28 15:09:59",
+      "level": "INFO",
+      "msg": "bar=2026.09.28 14:05 ... sig=0 no signal spr=6 halt=0 pause=0"
+    },
+    {
+      "t": "2026.09.28 15:14:59",
+      "level": "INFO",
+      "msg": "bar=2026.09.28 14:10 ... sig=0 no signal spr=6 halt=0 pause=0"
+    },
+    {
+      "t": "2026.09.28 15:19:59",
+      "level": "INFO",
+      "msg": "bar=2026.09.28 14:15 ... sig=0 no signal spr=6 halt=0 pause=0"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+.ln-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ln-space-2);
+}
+
+.ln-field__label {
+  font-size: var(--ln-text-label);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ln-ink-muted);
+}
+
+.ln-input {
+  min-height: 2.25rem;
+  padding: 0 var(--ln-space-3);
+  border: 1px solid var(--ln-hairline);
+  border-radius: var(--ln-radius-sm);
+  background: var(--ln-canvas);
+  color: var(--ln-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.ln-input::placeholder {
+  color: var(--ln-ink-faint);
+}
+
+.ln-input:focus {
+  border-color: var(--ln-hairline-strong);
+  outline: none;
+  box-shadow: var(--ln-elevate-focus);
+}

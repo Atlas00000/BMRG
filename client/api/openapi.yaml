@@ -1,0 +1,245 @@
+openapi: 3.0.3
+info:
+  title: BMRG Client Artefact API
+  version: 0.1.0
+  description: |
+    Read-only contracts over INF AGENT_PATHS artefacts.
+    Dev: Vite FS bridge serves these routes from `../infra/**`.
+    No Strategy Tester dependency. No order placement.
+servers:
+  - url: /api
+    description: Local Vite / optional local HTTP
+tags:
+  - name: health
+  - name: baseline
+  - name: pin
+  - name: ledger
+  - name: jobs
+  - name: auth
+  - name: prove
+paths:
+  /health/latest:
+    get:
+      tags: [health]
+      summary: Latest eval / obs scorecard
+      operationId: getHealthLatest
+      responses:
+        "200":
+          description: LATEST_EVAL payload (raw or adapted)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthLatest"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /baseline:
+    get:
+      tags: [baseline]
+      summary: Frozen ENGINE_BASELINE_v1
+      operationId: getBaseline
+      responses:
+        "200":
+          description: Baseline + adapted long-window health vector
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BaselineResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /pin:
+    get:
+      tags: [pin]
+      summary: LIVE model pin
+      operationId: getPin
+      responses:
+        "200":
+          description: LATEST_LIVE PIN
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PinResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /ledger:
+    get:
+      tags: [ledger]
+      summary: Skip / decision ledger pointer or CSV text
+      operationId: getLedger
+      parameters:
+        - name: magic
+          in: query
+          schema:
+            type: integer
+            example: 8210204
+      responses:
+        "200":
+          description: Ledger meta + optional preview rows
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LedgerResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /jobs:
+    get:
+      tags: [jobs]
+      summary: Latest box queue job
+      operationId: getJobsLatest
+      responses:
+        "200":
+          description: LATEST_JOB
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /auth:
+    get:
+      tags: [auth]
+      summary: Wiring authorisation + role stub
+      operationId: getAuth
+      responses:
+        "200":
+          description: WIRE_AUTHORISATION adapted with UI role
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /prove/cf:
+    get:
+      tags: [prove]
+      summary: CF scorecard (engine vs counterfactual)
+      operationId: getProveCf
+      responses:
+        "200":
+          description: Adapted CF compare
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CfProveResponse"
+        "404":
+          $ref: "#/components/responses/NotFound"
+components:
+  responses:
+    NotFound:
+      description: Artefact missing on disk
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ApiError"
+  schemas:
+    ApiError:
+      type: object
+      required: [error, path]
+      properties:
+        error:
+          type: string
+        path:
+          type: string
+        detail:
+          type: string
+    HealthVector:
+      type: object
+      properties:
+        n: { type: number }
+        wr_pct: { type: number }
+        ef_pp: { type: number }
+        e_n: { type: number }
+        bm_pp: { type: number }
+        leak_pp: { type: number }
+        zone: { type: string }
+        maxdd_pp:
+          type: number
+          nullable: true
+        magic:
+          type: integer
+          nullable: true
+        source:
+          type: string
+    BaselineResponse:
+      type: object
+      required: [baseline_id, health, engine]
+      properties:
+        baseline_id: { type: string }
+        health:
+          $ref: "#/components/schemas/HealthVector"
+        engine:
+          type: object
+          additionalProperties: true
+        raw:
+          type: object
+          additionalProperties: true
+    HealthLatest:
+      type: object
+      properties:
+        recipe: { type: string }
+        pass: { type: boolean }
+        source: { type: string }
+        raw:
+          type: object
+          additionalProperties: true
+    PinResponse:
+      type: object
+      required: [semver, mode]
+      properties:
+        semver: { type: string }
+        mode: { type: string }
+        promoted_at: { type: string }
+        operator_waiver: { type: boolean }
+        source: { type: string }
+    LedgerResponse:
+      type: object
+      properties:
+        kind: { type: string }
+        path: { type: string }
+        magic: { type: integer }
+        preview_rows:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        source: { type: string }
+    JobResponse:
+      type: object
+      properties:
+        job_id: { type: string }
+        status: { type: string }
+        verdict: { type: string, nullable: true }
+        started_at: { type: string }
+        source: { type: string }
+        raw:
+          type: object
+          additionalProperties: true
+    AuthResponse:
+      type: object
+      required: [role, authorised, allows, forbids_unless_extra_auth]
+      properties:
+        role:
+          type: string
+          enum: [Viewer, Operator]
+        authorised: { type: boolean }
+        allows:
+          type: array
+          items: { type: string }
+        forbids_unless_extra_auth:
+          type: array
+          items: { type: string }
+        ea_version: { type: string }
+        model: { type: string }
+        note: { type: string }
+        can_mutate:
+          type: boolean
+          description: Operator AND authorised; still respects forbids list per action
+    CfProveResponse:
+      type: object
+      properties:
+        engine_ef_pp: { type: number }
+        cf_ef_pp: { type: number }
+        engine_n: { type: number }
+        cf_n: { type: number }
+        n_skipped: { type: number }
+        verdict: { type: string }
+        source: { type: string }

@@ -1,0 +1,68 @@
+/* Motion grammar — Ledger Noir
+ * Respect prefers-reduced-motion everywhere.
+ */
+
+@keyframes ln-page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ln-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes ln-skeleton {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+.ln-page-enter {
+  animation: ln-page-enter var(--ln-dur-slow) var(--ln-ease-out) both;
+}
+
+.ln-page-enter-delay-1 { animation-delay: 60ms; }
+.ln-page-enter-delay-2 { animation-delay: 120ms; }
+.ln-page-enter-delay-3 { animation-delay: 180ms; }
+.ln-page-enter-delay-4 { animation-delay: 240ms; }
+.ln-page-enter-delay-5 { animation-delay: 300ms; }
+.ln-page-enter-delay-6 { animation-delay: 360ms; }
+
+.ln-state-crossfade {
+  transition: opacity var(--ln-dur-fast) var(--ln-ease-out),
+    color var(--ln-dur-fast) var(--ln-ease-out),
+    border-color var(--ln-dur-fast) var(--ln-ease-out),
+    background-color var(--ln-dur-fast) var(--ln-ease-out);
+}
+
+.ln-number-tick {
+  transition: opacity var(--ln-dur-base) var(--ln-ease-out);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ln-page-enter,
+  .ln-page-enter-delay-1,
+  .ln-page-enter-delay-2,
+  .ln-page-enter-delay-3,
+  .ln-page-enter-delay-4,
+  .ln-page-enter-delay-5,
+  .ln-page-enter-delay-6 {
+    animation: ln-fade 1ms linear both;
+  }
+
+  .ln-state-crossfade,
+  .ln-number-tick {
+    transition: none;
+  }
+
+  .ln-skeleton-block {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,50 @@
+.ln-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ln-space-1);
+  min-height: 1.375rem;
+  padding: 0 var(--ln-space-2);
+  border: 1px solid var(--ln-hairline);
+  border-radius: var(--ln-radius-sm);
+  font-size: var(--ln-text-micro);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background: transparent;
+  color: var(--ln-ink-muted);
+}
+
+.ln-badge--neutral {
+  color: var(--ln-ink-muted);
+}
+
+.ln-badge--signal {
+  color: var(--ln-signal);
+  border-color: var(--ln-hairline-strong);
+  background: var(--ln-signal-dim);
+}
+
+.ln-badge--ok {
+  color: var(--ln-ok);
+  border-color: rgba(91, 201, 138, 0.35);
+  background: rgba(91, 201, 138, 0.08);
+}
+
+.ln-badge--warn {
+  color: var(--ln-warn);
+  border-color: rgba(232, 165, 75, 0.4);
+  background: rgba(232, 165, 75, 0.08);
+}
+
+.ln-badge--halt {
+  color: var(--ln-halt);
+  border-color: rgba(232, 93, 93, 0.45);
+  background: rgba(232, 93, 93, 0.1);
+}
+
+.ln-badge--skip {
+  color: var(--ln-skip);
+  border-color: rgba(107, 140, 174, 0.4);
+  background: rgba(107, 140, 174, 0.08);
+}

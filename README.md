@@ -25,6 +25,7 @@
 8. [Presets](#8-presets)
 9. [Works today / does not](#9-works-today--does-not)
 10. [Quick start](#10-quick-start)
+11. [Client console](#11-client-console)
 
 ---
 
@@ -382,8 +383,29 @@ make.bat report
 
 ---
 
+## 11. Client console
+
+Read-first operator UI (`client/`) — Ledger Noir + Signal Teal. No order placement from the browser.
+
+```bat
+cd client
+npm install
+npm run dev
+```
+
+| Doc | Use |
+| --- | --- |
+| [`client/README.md`](./client/README.md) | Runbook · routes P0–P10 |
+| [`doc/client_roadmap.md`](./doc/client_roadmap.md) | Week board · exits |
+| [`doc/client_p3_p10_plan.md`](./doc/client_p3_p10_plan.md) | Live → Polish build plan |
+| [`doc/client_ft_console.md`](./doc/client_ft_console.md) | FT design · `AOS_LIVE_FT` gate |
+
+FT mutate surfaces stay **BLOCKED** until `WIRE_AUTHORISATION` allows `AOS_LIVE_FT`.
+
+---
+
 ### Bottom line
 
 Harvest is the profitable core. INF proved a modest L2 skip lift offline and shipped a **withhold-only** EA hook under operator auth. Industry posture: **contract tests → CF prove → multi-window path tests → blotter archive** — never a single Tester balance as truth.
 
-*Report snapshot aligned 2026-09-28 · BMRG v1.21 · INF W01–W11 DONE*
+*Report snapshot aligned 2026-09-28 · BMRG v1.21 · INF W01–W11 DONE · Client P3–P10 shipped (P9 FT BLOCKED)*

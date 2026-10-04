@@ -1,0 +1,31 @@
+.ln-health-vector {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ln-space-4);
+}
+
+.ln-health-vector__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ln-space-3);
+}
+
+.ln-health-vector__trail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ln-space-1);
+  min-width: 4.5rem;
+}
+
+.ln-health-vector__leak {
+  font-size: 1.25rem !important;
+}
+
+.ln-health-vector__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ln-space-3);
+  padding-top: var(--ln-space-2);
+  border-top: 1px solid var(--ln-hairline);
+}

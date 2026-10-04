@@ -1,0 +1,8 @@
+.ln-empty {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ln-space-3);
+  padding: var(--ln-space-6) 0;
+  max-width: 28rem;
+  border-top: 1px solid var(--ln-hairline);
+}

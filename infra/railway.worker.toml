@@ -1,0 +1,9 @@
+# Optional Railway worker service (Redis job consumer).
+# Create a second service pointing at this Dockerfile from repo root.
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "infra/images/worker/Dockerfile"
+
+[deploy]
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5

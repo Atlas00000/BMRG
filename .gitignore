@@ -11,6 +11,11 @@ venv/
 .coverage
 htmlcov/
 
+# Node / client
+node_modules/
+client/dist/
+*.local
+
 # Env / secrets
 .env
 .env.*
@@ -45,6 +50,11 @@ infra/artefacts/models/**/*.joblib
 # Local DB / redis dumps
 *.sql.gz
 dump.rdb
+
+# Deploy CLI link state (local only)
+.railway/
+client/.vercel/
+client/.env.local
 
 # Cursor local
 .cursor/
