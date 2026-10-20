@@ -1,0 +1,98 @@
+; BMRG-M15-XBRUSD-6M-P1_buyOnly_chart.set
+; Status: RESEARCH CHART PRESET / UNTESTED — not a live edge claim
+; EA: BMRG · G0 (MaxLevels=1) · XBRUSD / BRENT M15
+; Framework: unified_edge_framework.md
+; HARD RULE: never emit TP < SL → TP 310 > SL 250 · RR=1.24
+;
+; WHY P1 (postmortem magic 26101221 P0b):
+;   Mixed book: WR 43.9% < BWR 44.8% · E_N < 0
+;   Geometry OK (R≈RR). Failure = fake fades, especially SELLS:
+;     BUY  n=40 WR≈52% sumR≈+7R
+;     SELL n=42 WR≈36% sumR≈−9R
+;   Fast SL (med ~0.1h) = continuation after band touch.
+;   Test: is the edge one-sided? BUY only, same geom/ATR as P0b.
+;
+; Delta vs P0b: InpAllowSell=false · magic 26101222
+; Keep: SL/TP 250/310 · ATR max 525 · BBDev 2.2 · CD 2 · session 12–20 · Tue off · fade OFF
+; Load: Profiles/Tester/BMRG/XBRUSD/ on BRENT or XBRUSD M15
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Fade — pin false ===
+InpUseFadeConfirm=false||false||0||true||N
+InpFadeConfirmMaxBars=3||3||1||20||N
+InpFadeRequireInsideMid=true||false||0||true||N
+;=== Lot / risk % ===
+InpLotMode=1||0||0||1||N
+InpLot=0.01||0.01||0.001000||0.100000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=0.50||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||0.100000||N
+;=== Stops — TP > SL (RR=1.24) ===
+InpSL_Points=250||250||1||8000||N
+InpTP_Points=310||310||1||10000||N
+InpMaxSpread=40||40||1||500||N
+InpSlippage=20||20||1||300||N
+InpCooldownBars=2||2||1||30||N
+;=== Exposure ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time filter ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=12||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=20||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime — ATR max = Tester-native p75 (~525) ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||5000.000000||N
+InpATRMaxPoints=525.0||525.0||0.000000||5000.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions — BUY ONLY (one-sided edge test) ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=false||false||0||true||N
+InpMagic=26101222||26101222||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS OFF ===
+InpAOS_Enable=false||false||0||true||N
+InpAOS_L3_Enable=false||false||0||true||N
+InpAOS_L4_SizeMod=false||false||0||true||N
+InpAiOsMode=0||0||0||2||N
+InpAiModelSemver=L2skip_inf_p92_20260927_223519
+InpAiKillSwitch=true||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=true||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=44.6||50.0||1.000000||90.000000||N
+InpAOS_Leak=2.7||2.2||0.100000||10.000000||N
+InpAOS_R=1.24||1.0||0.100000||5.000000||N
+InpAOS_W250=250||250||1||500||N
+InpAOS_Ledger=false||false||0||true||N

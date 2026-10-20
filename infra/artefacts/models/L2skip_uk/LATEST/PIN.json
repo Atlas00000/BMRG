@@ -1,0 +1,10 @@
+{
+  "semver": "L2skip_uk_p_prior_20261012_225955",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "overlay_champ": "L2det_uk_v1b",
+  "ai_champ": null,
+  "updated_utc": "2026-10-12T22:59:55.224054+00:00",
+  "auc_tip_oos": 0.38769230769230767,
+  "best_verdict": "DISARM"
+}

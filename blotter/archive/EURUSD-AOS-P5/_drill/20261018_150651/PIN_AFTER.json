@@ -1,0 +1,13 @@
+{
+  "semver": "L2skip_eur_m15_p_pretip_20261018_150651",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "overlay_champ": "L2det_eur_m15_v1b",
+  "ai_champ": null,
+  "updated_utc": "2026-10-18T15:06:51.895615+00:00",
+  "restore_reason": "P5-T03_rollback_drill_restore",
+  "previous_semver": null,
+  "auc_tip_oos": 0.5833333333333334,
+  "best_verdict": "SHADOW_CANDIDATE",
+  "chrono_holdout_verdict": "DISARM"
+}

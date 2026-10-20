@@ -1,0 +1,15 @@
+{
+  "task": "UK100-AOS-P4-TESTER",
+  "scored_utc": "2026-10-12T22:48:44.215971+00:00",
+  "window": "2026.01.01 \u2192 2026.08.31 (Tester; hist from 2025.12.17)",
+  "magic": 26111304,
+  "final_balance_usd": 490.7,
+  "ledger_rows": 182,
+  "FIRE": 50,
+  "HALT_SKIP_L3": 132,
+  "L2DET_SKIP": 0,
+  "Thu_among_FIRE": 10,
+  "halt_start": "2026.02.25 14:45",
+  "verdict": "L2DET_NOT_APPLIED \u2014 UK inputs absent from Tester dump; L3 BELOW latch after Feb",
+  "fix": "Reload .set after compile; confirm InpAOS_UK_L2detEnable=true in Inputs; prefer tip May\u2192Oct; consider L3 off for L2det smoke"
+}

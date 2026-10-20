@@ -1,0 +1,14 @@
+{
+  "store": "L2skip_de40",
+  "schema_version": "1.0.0",
+  "asset": "DE40",
+  "symbol_mt5": "DE30",
+  "tf": "M15",
+  "policy": "doc/assets/DE40/aos_l5_retrain.md",
+  "overlay_champ": "L2det_de40_v1_BUY_near_atr",
+  "overlay_mqh": false,
+  "train_entrypoint": "infra/src/train/train_l2_de40.py",
+  "rollback_entrypoint": "infra/artefacts/models/L2skip_de40/rollback_l2skip_de40.py",
+  "mqh_auto_export": false,
+  "live_withhold_allowed": false
+}

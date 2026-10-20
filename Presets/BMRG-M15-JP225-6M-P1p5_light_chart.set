@@ -1,0 +1,91 @@
+; BMRG-M15-JP225-6M-P1p5_light_chart.set
+; Status: RESEARCH CHART PRESET / UNTESTED — P1.5 light if P1 fade starves
+; EA: BMRG v1.23 · G0 · Symbol JPN225 M15
+; HARD RULE: never TP < SL · SL/TP FROZEN 23260/34890 (RR=1.50)
+; Deposit/lot unchanged
+;
+; WHY P1.5: P1 fade-confirm can starve fires (GBPJPY lesson). Light WR lift without fade:
+;   BBDev 2.3 · Cooldown 4 · ATR max ≈ p70 (18620) · Fade OFF
+; Probe May–Aug: n≈66 · WR≈47.0% · EF +2.7pp · E_N +0.17R
+; Magic 26101905
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.3||2.3||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Fade confirm OFF (light sleeve) ===
+InpUseFadeConfirm=false||false||0||true||N
+InpFadeConfirmMaxBars=3||3||1||20||N
+InpFadeRequireInsideMid=true||false||0||true||N
+;=== Lot unchanged ===
+InpLotMode=1||0||0||1||N
+InpLot=0.1||0.01||0.001000||1.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.00||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.1||0.0||0.000000||1.000000||N
+;=== Stops FROZEN ===
+InpSL_Points=23260||23260||1||40000||N
+InpTP_Points=34890||34890||1||50000||N
+InpMaxSpread=3000||3000||1||6000||N
+InpSlippage=100||100||1||400||N
+InpCooldownBars=4||4||1||30||N
+;=== Exposure ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time 08–17 skip Tue ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=8||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=17||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== ATR max ≈ p70 (tighter than P0 p75) ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||30000.000000||N
+InpATRMaxPoints=18620.0||18620.0||0.000000||30000.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26101905||26101905||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS OFF ===
+InpAOS_Enable=false||false||0||true||N
+InpAOS_L3_Enable=false||false||0||true||N
+InpAOS_L4_SizeMod=false||false||0||true||N
+InpAiOsMode=0||0||0||2||N
+InpAiModelSemver=L2skip_inf_p92_20260927_223519
+InpAiKillSwitch=true||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=true||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=40.0||50.0||1.000000||90.000000||N
+InpAOS_Leak=4.3||2.2||0.100000||20.000000||N
+InpAOS_R=1.50||1.0||0.100000||5.000000||N
+InpAOS_W250=250||250||1||500||N
+InpAOS_Ledger=false||false||0||true||N

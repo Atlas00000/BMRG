@@ -1,0 +1,72 @@
+{
+  "task": "EDX-P5-T02",
+  "identity": {
+    "magic": "8230502",
+    "StartHour": "13",
+    "TradeMon": "false",
+    "SL_TP": "300/300",
+    "window": "2026.05.01->2026.10.06"
+  },
+  "n": 61,
+  "WR": 60.66,
+  "R": 1.0,
+  "BM_pp": 10.66,
+  "Leak_pp": 7.5,
+  "EF_pp": 3.16,
+  "M_pp": 11.91,
+  "E_N": 0.213,
+  "pnl": 39.1,
+  "zone": "Fragile",
+  "n_hour12": 0,
+  "n_Mon": 0,
+  "months": {
+    "2026-05": {
+      "n": 14,
+      "WR": 71.4,
+      "E_N": 0.429
+    },
+    "2026-06": {
+      "n": 12,
+      "WR": 66.7,
+      "E_N": 0.333
+    },
+    "2026-07": {
+      "n": 14,
+      "WR": 71.4,
+      "E_N": 0.429
+    },
+    "2026-08": {
+      "n": 8,
+      "WR": 75.0,
+      "E_N": 0.5
+    },
+    "2026-09": {
+      "n": 11,
+      "WR": 18.2,
+      "E_N": -0.636
+    },
+    "2026-10": {
+      "n": 2,
+      "WR": 50.0,
+      "E_N": 0.0
+    }
+  },
+  "med_spread": 15,
+  "final": 439.1,
+  "delta_vs_P0_TIP": {
+    "E_N": 0.09,
+    "EF_pp": 4.5,
+    "pnl": 11.3,
+    "n": -12
+  },
+  "delta_vs_P5_T01": {
+    "E_N": -0.191,
+    "EF_pp": -10.05,
+    "pnl": -18.0,
+    "n": 14
+  },
+  "sep_L3": true,
+  "verdict": "ACCEPT_TIP",
+  "reason": "E_N>0 and improves tip vs P0-T04; L3 cells noted if present",
+  "champion_sleeve": "P5 stack Start13+skipMon SL300/300 (MayAug primary; tip L3 OK)"
+}

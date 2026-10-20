@@ -1,0 +1,93 @@
+{
+  "model_semver": "L2skip_aud_p90_20261008_122523",
+  "symbol": "AUDUSD",
+  "layer": "L2",
+  "skip_quantile": 0.9,
+  "uncertain_band": 0.03,
+  "thr_full_ref": 0.6331355787666371,
+  "n_train_full": 126,
+  "n_oos": 76,
+  "skip_rate_oos": 0.2631578947368421,
+  "fires_kept_pct_oos": 73.6842105263158,
+  "loser_recall_oos": 0.21212121212121213,
+  "auc_oos": 0.4637068357998591,
+  "folds": [
+    {
+      "fold": 1,
+      "train_n": 50,
+      "test_n": 25,
+      "thr": 0.6797158252813432,
+      "skip_rate": 0.84,
+      "loser_recall": 0.7272727272727273,
+      "auc": 0.24025974025974028
+    },
+    {
+      "fold": 2,
+      "train_n": 75,
+      "test_n": 25,
+      "thr": 0.6633414074954738,
+      "skip_rate": 0.0,
+      "loser_recall": 0.0,
+      "auc": 0.5972222222222223
+    },
+    {
+      "fold": 3,
+      "train_n": 100,
+      "test_n": 25,
+      "thr": 0.680033283078394,
+      "skip_rate": 0.0,
+      "loser_recall": 0.0,
+      "auc": 0.3782051282051282
+    },
+    {
+      "fold": 4,
+      "train_n": 125,
+      "test_n": 1,
+      "thr": 0.6360366055343851,
+      "skip_rate": 0.0,
+      "loser_recall": 0.0,
+      "auc": NaN
+    }
+  ],
+  "wf": [
+    {
+      "fold_id": 1,
+      "train_start": 0,
+      "train_end": 50,
+      "test_start": 50,
+      "test_end": 75,
+      "train_n": 50,
+      "test_n": 25
+    },
+    {
+      "fold_id": 2,
+      "train_start": 0,
+      "train_end": 75,
+      "test_start": 75,
+      "test_end": 100,
+      "train_n": 75,
+      "test_n": 25
+    },
+    {
+      "fold_id": 3,
+      "train_start": 0,
+      "train_end": 100,
+      "test_start": 100,
+      "test_end": 125,
+      "train_n": 100,
+      "test_n": 25
+    },
+    {
+      "fold_id": 4,
+      "train_start": 0,
+      "train_end": 125,
+      "test_start": 125,
+      "test_end": 126,
+      "train_n": 125,
+      "test_n": 1
+    }
+  ],
+  "tape": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\tape\\AUDUSD_CHAMP_AIOS_TAPE.parquet",
+  "created_at": "2026-10-08T12:25:23.814729+00:00",
+  "note": "Small-n AUDUSD FT model; W50 AOS window companion; not EUR INF replace"
+}

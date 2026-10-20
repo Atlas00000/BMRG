@@ -1,0 +1,26 @@
+{
+  "task": "JP225-AOS-P1",
+  "window": "2026.05.01-2026.08.31",
+  "magic": 26101904,
+  "symbol": "JPN225",
+  "n": 79,
+  "WR": 0.43038,
+  "BM_pp": 3.038,
+  "E_N": 0.075949,
+  "spread_pts_entry": {
+    "median": 1400.0,
+    "mean": 1546.203,
+    "min": 1050,
+    "max": 2300
+  },
+  "SL_pts": 23260.0,
+  "R_design": 1.5,
+  "c_R_proxy_2x_med": 0.120378,
+  "Leak_proxy_pp": 4.8151,
+  "EF_proxy_pp": -1.7772,
+  "Leak_prior_pp": 4.3,
+  "EF_prior_pp": -1.262,
+  "Leak_source": "journal_2x_entry_spread_median",
+  "note": "Not full deal blotter (no exit spread/commission/swap). Tester entry spreads may understate live ~2300 pts \u2014 replace with measured deals when exported. Prior ~4.3 pp remains Stage-1 authority until then.",
+  "zone": "regime_fragile_tip_prior"
+}

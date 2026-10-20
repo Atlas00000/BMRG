@@ -1,0 +1,9 @@
+{
+  "semver": "L2skip_uk_m5_p_prior_20261020_113842",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "tf": "M5",
+  "mqh_exported": false,
+  "live_withhold": false,
+  "policy": "doc/assets/UK100/aos_l5_retrain_M5.md"
+}

@@ -1,0 +1,10 @@
+{
+  "semver": "L2skip_de40_m5_p_prior_20261020_121135",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "overlay_champ": "L2det_de40_m5_v1b",
+  "ai_champ": null,
+  "updated_utc": "2026-10-20T12:11:35.308018+00:00",
+  "auc_tip_oos": 0.5104997341839448,
+  "best_verdict": "DISARM"
+}

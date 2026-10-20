@@ -1,0 +1,62 @@
+{
+  "task": "UK100-AOS-P4",
+  "generated_utc": "2026-10-12T22:35:02.701477+00:00",
+  "stacks": {
+    "det_v1b": {
+      "n_signals": 51,
+      "n_fire": 33,
+      "n_l2det_skip": 18,
+      "n_l2ai_shadow_skip": 0,
+      "n_l3_halt": 0,
+      "n_l8_advise": 5,
+      "WR": 60.61,
+      "E_N": 0.3636,
+      "EF_proxy_pp": 11.895,
+      "skip_precision_losers": 0.7222,
+      "l8_on_losers": 5,
+      "l8_on_winners": 0
+    },
+    "det_v1b_jul": {
+      "n_signals": 51,
+      "n_fire": 29,
+      "n_l2det_skip": 22,
+      "n_l2ai_shadow_skip": 0,
+      "n_l3_halt": 0,
+      "n_l8_advise": 5,
+      "WR": 62.07,
+      "E_N": 0.3966,
+      "EF_proxy_pp": 13.358,
+      "skip_precision_losers": 0.6818,
+      "l8_on_losers": 5,
+      "l8_on_winners": 0
+    },
+    "det_v1b_plus_ai_shadow": {
+      "n_signals": 51,
+      "n_fire": 33,
+      "n_l2det_skip": 18,
+      "n_l2ai_shadow_skip": 1,
+      "n_l3_halt": 0,
+      "n_l8_advise": 5,
+      "WR": 60.61,
+      "E_N": 0.3636,
+      "EF_proxy_pp": 11.895,
+      "skip_precision_losers": 0.7222,
+      "l8_on_losers": 5,
+      "l8_on_winners": 0
+    },
+    "det_v1b_jul_plus_ai_shadow": {
+      "n_signals": 51,
+      "n_fire": 29,
+      "n_l2det_skip": 22,
+      "n_l2ai_shadow_skip": 1,
+      "n_l3_halt": 0,
+      "n_l8_advise": 5,
+      "WR": 62.07,
+      "E_N": 0.3966,
+      "EF_proxy_pp": 13.358,
+      "skip_precision_losers": 0.6818,
+      "l8_on_losers": 5,
+      "l8_on_winners": 0
+    }
+  }
+}

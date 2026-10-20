@@ -1,0 +1,10 @@
+{
+  "semver": null,
+  "mode": "DISARM",
+  "role": "disarmed",
+  "overlay_champ": "L2det_de40_v1_BUY_near_atr",
+  "ai_champ": null,
+  "updated_utc": "2026-10-19T15:04:58.682883+00:00",
+  "disarm_reason": "P5-T03_rollback_drill",
+  "previous_semver": "L2skip_de40_p_pretip_20261019_150458"
+}

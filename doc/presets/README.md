@@ -14,6 +14,12 @@ Tester: EURUSD **M5** · every tick · **ACCOUNT CURRENCY**. Expert: `Experts\BM
 
 | Role | File | Magic | Stack |
 | --- | --- | --- | --- |
+| **Book A Harvest** (meanrev Tier-1 research) | `BOOKA.md` + `BOOKA-Harvest_*_M5_G0.set` | **8221101–03** | Engine only · EURUSD→GBPUSD→AUDUSD · AOS OFF · see `BOOKA.md` |
+| **AUDUSD EDX champion** | `AUDUSD-CHAMP_Harvest_start13_skipMon_G0.set` | **8230901** | Start13+skipMon · research KEEP ★ · AOS OFF |
+| **AUDUSD LIVE** | `AUDUSD-AIOS_SCALE_Risk3_champ_G0.set` | **8230931** | AIOS LIVE_WITHHOLD · **Risk 3%** · signed live 2026-10-08 |
+| AUDUSD AIOS FT twin | `AUDUSD-AIOS_LIVE_WITHHOLD_champ_G0.set` | **8230921** | Same geom · Risk 0.5% · FT compare only |
+| **AUDUSD fresh expectancy** | `RE-AUDUSD-M5-P0.md` + `RE-AUDUSD-M5-P0_posEN_G0.set` | **8222101** | P0 RR1.5 — failed stress WR (parked) |
+| **AUDUSD stress WR P1** | `RE-AUDUSD-M5-P1.md` + `RE-AUDUSD-M5-P1_stressWR_G0.set` | **8222102** | TP≥SL 320/320 · BBDev 2.5 · 07–17 · skip Tue |
 | **Harvest champion (engine baseline)** | `EDX-P2-T04_SL300_TP300_RR1_champFilters_G0_long.set` | **8210204** | Engine only · SL300/TP300 · 12–20 · skip Tue · G0 |
 | EDX discovery baseline (pre-champ) | `EDX-P0-T01_baseline_G0-EF-G1_EURUSD-M5_long.set` | 8210001 | Engine · early EF-G1 lock |
 | Growth sleeve (secondary ref) | `EDX-P4-T01_champion_T05_currency_G0_long.set` | 8210401 | Engine · not OS/INF default |

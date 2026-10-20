@@ -1,0 +1,288 @@
+{
+  "source_magic": "8230111",
+  "window": "2026.05.01->2026.08.31",
+  "n": 58,
+  "overall": {
+    "n": 58,
+    "WR": 62.1,
+    "BM_pp": 12.1,
+    "E_N": 0.241,
+    "gate_n30": true
+  },
+  "by_hour": {
+    "12": {
+      "n": 24,
+      "WR": 41.7,
+      "BM_pp": -8.3,
+      "E_N": -0.167,
+      "gate_n30": false
+    },
+    "13": {
+      "n": 8,
+      "WR": 62.5,
+      "BM_pp": 12.5,
+      "E_N": 0.25,
+      "gate_n30": false
+    },
+    "14": {
+      "n": 7,
+      "WR": 71.4,
+      "BM_pp": 21.4,
+      "E_N": 0.429,
+      "gate_n30": false
+    },
+    "15": {
+      "n": 5,
+      "WR": 60.0,
+      "BM_pp": 10.0,
+      "E_N": 0.2,
+      "gate_n30": false
+    },
+    "16": {
+      "n": 2,
+      "WR": 100.0,
+      "BM_pp": 50.0,
+      "E_N": 1.0,
+      "gate_n30": false
+    },
+    "17": {
+      "n": 5,
+      "WR": 80.0,
+      "BM_pp": 30.0,
+      "E_N": 0.6,
+      "gate_n30": false
+    },
+    "18": {
+      "n": 6,
+      "WR": 100.0,
+      "BM_pp": 50.0,
+      "E_N": 1.0,
+      "gate_n30": false
+    },
+    "19": {
+      "n": 1,
+      "WR": 100.0,
+      "BM_pp": 50.0,
+      "E_N": 1.0,
+      "gate_n30": false
+    }
+  },
+  "by_session": {
+    "12-14_LON_open": {
+      "n": 32,
+      "WR": 46.9,
+      "BM_pp": -3.1,
+      "E_N": -0.062,
+      "gate_n30": true
+    },
+    "14-17_LON-NY_overlap": {
+      "n": 14,
+      "WR": 71.4,
+      "BM_pp": 21.4,
+      "E_N": 0.429,
+      "gate_n30": false
+    },
+    "17-20_NY": {
+      "n": 12,
+      "WR": 91.7,
+      "BM_pp": 41.7,
+      "E_N": 0.833,
+      "gate_n30": false
+    }
+  },
+  "by_dow": {
+    "Mon": {
+      "n": 13,
+      "WR": 46.2,
+      "BM_pp": -3.8,
+      "E_N": -0.077,
+      "gate_n30": false
+    },
+    "Tue": {
+      "n": 0
+    },
+    "Wed": {
+      "n": 17,
+      "WR": 64.7,
+      "BM_pp": 14.7,
+      "E_N": 0.294,
+      "gate_n30": false
+    },
+    "Thu": {
+      "n": 13,
+      "WR": 61.5,
+      "BM_pp": 11.5,
+      "E_N": 0.231,
+      "gate_n30": false
+    },
+    "Fri": {
+      "n": 15,
+      "WR": 73.3,
+      "BM_pp": 23.3,
+      "E_N": 0.467,
+      "gate_n30": false
+    },
+    "Sat": {
+      "n": 0
+    },
+    "Sun": {
+      "n": 0
+    }
+  },
+  "rank_session": [
+    {
+      "cell": "17-20_NY",
+      "n": 12,
+      "WR": 91.7,
+      "BM_pp": 41.7,
+      "E_N": 0.833,
+      "gate_n30": false
+    },
+    {
+      "cell": "14-17_LON-NY_overlap",
+      "n": 14,
+      "WR": 71.4,
+      "BM_pp": 21.4,
+      "E_N": 0.429,
+      "gate_n30": false
+    },
+    {
+      "cell": "12-14_LON_open",
+      "n": 32,
+      "WR": 46.9,
+      "BM_pp": -3.1,
+      "E_N": -0.062,
+      "gate_n30": true
+    }
+  ],
+  "rank_hour": [
+    {
+      "cell": "18",
+      "n": 6,
+      "WR": 100.0,
+      "BM_pp": 50.0,
+      "E_N": 1.0,
+      "gate_n30": false
+    },
+    {
+      "cell": "17",
+      "n": 5,
+      "WR": 80.0,
+      "BM_pp": 30.0,
+      "E_N": 0.6,
+      "gate_n30": false
+    },
+    {
+      "cell": "14",
+      "n": 7,
+      "WR": 71.4,
+      "BM_pp": 21.4,
+      "E_N": 0.429,
+      "gate_n30": false
+    },
+    {
+      "cell": "13",
+      "n": 8,
+      "WR": 62.5,
+      "BM_pp": 12.5,
+      "E_N": 0.25,
+      "gate_n30": false
+    },
+    {
+      "cell": "15",
+      "n": 5,
+      "WR": 60.0,
+      "BM_pp": 10.0,
+      "E_N": 0.2,
+      "gate_n30": false
+    },
+    {
+      "cell": "12",
+      "n": 24,
+      "WR": 41.7,
+      "BM_pp": -8.3,
+      "E_N": -0.167,
+      "gate_n30": false
+    }
+  ],
+  "rank_dow": [
+    {
+      "cell": "Fri",
+      "n": 15,
+      "WR": 73.3,
+      "BM_pp": 23.3,
+      "E_N": 0.467,
+      "gate_n30": false
+    },
+    {
+      "cell": "Wed",
+      "n": 17,
+      "WR": 64.7,
+      "BM_pp": 14.7,
+      "E_N": 0.294,
+      "gate_n30": false
+    },
+    {
+      "cell": "Thu",
+      "n": 13,
+      "WR": 61.5,
+      "BM_pp": 11.5,
+      "E_N": 0.231,
+      "gate_n30": false
+    },
+    {
+      "cell": "Mon",
+      "n": 13,
+      "WR": 46.2,
+      "BM_pp": -3.8,
+      "E_N": -0.077,
+      "gate_n30": false
+    }
+  ],
+  "BM_worst_session": {
+    "cell": "12-14_LON_open",
+    "n": 32,
+    "WR": 46.9,
+    "BM_pp": -3.1,
+    "E_N": -0.062,
+    "gate_n30": true,
+    "note": "n>=30"
+  },
+  "BM_worst_hour": {
+    "cell": "12",
+    "n": 24,
+    "WR": 41.7,
+    "BM_pp": -8.3,
+    "E_N": -0.167,
+    "gate_n30": false,
+    "note": "provisional (no cell n>=30)"
+  },
+  "BM_worst_dow": {
+    "cell": "Mon",
+    "n": 13,
+    "WR": 46.2,
+    "BM_pp": -3.8,
+    "E_N": -0.077,
+    "gate_n30": false,
+    "note": "provisional (no cell n>=30)"
+  },
+  "concentration_session": {
+    "best": "17-20_NY",
+    "share": 0.625,
+    "flag": false
+  },
+  "p1_runs_present": [
+    "8230111",
+    "8230112"
+  ],
+  "all_magics_tail": [
+    "8221103",
+    "8210001",
+    "8230101",
+    "8230104",
+    "8230104",
+    "8230151",
+    "8230111",
+    "8230112"
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "parity": {
+    "tip": {
+      "tue_fires": 0,
+      "atr_gt_2380": 0,
+      "verdict": "PASS"
+    },
+    "ytd": {
+      "tue_fires": 0,
+      "atr_gt_2380": 0,
+      "verdict": "PASS"
+    }
+  },
+  "preferred_stack": "L2det_Oct_OR_H14_16",
+  "preferred": {
+    "policy": "skip_Oct_OR_H14_16",
+    "baseline": {
+      "n": 123,
+      "WR": 0.536585,
+      "E_N": 0.207317,
+      "BM_pp": 9.2141,
+      "EF_prior_pp": 2.2141,
+      "EF_proxy_pp": 8.1474
+    },
+    "kept": {
+      "n": 104,
+      "WR": 0.576923,
+      "E_N": 0.298077,
+      "BM_pp": 13.2479,
+      "EF_prior_pp": 6.2479,
+      "EF_proxy_pp": 12.1812
+    },
+    "skips_n": 19,
+    "fire_retention_pct": 84.55,
+    "precision_losers": 0.6842,
+    "\u0394E_N": 0.09076,
+    "\u0394EF_prior_pp": 4.0338,
+    "fp_aug_winners": 1,
+    "fp_sell_winners": 3,
+    "fp_wed_winners": 1,
+    "fp_h08_winners": 0,
+    "fp_h10_winners": 1,
+    "fp_near_atr_winners": 3,
+    "verdict": "ARM_SOFT"
+  },
+  "top_candidates": [
+    {
+      "name": "L2det_Oct_OR_H14_16",
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.09076,
+      "ret": 84.55,
+      "prec": 0.6842,
+      "fp_aug": 1,
+      "fp_sell": 3
+    },
+    {
+      "name": "L2det_v1c_H14_16_OR_BUY_Oct",
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.087494,
+      "ret": 86.18,
+      "prec": 0.7059,
+      "fp_aug": 1,
+      "fp_sell": 2
+    },
+    {
+      "name": "L2det_v1_BUY_H14_16_OR_Oct",
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.08435,
+      "ret": 87.8,
+      "prec": 0.7333,
+      "fp_aug": 1,
+      "fp_sell": 1
+    },
+    {
+      "name": "L2det_v1b_BUY_H14_16_OR_BUY_Oct",
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.081319,
+      "ret": 89.43,
+      "prec": 0.7692,
+      "fp_aug": 1,
+      "fp_sell": 0
+    },
+    {
+      "name": "L2det_H14_16",
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.060865,
+      "ret": 89.43,
+      "prec": 0.6923,
+      "fp_aug": 1,
+      "fp_sell": 2
+    },
+    {
+      "name": "L2det_BUY_fragile",
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.059673,
+      "ret": 83.74,
+      "prec": 0.6,
+      "fp_aug": 0,
+      "fp_sell": 0
+    },
+    {
+      "name": "L2det_BUY_H14_16",
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.055841,
+      "ret": 92.68,
+      "prec": 0.7778,
+      "fp_aug": 1,
+      "fp_sell": 0
+    },
+    {
+      "name": "L2det_Oct",
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.044857,
+      "ret": 93.5,
+      "prec": 0.75,
+      "fp_aug": 0,
+      "fp_sell": 1
+    }
+  ],
+  "L2AI_verdict": "DISARM",
+  "L2AI_auc_tip": 0.5105,
+  "key_policies": {
+    "skip_H14_16": {
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.060865,
+      "ret": 89.43,
+      "prec": 0.6923,
+      "fp_aug": 1,
+      "fp_sell": 2
+    },
+    "skip_Oct": {
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.044857,
+      "ret": 93.5,
+      "prec": 0.75,
+      "fp_aug": 0,
+      "fp_sell": 1
+    },
+    "skip_BUY": {
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "\u0394E_N": 0.220568,
+      "ret": 42.28,
+      "prec": 0.5352,
+      "fp_aug": 12,
+      "fp_sell": 0
+    },
+    "skip_BUY_if_H14_16": {
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.055841,
+      "ret": 92.68,
+      "prec": 0.7778,
+      "fp_aug": 1,
+      "fp_sell": 0
+    },
+    "skip_BUY_if_near_atr": {
+      "verdict": "DISARM",
+      "\u0394E_N": -0.013439,
+      "ret": 79.67,
+      "prec": 0.44,
+      "fp_aug": 4,
+      "fp_sell": 0
+    },
+    "skip_near_atr_all": {
+      "verdict": "REJECT",
+      "\u0394E_N": -0.069386,
+      "ret": 70.73,
+      "prec": 0.3889,
+      "fp_aug": 5,
+      "fp_sell": 8
+    },
+    "skip_MISMATCH_all": {
+      "verdict": "HOLD_SOFT",
+      "\u0394E_N": 0.023815,
+      "ret": 86.18,
+      "prec": 0.5294,
+      "fp_aug": 0,
+      "fp_sell": 6
+    },
+    "skip_Sep_Oct": {
+      "verdict": "HOLD_SOFT",
+      "\u0394E_N": 0.0613,
+      "ret": 76.42,
+      "prec": 0.5517,
+      "fp_aug": 0,
+      "fp_sell": 5
+    },
+    "ytd_skip_Feb": {
+      "verdict": "ARM_SOFT",
+      "\u0394E_N": 0.060096,
+      "ret": 86.54,
+      "prec": 0.6429,
+      "fp_aug": 0,
+      "fp_sell": 3
+    }
+  }
+}

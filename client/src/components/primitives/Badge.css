@@ -33,8 +33,9 @@
 
 .ln-badge--warn {
   color: var(--ln-warn);
-  border-color: rgba(232, 165, 75, 0.4);
-  background: rgba(232, 165, 75, 0.08);
+  border-color: color-mix(in srgb, var(--ln-warn) 55%, var(--ln-hairline));
+  background: color-mix(in srgb, var(--ln-warn) 16%, transparent);
+  font-weight: 700;
 }
 
 .ln-badge--halt {

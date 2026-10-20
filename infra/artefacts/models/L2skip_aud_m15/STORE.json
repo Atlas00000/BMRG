@@ -1,0 +1,13 @@
+{
+  "store": "L2skip_aud_m15",
+  "schema_version": "1.0.0",
+  "asset": "AUDUSD",
+  "tf": "M15",
+  "policy": "doc/assets/AUDUSD/aos_l5_retrain.md",
+  "overlay_champ": "L2det_aud_m15_v1",
+  "train_entrypoint": "infra/src/train/train_l2_audusd_m15.py",
+  "rollback_entrypoint": "infra/artefacts/models/L2skip_aud_m15/rollback_l2skip_aud_m15.py",
+  "mqh_auto_export": false,
+  "live_withhold_allowed": false,
+  "live_collision": "separate_from_L2skip_aud_M5_and_magic_8230931"
+}

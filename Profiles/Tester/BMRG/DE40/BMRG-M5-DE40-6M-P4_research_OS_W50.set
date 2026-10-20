@@ -1,0 +1,102 @@
+; BMRG-M5-DE40-6M-P4_research_OS_W50.set
+; Status: RESEARCH OS / TESTER — L2det M5 v1b LIVE_WITHHOLD · L3+L4+ledger · L2AI OFF
+; EA: BMRG · Bollinger Mean-Reversion Grid · G0 (MaxLevels=1)
+; Symbol: DE40 → MT5 DE30 | Chart TF: M5 | Window intent: 2026.05.01 → 2026.10.19 tip
+; Parent chart: BMRG-M5-DE40-6M-P0_balanced_chart.set (magic 26101903)
+; AIOS: DE40-M5-AOS-P4 · doc/assets/DE40/aos_l6_ledger_M5.md · AOS_L2det_de_m5.mqh
+; HARD RULE: never emit TP < SL → InpTP_Points (8750) > InpSL_Points (7000) · RR=1.25
+;
+; L2det v1b: (BUY ∧ H14|16) ∨ (BUY ∧ Oct) — NOT M15 BUY∧nearATR
+; Tester: compile BMRG.mq5 → load on DE30 M5 · dates 2026.05.01→2026.10.19
+; Expect: AOS L2DET_SKIP_BUY_H14_16 / L2DET_SKIP_BUY_OCT
+; Ledger: COMMON\Files\BMRG_AOS_ledger_26151904.csv
+; Not a live replace · not FX/UK replace · not M15 DE40stack twin.
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot / risk % (DE30 volume_min=0.1) ===
+InpLotMode=1||0||0||1||N
+InpLot=0.1||0.01||0.001000||1.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.00||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.1||0.0||0.000000||1.000000||N
+;=== Stops & friction — TP > SL (RR=1.25) ===
+InpSL_Points=7000||7000||1||15000||N
+InpTP_Points=8750||8750||1||20000||N
+InpMaxSpread=1500||1500||1||3000||N
+InpSlippage=80||80||1||400||N
+InpCooldownBars=6||2||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=16||12||1||50||N
+;=== Time filter (server) — Frankfurt / London cash sleeve ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=8||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=17||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates — ATR max ≈ M5 ATR p75 ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||8000.000000||N
+InpATRMaxPoints=2380.0||2380.0||0.000000||8000.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26151904||26101903||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS — research OS P4 ===
+InpAOS_Enable=true||false||0||true||N
+InpAOS_L3_Enable=true||false||0||true||N
+InpAOS_L4_SizeMod=true||false||0||true||N
+InpAiOsMode=2||0||0||2||N
+InpAiModelSemver=L2skip_de40_m5_DISARM
+InpAiKillSwitch=false||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=false||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=44.4||50.0||1.000000||90.000000||N
+InpAOS_Leak=7.0||2.2||0.100000||20.000000||N
+InpAOS_R=1.25||1.0||0.100000||5.000000||N
+InpAOS_W250=50||250||1||500||N
+InpAOS_Ledger=true||false||0||true||N
+;=== DE40 M15 L2det — OFF on M5 sleeve ===
+InpAOS_DE_L2detEnable=false||false||0||true||N
+InpAOS_DE_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_DE_SkipH13=false||false||0||true||N
+InpAOS_DE_AtrCapPoints=4070.0||4070.0||1.000000||8000.000000||N
+InpAOS_DE_NearAtrFrac=0.9||0.9||0.050000||1.000000||N
+;=== DE40 M5 L2det v1b — ARMED ===
+InpAOS_DE_M5_L2detEnable=true||false||0||true||N
+InpAOS_DE_M5_SkipBuyH14_16=true||false||0||true||N
+InpAOS_DE_M5_SkipBuyOct=true||false||0||true||N
+InpAOS_DE_M5_SkipH14_16All=false||false||0||true||N
+InpAOS_DE_M5_SkipOctAll=false||false||0||true||N

@@ -1,0 +1,13 @@
+{
+  "semver": "L2skip_aud_m15_p_pretip_20261019_145303",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_candidate_eligible",
+  "symbol": "AUDUSD",
+  "tf": "M15",
+  "magic_engine": 8230901,
+  "magic_research_os": 8231941,
+  "mqh_exported": false,
+  "live_withhold": false,
+  "live_m5_collision": "never_mix_with_L2skip_aud_or_8230931",
+  "policy": "doc/assets/AUDUSD/aos_l5_retrain.md"
+}

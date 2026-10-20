@@ -25,6 +25,11 @@ input group "=== Grid ==="
 input int      InpMaxLevels         = 1;        // Max grid levels per side
 input double   InpLevelStepSigma    = 0.5;      // Extra σ between levels
 
+input group "=== Fade confirm (WR gate) ==="
+input bool     InpUseFadeConfirm    = false;    // Setup at band → enter only on reclaim
+input int      InpFadeConfirmMaxBars = 3;       // Bars to wait for reclaim; then expire
+input bool     InpFadeRequireInsideMid = true;  // Confirm close must stay on setup side of mid
+
 input group "=== Lot / risk % ==="
 input ENUM_BMRG_LOT_MODE InpLotMode = BMRG_LOT_FIXED; // Lot mode
 input double   InpLot               = 0.01;     // Fixed lot (if Fixed mode)
@@ -109,6 +114,64 @@ input double   InpAOS_Leak          = 2.2;      // Leak pp for EF
 input double   InpAOS_R             = 1.0;      // Designed R for E_N
 input int      InpAOS_W250          = 250;      // Rolling window for L4/L3
 input bool     InpAOS_Ledger        = true;     // Write AOS ledger CSV (COMMON\\Files)
+// Apple M15 L2det (only when Apple/AAPL and NOT M5 — see AOS_L2det_aapl.mqh)
+input bool     InpAOS_AAPL_L2detEnable = false; // Enable Apple M15 Thu/hour-18 L2det map
+input bool     InpAOS_AAPL_SkipThu     = true;  // Skip Thursday entries (Apple M15)
+input bool     InpAOS_AAPL_SkipHour18  = true;  // Skip hour==18 server time (Apple M15)
+// Apple M5 L2det v1b (research OS — do NOT reuse M15 Thu/18 map)
+input bool     InpAOS_AAPL_M5_L2detEnable    = false; // Enable Apple M5 Jul∨Wed map
+input bool     InpAOS_AAPL_M5_SkipJul        = true;  // Skip month==Jul (ARM)
+input bool     InpAOS_AAPL_M5_SkipWed        = true;  // Skip DOW==Wed (ARM)
+input bool     InpAOS_AAPL_M5_SkipHour18     = false; // Optional H18 (HOLD — May FP)
+input bool     InpAOS_AAPL_M5_SkipHighSpread = false; // Optional spread≥thr (HOLD)
+input bool     InpAOS_AAPL_M5_SkipH1         = false; // Optional Jan–Apr (YTD HOLD)
+input int      InpAOS_AAPL_M5_SpreadThr      = 30;    // High-spread threshold (pts)
+// UK100 L2det v1b (only when symbol is UK100/FTSE — see AOS_L2det_uk.mqh)
+input bool     InpAOS_UK_L2detEnable   = false; // Enable UK100 Thu / BUY∧nearATR map
+input bool     InpAOS_UK_SkipThu       = true;  // Skip Thursday entries (UK100)
+input bool     InpAOS_UK_SkipBuyNearAtr = true; // Skip BUY when ATR ≥ frac×cap
+input bool     InpAOS_UK_SkipJul       = false; // Optional Jul calendar seed (tip only)
+input double   InpAOS_UK_AtrCapPoints  = 1470.0;// ATR cap reference (same as InpATRMaxPoints)
+input double   InpAOS_UK_NearAtrFrac   = 0.9;   // near_atr threshold = frac × atrCap
+// EURUSD M15 L2det v1b (research OS only — do NOT arm on M5 Harvest live)
+input bool     InpAOS_EUR_L2detEnable   = false; // Enable EURUSD M15 Thu / BUY∧nearATR map
+input bool     InpAOS_EUR_SkipThu       = true;  // Skip Thursday entries (EURUSD M15)
+input bool     InpAOS_EUR_SkipBuyNearAtr = true; // Skip BUY when ATR ≥ frac×cap
+input double   InpAOS_EUR_AtrCapPoints  = 74.0;  // ATR cap reference (InpATRMaxPoints M15)
+input double   InpAOS_EUR_NearAtrFrac   = 0.9;   // near_atr threshold = frac × atrCap
+// AUDUSD M15 L2det v1 (research OS only — do NOT arm on live M5 SCALE 8230931)
+input bool     InpAOS_AUD_L2detEnable   = false; // Enable AUDUSD M15 BUY∧May map
+input bool     InpAOS_AUD_SkipBuyMay    = true;  // Skip BUY when month==May (preferred)
+input bool     InpAOS_AUD_SkipBuyThu    = false; // Optional alt: Skip BUY when DOW==Thu
+// DE40/DE30 M15 L2det v1 (research OS / DE40stack only — expansion sleeve)
+input bool     InpAOS_DE_L2detEnable    = false; // Enable DE40 BUY∧nearATR map
+input bool     InpAOS_DE_SkipBuyNearAtr = true;  // Skip BUY when ATR ≥ frac×cap
+input bool     InpAOS_DE_SkipH13        = false; // Optional H13 (HOLD — Aug FP; off)
+input double   InpAOS_DE_AtrCapPoints   = 4070.0;// ATR cap reference (InpATRMaxPoints)
+input double   InpAOS_DE_NearAtrFrac    = 0.9;   // near_atr threshold = frac × atrCap
+// DE40/DE30 M5 L2det v1b (research OS / DE40M5stack — do NOT reuse M15 map)
+input bool     InpAOS_DE_M5_L2detEnable     = false; // Enable DE40 M5 BUY∧H14/16∨BUY∧Oct
+input bool     InpAOS_DE_M5_SkipBuyH14_16   = true;  // Skip BUY when hour∈{14,16}
+input bool     InpAOS_DE_M5_SkipBuyOct      = true;  // Skip BUY when month==Oct
+input bool     InpAOS_DE_M5_SkipH14_16All   = false; // Optional: all sides H14/16 (SELL FP)
+input bool     InpAOS_DE_M5_SkipOctAll      = false; // Optional: Oct all sides (SELL FP)
+// JP225/JPN225 M15 L2det v1 (research OS / JPN225stack only — expansion sleeve)
+input bool     InpAOS_JP_L2detEnable    = false; // Enable JP225 May∨Jul map (M15 only)
+input bool     InpAOS_JP_SkipMay        = true;  // Skip month==May
+input bool     InpAOS_JP_SkipJul        = true;  // Skip month==Jul
+input bool     InpAOS_JP_SkipWed        = false; // Optional Wed (HOLD — Aug FP; off)
+// JP225/JPN225 M5 L2det v1c (research OS / JPN225_5m_stack — do NOT reuse M15 May∨Jul)
+input bool     InpAOS_JP_M5_L2detEnable       = false; // Enable M5 BUY∧MATCH∨BUY∧H09|13|16
+input bool     InpAOS_JP_M5_SkipBuyMatch      = true;  // Skip BUY when Aug/Sep MATCH
+input bool     InpAOS_JP_M5_SkipBuyH09_13_16  = true;  // Skip BUY when hour∈{9,13,16}
+input bool     InpAOS_JP_M5_SkipMatchAll      = false; // Optional: MATCH all sides (SELL FP)
+// USDJPY M15 L2det v1c (research OS / USDJPYstack only — expansion sleeve)
+input bool     InpAOS_USDJPY_L2detEnable  = false; // Enable USDJPY nearATR∨H16 map
+input bool     InpAOS_USDJPY_SkipNearAtr  = true;  // Skip when ATR ≥ frac×cap
+input bool     InpAOS_USDJPY_SkipH16      = true;  // Skip hour==16
+input bool     InpAOS_USDJPY_SkipJul      = false; // Optional Jul (HOLD — protect FP; off)
+input double   InpAOS_USDJPY_AtrCapPoints = 70.0;  // ATR cap reference (InpATRMaxPoints)
+input double   InpAOS_USDJPY_NearAtrFrac  = 0.9;   // near_atr threshold = frac × atrCap
 
 //+------------------------------------------------------------------+
 bool ConfigIsHedgingAccount()
@@ -131,6 +194,7 @@ bool ConfigValidate(string &reason)
    if(InpATRPeriod < 1) { reason = "ATRPeriod must be >= 1"; return false; }
    if(InpMaxLevels < 1) { reason = "MaxLevels must be >= 1"; return false; }
    if(InpLevelStepSigma <= 0.0) { reason = "LevelStepSigma must be > 0"; return false; }
+   if(InpFadeConfirmMaxBars < 1) { reason = "FadeConfirmMaxBars must be >= 1"; return false; }
    if(InpLot <= 0.0) { reason = "Lot must be > 0"; return false; }
    if(InpRiskPercent < 0.0 || InpRiskPercent > 100.0)
      { reason = "RiskPercent must be 0..100"; return false; }

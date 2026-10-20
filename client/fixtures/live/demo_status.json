@@ -1,6 +1,6 @@
 {
   "magic": 8210204,
-  "preset_id": "INF-LIVE_WITHHOLD_Harvest_long",
+  "preset_id": "INF-LIVE_WITHHOLD_Harvest_long_ddl30",
   "ea_version": "1.21",
   "symbol": "EURUSD",
   "timeframe": "M5",
@@ -10,6 +10,11 @@
   "attached": true,
   "account": "28435",
   "account_kind": "demo",
+  "book": {
+    "side": "NONE",
+    "entries": 0,
+    "exposure": "Flat"
+  },
   "fuses": {
     "equity_halt": false,
     "daily_loss_halt": false,

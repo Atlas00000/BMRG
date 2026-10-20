@@ -1,0 +1,31 @@
+{
+  "task": "EURUSD-AOS-P1 / P0-T03 proxy",
+  "window": "2026.05.01-2026.10.17",
+  "magic": 26101817,
+  "n": 45,
+  "WR": 0.466667,
+  "BM_pp": 2.2222,
+  "E_N": 0.05,
+  "spread_pts_entry": {
+    "median": 4.0,
+    "mean": 4.311,
+    "min": 4,
+    "max": 6
+  },
+  "atr_pts_entry": {
+    "median": 60.6,
+    "mean": 59.82,
+    "n_missing": 0
+  },
+  "nights_held_share": 0.7556,
+  "SL_pts": 300.0,
+  "R_design": 1.25,
+  "c_R_proxy_2x_med": 0.026667,
+  "Leak_proxy_pp": 1.1852,
+  "EF_proxy_pp": 1.037,
+  "Leak_prior_pp": 3.0,
+  "EF_prior_pp": -0.7778,
+  "Leak_source": "journal_2x_entry_spread_median",
+  "note": "Not full deal blotter (no exit spread/commission/swap). Overnight swap still required for measured Leak.",
+  "zone": "Fragile"
+}

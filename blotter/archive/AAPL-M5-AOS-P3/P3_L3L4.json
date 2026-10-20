@@ -1,0 +1,257 @@
+{
+  "task": "AAPL-M5-AOS-P3",
+  "generated_utc": "2026-10-20T13:54:05.225573+00:00",
+  "tf": "M5",
+  "v1b_rule": "(month==Jul) OR (DOW==Wed)",
+  "bindings": {
+    "DD_Limit_pct": 25.0,
+    "derisk_at_pct": 20.0,
+    "EquityHalt_pct": 15.0,
+    "BWR": 40.4255,
+    "R": 1.4736842105263157,
+    "Leak_profile_pp": 15.299999999999999,
+    "Leak_source": "profile_15.3pp_until_measured",
+    "W_health": [
+      15,
+      20,
+      50
+    ],
+    "W250_preset_note": "Dense M5 tip n=77 \u2014 W15/W20 first-class; W50 when able. InpAOS_W250=50 for research OS .set when wiring.",
+    "baseline_fires_90d": 42,
+    "baseline_tip_E_N": 0.156528,
+    "spread_baseline_med": 29
+  },
+  "sims": {
+    "P0_tip": {
+      "label": "P0_tip",
+      "n": 77,
+      "final_equity": 543.51,
+      "net_pnl": 43.51,
+      "max_dd_peak_pct": 7.947,
+      "max_loss_streak": 8,
+      "trips": [
+        {
+          "i": 28,
+          "time": "2026-07-16 19:05:23",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.011 EF15=-29.06",
+          "equity": 520.33,
+          "dd_peak": 4.96,
+          "en15": -0.3404,
+          "en20": -0.0105,
+          "en50": null,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 18,
+        "EXPANDING": 9,
+        "NEAR": 34,
+        "STABLE": 2
+      },
+      "bus_counts": {
+        "DERISK": 6,
+        "L3_HALT": 49,
+        "NONE": 22
+      },
+      "freq_stall_ticks": 6,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "NEAR",
+      "last_en15": 0.1544,
+      "last_en20": 0.2368,
+      "last_en50": 0.0884,
+      "path_len": 77
+    },
+    "v1b_kept": {
+      "label": "v1b_kept",
+      "n": 44,
+      "final_equity": 555.48,
+      "net_pnl": 55.48,
+      "max_dd_peak_pct": 2.565,
+      "max_loss_streak": 4,
+      "trips": [
+        {
+          "i": 40,
+          "time": "2026-10-09 18:50:26",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.011 EF15=-15.73",
+          "equity": 548.45,
+          "dd_peak": 2.57,
+          "en15": -0.0105,
+          "en20": -0.0105,
+          "en50": null,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 4,
+        "EXPANDING": 14,
+        "NEAR": 10,
+        "STABLE": 2
+      },
+      "bus_counts": {
+        "DERISK": 10,
+        "FREQUENCY_STALL_WARN": 6,
+        "L3_HALT": 4,
+        "NONE": 24
+      },
+      "freq_stall_ticks": 12,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "BELOW",
+      "last_en15": -0.0105,
+      "last_en20": -0.0105,
+      "last_en50": null,
+      "path_len": 44
+    },
+    "jul_only_kept": {
+      "label": "jul_only_kept",
+      "n": 62,
+      "final_equity": 570.87,
+      "net_pnl": 70.87,
+      "max_dd_peak_pct": 2.637,
+      "max_loss_streak": 4,
+      "trips": [],
+      "trip_count": 0,
+      "life_counts": {
+        "EXPANDING": 9,
+        "NEAR": 37,
+        "STABLE": 2
+      },
+      "bus_counts": {
+        "DERISK": 37,
+        "FREQUENCY_STALL_WARN": 1,
+        "NONE": 24
+      },
+      "freq_stall_ticks": 12,
+      "cost_drift_ticks": 0,
+      "halt_latched": false,
+      "last_life": "NEAR",
+      "last_en15": 0.1544,
+      "last_en20": 0.2368,
+      "last_en50": 0.2368,
+      "path_len": 62
+    },
+    "jul_h18_HOLD_kept": {
+      "label": "jul_h18_HOLD_kept",
+      "n": 49,
+      "final_equity": 573.15,
+      "net_pnl": 73.15,
+      "max_dd_peak_pct": 2.173,
+      "max_loss_streak": 3,
+      "trips": [],
+      "trip_count": 0,
+      "life_counts": {
+        "EXPANDING": 19,
+        "NEAR": 12,
+        "STABLE": 4
+      },
+      "bus_counts": {
+        "DERISK": 12,
+        "FREQUENCY_STALL_WARN": 6,
+        "NONE": 31
+      },
+      "freq_stall_ticks": 12,
+      "cost_drift_ticks": 0,
+      "halt_latched": false,
+      "last_life": "NEAR",
+      "last_en15": -0.0105,
+      "last_en20": 0.1132,
+      "last_en50": null,
+      "path_len": 49
+    },
+    "P0_ytd": {
+      "label": "P0_ytd",
+      "n": 145,
+      "final_equity": 476.63,
+      "net_pnl": -23.37,
+      "max_dd_peak_pct": 13.376,
+      "max_loss_streak": 10,
+      "trips": [
+        {
+          "i": 19,
+          "time": "2026-01-30 15:06:28",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.134 EF15=-9.06",
+          "equity": 490.31,
+          "dd_peak": 1.94,
+          "en15": 0.1544,
+          "en20": -0.1342,
+          "en50": null,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 75,
+        "EXPANDING": 12,
+        "NEAR": 42,
+        "STABLE": 2
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 126,
+        "NONE": 12,
+        "STREAK_WATCH": 2
+      },
+      "freq_stall_ticks": 6,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "NEAR",
+      "last_en15": 0.1544,
+      "last_en20": 0.2368,
+      "last_en50": 0.0884,
+      "path_len": 145
+    },
+    "v1b_ytd_kept": {
+      "label": "v1b_ytd_kept",
+      "n": 95,
+      "final_equity": 532.11,
+      "net_pnl": 32.11,
+      "max_dd_peak_pct": 6.903,
+      "max_loss_streak": 7,
+      "trips": [
+        {
+          "i": 19,
+          "time": "2026-02-09 14:31:29",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.134 EF15=-15.73",
+          "equity": 490.31,
+          "dd_peak": 4.23,
+          "en15": -0.0105,
+          "en20": -0.1342,
+          "en50": null,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 40,
+        "EXPANDING": 17,
+        "NEAR": 22,
+        "STABLE": 2
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 76,
+        "NONE": 14
+      },
+      "freq_stall_ticks": 12,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "BELOW",
+      "last_en15": -0.0105,
+      "last_en20": -0.0105,
+      "last_en50": 0.2863,
+      "path_len": 95
+    }
+  },
+  "recommend_bus": {
+    "BELOW": "L3_HALT f=0",
+    "COMPRESSING": "INVESTIGATE (regime/execution) \u00b7 f=0.5",
+    "NEAR / DERISK_0.8_DD": "DERISK f<=0.5",
+    "STREAK>=5": "STREAK_WATCH \u00b7 align engine pause",
+    "FREQUENCY_STALL": "WARN only \u2014 do not lift ATR/BBw",
+    "EXPANDING/STABLE": "NONE f=1.0",
+    "L2det_v1b_WOULD_SKIP": "skip fire \u2014 not an L3 trip"
+  }
+}

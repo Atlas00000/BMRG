@@ -1,0 +1,97 @@
+; BMRG-M15-DE40-6M-P0_balanced_chart.set
+; Status: RESEARCH CHART PRESET / UNTESTED — not a live edge claim
+; EA: BMRG v1.21 · Bollinger Mean-Reversion Grid · G0 (MaxLevels=1)
+; Symbol: DE40 → MT5 DE30 (Germany 40/DAX) | Chart TF: M15 | Window: 2026.05.01 → 2026.10.07
+; Framework: unified_edge_framework.md (E_N, BWR, BM, Leak, EF)
+; HARD RULE: never emit TP < SL → InpTP_Points (6250) > InpSL_Points (5000) · RR=1.25
+;
+; Asset context (Ouroboros regimes.rule_v1 → meanrev, H1 monthly tip):
+;   2026-05 MISMATCH · 2026-06..08 MATCH · 2026-09 FRAGILE · 2026-10 FRAGILE
+;   Live 30d fit: FRAGILE (~55% high-vol)
+; M15 ATR pts (Point=0.01): p50≈3230 · p75≈4071 · p90≈4818
+; Broker: Digits=2 · live spread≈1020 · volume_min=0.1 · cost prior RT≈1100 pts
+; M15* FIXED_RR probe (session 08–17, skip Tue, BBDev 2.2, ATR_max≈p75):
+;   n≈79 · WR≈58.2% · RR=1.25 · BWR=44.4% · BM≈+13.8pp
+;   Leak prior≈9.8pp (c_R≈1100/5000) · EF≈+4.0pp · E_N≈+0.31R
+; ATR max=4070 ON — cuts Sep/Oct FRAGILE high-vol; lifts EF vs unfiltered (+2.2pp).
+; Thin SL≈4400 raises Leak and turns EF negative — geometry must clear fat spread.
+;
+; Design intent: mix functional WR + returns (RR=1.25). AOS OFF on chart.
+; Load on DE30 M15 chart, or Tester from MQL5/Profiles/Tester/BMRG/DE40/
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot / risk % (DE30 volume_min=0.1) ===
+InpLotMode=1||0||0||1||N
+InpLot=0.1||0.01||0.001000||1.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.00||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.1||0.0||0.000000||1.000000||N
+;=== Stops & friction — TP > SL (RR=1.25) ===
+InpSL_Points=5000||5000||1||12000||N
+InpTP_Points=6250||6250||1||15000||N
+InpMaxSpread=1500||1500||1||3000||N
+InpSlippage=80||80||1||400||N
+InpCooldownBars=2||2||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time filter (server) — Frankfurt / London cash sleeve ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=8||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=17||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates — ATR max ≈ M15 ATR p75 (cut high-vol FRAGILE) ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||8000.000000||N
+InpATRMaxPoints=4070.0||4070.0||0.000000||8000.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26101902||26101902||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS — OFF for chart research sleeve ===
+InpAOS_Enable=false||false||0||true||N
+InpAOS_L3_Enable=false||false||0||true||N
+InpAOS_L4_SizeMod=false||false||0||true||N
+InpAiOsMode=0||0||0||2||N
+InpAiModelSemver=L2skip_inf_p92_20260927_223519
+InpAiKillSwitch=true||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=true||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=44.4||50.0||1.000000||90.000000||N
+InpAOS_Leak=9.8||2.2||0.100000||20.000000||N
+InpAOS_R=1.25||1.0||0.100000||5.000000||N
+InpAOS_W250=250||250||1||500||N
+InpAOS_Ledger=false||false||0||true||N

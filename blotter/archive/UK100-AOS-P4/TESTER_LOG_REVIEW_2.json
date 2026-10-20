@@ -1,0 +1,16 @@
+{
+  "task": "UK100-AOS-P4-TESTER-2",
+  "scored_utc": "2026-10-12T22:53:33.780106+00:00",
+  "tester_window": "2025.01.01 \u2192 2025.12.31",
+  "hist_available": "2025.12.17 \u2192 (sync shows through 2026.08.28 but test end 2025.12.31)",
+  "effective_bars": 496,
+  "magic": 26111304,
+  "uk_l2det_enable": true,
+  "l2det_skips": 0,
+  "fires": 4,
+  "closes": "3 SL + 1 TP",
+  "final_balance_usd": 492.75,
+  "thu_fires": 0,
+  "verdict": "INPUTS_OK \u00b7 L2DET armed but no skip cells in Dec-only fragment \u00b7 INVALID window for OS CF",
+  "fix": "Set Tester dates 2026.05.01 \u2192 2026.10.11 (or 2026.01.01 \u2192 2026.08.31) so tip history is inside the test range"
+}

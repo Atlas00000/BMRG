@@ -122,9 +122,31 @@ Shell nav (Home · Performance · Live · Review · Records) under Kyoto Ledger 
 
 ---
 
+## Revamp plan (FT console — 2026-10-06)
+
+Constraint: **no placeholders, clip art, or fake controls.** Copy-only empties; real feed fields only.
+
+| # | Win | Page | Done |
+| --- | --- | --- | --- |
+| 1 | Bind open book from live `book` / omit fake flat | Live | yes |
+| 2 | Remove disabled kill/order buttons; one notice sentence | Live | yes |
+| 3 | Drop mid-page brand wordmark | Home | yes |
+| 4 | One asymmetric Home plane (champion · edge · next · pulse) | Home | yes |
+| 5 | Pulse from `CURRENT.md` + operator journal lines | Home | yes |
+| 6 | Data-as-headline; strip “Champion strip” meta titles | Home / Live | yes |
+| 7 | Strengthen zone badge (Fragile / warn) | Badges | yes |
+| 8 | Next action from session clock + book + fuses | Home | yes |
+| 9 | Journal: last 5 opens/closes/gates (not bar spam) | Live | yes |
+| 10 | Parse pointer fields; attach preset first in library | Records | yes |
+| 11 | Theme name = Kyoto Ledger everywhere | Shell / title | yes |
+| 12 | Tighter Home / section density | CSS | yes |
+
+---
+
 ## Change log
 
 | Date | Change |
 | --- | --- |
 | 2026-10-04 | Initial map — 5 pages × 6 sections; prior multi-route IA superseded for product nav |
 | 2026-10-04 | Shell nav + five routes active; Home · Performance · Live · Review · Records sections marked active (Kyoto Ledger) |
+| 2026-10-06 | FT revamp plan above shipped: Home one-plane, Live book/journal/notices, Records pointer parse, Kyoto Ledger naming |

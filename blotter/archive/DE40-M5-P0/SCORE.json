@@ -1,0 +1,170 @@
+{
+  "task": "DE40-M5-P0-LOG-REVIEW",
+  "scope": "expansion_not_live_replace",
+  "preset": "BMRG-M5-DE40-6M-P0_balanced_chart.set",
+  "Leak_prior_pp": 7.0,
+  "design_probe": {
+    "n": 141,
+    "WR": 54.6,
+    "E_N": 0.229,
+    "EF_pp": 3.2
+  },
+  "runs": [
+    {
+      "window": {
+        "from": "2026.01.01",
+        "to": "2026.08.31"
+      },
+      "magic": 26101903,
+      "geometry": {
+        "SL": "7000",
+        "TP": "8750",
+        "ATR_max": "2380.0",
+        "BBDev": "2.2",
+        "CooldownBars": "6",
+        "AOS": "false"
+      },
+      "final_balance": 850.64,
+      "pnl": 350.64,
+      "entries_buy": 91,
+      "entries_sell": 85,
+      "entries": 176,
+      "overall_closes": {
+        "n": 168,
+        "TP": 96,
+        "SL": 72,
+        "WR_pct": 57.1,
+        "E_N": 0.286,
+        "EF_prior_pp": 5.7,
+        "BM_pp": 12.7
+      },
+      "pre_Jan_Apr_closes": {
+        "n": 75,
+        "TP": 43,
+        "SL": 32,
+        "WR_pct": 57.3,
+        "E_N": 0.29,
+        "EF_prior_pp": 5.9,
+        "BM_pp": 12.9
+      },
+      "tip_May_Aug_closes": {
+        "n": 93,
+        "TP": 53,
+        "SL": 40,
+        "WR_pct": 57.0,
+        "E_N": 0.282,
+        "EF_prior_pp": 5.5,
+        "BM_pp": 12.5
+      },
+      "match_Jun_Aug_closes": {
+        "n": 75,
+        "TP": 45,
+        "SL": 30,
+        "WR_pct": 60.0,
+        "E_N": 0.35,
+        "EF_prior_pp": 8.6,
+        "BM_pp": 15.6
+      },
+      "monthly_closes": {
+        "2026-01": {
+          "n": 36,
+          "TP": 23,
+          "SL": 13,
+          "WR_pct": 63.9,
+          "E_N": 0.438,
+          "EF_prior_pp": 12.4,
+          "BM_pp": 19.4,
+          "tag": "pre-tip"
+        },
+        "2026-02": {
+          "n": 25,
+          "TP": 10,
+          "SL": 15,
+          "WR_pct": 40.0,
+          "E_N": -0.1,
+          "EF_prior_pp": -11.4,
+          "BM_pp": -4.4,
+          "tag": "pre-tip soft"
+        },
+        "2026-03": {
+          "n": 1,
+          "TP": 0,
+          "SL": 1,
+          "WR_pct": 0.0,
+          "E_N": -1.0,
+          "EF_prior_pp": -51.4,
+          "BM_pp": -44.4,
+          "tag": "pre-tip"
+        },
+        "2026-04": {
+          "n": 13,
+          "TP": 10,
+          "SL": 3,
+          "WR_pct": 76.9,
+          "E_N": 0.731,
+          "EF_prior_pp": 25.5,
+          "BM_pp": 32.5,
+          "tag": "pre-tip"
+        },
+        "2026-05": {
+          "n": 18,
+          "TP": 8,
+          "SL": 10,
+          "WR_pct": 44.4,
+          "E_N": 0.0,
+          "EF_prior_pp": -7.0,
+          "BM_pp": 0.0,
+          "tag": "MISMATCH"
+        },
+        "2026-06": {
+          "n": 19,
+          "TP": 9,
+          "SL": 10,
+          "WR_pct": 47.4,
+          "E_N": 0.066,
+          "EF_prior_pp": -4.1,
+          "BM_pp": 2.9,
+          "tag": "MATCH"
+        },
+        "2026-07": {
+          "n": 24,
+          "TP": 14,
+          "SL": 10,
+          "WR_pct": 58.3,
+          "E_N": 0.312,
+          "EF_prior_pp": 6.9,
+          "BM_pp": 13.9,
+          "tag": "MATCH"
+        },
+        "2026-08": {
+          "n": 32,
+          "TP": 22,
+          "SL": 10,
+          "WR_pct": 68.8,
+          "E_N": 0.547,
+          "EF_prior_pp": 17.3,
+          "BM_pp": 24.3,
+          "tag": "MATCH"
+        }
+      },
+      "atr_blocks_by_month": {
+        "2026-01": 18,
+        "2026-02": 48,
+        "2026-03": 127,
+        "2026-04": 89,
+        "2026-05": 64,
+        "2026-06": 55,
+        "2026-07": 63,
+        "2026-08": 5
+      },
+      "atr_blocks_total": 469,
+      "open_spread_pts": {
+        "n": 184,
+        "p50": 84.0,
+        "min": 84.0,
+        "max": 410.0
+      }
+    }
+  ],
+  "note": "Only Jan-Aug 2026 window found in 20261020.log so far. Design tip May-Oct / Sep-Oct FRAGILE not yet in this log. Journal open spreads \u226a live ~1020 \u2014 keep Leak prior 7.0pp."
+}

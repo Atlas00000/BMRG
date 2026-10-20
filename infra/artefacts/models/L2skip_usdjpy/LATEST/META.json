@@ -1,0 +1,15 @@
+{
+  "semver": "L2skip_usdjpy_p_pretip_20261019_155324",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "symbol": "USDJPY",
+  "asset": "USDJPY",
+  "tf": "M15",
+  "magic_engine": 26101828,
+  "magic_research_p4": 26131804,
+  "mqh_exported": false,
+  "live_withhold": false,
+  "overlay_champ": "L2det_usdjpy_v1c_near_atr_OR_H16",
+  "overlay_mqh": false,
+  "policy": "doc/assets/USDJPY/aos_l5_retrain.md"
+}

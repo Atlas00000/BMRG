@@ -1,0 +1,14 @@
+{
+  "task": "DE40-AOS-P7-TESTER-REVIEW",
+  "verdict": "LOADED_BUT_L2DET_NOT_WITHHOLDING",
+  "magic": 26141907,
+  "best_window": {
+    "from": "2026.05.01",
+    "to": "2026.08.31",
+    "bal": 558.07,
+    "pnl": 58.07,
+    "l2det_skips": 0
+  },
+  "issue": "ledger layer=L2 with ai_proba; zero BUY_NEAR_ATR skips; re-run after 16:58 compile",
+  "tip_may_oct_os": "NOT_RUN"
+}

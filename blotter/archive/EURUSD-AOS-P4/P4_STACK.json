@@ -1,0 +1,37 @@
+{
+  "task": "EURUSD-AOS-P4",
+  "generated_utc": "2026-10-18T15:00:08.197818+00:00",
+  "Leak_proxy_pp": 1.1852,
+  "stacks": {
+    "det_v1b": {
+      "n_signals": 45,
+      "n_fire": 31,
+      "n_l2det_skip": 14,
+      "n_l2ai_shadow_skip": 0,
+      "n_l3_halt": 0,
+      "n_l8_advise": 21,
+      "WR": 54.84,
+      "E_N": 0.2339,
+      "EF_proxy_pp": 9.209,
+      "skip_precision_losers": 0.7143,
+      "l8_on_losers": 21,
+      "l8_on_winners": 0,
+      "l8_overnight": 16
+    },
+    "det_v1b_plus_ai_shadow": {
+      "n_signals": 45,
+      "n_fire": 31,
+      "n_l2det_skip": 14,
+      "n_l2ai_shadow_skip": 5,
+      "n_l3_halt": 0,
+      "n_l8_advise": 21,
+      "WR": 54.84,
+      "E_N": 0.2339,
+      "EF_proxy_pp": 9.209,
+      "skip_precision_losers": 0.7143,
+      "l8_on_losers": 21,
+      "l8_on_winners": 0,
+      "l8_overnight": 16
+    }
+  }
+}

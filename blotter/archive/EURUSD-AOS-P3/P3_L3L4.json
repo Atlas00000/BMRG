@@ -1,0 +1,125 @@
+{
+  "task": "EURUSD-AOS-P3",
+  "generated_utc": "2026-10-18T14:55:06.587749+00:00",
+  "bindings": {
+    "DD_Limit_pct": 25.0,
+    "derisk_at_pct": 20.0,
+    "EquityHalt_pct": 15.0,
+    "BWR": 44.4,
+    "R": 1.25,
+    "Leak_proxy_pp": 1.1852,
+    "W_health": [
+      15,
+      20
+    ],
+    "W250_preset": 250,
+    "W250_research_floor": 50,
+    "W250_note": "Preset InpAOS_W250=250 will not arm lifecycle on tip n~45. Expansion OS uses W15/W20; set InpAOS_W250=50 when wiring research .set.",
+    "baseline_fires_90d": 25,
+    "spread_baseline_med": 4.0,
+    "overnight_note": "EURUSD M15 tip overnight_share ~0.76 \u2014 L3 MaxDD path includes multi-session inventory; measured swap still OPEN."
+  },
+  "sims": {
+    "P0_tip": {
+      "label": "P0_tip",
+      "n": 45,
+      "final_equity": 506.75,
+      "net_pnl": 6.75,
+      "max_dd_peak_pct": 2.956,
+      "max_loss_streak": 4,
+      "overnight_share": 0.756,
+      "trips": [
+        {
+          "i": 21,
+          "time": "2026-07-13 16:33:41",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.213 EF15=-5.63",
+          "equity": 494.75,
+          "dd_peak": 2.51,
+          "en15": -0.1,
+          "en20": -0.2125,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 1,
+        "EXPANDING": 20,
+        "NEAR": 7,
+        "STABLE": 3
+      },
+      "bus_counts": {
+        "DERISK": 4,
+        "L3_HALT": 24,
+        "NONE": 17
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.2,
+      "last_en20": 0.0125,
+      "last_ef15_pp": 7.704,
+      "path_len": 45
+    },
+    "v1b_kept": {
+      "label": "v1b_kept",
+      "n": 31,
+      "final_equity": 521.75,
+      "net_pnl": 21.75,
+      "max_dd_peak_pct": 1.75,
+      "max_loss_streak": 3,
+      "overnight_share": 0.774,
+      "trips": [],
+      "trip_count": 0,
+      "life_counts": {
+        "EXPANDING": 14,
+        "STABLE": 3
+      },
+      "bus_counts": {
+        "FREQUENCY_STALL_WARN": 2,
+        "NONE": 29
+      },
+      "halt_latched": false,
+      "last_life": "STABLE",
+      "last_en15": 0.35,
+      "last_en20": 0.35,
+      "last_ef15_pp": 14.37,
+      "path_len": 31
+    },
+    "v1b_Thu_OR_BUY_H13_kept": {
+      "label": "v1b_Thu_OR_BUY_H13_kept",
+      "n": 34,
+      "final_equity": 519.5,
+      "net_pnl": 19.5,
+      "max_dd_peak_pct": 1.727,
+      "max_loss_streak": 3,
+      "overnight_share": 0.735,
+      "trips": [],
+      "trip_count": 0,
+      "life_counts": {
+        "EXPANDING": 14,
+        "STABLE": 6
+      },
+      "bus_counts": {
+        "NONE": 34
+      },
+      "halt_latched": false,
+      "last_life": "EXPANDING",
+      "last_en15": 0.05,
+      "last_en20": 0.125,
+      "last_ef15_pp": 1.037,
+      "path_len": 34
+    }
+  },
+  "recommend_bus": {
+    "BELOW": "L3_HALT f=0",
+    "COMPRESSING": "INVESTIGATE (regime/execution) \u00b7 f=0.5",
+    "NEAR / DERISK_0.8_DD": "DERISK f<=0.5",
+    "STREAK>=5": "STREAK_WATCH \u00b7 align engine pause",
+    "FREQUENCY_STALL": "WARN only \u2014 do not lift ATR max / drop CD",
+    "COST_DRIFT": "INVESTIGATE (spread \u226b tip median)",
+    "EXPANDING/STABLE": "NONE f=1.0",
+    "L2det WOULD_SKIP": "skip fire (not an L3 trip)"
+  },
+  "unlatch": {
+    "HALT_f0_BELOW_FRONTIER": "Clear latch only when W20 E_N > 0 for 2 consecutive evals and dd_peak < 20%."
+  }
+}

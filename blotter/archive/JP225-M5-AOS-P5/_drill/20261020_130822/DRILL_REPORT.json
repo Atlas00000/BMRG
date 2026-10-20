@@ -1,0 +1,49 @@
+{
+  "task": "JP225-M5-AOS-P5-T03",
+  "drill_utc": "2026-10-20T13:08:22.539671+00:00",
+  "steps": [
+    "snapshot",
+    "DISARM",
+    "restore_shadow_pin"
+  ],
+  "before": {
+    "semver": "L2skip_jp225_m5_p_prior_20261020_130822",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_jp225_m5_v1c",
+    "ai_champ": null,
+    "updated_utc": "2026-10-20T13:08:22.056079+00:00",
+    "auc_tip_oos": 0.49044289044289036,
+    "best_verdict": "DISARM"
+  },
+  "disarm": {
+    "semver": null,
+    "mode": "DISARM",
+    "role": "disarmed",
+    "overlay_champ": "L2det_jp225_m5_v1c",
+    "ai_champ": null,
+    "updated_utc": "2026-10-20T13:08:22.492935+00:00",
+    "disarm_reason": "P5-T03_rollback_drill",
+    "previous_semver": "L2skip_jp225_m5_p_prior_20261020_130822"
+  },
+  "after": {
+    "semver": "L2skip_jp225_m5_p_prior_20261020_130822",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_jp225_m5_v1c",
+    "ai_champ": null,
+    "updated_utc": "2026-10-20T13:08:22.534225+00:00",
+    "restore_reason": "P5-T03_rollback_drill_restore",
+    "previous_semver": null,
+    "auc_tip_oos": 0.49044289044289036,
+    "best_verdict": "DISARM"
+  },
+  "pass": true,
+  "note": "EA research OS uses L2det_jp225_m5_v1c \u2014 AI pin rollback does not change InpAOS_JP_M5_L2detEnable. Kill-switch / AiOsMode still control L2 AI path.",
+  "ea_rollback_checklist": [
+    "InpAiKillSwitch=true  OR  InpAiOsMode=OFF \u2192 L2 AI off",
+    "InpAOS_JP_M5_L2detEnable=false \u2192 M5 det map off (engine only)",
+    "InpAOS_Enable=false \u2192 full AOS off (Growth P0 M5)",
+    "Reload BMRG-M5-JP225-6M-P0_growth_chart.set"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "task": "AUDUSD-AOS-P1",
+  "tip_atr_p75": 68.4,
+  "tip": {
+    "window": "tip",
+    "n": 41,
+    "WR": 63.4,
+    "atr_missing": 0,
+    "cells": {
+      "cell_buy": {
+        "n": 18,
+        "WR": 61.1,
+        "E_N": 0.222
+      },
+      "cell_dow_thu": {
+        "n": 10,
+        "WR": 40.0,
+        "E_N": -0.2
+      },
+      "cell_month_may": {
+        "n": 9,
+        "WR": 44.4,
+        "E_N": -0.111
+      },
+      "cell_month_feb": {
+        "n": 0
+      },
+      "cell_month_mar": {
+        "n": 0
+      },
+      "near_atr_high": {
+        "n": 11,
+        "WR": 54.5,
+        "E_N": 0.091
+      },
+      "fast_lose": {
+        "n": 9,
+        "WR": 0.0,
+        "E_N": -1.0
+      },
+      "band_ride_proxy": {
+        "n": 10,
+        "WR": 0.0,
+        "E_N": -1.0
+      }
+    },
+    "regime": {
+      "MATCH": 32,
+      "MISMATCH": 9,
+      "": 0
+    },
+    "nights_held_share": 0.585,
+    "fast_lose_share": 0.22
+  },
+  "long": {
+    "window": "long",
+    "n": 95,
+    "WR": 56.8,
+    "atr_missing": 0,
+    "cells": {
+      "cell_buy": {
+        "n": 54,
+        "WR": 53.7,
+        "E_N": 0.074
+      },
+      "cell_dow_thu": {
+        "n": 31,
+        "WR": 48.4,
+        "E_N": -0.032
+      },
+      "cell_month_may": {
+        "n": 9,
+        "WR": 44.4,
+        "E_N": -0.111
+      },
+      "cell_month_feb": {
+        "n": 14,
+        "WR": 50.0,
+        "E_N": 0.0
+      },
+      "cell_month_mar": {
+        "n": 16,
+        "WR": 37.5,
+        "E_N": -0.25
+      },
+      "near_atr_high": {
+        "n": 51,
+        "WR": 51.0,
+        "E_N": 0.02
+      },
+      "fast_lose": {
+        "n": 21,
+        "WR": 0.0,
+        "E_N": -1.0
+      },
+      "band_ride_proxy": {
+        "n": 25,
+        "WR": 0.0,
+        "E_N": -1.0
+      }
+    },
+    "regime": {
+      "MATCH": 56,
+      "MISMATCH": 39,
+      "": 0
+    },
+    "nights_held_share": 0.453,
+    "fast_lose_share": 0.221
+  },
+  "combined_n": 95,
+  "cost_proxy": {
+    "task": "AUDUSD-AOS-P1 / P0-T03 proxy",
+    "window": "2026.05.01-2026.08.31",
+    "magic": 8230901,
+    "n": 41,
+    "WR": 0.634146,
+    "BM_pp": 13.4146,
+    "E_N": 0.268293,
+    "spread_pts_entry": {
+      "median": 15.0,
+      "mean": 14.854,
+      "min": 13,
+      "max": 19
+    },
+    "atr_pts_entry": {
+      "median": 57.5,
+      "mean": 59.63,
+      "p75": 68.4,
+      "n_missing": 0
+    },
+    "nights_held_share": 0.5854,
+    "SL_pts": 300.0,
+    "R_design": 1.0,
+    "c_R_proxy_2x_med": 0.1,
+    "Leak_proxy_pp": 5.0,
+    "EF_proxy_pp": 8.4146,
+    "Leak_prior_pp": 2.4,
+    "EF_prior_pp": 11.0146,
+    "Leak_source": "journal_2x_entry_spread_median",
+    "note": "Not full deal blotter (no exit spread/commission/swap). Overnight swap still required for measured Leak.",
+    "zone": "Robust_proxy"
+  },
+  "p1_tasks": {
+    "T01_schema": "DONE",
+    "T02_builder": "DONE",
+    "T03_labels": "DONE",
+    "T04_structure": "DONE_proxy",
+    "T05_regime": "DONE"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "semver": "L2skip_aud_m15_p_pretip_20261019_145303",
+  "algo": "LogisticRegression balanced C=0.5 + StandardScaler",
+  "feats": [
+    "side_buy",
+    "is_thu",
+    "is_may",
+    "is_feb",
+    "is_mar",
+    "near_atr_high",
+    "hour",
+    "atr_z",
+    "is_wed",
+    "is_fri",
+    "is_jun",
+    "is_jul",
+    "is_aug",
+    "bbw_z"
+  ],
+  "train_n": 54,
+  "test_n": 41,
+  "auc_tip_oos": 0.5974358974358974,
+  "thr_selected_on_tip": 0.5750000000000002,
+  "thr_selection_note": "Thr swept on tip for shadow CF only; weights fit on pre-tip. Chrono holdout required for challenger. Not LIVE_WITHHOLD. Not live M5 L2skip_aud pin.",
+  "best_row": {
+    "thr": 0.575,
+    "verdict": "SHADOW_CANDIDATE",
+    "skips_n": 3,
+    "precision_vs_losers": 1.0,
+    "fire_retention_pct": 92.7,
+    "delta_E_N": 0.1001,
+    "delta_EF_pp": 5.006,
+    "false_skip_sell_winners": 0,
+    "false_skip_wedfri_winners": 0,
+    "kept_E_N": 0.3684
+  },
+  "sweep": [
+    {
+      "thr": 0.45,
+      "verdict": "HOLD_SHADOW",
+      "skips_n": 13,
+      "precision_vs_losers": 0.3846,
+      "fire_retention_pct": 68.3,
+      "delta_E_N": 0.0174,
+      "delta_EF_pp": 0.871,
+      "false_skip_sell_winners": 6,
+      "false_skip_wedfri_winners": 7,
+      "kept_E_N": 0.2857
+    },
+    {
+      "thr": 0.475,
+      "verdict": "DISARM",
+      "skips_n": 12,
+      "precision_vs_losers": 0.3333,
+      "fire_retention_pct": 70.7,
+      "delta_E_N": -0.0269,
+      "delta_EF_pp": -1.346,
+      "false_skip_sell_winners": 6,
+      "false_skip_wedfri_winners": 7,
+      "kept_E_N": 0.2414
+    },
+    {
+      "thr": 0.5,
+      "verdict": "HOLD_SHADOW",
+      "skips_n": 10,
+      "precision_vs_losers": 0.4,
+      "fire_retention_pct": 75.6,
+      "delta_E_N": 0.022,
+      "delta_EF_pp": 1.101,
+      "false_skip_sell_winners": 5,
+      "false_skip_wedfri_winners": 6,
+      "kept_E_N": 0.2903
+    },
+    {
+      "thr": 0.525,
+      "verdict": "HOLD_SHADOW",
+      "skips_n": 7,
+      "precision_vs_losers": 0.5714,
+      "fire_retention_pct": 82.9,
+      "delta_E_N": 0.0846,
+      "delta_EF_pp": 4.232,
+      "false_skip_sell_winners": 3,
+      "false_skip_wedfri_winners": 3,
+      "kept_E_N": 0.3529
+    },
+    {
+      "thr": 0.55,
+      "verdict": "HOLD_SHADOW",
+      "skips_n": 5,
+      "precision_vs_losers": 0.6,
+      "fire_retention_pct": 87.8,
+      "delta_E_N": 0.065,
+      "delta_EF_pp": 3.252,
+      "false_skip_sell_winners": 2,
+      "false_skip_wedfri_winners": 2,
+      "kept_E_N": 0.3333
+    },
+    {
+      "thr": 0.575,
+      "verdict": "SHADOW_CANDIDATE",
+      "skips_n": 3,
+      "precision_vs_losers": 1.0,
+      "fire_retention_pct": 92.7,
+      "delta_E_N": 0.1001,
+      "delta_EF_pp": 5.006,
+      "false_skip_sell_winners": 0,
+      "false_skip_wedfri_winners": 0,
+      "kept_E_N": 0.3684
+    },
+    {
+      "thr": 0.6,
+      "verdict": "SHADOW_CANDIDATE",
+      "skips_n": 2,
+      "precision_vs_losers": 1.0,
+      "fire_retention_pct": 95.1,
+      "delta_E_N": 0.065,
+      "delta_EF_pp": 3.252,
+      "false_skip_sell_winners": 0,
+      "false_skip_wedfri_winners": 0,
+      "kept_E_N": 0.3333
+    },
+    {
+      "thr": 0.625,
+      "verdict": "SHADOW_CANDIDATE",
+      "skips_n": 1,
+      "precision_vs_losers": 1.0,
+      "fire_retention_pct": 97.6,
+      "delta_E_N": 0.0317,
+      "delta_EF_pp": 1.585,
+      "false_skip_sell_winners": 0,
+      "false_skip_wedfri_winners": 0,
+      "kept_E_N": 0.3
+    }
+  ],
+  "chrono_holdout": {
+    "train_n": 78,
+    "test_n": 17,
+    "thr": 0.5750000000000002,
+    "report": {
+      "skips_n": 2,
+      "precision_vs_losers": 0.5,
+      "fire_retention_pct": 88.2,
+      "delta_E_N": 0.0549,
+      "delta_EF_pp": 2.745,
+      "false_skip_sell_winners": 0,
+      "false_skip_wedfri_winners": 0,
+      "verdict": "HOLD_SHADOW"
+    },
+    "kept": {
+      "n": 15,
+      "WR": 73.33,
+      "E_N": 0.4667,
+      "EF_proxy_pp": 18.333
+    },
+    "baseline_holdout": {
+      "n": 17,
+      "WR": 70.59,
+      "E_N": 0.4118,
+      "EF_proxy_pp": 15.588
+    }
+  },
+  "leak_proxy_pp": 5.0,
+  "generated_utc": "2026-10-19T14:53:03.913147+00:00"
+}

@@ -19,7 +19,7 @@ Build check: `npm run build`
 
 | Route | Page | Notes |
 | --- | --- | --- |
-| `/` | Home | Brand · champion · edge snapshot · posture · next action · pulse |
+| `/` | Home | One plane: champion · edge · posture · next · last scored |
 | `/performance` | Performance | Scorecard · windows · vs reference · accept · cadence · caveats |
 | `/live` | Live desk | Attachment · mode · safety · book · journal · desk notices |
 | `/review` | Review | Decisions · protection map · paper vs live · verdicts · size/halt · export |

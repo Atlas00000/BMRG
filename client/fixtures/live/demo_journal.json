@@ -1,41 +1,36 @@
 {
-  "source": "MQL5/Logs/20260928.log · demo attach sample",
-  "path_hint": "C:/Users/emili/AppData/Roaming/MetaQuotes/Terminal/.../MQL5/Logs/20260928.log",
+  "source": "hosting.6917926.experts · forward-test sample",
+  "path_hint": "logs/hosting.6917926.experts/20261005.log",
   "lines": [
     {
-      "t": "2026.09.28 15:06:12",
-      "level": "INFO",
-      "msg": "AOS ledger -> COMMON\\Files\\BMRG_AOS_ledger_8210204.csv"
-    },
-    {
-      "t": "2026.09.28 15:06:12",
-      "level": "INFO",
-      "msg": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519"
-    },
-    {
-      "t": "2026.09.28 15:06:12",
+      "t": "2026.10.04 15:32:55",
       "level": "INFO",
       "msg": "BMRG init OK | EURUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8210204 aos=1"
     },
     {
-      "t": "2026.09.28 15:06:13",
+      "t": "2026.10.04 15:32:55",
       "level": "INFO",
-      "msg": "bar=2026.09.28 14:00 U=1.13756 M=1.13663 L=1.13570 C=1.13615 ATR=44.7pt BBw=0.16% side=NONE n=0 sig=0 no signal spr=7 halt=0 pause=0"
+      "msg": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519"
     },
     {
-      "t": "2026.09.28 15:09:59",
+      "t": "2026.10.05 13:30:00",
       "level": "INFO",
-      "msg": "bar=2026.09.28 14:05 ... sig=0 no signal spr=6 halt=0 pause=0"
+      "msg": "bar=2026.10.05 11:25 U=1.12119 M=1.12039 L=1.11958 C=1.12132 ATR=50.2pt BBw=0.14% side=NONE n=0 sig=2 enter sell L0 spr=7 halt=0 pause=0"
     },
     {
-      "t": "2026.09.28 15:14:59",
+      "t": "2026.10.05 15:35:00",
       "level": "INFO",
-      "msg": "bar=2026.09.28 14:10 ... sig=0 no signal spr=6 halt=0 pause=0"
+      "msg": "[BMRG][TRADE] OPEN BUY lot=0.01 price=1.11973 sl=1.11673 tp=1.12273 level=0 riskMode=1 spread=7 deal=7583399"
     },
     {
-      "t": "2026.09.28 15:19:59",
+      "t": "2026.10.06 03:00:27",
       "level": "INFO",
-      "msg": "bar=2026.09.28 14:15 ... sig=0 no signal spr=6 halt=0 pause=0"
+      "msg": "AOS close TP | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0"
+    },
+    {
+      "t": "2026.10.06 03:05:01",
+      "level": "INFO",
+      "msg": "bar=2026.10.06 01:00 U=1.12246 M=1.12181 L=1.12115 C=1.12257 ATR=24.6pt BBw=0.12% side=NONE n=0 sig=2 enter sell L0 spr=6 halt=0 pause=0"
     }
   ]
 }

@@ -1,0 +1,96 @@
+; BMRG-M5-TSLA-6M-P0_balanced_chart.set
+; Status: RESEARCH CHART PRESET / UNTESTED — not a live edge claim
+; EA: BMRG v1.21 · Bollinger Mean-Reversion Grid · G0 (MaxLevels=1)
+; Symbol: TSLA (MT5 Tesla) | Chart TF: M5 | Window: 2026.05.01 → 2026.10.07
+; Framework: unified_edge_framework.md (E_N, BWR, BM, Leak, EF)
+; HARD RULE: never emit TP < SL → InpTP_Points (620) > InpSL_Points (500) · RR=1.24
+;
+; Asset context (Ouroboros regimes.rule_v1 → meanrev, H1 monthly tip):
+;   2026-05 MISMATCH · 06 FRAGILE · 07–09 MATCH · 10 MISMATCH (thin)
+;   overall MATCH ~42% / FRAGILE ~21% — ATR + tight session required on M5
+; M5 ATR pts (Point=0.01 Digits=2): p50≈125 · p75≈164 · p90≈202 · mean≈133
+; M5* FIXED_RR probe (session 15–19, skip Tue, BBDev 2.2, ATR 58–164):
+;   n≈88 · WR≈53.4% · RR=1.24 · BWR=44.6% · BM≈+8.8pp
+;   Leak prior≈7.1pp (c_R≈80/500) · EF≈+1.6pp · E_N≈+0.20R
+; KEY: full 14–20 session fails Stage-1 EF on M5; 15–19 + ATR<=p75 unlocks
+; Do NOT import M15 600/750 blindly — M5 needs tighter session + smaller SL
+;
+; Design intent: mix functional WR + returns (RR≈1.24 in [1.20,1.35]). AOS OFF.
+; Load on Tesla M5 chart, or Tester from Profiles/Tester/BMRG/TSLA/
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot — Fixed 1.0 share (YWO Tesla VOLUME_MIN≈1.0) ===
+InpLotMode=0||0||0||1||N
+InpLot=1.0||1.0||0.010000||100.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.0||1.0||0.010000||100.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||1.000000||N
+;=== Stops — Balanced RR≈1.24 (TP > SL) ===
+InpSL_Points=500||500||1||5000||N
+InpTP_Points=620||620||1||7500||N
+InpMaxSpread=90||90||1||500||N
+InpSlippage=25||25||1||200||N
+InpCooldownBars=3||3||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=16||12||1||50||N
+;=== Time filter — US afternoon: 15:00–19 server (skip open hour) ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=15||15||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=19||19||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates — ATR 58–164 (floor → p75) ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=58.0||58.0||0.000000||2000.000000||N
+InpATRMaxPoints=164.0||164.0||0.000000||2000.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26101930||26101930||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS OFF (chart research sleeve) ===
+InpAOS_Enable=false||false||0||true||N
+InpAOS_L3_Enable=false||false||0||true||N
+InpAOS_L4_SizeMod=false||false||0||true||N
+InpAiOsMode=0||0||0||2||N
+InpAiModelSemver=L2skip_inf_p92_20260927_223519
+InpAiKillSwitch=true||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=true||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=44.6||50.0||1.000000||90.000000||N
+InpAOS_Leak=7.1||2.2||0.100000||20.000000||N
+InpAOS_R=1.24||1.0||0.100000||5.000000||N
+InpAOS_W250=250||250||1||500||N
+InpAOS_Ledger=false||false||0||true||N

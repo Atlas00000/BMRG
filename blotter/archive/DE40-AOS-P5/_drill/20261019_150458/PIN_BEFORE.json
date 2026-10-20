@@ -1,0 +1,11 @@
+{
+  "semver": "L2skip_de40_p_pretip_20261019_150458",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "overlay_champ": "L2det_de40_v1_BUY_near_atr",
+  "ai_champ": null,
+  "updated_utc": "2026-10-19T15:04:58.086067+00:00",
+  "auc_tip_oos": 0.51875,
+  "best_verdict": "HOLD_SHADOW",
+  "chrono_holdout_verdict": "REJECT_FREQUENCY_STALL"
+}

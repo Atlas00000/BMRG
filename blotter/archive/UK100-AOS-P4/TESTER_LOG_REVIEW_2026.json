@@ -1,0 +1,35 @@
+{
+  "task": "UK100-AOS-P4-TESTER-2026",
+  "scored_utc": "2026-10-12T22:56:41.243216+00:00",
+  "window": "2026.01.01 \u2192 2026.10.03",
+  "magic": 26111304,
+  "uk_l2det": true,
+  "ledger": {
+    "signals": 178,
+    "FIRE": 97,
+    "SKIP": 81,
+    "skip_thu": 51,
+    "skip_near": 17,
+    "skip_both": 13,
+    "FIRE_Thu": 0,
+    "L3_halt_rows": 0
+  },
+  "closed_book_full": {
+    "n": 97,
+    "WR": 52.58,
+    "E_N": 0.183,
+    "EF_pp": 3.866
+  },
+  "closed_book_tip_MayAug": {
+    "n": 34,
+    "WR": 58.82,
+    "E_N": 0.3235,
+    "EF_pp": 10.112
+  },
+  "tip_ledger_MayAug": {
+    "FIRE": 35,
+    "SKIP": 31
+  },
+  "final_balance_usd": 561.82,
+  "verdict": "L2DET_WIRE_PASS \u2014 81 skips, 0 Thu fires, L3 never tripped, bal +61.82"
+}

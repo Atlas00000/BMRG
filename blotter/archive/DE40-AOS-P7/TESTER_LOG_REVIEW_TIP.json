@@ -1,0 +1,32 @@
+{
+  "task": "DE40-AOS-P7-TESTER-RERUN",
+  "window": "2026.05.01-2026.10.18",
+  "magic": 26141907,
+  "preset": "DE40stack",
+  "deposit": 500.0,
+  "final_balance": 550.61,
+  "pnl": 50.61,
+  "ret_pct": 10.12,
+  "market_entries": 56,
+  "l2det_skips_log": 9,
+  "ledger": {
+    "rows": 65,
+    "FIRE": 56,
+    "SKIP": 9,
+    "layer": "L2DET"
+  },
+  "l2det_withhold": "PASS",
+  "vs_P0_tip_bal_638.90": {
+    "stack_bal": 550.61,
+    "delta_bal": -88.29,
+    "note": "absolute PnL lower; L4 size mod + skips; offline ARM was E_N lift not $ lift on same f=1"
+  },
+  "vs_offline_ARM": {
+    "offline_n_fire": 62,
+    "offline_skips": 15,
+    "tester_fire": 56,
+    "tester_skips": 9
+  },
+  "verdict": "L2DET_ARMED_CONFIRMED_TIP",
+  "compared_at": "2026-10-19T17:09:00+01:00"
+}

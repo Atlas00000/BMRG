@@ -1,0 +1,43 @@
+{
+  "task": "UK100-AOS-P5-T03",
+  "drill_utc": "2026-10-12T22:59:43.143664+00:00",
+  "steps": [
+    "snapshot",
+    "DISARM",
+    "restore_shadow_pin"
+  ],
+  "before": {
+    "semver": "L2skip_uk_p_prior_20261012_222755",
+    "mode": "SHADOW_ONLY"
+  },
+  "disarm": {
+    "semver": null,
+    "mode": "DISARM",
+    "role": "disarmed",
+    "overlay_champ": "L2det_uk_v1b",
+    "ai_champ": null,
+    "updated_utc": "2026-10-12T22:59:43.128663+00:00",
+    "disarm_reason": "P5-T03_rollback_drill",
+    "previous_semver": "L2skip_uk_p_prior_20261012_222755"
+  },
+  "after": {
+    "semver": "L2skip_uk_p_prior_20261012_222755",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_uk_v1b",
+    "ai_champ": null,
+    "updated_utc": "2026-10-12T22:59:43.141663+00:00",
+    "restore_reason": "P5-T03_rollback_drill_restore",
+    "previous_semver": null,
+    "auc_tip_oos": 0.38923076923076927,
+    "best_verdict": "DISARM"
+  },
+  "pass": true,
+  "note": "EA research OS uses L2det_uk_v1b \u2014 AI pin rollback does not change InpAOS_UK_L2detEnable. Kill-switch / AiOsMode still control L2 path.",
+  "ea_rollback_checklist": [
+    "InpAiKillSwitch=true  OR  InpAiOsMode=OFF \u2192 L2 AI off",
+    "InpAOS_UK_L2detEnable=false \u2192 det map off (engine only)",
+    "InpAOS_Enable=false \u2192 full AOS off (Balanced P0)",
+    "Reload Profiles/Tester/BMRG/UK100/\u2026P0_balanced_chart.set"
+  ]
+}

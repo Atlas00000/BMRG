@@ -1,0 +1,592 @@
+{
+  "task": "AUDUSD-AOS-P6",
+  "generated_utc": "2026-10-19T14:58:10.933907+00:00",
+  "hitl_challenger": "L2skip_aud_m15_p_pretip_20261019_145303",
+  "P6_T01_L9_session": {
+    "tip_spread_nunique": 6,
+    "tip_spread_p66": 15.0,
+    "tip_spread_note": "Tip spread varies \u2014 see policies.",
+    "tip_policies": {
+      "skip_Thu_all": {
+        "label": "skip_Thu_all",
+        "verdict": "HOLD_SHADOW",
+        "skips_n": 10,
+        "precision_vs_losers": 0.6,
+        "fire_retention_pct": 75.6,
+        "kept": {
+          "n": 31,
+          "WR": 70.97,
+          "E_N": 0.4194,
+          "EF_proxy_pp": 15.968
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.1511,
+        "delta_EF_pp": 7.553,
+        "false_skip_sell_winners": 2,
+        "false_skip_wedfri_winners": 0
+      },
+      "skip_BUY_Thu": {
+        "label": "skip_BUY_Thu",
+        "verdict": "ARM_SOFT",
+        "skips_n": 5,
+        "precision_vs_losers": 0.6,
+        "fire_retention_pct": 87.8,
+        "kept": {
+          "n": 36,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.065,
+        "delta_EF_pp": 3.252,
+        "false_skip_sell_winners": 0,
+        "false_skip_wedfri_winners": 0
+      },
+      "skip_H19_all": {
+        "label": "skip_H19_all",
+        "verdict": "HOLD_SHADOW",
+        "skips_n": 5,
+        "precision_vs_losers": 0.4,
+        "fire_retention_pct": 87.8,
+        "kept": {
+          "n": 36,
+          "WR": 63.89,
+          "E_N": 0.2778,
+          "EF_proxy_pp": 8.889
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.0095,
+        "delta_EF_pp": 0.474,
+        "false_skip_sell_winners": 1,
+        "false_skip_wedfri_winners": 3
+      },
+      "skip_late_H18_19": {
+        "label": "skip_late_H18_19",
+        "verdict": "DISARM",
+        "skips_n": 8,
+        "precision_vs_losers": 0.25,
+        "fire_retention_pct": 80.5,
+        "kept": {
+          "n": 33,
+          "WR": 60.61,
+          "E_N": 0.2121,
+          "EF_proxy_pp": 5.606
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": -0.0562,
+        "delta_EF_pp": -2.809,
+        "false_skip_sell_winners": 2,
+        "false_skip_wedfri_winners": 6
+      },
+      "skip_spread_gt_p66": {
+        "label": "skip_spread_gt_p66",
+        "verdict": "HOLD_SHADOW",
+        "skips_n": 8,
+        "precision_vs_losers": 0.375,
+        "fire_retention_pct": 80.5,
+        "kept": {
+          "n": 33,
+          "WR": 63.64,
+          "E_N": 0.2727,
+          "EF_proxy_pp": 8.636
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.0044,
+        "delta_EF_pp": 0.221,
+        "false_skip_sell_winners": 1,
+        "false_skip_wedfri_winners": 4
+      }
+    },
+    "additive_on_v1_kept": {
+      "skip_Thu_all_on_v1_kept": {
+        "label": "skip_Thu_all_on_v1_kept",
+        "verdict": "HOLD_SHADOW",
+        "skips_n": 8,
+        "precision_vs_losers": 0.5,
+        "fire_retention_pct": 79.5,
+        "kept": {
+          "n": 31,
+          "WR": 70.97,
+          "E_N": 0.4194,
+          "EF_proxy_pp": 15.968
+        },
+        "baseline": {
+          "n": 39,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "delta_E_N": 0.0861,
+        "delta_EF_pp": 4.301,
+        "false_skip_sell_winners": 2,
+        "false_skip_wedfri_winners": 0
+      },
+      "skip_BUY_Thu_on_v1_kept": {
+        "label": "skip_BUY_Thu_on_v1_kept",
+        "verdict": "DISARM",
+        "skips_n": 3,
+        "precision_vs_losers": 0.3333,
+        "fire_retention_pct": 92.3,
+        "kept": {
+          "n": 36,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "baseline": {
+          "n": 39,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "delta_E_N": 0.0,
+        "delta_EF_pp": 0.0,
+        "false_skip_sell_winners": 0,
+        "false_skip_wedfri_winners": 0
+      },
+      "skip_H19_all_on_v1_kept": {
+        "label": "skip_H19_all_on_v1_kept",
+        "verdict": "HOLD_SHADOW",
+        "skips_n": 5,
+        "precision_vs_losers": 0.4,
+        "fire_retention_pct": 87.2,
+        "kept": {
+          "n": 34,
+          "WR": 67.65,
+          "E_N": 0.3529,
+          "EF_proxy_pp": 12.647
+        },
+        "baseline": {
+          "n": 39,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "delta_E_N": 0.0196,
+        "delta_EF_pp": 0.98,
+        "false_skip_sell_winners": 1,
+        "false_skip_wedfri_winners": 3
+      },
+      "skip_late_H18_19_on_v1_kept": {
+        "label": "skip_late_H18_19_on_v1_kept",
+        "verdict": "DISARM",
+        "skips_n": 8,
+        "precision_vs_losers": 0.25,
+        "fire_retention_pct": 79.5,
+        "kept": {
+          "n": 31,
+          "WR": 64.52,
+          "E_N": 0.2903,
+          "EF_proxy_pp": 9.516
+        },
+        "baseline": {
+          "n": 39,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "delta_E_N": -0.043,
+        "delta_EF_pp": -2.151,
+        "false_skip_sell_winners": 2,
+        "false_skip_wedfri_winners": 6
+      },
+      "skip_spread_gt_p66_on_v1_kept": {
+        "label": "skip_spread_gt_p66_on_v1_kept",
+        "verdict": "HOLD_SHADOW",
+        "skips_n": 8,
+        "precision_vs_losers": 0.375,
+        "fire_retention_pct": 79.5,
+        "kept": {
+          "n": 31,
+          "WR": 67.74,
+          "E_N": 0.3548,
+          "EF_proxy_pp": 12.742
+        },
+        "baseline": {
+          "n": 39,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "delta_E_N": 0.0215,
+        "delta_EF_pp": 1.075,
+        "false_skip_sell_winners": 1,
+        "false_skip_wedfri_winners": 4
+      }
+    },
+    "long_spread_diagnostic": {
+      "label": "long_skip_spread_gt_p66",
+      "verdict": "DISARM",
+      "skips_n": 28,
+      "precision_vs_losers": 0.25,
+      "fire_retention_pct": 70.5,
+      "kept": {
+        "n": 67,
+        "WR": 49.25,
+        "E_N": -0.0149,
+        "EF_proxy_pp": -5.746
+      },
+      "baseline": {
+        "n": 95,
+        "WR": 56.84,
+        "E_N": 0.1368,
+        "EF_proxy_pp": 1.842
+      },
+      "delta_E_N": -0.1517,
+      "delta_EF_pp": -7.588,
+      "false_skip_sell_winners": 10,
+      "false_skip_wedfri_winners": 18
+    },
+    "armed": [
+      "skip_BUY_Thu"
+    ],
+    "hold": [
+      "skip_Thu_all",
+      "skip_H19_all",
+      "skip_spread_gt_p66",
+      "skip_Thu_all_on_v1_kept",
+      "skip_H19_all_on_v1_kept",
+      "skip_spread_gt_p66_on_v1_kept"
+    ],
+    "disarm": [
+      "skip_late_H18_19",
+      "skip_BUY_Thu_on_v1_kept",
+      "skip_late_H18_19_on_v1_kept"
+    ],
+    "recommendation": {
+      "spread_tercile": "HOLD_SHADOW",
+      "skip_Thu_all": "HOLD_SHADOW",
+      "skip_BUY_Thu": "ARM_SOFT",
+      "wire": "No new L9 LIVE veto. BUY\u2227Thu already P2 ARM_SOFT alt \u2014 keep optional InpAOS_AUD_SkipBuyThu=false on AUDUSD_stack. Prefer L2det BUY\u2227May. Spread tercile DISARM until tip fills show variance."
+    }
+  },
+  "P6_T02_L2_stress": {
+    "baseline_v1": {
+      "label": "v1_BUY_May_nominal",
+      "verdict": "ARM_SOFT",
+      "skips_n": 2,
+      "precision_vs_losers": 1.0,
+      "fire_retention_pct": 95.1,
+      "kept": {
+        "n": 39,
+        "WR": 66.67,
+        "E_N": 0.3333,
+        "EF_proxy_pp": 11.667
+      },
+      "baseline": {
+        "n": 41,
+        "WR": 63.41,
+        "E_N": 0.2683,
+        "EF_proxy_pp": 8.415
+      },
+      "delta_E_N": 0.065,
+      "delta_EF_pp": 3.252,
+      "false_skip_sell_winners": 0,
+      "false_skip_wedfri_winners": 0
+    },
+    "stresses": {
+      "buy_may_or_buy_thu": {
+        "label": "buy_may_or_buy_thu",
+        "verdict": "ARM_SOFT",
+        "skips_n": 5,
+        "precision_vs_losers": 0.6,
+        "fire_retention_pct": 87.8,
+        "kept": {
+          "n": 36,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.065,
+        "delta_EF_pp": 3.252,
+        "false_skip_sell_winners": 0,
+        "false_skip_wedfri_winners": 0,
+        "delta_E_N_vs_v1": 0.0
+      },
+      "may_all_sides": {
+        "label": "may_all_sides",
+        "verdict": "HOLD_SHADOW",
+        "skips_n": 9,
+        "precision_vs_losers": 0.5556,
+        "fire_retention_pct": 78.0,
+        "kept": {
+          "n": 32,
+          "WR": 68.75,
+          "E_N": 0.375,
+          "EF_proxy_pp": 13.75
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.1067,
+        "delta_EF_pp": 5.335,
+        "false_skip_sell_winners": 4,
+        "false_skip_wedfri_winners": 4,
+        "delta_E_N_vs_v1": 0.0417
+      },
+      "buy_thu_only": {
+        "label": "buy_thu_only",
+        "verdict": "ARM_SOFT",
+        "skips_n": 5,
+        "precision_vs_losers": 0.6,
+        "fire_retention_pct": 87.8,
+        "kept": {
+          "n": 36,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.065,
+        "delta_EF_pp": 3.252,
+        "false_skip_sell_winners": 0,
+        "false_skip_wedfri_winners": 0,
+        "delta_E_N_vs_v1": 0.0
+      },
+      "ai_thr_nominal": {
+        "label": "ai_thr_nominal",
+        "verdict": "ARM_SOFT",
+        "skips_n": 3,
+        "precision_vs_losers": 1.0,
+        "fire_retention_pct": 92.7,
+        "kept": {
+          "n": 38,
+          "WR": 68.42,
+          "E_N": 0.3684,
+          "EF_proxy_pp": 13.421
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.1001,
+        "delta_EF_pp": 5.006,
+        "false_skip_sell_winners": 0,
+        "false_skip_wedfri_winners": 0,
+        "delta_E_N_vs_v1": 0.0351
+      },
+      "ai_thr_minus10": {
+        "label": "ai_thr_minus10",
+        "verdict": "HOLD_SHADOW",
+        "skips_n": 8,
+        "precision_vs_losers": 0.5,
+        "fire_retention_pct": 80.5,
+        "kept": {
+          "n": 33,
+          "WR": 66.67,
+          "E_N": 0.3333,
+          "EF_proxy_pp": 11.667
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.065,
+        "delta_EF_pp": 3.252,
+        "false_skip_sell_winners": 3,
+        "false_skip_wedfri_winners": 4,
+        "delta_E_N_vs_v1": 0.0
+      },
+      "ai_thr_plus10": {
+        "label": "ai_thr_plus10",
+        "verdict": "ARM_SOFT",
+        "skips_n": 1,
+        "precision_vs_losers": 1.0,
+        "fire_retention_pct": 97.6,
+        "kept": {
+          "n": 40,
+          "WR": 65.0,
+          "E_N": 0.3,
+          "EF_proxy_pp": 10.0
+        },
+        "baseline": {
+          "n": 41,
+          "WR": 63.41,
+          "E_N": 0.2683,
+          "EF_proxy_pp": 8.415
+        },
+        "delta_E_N": 0.0317,
+        "delta_EF_pp": 1.585,
+        "false_skip_sell_winners": 0,
+        "false_skip_wedfri_winners": 0,
+        "delta_E_N_vs_v1": -0.0333
+      }
+    },
+    "det_robust_pass": [
+      "buy_may_or_buy_thu",
+      "may_all_sides",
+      "buy_thu_only"
+    ],
+    "det_robust_fail": [],
+    "ai_thr_stress": {
+      "ai_thr_minus10": {
+        "delta_E_N_vs_ai_nominal": -0.0351,
+        "ret": 80.5,
+        "verdict": "HOLD_SHADOW"
+      },
+      "ai_thr_plus10": {
+        "delta_E_N_vs_ai_nominal": -0.0684,
+        "ret": 97.6,
+        "verdict": "ARM_SOFT"
+      }
+    },
+    "verdict": "PASS",
+    "note": "Preferred atom BUY\u2227May has no continuous threshold \u2014 stress calendar width + AI thr \u00b110%. Keep SkipBuyMay=true \u00b7 SkipBuyThu=false. SL/TP untouched. Blanket May must stay HOLD/DISARM."
+  },
+  "P6_T03_geometry_freeze": {
+    "presets": [
+      {
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\doc\\presets\\AUDUSD-CHAMP_Harvest_start13_skipMon_G0.set",
+        "name": "AUDUSD-CHAMP_Harvest_start13_skipMon_G0.set",
+        "exists": true,
+        "fields": {
+          "InpSL_Points": "300",
+          "InpTP_Points": "300",
+          "InpBBDev": "2.2",
+          "InpStartHour": "13",
+          "InpTradeMon": "false",
+          "InpTradeTue": "false",
+          "InpMagic": "8230901",
+          "InpUseATRRegime": "false",
+          "InpATRMaxPoints": "0.0"
+        },
+        "geometry_frozen": true,
+        "atr_gate_off": true
+      },
+      {
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\Presets\\BMRG-M15-AUDUSD-6M-P4_research_OS_W50.set",
+        "name": "BMRG-M15-AUDUSD-6M-P4_research_OS_W50.set",
+        "exists": true,
+        "fields": {
+          "InpSL_Points": "300",
+          "InpTP_Points": "300",
+          "InpBBDev": "2.2",
+          "InpStartHour": "13",
+          "InpTradeMon": "false",
+          "InpTradeTue": "false",
+          "InpMagic": "8231941",
+          "InpAOS_AUD_L2detEnable": "true",
+          "InpAOS_AUD_SkipBuyMay": "true",
+          "InpUseATRRegime": "false",
+          "InpATRMaxPoints": "0.0"
+        },
+        "geometry_frozen": true,
+        "atr_gate_off": true
+      },
+      {
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\Presets\\AUDUSD_stack.set",
+        "name": "AUDUSD_stack.set",
+        "exists": true,
+        "fields": {
+          "InpSL_Points": "300",
+          "InpTP_Points": "300",
+          "InpBBDev": "2.2",
+          "InpStartHour": "13",
+          "InpTradeMon": "false",
+          "InpTradeTue": "false",
+          "InpMagic": "8231941",
+          "InpAOS_AUD_L2detEnable": "true",
+          "InpAOS_AUD_SkipBuyMay": "true",
+          "InpUseATRRegime": "false",
+          "InpATRMaxPoints": "0.0"
+        },
+        "geometry_frozen": true,
+        "atr_gate_off": true
+      },
+      {
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\Profiles\\Tester\\BMRG\\AUDUSD\\AUDUSD_stack.set",
+        "name": "AUDUSD_stack.set",
+        "exists": true,
+        "fields": {
+          "InpSL_Points": "300",
+          "InpTP_Points": "300",
+          "InpBBDev": "2.2",
+          "InpStartHour": "13",
+          "InpTradeMon": "false",
+          "InpTradeTue": "false",
+          "InpMagic": "8231941",
+          "InpAOS_AUD_L2detEnable": "true",
+          "InpAOS_AUD_SkipBuyMay": "true",
+          "InpUseATRRegime": "false",
+          "InpATRMaxPoints": "0.0"
+        },
+        "geometry_frozen": true,
+        "atr_gate_off": true
+      },
+      {
+        "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\Profiles\\Tester\\BMRG\\AUDUSD\\BMRG-M15-AUDUSD-6M-P4_research_OS_W50.set",
+        "name": "BMRG-M15-AUDUSD-6M-P4_research_OS_W50.set",
+        "exists": true,
+        "fields": {
+          "InpSL_Points": "300",
+          "InpTP_Points": "300",
+          "InpBBDev": "2.2",
+          "InpStartHour": "13",
+          "InpTradeMon": "false",
+          "InpTradeTue": "false",
+          "InpMagic": "8231941",
+          "InpAOS_AUD_L2detEnable": "true",
+          "InpAOS_AUD_SkipBuyMay": "true",
+          "InpUseATRRegime": "false",
+          "InpATRMaxPoints": "0.0"
+        },
+        "geometry_frozen": true,
+        "atr_gate_off": true
+      }
+    ],
+    "freeze_spec": "SL/TP 300/300 \u00b7 BBDev 2.2 \u00b7 StartHour 13 \u00b7 TradeMon/Tue=false \u00b7 ATR regime OFF (P8-T03 SKIP)",
+    "aos_does_not_change_geometry": true,
+    "verdict": "PASS",
+    "declaration": "geometry_frozen=true on CHAMP engine + AUDUSD_stack research arm. OS only gates/sizes \u2014 never retunes SL/TP/BB/session."
+  },
+  "verdict": {
+    "T01": "PASS_DOCUMENTED",
+    "T02": "PASS",
+    "T03": "PASS",
+    "phase": "P6_COMPLETE"
+  }
+}

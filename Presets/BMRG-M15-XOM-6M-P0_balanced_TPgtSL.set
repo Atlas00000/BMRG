@@ -1,0 +1,90 @@
+; BMRG-M15-XOM-6M-P0_balanced_TPgtSL.set
+; Status: RESEARCH CHART PRESET / UNTESTED — mix WR + returns (TP > SL)
+; EA: BMRG v1.21 · G0 · AOS OFF
+; Symbol: XOM (MT5 Exxon) | TF: M15
+; HARD RULE: never TP < SL → TP 220 > SL 150 · RR=1.47 · BWR≈40.5%
+;
+; Ouroboros M15* probe prior (2026-05→2026-10 · US RTH 14–20 · skip Tue · cost 60pt RT):
+;   ungated bb2.5: n=22 · WR=63.6% · E_N≈+0.57R · EF≈+6.9pp
+;   ATR≤83 p90: n=17 · WR=58.8% · E_N≈+0.45R · EF≈+2.1pp
+; Regime: Jul–Sep 2026 H1 meanrev MISMATCH → ATR gate ON (floor≈33 · cap≈83)
+; Magic 26101921.
+;
+; Load: Profiles/Tester/BMRG/XOM/ or Experts/BMRG/Presets/
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.5||2.5||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot — Fixed 1.0 share (YWO Exxon VOLUME_MIN≈1.0) ===
+InpLotMode=0||0||0||1||N
+InpLot=1.0||1.0||0.010000||100.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.0||1.0||0.010000||100.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||1.000000||N
+;=== Stops — Balanced/Growth RR≈1.47 (TP > SL) ===
+InpSL_Points=150||150||1||5000||N
+InpTP_Points=220||220||1||7500||N
+InpMaxSpread=55||55||1||500||N
+InpSlippage=20||20||1||200||N
+InpCooldownBars=3||3||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time filter — US RTH approx: 14:00–20 server ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=14||14||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=20||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates — ATR 33–83 (≈p25×0.6 → p90) · BBW light ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=33.0||33.0||0.000000||2000.000000||N
+InpATRMaxPoints=83.0||83.0||0.000000||2000.000000||N
+InpUseBBWidthRegime=true||false||0||true||N
+InpBBWidthMinPct=0.30||0.30||0.000000||5.000000||N
+InpBBWidthMaxPct=2.50||2.50||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26101921||26101921||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS OFF (meta only) ===
+InpAOS_Enable=false||false||0||true||N
+InpAOS_L3_Enable=false||false||0||true||N
+InpAOS_L4_SizeMod=false||false||0||true||N
+InpAiOsMode=0||0||0||2||N
+InpAiModelSemver=L2skip_inf_p92_20260927_223519
+InpAiKillSwitch=true||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=true||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=40.5||50.0||1.000000||90.000000||N
+InpAOS_Leak=10.8||2.2||0.100000||10.000000||N
+InpAOS_R=1.47||1.0||0.100000||5.000000||N
+InpAOS_W250=250||250||1||500||N
+InpAOS_Ledger=false||false||0||true||N

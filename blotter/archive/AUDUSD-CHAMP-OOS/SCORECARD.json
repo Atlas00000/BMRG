@@ -1,0 +1,265 @@
+{
+  "task": "AUDUSD-CHAMP-OOS-quarters",
+  "stack": "Start13+skipMon+skipTue SL300/TP300 (freeze magic 8230601)",
+  "BWR_designed": 50.0,
+  "runs": [
+    {
+      "run": 28,
+      "window": "2026.01.01->2026.04.30",
+      "role": "OOS_2026_Q1",
+      "magic": "8230601",
+      "identity_ok": true,
+      "n": 62,
+      "WR": 43.55,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": -6.45,
+      "Leak_pp": 7.0,
+      "EF_pp": -13.45,
+      "M_pp": 11.98,
+      "E_N": -0.129,
+      "pnl": -18.53,
+      "zone": "Negative",
+      "max_dd_R": 14.0,
+      "max_loss_streak": 10,
+      "months": {
+        "2026-01": {
+          "n": 15,
+          "WR": 66.7,
+          "E_N": 0.333
+        },
+        "2026-02": {
+          "n": 16,
+          "WR": 31.2,
+          "E_N": -0.375
+        },
+        "2026-03": {
+          "n": 19,
+          "WR": 36.8,
+          "E_N": -0.263
+        },
+        "2026-04": {
+          "n": 12,
+          "WR": 41.7,
+          "E_N": -0.167
+        }
+      },
+      "med_spread": 14,
+      "final": 381.47,
+      "survive": "FAIL"
+    },
+    {
+      "run": 29,
+      "window": "2026.05.01->2026.08.31",
+      "role": "IS_primary",
+      "magic": "8230601",
+      "identity_ok": true,
+      "n": 47,
+      "WR": 70.21,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 20.21,
+      "Leak_pp": 7.0,
+      "EF_pp": 13.21,
+      "M_pp": 12.66,
+      "E_N": 0.404,
+      "pnl": 57.1,
+      "zone": "Robust",
+      "max_dd_R": 2.0,
+      "max_loss_streak": 2,
+      "months": {
+        "2026-05": {
+          "n": 14,
+          "WR": 71.4,
+          "E_N": 0.429
+        },
+        "2026-06": {
+          "n": 12,
+          "WR": 66.7,
+          "E_N": 0.333
+        },
+        "2026-07": {
+          "n": 14,
+          "WR": 71.4,
+          "E_N": 0.429
+        },
+        "2026-08": {
+          "n": 7,
+          "WR": 71.4,
+          "E_N": 0.429
+        }
+      },
+      "med_spread": 14.0,
+      "final": 457.1,
+      "survive": "SURVIVE"
+    },
+    {
+      "run": 30,
+      "window": "2025.01.01->2025.04.30",
+      "role": "OOS",
+      "magic": "8230601",
+      "identity_ok": true,
+      "n": 54,
+      "WR": 51.85,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 1.85,
+      "Leak_pp": 4.25,
+      "EF_pp": -2.4,
+      "M_pp": 12.88,
+      "E_N": 0.037,
+      "pnl": 2.57,
+      "zone": "Negative",
+      "max_dd_R": 9.0,
+      "max_loss_streak": 8,
+      "months": {
+        "2025-01": {
+          "n": 14,
+          "WR": 71.4,
+          "E_N": 0.429
+        },
+        "2025-02": {
+          "n": 11,
+          "WR": 45.5,
+          "E_N": -0.091
+        },
+        "2025-03": {
+          "n": 10,
+          "WR": 70.0,
+          "E_N": 0.4
+        },
+        "2025-04": {
+          "n": 19,
+          "WR": 31.6,
+          "E_N": -0.368
+        }
+      },
+      "med_spread": 8.5,
+      "final": 402.57,
+      "survive": "MARGINAL"
+    },
+    {
+      "run": 31,
+      "window": "2025.05.01->2025.08.01",
+      "role": "OOS",
+      "magic": "8230601",
+      "identity_ok": true,
+      "n": 42,
+      "WR": 54.76,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 4.76,
+      "Leak_pp": 9.0,
+      "EF_pp": -4.24,
+      "M_pp": 14.41,
+      "E_N": 0.095,
+      "pnl": 10.55,
+      "zone": "Negative",
+      "max_dd_R": 4.0,
+      "max_loss_streak": 4,
+      "months": {
+        "2025-05": {
+          "n": 12,
+          "WR": 50.0,
+          "E_N": 0.0
+        },
+        "2025-06": {
+          "n": 14,
+          "WR": 64.3,
+          "E_N": 0.286
+        },
+        "2025-07": {
+          "n": 16,
+          "WR": 50.0,
+          "E_N": 0.0
+        }
+      },
+      "med_spread": 18,
+      "final": 410.55,
+      "survive": "SURVIVE"
+    },
+    {
+      "run": 32,
+      "window": "2025.08.01->2025.08.31",
+      "role": "OOS",
+      "magic": "8230601",
+      "identity_ok": true,
+      "n": 11,
+      "WR": 27.27,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": -22.73,
+      "Leak_pp": 9.0,
+      "EF_pp": -31.73,
+      "M_pp": 23.41,
+      "E_N": -0.455,
+      "pnl": -15.94,
+      "zone": "Negative",
+      "max_dd_R": 6.0,
+      "max_loss_streak": 6,
+      "months": {
+        "2025-08": {
+          "n": 11,
+          "WR": 27.3,
+          "E_N": -0.455
+        }
+      },
+      "med_spread": 18.0,
+      "final": 384.06,
+      "survive": "WIPEOUT"
+    },
+    {
+      "run": 33,
+      "window": "2025.09.01->2025.12.31",
+      "role": "OOS",
+      "magic": "8230601",
+      "identity_ok": true,
+      "n": 47,
+      "WR": 51.06,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 1.06,
+      "Leak_pp": 2.0,
+      "EF_pp": -0.94,
+      "M_pp": 13.74,
+      "E_N": 0.021,
+      "pnl": 4.21,
+      "zone": "Negative",
+      "max_dd_R": 8.0,
+      "max_loss_streak": 8,
+      "months": {
+        "2025-09": {
+          "n": 12,
+          "WR": 50.0,
+          "E_N": 0.0
+        },
+        "2025-10": {
+          "n": 15,
+          "WR": 40.0,
+          "E_N": -0.2
+        },
+        "2025-11": {
+          "n": 13,
+          "WR": 46.2,
+          "E_N": -0.077
+        },
+        "2025-12": {
+          "n": 7,
+          "WR": 85.7,
+          "E_N": 0.714
+        }
+      },
+      "med_spread": 4.0,
+      "final": 404.21,
+      "survive": "MARGINAL"
+    }
+  ],
+  "survivability": {
+    "oos_quarters": 5,
+    "SURVIVE_or_MARGINAL": 3,
+    "FAIL_or_WIPEOUT": 2,
+    "THIN": 0,
+    "positive_E_N_share": 0.6,
+    "verdict": "MIXED \u2014 some quarters hold, some fail (regime_filtered / L3 OK for expansion)"
+  }
+}

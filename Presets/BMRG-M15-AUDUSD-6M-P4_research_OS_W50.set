@@ -1,0 +1,109 @@
+; BMRG-M15-AUDUSD-6M-P4_research_OS_W50.set
+; Status: RESEARCH OS PRESET — Tester only · NOT live M5 SCALE 8230931
+; EA: BMRG · Bollinger Mean-Reversion Grid · G0 (MaxLevels=1)
+; Symbol: AUDUSD | Chart TF: M15 | Window intent: 2026.05.01 → tip
+; Framework: doc/assets/AUDUSD/aios_roadmap.md · aos_l6_ledger.md
+; HARD RULE: geometry frozen SL/TP 300/300 · Start13 · skip Mon/Tue · BBDev 2.2
+;
+; P4 stack: CHAMP engine + AOS L2det v1 LIVE_WITHHOLD
+;   L2det: BUY ∧ month==May · L3/L4/Ledger ON · W50 · Leak 5.0 (journal proxy)
+;   L2AI: OFF (SHADOW_ONLY — offline shadow only; never live M5 pin)
+; Magic 8231941 (OS experiment · never collide 8230901 engine / 8230931 live)
+; Load: Profiles/Tester/BMRG/AUDUSD/ or Presets/
+; Compile BMRG.mq5 before run · ledger COMMON\Files\BMRG_AOS_ledger_8231941.csv
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.7||0.7||0.100000||5.000000||N
+;=== Lot / risk % ===
+InpLotMode=1||0||0||1||N
+InpLot=0.01||0.01||0.001000||0.100000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.0||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||0.100000||N
+;=== Stops & friction — RR=1 ===
+InpSL_Points=300||300||1||3000||N
+InpTP_Points=300||300||1||4500||N
+InpMaxSpread=30||30||1||350||N
+InpSlippage=20||20||1||200||N
+InpCooldownBars=3||3||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=20.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=3.0||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||15.0||1.000000||50.000000||N
+InpMaxDailyLossPct=3.0||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time filter (server) — CHAMP freeze ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=13||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=20||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=false||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime (ATR gate SKIP per P8-T03) ===
+InpUseATRRegime=false||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||500.000000||N
+InpATRMaxPoints=0.0||0.0||0.000000||500.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=8231941||8231941||1||82319999||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS ON — research OS (P4) ===
+InpAOS_Enable=true||false||0||true||N
+InpAOS_L3_Enable=true||false||0||true||N
+InpAOS_L4_SizeMod=true||false||0||true||N
+InpAiOsMode=2||0||0||2||N
+InpAiModelSemver=L2skip_aud_m15_SHADOW
+InpAiKillSwitch=false||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=false||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=50.0||50.0||1.000000||90.000000||N
+InpAOS_Leak=5.0||2.2||0.100000||10.000000||N
+InpAOS_R=1.0||1.0||0.100000||5.000000||N
+InpAOS_W250=50||250||1||500||N
+InpAOS_Ledger=true||false||0||true||N
+;=== Apple / UK / EUR L2det OFF ===
+InpAOS_AAPL_L2detEnable=false||false||0||true||N
+InpAOS_AAPL_SkipThu=true||false||0||true||N
+InpAOS_AAPL_SkipHour18=true||false||0||true||N
+InpAOS_UK_L2detEnable=false||false||0||true||N
+InpAOS_UK_SkipThu=true||false||0||true||N
+InpAOS_UK_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_UK_SkipJul=false||false||0||true||N
+InpAOS_UK_AtrCapPoints=1470.0||1470.0||1.000000||5000.000000||N
+InpAOS_UK_NearAtrFrac=0.9||0.9||0.050000||1.000000||N
+InpAOS_EUR_L2detEnable=false||false||0||true||N
+InpAOS_EUR_SkipThu=true||false||0||true||N
+InpAOS_EUR_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_EUR_AtrCapPoints=74.0||74.0||1.000000||500.000000||N
+InpAOS_EUR_NearAtrFrac=0.9||0.9||0.050000||1.000000||N
+;=== AUDUSD M15 L2det v1 ===
+InpAOS_AUD_L2detEnable=true||false||0||true||N
+InpAOS_AUD_SkipBuyMay=true||false||0||true||N
+InpAOS_AUD_SkipBuyThu=false||false||0||true||N

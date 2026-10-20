@@ -1,0 +1,263 @@
+{
+  "L9_full_tip": {
+    "skip_H14": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0534,
+      "ret": 96.1,
+      "prec": 0.0,
+      "may_fp": 1,
+      "mon_fp": 0,
+      "buy_fp": 0
+    },
+    "skip_H18": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0601,
+      "ret": 79.2,
+      "prec": 0.625,
+      "may_fp": 2,
+      "mon_fp": 1,
+      "buy_fp": 4
+    },
+    "skip_H19": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0362,
+      "ret": 72.7,
+      "prec": 0.5714,
+      "may_fp": 3,
+      "mon_fp": 1,
+      "buy_fp": 5
+    },
+    "skip_rth_edge_H14_18_19": {
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "delta_E_N": 0.0469,
+      "ret": 48.1,
+      "prec": 0.55,
+      "may_fp": 6,
+      "mon_fp": 2,
+      "buy_fp": 9
+    },
+    "skip_overnight_held": {
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "delta_E_N": -0.5745,
+      "ret": 44.2,
+      "prec": 0.3488,
+      "may_fp": 7,
+      "mon_fp": 8,
+      "buy_fp": 16
+    },
+    "skip_spread_gt_p66": {
+      "verdict": "ARM_SOFT",
+      "delta_E_N": 0.0803,
+      "ret": 70.1,
+      "prec": 0.6087,
+      "may_fp": 1,
+      "mon_fp": 0,
+      "buy_fp": 7
+    },
+    "skip_spread_ge_30": {
+      "verdict": "ARM_SOFT",
+      "delta_E_N": 0.0803,
+      "ret": 70.1,
+      "prec": 0.6087,
+      "may_fp": 1,
+      "mon_fp": 0,
+      "buy_fp": 7
+    }
+  },
+  "L9_add_v1b": {
+    "skip_H14_on_v1b_kept": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0536,
+      "ret": 95.5,
+      "may_fp": 1,
+      "mon_fp": 0
+    },
+    "skip_H18_on_v1b_kept": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.1058,
+      "ret": 77.3,
+      "may_fp": 2,
+      "mon_fp": 1
+    },
+    "skip_H19_on_v1b_kept": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0064,
+      "ret": 79.5,
+      "may_fp": 2,
+      "mon_fp": 1
+    },
+    "skip_rth_edge_H14_18_19_on_v1b_kept": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0489,
+      "ret": 52.3,
+      "may_fp": 5,
+      "mon_fp": 2
+    },
+    "skip_overnight_held_on_v1b_kept": {
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "delta_E_N": -0.6425,
+      "ret": 31.8,
+      "may_fp": 6,
+      "mon_fp": 8
+    },
+    "skip_spread_gt_p66_on_v1b_kept": {
+      "verdict": "ARM_SOFT",
+      "delta_E_N": 0.1195,
+      "ret": 72.7,
+      "may_fp": 1,
+      "mon_fp": 0
+    },
+    "skip_spread_ge_30_on_v1b_kept": {
+      "verdict": "ARM_SOFT",
+      "delta_E_N": 0.1195,
+      "ret": 72.7,
+      "may_fp": 1,
+      "mon_fp": 0
+    }
+  },
+  "L9_armed": [
+    "skip_spread_gt_p66",
+    "skip_spread_ge_30",
+    "skip_spread_gt_p66_on_v1b_kept",
+    "skip_spread_ge_30_on_v1b_kept"
+  ],
+  "L9_hold": [
+    "skip_H18",
+    "skip_H19",
+    "skip_H18_on_v1b_kept",
+    "skip_rth_edge_H14_18_19_on_v1b_kept"
+  ],
+  "L9_disarm": [
+    "skip_H14",
+    "skip_rth_edge_H14_18_19",
+    "skip_overnight_held",
+    "skip_H14_on_v1b_kept",
+    "skip_H19_on_v1b_kept",
+    "skip_overnight_held_on_v1b_kept"
+  ],
+  "L9_rec": {
+    "spread_tercile": "DISARM_tip_saturated",
+    "skip_H14": "DISARM",
+    "skip_H18": "HOLD_SHADOW",
+    "skip_H19": "HOLD_SHADOW",
+    "skip_rth_edge": "REJECT_FREQUENCY_STALL",
+    "skip_overnight": "REJECT_FREQUENCY_STALL",
+    "skip_spread_ge_30": "ARM_SOFT",
+    "skip_spread_ge_30_l9_stance": "NO_L9_LIVE \u2014 CF ARM_SOFT duplicates L2det optional HOLD (InpAOS_AAPL_M5_SkipHighSpread=false). Keep OFF; do not stack L9.",
+    "wire": "No new L9 LIVE veto. Prefer overlay L2det_aapl_m5_v1b over stacking L9. H18 already optional HOLD on L2det \u2014 do not double-wire as L9 LIVE. Spread\u226530 CF can look ARM_SOFT but tip is saturated (~29\u201331) \u2014 leave as L2det optional OFF, not L9 LIVE. Overnight REJECT \u2014 leave to L8."
+  },
+  "stress_vs_v1b": {
+    "Jul_only": {
+      "kept_E_N": 0.3166,
+      "d_vs_v1b": -0.0327,
+      "ret": 80.5,
+      "verdict": "ARM_SOFT",
+      "may_fp": 0,
+      "mon_fp": 0
+    },
+    "Wed_only": {
+      "kept_E_N": 0.2368,
+      "d_vs_v1b": -0.1125,
+      "ret": 67.5,
+      "verdict": "ARM_SOFT",
+      "may_fp": 1,
+      "mon_fp": 0
+    },
+    "Jul_OR_Wed_nominal": {
+      "kept_E_N": 0.3493,
+      "d_vs_v1b": 0.0,
+      "ret": 57.1,
+      "verdict": "ARM_SOFT",
+      "may_fp": 1,
+      "mon_fp": 0
+    },
+    "Jul_OR_Wed_OR_H18": {
+      "kept_E_N": 0.4551,
+      "d_vs_v1b": 0.1058,
+      "ret": 44.2,
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "may_fp": 3,
+      "mon_fp": 1
+    },
+    "Jul_OR_Wed_OR_spread30": {
+      "kept_E_N": 0.4688,
+      "d_vs_v1b": 0.1195,
+      "ret": 41.6,
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "may_fp": 2,
+      "mon_fp": 0
+    },
+    "Jul_OR_Wed_OR_Jun": {
+      "kept_E_N": 0.3743,
+      "d_vs_v1b": 0.025,
+      "ret": 46.8,
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "may_fp": 1,
+      "mon_fp": 2
+    },
+    "Jul_OR_Wed_OR_Aug": {
+      "kept_E_N": 0.2743,
+      "d_vs_v1b": -0.075,
+      "ret": 42.9,
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "may_fp": 1,
+      "mon_fp": 5
+    },
+    "Wed_OR_H18_no_Jul": {
+      "kept_E_N": 0.2987,
+      "d_vs_v1b": -0.0506,
+      "ret": 51.9,
+      "verdict": "HOLD_SHADOW",
+      "may_fp": 3,
+      "mon_fp": 1
+    },
+    "Jul_OR_H18_no_Wed": {
+      "kept_E_N": 0.4135,
+      "d_vs_v1b": 0.0642,
+      "ret": 63.6,
+      "verdict": "HOLD_SHADOW",
+      "may_fp": 2,
+      "mon_fp": 1
+    },
+    "REJECT_probe_May": {
+      "kept_E_N": 0.0656,
+      "d_vs_v1b": -0.2837,
+      "ret": 84.4,
+      "verdict": "DISARM",
+      "may_fp": 8,
+      "mon_fp": 2
+    },
+    "REJECT_probe_Mon": {
+      "kept_E_N": 0.0544,
+      "d_vs_v1b": -0.2949,
+      "ret": 79.2,
+      "verdict": "DISARM",
+      "may_fp": 2,
+      "mon_fp": 10
+    },
+    "REJECT_probe_BUY": {
+      "kept_E_N": -0.0235,
+      "d_vs_v1b": -0.3728,
+      "ret": 49.4,
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "may_fp": 6,
+      "mon_fp": 8
+    },
+    "REJECT_probe_near_atr": {
+      "kept_E_N": 0.1521,
+      "d_vs_v1b": -0.1972,
+      "ret": 94.8,
+      "verdict": "DISARM",
+      "may_fp": 0,
+      "mon_fp": 0
+    }
+  },
+  "v1b_kept_E_N": 0.3493,
+  "v1b_ret": 57.1,
+  "T02": "PASS",
+  "T02_fail": [
+    "Wed_only"
+  ],
+  "ATR_BBW_G3": "PASS",
+  "phase": "P6_COMPLETE"
+}

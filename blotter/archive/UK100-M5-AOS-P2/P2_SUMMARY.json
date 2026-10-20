@@ -1,0 +1,45 @@
+{
+  "parity": {
+    "tip": {
+      "tue_fires": 0,
+      "atr_gt_869": 0,
+      "verdict": "PASS"
+    },
+    "prior": {
+      "tue_fires": 0,
+      "atr_gt_869": 0,
+      "verdict": "PASS"
+    }
+  },
+  "preferred_stack": "L2det_v1b_MonAndH12_OR_SellAndH12",
+  "preferred": {
+    "policy": "L2det_v1b_MonAndH12_OR_SellAndH12",
+    "baseline": {
+      "n": 116,
+      "WR": 0.525862,
+      "E_N": 0.18319,
+      "BM_pp": 8.1418,
+      "EF_proxy_pp": 2.2159
+    },
+    "kept": {
+      "n": 83,
+      "WR": 0.614458,
+      "E_N": 0.38253,
+      "BM_pp": 17.0013,
+      "EF_proxy_pp": 11.0754
+    },
+    "skips_n": 33,
+    "fire_retention_pct": 71.55,
+    "precision_losers": 0.697,
+    "\u0394E_N": 0.19934,
+    "\u0394EF_proxy_pp": 8.8595,
+    "fp_wed_winners": 4,
+    "fp_h08_11_winners": 0,
+    "fp_buy_winners": 1,
+    "verdict": "ARM_SOFT"
+  },
+  "L2AI_verdict": "DISARM",
+  "L2AI_auc_tip": 0.4027,
+  "hitl_note": "Wed FP=4 accepted; mornings protected; preferred research stack",
+  "mode": "SHADOW_ONLY_not_LIVE_WITHHOLD"
+}

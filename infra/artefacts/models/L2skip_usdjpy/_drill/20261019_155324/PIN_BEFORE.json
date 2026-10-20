@@ -1,0 +1,11 @@
+{
+  "semver": "L2skip_usdjpy_p_pretip_20261019_155324",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "overlay_champ": "L2det_usdjpy_v1c_near_atr_OR_H16",
+  "ai_champ": null,
+  "updated_utc": "2026-10-19T15:53:24.072186+00:00",
+  "auc_tip_oos": 0.4706994328922495,
+  "best_verdict": "HOLD_SHADOW",
+  "chrono_holdout_verdict": "SHADOW_CANDIDATE"
+}

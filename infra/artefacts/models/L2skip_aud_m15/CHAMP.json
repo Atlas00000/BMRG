@@ -1,0 +1,7 @@
+{
+  "semver": null,
+  "status": "DISARM",
+  "role": "ai_champ",
+  "note": "No AUDUSD M15 L2 AI champ. Overlay champ is L2det_aud_m15_v1 in EA. Never collide with live M5 L2skip_aud / 8230931.",
+  "updated_utc": "2026-10-19T15:00:00+00:00"
+}

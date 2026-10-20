@@ -1,0 +1,97 @@
+{
+  "task": "AAPL-M5-AOS-P2",
+  "parity_tip": {
+    "tue_fires": 0,
+    "atr_gt_98": 0,
+    "bbw_out_of_band": 0,
+    "verdict": "PASS"
+  },
+  "parity_ytd": {
+    "tue_fires": 0,
+    "atr_gt_98": 0,
+    "bbw_out_of_band": 0,
+    "verdict": "PASS"
+  },
+  "L2AI_verdict": "DISARM",
+  "L2AI_auc_tip": 0.5014,
+  "preferred_stack": {
+    "stack": "L2det_Jul_OR_Wed",
+    "verdict": "ARM_SOFT",
+    "\u0394E_N": 0.192754,
+    "\u0394EF_profile_pp": 7.7922,
+    "retention_pct": 57.14,
+    "precision_losers": 0.6364,
+    "fp_may": 1,
+    "fp_mon": 0,
+    "fp_buy": 7,
+    "kept_E_N": 0.349282,
+    "kept_n": 44
+  },
+  "top5": [
+    {
+      "stack": "L2det_v1c_Jul_OR_Wed_OR_spread",
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "\u0394E_N": 0.312222,
+      "\u0394EF_profile_pp": 12.6218,
+      "retention_pct": 41.56,
+      "precision_losers": 0.6222,
+      "fp_may": 2,
+      "fp_mon": 0,
+      "fp_buy": 10,
+      "kept_E_N": 0.46875,
+      "kept_n": 32
+    },
+    {
+      "stack": "L2det_v1_Jul_OR_Wed_OR_H18",
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "\u0394E_N": 0.29858,
+      "\u0394EF_profile_pp": 12.0703,
+      "retention_pct": 44.16,
+      "precision_losers": 0.6279,
+      "fp_may": 3,
+      "fp_mon": 1,
+      "fp_buy": 11,
+      "kept_E_N": 0.455108,
+      "kept_n": 34
+    },
+    {
+      "stack": "L2det_v1_OR_L2AI",
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "\u0394E_N": 0.29858,
+      "\u0394EF_profile_pp": 12.0703,
+      "retention_pct": 44.16,
+      "precision_losers": 0.6279,
+      "fp_may": 3,
+      "fp_mon": 1,
+      "fp_buy": 11,
+      "kept_E_N": 0.455108,
+      "kept_n": 34
+    },
+    {
+      "stack": "L2det_Jul_OR_H18",
+      "verdict": "HOLD_SOFT",
+      "\u0394E_N": 0.257006,
+      "\u0394EF_profile_pp": 10.3896,
+      "retention_pct": 63.64,
+      "precision_losers": 0.7143,
+      "fp_may": 2,
+      "fp_mon": 1,
+      "fp_buy": 5,
+      "kept_E_N": 0.413534,
+      "kept_n": 49
+    },
+    {
+      "stack": "L2det_v1a_Jul_OR_H18",
+      "verdict": "HOLD_SOFT",
+      "\u0394E_N": 0.257006,
+      "\u0394EF_profile_pp": 10.3896,
+      "retention_pct": 63.64,
+      "precision_losers": 0.7143,
+      "fp_may": 2,
+      "fp_mon": 1,
+      "fp_buy": 5,
+      "kept_E_N": 0.413534,
+      "kept_n": 49
+    }
+  ]
+}

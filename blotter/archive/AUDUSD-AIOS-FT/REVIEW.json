@@ -1,0 +1,1200 @@
+{
+  "log": "20261008.log",
+  "runs": [
+    {
+      "run_i": 0,
+      "magic": "8230921",
+      "window": "2026.01.01->2026.10.07",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 417.24,
+      "n": 126,
+      "WR": 51.59,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 1.59,
+      "Leak_pp": 2.41,
+      "EF_pp": -0.82,
+      "M_pp": 8.6,
+      "E_N": 0.032,
+      "pnl": 17.24,
+      "usd_per_R_est": 4.31,
+      "zone": "Negative",
+      "months": {
+        "2026-01": {
+          "n": 15,
+          "wins": 10,
+          "losses": 5,
+          "WR": 66.7,
+          "E_N": 0.333,
+          "sum_R": 5.0,
+          "win_R": 10.0,
+          "loss_R": -5.0,
+          "pnl_usd_est": 21.55,
+          "condition": "WIN_MONTH"
+        },
+        "2026-02": {
+          "n": 16,
+          "wins": 5,
+          "losses": 11,
+          "WR": 31.2,
+          "E_N": -0.375,
+          "sum_R": -6.0,
+          "win_R": 5.0,
+          "loss_R": -11.0,
+          "pnl_usd_est": -25.86,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-03": {
+          "n": 19,
+          "wins": 7,
+          "losses": 12,
+          "WR": 36.8,
+          "E_N": -0.263,
+          "sum_R": -5.0,
+          "win_R": 7.0,
+          "loss_R": -12.0,
+          "pnl_usd_est": -21.55,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-04": {
+          "n": 15,
+          "wins": 6,
+          "losses": 9,
+          "WR": 40.0,
+          "E_N": -0.2,
+          "sum_R": -3.0,
+          "win_R": 6.0,
+          "loss_R": -9.0,
+          "pnl_usd_est": -12.93,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-05": {
+          "n": 14,
+          "wins": 10,
+          "losses": 4,
+          "WR": 71.4,
+          "E_N": 0.429,
+          "sum_R": 6.0,
+          "win_R": 10.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 25.86,
+          "condition": "WIN_MONTH"
+        },
+        "2026-06": {
+          "n": 12,
+          "wins": 8,
+          "losses": 4,
+          "WR": 66.7,
+          "E_N": 0.333,
+          "sum_R": 4.0,
+          "win_R": 8.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 17.24,
+          "condition": "WIN_MONTH"
+        },
+        "2026-07": {
+          "n": 14,
+          "wins": 10,
+          "losses": 4,
+          "WR": 71.4,
+          "E_N": 0.429,
+          "sum_R": 6.0,
+          "win_R": 10.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 25.86,
+          "condition": "WIN_MONTH"
+        },
+        "2026-08": {
+          "n": 8,
+          "wins": 6,
+          "losses": 2,
+          "WR": 75.0,
+          "E_N": 0.5,
+          "sum_R": 4.0,
+          "win_R": 6.0,
+          "loss_R": -2.0,
+          "pnl_usd_est": 17.24,
+          "condition": "WIN_MONTH"
+        },
+        "2026-09": {
+          "n": 11,
+          "wins": 2,
+          "losses": 9,
+          "WR": 18.2,
+          "E_N": -0.636,
+          "sum_R": -7.0,
+          "win_R": 2.0,
+          "loss_R": -9.0,
+          "pnl_usd_est": -30.17,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-10": {
+          "n": 2,
+          "wins": 1,
+          "losses": 1,
+          "WR": 50.0,
+          "E_N": 0.0,
+          "sum_R": 0.0,
+          "win_R": 1.0,
+          "loss_R": -1.0,
+          "pnl_usd_est": 0.0,
+          "condition": "FLAT"
+        }
+      },
+      "quarters": {
+        "2026-Q1": {
+          "n": 50,
+          "wins": 22,
+          "losses": 28,
+          "WR": 44.0,
+          "E_N": -0.12,
+          "sum_R": -6.0,
+          "win_R": 22.0,
+          "loss_R": -28.0,
+          "pnl_usd_est": -25.86,
+          "condition": "LOSS_QUARTER"
+        },
+        "2026-Q2": {
+          "n": 41,
+          "wins": 24,
+          "losses": 17,
+          "WR": 58.5,
+          "E_N": 0.171,
+          "sum_R": 7.0,
+          "win_R": 24.0,
+          "loss_R": -17.0,
+          "pnl_usd_est": 30.17,
+          "condition": "WIN_QUARTER"
+        },
+        "2026-Q3": {
+          "n": 33,
+          "wins": 18,
+          "losses": 15,
+          "WR": 54.5,
+          "E_N": 0.091,
+          "sum_R": 3.0,
+          "win_R": 18.0,
+          "loss_R": -15.0,
+          "pnl_usd_est": 12.93,
+          "condition": "WIN_QUARTER"
+        },
+        "2026-Q4": {
+          "n": 2,
+          "wins": 1,
+          "losses": 1,
+          "WR": 50.0,
+          "E_N": 0.0,
+          "sum_R": 0.0,
+          "win_R": 1.0,
+          "loss_R": -1.0,
+          "pnl_usd_est": 0.0,
+          "condition": "FLAT"
+        }
+      },
+      "neg_months": {
+        "2026-02": {
+          "n": 16,
+          "wins": 5,
+          "losses": 11,
+          "WR": 31.2,
+          "E_N": -0.375,
+          "sum_R": -6.0,
+          "win_R": 5.0,
+          "loss_R": -11.0,
+          "pnl_usd_est": -25.86,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-03": {
+          "n": 19,
+          "wins": 7,
+          "losses": 12,
+          "WR": 36.8,
+          "E_N": -0.263,
+          "sum_R": -5.0,
+          "win_R": 7.0,
+          "loss_R": -12.0,
+          "pnl_usd_est": -21.55,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-04": {
+          "n": 15,
+          "wins": 6,
+          "losses": 9,
+          "WR": 40.0,
+          "E_N": -0.2,
+          "sum_R": -3.0,
+          "win_R": 6.0,
+          "loss_R": -9.0,
+          "pnl_usd_est": -12.93,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-09": {
+          "n": 11,
+          "wins": 2,
+          "losses": 9,
+          "WR": 18.2,
+          "E_N": -0.636,
+          "sum_R": -7.0,
+          "win_R": 2.0,
+          "loss_R": -9.0,
+          "pnl_usd_est": -30.17,
+          "condition": "LOSS_MONTH"
+        }
+      },
+      "neg_quarters": {
+        "2026-Q1": {
+          "n": 50,
+          "wins": 22,
+          "losses": 28,
+          "WR": 44.0,
+          "E_N": -0.12,
+          "sum_R": -6.0,
+          "win_R": 22.0,
+          "loss_R": -28.0,
+          "pnl_usd_est": -25.86,
+          "condition": "LOSS_QUARTER"
+        }
+      },
+      "worst_month": {
+        "n": 11,
+        "wins": 2,
+        "losses": 9,
+        "WR": 18.2,
+        "E_N": -0.636,
+        "sum_R": -7.0,
+        "win_R": 2.0,
+        "loss_R": -9.0,
+        "pnl_usd_est": -30.17,
+        "condition": "LOSS_MONTH"
+      },
+      "worst_quarter": {
+        "n": 50,
+        "wins": 22,
+        "losses": 28,
+        "WR": 44.0,
+        "E_N": -0.12,
+        "sum_R": -6.0,
+        "win_R": 22.0,
+        "loss_R": -28.0,
+        "pnl_usd_est": -25.86,
+        "condition": "LOSS_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 10,
+        "sum_R": -10.0
+      }
+    },
+    {
+      "run_i": 1,
+      "magic": "8230921",
+      "window": "2026.05.01->2026.08.31",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 457.1,
+      "n": 47,
+      "WR": 70.21,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 20.21,
+      "Leak_pp": 2.44,
+      "EF_pp": 17.78,
+      "M_pp": 12.66,
+      "E_N": 0.404,
+      "pnl": 57.1,
+      "usd_per_R_est": 3.01,
+      "zone": "Robust",
+      "months": {
+        "2026-05": {
+          "n": 14,
+          "wins": 10,
+          "losses": 4,
+          "WR": 71.4,
+          "E_N": 0.429,
+          "sum_R": 6.0,
+          "win_R": 10.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 18.03,
+          "condition": "WIN_MONTH"
+        },
+        "2026-06": {
+          "n": 12,
+          "wins": 8,
+          "losses": 4,
+          "WR": 66.7,
+          "E_N": 0.333,
+          "sum_R": 4.0,
+          "win_R": 8.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 12.02,
+          "condition": "WIN_MONTH"
+        },
+        "2026-07": {
+          "n": 14,
+          "wins": 10,
+          "losses": 4,
+          "WR": 71.4,
+          "E_N": 0.429,
+          "sum_R": 6.0,
+          "win_R": 10.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 18.03,
+          "condition": "WIN_MONTH"
+        },
+        "2026-08": {
+          "n": 7,
+          "wins": 5,
+          "losses": 2,
+          "WR": 71.4,
+          "E_N": 0.429,
+          "sum_R": 3.0,
+          "win_R": 5.0,
+          "loss_R": -2.0,
+          "pnl_usd_est": 9.02,
+          "condition": "WIN_MONTH"
+        }
+      },
+      "quarters": {
+        "2026-Q2": {
+          "n": 26,
+          "wins": 18,
+          "losses": 8,
+          "WR": 69.2,
+          "E_N": 0.385,
+          "sum_R": 10.0,
+          "win_R": 18.0,
+          "loss_R": -8.0,
+          "pnl_usd_est": 30.05,
+          "condition": "WIN_QUARTER"
+        },
+        "2026-Q3": {
+          "n": 21,
+          "wins": 15,
+          "losses": 6,
+          "WR": 71.4,
+          "E_N": 0.429,
+          "sum_R": 9.0,
+          "win_R": 15.0,
+          "loss_R": -6.0,
+          "pnl_usd_est": 27.05,
+          "condition": "WIN_QUARTER"
+        }
+      },
+      "neg_months": {},
+      "neg_quarters": {},
+      "worst_month": {
+        "n": 7,
+        "wins": 5,
+        "losses": 2,
+        "WR": 71.4,
+        "E_N": 0.429,
+        "sum_R": 3.0,
+        "win_R": 5.0,
+        "loss_R": -2.0,
+        "pnl_usd_est": 9.02,
+        "condition": "WIN_MONTH"
+      },
+      "worst_quarter": {
+        "n": 21,
+        "wins": 15,
+        "losses": 6,
+        "WR": 71.4,
+        "E_N": 0.429,
+        "sum_R": 9.0,
+        "win_R": 15.0,
+        "loss_R": -6.0,
+        "pnl_usd_est": 27.05,
+        "condition": "WIN_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 2,
+        "sum_R": -2.0
+      }
+    },
+    {
+      "run_i": 2,
+      "magic": "8230921",
+      "window": "2026.01.01->2026.04.30",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 381.47,
+      "n": 62,
+      "WR": 43.55,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": -6.45,
+      "Leak_pp": 2.32,
+      "EF_pp": -8.77,
+      "M_pp": 11.98,
+      "E_N": -0.129,
+      "pnl": -18.53,
+      "usd_per_R_est": 2.32,
+      "zone": "Negative",
+      "months": {
+        "2026-01": {
+          "n": 15,
+          "wins": 10,
+          "losses": 5,
+          "WR": 66.7,
+          "E_N": 0.333,
+          "sum_R": 5.0,
+          "win_R": 10.0,
+          "loss_R": -5.0,
+          "pnl_usd_est": 11.58,
+          "condition": "WIN_MONTH"
+        },
+        "2026-02": {
+          "n": 16,
+          "wins": 5,
+          "losses": 11,
+          "WR": 31.2,
+          "E_N": -0.375,
+          "sum_R": -6.0,
+          "win_R": 5.0,
+          "loss_R": -11.0,
+          "pnl_usd_est": -13.9,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-03": {
+          "n": 19,
+          "wins": 7,
+          "losses": 12,
+          "WR": 36.8,
+          "E_N": -0.263,
+          "sum_R": -5.0,
+          "win_R": 7.0,
+          "loss_R": -12.0,
+          "pnl_usd_est": -11.58,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-04": {
+          "n": 12,
+          "wins": 5,
+          "losses": 7,
+          "WR": 41.7,
+          "E_N": -0.167,
+          "sum_R": -2.0,
+          "win_R": 5.0,
+          "loss_R": -7.0,
+          "pnl_usd_est": -4.63,
+          "condition": "LOSS_MONTH"
+        }
+      },
+      "quarters": {
+        "2026-Q1": {
+          "n": 50,
+          "wins": 22,
+          "losses": 28,
+          "WR": 44.0,
+          "E_N": -0.12,
+          "sum_R": -6.0,
+          "win_R": 22.0,
+          "loss_R": -28.0,
+          "pnl_usd_est": -13.9,
+          "condition": "LOSS_QUARTER"
+        },
+        "2026-Q2": {
+          "n": 12,
+          "wins": 5,
+          "losses": 7,
+          "WR": 41.7,
+          "E_N": -0.167,
+          "sum_R": -2.0,
+          "win_R": 5.0,
+          "loss_R": -7.0,
+          "pnl_usd_est": -4.63,
+          "condition": "LOSS_QUARTER"
+        }
+      },
+      "neg_months": {
+        "2026-02": {
+          "n": 16,
+          "wins": 5,
+          "losses": 11,
+          "WR": 31.2,
+          "E_N": -0.375,
+          "sum_R": -6.0,
+          "win_R": 5.0,
+          "loss_R": -11.0,
+          "pnl_usd_est": -13.9,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-03": {
+          "n": 19,
+          "wins": 7,
+          "losses": 12,
+          "WR": 36.8,
+          "E_N": -0.263,
+          "sum_R": -5.0,
+          "win_R": 7.0,
+          "loss_R": -12.0,
+          "pnl_usd_est": -11.58,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-04": {
+          "n": 12,
+          "wins": 5,
+          "losses": 7,
+          "WR": 41.7,
+          "E_N": -0.167,
+          "sum_R": -2.0,
+          "win_R": 5.0,
+          "loss_R": -7.0,
+          "pnl_usd_est": -4.63,
+          "condition": "LOSS_MONTH"
+        }
+      },
+      "neg_quarters": {
+        "2026-Q1": {
+          "n": 50,
+          "wins": 22,
+          "losses": 28,
+          "WR": 44.0,
+          "E_N": -0.12,
+          "sum_R": -6.0,
+          "win_R": 22.0,
+          "loss_R": -28.0,
+          "pnl_usd_est": -13.9,
+          "condition": "LOSS_QUARTER"
+        },
+        "2026-Q2": {
+          "n": 12,
+          "wins": 5,
+          "losses": 7,
+          "WR": 41.7,
+          "E_N": -0.167,
+          "sum_R": -2.0,
+          "win_R": 5.0,
+          "loss_R": -7.0,
+          "pnl_usd_est": -4.63,
+          "condition": "LOSS_QUARTER"
+        }
+      },
+      "worst_month": {
+        "n": 16,
+        "wins": 5,
+        "losses": 11,
+        "WR": 31.2,
+        "E_N": -0.375,
+        "sum_R": -6.0,
+        "win_R": 5.0,
+        "loss_R": -11.0,
+        "pnl_usd_est": -13.9,
+        "condition": "LOSS_MONTH"
+      },
+      "worst_quarter": {
+        "n": 50,
+        "wins": 22,
+        "losses": 28,
+        "WR": 44.0,
+        "E_N": -0.12,
+        "sum_R": -6.0,
+        "win_R": 22.0,
+        "loss_R": -28.0,
+        "pnl_usd_est": -13.9,
+        "condition": "LOSS_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 10,
+        "sum_R": -10.0
+      }
+    },
+    {
+      "run_i": 3,
+      "magic": "8230921",
+      "window": "2026.09.01->2026.10.07",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 378.98,
+      "n": 13,
+      "WR": 23.08,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": -26.92,
+      "Leak_pp": 2.69,
+      "EF_pp": -29.62,
+      "M_pp": 21.04,
+      "E_N": -0.538,
+      "pnl": -21.02,
+      "usd_per_R_est": 3.0,
+      "zone": "Negative",
+      "months": {
+        "2026-09": {
+          "n": 11,
+          "wins": 2,
+          "losses": 9,
+          "WR": 18.2,
+          "E_N": -0.636,
+          "sum_R": -7.0,
+          "win_R": 2.0,
+          "loss_R": -9.0,
+          "pnl_usd_est": -21.02,
+          "condition": "LOSS_MONTH"
+        },
+        "2026-10": {
+          "n": 2,
+          "wins": 1,
+          "losses": 1,
+          "WR": 50.0,
+          "E_N": 0.0,
+          "sum_R": 0.0,
+          "win_R": 1.0,
+          "loss_R": -1.0,
+          "pnl_usd_est": 0.0,
+          "condition": "FLAT"
+        }
+      },
+      "quarters": {
+        "2026-Q3": {
+          "n": 11,
+          "wins": 2,
+          "losses": 9,
+          "WR": 18.2,
+          "E_N": -0.636,
+          "sum_R": -7.0,
+          "win_R": 2.0,
+          "loss_R": -9.0,
+          "pnl_usd_est": -21.02,
+          "condition": "LOSS_QUARTER"
+        },
+        "2026-Q4": {
+          "n": 2,
+          "wins": 1,
+          "losses": 1,
+          "WR": 50.0,
+          "E_N": 0.0,
+          "sum_R": 0.0,
+          "win_R": 1.0,
+          "loss_R": -1.0,
+          "pnl_usd_est": 0.0,
+          "condition": "FLAT"
+        }
+      },
+      "neg_months": {
+        "2026-09": {
+          "n": 11,
+          "wins": 2,
+          "losses": 9,
+          "WR": 18.2,
+          "E_N": -0.636,
+          "sum_R": -7.0,
+          "win_R": 2.0,
+          "loss_R": -9.0,
+          "pnl_usd_est": -21.02,
+          "condition": "LOSS_MONTH"
+        }
+      },
+      "neg_quarters": {
+        "2026-Q3": {
+          "n": 11,
+          "wins": 2,
+          "losses": 9,
+          "WR": 18.2,
+          "E_N": -0.636,
+          "sum_R": -7.0,
+          "win_R": 2.0,
+          "loss_R": -9.0,
+          "pnl_usd_est": -21.02,
+          "condition": "LOSS_QUARTER"
+        }
+      },
+      "worst_month": {
+        "n": 11,
+        "wins": 2,
+        "losses": 9,
+        "WR": 18.2,
+        "E_N": -0.636,
+        "sum_R": -7.0,
+        "win_R": 2.0,
+        "loss_R": -9.0,
+        "pnl_usd_est": -21.02,
+        "condition": "LOSS_MONTH"
+      },
+      "worst_quarter": {
+        "n": 11,
+        "wins": 2,
+        "losses": 9,
+        "WR": 18.2,
+        "E_N": -0.636,
+        "sum_R": -7.0,
+        "win_R": 2.0,
+        "loss_R": -9.0,
+        "pnl_usd_est": -21.02,
+        "condition": "LOSS_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 4,
+        "sum_R": -4.0
+      }
+    },
+    {
+      "run_i": 7,
+      "magic": "8230921",
+      "window": "2026.06.01->2026.06.30",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 410.9,
+      "n": 11,
+      "WR": 63.64,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 13.64,
+      "Leak_pp": 2.42,
+      "EF_pp": 11.21,
+      "M_pp": 24.73,
+      "E_N": 0.273,
+      "pnl": 10.9,
+      "usd_per_R_est": 3.63,
+      "zone": "Fragile",
+      "months": {
+        "2026-06": {
+          "n": 11,
+          "wins": 7,
+          "losses": 4,
+          "WR": 63.6,
+          "E_N": 0.273,
+          "sum_R": 3.0,
+          "win_R": 7.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 10.9,
+          "condition": "WIN_MONTH"
+        }
+      },
+      "quarters": {
+        "2026-Q2": {
+          "n": 11,
+          "wins": 7,
+          "losses": 4,
+          "WR": 63.6,
+          "E_N": 0.273,
+          "sum_R": 3.0,
+          "win_R": 7.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 10.9,
+          "condition": "WIN_QUARTER"
+        }
+      },
+      "neg_months": {},
+      "neg_quarters": {},
+      "worst_month": {
+        "n": 11,
+        "wins": 7,
+        "losses": 4,
+        "WR": 63.6,
+        "E_N": 0.273,
+        "sum_R": 3.0,
+        "win_R": 7.0,
+        "loss_R": -4.0,
+        "pnl_usd_est": 10.9,
+        "condition": "WIN_MONTH"
+      },
+      "worst_quarter": {
+        "n": 11,
+        "wins": 7,
+        "losses": 4,
+        "WR": 63.6,
+        "E_N": 0.273,
+        "sum_R": 3.0,
+        "win_R": 7.0,
+        "loss_R": -4.0,
+        "pnl_usd_est": 10.9,
+        "condition": "WIN_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 2,
+        "sum_R": -2.0
+      }
+    },
+    {
+      "run_i": 8,
+      "magic": "8230921",
+      "window": "2026.07.01->2026.07.31",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 409.66,
+      "n": 11,
+      "WR": 63.64,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 13.64,
+      "Leak_pp": 2.45,
+      "EF_pp": 11.18,
+      "M_pp": 24.73,
+      "E_N": 0.273,
+      "pnl": 9.66,
+      "usd_per_R_est": 3.22,
+      "zone": "Fragile",
+      "months": {
+        "2026-07": {
+          "n": 11,
+          "wins": 7,
+          "losses": 4,
+          "WR": 63.6,
+          "E_N": 0.273,
+          "sum_R": 3.0,
+          "win_R": 7.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 9.66,
+          "condition": "WIN_MONTH"
+        }
+      },
+      "quarters": {
+        "2026-Q3": {
+          "n": 11,
+          "wins": 7,
+          "losses": 4,
+          "WR": 63.6,
+          "E_N": 0.273,
+          "sum_R": 3.0,
+          "win_R": 7.0,
+          "loss_R": -4.0,
+          "pnl_usd_est": 9.66,
+          "condition": "WIN_QUARTER"
+        }
+      },
+      "neg_months": {},
+      "neg_quarters": {},
+      "worst_month": {
+        "n": 11,
+        "wins": 7,
+        "losses": 4,
+        "WR": 63.6,
+        "E_N": 0.273,
+        "sum_R": 3.0,
+        "win_R": 7.0,
+        "loss_R": -4.0,
+        "pnl_usd_est": 9.66,
+        "condition": "WIN_MONTH"
+      },
+      "worst_quarter": {
+        "n": 11,
+        "wins": 7,
+        "losses": 4,
+        "WR": 63.6,
+        "E_N": 0.273,
+        "sum_R": 3.0,
+        "win_R": 7.0,
+        "loss_R": -4.0,
+        "pnl_usd_est": 9.66,
+        "condition": "WIN_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 2,
+        "sum_R": -2.0
+      }
+    },
+    {
+      "run_i": 6,
+      "magic": "8230921",
+      "window": "2026.09.01->2026.09.30",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 381.97,
+      "n": 10,
+      "WR": 20.0,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": -30.0,
+      "Leak_pp": 2.72,
+      "EF_pp": -32.72,
+      "M_pp": 22.66,
+      "E_N": -0.6,
+      "pnl": -18.03,
+      "usd_per_R_est": 3.0,
+      "zone": "Negative",
+      "months": {
+        "2026-09": {
+          "n": 10,
+          "wins": 2,
+          "losses": 8,
+          "WR": 20.0,
+          "E_N": -0.6,
+          "sum_R": -6.0,
+          "win_R": 2.0,
+          "loss_R": -8.0,
+          "pnl_usd_est": -18.03,
+          "condition": "LOSS_MONTH"
+        }
+      },
+      "quarters": {
+        "2026-Q3": {
+          "n": 10,
+          "wins": 2,
+          "losses": 8,
+          "WR": 20.0,
+          "E_N": -0.6,
+          "sum_R": -6.0,
+          "win_R": 2.0,
+          "loss_R": -8.0,
+          "pnl_usd_est": -18.03,
+          "condition": "LOSS_QUARTER"
+        }
+      },
+      "neg_months": {
+        "2026-09": {
+          "n": 10,
+          "wins": 2,
+          "losses": 8,
+          "WR": 20.0,
+          "E_N": -0.6,
+          "sum_R": -6.0,
+          "win_R": 2.0,
+          "loss_R": -8.0,
+          "pnl_usd_est": -18.03,
+          "condition": "LOSS_MONTH"
+        }
+      },
+      "neg_quarters": {
+        "2026-Q3": {
+          "n": 10,
+          "wins": 2,
+          "losses": 8,
+          "WR": 20.0,
+          "E_N": -0.6,
+          "sum_R": -6.0,
+          "win_R": 2.0,
+          "loss_R": -8.0,
+          "pnl_usd_est": -18.03,
+          "condition": "LOSS_QUARTER"
+        }
+      },
+      "worst_month": {
+        "n": 10,
+        "wins": 2,
+        "losses": 8,
+        "WR": 20.0,
+        "E_N": -0.6,
+        "sum_R": -6.0,
+        "win_R": 2.0,
+        "loss_R": -8.0,
+        "pnl_usd_est": -18.03,
+        "condition": "LOSS_MONTH"
+      },
+      "worst_quarter": {
+        "n": 10,
+        "wins": 2,
+        "losses": 8,
+        "WR": 20.0,
+        "E_N": -0.6,
+        "sum_R": -6.0,
+        "win_R": 2.0,
+        "loss_R": -8.0,
+        "pnl_usd_est": -18.03,
+        "condition": "LOSS_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 3,
+        "sum_R": -3.0
+      }
+    },
+    {
+      "run_i": 9,
+      "magic": "8230921",
+      "window": "2026.01.01->2026.01.31",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 413.35,
+      "n": 15,
+      "WR": 66.67,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": 16.67,
+      "Leak_pp": 2.33,
+      "EF_pp": 14.33,
+      "M_pp": 21.56,
+      "E_N": 0.333,
+      "pnl": 13.35,
+      "usd_per_R_est": 2.67,
+      "zone": "Fragile",
+      "months": {
+        "2026-01": {
+          "n": 15,
+          "wins": 10,
+          "losses": 5,
+          "WR": 66.7,
+          "E_N": 0.333,
+          "sum_R": 5.0,
+          "win_R": 10.0,
+          "loss_R": -5.0,
+          "pnl_usd_est": 13.35,
+          "condition": "WIN_MONTH"
+        }
+      },
+      "quarters": {
+        "2026-Q1": {
+          "n": 15,
+          "wins": 10,
+          "losses": 5,
+          "WR": 66.7,
+          "E_N": 0.333,
+          "sum_R": 5.0,
+          "win_R": 10.0,
+          "loss_R": -5.0,
+          "pnl_usd_est": 13.35,
+          "condition": "WIN_QUARTER"
+        }
+      },
+      "neg_months": {},
+      "neg_quarters": {},
+      "worst_month": {
+        "n": 15,
+        "wins": 10,
+        "losses": 5,
+        "WR": 66.7,
+        "E_N": 0.333,
+        "sum_R": 5.0,
+        "win_R": 10.0,
+        "loss_R": -5.0,
+        "pnl_usd_est": 13.35,
+        "condition": "WIN_MONTH"
+      },
+      "worst_quarter": {
+        "n": 15,
+        "wins": 10,
+        "losses": 5,
+        "WR": 66.7,
+        "E_N": 0.333,
+        "sum_R": 5.0,
+        "win_R": 10.0,
+        "loss_R": -5.0,
+        "pnl_usd_est": 13.35,
+        "condition": "WIN_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 3,
+        "sum_R": -3.0
+      }
+    },
+    {
+      "run_i": 11,
+      "magic": "8230921",
+      "window": "2026.02.01->2026.02.28",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": 379.95,
+      "n": 15,
+      "WR": 26.67,
+      "R": 1.0,
+      "BWR": 50.0,
+      "BM_pp": -23.33,
+      "Leak_pp": 2.31,
+      "EF_pp": -25.64,
+      "M_pp": 20.53,
+      "E_N": -0.467,
+      "pnl": -20.05,
+      "usd_per_R_est": 2.86,
+      "zone": "Negative",
+      "months": {
+        "2026-02": {
+          "n": 15,
+          "wins": 4,
+          "losses": 11,
+          "WR": 26.7,
+          "E_N": -0.467,
+          "sum_R": -7.0,
+          "win_R": 4.0,
+          "loss_R": -11.0,
+          "pnl_usd_est": -20.05,
+          "condition": "LOSS_MONTH"
+        }
+      },
+      "quarters": {
+        "2026-Q1": {
+          "n": 15,
+          "wins": 4,
+          "losses": 11,
+          "WR": 26.7,
+          "E_N": -0.467,
+          "sum_R": -7.0,
+          "win_R": 4.0,
+          "loss_R": -11.0,
+          "pnl_usd_est": -20.05,
+          "condition": "LOSS_QUARTER"
+        }
+      },
+      "neg_months": {
+        "2026-02": {
+          "n": 15,
+          "wins": 4,
+          "losses": 11,
+          "WR": 26.7,
+          "E_N": -0.467,
+          "sum_R": -7.0,
+          "win_R": 4.0,
+          "loss_R": -11.0,
+          "pnl_usd_est": -20.05,
+          "condition": "LOSS_MONTH"
+        }
+      },
+      "neg_quarters": {
+        "2026-Q1": {
+          "n": 15,
+          "wins": 4,
+          "losses": 11,
+          "WR": 26.7,
+          "E_N": -0.467,
+          "sum_R": -7.0,
+          "win_R": 4.0,
+          "loss_R": -11.0,
+          "pnl_usd_est": -20.05,
+          "condition": "LOSS_QUARTER"
+        }
+      },
+      "worst_month": {
+        "n": 15,
+        "wins": 4,
+        "losses": 11,
+        "WR": 26.7,
+        "E_N": -0.467,
+        "sum_R": -7.0,
+        "win_R": 4.0,
+        "loss_R": -11.0,
+        "pnl_usd_est": -20.05,
+        "condition": "LOSS_MONTH"
+      },
+      "worst_quarter": {
+        "n": 15,
+        "wins": 4,
+        "losses": 11,
+        "WR": 26.7,
+        "E_N": -0.467,
+        "sum_R": -7.0,
+        "win_R": 4.0,
+        "loss_R": -11.0,
+        "pnl_usd_est": -20.05,
+        "condition": "LOSS_QUARTER"
+      },
+      "max_loss_streak_R": null,
+      "max_loss_streak": {
+        "max_streak": 5,
+        "sum_R": -5.0
+      }
+    }
+  ]
+}

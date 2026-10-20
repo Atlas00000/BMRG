@@ -1,0 +1,110 @@
+; UK100_5m_stack.set
+; Alias: BMRG-M5-UK100-6M-P7_research_OS_ARMED.set
+; Status: P7 HITL RESEARCH OS ARM — Tester / paper / tiny-f · NOT FX live replace
+; Name: UK100_5m_stack · Balanced P0 M5 + AIOS L2det_uk_m5_v1b LIVE_WITHHOLD
+; EA: BMRG ≥ v1.24 · G0 · Symbol UK100 · Chart TF M5
+; Framework: doc/assets/UK100/AIOS_SIGNOFF_M5.md · aios_roadmap_M5.md · aos_p6_harden_M5.md
+; Packet: blotter/archive/UK100-M5-AOS-P7/promotion_packet.json · UK100_M5_AOS_RESEARCH_v1
+; HITL signed 2026-10-20 · ARM_RESEARCH_OS
+; AI challenger SHADOW store only — L2AI OFF in EA
+; HARD RULE: never emit TP < SL → InpTP_Points (2250) > InpSL_Points (1800) · RR=1.25
+;
+; Stack:
+;   Engine Balanced P0 M5 freeze (26101905 geometry) · magic 26121907
+;   L2det_uk_m5_v1b LIVE_WITHHOLD ((Mon ∧ H12–13) ∨ (SELL ∧ H12–13))
+;   L3 halt + L4 size W50 + L6 ledger ON
+;   L2 AI OFF · L9 H14+/spread NOT LIVE
+;   ATR max 869 · session 08–17 · skip Tue
+;
+; Compile BMRG.mq5 ≥ 1.24 · ledger COMMON\Files\BMRG_AOS_ledger_26121907.csv
+; Load: Presets/UK100_5m_stack.set · Profiles/Tester/BMRG/UK100/UK100_5m_stack.set
+; Not M15 UK OS (26111307) · not EUR/AUD live.
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot / risk % (UK100 volume_min=0.1) ===
+InpLotMode=1||0||0||1||N
+InpLot=0.1||0.01||0.001000||1.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.00||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.1||0.0||0.000000||1.000000||N
+;=== Stops & friction — TP > SL (RR=1.25) ===
+InpSL_Points=1800||1800||1||8000||N
+InpTP_Points=2250||2250||1||10000||N
+InpMaxSpread=200||100||1||500||N
+InpSlippage=40||40||1||300||N
+InpCooldownBars=3||2||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=20||12||1||50||N
+;=== Time filter (server) — London cash sleeve ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=8||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=17||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates — ATR max ≈ M5 ATR p75 (REQUIRED) ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||5000.000000||N
+InpATRMaxPoints=869.0||869.0||0.000000||5000.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=24||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26121907||26100915||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS — P7 HITL research OS ARMED ===
+InpAOS_Enable=true||false||0||true||N
+InpAOS_L3_Enable=true||false||0||true||N
+InpAOS_L4_SizeMod=true||false||0||true||N
+InpAiOsMode=2||0||0||2||N
+InpAiModelSemver=L2skip_uk_m5_DISARM
+InpAiKillSwitch=false||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=false||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=44.4||50.0||1.000000||90.000000||N
+InpAOS_Leak=5.93||2.2||0.100000||10.000000||N
+InpAOS_R=1.25||1.0||0.100000||5.000000||N
+InpAOS_W250=50||250||1||500||N
+InpAOS_Ledger=true||false||0||true||N
+;=== UK100 M15 L2det — OFF on M5 sleeve ===
+InpAOS_UK_L2detEnable=false||false||0||true||N
+InpAOS_UK_SkipThu=true||false||0||true||N
+InpAOS_UK_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_UK_SkipJul=false||false||0||true||N
+InpAOS_UK_AtrCapPoints=1470.0||1470.0||1.000000||5000.000000||N
+InpAOS_UK_NearAtrFrac=0.9||0.9||0.050000||1.000000||N
+;=== UK100 M5 L2det v1b — ARMED ===
+InpAOS_UK_M5_L2detEnable=true||false||0||true||N
+InpAOS_UK_M5_SkipMonAndH12=true||false||0||true||N
+InpAOS_UK_M5_SkipSellAndH12=true||false||0||true||N
+InpAOS_UK_M5_SkipAug=false||false||0||true||N

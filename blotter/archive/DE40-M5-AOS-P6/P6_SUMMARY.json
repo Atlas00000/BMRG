@@ -1,0 +1,207 @@
+{
+  "L9_full_tip": {
+    "skip_H08": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0161,
+      "ret": 96.7,
+      "prec": 0.25,
+      "sell_fp": 0,
+      "aug_fp": 2
+    },
+    "skip_BUY_H08": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.026,
+      "ret": 97.6,
+      "prec": 0.0,
+      "sell_fp": 0,
+      "aug_fp": 2
+    },
+    "skip_frank_open_H08_09": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.039,
+      "ret": 84.6,
+      "prec": 0.3684,
+      "sell_fp": 7,
+      "aug_fp": 4
+    },
+    "skip_H13": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0089,
+      "ret": 90.2,
+      "prec": 0.5,
+      "sell_fp": 2,
+      "aug_fp": 2
+    },
+    "skip_spread_gt_p66": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0356,
+      "ret": 85.4,
+      "prec": 0.5556,
+      "sell_fp": 6,
+      "aug_fp": 1
+    },
+    "skip_H14_plus": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0555,
+      "ret": 79.7,
+      "prec": 0.56,
+      "sell_fp": 7,
+      "aug_fp": 3
+    }
+  },
+  "L9_add_v1b": {
+    "skip_H08_on_v1b_kept": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.015,
+      "ret": 96.4,
+      "sell_fp": 0,
+      "aug_fp": 2
+    },
+    "skip_BUY_H08_on_v1b_kept": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0269,
+      "ret": 97.3,
+      "sell_fp": 0,
+      "aug_fp": 2
+    },
+    "skip_frank_open_H08_09_on_v1b_kept": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0276,
+      "ret": 82.7,
+      "sell_fp": 7,
+      "aug_fp": 4
+    },
+    "skip_H13_on_v1b_kept": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0069,
+      "ret": 90.0,
+      "sell_fp": 2,
+      "aug_fp": 2
+    },
+    "skip_spread_gt_p66_on_v1b_kept": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0029,
+      "ret": 89.1,
+      "sell_fp": 6,
+      "aug_fp": 1
+    },
+    "skip_H14_plus_on_v1b_kept": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0097,
+      "ret": 86.4,
+      "sell_fp": 7,
+      "aug_fp": 2
+    }
+  },
+  "L9_armed": [],
+  "L9_hold": [
+    "skip_H13",
+    "skip_spread_gt_p66",
+    "skip_H14_plus",
+    "skip_H13_on_v1b_kept"
+  ],
+  "L9_disarm": [
+    "skip_H08",
+    "skip_BUY_H08",
+    "skip_frank_open_H08_09",
+    "skip_H08_on_v1b_kept",
+    "skip_BUY_H08_on_v1b_kept",
+    "skip_frank_open_H08_09_on_v1b_kept",
+    "skip_spread_gt_p66_on_v1b_kept",
+    "skip_H14_plus_on_v1b_kept"
+  ],
+  "L9_rec": {
+    "spread_tercile": "HOLD_SHADOW",
+    "skip_H08": "DISARM",
+    "skip_BUY_H08": "DISARM",
+    "skip_frank_open": "DISARM",
+    "skip_H13": "HOLD_SHADOW",
+    "skip_H14_plus": "HOLD_SHADOW",
+    "wire": "No new L9 LIVE veto. Prefer overlay L2det_de40_m5_v1b over stacking L9. Frankfurt-open / H08 soft veto only if ARM_SOFT with clean Aug/SELL FP \u2014 else SHADOW. H14+ already covered by L2det BUY\u2227 \u2014 do not double-wire as L9 LIVE. Spread tercile DISARM until tip fills show variance."
+  },
+  "stress_vs_v1b": {
+    "BUY_H14_only": {
+      "kept_E_N": 0.2632,
+      "d_vs_v1b": -0.0254,
+      "ret": 92.7,
+      "verdict": "ARM_SOFT",
+      "sell_fp": 0
+    },
+    "BUY_H16_only": {
+      "kept_E_N": 0.2743,
+      "d_vs_v1b": -0.0143,
+      "ret": 91.9,
+      "verdict": "ARM_SOFT",
+      "sell_fp": 0
+    },
+    "BUY_H14_16_nominal": {
+      "kept_E_N": 0.2886,
+      "d_vs_v1b": 0.0,
+      "ret": 89.4,
+      "verdict": "ARM_SOFT",
+      "sell_fp": 0
+    },
+    "BUY_H13_16_wide": {
+      "kept_E_N": 0.2888,
+      "d_vs_v1b": 0.0002,
+      "ret": 83.7,
+      "verdict": "HOLD_SHADOW",
+      "sell_fp": 0
+    },
+    "BUY_H14_17_wide": {
+      "kept_E_N": 0.3071,
+      "d_vs_v1b": 0.0185,
+      "ret": 85.4,
+      "verdict": "HOLD_SHADOW",
+      "sell_fp": 0
+    },
+    "BUY_H14_16_OR_BUY_SepOct": {
+      "kept_E_N": 0.3087,
+      "d_vs_v1b": 0.0201,
+      "ret": 79.7,
+      "verdict": "ARM_SOFT",
+      "sell_fp": 0
+    },
+    "BUY_H14_16_only_no_Oct": {
+      "kept_E_N": 0.2632,
+      "d_vs_v1b": -0.0254,
+      "ret": 92.7,
+      "verdict": "ARM_SOFT",
+      "sell_fp": 0
+    },
+    "BUY_Oct_only_no_H14_16": {
+      "kept_E_N": 0.25,
+      "d_vs_v1b": -0.0386,
+      "ret": 95.1,
+      "verdict": "ARM_SOFT",
+      "sell_fp": 0
+    },
+    "H14_16_all_sides_OR_BUY_Oct": {
+      "kept_E_N": 0.2948,
+      "d_vs_v1b": 0.0062,
+      "ret": 86.2,
+      "verdict": "HOLD_SHADOW",
+      "sell_fp": 2
+    },
+    "BUY_H14_16_OR_Oct_all": {
+      "kept_E_N": 0.2917,
+      "d_vs_v1b": 0.0031,
+      "ret": 87.8,
+      "verdict": "ARM_SOFT",
+      "sell_fp": 1
+    },
+    "REJECT_probe_BUY_near_atr": {
+      "kept_E_N": 0.1939,
+      "d_vs_v1b": -0.0947,
+      "ret": 79.7,
+      "verdict": "DISARM",
+      "sell_fp": 0
+    }
+  },
+  "v1b_kept_E_N": 0.2886,
+  "v1b_ret": 89.4,
+  "T02": "PASS_WITH_NOTES",
+  "T02_fail": [],
+  "ATR_G3": "PASS",
+  "phase": "P6_COMPLETE"
+}

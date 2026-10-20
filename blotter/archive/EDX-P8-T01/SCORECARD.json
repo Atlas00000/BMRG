@@ -1,0 +1,65 @@
+{
+  "task": "EDX-P8-T01",
+  "identity": {
+    "magic_scored": "8230501",
+    "champ_authority": "8230901",
+    "window": "2026.05.01->2026.08.31",
+    "StartHour": "13",
+    "TradeMon": "false",
+    "SL_TP": "300/300"
+  },
+  "cost_model": {
+    "source": "journal_entry_spread",
+    "formula": "c_R = entry_spread_pts / SL_pts; Leak = c_R/(R+1)",
+    "gaps": [
+      "commission_absent",
+      "swap_absent",
+      "slippage_absent",
+      "no_deal_csv_export"
+    ],
+    "vs_costs_defaulted_3x_spread": {
+      "proxy_Leak_pp": 7.0,
+      "measured_Leak_pp": 2.44
+    }
+  },
+  "n": 47,
+  "WR": 70.21,
+  "R": 1.0,
+  "BWR": 50.0,
+  "BM_pp": 20.21,
+  "c_R_mean": 0.0487,
+  "c_R_median": 0.0467,
+  "Leak_pp": 2.44,
+  "EF_pp": 17.78,
+  "M_pp": 12.66,
+  "E_N": 0.404,
+  "pnl": 57.1,
+  "zone": "Robust",
+  "months": {
+    "2026-05": {
+      "n": 14,
+      "WR": 71.4,
+      "E_N": 0.429
+    },
+    "2026-06": {
+      "n": 12,
+      "WR": 66.7,
+      "E_N": 0.333
+    },
+    "2026-07": {
+      "n": 14,
+      "WR": 71.4,
+      "E_N": 0.429
+    },
+    "2026-08": {
+      "n": 7,
+      "WR": 71.4,
+      "E_N": 0.429
+    }
+  },
+  "spread_pts_median": 14.0,
+  "final": 457.1,
+  "G1_proxy": "PASS",
+  "verdict": "ACCEPT_LEAK_PARTIAL",
+  "reason": "entry-spread Leak measured; commission/swap/slippage absent \u2014 not full deal blotter"
+}

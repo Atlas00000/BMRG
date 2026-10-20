@@ -1,0 +1,8 @@
+{
+  "source_log": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\Tester\\logs\\20261008.log",
+  "window": "2026.01.01->2026.10.07",
+  "magic": 8230921,
+  "n": 126,
+  "lose_rate": 0.48412698412698413,
+  "path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\tape\\AUDUSD_CHAMP_AIOS_TAPE.parquet"
+}

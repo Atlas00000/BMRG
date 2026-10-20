@@ -1,0 +1,120 @@
+{
+  "L9_full_tip": {
+    "skip_H14_plus": {
+      "verdict": "ARM_SOFT",
+      "delta_E_N": 0.0336,
+      "ret": 84.5,
+      "prec": 0.5556,
+      "fpH": 0
+    },
+    "skip_H12_13_BUY": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0121,
+      "ret": 82.8,
+      "prec": 0.5,
+      "fpH": 0
+    },
+    "skip_H12_13_all": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.1864,
+      "ret": 59.5,
+      "prec": 0.5957,
+      "fpH": 0
+    },
+    "skip_morning_H08_11": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.2486,
+      "ret": 56.0,
+      "prec": 0.3333,
+      "fpH": 34
+    },
+    "skip_spread_gt_p66": {
+      "verdict": "ARM_SOFT",
+      "delta_E_N": 0.0251,
+      "ret": 93.1,
+      "prec": 0.625,
+      "fpH": 0
+    },
+    "skip_Mon_all": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0757,
+      "ret": 72.4,
+      "prec": 0.5625,
+      "fpH": 10
+    }
+  },
+  "L9_add_v1b": {
+    "add_H14_plus": {
+      "verdict": "ARM_SOFT",
+      "delta_E_N": 0.106,
+      "ret": 78.3
+    },
+    "add_H12_13_BUY": {
+      "verdict": "DISARM",
+      "delta_E_N": -0.0129,
+      "ret": 83.1
+    },
+    "add_spread_gt_p66": {
+      "verdict": "ARM_SOFT",
+      "delta_E_N": 0.0575,
+      "ret": 90.4
+    },
+    "add_SELL_near_atr": {
+      "verdict": "HOLD_SHADOW",
+      "delta_E_N": 0.0021,
+      "ret": 94.0
+    }
+  },
+  "stress_vs_v1b": {
+    "hours_H12_only": {
+      "kept_E_N": 0.2168,
+      "d_vs_v1b": -0.1657,
+      "ret": 84.5,
+      "verdict": "HOLD_SHADOW"
+    },
+    "hours_H13_only": {
+      "kept_E_N": 0.3144,
+      "d_vs_v1b": -0.0681,
+      "ret": 87.1,
+      "verdict": "ARM_SOFT"
+    },
+    "hours_H11_14_wide": {
+      "kept_E_N": 0.3696,
+      "d_vs_v1b": -0.0129,
+      "ret": 59.5,
+      "verdict": "HOLD_SHADOW"
+    },
+    "hours_H12_13_nominal": {
+      "kept_E_N": 0.3825,
+      "d_vs_v1b": 0.0,
+      "ret": 71.6,
+      "verdict": "HOLD_SHADOW"
+    },
+    "v1b_OR_SELL_near_frac_0.81": {
+      "kept_E_N": 0.3821,
+      "d_vs_v1b": -0.0004,
+      "ret": 60.3,
+      "verdict": "HOLD_SHADOW"
+    },
+    "v1b_OR_SELL_near_frac_0.99": {
+      "kept_E_N": 0.3825,
+      "d_vs_v1b": 0.0,
+      "ret": 71.6,
+      "verdict": "HOLD_SHADOW"
+    },
+    "v1b_OR_SELL_near_cap_782": {
+      "kept_E_N": 0.3821,
+      "d_vs_v1b": -0.0004,
+      "ret": 60.3,
+      "verdict": "HOLD_SHADOW"
+    },
+    "v1b_OR_SELL_near_cap_956": {
+      "kept_E_N": 0.3825,
+      "d_vs_v1b": 0.0,
+      "ret": 71.6,
+      "verdict": "HOLD_SHADOW"
+    }
+  },
+  "v1b_kept_E_N": 0.3825,
+  "ATR_G3": "PASS"
+}

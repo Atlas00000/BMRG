@@ -1,0 +1,88 @@
+; BMRG-M15-META-6M-P2_balanced_TPgtSL.set
+; Status: RESEARCH CHART PRESET / UNTESTED — Balanced TP>SL sibling to P2 Harvest
+; EA: BMRG v1.21 · G0 · AOS OFF
+; Symbol: META (MT5 Meta) | TF: M15
+; HARD RULE: never TP < SL → TP 1500 > SL 1000 · RR=1.50 · BWR=40%
+;
+; Same skip-open session 14:00–20 + light ATR/BBW as Harvest.
+; Probe prior: n≈35 · WR≈45.7% · E_N≈+0.14R · EF≈+3.3pp (WR clears BWR)
+; Mix WR + returns. Magic 26101218.
+;
+; Load: Profiles/Tester/BMRG/META/ or Experts/BMRG/Presets/
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot — Fixed 1.0 share (YWO Meta VOLUME_MIN≈1.0) ===
+InpLotMode=0||0||0||1||N
+InpLot=1.0||1.0||0.010000||100.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.0||1.0||0.010000||100.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||1.000000||N
+;=== Stops — Balanced RR=1.50 (TP > SL) ===
+InpSL_Points=1000||1000||1||5000||N
+InpTP_Points=1500||1500||1||7500||N
+InpMaxSpread=55||55||1||500||N
+InpSlippage=20||20||1||200||N
+InpCooldownBars=3||3||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time filter — skip open: 14:00–20 server ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=14||14||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=20||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates light — ATR 120–535 + BBW 0.30–2.50% ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=120.0||120.0||0.000000||2000.000000||N
+InpATRMaxPoints=535.0||535.0||0.000000||2000.000000||N
+InpUseBBWidthRegime=true||false||0||true||N
+InpBBWidthMinPct=0.30||0.30||0.000000||5.000000||N
+InpBBWidthMaxPct=2.50||2.50||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26101218||26101218||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS OFF (meta only) ===
+InpAOS_Enable=false||false||0||true||N
+InpAOS_L3_Enable=false||false||0||true||N
+InpAOS_L4_SizeMod=false||false||0||true||N
+InpAiOsMode=0||0||0||2||N
+InpAiModelSemver=L2skip_inf_p92_20260927_223519
+InpAiKillSwitch=true||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=true||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=40.0||50.0||1.000000||90.000000||N
+InpAOS_Leak=2.4||2.2||0.100000||10.000000||N
+InpAOS_R=1.50||1.0||0.100000||5.000000||N
+InpAOS_W250=250||250||1||500||N
+InpAOS_Ledger=false||false||0||true||N

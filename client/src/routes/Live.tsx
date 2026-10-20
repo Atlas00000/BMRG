@@ -3,9 +3,14 @@ import { fetchLiveJournal, fetchLiveStatus } from '../api/client';
 import { useAsync } from '../api/useAsync';
 import { PageEnter } from '../components/motion';
 import { EmptyState, SkeletonMetricStrip } from '../components/patterns';
-import { Badge, Button, Surface, Text } from '../components/primitives';
+import { Badge, Surface, Text } from '../components/primitives';
 import { PageFrame } from '../components/shells';
-import { productModeLabel } from '../lib/productCopy';
+import {
+  bookFromLive,
+  filterJournalLines,
+  presetDisplayName,
+  productModeLabel,
+} from '../lib/productCopy';
 
 export function Live() {
   const status = useAsync(() => fetchLiveStatus(), []);
@@ -14,12 +19,15 @@ export function Live() {
     status.status === 'ok'
       ? ((status.data.fuses ?? {}) as Record<string, unknown>)
       : null;
+  const book = bookFromLive(status.status === 'ok' ? status.data : null);
+  const events =
+    journal.status === 'ok' ? filterJournalLines(journal.data.lines, 5) : [];
 
   return (
     <PageFrame
       eyebrow="Live"
       title="Desk"
-      description="Observe the attached expert. Orders and kill stay on the chart — never in the browser."
+      description="Observe the attached expert. Orders and kill stay on the chart."
       actions={
         status.status === 'ok' ? (
           <Badge tone={modeTone(String(status.data.mode))}>
@@ -36,17 +44,13 @@ export function Live() {
       {status.status === 'ok' ? (
         <>
           <PageEnter delay={1}>
-            <Surface className="ln-section" accent="signal">
-              <Text as="div" variant="label" tone="faint">
-                Attachment
+            <Surface className="ln-section" accent="signal" aria-label="Attachment">
+              <Text as="h2" variant="title">
+                {String(status.data.symbol)} {String(status.data.timeframe)}
               </Text>
               <dl className="ln-kv">
-                <dt>Market</dt>
-                <dd>
-                  {String(status.data.symbol)} {String(status.data.timeframe)}
-                </dd>
                 <dt>Preset</dt>
-                <dd>{String(status.data.preset_id)}</dd>
+                <dd>{presetDisplayName(String(status.data.preset_id))}</dd>
                 <dt>Version</dt>
                 <dd>v{String(status.data.ea_version)}</dd>
                 <dt>Account</dt>
@@ -60,10 +64,7 @@ export function Live() {
           </PageEnter>
 
           <PageEnter delay={2}>
-            <Surface className="ln-section">
-              <Text as="div" variant="label" tone="faint">
-                Run mode
-              </Text>
+            <Surface className="ln-section" aria-label="Run mode">
               <div className="ln-chip-row">
                 <Badge tone={modeTone(String(status.data.mode))}>
                   {productModeLabel(String(status.data.mode))}
@@ -73,7 +74,7 @@ export function Live() {
                 </Badge>
               </div>
               <Text as="p" variant="micro" tone="muted">
-                Off · Observe-only · Live-hold. Change mode on chart inputs, not here.
+                Change mode on chart jobs — this console does not switch Live-hold.
               </Text>
             </Surface>
           </PageEnter>
@@ -82,10 +83,8 @@ export function Live() {
             <Surface
               className="ln-section"
               accent={fuses?.l3_halt || fuses?.equity_halt ? 'halt' : 'none'}
+              aria-label="Safety"
             >
-              <Text as="div" variant="label" tone="faint">
-                Safety strip
-              </Text>
               <div className="ln-chip-row">
                 <Badge tone={haltTone(Boolean(fuses?.equity_halt))}>
                   Equity {fuses?.equity_halt ? 'halt' : 'clear'}
@@ -107,37 +106,37 @@ export function Live() {
           </PageEnter>
 
           <PageEnter delay={4}>
-            <Surface className="ln-section">
-              <Text as="div" variant="label" tone="faint">
-                Open book
-              </Text>
+            <Surface className="ln-section" aria-label="Open book">
               <dl className="ln-kv">
                 <dt>Side</dt>
-                <dd>None</dd>
+                <dd>{book.side}</dd>
                 <dt>Entries</dt>
-                <dd>0</dd>
+                <dd>{book.entries}</dd>
                 <dt>Exposure</dt>
-                <dd>Flat</dd>
+                <dd>{book.exposure}</dd>
               </dl>
               <Text as="p" variant="micro" tone="faint">
-                Read-only basket view — no modify or close from this console.
+                Read-only basket — no modify or close from this console.
               </Text>
             </Surface>
           </PageEnter>
 
           <PageEnter delay={5}>
-            <Surface className="ln-section">
-              <Text as="div" variant="label" tone="faint">
-                Journal
-              </Text>
+            <Surface className="ln-section" aria-label="Journal">
               {journal.status === 'ok' ? (
-                <div className="ln-journal">
-                  {journal.data.lines.map((line, i) => (
-                    <p key={i} className="ln-journal__line">
-                      <strong>{line.t}</strong> {line.msg}
-                    </p>
-                  ))}
-                </div>
+                events.length ? (
+                  <div className="ln-journal">
+                    {events.map((line, i) => (
+                      <p key={`${line.t}-${i}`} className="ln-journal__line">
+                        <strong>{line.t}</strong> {line.msg}
+                      </p>
+                    ))}
+                  </div>
+                ) : (
+                  <Text as="p" tone="muted">
+                    No recent opens, closes, or gate events in the feed.
+                  </Text>
+                )
               ) : journal.status === 'error' ? (
                 <EmptyState title="Journal unavailable" detail="No recent desk lines." />
               ) : (
@@ -149,21 +148,11 @@ export function Live() {
           </PageEnter>
 
           <PageEnter delay={6}>
-            <Surface className="ln-section" elevation="plane2">
-              <Text as="div" variant="label" tone="faint">
-                Desk notices
-              </Text>
+            <Surface className="ln-section" elevation="plane2" aria-label="Desk notices">
               <Text as="p" tone="muted">
-                Kill switch is chart-side only. This console does not place, modify, or close orders.
+                Kill switch and orders stay on the chart. This console never places, modifies, or
+                closes positions.
               </Text>
-              <div className="ln-chip-row">
-                <Button variant="ghost" disabled>
-                  Toggle kill (remote) — forbidden
-                </Button>
-                <Button variant="ghost" disabled>
-                  Place order — forbidden
-                </Button>
-              </div>
             </Surface>
           </PageEnter>
         </>

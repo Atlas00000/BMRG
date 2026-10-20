@@ -1,0 +1,200 @@
+{
+  "task": "UK100-AOS-P2-T02",
+  "Leak_source": "journal_2x_entry_spread_median",
+  "Leak_proxy_pp": 4.266699999999999,
+  "baseline": {
+    "label": "baseline_tip",
+    "n": 51,
+    "wins": 25,
+    "losses": 26,
+    "WR": 49.02,
+    "BM_pp": 4.575,
+    "E_N": 0.1029,
+    "EF_proxy_pp": 0.308,
+    "avgR": 0.1029,
+    "wed_n": 11,
+    "wed_WR": 81.82
+  },
+  "parity": {
+    "task": "UK100-AOS-P2-T01",
+    "tue_fires": 0,
+    "fires_with_atr_gt_max": 0,
+    "near_atr_cap_fires": 35,
+    "parity_tue": "PASS",
+    "parity_atr_note": "Engine ATR max gates entries; fires may still show atr>max on the signal bar after entry or gate timing. Count atr>max on tape is diagnostic only.",
+    "atr_gt_max_detail": []
+  },
+  "policies": {
+    "skip_Thu": {
+      "kept": {
+        "label": "skip_Thu_kept",
+        "n": 38,
+        "wins": 21,
+        "losses": 17,
+        "WR": 55.26,
+        "BM_pp": 10.819,
+        "E_N": 0.2434,
+        "EF_proxy_pp": 6.552,
+        "avgR": 0.2434,
+        "wed_n": 11,
+        "wed_WR": 81.82
+      },
+      "skips": {
+        "skips_n": 13,
+        "precision_vs_losers": 0.6923,
+        "recall_losers": 0.3462,
+        "false_skip_winners": 4,
+        "false_skip_wed_winners": 0,
+        "false_skip_sell_winners": 0,
+        "skipped_breakdown": {
+          "Thu": 13,
+          "H08": 3,
+          "Thu_and_H08": 3
+        }
+      },
+      "delta_E_N": 0.1405,
+      "delta_EF_pp": 6.244,
+      "fire_retention_pct": 74.5,
+      "verdict": "ARM_SOFT"
+    },
+    "skip_H08": {
+      "kept": {
+        "label": "skip_H08_kept",
+        "n": 38,
+        "wins": 21,
+        "losses": 17,
+        "WR": 55.26,
+        "BM_pp": 10.819,
+        "E_N": 0.2434,
+        "EF_proxy_pp": 6.552,
+        "avgR": 0.2434,
+        "wed_n": 9,
+        "wed_WR": 88.89
+      },
+      "skips": {
+        "skips_n": 13,
+        "precision_vs_losers": 0.6923,
+        "recall_losers": 0.3462,
+        "false_skip_winners": 4,
+        "false_skip_wed_winners": 1,
+        "false_skip_sell_winners": 2,
+        "skipped_breakdown": {
+          "Thu": 3,
+          "H08": 13,
+          "Thu_and_H08": 3
+        }
+      },
+      "delta_E_N": 0.1405,
+      "delta_EF_pp": 6.244,
+      "fire_retention_pct": 74.5,
+      "verdict": "ARM_SOFT"
+    },
+    "skip_Thu_OR_H08": {
+      "kept": {
+        "label": "skip_Thu_OR_H08_kept",
+        "n": 28,
+        "wins": 17,
+        "losses": 11,
+        "WR": 60.71,
+        "BM_pp": 16.27,
+        "E_N": 0.3661,
+        "EF_proxy_pp": 12.003,
+        "avgR": 0.3661,
+        "wed_n": 9,
+        "wed_WR": 88.89
+      },
+      "skips": {
+        "skips_n": 23,
+        "precision_vs_losers": 0.6522,
+        "recall_losers": 0.5769,
+        "false_skip_winners": 8,
+        "false_skip_wed_winners": 1,
+        "false_skip_sell_winners": 2,
+        "skipped_breakdown": {
+          "Thu": 13,
+          "H08": 13,
+          "Thu_and_H08": 3
+        }
+      },
+      "delta_E_N": 0.2632,
+      "delta_EF_pp": 11.695,
+      "fire_retention_pct": 54.9,
+      "verdict": "ARM_SOFT"
+    },
+    "skip_Thu_AND_H08": {
+      "kept": {
+        "label": "skip_Thu_AND_H08_kept",
+        "n": 48,
+        "wins": 25,
+        "losses": 23,
+        "WR": 52.08,
+        "BM_pp": 7.639,
+        "E_N": 0.1719,
+        "EF_proxy_pp": 3.372,
+        "avgR": 0.1719,
+        "wed_n": 11,
+        "wed_WR": 81.82
+      },
+      "skips": {
+        "skips_n": 3,
+        "precision_vs_losers": 1.0,
+        "recall_losers": 0.1154,
+        "false_skip_winners": 0,
+        "false_skip_wed_winners": 0,
+        "false_skip_sell_winners": 0,
+        "skipped_breakdown": {
+          "Thu": 3,
+          "H08": 3,
+          "Thu_and_H08": 3
+        }
+      },
+      "delta_E_N": 0.069,
+      "delta_EF_pp": 3.064,
+      "fire_retention_pct": 94.1,
+      "verdict": "ARM_SOFT"
+    }
+  },
+  "recommended_for_shadow": "skip_Thu_OR_H08",
+  "prior_diag_skip_Thu_OR_H08": {
+    "baseline_prior": {
+      "label": "baseline_prior",
+      "n": 75,
+      "wins": 34,
+      "losses": 41,
+      "WR": 45.33,
+      "BM_pp": 0.889,
+      "E_N": 0.02,
+      "EF_proxy_pp": -3.378,
+      "avgR": 0.02,
+      "wed_n": 22,
+      "wed_WR": 31.82
+    },
+    "kept": {
+      "label": "prior_kept",
+      "n": 27,
+      "wins": 13,
+      "losses": 14,
+      "WR": 48.15,
+      "BM_pp": 3.704,
+      "E_N": 0.0833,
+      "EF_proxy_pp": -0.563,
+      "avgR": 0.0833,
+      "wed_n": 11,
+      "wed_WR": 36.36
+    },
+    "skips": {
+      "skips_n": 48,
+      "precision_vs_losers": 0.5625,
+      "recall_losers": 0.6585,
+      "false_skip_winners": 21,
+      "false_skip_wed_winners": 3,
+      "false_skip_sell_winners": 8,
+      "skipped_breakdown": {
+        "Thu": 16,
+        "H08": 41,
+        "Thu_and_H08": 9
+      }
+    },
+    "note": "Diagnostic only \u2014 tip is OS compare window"
+  }
+}

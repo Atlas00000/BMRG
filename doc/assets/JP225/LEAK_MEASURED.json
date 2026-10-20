@@ -1,0 +1,55 @@
+{
+  "task": "JP225-AOS-LEAK",
+  "dated": "2026-10-19T15:12:39.086709+00:00",
+  "window": "2026.05.01-2026.08.31",
+  "magic": 26101904,
+  "symbol": "JPN225",
+  "method": "deal_fill: cost_pts = entry_spread_pts + max(0, adverse_exit_slip_pts); commission=0 swap=0 (absent in Tester journal); Leak = median(c_R)/(R+1); R=1.50 SL=23260",
+  "n": 79,
+  "entry_spread_pts": {
+    "median": 1400.0,
+    "mean": 1546.2,
+    "min": 1050,
+    "max": 2300
+  },
+  "exit_adverse_slip_pts": {
+    "median": 15.0,
+    "mean": 34.3,
+    "max": 349.0,
+    "share_adverse": 0.5696
+  },
+  "cost_pts_rt": {
+    "median": 1423.0,
+    "mean": 1580.51,
+    "min": 1050.0,
+    "max": 2611.0
+  },
+  "c_R_median": 0.061178,
+  "c_R_mean": 0.06795,
+  "Leak_measured_median_pp": 2.4471,
+  "Leak_measured_mean_pp": 2.718,
+  "Leak_prior_pp": 4.3,
+  "Leak_proxy_journal_2x_pp": 4.8151,
+  "Leak_source_authority": "measured_median_deal_fill",
+  "commission_swap_note": "Tester journal has no commission/swap lines \u2192 booked 0",
+  "live_spread_footnote": "Live snapshot ~2300 pts may exceed tester entry med 1400 \u2014 re-check before P7; measured here is Tester deal authority for tip.",
+  "tip_all": {
+    "n": 79,
+    "WR": 43.04,
+    "BM_pp": 3.038,
+    "E_N": 0.0759,
+    "Leak_pp": 2.447,
+    "EF_pp": 0.591,
+    "tip_EF_cleared": true
+  },
+  "tip_May_OR_Jul_kept": {
+    "n": 43,
+    "WR": 53.49,
+    "BM_pp": 13.488,
+    "E_N": 0.3372,
+    "Leak_pp": 2.447,
+    "EF_pp": 11.041,
+    "tip_EF_cleared": true
+  },
+  "zone": "tip_stage1_pass_measured"
+}

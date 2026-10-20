@@ -1,0 +1,16 @@
+{
+  "semver": "L2skip_jp225_p_pretip_20261019_152317",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "symbol": "JPN225",
+  "asset": "JP225",
+  "tf": "M15",
+  "magic_engine": 26101904,
+  "mqh_exported": false,
+  "live_withhold": false,
+  "overlay_champ": "L2det_jp225_v1_May_OR_Jul",
+  "overlay_mqh": false,
+  "policy": "doc/assets/JP225/aos_l5_retrain.md",
+  "Leak_source": "measured_median_deal_fill",
+  "Leak_pp": 2.4471
+}

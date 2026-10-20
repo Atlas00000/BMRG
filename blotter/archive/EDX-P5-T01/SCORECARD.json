@@ -1,0 +1,38 @@
+{
+  "task": "EDX-P5-T01",
+  "identity": {
+    "magic": "8230501",
+    "StartHour": "13",
+    "TradeMon": "false",
+    "SL_TP": "300/300",
+    "window": "2026.05.01->2026.08.31"
+  },
+  "n": 47,
+  "WR": 70.21,
+  "R": 1.0,
+  "BM_pp": 20.21,
+  "Leak_pp": 7.0,
+  "EF_pp": 13.21,
+  "M_pp": 12.66,
+  "E_N": 0.404,
+  "pnl": 57.1,
+  "final": 457.1,
+  "zone": "Robust",
+  "n_hour12": 0,
+  "n_Mon": 0,
+  "delta_vs_P0": {
+    "E_N": 0.163,
+    "EF_pp": 8.64,
+    "pnl": 12.71,
+    "n": -11
+  },
+  "delta_vs_T02": {
+    "E_N": 0.036,
+    "EF_pp": 1.79,
+    "pnl": -5.8,
+    "n": -10
+  },
+  "verdict": "ACCEPT_STACK",
+  "reason": "beats P0 and P3-T02 alone",
+  "champion_filter": "stack"
+}

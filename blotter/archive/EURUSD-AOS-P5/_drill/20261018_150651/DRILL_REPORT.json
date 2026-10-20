@@ -1,0 +1,51 @@
+{
+  "task": "EURUSD-AOS-P5-T03",
+  "drill_utc": "2026-10-18T15:06:51.905612+00:00",
+  "steps": [
+    "snapshot",
+    "DISARM",
+    "restore_shadow_pin"
+  ],
+  "before": {
+    "semver": "L2skip_eur_m15_p_pretip_20261018_150651",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_eur_m15_v1b",
+    "ai_champ": null,
+    "updated_utc": "2026-10-18T15:06:51.448236+00:00",
+    "auc_tip_oos": 0.5833333333333334,
+    "best_verdict": "SHADOW_CANDIDATE",
+    "chrono_holdout_verdict": "DISARM"
+  },
+  "disarm": {
+    "semver": null,
+    "mode": "DISARM",
+    "role": "disarmed",
+    "overlay_champ": "L2det_eur_m15_v1b",
+    "ai_champ": null,
+    "updated_utc": "2026-10-18T15:06:51.875029+00:00",
+    "disarm_reason": "P5-T03_rollback_drill",
+    "previous_semver": "L2skip_eur_m15_p_pretip_20261018_150651"
+  },
+  "after": {
+    "semver": "L2skip_eur_m15_p_pretip_20261018_150651",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_eur_m15_v1b",
+    "ai_champ": null,
+    "updated_utc": "2026-10-18T15:06:51.895615+00:00",
+    "restore_reason": "P5-T03_rollback_drill_restore",
+    "previous_semver": null,
+    "auc_tip_oos": 0.5833333333333334,
+    "best_verdict": "SHADOW_CANDIDATE",
+    "chrono_holdout_verdict": "DISARM"
+  },
+  "pass": true,
+  "note": "EA research OS uses L2det_eur_m15_v1b \u2014 AI pin rollback does not change InpAOS_EUR_L2detEnable. Kill-switch / AiOsMode still control L2 AI path. Never load research OS on M5 Harvest live.",
+  "ea_rollback_checklist": [
+    "InpAiKillSwitch=true  OR  InpAiOsMode=OFF \u2192 L2 AI off",
+    "InpAOS_EUR_L2detEnable=false \u2192 det map off (engine only)",
+    "InpAOS_Enable=false \u2192 full AOS off (P2 light engine)",
+    "Reload Presets/BMRG-M15-EURUSD-6M-P2_light_selective_chart.set"
+  ]
+}

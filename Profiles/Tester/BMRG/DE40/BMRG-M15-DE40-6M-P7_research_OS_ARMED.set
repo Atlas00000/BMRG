@@ -1,0 +1,109 @@
+; DE40stack.set — HITL research OS arm (DE40-AOS-P7)
+; Also: BMRG-M15-DE40-6M-P7_research_OS_ARMED.set
+; Status: RESEARCH OS ARMED — expansion sleeve only · NOT live capital admit
+; EA: BMRG + Include/AOS_L2det_de.mqh · Symbol DE40 → MT5 DE30 · M15
+; Magic: 26141907 · Leak prior 9.8pp · W50 · L2det BUY∧nearATR LIVE_WITHHOLD
+; Stack: Engine P0 + L2det_de40_v1 + L3/L4 + ledger · L2AI DISARM · L9 SHADOW
+; HARD RULE: TP (6250) > SL (5000) · RR=1.25
+; Compile BMRG.mq5 before Tester. Ledger → COMMON\Files\BMRG_AOS_ledger_26141907.csv
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot / risk % (DE30 volume_min=0.1) ===
+InpLotMode=1||0||0||1||N
+InpLot=0.1||0.01||0.001000||1.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.00||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.1||0.0||0.000000||1.000000||N
+;=== Stops & friction — TP > SL (RR=1.25) ===
+InpSL_Points=5000||5000||1||12000||N
+InpTP_Points=6250||6250||1||15000||N
+InpMaxSpread=1500||1500||1||3000||N
+InpSlippage=80||80||1||400||N
+InpCooldownBars=2||2||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time filter (server) — Frankfurt / London cash sleeve ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=8||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=17||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates — ATR max ≈ M15 ATR p75 ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||8000.000000||N
+InpATRMaxPoints=4070.0||4070.0||0.000000||8000.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||120||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26141907||26141907||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS ON — HITL DE40stack (P7) ===
+InpAOS_Enable=true||false||0||true||N
+InpAOS_L3_Enable=true||false||0||true||N
+InpAOS_L4_SizeMod=true||false||0||true||N
+InpAiOsMode=2||0||0||2||N
+InpAiModelSemver=L2skip_de40_DISARM
+InpAiKillSwitch=false||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=false||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=44.4||50.0||1.000000||90.000000||N
+InpAOS_Leak=9.8||2.2||0.100000||20.000000||N
+InpAOS_R=1.25||1.0||0.100000||5.000000||N
+InpAOS_W250=50||250||1||500||N
+InpAOS_Ledger=true||false||0||true||N
+;=== Foreign L2det maps OFF ===
+InpAOS_AAPL_L2detEnable=false||false||0||true||N
+InpAOS_AAPL_SkipThu=true||false||0||true||N
+InpAOS_AAPL_SkipHour18=true||false||0||true||N
+InpAOS_UK_L2detEnable=false||false||0||true||N
+InpAOS_UK_SkipThu=true||false||0||true||N
+InpAOS_UK_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_UK_SkipJul=false||false||0||true||N
+InpAOS_UK_AtrCapPoints=1470.0||1470.0||1.000000||5000.000000||N
+InpAOS_UK_NearAtrFrac=0.9||0.9||0.050000||1.000000||N
+InpAOS_EUR_L2detEnable=false||false||0||true||N
+InpAOS_EUR_SkipThu=true||false||0||true||N
+InpAOS_EUR_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_EUR_AtrCapPoints=74.0||74.0||1.000000||500.000000||N
+InpAOS_EUR_NearAtrFrac=0.9||0.9||0.050000||1.000000||N
+InpAOS_AUD_L2detEnable=false||false||0||true||N
+InpAOS_AUD_SkipBuyMay=true||false||0||true||N
+InpAOS_AUD_SkipBuyThu=false||false||0||true||N
+;=== DE40 L2det ARM — BUY∧nearATR ===
+InpAOS_DE_L2detEnable=true||false||0||true||N
+InpAOS_DE_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_DE_SkipH13=false||false||0||true||N
+InpAOS_DE_AtrCapPoints=4070.0||4070.0||1.000000||8000.000000||N
+InpAOS_DE_NearAtrFrac=0.9||0.9||0.050000||1.000000||N

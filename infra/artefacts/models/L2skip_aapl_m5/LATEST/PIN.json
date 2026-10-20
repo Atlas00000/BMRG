@@ -1,0 +1,12 @@
+{
+  "semver": "L2skip_aapl_m5_p_prior_20261020_140136",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "overlay_champ": "L2det_aapl_m5_v1b",
+  "ai_champ": null,
+  "updated_utc": "2026-10-20T14:01:43.559511+00:00",
+  "restore_reason": "P5-T03_rollback_drill_restore",
+  "previous_semver": null,
+  "auc_tip_oos": 0.5013550135501355,
+  "best_verdict": "DISARM"
+}

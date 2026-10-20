@@ -1,0 +1,302 @@
+{
+  "eurusd_sleeves": [
+    {
+      "magic": "26101817",
+      "window": "2026.01.01->2026.10.17",
+      "init": "EURUSD PERIOD_M15 | BB(20,2.3) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=15.0 magic=26101817 aos=0 fade=0",
+      "deposit": 500.0,
+      "final": 520.91,
+      "pnl": 20.91,
+      "geometry": {
+        "SL": 300,
+        "TP": 375,
+        "BBDev": 2.3,
+        "ATRMax": 74.0,
+        "CooldownBars": 3,
+        "RR_design": 1.25
+      },
+      "n": 72,
+      "wins": 35,
+      "losses": 37,
+      "WR": 48.6,
+      "R": 1.25,
+      "BWR": 44.4,
+      "BM_pp": 4.2,
+      "Leak_pp": 3.0,
+      "EF_pp": 1.2,
+      "E_N": 0.094,
+      "avg_win_R": 1.25,
+      "avg_loss_R": 1.0,
+      "tp_lt_sl_count": 0,
+      "stage0": "PASS",
+      "monthly": [
+        {
+          "month": "2026-01",
+          "n": 9,
+          "WR": 66.7,
+          "sumR": 4.5,
+          "vs_BWR": "ok"
+        },
+        {
+          "month": "2026-02",
+          "n": 10,
+          "WR": 30.0,
+          "sumR": -3.25,
+          "vs_BWR": "fail"
+        },
+        {
+          "month": "2026-03",
+          "n": 1,
+          "WR": 100.0,
+          "sumR": 1.25,
+          "vs_BWR": "ok"
+        },
+        {
+          "month": "2026-04",
+          "n": 7,
+          "WR": 57.1,
+          "sumR": 2.0,
+          "vs_BWR": "ok"
+        },
+        {
+          "month": "2026-05",
+          "n": 9,
+          "WR": 44.4,
+          "sumR": 0.0,
+          "vs_BWR": "fail"
+        },
+        {
+          "month": "2026-06",
+          "n": 9,
+          "WR": 44.4,
+          "sumR": 0.0,
+          "vs_BWR": "fail"
+        },
+        {
+          "month": "2026-07",
+          "n": 7,
+          "WR": 57.1,
+          "sumR": 2.0,
+          "vs_BWR": "ok"
+        },
+        {
+          "month": "2026-08",
+          "n": 7,
+          "WR": 42.9,
+          "sumR": -0.25,
+          "vs_BWR": "fail"
+        },
+        {
+          "month": "2026-09",
+          "n": 11,
+          "WR": 45.5,
+          "sumR": 0.25,
+          "vs_BWR": "ok"
+        },
+        {
+          "month": "2026-10",
+          "n": 2,
+          "WR": 50.0,
+          "sumR": 0.25,
+          "vs_BWR": "ok"
+        }
+      ],
+      "top_blocks": [
+        [
+          "outside session",
+          490
+        ],
+        [
+          "weekday blocked",
+          221
+        ],
+        [
+          "fail pause (loss streak=3) barsLeft=11",
+          3
+        ],
+        [
+          "ATR 76.4 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 77.1 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 92.4 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 109.6 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 94.2 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 107.0 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 76.9 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 89.7 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 100.1 > max 74.0 pts",
+          2
+        ]
+      ],
+      "opens_logged": 73
+    },
+    {
+      "magic": "26101817",
+      "window": "2026.05.01->2026.10.17",
+      "init": "EURUSD PERIOD_M15 | BB(20,2.3) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=15.0 magic=26101817 aos=0 fade=0",
+      "deposit": 500.0,
+      "final": 507.14,
+      "pnl": 7.14,
+      "geometry": {
+        "SL": 300,
+        "TP": 375,
+        "BBDev": 2.3,
+        "ATRMax": 74.0,
+        "CooldownBars": 3,
+        "RR_design": 1.25
+      },
+      "n": 45,
+      "wins": 21,
+      "losses": 24,
+      "WR": 46.7,
+      "R": 1.25,
+      "BWR": 44.4,
+      "BM_pp": 2.2,
+      "Leak_pp": 3.0,
+      "EF_pp": -0.7,
+      "E_N": 0.05,
+      "avg_win_R": 1.25,
+      "avg_loss_R": 1.0,
+      "tp_lt_sl_count": 0,
+      "stage0": "PASS",
+      "monthly": [
+        {
+          "month": "2026-05",
+          "n": 9,
+          "WR": 44.4,
+          "sumR": 0.0,
+          "vs_BWR": "fail"
+        },
+        {
+          "month": "2026-06",
+          "n": 9,
+          "WR": 44.4,
+          "sumR": 0.0,
+          "vs_BWR": "fail"
+        },
+        {
+          "month": "2026-07",
+          "n": 7,
+          "WR": 57.1,
+          "sumR": 2.0,
+          "vs_BWR": "ok"
+        },
+        {
+          "month": "2026-08",
+          "n": 7,
+          "WR": 42.9,
+          "sumR": -0.25,
+          "vs_BWR": "fail"
+        },
+        {
+          "month": "2026-09",
+          "n": 11,
+          "WR": 45.5,
+          "sumR": 0.25,
+          "vs_BWR": "ok"
+        },
+        {
+          "month": "2026-10",
+          "n": 2,
+          "WR": 50.0,
+          "sumR": 0.25,
+          "vs_BWR": "ok"
+        }
+      ],
+      "top_blocks": [
+        [
+          "outside session",
+          257
+        ],
+        [
+          "weekday blocked",
+          88
+        ],
+        [
+          "fail pause (loss streak=3) barsLeft=11",
+          2
+        ],
+        [
+          "ATR 83.4 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 74.2 > max 74.0 pts",
+          2
+        ],
+        [
+          "ATR 75.4 > max 74.0 pts",
+          1
+        ],
+        [
+          "ATR 98.2 > max 74.0 pts",
+          1
+        ],
+        [
+          "ATR 91.8 > max 74.0 pts",
+          1
+        ],
+        [
+          "ATR 74.9 > max 74.0 pts",
+          1
+        ],
+        [
+          "fail pause (loss streak=3) barsLeft=10",
+          1
+        ],
+        [
+          "ATR 102.9 > max 74.0 pts",
+          1
+        ],
+        [
+          "ATR 77.4 > max 74.0 pts",
+          1
+        ]
+      ],
+      "opens_logged": 46
+    }
+  ],
+  "expansion_assets": [
+    {
+      "symbol": "EURUSD",
+      "window": "2026.01.01->2026.10.17",
+      "magic": "26101817",
+      "opens": 73,
+      "n_tpsl": 72,
+      "WR_approx": 48.6,
+      "final": 520.91
+    },
+    {
+      "symbol": "EURUSD",
+      "window": "2026.05.01->2026.10.17",
+      "magic": "26101817",
+      "opens": 25,
+      "n_tpsl": 25,
+      "WR_approx": 48.0,
+      "final": null
+    }
+  ]
+}

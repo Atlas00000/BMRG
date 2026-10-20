@@ -1,0 +1,74 @@
+{
+  "task": "EDX-P6-T01",
+  "identity": {
+    "magic": "8230601",
+    "StartHour": "13",
+    "TradeMon": "false",
+    "SL_TP": "300/300",
+    "window": "2026.03.23->2026.09.21"
+  },
+  "n": 73,
+  "n_tier": "Insufficient",
+  "WR": 57.53,
+  "R": 1.0,
+  "BM_pp": 7.53,
+  "Leak_pp": 7.0,
+  "EF_pp": 0.53,
+  "M_pp": 11.06,
+  "E_N": 0.151,
+  "pnl": 35.77,
+  "final": 435.77,
+  "zone": "Fragile",
+  "G1_proxy": "FAIL",
+  "n_hour12": 0,
+  "n_Mon": 0,
+  "months": {
+    "2026-03": {
+      "n": 3,
+      "WR": 0.0,
+      "E_N": -1.0
+    },
+    "2026-04": {
+      "n": 15,
+      "WR": 40.0,
+      "E_N": -0.2
+    },
+    "2026-05": {
+      "n": 14,
+      "WR": 71.4,
+      "E_N": 0.429
+    },
+    "2026-06": {
+      "n": 12,
+      "WR": 66.7,
+      "E_N": 0.333
+    },
+    "2026-07": {
+      "n": 14,
+      "WR": 71.4,
+      "E_N": 0.429
+    },
+    "2026-08": {
+      "n": 8,
+      "WR": 75.0,
+      "E_N": 0.5
+    },
+    "2026-09": {
+      "n": 7,
+      "WR": 28.6,
+      "E_N": -0.429
+    }
+  },
+  "delta_vs_P5_MAY": {
+    "E_N": -0.253,
+    "EF_pp": -12.68,
+    "n": 26
+  },
+  "delta_vs_P0": {
+    "E_N": -0.09,
+    "EF_pp": -4.04,
+    "n": 15
+  },
+  "verdict": "ACCEPT_FREEZE",
+  "reason": "E_N>0 \u00b7 n_tier=Insufficient \u00b7 ready for G1 checklist (G1_proxy=FAIL Fragile)"
+}

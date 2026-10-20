@@ -1,0 +1,204 @@
+{
+  "aos_task": "UK100-AOS-P7",
+  "packet_id": "UK100_AOS_RESEARCH_v1",
+  "generated_utc": "2026-10-12T23:03:51.681574+00:00",
+  "framework_unified": "1.0",
+  "framework_uk100": "0.1.0",
+  "canvas": "display_only",
+  "scope": {
+    "sleeve": "UK100 expansion research OS",
+    "not": [
+      "EURUSD/AUDUSD live replace",
+      "PRODUCTION-WORTHY full G0\u2013G5 admit",
+      "L2 AI LIVE_WITHHOLD",
+      "geometry retune"
+    ]
+  },
+  "identity": {
+    "engine_magic": 26101201,
+    "research_os_magic": 26111307,
+    "ea_version_min": "1.23",
+    "preset_armed": "BMRG-M15-UK100-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "BMRG-M15-UK100-6M-P0_balanced_chart.set",
+    "symbol": "UK100",
+    "tf": "M15",
+    "hist_from": "2025.12.17"
+  },
+  "armed_stack": {
+    "engine": "Balanced P0 G0 FIXED_RR RR1.25",
+    "L2det": "L2det_uk_v1b LIVE_WITHHOLD (Thu OR BUY\u2227nearATR@0.9\u00d71470)",
+    "L2AI": "DISARM",
+    "L3": "ON DD25% / BELOW halt",
+    "L4": "ON size mod \u00b7 W50",
+    "L6": "ledger ON",
+    "L8": "advise-only (not live abort)",
+    "L9": "BUY\u2227H08 ARM_SOFT approved shadow \u2014 not LIVE in this packet",
+    "ATR_max": 1470,
+    "Leak_source": "journal_2x_entry_spread_median",
+    "Leak_pp": 4.27
+  },
+  "baseline_ref": "UK100_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_MayAug": {
+      "n": 51,
+      "WR": 49.0,
+      "E_N": 0.103,
+      "EF_journal_pp": 0.31
+    },
+    "offline_v1b_tip": {
+      "n_fire": 33,
+      "WR": 60.61,
+      "E_N": 0.3636,
+      "EF_pp": 11.9,
+      "delta_E_N_vs_engine": 0.261
+    },
+    "tester_OS_2026_JanOct": {
+      "magic": 26111304,
+      "FIRE": 97,
+      "SKIP": 81,
+      "FIRE_Thu": 0,
+      "closed_full": {
+        "n": 97,
+        "WR": 52.58,
+        "E_N": 0.183,
+        "EF_pp": 3.866
+      },
+      "closed_tip_MayAug": {
+        "n": 34,
+        "WR": 58.82,
+        "E_N": 0.3235,
+        "EF_pp": 10.112
+      },
+      "final_balance_usd": 561.82,
+      "L3_halt_rows": 0
+    }
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+    "expansion_EF": "PASS tip OS EF>0 under journal Leak",
+    "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR1470 declared (P6-T03)",
+    "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+    "G5_stress": "PARTIAL \u2014 L2 \u00b110% PASS_WITH_NOTES (P6); SL/TP not stressed",
+    "Leak_measured": "OPEN \u2014 journal proxy 4.27 pp",
+    "L2AI": "DISARM \u2014 AUC~0.39",
+    "verdict_ladder": "EXPANSION_OS_ARMED \u2014 not PRODUCTION-WORTHY"
+  },
+  "p6_harden_summary": {
+    "L9_BUY_H08": "ARM_SOFT_shadow",
+    "L2_stress": "PASS_WITH_NOTES",
+    "ATR_G3": "PASS"
+  },
+  "ledger_sample": {
+    "ledger_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\BMRG_AOS_ledger_26111304.csv",
+    "n_rows": 178,
+    "decision_counts": {
+      "FIRE": 97,
+      "SKIP": 81
+    },
+    "skip_reasons": {
+      "L2DET_SKIP_THU": 51,
+      "L2DET_SKIP_BUY_NEAR_ATR": 17,
+      "L2DET_SKIP_THU|L2DET_SKIP_BUY_NEAR_ATR": 13
+    },
+    "head_skip": [
+      {
+        "t": "2026.01.08 13:15",
+        "side": "BUY",
+        "decision": "SKIP",
+        "reason": "L2DET_SKIP_THU",
+        "mode": "LIVE_WITHHOLD"
+      },
+      {
+        "t": "2026.01.08 14:45",
+        "side": "SELL",
+        "decision": "SKIP",
+        "reason": "L2DET_SKIP_THU",
+        "mode": "LIVE_WITHHOLD"
+      },
+      {
+        "t": "2026.01.08 15:15",
+        "side": "SELL",
+        "decision": "SKIP",
+        "reason": "L2DET_SKIP_THU",
+        "mode": "LIVE_WITHHOLD"
+      },
+      {
+        "t": "2026.01.15 08:15",
+        "side": "BUY",
+        "decision": "SKIP",
+        "reason": "L2DET_SKIP_THU",
+        "mode": "LIVE_WITHHOLD"
+      },
+      {
+        "t": "2026.01.15 08:30",
+        "side": "BUY",
+        "decision": "SKIP",
+        "reason": "L2DET_SKIP_THU",
+        "mode": "LIVE_WITHHOLD"
+      }
+    ],
+    "head_fire": [
+      {
+        "t": "2026.01.02 08:15",
+        "side": "SELL",
+        "decision": "FIRE",
+        "reason": "FIRE_OK",
+        "life": "Stable",
+        "f_rec": 0.75
+      },
+      {
+        "t": "2026.01.02 08:45",
+        "side": "SELL",
+        "decision": "FIRE",
+        "reason": "FIRE_OK",
+        "life": "Stable",
+        "f_rec": 0.75
+      },
+      {
+        "t": "2026.01.05 08:15",
+        "side": "BUY",
+        "decision": "FIRE",
+        "reason": "FIRE_OK",
+        "life": "Stable",
+        "f_rec": 0.75
+      },
+      {
+        "t": "2026.01.05 16:00",
+        "side": "SELL",
+        "decision": "FIRE",
+        "reason": "FIRE_OK",
+        "life": "Stable",
+        "f_rec": 0.75
+      },
+      {
+        "t": "2026.01.07 08:15",
+        "side": "BUY",
+        "decision": "FIRE",
+        "reason": "FIRE_OK",
+        "life": "Stable",
+        "f_rec": 0.75
+      }
+    ]
+  },
+  "rollback": {
+    "ai_pin": "python infra/artefacts/models/L2skip_uk/rollback_l2skip_uk.py rollback --to DISARM",
+    "ea_det_off": "InpAOS_UK_L2detEnable=false",
+    "ea_aos_off": "InpAOS_Enable=false \u2192 load P0 balanced chart set",
+    "kill_switch": "InpAiKillSwitch=true"
+  },
+  "hitl": {
+    "status": "SIGNED",
+    "signed_utc": "2026-10-12T23:03:00+00:00",
+    "signed_local": "2026-10-13T00:03:00+01:00",
+    "signer": "operator (chat HITL confirmation)",
+    "decision": "ARM_RESEARCH_OS",
+    "acknowledged": [
+      "Not FX live replace",
+      "Not production G0\u2013G5 admit",
+      "Leak still journal proxy",
+      "L2 AI remains DISARM",
+      "Truncated hist_from 2025.12.17"
+    ]
+  },
+  "verdict": "ACCEPT_ARM_RESEARCH_OS"
+}

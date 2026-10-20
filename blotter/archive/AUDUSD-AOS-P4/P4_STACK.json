@@ -1,0 +1,40 @@
+{
+  "task": "AUDUSD-AOS-P4",
+  "generated_utc": "2026-10-19T14:48:46.848035+00:00",
+  "l2det": "L2det_aud_m15_v1 = BUY AND month==May",
+  "Leak_proxy_pp": 5.0,
+  "stacks": {
+    "det_v1": {
+      "n_signals": 41,
+      "n_fire": 39,
+      "n_l2det_skip": 2,
+      "n_l2ai_shadow_skip": 0,
+      "n_l3_halt": 0,
+      "n_l8_advise": 6,
+      "WR": 66.67,
+      "E_N": 0.3333,
+      "EF_proxy_pp": 11.667,
+      "skip_precision_losers": 1.0,
+      "l8_on_losers": 6,
+      "l8_on_winners": 0,
+      "l8_overnight": 4,
+      "fire_retention_pct": 95.1
+    },
+    "det_v1_plus_ai_shadow": {
+      "n_signals": 41,
+      "n_fire": 39,
+      "n_l2det_skip": 2,
+      "n_l2ai_shadow_skip": 3,
+      "n_l3_halt": 0,
+      "n_l8_advise": 6,
+      "WR": 66.67,
+      "E_N": 0.3333,
+      "EF_proxy_pp": 11.667,
+      "skip_precision_losers": 1.0,
+      "l8_on_losers": 6,
+      "l8_on_winners": 0,
+      "l8_overnight": 4,
+      "fire_retention_pct": 95.1
+    }
+  }
+}

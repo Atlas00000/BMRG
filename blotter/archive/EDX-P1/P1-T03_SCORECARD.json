@@ -1,0 +1,145 @@
+{
+  "task": "EDX-P1-T03",
+  "n_tagged": 58,
+  "rates_bars": 31363,
+  "by_cell": {
+    "ATR_high|ranging": {
+      "n": 25,
+      "WR": 72.0,
+      "BM_pp": 22.0,
+      "E_N": 0.44,
+      "gate_n30": false
+    },
+    "ATR_high|trending": {
+      "n": 11,
+      "WR": 54.5,
+      "BM_pp": 4.5,
+      "E_N": 0.091,
+      "gate_n30": false
+    },
+    "ATR_low|ranging": {
+      "n": 4,
+      "WR": 75.0,
+      "BM_pp": 25.0,
+      "E_N": 0.5,
+      "gate_n30": false
+    },
+    "ATR_low|trending": {
+      "n": 1,
+      "WR": 100.0,
+      "BM_pp": 50.0,
+      "E_N": 1.0,
+      "gate_n30": false
+    },
+    "ATR_mid|ranging": {
+      "n": 17,
+      "WR": 47.1,
+      "BM_pp": -2.9,
+      "E_N": -0.059,
+      "gate_n30": false
+    }
+  },
+  "by_vol": {
+    "ATR_high": {
+      "n": 36,
+      "WR": 66.7,
+      "BM_pp": 16.7,
+      "E_N": 0.333,
+      "gate_n30": true
+    },
+    "ATR_low": {
+      "n": 5,
+      "WR": 80.0,
+      "BM_pp": 30.0,
+      "E_N": 0.6,
+      "gate_n30": false
+    },
+    "ATR_mid": {
+      "n": 17,
+      "WR": 47.1,
+      "BM_pp": -2.9,
+      "E_N": -0.059,
+      "gate_n30": false
+    }
+  },
+  "by_trend": {
+    "ranging": {
+      "n": 46,
+      "WR": 63.0,
+      "BM_pp": 13.0,
+      "E_N": 0.261,
+      "gate_n30": true
+    },
+    "trending": {
+      "n": 12,
+      "WR": 58.3,
+      "BM_pp": 8.3,
+      "E_N": 0.167,
+      "gate_n30": false
+    }
+  },
+  "BM_worst_cell": {
+    "cell": "ATR_mid|ranging",
+    "n": 17,
+    "WR": 47.1,
+    "BM_pp": -2.9,
+    "E_N": -0.059,
+    "gate_n30": false,
+    "note": "provisional n>=8 (no cell n>=30)"
+  },
+  "BM_worst_vol": {
+    "cell": "ATR_high",
+    "n": 36,
+    "WR": 66.7,
+    "BM_pp": 16.7,
+    "E_N": 0.333,
+    "gate_n30": true,
+    "note": "n>=30"
+  },
+  "BM_worst_trend": {
+    "cell": "ranging",
+    "n": 46,
+    "WR": 63.0,
+    "BM_pp": 13.0,
+    "E_N": 0.261,
+    "gate_n30": true,
+    "note": "n>=30"
+  },
+  "concentration": {
+    "best_cell": "ATR_high|ranging",
+    "share": 0.917,
+    "REGIME_CONCENTRATED": true
+  },
+  "rank_cells": [
+    {
+      "cell": "ATR_high|ranging",
+      "n": 25,
+      "WR": 72.0,
+      "BM_pp": 22.0,
+      "E_N": 0.44,
+      "gate_n30": false
+    },
+    {
+      "cell": "ATR_high|trending",
+      "n": 11,
+      "WR": 54.5,
+      "BM_pp": 4.5,
+      "E_N": 0.091,
+      "gate_n30": false
+    },
+    {
+      "cell": "ATR_mid|ranging",
+      "n": 17,
+      "WR": 47.1,
+      "BM_pp": -2.9,
+      "E_N": -0.059,
+      "gate_n30": false
+    }
+  ],
+  "method": {
+    "ATR": "Wilder 14; percentile vs prior 5000 bars (no lookahead)",
+    "ER": "50-bar efficiency ratio; trending if ER>=0.3",
+    "entry_bar": "closed bar prior to entry (shift-1)",
+    "source": "MT5 copy_rates_range AUDUSD M5 + log mag 8230111"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "task": "EURUSD-AOS-P1",
+  "tip": {
+    "window": "tip",
+    "n": 45,
+    "WR": 46.7,
+    "atr_missing": 0,
+    "cells": {
+      "cell_buy": {
+        "n": 23,
+        "WR": 39.1,
+        "E_N": -0.12
+      },
+      "cell_dow_thu": {
+        "n": 8,
+        "WR": 37.5,
+        "E_N": -0.156
+      },
+      "cell_hour_13": {
+        "n": 8,
+        "WR": 37.5,
+        "E_N": -0.156
+      },
+      "cell_hour_19": {
+        "n": 3,
+        "WR": 33.3,
+        "E_N": -0.25
+      },
+      "cell_month_feb": {
+        "n": 0
+      },
+      "cell_month_aug": {
+        "n": 7,
+        "WR": 42.9,
+        "E_N": -0.036
+      },
+      "near_atr_cap": {
+        "n": 17,
+        "WR": 47.1,
+        "E_N": 0.059
+      }
+    },
+    "ouroboros": {
+      "MATCH": 43,
+      "FRAGILE": 2,
+      "": 0
+    },
+    "nights_held_share": 0.756
+  },
+  "ytd": {
+    "window": "ytd",
+    "n": 72,
+    "WR": 48.6,
+    "atr_missing": 0,
+    "cells": {
+      "cell_buy": {
+        "n": 34,
+        "WR": 35.3,
+        "E_N": -0.206
+      },
+      "cell_dow_thu": {
+        "n": 12,
+        "WR": 41.7,
+        "E_N": -0.062
+      },
+      "cell_hour_13": {
+        "n": 19,
+        "WR": 47.4,
+        "E_N": 0.066
+      },
+      "cell_hour_19": {
+        "n": 3,
+        "WR": 33.3,
+        "E_N": -0.25
+      },
+      "cell_month_feb": {
+        "n": 10,
+        "WR": 30.0,
+        "E_N": -0.325
+      },
+      "cell_month_aug": {
+        "n": 7,
+        "WR": 42.9,
+        "E_N": -0.036
+      },
+      "near_atr_cap": {
+        "n": 24,
+        "WR": 50.0,
+        "E_N": 0.125
+      }
+    },
+    "ouroboros": {
+      "MATCH": 43,
+      "FRAGILE": 2,
+      "": 27
+    },
+    "nights_held_share": 0.625
+  },
+  "combined_n": 72,
+  "cost_proxy": {
+    "task": "EURUSD-AOS-P1 / P0-T03 proxy",
+    "window": "2026.05.01-2026.10.17",
+    "magic": 26101817,
+    "n": 45,
+    "WR": 0.466667,
+    "BM_pp": 2.2222,
+    "E_N": 0.05,
+    "spread_pts_entry": {
+      "median": 4.0,
+      "mean": 4.311,
+      "min": 4,
+      "max": 6
+    },
+    "atr_pts_entry": {
+      "median": 60.6,
+      "mean": 59.82,
+      "n_missing": 0
+    },
+    "nights_held_share": 0.7556,
+    "SL_pts": 300.0,
+    "R_design": 1.25,
+    "c_R_proxy_2x_med": 0.026667,
+    "Leak_proxy_pp": 1.1852,
+    "EF_proxy_pp": 1.037,
+    "Leak_prior_pp": 3.0,
+    "EF_prior_pp": -0.7778,
+    "Leak_source": "journal_2x_entry_spread_median",
+    "note": "Not full deal blotter (no exit spread/commission/swap). Overnight swap still required for measured Leak.",
+    "zone": "Fragile"
+  }
+}

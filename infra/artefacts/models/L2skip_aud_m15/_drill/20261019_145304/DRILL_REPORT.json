@@ -1,0 +1,52 @@
+{
+  "task": "AUDUSD-AOS-P5-T03",
+  "drill_utc": "2026-10-19T14:53:04.430817+00:00",
+  "steps": [
+    "snapshot",
+    "DISARM",
+    "restore_shadow_pin"
+  ],
+  "before": {
+    "semver": "L2skip_aud_m15_p_pretip_20261019_145303",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_candidate_eligible",
+    "overlay_champ": "L2det_aud_m15_v1",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T14:53:03.913147+00:00",
+    "auc_tip_oos": 0.5974358974358974,
+    "best_verdict": "SHADOW_CANDIDATE",
+    "chrono_holdout_verdict": "HOLD_SHADOW"
+  },
+  "disarm": {
+    "semver": null,
+    "mode": "DISARM",
+    "role": "disarmed",
+    "overlay_champ": "L2det_aud_m15_v1",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T14:53:04.394983+00:00",
+    "disarm_reason": "P5-T03_rollback_drill",
+    "previous_semver": "L2skip_aud_m15_p_pretip_20261019_145303"
+  },
+  "after": {
+    "semver": "L2skip_aud_m15_p_pretip_20261019_145303",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_aud_m15_v1",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T14:53:04.421071+00:00",
+    "restore_reason": "P5-T03_rollback_drill_restore",
+    "previous_semver": null,
+    "auc_tip_oos": 0.5974358974358974,
+    "best_verdict": "SHADOW_CANDIDATE",
+    "chrono_holdout_verdict": "HOLD_SHADOW"
+  },
+  "pass": true,
+  "note": "EA research OS uses L2det_aud_m15_v1 \u2014 AI pin rollback does not change InpAOS_AUD_L2detEnable. Kill-switch / AiOsMode still control L2 AI path. Never load research OS on live M5 SCALE 8230931.",
+  "ea_rollback_checklist": [
+    "InpAiKillSwitch=true  OR  InpAiOsMode=OFF \u2192 L2 AI off",
+    "InpAOS_AUD_L2detEnable=false \u2192 det map off (engine only)",
+    "InpAOS_Enable=false \u2192 full AOS off (CHAMP engine 8230901)",
+    "Reload doc/presets/AUDUSD-CHAMP_Harvest_start13_skipMon_G0.set",
+    "Never touch live SCALE preset / magic 8230931"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "semver": "L2skip_aud_m15_p_pretip_20261019_145303",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_candidate_challenger",
+  "overlay_champ": "L2det_aud_m15_v1",
+  "ai_champ": null,
+  "challenger": "L2skip_aud_m15_p_pretip_20261019_145303",
+  "hitl_utc": "2026-10-19T15:00:00+01:00",
+  "updated_utc": "2026-10-19T15:00:00+01:00",
+  "auc_tip_oos": 0.5974358974358974,
+  "best_verdict": "SHADOW_CANDIDATE",
+  "chrono_holdout_verdict": "HOLD_SHADOW",
+  "note": "HITL pinned CHALLENGER. Armed EA stack uses L2det only (AUDUSD_stack). AI not LIVE_WITHHOLD."
+}

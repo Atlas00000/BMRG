@@ -1,0 +1,106 @@
+; BMRG-M15-EURUSD-6M-P4_research_OS_W50.set
+; Status: RESEARCH OS PRESET — Tester only · NOT live M5 Harvest
+; EA: BMRG · Bollinger Mean-Reversion Grid · G0 (MaxLevels=1)
+; Symbol: EURUSD | Chart TF: M15 | Window intent: 2026.05.01 → tip
+; Framework: doc/assets/EURUSD/edge_framework.md · aos_l6_ledger.md
+; HARD RULE: never emit TP < SL → InpTP_Points (375) > InpSL_Points (300) · RR=1.25
+;
+; P4 stack: engine P2 light geometry + AOS L2det v1b LIVE_WITHHOLD
+;   L2det: Thu OR (BUY ∧ ATR ≥ 0.9×74) · L3/L4/Ledger ON · W50 · Leak 1.19
+;   L2AI: OFF (DISARM — offline shadow only)
+; Magic 26121804 (OS experiment · never collide 8210xxx / 26101817 engine)
+; Load: Profiles/Tester/BMRG/EURUSD/ or Presets/
+; Compile BMRG.mq5 before run · ledger COMMON\Files\BMRG_AOS_ledger_26121804.csv
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.3||2.3||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot / risk % ===
+InpLotMode=1||0||0||1||N
+InpLot=0.01||0.01||0.001000||0.100000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=0.50||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||0.100000||N
+;=== Stops & friction — TP > SL (RR=1.25) ===
+InpSL_Points=300||300||1||3000||N
+InpTP_Points=375||375||1||4500||N
+InpMaxSpread=30||30||1||350||N
+InpSlippage=15||15||1||200||N
+InpCooldownBars=3||3||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=16||12||1||50||N
+;=== Time filter (server) ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=12||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=20||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||500.000000||N
+InpATRMaxPoints=74.0||74.0||0.000000||500.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26121804||26121804||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS ON — research OS (P4) ===
+InpAOS_Enable=true||false||0||true||N
+InpAOS_L3_Enable=true||false||0||true||N
+InpAOS_L4_SizeMod=true||false||0||true||N
+InpAiOsMode=2||0||0||2||N
+InpAiModelSemver=L2skip_eur_m15_DISARM
+InpAiKillSwitch=false||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=false||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=44.4||50.0||1.000000||90.000000||N
+InpAOS_Leak=1.19||2.2||0.100000||10.000000||N
+InpAOS_R=1.25||1.0||0.100000||5.000000||N
+InpAOS_W250=50||250||1||500||N
+InpAOS_Ledger=true||false||0||true||N
+;=== Apple / UK L2det OFF ===
+InpAOS_AAPL_L2detEnable=false||false||0||true||N
+InpAOS_AAPL_SkipThu=true||false||0||true||N
+InpAOS_AAPL_SkipHour18=true||false||0||true||N
+InpAOS_UK_L2detEnable=false||false||0||true||N
+InpAOS_UK_SkipThu=true||false||0||true||N
+InpAOS_UK_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_UK_SkipJul=false||false||0||true||N
+InpAOS_UK_AtrCapPoints=1470.0||1470.0||1.000000||5000.000000||N
+InpAOS_UK_NearAtrFrac=0.9||0.9||0.050000||1.000000||N
+;=== EURUSD M15 L2det v1b ===
+InpAOS_EUR_L2detEnable=true||false||0||true||N
+InpAOS_EUR_SkipThu=true||false||0||true||N
+InpAOS_EUR_SkipBuyNearAtr=true||false||0||true||N
+InpAOS_EUR_AtrCapPoints=74.0||74.0||1.000000||500.000000||N
+InpAOS_EUR_NearAtrFrac=0.9||0.9||0.050000||1.000000||N

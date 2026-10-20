@@ -1,0 +1,14 @@
+{
+  "task": "EDX-P6-T02",
+  "gate": "G1",
+  "source": "EDX-P6-T01 freeze",
+  "EF_pp": 0.53,
+  "M_pp": 11.06,
+  "E_N": 0.151,
+  "n": 73,
+  "n_tier": "Insufficient",
+  "zone": "Fragile",
+  "recent_2026_09": {"n": 7, "WR": 28.6, "E_N": -0.429},
+  "verdict": "G1_FAIL",
+  "production_worthy": false
+}

@@ -1,0 +1,128 @@
+{
+  "aos_task": "JP225-M5-AOS-P7",
+  "packet_id": "JP225_M5_AOS_RESEARCH_v1",
+  "generated_utc": "2026-10-20T13:20:00+00:00",
+  "hitl_signed_utc": "2026-10-20T13:20:00+00:00",
+  "hitl_source": "operator confirmation in chat — proceed P7 + JPN225_5m_stack",
+  "framework_unified": "1.0",
+  "framework_jp225": "0.1.0",
+  "canvas": "display_only",
+  "verdict": "ARM_RESEARCH_OS",
+  "scope": {
+    "sleeve": "JP225/JPN225 M5 expansion research OS",
+    "not": [
+      "EURUSD/AUDUSD/UK100/DE40 live replace",
+      "JP225 M15 research OS twin (JPN225stack / 26151907 / May∨Jul)",
+      "PRODUCTION-WORTHY full G0–G5 admit",
+      "L2 AI LIVE_WITHHOLD",
+      "geometry retune / thin SL under ~2300 live spread",
+      "L9 H08/London/H10/spread LIVE",
+      "M15 May∨Jul L2det pin on M5"
+    ]
+  },
+  "identity": {
+    "engine_magic": 26101906,
+    "research_os_magic": 26161907,
+    "ea_version_min": "1.24",
+    "preset_armed": "JPN225_5m_stack.set",
+    "preset_armed_alias": "BMRG-M5-JP225-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "BMRG-M5-JP225-6M-P0_growth_chart.set",
+    "preset_p4_tester": "BMRG-M5-JP225-6M-P4_research_OS_W50.set",
+    "symbol": "JP225",
+    "mt5_symbol": "JPN225",
+    "tf": "M5"
+  },
+  "armed_stack": {
+    "engine": "Growth P0 M5 G0 FIXED_RR RR2.00 SL25000/TP50000",
+    "L2det": "L2det_jp225_m5_v1c LIVE_WITHHOLD ((BUY∧MATCH Aug/Sep)∨(BUY∧H09|13|16))",
+    "L2AI": "DISARM",
+    "L3": "ON DD25% / BELOW halt · W20 EN>0×2 unlatch",
+    "L4": "ON size mod · W50",
+    "L6": "ledger ON",
+    "L8": "advise-only (not live abort)",
+    "L9": "H08/London/H10 DISARM · BUY∧H08/spread HOLD_SHADOW — not LIVE",
+    "ATR_band": [7610, 11285],
+    "Leak_source": "prior_authority",
+    "Leak_pp": 3.3
+  },
+  "baseline_ref": "JP225_M5_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_MayOct": {
+      "n": 94,
+      "WR": 41.5,
+      "E_N": 0.245,
+      "EF_prior_pp": 4.9,
+      "final_delta_usd": 35.34
+    },
+    "offline_v1c_tip_P2": {
+      "n_kept": 69,
+      "WR": 49.3,
+      "E_N": 0.478,
+      "EF_prior_pp": 12.64,
+      "delta_E_N_vs_engine": 0.234,
+      "retention_pct": 73.4,
+      "jul_fp": 1,
+      "sell_fp": 0
+    },
+    "p4_det_stack": {
+      "n_fire": 69,
+      "n_l3_halt": 0,
+      "WR": 49.3,
+      "E_N": 0.478,
+      "EF_prior_pp": 12.6,
+      "final_life": "EXPANDING",
+      "l8_advise_on_losers": "21/21"
+    },
+    "p3_health": {
+      "P0_tip_BELOW_trips": 1,
+      "v1c_tip_BELOW_trips": 0,
+      "v1c_MaxDD_pct": 1.3,
+      "v1c_end_life": "EXPANDING",
+      "note": "v1c clears tip Sep BELOW · MaxDD 3.4%→1.3%"
+    },
+    "p5_ai": {
+      "semver": "L2skip_jp225_m5_p_prior_20261020_130822",
+      "auc_tip_oos": 0.49,
+      "verdict": "DISARM",
+      "challenger": "EMPTY",
+      "rollback_drill": "PASS"
+    },
+    "p6_harden": {
+      "L9_H08_London_H10": "DISARM",
+      "L9_BUY_H08_spread": "HOLD_SHADOW_not_LIVE",
+      "L2_bound": "keep_v1c",
+      "ATR_G3": "PASS_7610_11285"
+    }
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS — magic/preset locked; G0 MaxLevels=1",
+    "expansion_EF": "PASS tip OS EF>0 under Leak prior 3.3pp (engine +4.9 · OS +12.6)",
+    "G3_regime_filtered": "PASS — session+skipTue+ATR 7610–11285 declared (P6-T03)",
+    "G4_MC": "DEFERRED — expansion research; not production admit",
+    "G5_live": "DEFERRED — not FX/UK/DE/M15 live replace"
+  },
+  "hitl_acknowledgements": [
+    "Not a replace for EURUSD / AUDUSD / UK100 / DE40 live or research books",
+    "Not a twin of JP225 M15 research OS (JPN225stack / 26151907 / May∨Jul)",
+    "Expansion research arm only — full G0–G5 production admit deferred",
+    "Leak still prior 3.3 pp (measured deal Leak OPEN)",
+    "L2 AI remains DISARM (tip AUC ≈0.49)",
+    "L9 H08/London/H10/spread approved as shadow only — not LIVE in this arm",
+    "Never thin SL under fat Nikkei spread (~2300) · never borrow M15 May∨Jul on M5",
+    "Operator HITL confirmed 2026-10-20 — final preset JPN225_5m_stack"
+  ],
+  "attach": {
+    "symbol": "JPN225",
+    "tf": "M5",
+    "preset": "JPN225_5m_stack.set",
+    "magic": 26161907,
+    "ledger": "COMMON\\Files\\BMRG_AOS_ledger_26161907.csv",
+    "compare_window_default": "2026.05.01-2026.10.19 tip"
+  },
+  "rollback": {
+    "det_off": "InpAOS_JP_M5_L2detEnable=false",
+    "aos_off": "InpAOS_Enable=false · reload P0 growth M5",
+    "kill_l2": "InpAiKillSwitch=true",
+    "ai_pin": "rollback_l2skip_jp225_m5.py rollback --to DISARM (AI unused in this arm)"
+  }
+}

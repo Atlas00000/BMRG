@@ -1,0 +1,249 @@
+{
+  "task": "DE40-M5-AOS-P3",
+  "generated_utc": "2026-10-20T12:00:58.496511+00:00",
+  "tf": "M5",
+  "v1b_rule": "(BUY AND hour in {14,16}) OR (BUY AND month==Oct)",
+  "bindings": {
+    "DD_Limit_pct": 25.0,
+    "derisk_at_pct": 20.0,
+    "EquityHalt_pct": 15.0,
+    "BWR": 44.4,
+    "R": 1.25,
+    "Leak_prior_pp": 7.000000000000001,
+    "Leak_source": "prior_7.0pp",
+    "W_health": [
+      15,
+      20,
+      50
+    ],
+    "W250_preset_note": "Dense M5 tip n=123 \u2014 W20/W50 first-class. InpAOS_W250=50 for research OS .set when wiring.",
+    "baseline_fires_90d": 65,
+    "baseline_tip_E_N": 0.207317,
+    "spread_baseline_med": 84
+  },
+  "sims": {
+    "P0_tip": {
+      "label": "P0_tip",
+      "n": 123,
+      "final_equity": 707.42,
+      "net_pnl": 207.42,
+      "max_dd_peak_pct": 10.651,
+      "max_loss_streak": 7,
+      "trips": [
+        {
+          "i": 20,
+          "time": "2026-06-05 12:57:40",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-11.44",
+          "equity": 493.9,
+          "dd_peak": 4.71,
+          "en15": -0.1,
+          "en20": -0.1,
+          "en50": null,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 11,
+        "COMPRESSING": 3,
+        "EXPANDING": 30,
+        "NEAR": 36,
+        "STABLE": 29
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 103,
+        "NONE": 15
+      },
+      "freq_stall_ticks": 10,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "BELOW",
+      "last_en15": -0.25,
+      "last_en20": -0.1,
+      "last_en50": 0.125,
+      "path_len": 123
+    },
+    "v1b_kept": {
+      "label": "v1b_kept",
+      "n": 110,
+      "final_equity": 758.25,
+      "net_pnl": 258.25,
+      "max_dd_peak_pct": 10.337,
+      "max_loss_streak": 7,
+      "trips": [
+        {
+          "i": 35,
+          "time": "2026-07-02 11:51:31",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-4.78",
+          "equity": 518.3,
+          "dd_peak": 5.91,
+          "en15": 0.05,
+          "en20": -0.1,
+          "en50": null,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 5,
+        "COMPRESSING": 4,
+        "EXPANDING": 30,
+        "NEAR": 28,
+        "STABLE": 29
+      },
+      "bus_counts": {
+        "DERISK": 11,
+        "L3_HALT": 75,
+        "NONE": 24
+      },
+      "freq_stall_ticks": 10,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "NEAR",
+      "last_en15": 0.05,
+      "last_en20": 0.125,
+      "last_en50": 0.305,
+      "path_len": 110
+    },
+    "H14_16_aggressive_kept": {
+      "label": "H14_16_aggressive_kept",
+      "n": 110,
+      "final_equity": 739.95,
+      "net_pnl": 239.95,
+      "max_dd_peak_pct": 8.893,
+      "max_loss_streak": 6,
+      "trips": [
+        {
+          "i": 34,
+          "time": "2026-07-02 12:35:00",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-4.78",
+          "equity": 508.13,
+          "dd_peak": 7.41,
+          "en15": 0.05,
+          "en20": -0.1,
+          "en50": null,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 2,
+        "COMPRESSING": 4,
+        "EXPANDING": 29,
+        "NEAR": 32,
+        "STABLE": 29
+      },
+      "bus_counts": {
+        "DERISK": 11,
+        "L3_HALT": 76,
+        "NONE": 23
+      },
+      "freq_stall_ticks": 10,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "NEAR",
+      "last_en15": 0.05,
+      "last_en20": 0.0125,
+      "last_en50": 0.215,
+      "path_len": 110
+    },
+    "P0_ytd": {
+      "label": "P0_ytd",
+      "n": 208,
+      "final_equity": 821.29,
+      "net_pnl": 321.29,
+      "max_dd_peak_pct": 11.153,
+      "max_loss_streak": 7,
+      "trips": [
+        {
+          "i": 56,
+          "time": "2026-02-19 13:25:00",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-18.11",
+          "equity": 548.8,
+          "dd_peak": 8.79,
+          "en15": -0.25,
+          "en20": -0.1,
+          "en50": 0.215,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 30,
+        "COMPRESSING": 8,
+        "EXPANDING": 60,
+        "NEAR": 50,
+        "STABLE": 46
+      },
+      "bus_counts": {
+        "DERISK": 10,
+        "INVESTIGATE": 3,
+        "L3_HALT": 152,
+        "NONE": 42,
+        "STREAK_WATCH": 1
+      },
+      "freq_stall_ticks": 20,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "NEAR",
+      "last_en15": -0.25,
+      "last_en20": 0.0125,
+      "last_en50": 0.125,
+      "path_len": 208
+    },
+    "v1b_ytd_kept": {
+      "label": "v1b_ytd_kept",
+      "n": 187,
+      "final_equity": 827.39,
+      "net_pnl": 327.39,
+      "max_dd_peak_pct": 10.168,
+      "max_loss_streak": 7,
+      "trips": [
+        {
+          "i": 47,
+          "time": "2026-02-16 15:56:36",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-4.78",
+          "equity": 548.8,
+          "dd_peak": 2.88,
+          "en15": 0.05,
+          "en20": -0.1,
+          "en50": null,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 27,
+        "COMPRESSING": 9,
+        "EXPANDING": 56,
+        "NEAR": 44,
+        "STABLE": 37
+      },
+      "bus_counts": {
+        "DERISK": 11,
+        "INVESTIGATE": 4,
+        "L3_HALT": 140,
+        "NONE": 31,
+        "STREAK_WATCH": 1
+      },
+      "freq_stall_ticks": 20,
+      "cost_drift_ticks": 0,
+      "halt_latched": true,
+      "last_life": "NEAR",
+      "last_en15": 0.05,
+      "last_en20": 0.125,
+      "last_en50": 0.305,
+      "path_len": 187
+    }
+  },
+  "recommend_bus": {
+    "BELOW": "L3_HALT f=0",
+    "COMPRESSING": "INVESTIGATE (regime/execution) \u00b7 f=0.5",
+    "NEAR / DERISK_0.8_DD": "DERISK f<=0.5",
+    "STREAK>=5": "STREAK_WATCH \u00b7 align engine pause",
+    "FREQUENCY_STALL": "WARN only \u2014 do not lift ATR max",
+    "EXPANDING/STABLE": "NONE f=1.0",
+    "L2det_v1b_WOULD_SKIP": "skip fire \u2014 not an L3 trip"
+  }
+}

@@ -1,0 +1,788 @@
+﻿{
+  "BWR_pct": 45.45,
+  "R": 1.2,
+  "LEAK_prior_pp": 11.4,
+  "runs": [
+    {
+      "log": "20261019.log",
+      "window": "2026.05.01 \u2192 2026.08.31",
+      "line": 103652,
+      "inputs": {
+        "InpBBDev": "2.2",
+        "InpMaxLevels": "1",
+        "InpLot": "0.01",
+        "InpRiskPercent": "0.5",
+        "InpSL_Points": "100",
+        "InpTP_Points": "120",
+        "InpMaxSpread": "25",
+        "InpCooldownBars": "2",
+        "InpStartHour": "12",
+        "InpEndHour": "20",
+        "InpTradeTue": "false",
+        "InpUseATRRegime": "true",
+        "InpATRMaxPoints": "70.0",
+        "InpAllowBuy": "true",
+        "InpAllowSell": "true",
+        "InpMagic": "26101828",
+        "InpAOS_Enable": "false"
+      },
+      "init": {
+        "sym": "USDJPY",
+        "tf": "M15",
+        "bb": "20,2.2",
+        "magic": "26101828",
+        "aos": "0"
+      },
+      "hist": [
+        "2023.01.02",
+        "2026.10.16"
+      ],
+      "start_chg": null,
+      "n_closed": 56,
+      "tp": 27,
+      "sl": 29,
+      "eot": 0,
+      "wr": 48.2,
+      "E_N": 0.061,
+      "BM_pp": 2.8,
+      "EF_pp_prior": -8.6,
+      "final": 505.99,
+      "net": 5.99,
+      "blocks": {
+        "outside session": 298,
+        "weekday blocked": 165,
+        "cooldown 1/2 bars": 4,
+        "fail pause (loss streak=3) barsLeft=11": 4,
+        "ATR 77.4 > max 70.0 pts": 3,
+        "fail pause (loss streak=3) barsLeft=10": 3,
+        "ATR 82.6 > max 70.0 pts": 2,
+        "ATR 71.6 > max 70.0 pts": 2,
+        "ATR 85.4 > max 70.0 pts": 2,
+        "ATR 85.0 > max 70.0 pts": 2,
+        "ATR 97.1 > max 70.0 pts": 2,
+        "ATR 87.4 > max 70.0 pts": 2
+      },
+      "open_months": {
+        "2026.05": 26,
+        "2026.06": 44,
+        "2026.07": 36,
+        "2026.08": 6
+      },
+      "monthly": {
+        "2026.05": {
+          "n": 13,
+          "wr": 53.8,
+          "tp": 7,
+          "sl": 6
+        },
+        "2026.06": {
+          "n": 22,
+          "wr": 54.5,
+          "tp": 12,
+          "sl": 10
+        },
+        "2026.07": {
+          "n": 18,
+          "wr": 33.3,
+          "tp": 6,
+          "sl": 12
+        },
+        "2026.08": {
+          "n": 3,
+          "wr": 66.7,
+          "tp": 2,
+          "sl": 1
+        }
+      },
+      "sides": {
+        "BUY": 42,
+        "SELL": 70
+      },
+      "n_opens_market": 112
+    },
+    {
+      "log": "20261019.log",
+      "window": "2026.01.01 \u2192 2026.08.31",
+      "line": 121532,
+      "inputs": {
+        "InpBBDev": "2.2",
+        "InpMaxLevels": "1",
+        "InpLot": "0.01",
+        "InpRiskPercent": "0.5",
+        "InpSL_Points": "100",
+        "InpTP_Points": "120",
+        "InpMaxSpread": "25",
+        "InpCooldownBars": "2",
+        "InpStartHour": "12",
+        "InpEndHour": "20",
+        "InpTradeTue": "false",
+        "InpUseATRRegime": "true",
+        "InpATRMaxPoints": "70.0",
+        "InpAllowBuy": "true",
+        "InpAllowSell": "true",
+        "InpMagic": "26101828",
+        "InpAOS_Enable": "false"
+      },
+      "init": {
+        "sym": "USDJPY",
+        "tf": "M15",
+        "bb": "20,2.2",
+        "magic": "26101828",
+        "aos": "0"
+      },
+      "hist": [
+        "2023.01.02",
+        "2026.10.16"
+      ],
+      "start_chg": null,
+      "n_closed": 64,
+      "tp": 31,
+      "sl": 33,
+      "eot": 0,
+      "wr": 48.4,
+      "E_N": 0.066,
+      "BM_pp": 3.0,
+      "EF_pp_prior": -8.4,
+      "final": 505.9,
+      "net": 5.9,
+      "blocks": {
+        "outside session": 611,
+        "weekday blocked": 325,
+        "cooldown 1/2 bars": 6,
+        "fail pause (loss streak=3) barsLeft=11": 5,
+        "ATR 97.1 > max 70.0 pts": 3,
+        "ATR 90.9 > max 70.0 pts": 3,
+        "ATR 98.6 > max 70.0 pts": 3,
+        "ATR 85.4 > max 70.0 pts": 3,
+        "ATR 71.6 > max 70.0 pts": 3,
+        "ATR 82.6 > max 70.0 pts": 3,
+        "ATR 77.4 > max 70.0 pts": 3,
+        "fail pause (loss streak=3) barsLeft=10": 3
+      },
+      "open_months": {
+        "2026.01": 4,
+        "2026.03": 2,
+        "2026.04": 10,
+        "2026.05": 26,
+        "2026.06": 44,
+        "2026.07": 36,
+        "2026.08": 6
+      },
+      "monthly": {
+        "2026.01": {
+          "n": 2,
+          "wr": 50.0,
+          "tp": 1,
+          "sl": 1
+        },
+        "2026.03": {
+          "n": 1,
+          "wr": 100.0,
+          "tp": 1,
+          "sl": 0
+        },
+        "2026.04": {
+          "n": 5,
+          "wr": 40.0,
+          "tp": 2,
+          "sl": 3
+        },
+        "2026.05": {
+          "n": 13,
+          "wr": 53.8,
+          "tp": 7,
+          "sl": 6
+        },
+        "2026.06": {
+          "n": 22,
+          "wr": 54.5,
+          "tp": 12,
+          "sl": 10
+        },
+        "2026.07": {
+          "n": 18,
+          "wr": 33.3,
+          "tp": 6,
+          "sl": 12
+        },
+        "2026.08": {
+          "n": 3,
+          "wr": 66.7,
+          "tp": 2,
+          "sl": 1
+        }
+      },
+      "sides": {
+        "BUY": 46,
+        "SELL": 82
+      },
+      "n_opens_market": 128
+    },
+    {
+      "log": "20261019.log",
+      "window": "2026.01.01 \u2192 2026.04.30",
+      "line": 156390,
+      "inputs": {
+        "InpBBDev": "2.2",
+        "InpMaxLevels": "1",
+        "InpLot": "0.01",
+        "InpRiskPercent": "0.5",
+        "InpSL_Points": "100",
+        "InpTP_Points": "120",
+        "InpMaxSpread": "25",
+        "InpCooldownBars": "2",
+        "InpStartHour": "12",
+        "InpEndHour": "20",
+        "InpTradeTue": "false",
+        "InpUseATRRegime": "true",
+        "InpATRMaxPoints": "70.0",
+        "InpAllowBuy": "true",
+        "InpAllowSell": "true",
+        "InpMagic": "26101828",
+        "InpAOS_Enable": "false"
+      },
+      "init": {
+        "sym": "USDJPY",
+        "tf": "M15",
+        "bb": "20,2.2",
+        "magic": "26101828",
+        "aos": "0"
+      },
+      "hist": [
+        "2023.01.02",
+        "2026.10.16"
+      ],
+      "start_chg": null,
+      "n_closed": 8,
+      "tp": 4,
+      "sl": 4,
+      "eot": 0,
+      "wr": 50.0,
+      "E_N": 0.1,
+      "BM_pp": 4.5,
+      "EF_pp_prior": -6.9,
+      "final": 501.2,
+      "net": 1.2,
+      "blocks": {
+        "outside session": 299,
+        "weekday blocked": 160,
+        "ATR 90.9 > max 70.0 pts": 3,
+        "cooldown 1/2 bars": 2,
+        "ATR 98.1 > max 70.0 pts": 2,
+        "ATR 111.9 > max 70.0 pts": 2,
+        "ATR 142.1 > max 70.0 pts": 2,
+        "ATR 117.0 > max 70.0 pts": 2,
+        "ATR 123.9 > max 70.0 pts": 2,
+        "ATR 128.1 > max 70.0 pts": 2,
+        "ATR 136.8 > max 70.0 pts": 2,
+        "ATR 107.8 > max 70.0 pts": 2
+      },
+      "open_months": {
+        "2026.01": 4,
+        "2026.03": 2,
+        "2026.04": 10
+      },
+      "monthly": {
+        "2026.01": {
+          "n": 2,
+          "wr": 50.0,
+          "tp": 1,
+          "sl": 1
+        },
+        "2026.03": {
+          "n": 1,
+          "wr": 100.0,
+          "tp": 1,
+          "sl": 0
+        },
+        "2026.04": {
+          "n": 5,
+          "wr": 40.0,
+          "tp": 2,
+          "sl": 3
+        }
+      },
+      "sides": {
+        "BUY": 4,
+        "SELL": 12
+      },
+      "n_opens_market": 16
+    },
+    {
+      "log": "20261019.log",
+      "window": "2026.01.01 \u2192 2026.04.30",
+      "line": 173299,
+      "inputs": {
+        "InpBBDev": "2.2",
+        "InpMaxLevels": "1",
+        "InpLot": "0.01",
+        "InpRiskPercent": "0.5",
+        "InpSL_Points": "100",
+        "InpTP_Points": "120",
+        "InpMaxSpread": "25",
+        "InpCooldownBars": "2",
+        "InpStartHour": "12",
+        "InpEndHour": "20",
+        "InpTradeTue": "false",
+        "InpUseATRRegime": "true",
+        "InpATRMaxPoints": "70.0",
+        "InpAllowBuy": "true",
+        "InpAllowSell": "true",
+        "InpMagic": "26101828",
+        "InpAOS_Enable": "false"
+      },
+      "init": {
+        "sym": "USDJPY",
+        "tf": "M15",
+        "bb": "20,2.2",
+        "magic": "26101828",
+        "aos": "0"
+      },
+      "hist": [
+        "2023.01.02",
+        "2026.10.16"
+      ],
+      "start_chg": null,
+      "n_closed": 8,
+      "tp": 4,
+      "sl": 4,
+      "eot": 0,
+      "wr": 50.0,
+      "E_N": 0.1,
+      "BM_pp": 4.5,
+      "EF_pp_prior": -6.9,
+      "final": 501.2,
+      "net": 1.2,
+      "blocks": {
+        "outside session": 299,
+        "weekday blocked": 160,
+        "ATR 90.9 > max 70.0 pts": 3,
+        "cooldown 1/2 bars": 2,
+        "ATR 98.1 > max 70.0 pts": 2,
+        "ATR 111.9 > max 70.0 pts": 2,
+        "ATR 142.1 > max 70.0 pts": 2,
+        "ATR 117.0 > max 70.0 pts": 2,
+        "ATR 123.9 > max 70.0 pts": 2,
+        "ATR 128.1 > max 70.0 pts": 2,
+        "ATR 136.8 > max 70.0 pts": 2,
+        "ATR 107.8 > max 70.0 pts": 2
+      },
+      "open_months": {
+        "2026.01": 4,
+        "2026.03": 2,
+        "2026.04": 10
+      },
+      "monthly": {
+        "2026.01": {
+          "n": 2,
+          "wr": 50.0,
+          "tp": 1,
+          "sl": 1
+        },
+        "2026.03": {
+          "n": 1,
+          "wr": 100.0,
+          "tp": 1,
+          "sl": 0
+        },
+        "2026.04": {
+          "n": 5,
+          "wr": 40.0,
+          "tp": 2,
+          "sl": 3
+        }
+      },
+      "sides": {
+        "BUY": 4,
+        "SELL": 12
+      },
+      "n_opens_market": 16
+    },
+    {
+      "log": "20261019.log",
+      "window": "2026.05.01 \u2192 2026.08.31",
+      "line": 190203,
+      "inputs": {
+        "InpBBDev": "2.2",
+        "InpMaxLevels": "1",
+        "InpLot": "0.01",
+        "InpRiskPercent": "0.5",
+        "InpSL_Points": "100",
+        "InpTP_Points": "120",
+        "InpMaxSpread": "25",
+        "InpCooldownBars": "2",
+        "InpStartHour": "12",
+        "InpEndHour": "20",
+        "InpTradeTue": "false",
+        "InpUseATRRegime": "true",
+        "InpATRMaxPoints": "70.0",
+        "InpAllowBuy": "true",
+        "InpAllowSell": "true",
+        "InpMagic": "26101828",
+        "InpAOS_Enable": "false"
+      },
+      "init": {
+        "sym": "USDJPY",
+        "tf": "M15",
+        "bb": "20,2.2",
+        "magic": "26101828",
+        "aos": "0"
+      },
+      "hist": [
+        "2023.01.02",
+        "2026.10.16"
+      ],
+      "start_chg": null,
+      "n_closed": 56,
+      "tp": 27,
+      "sl": 29,
+      "eot": 0,
+      "wr": 48.2,
+      "E_N": 0.061,
+      "BM_pp": 2.8,
+      "EF_pp_prior": -8.6,
+      "final": 505.99,
+      "net": 5.99,
+      "blocks": {
+        "outside session": 298,
+        "weekday blocked": 165,
+        "cooldown 1/2 bars": 4,
+        "fail pause (loss streak=3) barsLeft=11": 4,
+        "ATR 77.4 > max 70.0 pts": 3,
+        "fail pause (loss streak=3) barsLeft=10": 3,
+        "ATR 82.6 > max 70.0 pts": 2,
+        "ATR 71.6 > max 70.0 pts": 2,
+        "ATR 85.4 > max 70.0 pts": 2,
+        "ATR 85.0 > max 70.0 pts": 2,
+        "ATR 97.1 > max 70.0 pts": 2,
+        "ATR 87.4 > max 70.0 pts": 2
+      },
+      "open_months": {
+        "2026.05": 26,
+        "2026.06": 44,
+        "2026.07": 36,
+        "2026.08": 6
+      },
+      "monthly": {
+        "2026.05": {
+          "n": 13,
+          "wr": 53.8,
+          "tp": 7,
+          "sl": 6
+        },
+        "2026.06": {
+          "n": 22,
+          "wr": 54.5,
+          "tp": 12,
+          "sl": 10
+        },
+        "2026.07": {
+          "n": 18,
+          "wr": 33.3,
+          "tp": 6,
+          "sl": 12
+        },
+        "2026.08": {
+          "n": 3,
+          "wr": 66.7,
+          "tp": 2,
+          "sl": 1
+        }
+      },
+      "sides": {
+        "BUY": 42,
+        "SELL": 70
+      },
+      "n_opens_market": 112
+    },
+    {
+      "log": "20261019.log",
+      "window": "2026.01.01 \u2192 2026.10.19",
+      "line": 208083,
+      "inputs": {
+        "InpBBDev": "2.2",
+        "InpMaxLevels": "1",
+        "InpLot": "0.01",
+        "InpRiskPercent": "0.5",
+        "InpSL_Points": "100",
+        "InpTP_Points": "120",
+        "InpMaxSpread": "25",
+        "InpCooldownBars": "2",
+        "InpStartHour": "12",
+        "InpEndHour": "20",
+        "InpTradeTue": "false",
+        "InpUseATRRegime": "true",
+        "InpATRMaxPoints": "70.0",
+        "InpAllowBuy": "true",
+        "InpAllowSell": "true",
+        "InpMagic": "26101828",
+        "InpAOS_Enable": "false"
+      },
+      "init": {
+        "sym": "USDJPY",
+        "tf": "M15",
+        "bb": "20,2.2",
+        "magic": "26101828",
+        "aos": "0"
+      },
+      "hist": [
+        "2023.01.02",
+        "2026.10.16"
+      ],
+      "start_chg": null,
+      "n_closed": 68,
+      "tp": 35,
+      "sl": 33,
+      "eot": 0,
+      "wr": 51.5,
+      "E_N": 0.132,
+      "BM_pp": 6.0,
+      "EF_pp_prior": -5.4,
+      "final": 517.99,
+      "net": 17.99,
+      "blocks": {
+        "outside session": 775,
+        "weekday blocked": 394,
+        "cooldown 1/2 bars": 6,
+        "fail pause (loss streak=3) barsLeft=11": 5,
+        "ATR 97.1 > max 70.0 pts": 3,
+        "ATR 90.9 > max 70.0 pts": 3,
+        "ATR 98.6 > max 70.0 pts": 3,
+        "ATR 85.4 > max 70.0 pts": 3,
+        "ATR 71.6 > max 70.0 pts": 3,
+        "ATR 82.6 > max 70.0 pts": 3,
+        "ATR 77.4 > max 70.0 pts": 3,
+        "fail pause (loss streak=3) barsLeft=10": 3
+      },
+      "open_months": {
+        "2026.01": 4,
+        "2026.03": 2,
+        "2026.04": 10,
+        "2026.05": 26,
+        "2026.06": 44,
+        "2026.07": 36,
+        "2026.08": 8,
+        "2026.10": 6
+      },
+      "monthly": {
+        "2026.01": {
+          "n": 2,
+          "wr": 50.0,
+          "tp": 1,
+          "sl": 1
+        },
+        "2026.03": {
+          "n": 1,
+          "wr": 100.0,
+          "tp": 1,
+          "sl": 0
+        },
+        "2026.04": {
+          "n": 5,
+          "wr": 40.0,
+          "tp": 2,
+          "sl": 3
+        },
+        "2026.05": {
+          "n": 13,
+          "wr": 53.8,
+          "tp": 7,
+          "sl": 6
+        },
+        "2026.06": {
+          "n": 22,
+          "wr": 54.5,
+          "tp": 12,
+          "sl": 10
+        },
+        "2026.07": {
+          "n": 18,
+          "wr": 33.3,
+          "tp": 6,
+          "sl": 12
+        },
+        "2026.08": {
+          "n": 4,
+          "wr": 75.0,
+          "tp": 3,
+          "sl": 1
+        },
+        "2026.10": {
+          "n": 3,
+          "wr": 100.0,
+          "tp": 3,
+          "sl": 0
+        }
+      },
+      "sides": {
+        "BUY": 48,
+        "SELL": 88
+      },
+      "n_opens_market": 136
+    },
+    {
+      "log": "20261019.log",
+      "window": "2025.01.01 \u2192 2026.10.19",
+      "line": 249976,
+      "inputs": {
+        "InpBBDev": "2.2",
+        "InpMaxLevels": "1",
+        "InpLot": "0.01",
+        "InpRiskPercent": "0.5",
+        "InpSL_Points": "100",
+        "InpTP_Points": "120",
+        "InpMaxSpread": "25",
+        "InpCooldownBars": "2",
+        "InpStartHour": "12",
+        "InpEndHour": "20",
+        "InpTradeTue": "false",
+        "InpUseATRRegime": "true",
+        "InpATRMaxPoints": "70.0",
+        "InpAllowBuy": "true",
+        "InpAllowSell": "true",
+        "InpMagic": "26101828",
+        "InpAOS_Enable": "false"
+      },
+      "init": {
+        "sym": "USDJPY",
+        "tf": "M15",
+        "bb": "20,2.2",
+        "magic": "26101828",
+        "aos": "0"
+      },
+      "hist": null,
+      "start_chg": null,
+      "n_closed": 83,
+      "tp": 41,
+      "sl": 42,
+      "eot": 0,
+      "wr": 49.4,
+      "E_N": 0.087,
+      "BM_pp": 3.9,
+      "EF_pp_prior": -7.5,
+      "final": 514.29,
+      "net": 14.29,
+      "blocks": {
+        "outside session": 1856,
+        "weekday blocked": 882,
+        "cooldown 1/2 bars": 7,
+        "ATR 108.4 > max 70.0 pts": 6,
+        "fail pause (loss streak=3) barsLeft=11": 6,
+        "ATR 98.6 > max 70.0 pts": 5,
+        "ATR 118.9 > max 70.0 pts": 4,
+        "ATR 114.1 > max 70.0 pts": 4,
+        "ATR 118.7 > max 70.0 pts": 4,
+        "fail pause (loss streak=3) barsLeft=10": 4,
+        "ATR 111.1 > max 70.0 pts": 4,
+        "ATR 83.6 > max 70.0 pts": 4
+      },
+      "open_months": {
+        "2025.04": 4,
+        "2025.06": 2,
+        "2025.07": 2,
+        "2025.10": 2,
+        "2025.11": 10,
+        "2025.12": 10,
+        "2026.01": 4,
+        "2026.03": 2,
+        "2026.04": 10,
+        "2026.05": 26,
+        "2026.06": 44,
+        "2026.07": 36,
+        "2026.08": 8,
+        "2026.10": 6
+      },
+      "monthly": {
+        "2025.04": {
+          "n": 2,
+          "wr": 0.0,
+          "tp": 0,
+          "sl": 2
+        },
+        "2025.06": {
+          "n": 1,
+          "wr": 0.0,
+          "tp": 0,
+          "sl": 1
+        },
+        "2025.07": {
+          "n": 1,
+          "wr": 0.0,
+          "tp": 0,
+          "sl": 1
+        },
+        "2025.10": {
+          "n": 1,
+          "wr": 0.0,
+          "tp": 0,
+          "sl": 1
+        },
+        "2025.11": {
+          "n": 5,
+          "wr": 60.0,
+          "tp": 3,
+          "sl": 2
+        },
+        "2025.12": {
+          "n": 5,
+          "wr": 60.0,
+          "tp": 3,
+          "sl": 2
+        },
+        "2026.01": {
+          "n": 2,
+          "wr": 50.0,
+          "tp": 1,
+          "sl": 1
+        },
+        "2026.03": {
+          "n": 1,
+          "wr": 100.0,
+          "tp": 1,
+          "sl": 0
+        },
+        "2026.04": {
+          "n": 5,
+          "wr": 40.0,
+          "tp": 2,
+          "sl": 3
+        },
+        "2026.05": {
+          "n": 13,
+          "wr": 53.8,
+          "tp": 7,
+          "sl": 6
+        },
+        "2026.06": {
+          "n": 22,
+          "wr": 54.5,
+          "tp": 12,
+          "sl": 10
+        },
+        "2026.07": {
+          "n": 18,
+          "wr": 33.3,
+          "tp": 6,
+          "sl": 12
+        },
+        "2026.08": {
+          "n": 4,
+          "wr": 75.0,
+          "tp": 3,
+          "sl": 1
+        },
+        "2026.10": {
+          "n": 3,
+          "wr": 100.0,
+          "tp": 3,
+          "sl": 0
+        }
+      },
+      "sides": {
+        "BUY": 62,
+        "SELL": 104
+      },
+      "n_opens_market": 166
+    }
+  ]
+}

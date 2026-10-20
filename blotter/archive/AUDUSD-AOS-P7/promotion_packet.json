@@ -1,0 +1,189 @@
+{
+  "aos_task": "AUDUSD-AOS-P7",
+  "packet_id": "AUDUSD_M15_AOS_RESEARCH_v1",
+  "generated_utc": "2026-10-19T15:13:09.790681+00:00",
+  "framework_unified": "1.0",
+  "framework_audusd": "0.1.0",
+  "canvas": "display_only",
+  "scope": {
+    "sleeve": "AUDUSD CHAMP M15 research OS",
+    "not": [
+      "Live M5 SCALE replace (8230931)",
+      "FT twin replace (8230921)",
+      "EURUSD / UK100 / DE40 / AAPL L2 pin reuse",
+      "PRODUCTION-WORTHY full G0\u2013G5 admit",
+      "L2 AI LIVE_WITHHOLD (challenger SHADOW only)",
+      "geometry retune (SL/TP/BB/session/weekday)"
+    ]
+  },
+  "identity": {
+    "engine_magic": 8230901,
+    "research_os_magic": 8231941,
+    "ea_version_min": "compile with AOS_L2det_aud.mqh",
+    "preset_armed": "AUDUSD_stack.set",
+    "preset_armed_alias": "BMRG-M15-AUDUSD-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "AUDUSD-CHAMP_Harvest_start13_skipMon_G0.set",
+    "symbol": "AUDUSD",
+    "tf": "M15",
+    "tester_paths": [
+      "Presets/AUDUSD_stack.set",
+      "Presets/BMRG-M15-AUDUSD-6M-P7_research_OS_ARMED.set",
+      "Profiles/Tester/BMRG/AUDUSD/AUDUSD_stack.set",
+      "Profiles/Tester/BMRG/AUDUSD/BMRG-M15-AUDUSD-6M-P7_research_OS_ARMED.set",
+      "doc/presets/AUDUSD_stack.set"
+    ]
+  },
+  "armed_stack": {
+    "engine": "CHAMP Harvest G0 FIXED_RR RR1 BB2.2 CD3 Start13\u201320 skipMon/Tue SL/TP300/300 ATR OFF",
+    "L2det": "L2det_aud_m15_v1 LIVE_WITHHOLD (BUY \u2227 month==May)",
+    "L2AI": "OFF in EA \u00b7 challenger SHADOW store (HITL \u2026145303) \u2014 not LIVE_WITHHOLD",
+    "L3": "ON DD25% / BELOW halt",
+    "L4": "ON size mod \u00b7 W50",
+    "L6": "ledger ON",
+    "L8": "advise-only overnight-primary (not live abort)",
+    "L9": "BUY\u2227Thu ARM_SOFT shadow \u2014 not LIVE (SkipBuyThu=false)",
+    "ATR_max": "OFF (P8-T03 SKIP)",
+    "Leak_source": "journal_2x_entry_spread_median",
+    "Leak_pp": 5.0,
+    "lot": 0.01,
+    "risk_pct": 0.5
+  },
+  "baseline_ref": "AUDUSD_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_MayAug": {
+      "n": 41,
+      "WR": 63.41,
+      "E_N": 0.2683,
+      "EF_journal_pp": 8.415
+    },
+    "offline_v1_tip": {
+      "n_fire": 39,
+      "n_skip": 2,
+      "WR": 66.67,
+      "E_N": 0.3333,
+      "EF_pp": 11.667,
+      "delta_E_N_vs_engine": 0.065,
+      "fire_retention_pct": 95.1,
+      "L3_halt": 0,
+      "skip_precision_losers": 1.0
+    },
+    "p3_health_v1": {
+      "max_dd_peak_pct": 3.667,
+      "trip_count": 0,
+      "last_en20": 0.5,
+      "max_loss_streak": 3
+    },
+    "note": "Tester EA ledger for magic 8231941 not yet run \u2014 offline P4 tip stack is the CF basis for HITL. Run AUDUSD_stack / P7 .set in Strategy Tester next."
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+    "expansion_EF": "PASS tip OS EF>0 under journal Leak 5.0 pp",
+    "G3_regime_filtered": "PASS \u2014 session+skipMon/Tue + geometry freeze (P6-T03); ATR OFF by design",
+    "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+    "G5_stress": "PASS \u2014 L2 calendar/AI thr stress (P6); SL/TP not stressed",
+    "Leak_measured": "OPEN \u2014 journal proxy 5.0 pp (swap-aware deal export)",
+    "L2AI": "SHADOW challenger only \u2014 tip AUC 0.60 \u00b7 chrono HOLD \u00b7 not LIVE_WITHHOLD",
+    "verdict_ladder": "EXPANSION_OS_ARMED \u2014 not PRODUCTION-WORTHY \u00b7 not M5 SCALE replace"
+  },
+  "p6_harden_summary": {
+    "L9_BUY_Thu": "ARM_SOFT_shadow_off_on_stack",
+    "L2_stress": "PASS",
+    "geometry_freeze": "PASS",
+    "SkipBuyMay": true,
+    "SkipBuyThu": false
+  },
+  "ledger_sample": {
+    "ledger_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\blotter\\archive\\AUDUSD-AOS-P4\\ledger_det_v1.csv",
+    "source": "offline_P4_tip_shadow",
+    "n_rows": 41,
+    "decision_counts": {
+      "FIRE_OK": 39,
+      "WOULD_SKIP": 2
+    },
+    "l2det_reasons": {
+      "L2DET_SKIP_BUY_MAY": 2
+    },
+    "head_skip": [
+      {
+        "t": "2026.05.07 16:00",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_BUY_MAY",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.14 13:30",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_BUY_MAY",
+        "mode": "SHADOW"
+      }
+    ],
+    "head_fire": [
+      {
+        "t": "2026.05.01 14:15",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.08 18:15",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.13 15:00",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.20 14:30",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK|L8_ADVISE_ABORT_FAST_SL_NEAR_ATR",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.21 17:15",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK|L8_ADVISE_ABORT_OVERNIGHT_SL",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      }
+    ]
+  },
+  "rollback": {
+    "ai_pin": "python infra/artefacts/models/L2skip_aud_m15/rollback_l2skip_aud_m15.py rollback --to DISARM",
+    "ea_det_off": "InpAOS_AUD_L2detEnable=false",
+    "ea_aos_off": "InpAOS_Enable=false \u2192 load AUDUSD-CHAMP_Harvest_start13_skipMon_G0.set",
+    "kill_switch": "InpAiKillSwitch=true",
+    "never": "do not load AUDUSD_stack on live M5 SCALE 8230931"
+  },
+  "hitl": {
+    "status": "SIGNED",
+    "signed_utc": "2026-10-19T15:15:00+00:00",
+    "signed_local": "2026-10-19T16:15:00+01:00",
+    "signer": "operator (chat \u2014 proceed with P7 and provide the preset)",
+    "prior_hitl": "P5 challenger pin 2026-10-19 \u00b7 P6 AUDUSD_stack arm",
+    "decision": "ARM_RESEARCH_OS",
+    "acknowledged": [
+      "Not live M5 SCALE 8230931 replace",
+      "Not production G0\u2013G5 admit",
+      "Leak still journal proxy 5.0 pp (measured+swap OPEN)",
+      "L2 AI remains OFF in EA (challenger SHADOW store only)",
+      "L9 BUY\u2227Thu shadow only \u2014 SkipBuyThu=false on stack",
+      "M15 research sleeve only \u00b7 geometry frozen"
+    ]
+  },
+  "verdict": "ACCEPT_ARM_RESEARCH_OS"
+}

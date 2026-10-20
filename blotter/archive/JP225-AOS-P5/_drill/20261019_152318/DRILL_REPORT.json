@@ -1,0 +1,51 @@
+{
+  "task": "JP225-AOS-P5-T03",
+  "drill_utc": "2026-10-19T15:23:18.269134+00:00",
+  "steps": [
+    "snapshot",
+    "DISARM",
+    "restore_shadow_pin"
+  ],
+  "before": {
+    "semver": "L2skip_jp225_p_pretip_20261019_152317",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_jp225_v1_May_OR_Jul",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T15:23:17.880601+00:00",
+    "auc_tip_oos": 0.4934640522875817,
+    "best_verdict": "SHADOW_CANDIDATE",
+    "chrono_holdout_verdict": "SHADOW_CANDIDATE"
+  },
+  "disarm": {
+    "semver": null,
+    "mode": "DISARM",
+    "role": "disarmed",
+    "overlay_champ": "L2det_jp225_v1_May_OR_Jul",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T15:23:18.233161+00:00",
+    "disarm_reason": "P5-T03_rollback_drill",
+    "previous_semver": "L2skip_jp225_p_pretip_20261019_152317"
+  },
+  "after": {
+    "semver": "L2skip_jp225_p_pretip_20261019_152317",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_jp225_v1_May_OR_Jul",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T15:23:18.261122+00:00",
+    "restore_reason": "P5-T03_rollback_drill_restore",
+    "previous_semver": null,
+    "auc_tip_oos": 0.4934640522875817,
+    "best_verdict": "SHADOW_CANDIDATE",
+    "chrono_holdout_verdict": "SHADOW_CANDIDATE"
+  },
+  "pass": true,
+  "note": "Overlay champ `L2det_jp225_v1_May_OR_Jul` is offline CF only (no AOS_L2det_jp225.mqh). AI pin rollback does not change engine geometry. P4 ledger remains SHADOW \u00b7 no research OS arm.",
+  "ea_rollback_checklist": [
+    "InpAiKillSwitch=true  OR  InpAiOsMode=OFF \u2192 L2 AI off",
+    "Foreign L2det maps stay false (EUR/UK/AUD/DE40/AAPL)",
+    "InpAOS_Enable=false \u2192 full AOS off (Growth P1 engine)",
+    "Reload Profiles/Tester/BMRG/JP225/BMRG-M15-JP225-6M-P1_wrLift_fade_chart.set"
+  ]
+}

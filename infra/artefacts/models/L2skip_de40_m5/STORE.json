@@ -1,0 +1,13 @@
+{
+  "store": "L2skip_de40_m5",
+  "schema_version": "1.0.0",
+  "asset": "DE40",
+  "tf": "M5",
+  "policy": "doc/assets/DE40/aos_l5_retrain_M5.md",
+  "overlay_champ": "L2det_de40_m5_v1b",
+  "train_entrypoint": "infra/src/train/train_l2_de40_m5.py",
+  "rollback_entrypoint": "infra/artefacts/models/L2skip_de40_m5/rollback_l2skip_de40_m5.py",
+  "mqh_auto_export": false,
+  "live_withhold_allowed": false,
+  "note": "Separate from M15 L2skip_de40 / AOS_L2det_de — do not merge pins"
+}

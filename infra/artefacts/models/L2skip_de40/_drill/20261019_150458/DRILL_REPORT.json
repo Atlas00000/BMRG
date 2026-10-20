@@ -1,0 +1,51 @@
+{
+  "task": "DE40-AOS-P5-T03",
+  "drill_utc": "2026-10-19T15:04:58.708336+00:00",
+  "steps": [
+    "snapshot",
+    "DISARM",
+    "restore_shadow_pin"
+  ],
+  "before": {
+    "semver": "L2skip_de40_p_pretip_20261019_150458",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_de40_v1_BUY_near_atr",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T15:04:58.086067+00:00",
+    "auc_tip_oos": 0.51875,
+    "best_verdict": "HOLD_SHADOW",
+    "chrono_holdout_verdict": "REJECT_FREQUENCY_STALL"
+  },
+  "disarm": {
+    "semver": null,
+    "mode": "DISARM",
+    "role": "disarmed",
+    "overlay_champ": "L2det_de40_v1_BUY_near_atr",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T15:04:58.682883+00:00",
+    "disarm_reason": "P5-T03_rollback_drill",
+    "previous_semver": "L2skip_de40_p_pretip_20261019_150458"
+  },
+  "after": {
+    "semver": "L2skip_de40_p_pretip_20261019_150458",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_de40_v1_BUY_near_atr",
+    "ai_champ": null,
+    "updated_utc": "2026-10-19T15:04:58.700335+00:00",
+    "restore_reason": "P5-T03_rollback_drill_restore",
+    "previous_semver": null,
+    "auc_tip_oos": 0.51875,
+    "best_verdict": "HOLD_SHADOW",
+    "chrono_holdout_verdict": "REJECT_FREQUENCY_STALL"
+  },
+  "pass": true,
+  "note": "Overlay champ `L2det_de40_v1_BUY_near_atr` is offline CF only (no AOS_L2det_de.mqh). AI pin rollback does not change engine geometry. Research P4 .set uses L3/L4/ledger with AiOsMode=OFF.",
+  "ea_rollback_checklist": [
+    "InpAiKillSwitch=true  OR  InpAiOsMode=OFF \u2192 L2 AI off",
+    "Foreign L2det maps stay false (EUR/UK/AUD/AAPL)",
+    "InpAOS_Enable=false \u2192 full AOS off (Balanced P0 engine)",
+    "Reload Presets/BMRG-M15-DE40-6M-P0_balanced_chart.set"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "task": "EDX-P8-T03",
+  "n_tagged": 47,
+  "by_cell": {
+    "ATR_high|ranging": {
+      "n": 28,
+      "WR": 78.6,
+      "BM_pp": 28.6,
+      "E_N": 0.571,
+      "gate_n30": false
+    },
+    "ATR_high|trending": {
+      "n": 10,
+      "WR": 40.0,
+      "BM_pp": -10.0,
+      "E_N": -0.2,
+      "gate_n30": false
+    },
+    "ATR_low|ranging": {
+      "n": 2,
+      "WR": 100.0,
+      "BM_pp": 50.0,
+      "E_N": 1.0,
+      "gate_n30": false
+    },
+    "ATR_mid|ranging": {
+      "n": 6,
+      "WR": 83.3,
+      "BM_pp": 33.3,
+      "E_N": 0.667,
+      "gate_n30": false
+    },
+    "ATR_mid|trending": {
+      "n": 1,
+      "WR": 0.0,
+      "BM_pp": -50.0,
+      "E_N": -1.0,
+      "gate_n30": false
+    }
+  },
+  "by_vol": {
+    "ATR_high": {
+      "n": 38,
+      "WR": 68.4,
+      "BM_pp": 18.4,
+      "E_N": 0.368,
+      "gate_n30": true
+    },
+    "ATR_low": {
+      "n": 2,
+      "WR": 100.0,
+      "BM_pp": 50.0,
+      "E_N": 1.0,
+      "gate_n30": false
+    },
+    "ATR_mid": {
+      "n": 7,
+      "WR": 71.4,
+      "BM_pp": 21.4,
+      "E_N": 0.429,
+      "gate_n30": false
+    }
+  },
+  "justify": {
+    "excluded_BM_le0_n30": [],
+    "hard_justify": false,
+    "note": "P1 baseline also lacked n>=30 BM<=0; champ n=47 thinner"
+  },
+  "atr_high_pts_sample": {
+    "n": 38,
+    "p33": 35.3,
+    "min": 24.7
+  },
+  "verdict": "SKIP",
+  "reason": "no excluded cell with n>=30 and BM<=0 \u2014 ATR gate not justified; no Tester preset"
+}

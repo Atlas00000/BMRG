@@ -1,0 +1,166 @@
+{
+  "P0_tip": {
+    "n": 77,
+    "final": 543.51,
+    "max_dd": 7.947,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.011 EF15=-29.06"
+    ],
+    "life_counts": {
+      "BELOW": 18,
+      "EXPANDING": 9,
+      "NEAR": 34,
+      "STABLE": 2
+    },
+    "bus_counts": {
+      "DERISK": 6,
+      "L3_HALT": 49,
+      "NONE": 22
+    },
+    "max_loss_streak": 8,
+    "freq_stall_ticks": 6,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.1544,
+    "last_en20": 0.2368,
+    "last_en50": 0.0884,
+    "last_life": "NEAR",
+    "halt_latched": true
+  },
+  "v1b_kept": {
+    "n": 44,
+    "final": 555.48,
+    "max_dd": 2.565,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.011 EF15=-15.73"
+    ],
+    "life_counts": {
+      "BELOW": 4,
+      "EXPANDING": 14,
+      "NEAR": 10,
+      "STABLE": 2
+    },
+    "bus_counts": {
+      "DERISK": 10,
+      "FREQUENCY_STALL_WARN": 6,
+      "L3_HALT": 4,
+      "NONE": 24
+    },
+    "max_loss_streak": 4,
+    "freq_stall_ticks": 12,
+    "cost_drift_ticks": 0,
+    "last_en15": -0.0105,
+    "last_en20": -0.0105,
+    "last_en50": null,
+    "last_life": "BELOW",
+    "halt_latched": true
+  },
+  "jul_only_kept": {
+    "n": 62,
+    "final": 570.87,
+    "max_dd": 2.637,
+    "trips": 0,
+    "trip_reasons": [],
+    "life_counts": {
+      "EXPANDING": 9,
+      "NEAR": 37,
+      "STABLE": 2
+    },
+    "bus_counts": {
+      "DERISK": 37,
+      "FREQUENCY_STALL_WARN": 1,
+      "NONE": 24
+    },
+    "max_loss_streak": 4,
+    "freq_stall_ticks": 12,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.1544,
+    "last_en20": 0.2368,
+    "last_en50": 0.2368,
+    "last_life": "NEAR",
+    "halt_latched": false
+  },
+  "jul_h18_HOLD_kept": {
+    "n": 49,
+    "final": 573.15,
+    "max_dd": 2.173,
+    "trips": 0,
+    "trip_reasons": [],
+    "life_counts": {
+      "EXPANDING": 19,
+      "NEAR": 12,
+      "STABLE": 4
+    },
+    "bus_counts": {
+      "DERISK": 12,
+      "FREQUENCY_STALL_WARN": 6,
+      "NONE": 31
+    },
+    "max_loss_streak": 3,
+    "freq_stall_ticks": 12,
+    "cost_drift_ticks": 0,
+    "last_en15": -0.0105,
+    "last_en20": 0.1132,
+    "last_en50": null,
+    "last_life": "NEAR",
+    "halt_latched": false
+  },
+  "P0_ytd": {
+    "n": 145,
+    "final": 476.63,
+    "max_dd": 13.376,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.134 EF15=-9.06"
+    ],
+    "life_counts": {
+      "BELOW": 75,
+      "EXPANDING": 12,
+      "NEAR": 42,
+      "STABLE": 2
+    },
+    "bus_counts": {
+      "DERISK": 5,
+      "L3_HALT": 126,
+      "NONE": 12,
+      "STREAK_WATCH": 2
+    },
+    "max_loss_streak": 10,
+    "freq_stall_ticks": 6,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.1544,
+    "last_en20": 0.2368,
+    "last_en50": 0.0884,
+    "last_life": "NEAR",
+    "halt_latched": true
+  },
+  "v1b_ytd_kept": {
+    "n": 95,
+    "final": 532.11,
+    "max_dd": 6.903,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.134 EF15=-15.73"
+    ],
+    "life_counts": {
+      "BELOW": 40,
+      "EXPANDING": 17,
+      "NEAR": 22,
+      "STABLE": 2
+    },
+    "bus_counts": {
+      "DERISK": 5,
+      "L3_HALT": 76,
+      "NONE": 14
+    },
+    "max_loss_streak": 7,
+    "freq_stall_ticks": 12,
+    "cost_drift_ticks": 0,
+    "last_en15": -0.0105,
+    "last_en20": -0.0105,
+    "last_en50": 0.2863,
+    "last_life": "BELOW",
+    "halt_latched": true
+  }
+}

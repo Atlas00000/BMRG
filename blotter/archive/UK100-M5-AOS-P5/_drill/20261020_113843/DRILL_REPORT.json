@@ -1,0 +1,49 @@
+{
+  "task": "UK100-M5-AOS-P5-T03",
+  "drill_utc": "2026-10-20T11:38:43.254742+00:00",
+  "steps": [
+    "snapshot",
+    "DISARM",
+    "restore_shadow_pin"
+  ],
+  "before": {
+    "semver": "L2skip_uk_m5_p_prior_20261020_113842",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_uk_m5_v1b",
+    "ai_champ": null,
+    "updated_utc": "2026-10-20T11:38:42.946385+00:00",
+    "auc_tip_oos": 0.40864381520119225,
+    "best_verdict": "DISARM"
+  },
+  "disarm": {
+    "semver": null,
+    "mode": "DISARM",
+    "role": "disarmed",
+    "overlay_champ": "L2det_uk_m5_v1b",
+    "ai_champ": null,
+    "updated_utc": "2026-10-20T11:38:43.224741+00:00",
+    "disarm_reason": "P5-T03_rollback_drill",
+    "previous_semver": "L2skip_uk_m5_p_prior_20261020_113842"
+  },
+  "after": {
+    "semver": "L2skip_uk_m5_p_prior_20261020_113842",
+    "mode": "SHADOW_ONLY",
+    "role": "shadow_artifact",
+    "overlay_champ": "L2det_uk_m5_v1b",
+    "ai_champ": null,
+    "updated_utc": "2026-10-20T11:38:43.252741+00:00",
+    "restore_reason": "P5-T03_rollback_drill_restore",
+    "previous_semver": null,
+    "auc_tip_oos": 0.40864381520119225,
+    "best_verdict": "DISARM"
+  },
+  "pass": true,
+  "note": "EA research OS uses L2det_uk_m5_v1b \u2014 AI pin rollback does not change InpAOS_UK_M5_L2detEnable. Kill-switch / AiOsMode still control L2 path.",
+  "ea_rollback_checklist": [
+    "InpAiKillSwitch=true  OR  InpAiOsMode=OFF \u2192 L2 AI off",
+    "InpAOS_UK_M5_L2detEnable=false \u2192 M5 det map off (engine only)",
+    "InpAOS_Enable=false \u2192 full AOS off (Balanced P0 M5)",
+    "Reload BMRG-M5-UK100-6M-P0_balanced_chart.set"
+  ]
+}

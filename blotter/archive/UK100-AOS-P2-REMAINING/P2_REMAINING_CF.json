@@ -1,0 +1,479 @@
+{
+  "task": "UK100-AOS-P2-T03..T07",
+  "generated_utc": "2026-10-12T22:27:55.726739+00:00",
+  "Leak_proxy_pp": 4.266699999999999,
+  "P2_T03_T04_det_cf_tip": {
+    "baseline": {
+      "label": "baseline_tip",
+      "n": 51,
+      "WR": 49.02,
+      "E_N": 0.1029,
+      "EF_proxy_pp": 0.308,
+      "avgR": 0.1029
+    },
+    "policies": {
+      "skip_BUY": {
+        "skips_n": 26,
+        "precision_vs_losers": 0.6154,
+        "recall_losers": 0.6154,
+        "false_skip_winners": 10,
+        "false_skip_wed_winners": 1,
+        "false_skip_sell_winners": 0,
+        "kept": {
+          "label": "kept",
+          "n": 25,
+          "WR": 60.0,
+          "E_N": 0.35,
+          "EF_proxy_pp": 11.289,
+          "avgR": 0.35
+        },
+        "delta_E_N": 0.2471,
+        "delta_EF_pp": 10.981,
+        "fire_retention_pct": 49.0,
+        "verdict": "REJECT_FREQUENCY_STALL"
+      },
+      "skip_BUY_if_Thu": {
+        "skips_n": 9,
+        "precision_vs_losers": 0.5556,
+        "recall_losers": 0.1923,
+        "false_skip_winners": 4,
+        "false_skip_wed_winners": 0,
+        "false_skip_sell_winners": 0,
+        "kept": {
+          "label": "kept",
+          "n": 42,
+          "WR": 50.0,
+          "E_N": 0.125,
+          "EF_proxy_pp": 1.289,
+          "avgR": 0.125
+        },
+        "delta_E_N": 0.0221,
+        "delta_EF_pp": 0.981,
+        "fire_retention_pct": 82.4,
+        "verdict": "ARM_SOFT"
+      },
+      "skip_BUY_if_H08": {
+        "skips_n": 11,
+        "precision_vs_losers": 0.8182,
+        "recall_losers": 0.3462,
+        "false_skip_winners": 2,
+        "false_skip_wed_winners": 1,
+        "false_skip_sell_winners": 0,
+        "kept": {
+          "label": "kept",
+          "n": 40,
+          "WR": 57.5,
+          "E_N": 0.2937,
+          "EF_proxy_pp": 8.789,
+          "avgR": 0.2938
+        },
+        "delta_E_N": 0.1908,
+        "delta_EF_pp": 8.481,
+        "fire_retention_pct": 78.4,
+        "verdict": "ARM_SOFT"
+      },
+      "skip_BUY_if_near_atr": {
+        "skips_n": 9,
+        "precision_vs_losers": 0.6667,
+        "recall_losers": 0.2308,
+        "false_skip_winners": 3,
+        "false_skip_wed_winners": 0,
+        "false_skip_sell_winners": 0,
+        "kept": {
+          "label": "kept",
+          "n": 42,
+          "WR": 52.38,
+          "E_N": 0.1786,
+          "EF_proxy_pp": 3.67,
+          "avgR": 0.1786
+        },
+        "delta_E_N": 0.0757,
+        "delta_EF_pp": 3.362,
+        "fire_retention_pct": 82.4,
+        "verdict": "ARM_SOFT"
+      },
+      "skip_Jul": {
+        "skips_n": 7,
+        "precision_vs_losers": 0.7143,
+        "recall_losers": 0.1923,
+        "false_skip_winners": 2,
+        "false_skip_wed_winners": 1,
+        "false_skip_sell_winners": 2,
+        "kept": {
+          "label": "kept",
+          "n": 44,
+          "WR": 52.27,
+          "E_N": 0.1761,
+          "EF_proxy_pp": 3.562,
+          "avgR": 0.1761
+        },
+        "delta_E_N": 0.0732,
+        "delta_EF_pp": 3.254,
+        "fire_retention_pct": 86.3,
+        "verdict": "ARM_SOFT"
+      },
+      "skip_near_atr_cap": {
+        "skips_n": 18,
+        "precision_vs_losers": 0.5,
+        "recall_losers": 0.3462,
+        "false_skip_winners": 9,
+        "false_skip_wed_winners": 4,
+        "false_skip_sell_winners": 6,
+        "kept": {
+          "label": "kept",
+          "n": 33,
+          "WR": 48.48,
+          "E_N": 0.0909,
+          "EF_proxy_pp": -0.226,
+          "avgR": 0.0909
+        },
+        "delta_E_N": -0.012,
+        "delta_EF_pp": -0.534,
+        "fire_retention_pct": 64.7,
+        "verdict": "DISARM"
+      },
+      "skip_Feb_on_combined_note": {
+        "skips_n": 0,
+        "verdict": "N/A_EMPTY",
+        "note": "no fires"
+      },
+      "skip_Thu_PLUS_BUY_near_atr": {
+        "skips_n": 18,
+        "precision_vs_losers": 0.7222,
+        "recall_losers": 0.5,
+        "false_skip_winners": 5,
+        "false_skip_wed_winners": 0,
+        "false_skip_sell_winners": 0,
+        "kept": {
+          "label": "kept",
+          "n": 33,
+          "WR": 60.61,
+          "E_N": 0.3636,
+          "EF_proxy_pp": 11.895,
+          "avgR": 0.3636
+        },
+        "delta_E_N": 0.2607,
+        "delta_EF_pp": 11.587,
+        "fire_retention_pct": 64.7,
+        "verdict": "ARM_SOFT"
+      },
+      "skip_Thu_PLUS_Jul": {
+        "skips_n": 18,
+        "precision_vs_losers": 0.6667,
+        "recall_losers": 0.4615,
+        "false_skip_winners": 6,
+        "false_skip_wed_winners": 1,
+        "false_skip_sell_winners": 2,
+        "kept": {
+          "label": "kept",
+          "n": 33,
+          "WR": 57.58,
+          "E_N": 0.2955,
+          "EF_proxy_pp": 8.865,
+          "avgR": 0.2955
+        },
+        "delta_E_N": 0.1926,
+        "delta_EF_pp": 8.557,
+        "fire_retention_pct": 64.7,
+        "verdict": "ARM_SOFT"
+      }
+    }
+  },
+  "P2_T03_T04_prior_diag": {
+    "skip_BUY": {
+      "skips_n": 35,
+      "precision_vs_losers": 0.4571,
+      "recall_losers": 0.3902,
+      "false_skip_winners": 19,
+      "false_skip_wed_winners": 4,
+      "false_skip_sell_winners": 0,
+      "kept": {
+        "label": "kept",
+        "n": 40,
+        "WR": 37.5,
+        "E_N": -0.1562,
+        "EF_proxy_pp": -11.211,
+        "avgR": -0.1562
+      },
+      "delta_E_N": -0.1762,
+      "delta_EF_pp": -7.833,
+      "fire_retention_pct": 53.3,
+      "verdict": "DISARM"
+    },
+    "skip_Jul": {
+      "skips_n": 0
+    },
+    "skip_near_atr_cap": {
+      "skips_n": 17,
+      "precision_vs_losers": 0.7059,
+      "recall_losers": 0.2927,
+      "false_skip_winners": 5,
+      "false_skip_wed_winners": 1,
+      "false_skip_sell_winners": 2,
+      "kept": {
+        "label": "kept",
+        "n": 58,
+        "WR": 50.0,
+        "E_N": 0.125,
+        "EF_proxy_pp": 1.289,
+        "avgR": 0.125
+      },
+      "delta_E_N": 0.105,
+      "delta_EF_pp": 4.667,
+      "fire_retention_pct": 77.3,
+      "verdict": "ARM_SOFT"
+    },
+    "skip_Feb": {
+      "skips_n": 23,
+      "precision_vs_losers": 0.6522,
+      "recall_losers": 0.3659,
+      "false_skip_winners": 8,
+      "false_skip_wed_winners": 2,
+      "false_skip_sell_winners": 3,
+      "kept": {
+        "label": "kept",
+        "n": 52,
+        "WR": 50.0,
+        "E_N": 0.125,
+        "EF_proxy_pp": 1.289,
+        "avgR": 0.125
+      },
+      "delta_E_N": 0.105,
+      "delta_EF_pp": 4.667,
+      "fire_retention_pct": 69.3,
+      "verdict": "ARM_SOFT"
+    },
+    "skip_Thu": {
+      "skips_n": 16,
+      "precision_vs_losers": 0.5625,
+      "recall_losers": 0.2195,
+      "false_skip_winners": 7,
+      "false_skip_wed_winners": 0,
+      "false_skip_sell_winners": 3,
+      "kept": {
+        "label": "kept",
+        "n": 59,
+        "WR": 45.76,
+        "E_N": 0.0297,
+        "EF_proxy_pp": -2.948,
+        "avgR": 0.0297
+      },
+      "delta_E_N": 0.0097,
+      "delta_EF_pp": 0.43,
+      "fire_retention_pct": 78.7,
+      "verdict": "ARM_SOFT"
+    }
+  },
+  "P2_T05_size_table": {
+    "task": "UK100-AOS-P2-T05",
+    "status": "SPEC_ONLY",
+    "note": "Wire after L4 health bus; do not size-live yet",
+    "f_declared_baseline": 0.005,
+    "table": [
+      {
+        "state": "Expanding",
+        "cond": "W15 E_N > baseline and rising",
+        "f_mult": 1.0
+      },
+      {
+        "state": "Stable",
+        "cond": "W15 E_N >= 0 and |\u0394| small",
+        "f_mult": 1.0
+      },
+      {
+        "state": "Compressing",
+        "cond": "W15 E_N falling 2 evals or 0 < EF <= M",
+        "f_mult": 0.5
+      },
+      {
+        "state": "Near frontier",
+        "cond": "EF_proxy <= 1 pp or W15 E_N < 0",
+        "f_mult": 0.25
+      },
+      {
+        "state": "Below frontier",
+        "cond": "W20 E_N <= 0 and tip EF_proxy <= 0",
+        "f_mult": 0.0
+      },
+      {
+        "state": "L2det WOULD_SKIP",
+        "cond": "Thu SOFT map (armed)",
+        "f_mult": 0.0,
+        "note": "skip outranks size"
+      }
+    ],
+    "w15_E_N_tail": [
+      0.05,
+      -0.1,
+      0.05,
+      0.2,
+      0.35,
+      0.35,
+      0.35,
+      0.35,
+      0.2,
+      0.35
+    ]
+  },
+  "P2_T06_L2skip_uk": {
+    "semver": "L2skip_uk_p_prior_20261012_222755",
+    "auc_tip_oos": 0.38923076923076927,
+    "thr": 0.8000000000000003,
+    "best_row": {
+      "thr": 0.8,
+      "verdict": "DISARM",
+      "skips_n": 1,
+      "precision_vs_losers": 0.0,
+      "fire_retention_pct": 98.0,
+      "kept_E_N": 0.08,
+      "delta_E_N": -0.0229,
+      "delta_EF_pp": -1.019,
+      "false_skip_wed_winners": 1
+    },
+    "chrono_holdout": {
+      "train_n": 105,
+      "test_n": 21,
+      "thr": 0.8000000000000003,
+      "report": {
+        "skips_n": 0,
+        "precision_vs_losers": null,
+        "recall_losers": 0.0,
+        "false_skip_winners": 0,
+        "false_skip_wed_winners": 0,
+        "false_skip_sell_winners": 0,
+        "kept": {
+          "label": "kept",
+          "n": 21,
+          "WR": 52.38,
+          "E_N": 0.1786,
+          "EF_proxy_pp": 3.67,
+          "avgR": 0.1786
+        },
+        "delta_E_N": 0.0,
+        "delta_EF_pp": 0.0,
+        "fire_retention_pct": 100.0,
+        "verdict": "DISARM"
+      },
+      "baseline_holdout": {
+        "label": "tip_holdout",
+        "n": 21,
+        "WR": 52.38,
+        "E_N": 0.1786,
+        "EF_proxy_pp": 3.67,
+        "avgR": 0.1786
+      }
+    },
+    "model_dir": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\models\\L2skip_uk\\L2skip_uk_p_prior_20261012_222755"
+  },
+  "P2_T07_stack_cf": {
+    "baseline": {
+      "label": "baseline",
+      "n": 51,
+      "WR": 49.02,
+      "E_N": 0.1029,
+      "EF_proxy_pp": 0.308,
+      "avgR": 0.1029
+    },
+    "stacks": {
+      "P0_engine": {
+        "kept": {
+          "label": "baseline",
+          "n": 51,
+          "WR": 49.02,
+          "E_N": 0.1029,
+          "EF_proxy_pp": 0.308,
+          "avgR": 0.1029
+        },
+        "skips_n": 0,
+        "delta_E_N": 0.0,
+        "verdict": "BASELINE"
+      },
+      "L2det_Thu": {
+        "skips_n": 13,
+        "precision_vs_losers": 0.6923,
+        "recall_losers": 0.3462,
+        "false_skip_winners": 4,
+        "false_skip_wed_winners": 0,
+        "false_skip_sell_winners": 0,
+        "kept": {
+          "label": "kept",
+          "n": 38,
+          "WR": 55.26,
+          "E_N": 0.2434,
+          "EF_proxy_pp": 6.552,
+          "avgR": 0.2434
+        },
+        "delta_E_N": 0.1405,
+        "delta_EF_pp": 6.244,
+        "fire_retention_pct": 74.5,
+        "verdict": "ARM_SOFT"
+      },
+      "L2AI_only": {
+        "skips_n": 1,
+        "precision_vs_losers": 0.0,
+        "recall_losers": 0.0,
+        "false_skip_winners": 1,
+        "false_skip_wed_winners": 1,
+        "false_skip_sell_winners": 1,
+        "kept": {
+          "label": "kept",
+          "n": 50,
+          "WR": 48.0,
+          "E_N": 0.08,
+          "EF_proxy_pp": -0.711,
+          "avgR": 0.08
+        },
+        "delta_E_N": -0.0229,
+        "delta_EF_pp": -1.019,
+        "fire_retention_pct": 98.0,
+        "verdict": "DISARM"
+      },
+      "L2det_OR_L2AI": {
+        "skips_n": 14,
+        "precision_vs_losers": 0.6429,
+        "recall_losers": 0.3462,
+        "false_skip_winners": 5,
+        "false_skip_wed_winners": 1,
+        "false_skip_sell_winners": 1,
+        "kept": {
+          "label": "kept",
+          "n": 37,
+          "WR": 54.05,
+          "E_N": 0.2162,
+          "EF_proxy_pp": 5.343,
+          "avgR": 0.2162
+        },
+        "delta_E_N": 0.1133,
+        "delta_EF_pp": 5.035,
+        "fire_retention_pct": 72.5,
+        "verdict": "ARM_SOFT"
+      },
+      "L2det_AND_L2AI": {
+        "skips_n": 0,
+        "precision_vs_losers": null,
+        "recall_losers": 0.0,
+        "false_skip_winners": 0,
+        "false_skip_wed_winners": 0,
+        "false_skip_sell_winners": 0,
+        "kept": {
+          "label": "kept",
+          "n": 51,
+          "WR": 49.02,
+          "E_N": 0.1029,
+          "EF_proxy_pp": 0.308,
+          "avgR": 0.1029
+        },
+        "delta_E_N": 0.0,
+        "delta_EF_pp": 0.0,
+        "fire_retention_pct": 100.0,
+        "verdict": "DISARM"
+      }
+    }
+  },
+  "arm_summary": {
+    "P2-T02_Thu": "ARM_SOFT (unchanged)",
+    "P2-T03_buy_caution": "ARM_SOFT candidate: skip_BUY_if_Thu",
+    "P2-T04_stress": "ARM_SOFT: skip_Jul",
+    "P2-T06_L2AI": "DISARM thr=0.8"
+  }
+}

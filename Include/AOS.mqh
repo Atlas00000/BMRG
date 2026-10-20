@@ -10,6 +10,49 @@
 #include "State.mqh"
 #include "Logger.mqh"
 #include "AOS_L2skip_inf.mqh"
+#include "AOS_L2skip_aud.mqh"
+#include "AOS_L2det_aapl.mqh"
+#include "AOS_L2det_aapl_m5.mqh"
+#include "AOS_L2det_uk.mqh"
+#include "AOS_L2det_eur.mqh"
+#include "AOS_L2det_aud.mqh"
+#include "AOS_L2det_de.mqh"
+#include "AOS_L2det_de_m5.mqh"
+#include "AOS_L2det_jp.mqh"
+#include "AOS_L2det_jp_m5.mqh"
+#include "AOS_L2det_usdjpy.mqh"
+
+//+------------------------------------------------------------------+
+bool AOSIsAudUsd()
+  {
+   return (StringFind(_Symbol, "AUDUSD") == 0);
+  }
+
+//+------------------------------------------------------------------+
+string AOSActiveL2Semver()
+  {
+   if(AOSIsUk100Symbol())
+      return AOS_L2DET_UK_SEMVER;
+   if(AOSIsAppleSymbol() && Period() == PERIOD_M5 && InpAOS_AAPL_M5_L2detEnable)
+      return AOS_L2DET_AAPL_M5_SEMVER;
+   if(AOSIsAppleSymbol())
+      return AOS_L2DET_AAPL_SEMVER;
+   if(AOSIsEurUsdSymbol() && InpAOS_EUR_L2detEnable)
+      return AOS_L2DET_EUR_SEMVER;
+   if(AOSIsAudUsd() && InpAOS_AUD_L2detEnable)
+      return AOS_L2DET_AUD_SEMVER;
+   if(AOSIsDe40Symbol() && Period() == PERIOD_M5 && InpAOS_DE_M5_L2detEnable)
+      return AOS_L2DET_DE_M5_SEMVER;
+   if(AOSIsDe40Symbol() && Period() != PERIOD_M5 && InpAOS_DE_L2detEnable)
+      return AOS_L2DET_DE_SEMVER;
+   if(AOSIsJp225Symbol() && Period() == PERIOD_M5 && InpAOS_JP_M5_L2detEnable)
+      return AOS_L2DET_JP_M5_SEMVER;
+   if(AOSIsJp225Symbol() && Period() != PERIOD_M5 && InpAOS_JP_L2detEnable)
+      return AOS_L2DET_JP_SEMVER;
+   if(AOSIsUsdJpySymbol() && InpAOS_USDJPY_L2detEnable)
+      return AOS_L2DET_USDJPY_SEMVER;
+   return AOSIsAudUsd() ? AOS_L2AUD_SEMVER : AOS_L2INF_SEMVER;
+  }
 
 #define AOS_RING_MAX 600
 
@@ -102,10 +145,16 @@ void AOSInit()
       return;
      }
 
-   if(StringCompare(InpAiModelSemver, AOS_L2INF_SEMVER) != 0 && AOSEffectiveL2Mode() != AI_OS_OFF)
+   // Strip Tester "||meta" junk if present so preset compare works
+   string pinWanted = InpAiModelSemver;
+   const int pipe = StringFind(pinWanted, "||");
+   if(pipe > 0)
+      pinWanted = StringSubstr(pinWanted, 0, pipe);
+   const string baked = AOSActiveL2Semver();
+   if(StringCompare(pinWanted, baked) != 0 && AOSEffectiveL2Mode() != AI_OS_OFF)
       LogWarn(StringFormat(
-                 "AOS model semver mismatch input=%s baked=%s — using baked INF coeffs",
-                 InpAiModelSemver, AOS_L2INF_SEMVER));
+                 "AOS model semver mismatch input=%s baked=%s — using baked coeffs for %s",
+                 pinWanted, baked, _Symbol));
 
    if(InpAOS_Ledger)
      {
@@ -124,10 +173,10 @@ void AOSInit()
      }
 
    LogInfo(StringFormat(
-              "AOS ON | L3=%d L4size=%d L2mode=%s kill=%d DDlim=%.1f W=%d model=%s",
+              "AOS ON | L3=%d L4size=%d L2mode=%s kill=%d DDlim=%.1f W=%d model=%s sym=%s",
               (int)InpAOS_L3_Enable, (int)InpAOS_L4_SizeMod,
               AOSModeToString(AOSEffectiveL2Mode()), (int)InpAiKillSwitch,
-              InpAOS_DD_Limit, InpAOS_W250, AOS_L2INF_SEMVER));
+              InpAOS_DD_Limit, InpAOS_W250, baked, _Symbol));
   }
 
 //+------------------------------------------------------------------+
@@ -157,7 +206,7 @@ void AOSLedger(const string side,
              DoubleToString(g_aos.w250EN, 4),
              DoubleToString(g_aos.lastAIProba, 4),
              (int)g_aos.lastAISkip,
-             AOS_L2INF_SEMVER,
+             AOSActiveL2Semver(),
              (int)g_aos.haltL3,
              (int)g_aos.deriskL3,
              AOSModeToString(AOSEffectiveL2Mode()));
@@ -293,18 +342,20 @@ void AOSUpdateObserver()
   }
 
 //+------------------------------------------------------------------+
-double AOSScaleNum(const int i, const double raw)
+double AOSScaleNum(const int i, const double raw, const bool aud)
   {
-   const double s = AOS_L2INF_NUM_SCALE[i];
+   const double s = aud ? AOS_L2AUD_NUM_SCALE[i] : AOS_L2INF_NUM_SCALE[i];
+   const double mu = aud ? AOS_L2AUD_NUM_MEAN[i] : AOS_L2INF_NUM_MEAN[i];
    if(s == 0.0)
       return 0.0;
-   return (raw - AOS_L2INF_NUM_MEAN[i]) / s;
+   return (raw - mu) / s;
   }
 
 //+------------------------------------------------------------------+
 double AOSPredictLoseProba(const ENUM_BMRG_SIDE side, const datetime t)
   {
-   // INF L2 feature parity with train_l2shadow.py (session/side/dow OHE + scaled nums)
+   // Feature parity with train_l2shadow.py / train_l2_audusd.py
+   const bool aud = AOSIsAudUsd();
    MqlDateTime dt;
    TimeToStruct(t, dt);
    const int hour = dt.hour;
@@ -312,40 +363,40 @@ double AOSPredictLoseProba(const ENUM_BMRG_SIDE side, const datetime t)
    const int month = dt.mon;
    const int wom = ((dt.day - 1) / 7) + 1;
    const int spread = (int)SymbolInfoInteger(_Symbol, SYMBOL_SPREAD);
-   const int spreadHi = (spread >= (int)AOS_L2INF_SPREAD_MED) ? 1 : 0;
+   const double spreadMed = aud ? AOS_L2AUD_SPREAD_MED : AOS_L2INF_SPREAD_MED;
+   const int spreadHi = (spread >= (int)spreadMed) ? 1 : 0;
    const int isMon = (dow == 1) ? 1 : 0;
    const int isFri = (dow == 5) ? 1 : 0;
    const int sideBuy = (side == BMRG_SIDE_BUY) ? 1 : 0;
-   // Match pit_builder.session_id: 12–16 LON_NY · 17–19 NY (champ window)
+   // Match session_id: 12–16 LON_NY · 17–19 NY
    const bool sessLonNy = (hour >= 12 && hour < 17);
    const bool sessNy = (hour >= 17 && hour < 20);
 
-   double x[AOS_L2INF_N_FEAT];
+   const int nFeat = aud ? AOS_L2AUD_N_FEAT : AOS_L2INF_N_FEAT;
+   double x[];
+   ArrayResize(x, nFeat);
    ArrayInitialize(x, 0.0);
 
-   // session OHE: LON_NY, NY (unknown hours → zeros = sklearn handle_unknown)
    if(sessLonNy) x[0] = 1.0;
    if(sessNy) x[1] = 1.0;
-   // side OHE: BUY, SELL
    if(sideBuy == 1) x[2] = 1.0; else x[3] = 1.0;
-   // dow OHE: Fri, Mon, Thu, Wed (Tue not in train — all-zero)
    if(dow == 5) x[4] = 1.0;
    else if(dow == 1) x[5] = 1.0;
    else if(dow == 4) x[6] = 1.0;
    else if(dow == 3) x[7] = 1.0;
 
-   x[8]  = AOSScaleNum(0, (double)hour);
-   x[9]  = AOSScaleNum(1, (double)spread);
-   x[10] = AOSScaleNum(2, (double)month);
-   x[11] = AOSScaleNum(3, (double)wom);
-   x[12] = AOSScaleNum(4, (double)isMon);
-   x[13] = AOSScaleNum(5, (double)isFri);
-   x[14] = AOSScaleNum(6, (double)sideBuy);
-   x[15] = AOSScaleNum(7, (double)spreadHi);
+   x[8]  = AOSScaleNum(0, (double)hour, aud);
+   x[9]  = AOSScaleNum(1, (double)spread, aud);
+   x[10] = AOSScaleNum(2, (double)month, aud);
+   x[11] = AOSScaleNum(3, (double)wom, aud);
+   x[12] = AOSScaleNum(4, (double)isMon, aud);
+   x[13] = AOSScaleNum(5, (double)isFri, aud);
+   x[14] = AOSScaleNum(6, (double)sideBuy, aud);
+   x[15] = AOSScaleNum(7, (double)spreadHi, aud);
 
-   double z = AOS_L2INF_INTERCEPT;
-   for(int i = 0; i < AOS_L2INF_N_FEAT; i++)
-      z += AOS_L2INF_COEF[i] * x[i];
+   double z = aud ? AOS_L2AUD_INTERCEPT : AOS_L2INF_INTERCEPT;
+   for(int i = 0; i < nFeat; i++)
+      z += (aud ? AOS_L2AUD_COEF[i] : AOS_L2INF_COEF[i]) * x[i];
 
    if(z > 35.0) return 1.0;
    if(z < -35.0) return 0.0;
@@ -392,7 +443,7 @@ bool AOSAllowEntry(const ENUM_BMRG_SIDE side, string &reason)
       return false;
      }
 
-   // L2 INF intelligence — permit/withhold only (never rewrites entry)
+   // L2 mode: kill-switch / OFF → no intelligence (Apple det still needs mode≠OFF)
    const ENUM_AI_OS_MODE l2mode = AOSEffectiveL2Mode();
    if(l2mode == AI_OS_OFF)
      {
@@ -400,16 +451,271 @@ bool AOSAllowEntry(const ENUM_BMRG_SIDE side, string &reason)
       return true;
      }
 
+   // --- UK100 path: L2det only (never run EUR/AUD L2 AI coeffs on UK100) ---
+   if(AOSIsUk100Symbol())
+     {
+      string detReason = "";
+      if(AOSUkL2detShouldSkip(side, TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- Apple M5 path: M5-native L2det only (never M15 Thu/18 · never EUR/AUD AI) ---
+   if(AOSIsAppleSymbol() && Period() == PERIOD_M5 && InpAOS_AAPL_M5_L2detEnable)
+     {
+      string detReason = "";
+      if(AOSAppleM5L2detShouldSkip(TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- Apple M15 path: L2det only (never run EUR/AUD L2 AI coeffs on Apple) ---
+   if(AOSIsAppleSymbol())
+     {
+      string detReason = "";
+      if(AOSAppleL2detShouldSkip(TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- EURUSD M15 research OS: L2det only when enabled (never INF coeffs) ---
+   if(AOSIsEurUsdSymbol() && InpAOS_EUR_L2detEnable)
+     {
+      string detReason = "";
+      if(AOSEurL2detShouldSkip(side, TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- AUDUSD M15 research OS: L2det only when enabled (never live M5 AI pin) ---
+   if(AOSIsAudUsd() && InpAOS_AUD_L2detEnable)
+     {
+      string detReason = "";
+      if(AOSAudL2detShouldSkip(side, TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- DE40/DE30 M5 research OS: L2det v1b (before M15 map) ---
+   if(AOSIsDe40Symbol() && Period() == PERIOD_M5 && InpAOS_DE_M5_L2detEnable)
+     {
+      string detReason = "";
+      if(AOSDeM5L2detShouldSkip(side, TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- DE40/DE30 M15 research OS: L2det only when enabled (not on M5) ---
+   if(AOSIsDe40Symbol() && Period() != PERIOD_M5 && InpAOS_DE_L2detEnable)
+     {
+      string detReason = "";
+      if(AOSDeL2detShouldSkip(side, TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- JP225/JPN225 M5 research OS: L2det v1c (before M15 May∨Jul map) ---
+   if(AOSIsJp225Symbol() && Period() == PERIOD_M5 && InpAOS_JP_M5_L2detEnable)
+     {
+      string detReason = "";
+      if(AOSJpM5L2detShouldSkip(side, TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- JP225/JPN225 M15 research OS: L2det only when enabled (not on M5) ---
+   if(AOSIsJp225Symbol() && Period() != PERIOD_M5 && InpAOS_JP_L2detEnable)
+     {
+      string detReason = "";
+      if(AOSJpL2detShouldSkip(side, TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- USDJPY M15 research OS: L2det only when enabled ---
+   if(AOSIsUsdJpySymbol() && InpAOS_USDJPY_L2detEnable)
+     {
+      string detReason = "";
+      if(AOSUsdJpyL2detShouldSkip(side, TimeCurrent(), detReason))
+        {
+         g_aos.lastL2Reason = detReason;
+         g_aos.lastAISkip = true;
+         if(l2mode == AI_OS_LIVE_WITHHOLD)
+           {
+            reason = "AOS " + detReason;
+            AOSLedger(SideToString(side), "L2DET", "SKIP", detReason);
+            return false;
+           }
+         LogInfo("AOS SHADOW skip " + detReason);
+         AOSLedger(SideToString(side), "L2DET", "SHADOW_SKIP", detReason);
+        }
+      else
+        {
+         g_aos.lastL2Reason = "FIRE_OK";
+         AOSLedger(SideToString(side), "L2DET", "FIRE", "FIRE_OK");
+        }
+      return true;
+     }
+
+   // --- FX path: L2 AI (INF / AUD) — permit/withhold only ---
    const double proba = AOSPredictLoseProba(side, TimeCurrent());
    g_aos.lastAIProba = proba;
+   const bool aud = AOSIsAudUsd();
+   const double thr = aud ? AOS_L2AUD_THR : AOS_L2INF_THR;
+   const double band = aud ? AOS_L2AUD_UNCERTAIN : AOS_L2INF_UNCERTAIN;
    // Policy: WOULD_SKIP only if p >= thr+band; near thr → ALLOW_UNCERTAIN (fire)
-   const bool wantSkip = (proba >= (AOS_L2INF_THR + AOS_L2INF_UNCERTAIN));
-   const bool uncertain = (!wantSkip && proba >= (AOS_L2INF_THR - AOS_L2INF_UNCERTAIN));
+   const bool wantSkip = (proba >= (thr + band));
+   const bool uncertain = (!wantSkip && proba >= (thr - band));
    g_aos.lastAISkip = wantSkip;
 
    if(wantSkip)
      {
-      g_aos.lastL2Reason = StringFormat("L2INF WOULD_SKIP p=%.3f thr=%.3f", proba, AOS_L2INF_THR);
+      g_aos.lastL2Reason = StringFormat("L2%s WOULD_SKIP p=%.3f thr=%.3f",
+                                        aud ? "AUD" : "INF", proba, thr);
       if(l2mode == AI_OS_LIVE_WITHHOLD)
         {
          reason = "AOS " + g_aos.lastL2Reason;
@@ -422,7 +728,8 @@ bool AOSAllowEntry(const ENUM_BMRG_SIDE side, string &reason)
      }
    else if(uncertain)
      {
-      g_aos.lastL2Reason = StringFormat("L2INF ALLOW_UNCERTAIN p=%.3f", proba);
+      g_aos.lastL2Reason = StringFormat("L2%s ALLOW_UNCERTAIN p=%.3f",
+                                        aud ? "AUD" : "INF", proba);
       AOSLedger(SideToString(side), "L2", "ALLOW_UNCERTAIN", g_aos.lastL2Reason);
      }
    else

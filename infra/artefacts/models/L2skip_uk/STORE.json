@@ -1,0 +1,11 @@
+{
+  "store": "L2skip_uk",
+  "schema_version": "1.0.0",
+  "asset": "UK100",
+  "policy": "doc/assets/UK100/aos_l5_retrain.md",
+  "overlay_champ": "L2det_uk_v1b",
+  "train_entrypoint": "infra/src/train/train_l2_uk100.py",
+  "rollback_entrypoint": "infra/artefacts/models/L2skip_uk/rollback_l2skip_uk.py",
+  "mqh_auto_export": false,
+  "live_withhold_allowed": false
+}

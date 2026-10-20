@@ -1,0 +1,206 @@
+{
+  "aos_task": "USDJPY-AOS-P7",
+  "packet_id": "USDJPY_M15_AOS_RESEARCH_v1",
+  "preset_alias": "USDJPYstack",
+  "generated_utc": "2026-10-19T16:07:01.926516+00:00",
+  "framework_unified": "1.0",
+  "framework_usdjpy": "0.1.0",
+  "canvas": "display_only",
+  "scope": {
+    "sleeve": "USDJPY M15 expansion research OS",
+    "not": [
+      "AUDUSD / EURUSD / UK100 / DE40 live book replace",
+      "PRODUCTION-WORTHY full G0\u2013G5 admit",
+      "L2 AI LIVE_WITHHOLD",
+      "geometry retune (SL/TP/BB) / Tokyo reopen / ATR lift",
+      "Jul LIVE (HOLD only \u2014 protect FP)",
+      "Thu LIVE (DISARM \u2014 path-flip)"
+    ]
+  },
+  "identity": {
+    "engine_magic": 26101828,
+    "research_os_magic": 26131807,
+    "research_os_magic_p4_pre_hitl": 26131804,
+    "ea_version_min": "compile with AOS_L2det_usdjpy.mqh",
+    "preset_armed": "USDJPYstack.set",
+    "preset_armed_alias": "BMRG-M15-USDJPY-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "BMRG-M15-USDJPY-6M-P0_balanced_chart.set",
+    "symbol": "USDJPY",
+    "asset": "USDJPY",
+    "tf": "M15",
+    "tester_paths": [
+      "Presets/USDJPYstack.set",
+      "Presets/BMRG-M15-USDJPY-6M-P7_research_OS_ARMED.set",
+      "Profiles/Tester/BMRG/USDJPY/USDJPYstack.set",
+      "Profiles/Tester/BMRG/USDJPY/BMRG-M15-USDJPY-6M-P7_research_OS_ARMED.set"
+    ]
+  },
+  "armed_stack": {
+    "engine": "Balanced P0 G0 FIXED_RR RR1.20 BB2.2 session12\u201320 skipTue ATR70",
+    "L2det": "L2det_usdjpy_v1c LIVE_WITHHOLD (nearATR@0.9\u00d770 OR H16)",
+    "L2AI": "DISARM (AUC\u22480.47 \u00b7 BUY FP on tip CF)",
+    "L3": "ON DD25% / BELOW halt",
+    "L4": "ON size mod \u00b7 W50",
+    "L6": "ledger ON",
+    "L8": "advise-only session-sleeve (not live abort)",
+    "L9": "H14/spread/Jul HOLD_SHADOW \u2014 not LIVE in this packet",
+    "ATR_max": 70,
+    "Leak_source": "prior_11.4pp_until_deals",
+    "Leak_pp": 11.4,
+    "lot": 0.01,
+    "risk_pct": 0.5
+  },
+  "baseline_ref": "USDJPY_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_path": {
+      "n": 46,
+      "WR": 50.0,
+      "E_N": 0.1,
+      "EF_prior_pp": -6.855,
+      "note": "path tip n=46 (dedicated tip n=56 \u2014 path dependency)"
+    },
+    "offline_v1c_tip": {
+      "n_fire": 37,
+      "n_skip": 9,
+      "WR": 62.16,
+      "E_N": 0.3676,
+      "EF_pp": 5.308,
+      "delta_E_N_vs_engine": 0.2676,
+      "fire_retention_pct": 80.4,
+      "L3_halt": 0
+    },
+    "note": "Tester EA ledger for magic 26131807 not yet run \u2014 offline P4 tip v1c stack is the CF basis for HITL. Run USDJPYstack.set in Strategy Tester next."
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+    "expansion_EF": "PASS tip OS EF>0 under prior Leak 11.4 pp after v1c",
+    "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR70 declared (P6-T03)",
+    "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+    "G5_stress": "PARTIAL \u2014 L2 \u00b110% PASS_WITH_NOTES (P6); SL/TP not stressed",
+    "Leak_measured": "OPEN \u2014 prior 11.4 pp (deal-measured preferred before capital)",
+    "L2AI": "DISARM \u2014 tip AUC 0.471 \u00b7 CHALLENGER EMPTY",
+    "verdict_ladder": "EXPANSION_OS_ARMED \u2014 not PRODUCTION-WORTHY \u00b7 not live FX replace"
+  },
+  "p6_harden_summary": {
+    "L9": "no_LIVE \u2014 H14 DISARM \u00b7 spread HOLD \u00b7 Jul HOLD",
+    "L2_stress": "PASS_WITH_NOTES",
+    "ATR_G3": "PASS",
+    "nearATR_keep": "0.9 / 70 + H16"
+  },
+  "ledger_sample": {
+    "ledger_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\blotter\\archive\\USDJPY-AOS-P4\\ledger_det_arm_v1c.csv",
+    "source": "offline_P4_tip_v1c_shadow",
+    "n_rows": 46,
+    "decision_counts": {
+      "FIRE_OK": 37,
+      "WOULD_SKIP": 9
+    },
+    "l2det_reasons": {
+      "L2DET_SKIP_NEAR_ATR": 6,
+      "L2DET_SKIP_H16": 2,
+      "L2DET_SKIP_NEAR_ATR|L2DET_SKIP_H16": 1
+    },
+    "head_skip": [
+      {
+        "t": "2026.05.08 13:00",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_NEAR_ATR|L8_ADVISE_ABORT_FAST_SL_NEAR_ATR",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.18 12:00",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_NEAR_ATR|L8_ADVISE_ABORT_FAST_SL_NEAR_ATR",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.06.17 18:45",
+        "side": "SELL",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_NEAR_ATR|L8_ADVISE_ABORT_FAST_SL_NEAR_ATR",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.07.06 16:45",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_H16|L8_ADVISE_ABORT_FLASH_SL",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.07.13 15:00",
+        "side": "SELL",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_NEAR_ATR",
+        "mode": "SHADOW"
+      }
+    ],
+    "head_fire": [
+      {
+        "t": "2026.05.11 14:00",
+        "side": "BUY",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.13 18:15",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.14 12:15",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.22 13:30",
+        "side": "BUY",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.27 15:15",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      }
+    ]
+  },
+  "rollback": {
+    "ai_pin": "python infra/artefacts/models/L2skip_usdjpy/rollback_l2skip_usdjpy.py rollback --to DISARM",
+    "ea_det_off": "InpAOS_USDJPY_L2detEnable=false",
+    "ea_aos_off": "InpAOS_Enable=false \u2192 load P0 balanced chart set",
+    "kill_switch": "InpAiKillSwitch=true"
+  },
+  "hitl": {
+    "status": "SIGNED",
+    "signed_utc": "2026-10-19T16:07:01.926516+00:00",
+    "signed_local": "2026-10-19T17:10:00+01:00",
+    "signer": "operator (chat HITL confirmation \u2014 proceed with P7 + USDJPYstack)",
+    "decision": "ARM_RESEARCH_OS",
+    "acknowledged": [
+      "Not AUD/EUR/UK/DE live book replace",
+      "Not production G0\u2013G5 admit",
+      "Leak still prior 11.4 pp (measured OPEN)",
+      "L2 AI remains DISARM",
+      "L9 H14/spread/Jul shadow only \u2014 not LIVE",
+      "Expansion sleeve only \u00b7 USDJPYstack name",
+      "Do not reopen Tokyo / lift ATR max"
+    ]
+  },
+  "verdict": "ACCEPT_ARM_RESEARCH_OS"
+}

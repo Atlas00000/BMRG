@@ -1,0 +1,79 @@
+{
+  "task": "USDJPY-AOS-P4",
+  "generated_utc": "2026-10-19T15:29:22.275476+00:00",
+  "Leak_prior_pp": 11.4,
+  "AI_thr_shadow": 0.55,
+  "AI_status": "SHADOW_ONLY",
+  "stacks": {
+    "P0_engine": {
+      "n_fire": 34,
+      "n_l2det_skip": 0,
+      "n_l2ai_shadow_skip": 0,
+      "n_l3_halt": 12,
+      "WR_pct": 50.0,
+      "E_N": 0.1,
+      "EF_prior_pp": -6.855,
+      "skip_precision_losers": null,
+      "l8_advise_n": 9,
+      "l8_advise_on_losers": 9,
+      "l8_advise_on_winners": 0,
+      "fire_retention_pct": 73.9
+    },
+    "det_arm_near_atr": {
+      "n_fire": 32,
+      "n_l2det_skip": 6,
+      "n_l2ai_shadow_skip": 0,
+      "n_l3_halt": 8,
+      "WR_pct": 53.12,
+      "E_N": 0.1688,
+      "EF_prior_pp": -3.73,
+      "skip_precision_losers": 1.0,
+      "l8_advise_n": 9,
+      "l8_advise_on_losers": 9,
+      "l8_advise_on_winners": 0,
+      "fire_retention_pct": 69.6
+    },
+    "det_arm_v1c": {
+      "n_fire": 37,
+      "n_l2det_skip": 9,
+      "n_l2ai_shadow_skip": 0,
+      "n_l3_halt": 0,
+      "WR_pct": 62.16,
+      "E_N": 0.3676,
+      "EF_prior_pp": 5.308,
+      "skip_precision_losers": 1.0,
+      "l8_advise_n": 9,
+      "l8_advise_on_losers": 9,
+      "l8_advise_on_winners": 0,
+      "fire_retention_pct": 80.4
+    },
+    "det_hold_Jul": {
+      "n_fire": 32,
+      "n_l2det_skip": 14,
+      "n_l2ai_shadow_skip": 0,
+      "n_l3_halt": 0,
+      "WR_pct": 59.38,
+      "E_N": 0.3063,
+      "EF_prior_pp": 2.52,
+      "skip_precision_losers": 0.7143,
+      "l8_advise_n": 9,
+      "l8_advise_on_losers": 9,
+      "l8_advise_on_winners": 0,
+      "fire_retention_pct": 69.6
+    },
+    "det_v1c_plus_ai_shadow": {
+      "n_fire": 37,
+      "n_l2det_skip": 9,
+      "n_l2ai_shadow_skip": 9,
+      "n_l3_halt": 0,
+      "WR_pct": 62.16,
+      "E_N": 0.3676,
+      "EF_prior_pp": 5.308,
+      "skip_precision_losers": 1.0,
+      "l8_advise_n": 9,
+      "l8_advise_on_losers": 9,
+      "l8_advise_on_winners": 0,
+      "fire_retention_pct": 80.4
+    }
+  }
+}

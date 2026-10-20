@@ -1,0 +1,16 @@
+{
+  "semver": "L2skip_aud_m15_p_pretip_20261019_145303",
+  "status": "SHADOW_CANDIDATE",
+  "role": "ai_challenger",
+  "mode": "SHADOW_ONLY",
+  "note": "HITL 2026-10-19 — user promoted eligible P5 artifact to CHALLENGER. Not AI champ / not LIVE_WITHHOLD. Overlay champ remains L2det_aud_m15_v1. Never pin onto live M5 8230931.",
+  "hitl_utc": "2026-10-19T15:00:00+01:00",
+  "hitl_by": "operator",
+  "gates": {
+    "auc_tip_oos": 0.597,
+    "tip_cf": "SHADOW_CANDIDATE",
+    "chrono": "HOLD_SHADOW",
+    "stack_or_vs_det": "PASS (P2/P4 OR >= det alone)"
+  },
+  "updated_utc": "2026-10-19T15:00:00+01:00"
+}

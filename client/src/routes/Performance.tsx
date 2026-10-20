@@ -51,10 +51,7 @@ export function Performance() {
       {baseline.status === 'ok' && selected ? (
         <>
           <PageEnter delay={1}>
-            <Surface className="ln-section">
-              <Text as="div" variant="label" tone="faint">
-                Window switcher
-              </Text>
+            <Surface className="ln-section" aria-label="Windows">
               <div className="ln-chip-row">
                 {baseline.data.windows.map((w) => (
                   <Button
@@ -71,9 +68,9 @@ export function Performance() {
           </PageEnter>
 
           <PageEnter delay={2}>
-            <Surface className="ln-section" accent="signal">
-              <Text as="div" variant="label" tone="faint">
-                Edge scorecard · {selected.label}
+            <Surface className="ln-section" accent="signal" aria-label="Edge scorecard">
+              <Text as="h2" variant="title">
+                {selected.label}
               </Text>
               {selected.available ? (
                 <>

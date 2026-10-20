@@ -1,0 +1,11 @@
+{
+  "task": "AUDUSD-L2-TRAIN",
+  "semver": "L2skip_aud_p90_20261008_122523",
+  "n": 126,
+  "n_oos": 76,
+  "auc_oos": 0.4637068357998591,
+  "skip_rate_oos": 0.2631578947368421,
+  "fires_kept_pct_oos": 73.6842105263158,
+  "mqh": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\Include\\AOS_L2skip_aud.mqh",
+  "verdict": "ACCEPT_FT"
+}

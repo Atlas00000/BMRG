@@ -27,7 +27,7 @@ export function AppShell() {
               BMRG
             </Text>
             <Text as="div" variant="micro" tone="faint">
-              Trading OS
+              Kyoto Ledger
             </Text>
           </div>
         </div>
@@ -54,7 +54,7 @@ export function AppShell() {
 
       <footer className="ln-shell__footer">
         <Text as="div" variant="micro" tone="faint">
-          BMRG · Harvest · read-first console
+          BMRG · Kyoto Ledger · read-first console
         </Text>
       </footer>
     </div>

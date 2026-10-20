@@ -1,0 +1,14 @@
+{
+  "store": "L2skip_usdjpy",
+  "schema_version": "1.0.0",
+  "asset": "USDJPY",
+  "symbol_mt5": "USDJPY",
+  "tf": "M15",
+  "policy": "doc/assets/USDJPY/aos_l5_retrain.md",
+  "overlay_champ": "L2det_usdjpy_v1c_near_atr_OR_H16",
+  "overlay_mqh": false,
+  "train_entrypoint": "infra/src/train/train_l2_usdjpy.py",
+  "rollback_entrypoint": "infra/artefacts/models/L2skip_usdjpy/rollback_l2skip_usdjpy.py",
+  "mqh_auto_export": false,
+  "live_withhold_allowed": false
+}

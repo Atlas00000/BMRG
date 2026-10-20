@@ -1,0 +1,2169 @@
+{
+  "logs": [
+    "20261008.log",
+    "20261007.log"
+  ],
+  "runs": [
+    {
+      "log": "20261008.log",
+      "run_i": 0,
+      "window": "2026.01.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "417.24",
+      "pnl": 17.24,
+      "orders": 252,
+      "aos_closes_logged": 126,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 57074
+      },
+      "life_counts": {
+        "Stable": 126
+      },
+      "f_counts": {
+        "0.75": 126
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 1,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "457.10",
+      "pnl": 57.1,
+      "orders": 96,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24803
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 2,
+      "window": "2026.01.01->2026.04.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "381.47",
+      "pnl": -18.53,
+      "orders": 126,
+      "aos_closes_logged": 62,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24195
+      },
+      "life_counts": {
+        "Stable": 62
+      },
+      "f_counts": {
+        "0.75": 62
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 3,
+      "window": "2026.09.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "378.98",
+      "pnl": -21.02,
+      "orders": 26,
+      "aos_closes_logged": 13,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 7497
+      },
+      "life_counts": {
+        "Stable": 13
+      },
+      "f_counts": {
+        "0.75": 13
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 4,
+      "window": "2026.06.01->2026.06.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "410.90",
+      "pnl": 10.9,
+      "orders": 24,
+      "aos_closes_logged": 11,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 6057
+      },
+      "life_counts": {
+        "Stable": 11
+      },
+      "f_counts": {
+        "0.75": 11
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 5,
+      "window": "2026.07.01->2026.07.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "409.66",
+      "pnl": 9.66,
+      "orders": 24,
+      "aos_closes_logged": 11,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 6346
+      },
+      "life_counts": {
+        "Stable": 11
+      },
+      "f_counts": {
+        "0.75": 11
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 6,
+      "window": "2026.09.01->2026.09.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "381.97",
+      "pnl": -18.03,
+      "orders": 20,
+      "aos_closes_logged": 10,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 6055
+      },
+      "life_counts": {
+        "Stable": 10
+      },
+      "f_counts": {
+        "0.75": 10
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 7,
+      "window": "2026.06.01->2026.06.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "410.90",
+      "pnl": 10.9,
+      "orders": 24,
+      "aos_closes_logged": 11,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 6057
+      },
+      "life_counts": {
+        "Stable": 11
+      },
+      "f_counts": {
+        "0.75": 11
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 8,
+      "window": "2026.07.01->2026.07.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "409.66",
+      "pnl": 9.66,
+      "orders": 24,
+      "aos_closes_logged": 11,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 6346
+      },
+      "life_counts": {
+        "Stable": 11
+      },
+      "f_counts": {
+        "0.75": 11
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 9,
+      "window": "2026.01.01->2026.01.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "413.35",
+      "pnl": 13.35,
+      "orders": 30,
+      "aos_closes_logged": 15,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 6037
+      },
+      "life_counts": {
+        "Stable": 15
+      },
+      "f_counts": {
+        "0.75": 15
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 10,
+      "window": "2026.02.01->2026.02.28",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "379.95",
+      "pnl": -20.05,
+      "orders": 32,
+      "aos_closes_logged": 15,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 5749
+      },
+      "life_counts": {
+        "Stable": 15
+      },
+      "f_counts": {
+        "0.75": 15
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 11,
+      "window": "2026.02.01->2026.02.28",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "379.95",
+      "pnl": -20.05,
+      "orders": 32,
+      "aos_closes_logged": 15,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 5749
+      },
+      "life_counts": {
+        "Stable": 15
+      },
+      "f_counts": {
+        "0.75": 15
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 12,
+      "window": "2026.01.01->2026.10.08",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "431.04",
+      "pnl": 31.04,
+      "orders": 254,
+      "aos_closes_logged": 126,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 57358
+      },
+      "life_counts": {
+        "Stable": 126
+      },
+      "f_counts": {
+        "0.75": 126
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 13,
+      "window": "2026.06.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "434.46",
+      "pnl": 34.46,
+      "orders": 94,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 26534
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": true,
+      "model_from_banner": "L2skip_inf_p92_20260927_223519",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 14,
+      "window": "2026.06.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "50",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "421.06",
+      "pnl": 21.06,
+      "orders": 94,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 26535
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=50 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 15,
+      "window": "2026.01.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "50",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "385.50",
+      "pnl": -14.5,
+      "orders": 100,
+      "aos_closes_logged": 50,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 1,
+      "halt_value_counts": {
+        "0": 56997,
+        "1": 1
+      },
+      "life_counts": {
+        "Stable": 49,
+        "Below": 1
+      },
+      "f_counts": {
+        "0.75": 49,
+        "0.00": 1
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=50 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 1,
+      "w250_sample_tail": [
+        [
+          "-8.40",
+          "-0.120"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 16,
+      "window": "2025.10.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "50",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "397.52",
+      "pnl": -2.48,
+      "orders": 100,
+      "aos_closes_logged": 50,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 1,
+      "halt_value_counts": {
+        "0": 75582,
+        "1": 1
+      },
+      "life_counts": {
+        "Stable": 49,
+        "Below": 1
+      },
+      "f_counts": {
+        "0.75": 49,
+        "0.00": 1
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=50 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 1,
+      "w250_sample_tail": [
+        [
+          "-4.40",
+          "-0.040"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 17,
+      "window": "2025.10.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "435.34",
+      "pnl": 35.34,
+      "orders": 256,
+      "aos_closes_logged": 128,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 75661
+      },
+      "life_counts": {
+        "Stable": 128
+      },
+      "f_counts": {
+        "0.75": 128
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 18,
+      "window": "2026.01.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "429.32",
+      "pnl": 29.32,
+      "orders": 252,
+      "aos_closes_logged": 126,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 57074
+      },
+      "life_counts": {
+        "Stable": 126
+      },
+      "f_counts": {
+        "0.75": 126
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 19,
+      "window": "2026.02.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "415.97",
+      "pnl": 15.97,
+      "orders": 222,
+      "aos_closes_logged": 111,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 51037
+      },
+      "life_counts": {
+        "Stable": 111
+      },
+      "f_counts": {
+        "0.75": 111
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 20,
+      "window": "2026.03.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "431.71",
+      "pnl": 31.71,
+      "orders": 188,
+      "aos_closes_logged": 94,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 45286
+      },
+      "life_counts": {
+        "Stable": 94
+      },
+      "f_counts": {
+        "0.75": 94
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 21,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "463.15",
+      "pnl": 63.15,
+      "orders": 96,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24803
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 22,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "463.15",
+      "pnl": 63.15,
+      "orders": 96,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24803
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 23,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "570.79",
+      "pnl": 170.79,
+      "orders": 94,
+      "aos_closes_logged": 46,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24800
+      },
+      "life_counts": {
+        "Stable": 46
+      },
+      "f_counts": {
+        "0.75": 46
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 24,
+      "window": "2026.01.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "496.78",
+      "pnl": 96.78,
+      "orders": 250,
+      "aos_closes_logged": 125,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 57062
+      },
+      "life_counts": {
+        "Stable": 125
+      },
+      "f_counts": {
+        "0.75": 125
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 25,
+      "window": "2026.01.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "429.32",
+      "pnl": 29.32,
+      "orders": 252,
+      "aos_closes_logged": 126,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 57074
+      },
+      "life_counts": {
+        "Stable": 126
+      },
+      "f_counts": {
+        "0.75": 126
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 26,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "463.15",
+      "pnl": 63.15,
+      "orders": 96,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24803
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 27,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "463.15",
+      "pnl": 63.15,
+      "orders": 96,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24803
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 28,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "463.15",
+      "pnl": 63.15,
+      "orders": 96,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24803
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 29,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "463.15",
+      "pnl": 63.15,
+      "orders": 96,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24803
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 30,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "463.15",
+      "pnl": 63.15,
+      "orders": 96,
+      "aos_closes_logged": 47,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24803
+      },
+      "life_counts": {
+        "Stable": 47
+      },
+      "f_counts": {
+        "0.75": 47
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 31,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "674.32",
+      "pnl": 274.32,
+      "orders": 94,
+      "aos_closes_logged": 46,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24794
+      },
+      "life_counts": {
+        "Stable": 46
+      },
+      "f_counts": {
+        "0.75": 46
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 32,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "582.91",
+      "pnl": 182.91,
+      "orders": 92,
+      "aos_closes_logged": 45,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24799
+      },
+      "life_counts": {
+        "Stable": 45
+      },
+      "f_counts": {
+        "0.75": 45
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 33,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "674.32",
+      "pnl": 274.32,
+      "orders": 94,
+      "aos_closes_logged": 46,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24794
+      },
+      "life_counts": {
+        "Stable": 46
+      },
+      "f_counts": {
+        "0.75": 46
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 34,
+      "window": "2026.01.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "334.69",
+      "pnl": -65.31,
+      "orders": 50,
+      "aos_closes_logged": 25,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 45575,
+      "halt_value_counts": {
+        "0": 11392,
+        "1": 45575
+      },
+      "life_counts": {
+        "Stable": 25
+      },
+      "f_counts": {
+        "0.75": 20,
+        "0.50": 4,
+        "0.00": 1
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 35,
+      "window": "2026.01.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "426.58",
+      "pnl": 26.58,
+      "orders": 252,
+      "aos_closes_logged": 126,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 57072
+      },
+      "life_counts": {
+        "Stable": 126
+      },
+      "f_counts": {
+        "0.75": 126
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 36,
+      "window": "2026.01.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "483.77",
+      "pnl": 83.77,
+      "orders": 246,
+      "aos_closes_logged": 123,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 57065
+      },
+      "life_counts": {
+        "Stable": 123
+      },
+      "f_counts": {
+        "0.75": 123
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 37,
+      "window": "2026.03.01->2026.10.07",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "587.10",
+      "pnl": 187.1,
+      "orders": 172,
+      "aos_closes_logged": 86,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 45262
+      },
+      "life_counts": {
+        "Stable": 86
+      },
+      "f_counts": {
+        "0.75": 84,
+        "0.50": 2
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 38,
+      "window": "2026.01.01->2026.04.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "387.76",
+      "pnl": -12.24,
+      "orders": 122,
+      "aos_closes_logged": 60,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24190
+      },
+      "life_counts": {
+        "Stable": 60
+      },
+      "f_counts": {
+        "0.75": 60
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 39,
+      "window": "2026.01.01->2026.04.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "381.71",
+      "pnl": -18.29,
+      "orders": 126,
+      "aos_closes_logged": 62,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24193
+      },
+      "life_counts": {
+        "Stable": 62
+      },
+      "f_counts": {
+        "0.75": 62
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 40,
+      "window": "2026.01.01->2026.04.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "387.76",
+      "pnl": -12.24,
+      "orders": 122,
+      "aos_closes_logged": 60,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24190
+      },
+      "life_counts": {
+        "Stable": 60
+      },
+      "f_counts": {
+        "0.75": 60
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 41,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "582.91",
+      "pnl": 182.91,
+      "orders": 92,
+      "aos_closes_logged": 45,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24799
+      },
+      "life_counts": {
+        "Stable": 45
+      },
+      "f_counts": {
+        "0.75": 45
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 42,
+      "window": "2025.01.01->2025.04.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "386.10",
+      "pnl": -13.9,
+      "orders": 68,
+      "aos_closes_logged": 34,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24165
+      },
+      "life_counts": {
+        "Stable": 34
+      },
+      "f_counts": {
+        "0.75": 34
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 43,
+      "window": "2025.05.01->2025.08.01",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "447.66",
+      "pnl": 47.66,
+      "orders": 82,
+      "aos_closes_logged": 40,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 18830
+      },
+      "life_counts": {
+        "Stable": 40
+      },
+      "f_counts": {
+        "0.75": 40
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 44,
+      "window": "2025.08.01->2025.08.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "358.23",
+      "pnl": -41.77,
+      "orders": 28,
+      "aos_closes_logged": 13,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 6033
+      },
+      "life_counts": {
+        "Stable": 13
+      },
+      "f_counts": {
+        "0.75": 13
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 45,
+      "window": "2025.01.01->2025.04.30",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "386.10",
+      "pnl": -13.9,
+      "orders": 68,
+      "aos_closes_logged": 34,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24165
+      },
+      "life_counts": {
+        "Stable": 34
+      },
+      "f_counts": {
+        "0.75": 34
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261008.log",
+      "run_i": 46,
+      "window": "2025.09.01->2025.12.31",
+      "magic": "8230921",
+      "AOS": "true",
+      "AiOsMode": "2",
+      "W": "250",
+      "pin_input": "L2skip_aud_p90_20261008_122523",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "421.78",
+      "pnl": 21.78,
+      "orders": 6,
+      "aos_closes_logged": 2,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24653
+      },
+      "life_counts": {
+        "Stable": 2
+      },
+      "f_counts": {
+        "0.75": 2
+      },
+      "semver_mismatch_warn": false,
+      "model_from_banner": "L2skip_aud_p90_20261008_122523",
+      "aos_banner": "AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_aud_p90_20261008_122523 sym=AUDUSD\r",
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": [
+        [
+          "0.00",
+          "0.000"
+        ],
+        [
+          "0.00",
+          "0.000"
+        ]
+      ]
+    },
+    {
+      "log": "20261007.log",
+      "run_i": 21,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230501",
+      "AOS": "false",
+      "AiOsMode": "0",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "13",
+      "TradeMon": "false",
+      "final": "457.10",
+      "pnl": 57.1,
+      "orders": 96,
+      "aos_closes_logged": 0,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24756
+      },
+      "life_counts": {},
+      "f_counts": {},
+      "semver_mismatch_warn": false,
+      "model_from_banner": null,
+      "aos_banner": null,
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": []
+    },
+    {
+      "log": "20261007.log",
+      "run_i": 22,
+      "window": "2026.05.01->2026.08.31",
+      "magic": "8230501",
+      "AOS": "false",
+      "AiOsMode": "0",
+      "W": "250",
+      "pin_input": "L2skip_inf_p92_20260927_223519",
+      "StartHour": "12",
+      "TradeMon": "true",
+      "final": "444.39",
+      "pnl": 44.39,
+      "orders": 118,
+      "aos_closes_logged": 0,
+      "L2_skip_hits": 0,
+      "halt_signal_hits": 0,
+      "halt_value_counts": {
+        "0": 24756
+      },
+      "life_counts": {},
+      "f_counts": {},
+      "semver_mismatch_warn": false,
+      "model_from_banner": null,
+      "aos_banner": null,
+      "w250_nonzero_samples": 0,
+      "w250_sample_tail": []
+    }
+  ]
+}

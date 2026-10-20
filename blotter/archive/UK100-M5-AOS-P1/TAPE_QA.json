@@ -1,0 +1,128 @@
+{
+  "task": "UK100-M5-AOS-P1",
+  "log": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\Tester\\logs\\20261020.log",
+  "tip": {
+    "window": "tip",
+    "n": 116,
+    "WR": 0.5259,
+    "cell_dow_mon": {
+      "n": 32,
+      "WR": 0.4375
+    },
+    "cell_hour_12_13": {
+      "n": 47,
+      "WR": 0.4043
+    },
+    "cell_month_aug": {
+      "n": 38,
+      "WR": 0.4211
+    },
+    "protect_wed": {
+      "n": 26,
+      "WR": 0.6538
+    },
+    "protect_h08_11": {
+      "n": 51,
+      "WR": 0.6667
+    },
+    "protect_buy": {
+      "n": 62,
+      "WR": 0.5484
+    },
+    "tue_n": 0,
+    "ouroboros_nonempty": 116,
+    "atr_missing": 0
+  },
+  "prior": {
+    "window": "prior",
+    "n": 119,
+    "WR": 0.4538,
+    "cell_dow_mon": {
+      "n": 30,
+      "WR": 0.4333
+    },
+    "cell_hour_12_13": {
+      "n": 27,
+      "WR": 0.4815
+    },
+    "cell_month_aug": {
+      "n": 0,
+      "WR": null
+    },
+    "protect_wed": {
+      "n": 34,
+      "WR": 0.4706
+    },
+    "protect_h08_11": {
+      "n": 64,
+      "WR": 0.4062
+    },
+    "protect_buy": {
+      "n": 52,
+      "WR": 0.4231
+    },
+    "tue_n": 0,
+    "ouroboros_nonempty": 0,
+    "atr_missing": 0
+  },
+  "long": {
+    "window": "long",
+    "n": 235,
+    "WR": 0.4894,
+    "cell_dow_mon": {
+      "n": 62,
+      "WR": 0.4355
+    },
+    "cell_hour_12_13": {
+      "n": 74,
+      "WR": 0.4324
+    },
+    "cell_month_aug": {
+      "n": 38,
+      "WR": 0.4211
+    },
+    "protect_wed": {
+      "n": 60,
+      "WR": 0.55
+    },
+    "protect_h08_11": {
+      "n": 115,
+      "WR": 0.5217
+    },
+    "protect_buy": {
+      "n": 114,
+      "WR": 0.4912
+    },
+    "tue_n": 0,
+    "ouroboros_nonempty": 116,
+    "atr_missing": 0
+  },
+  "cost_proxy": {
+    "task": "UK100-M5-AOS-P1",
+    "window": "2026.05.01-2026.08.31",
+    "magic": 26101905,
+    "tf": "M5",
+    "n": 116,
+    "WR": 0.525862,
+    "BM_pp": 8.1418,
+    "E_N": 0.18319,
+    "spread_pts_entry": {
+      "median": 120.0,
+      "mean": 121.379,
+      "min": 120,
+      "max": 140
+    },
+    "atr_pts_present": 116,
+    "near_atr_cap_n": 35,
+    "SL_pts": 1800.0,
+    "ATR_max": 869.0,
+    "R_design": 1.25,
+    "c_R_proxy_2x_med": 0.133333,
+    "Leak_proxy_pp": 5.9259,
+    "EF_proxy_pp": 2.2158,
+    "Leak_prior_pp": 4.0,
+    "EF_prior_pp": 4.1418,
+    "Leak_source": "journal_2x_entry_spread_median",
+    "note": "Not full deal blotter (no exit spread/commission/swap). Replace with measured deals when exported."
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "P0_tip": {
+    "n": 94,
+    "final": 538.34,
+    "max_dd": 3.365,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-9.97"
+    ],
+    "trip_times": [
+      "2026-09-02 09:36:27"
+    ],
+    "life_counts": {
+      "BELOW": 21,
+      "COMPRESSING": 1,
+      "EXPANDING": 30,
+      "NEAR": 7,
+      "STABLE": 21
+    },
+    "bus_counts": {
+      "DERISK": 7,
+      "INVESTIGATE": 1,
+      "L3_HALT": 27,
+      "NONE": 59
+    },
+    "max_loss_streak": 6,
+    "freq_stall_ticks": 8,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.4,
+    "last_en20": 0.2,
+    "last_en50": 0.08,
+    "last_life": "EXPANDING",
+    "halt_latched": true
+  },
+  "v1c_kept": {
+    "n": 69,
+    "final": 555.01,
+    "max_dd": 1.325,
+    "trips": 0,
+    "trip_reasons": [],
+    "trip_times": [],
+    "life_counts": {
+      "COMPRESSING": 3,
+      "EXPANDING": 32,
+      "NEAR": 7,
+      "STABLE": 13
+    },
+    "bus_counts": {
+      "DERISK": 7,
+      "INVESTIGATE": 3,
+      "NONE": 59
+    },
+    "max_loss_streak": 4,
+    "freq_stall_ticks": 15,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.4,
+    "last_en20": 0.2,
+    "last_en50": 0.5,
+    "last_life": "EXPANDING",
+    "halt_latched": false
+  },
+  "BUY_MATCH_kept": {
+    "n": 78,
+    "final": 550.01,
+    "max_dd": 1.645,
+    "trips": 0,
+    "trip_reasons": [],
+    "trip_times": [],
+    "life_counts": {
+      "COMPRESSING": 1,
+      "EXPANDING": 29,
+      "NEAR": 12,
+      "STABLE": 22
+    },
+    "bus_counts": {
+      "DERISK": 12,
+      "INVESTIGATE": 1,
+      "NONE": 65
+    },
+    "max_loss_streak": 5,
+    "freq_stall_ticks": 15,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.4,
+    "last_en20": 0.2,
+    "last_en50": 0.5,
+    "last_life": "STABLE",
+    "halt_latched": false
+  },
+  "MATCH_all_kept": {
+    "n": 60,
+    "final": 550.01,
+    "max_dd": 1.645,
+    "trips": 0,
+    "trip_reasons": [],
+    "trip_times": [],
+    "life_counts": {
+      "COMPRESSING": 2,
+      "EXPANDING": 25,
+      "NEAR": 4,
+      "STABLE": 15
+    },
+    "bus_counts": {
+      "DERISK": 4,
+      "FREQUENCY_STALL_WARN": 8,
+      "INVESTIGATE": 2,
+      "NONE": 46
+    },
+    "max_loss_streak": 5,
+    "freq_stall_ticks": 16,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.6,
+    "last_en20": 0.65,
+    "last_en50": 0.56,
+    "last_life": "COMPRESSING",
+    "halt_latched": false
+  },
+  "P0_ytd": {
+    "n": 130,
+    "final": 533.34,
+    "max_dd": 3.595,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-16.63"
+    ],
+    "trip_times": [
+      "2026-03-18 12:50:38"
+    ],
+    "life_counts": {
+      "BELOW": 50,
+      "COMPRESSING": 1,
+      "EXPANDING": 30,
+      "NEAR": 11,
+      "STABLE": 24
+    },
+    "bus_counts": {
+      "DERISK": 6,
+      "L3_HALT": 110,
+      "NONE": 12,
+      "STREAK_WATCH": 2
+    },
+    "max_loss_streak": 6,
+    "freq_stall_ticks": 11,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.4,
+    "last_en20": 0.2,
+    "last_en50": 0.08,
+    "last_life": "EXPANDING",
+    "halt_latched": true
+  },
+  "v1c_ytd_kept": {
+    "n": 102,
+    "final": 550.01,
+    "max_dd": 2.961,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-16.63"
+    ],
+    "trip_times": [
+      "2026-03-18 12:50:38"
+    ],
+    "life_counts": {
+      "BELOW": 16,
+      "COMPRESSING": 3,
+      "EXPANDING": 32,
+      "NEAR": 16,
+      "STABLE": 21
+    },
+    "bus_counts": {
+      "DERISK": 5,
+      "L3_HALT": 83,
+      "NONE": 12,
+      "STREAK_WATCH": 2
+    },
+    "max_loss_streak": 6,
+    "freq_stall_ticks": 19,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.4,
+    "last_en20": 0.2,
+    "last_en50": 0.5,
+    "last_life": "EXPANDING",
+    "halt_latched": true
+  }
+}

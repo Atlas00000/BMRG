@@ -1,0 +1,28 @@
+{
+  "task": "USDJPY-AOS-P1",
+  "window": "2026.05.01-2026.08.31",
+  "magic": 26101828,
+  "symbol": "USDJPY",
+  "n": 46,
+  "baseline_tip_n": 56,
+  "WR": 0.5,
+  "BM_pp": 4.5455,
+  "E_N": 0.1,
+  "spread_pts_entry": {
+    "median": 4.0,
+    "mean": 4.565,
+    "min": 4,
+    "max": 6
+  },
+  "SL_pts": 100.0,
+  "R_design": 1.2,
+  "c_R_proxy_2x_med": 0.08,
+  "Leak_proxy_pp": 3.6364,
+  "EF_proxy_pp": 0.9091,
+  "Leak_prior_pp": 11.4,
+  "EF_prior_pp": -6.8545,
+  "Leak_source": "journal_2x_entry_spread_median",
+  "note": "Not full deal blotter. Journal 2\u00d7spread proxy is diagnostic only. Prior 11.4 pp remains Stage-1 authority until deal export. Tip filtered from long re-smoke may differ from dedicated May\u2192Aug n=56 (path dependency) \u2014 report n and use for L1/P2 CF with note.",
+  "zone": "costs_fragile_until_measured",
+  "source_tester_window": "2025.01.01-2026.10.18"
+}

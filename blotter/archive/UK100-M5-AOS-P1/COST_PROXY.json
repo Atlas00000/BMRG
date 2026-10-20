@@ -1,0 +1,28 @@
+{
+  "task": "UK100-M5-AOS-P1",
+  "window": "2026.05.01-2026.08.31",
+  "magic": 26101905,
+  "tf": "M5",
+  "n": 116,
+  "WR": 0.525862,
+  "BM_pp": 8.1418,
+  "E_N": 0.18319,
+  "spread_pts_entry": {
+    "median": 120.0,
+    "mean": 121.379,
+    "min": 120,
+    "max": 140
+  },
+  "atr_pts_present": 116,
+  "near_atr_cap_n": 35,
+  "SL_pts": 1800.0,
+  "ATR_max": 869.0,
+  "R_design": 1.25,
+  "c_R_proxy_2x_med": 0.133333,
+  "Leak_proxy_pp": 5.9259,
+  "EF_proxy_pp": 2.2158,
+  "Leak_prior_pp": 4.0,
+  "EF_prior_pp": 4.1418,
+  "Leak_source": "journal_2x_entry_spread_median",
+  "note": "Not full deal blotter (no exit spread/commission/swap). Replace with measured deals when exported."
+}

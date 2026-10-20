@@ -1,0 +1,202 @@
+{
+  "semver": "L2skip_uk_p_prior_20261012_225955",
+  "algo": "LogisticRegression balanced C=0.5 + StandardScaler",
+  "feats": [
+    "side_buy",
+    "is_thu",
+    "is_h08",
+    "is_jul",
+    "is_feb",
+    "near_atr_cap",
+    "hour",
+    "atr_z",
+    "is_wed",
+    "is_mon",
+    "is_fri"
+  ],
+  "train_n": 75,
+  "test_n": 51,
+  "auc_tip_oos": 0.38769230769230767,
+  "thr_selected_on_tip": 0.7750000000000004,
+  "thr_selection_note": "Thr swept on tip for shadow CF only; weights fit on prior. Not LIVE_WITHHOLD.",
+  "best_row": {
+    "thr": 0.775,
+    "verdict": "DISARM",
+    "skips_n": 1,
+    "precision_vs_losers": 0.0,
+    "fire_retention_pct": 98.0,
+    "delta_E_N": -0.0229,
+    "delta_EF_pp": -1.019,
+    "false_skip_wed_winners": 1,
+    "kept_E_N": 0.08
+  },
+  "sweep": [
+    {
+      "thr": 0.45,
+      "verdict": "REJECT_FREQUENCY_STALL",
+      "skips_n": 26,
+      "precision_vs_losers": 0.4231,
+      "fire_retention_pct": 49.0,
+      "delta_E_N": -0.2029,
+      "delta_EF_pp": -9.019,
+      "false_skip_wed_winners": 8,
+      "kept_E_N": -0.1
+    },
+    {
+      "thr": 0.475,
+      "verdict": "DISARM",
+      "skips_n": 25,
+      "precision_vs_losers": 0.4,
+      "fire_retention_pct": 51.0,
+      "delta_E_N": -0.2375,
+      "delta_EF_pp": -10.558,
+      "false_skip_wed_winners": 8,
+      "kept_E_N": -0.1346
+    },
+    {
+      "thr": 0.5,
+      "verdict": "DISARM",
+      "skips_n": 22,
+      "precision_vs_losers": 0.3636,
+      "fire_retention_pct": 56.9,
+      "delta_E_N": -0.2495,
+      "delta_EF_pp": -11.088,
+      "false_skip_wed_winners": 8,
+      "kept_E_N": -0.1466
+    },
+    {
+      "thr": 0.525,
+      "verdict": "DISARM",
+      "skips_n": 20,
+      "precision_vs_losers": 0.35,
+      "fire_retention_pct": 60.8,
+      "delta_E_N": -0.2319,
+      "delta_EF_pp": -10.309,
+      "false_skip_wed_winners": 7,
+      "kept_E_N": -0.129
+    },
+    {
+      "thr": 0.55,
+      "verdict": "DISARM",
+      "skips_n": 19,
+      "precision_vs_losers": 0.3684,
+      "fire_retention_pct": 62.7,
+      "delta_E_N": -0.1888,
+      "delta_EF_pp": -8.394,
+      "false_skip_wed_winners": 7,
+      "kept_E_N": -0.0859
+    },
+    {
+      "thr": 0.575,
+      "verdict": "DISARM",
+      "skips_n": 16,
+      "precision_vs_losers": 0.4375,
+      "fire_retention_pct": 68.6,
+      "delta_E_N": -0.0743,
+      "delta_EF_pp": -3.305,
+      "false_skip_wed_winners": 5,
+      "kept_E_N": 0.0286
+    },
+    {
+      "thr": 0.6,
+      "verdict": "DISARM",
+      "skips_n": 11,
+      "precision_vs_losers": 0.3636,
+      "fire_retention_pct": 78.4,
+      "delta_E_N": -0.0904,
+      "delta_EF_pp": -4.019,
+      "false_skip_wed_winners": 5,
+      "kept_E_N": 0.0125
+    },
+    {
+      "thr": 0.625,
+      "verdict": "DISARM",
+      "skips_n": 8,
+      "precision_vs_losers": 0.375,
+      "fire_retention_pct": 84.3,
+      "delta_E_N": -0.0564,
+      "delta_EF_pp": -2.508,
+      "false_skip_wed_winners": 4,
+      "kept_E_N": 0.0465
+    },
+    {
+      "thr": 0.65,
+      "verdict": "DISARM",
+      "skips_n": 8,
+      "precision_vs_losers": 0.375,
+      "fire_retention_pct": 84.3,
+      "delta_E_N": -0.0564,
+      "delta_EF_pp": -2.508,
+      "false_skip_wed_winners": 4,
+      "kept_E_N": 0.0465
+    },
+    {
+      "thr": 0.675,
+      "verdict": "DISARM",
+      "skips_n": 8,
+      "precision_vs_losers": 0.375,
+      "fire_retention_pct": 84.3,
+      "delta_E_N": -0.0564,
+      "delta_EF_pp": -2.508,
+      "false_skip_wed_winners": 4,
+      "kept_E_N": 0.0465
+    },
+    {
+      "thr": 0.7,
+      "verdict": "DISARM",
+      "skips_n": 7,
+      "precision_vs_losers": 0.2857,
+      "fire_retention_pct": 86.3,
+      "delta_E_N": -0.0802,
+      "delta_EF_pp": -3.565,
+      "false_skip_wed_winners": 4,
+      "kept_E_N": 0.0227
+    },
+    {
+      "thr": 0.725,
+      "verdict": "DISARM",
+      "skips_n": 7,
+      "precision_vs_losers": 0.2857,
+      "fire_retention_pct": 86.3,
+      "delta_E_N": -0.0802,
+      "delta_EF_pp": -3.565,
+      "false_skip_wed_winners": 4,
+      "kept_E_N": 0.0227
+    },
+    {
+      "thr": 0.75,
+      "verdict": "DISARM",
+      "skips_n": 6,
+      "precision_vs_losers": 0.1667,
+      "fire_retention_pct": 88.2,
+      "delta_E_N": -0.1029,
+      "delta_EF_pp": -4.575,
+      "false_skip_wed_winners": 4,
+      "kept_E_N": 0.0
+    },
+    {
+      "thr": 0.775,
+      "verdict": "DISARM",
+      "skips_n": 1,
+      "precision_vs_losers": 0.0,
+      "fire_retention_pct": 98.0,
+      "delta_E_N": -0.0229,
+      "delta_EF_pp": -1.019,
+      "false_skip_wed_winners": 1,
+      "kept_E_N": 0.08
+    },
+    {
+      "thr": 0.8,
+      "verdict": "DISARM",
+      "skips_n": 1,
+      "precision_vs_losers": 0.0,
+      "fire_retention_pct": 98.0,
+      "delta_E_N": -0.0229,
+      "delta_EF_pp": -1.019,
+      "false_skip_wed_winners": 1,
+      "kept_E_N": 0.08
+    }
+  ],
+  "leak_proxy_pp": 4.266699999999999,
+  "generated_utc": "2026-10-12T22:59:55.222055+00:00"
+}

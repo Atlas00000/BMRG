@@ -1,0 +1,36 @@
+{
+  "task": "EDX-P05-T01",
+  "verdict": "PASS",
+  "magic": "8230151",
+  "window": "2026.05.01->2026.08.31",
+  "preset_sl_tp": "300/300",
+  "MaxLevels": "1",
+  "MaxEntries": "1",
+  "n_events": 58,
+  "opens_tag": 59,
+  "TP": 36,
+  "SL": 22,
+  "final": 444.39,
+  "max_concurrent": 1,
+  "sl_pts_unique": [
+    300
+  ],
+  "tp_pts_unique": [
+    300
+  ],
+  "med_sl_pts": 300.0,
+  "med_tp_pts": 300.0,
+  "lots": [
+    0.01
+  ],
+  "checks": {
+    "g0_single": true,
+    "magic_ok": true,
+    "geom_300_300": true,
+    "one_ticket_at_a_time": true,
+    "sl_pts_in_280_320": true,
+    "tp_pts_in_280_320": true,
+    "ticket_WR_inflation": false
+  },
+  "note": "1R from hard SL distance; fill/quote can shift measured pts off exact 300"
+}

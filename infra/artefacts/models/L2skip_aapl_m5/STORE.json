@@ -1,0 +1,13 @@
+{
+  "store": "L2skip_aapl_m5",
+  "schema_version": "1.0.0",
+  "asset": "AAPL",
+  "tf": "M5",
+  "policy": "doc/assets/AAPL/aos_l5_retrain_M5.md",
+  "overlay_champ": "L2det_aapl_m5_v1b",
+  "train_entrypoint": "infra/src/train/train_l2_aapl_m5.py",
+  "rollback_entrypoint": "infra/artefacts/models/L2skip_aapl_m5/rollback_l2skip_aapl_m5.py",
+  "mqh_auto_export": false,
+  "live_withhold_allowed": false,
+  "note": "Separate from M15 L2det_aapl Thu/18 \u2014 do not merge pins"
+}

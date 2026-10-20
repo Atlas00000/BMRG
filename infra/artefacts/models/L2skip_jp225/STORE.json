@@ -1,0 +1,14 @@
+{
+  "store": "L2skip_jp225",
+  "schema_version": "1.0.0",
+  "asset": "JP225",
+  "symbol_mt5": "JPN225",
+  "tf": "M15",
+  "policy": "doc/assets/JP225/aos_l5_retrain.md",
+  "overlay_champ": "L2det_jp225_v1_May_OR_Jul",
+  "overlay_mqh": false,
+  "train_entrypoint": "infra/src/train/train_l2_jp225.py",
+  "rollback_entrypoint": "infra/artefacts/models/L2skip_jp225/rollback_l2skip_jp225.py",
+  "mqh_auto_export": false,
+  "live_withhold_allowed": false
+}

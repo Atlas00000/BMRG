@@ -1,0 +1,101 @@
+; BMRG-M15-GBPJPY-6M-P1p5_light_chart.set
+; Status: RESEARCH CHART PRESET / UNTESTED — light WR lift after P1 starvation
+; EA: BMRG · Bollinger Mean-Reversion Grid · G0 (MaxLevels=1)
+; Symbol: GBPJPY | Chart TF: M15 | Window: 2026.05.01 → 2026.09.11 ONLY
+; Framework: unified_edge_framework.md (E_N, BWR, BM, Leak, EF)
+; HARD RULE: never TP < SL → TP 200 > SL 160 · RR=1.25 FROZEN
+;
+; LADDER:
+;   P0 26101825: n=46 WR 41.3% < BWR · hit-rate fail (May→Oct)
+;   P1 26101826: Fade ON + MaxSpread 25 → n=4 STARVED · WR 25%
+;   P1.5 26101827: light selectivity only — restore fire-count, nudge WR
+;
+; vs P0: BBDev 2.2→2.3 | Cooldown 2→3 | MaxSpread 35→32
+; vs P1: FadeConfirm OFF | MaxSpread 25→32 (P0 mean spr≈29; 25 was too tight)
+; UNCHANGED: SL/TP 160/200 · ATR max 126 · session 12–20 · skip Tue · AOS OFF
+;
+; Probe prior (design window, light BB2.3 CD3, cost RT≈58):
+;   n≈35 · WR≈60% > BWR 44.4% · E_N≈+0.35R · Leak≈16pp · EF≈0 (thin)
+; Magic 26101827 · Tester dates MUST be 2026.05.01 → 2026.09.11
+; Accept: n≥25 · WR > BWR · prefer EF>0 after measured Leak
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.3||2.3||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0 — clean events) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Fade confirm — OFF (P1 stacked gates starved tip) ===
+InpUseFadeConfirm=false||false||0||true||N
+InpFadeConfirmMaxBars=3||3||1||20||N
+InpFadeRequireInsideMid=true||false||0||true||N
+;=== Lot / risk % ===
+InpLotMode=1||0||0||1||N
+InpLot=0.01||0.01||0.001000||0.100000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=0.50||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||0.100000||N
+;=== Stops & friction — FROZEN TP > SL (RR=1.25) ===
+InpSL_Points=160||160||1||3000||N
+InpTP_Points=200||200||1||4500||N
+InpMaxSpread=32||32||1||350||N
+InpSlippage=15||15||1||200||N
+InpCooldownBars=3||3||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=16||12||1||50||N
+;=== Time filter (server) ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=12||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=20||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates — ATR max p75 ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||500.000000||N
+InpATRMaxPoints=126.0||126.0||0.000000||500.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26101827||26101827||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS — OFF ===
+InpAOS_Enable=false||false||0||true||N
+InpAOS_L3_Enable=false||false||0||true||N
+InpAOS_L4_SizeMod=false||false||0||true||N
+InpAiOsMode=0||0||0||2||N
+InpAiModelSemver=L2skip_inf_p92_20260927_223519
+InpAiKillSwitch=true||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=true||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=44.4||50.0||1.000000||90.000000||N
+InpAOS_Leak=16.1||2.2||0.100000||20.000000||N
+InpAOS_R=1.25||1.0||0.100000||5.000000||N
+InpAOS_W250=250||250||1||500||N
+InpAOS_Ledger=false||false||0||true||N

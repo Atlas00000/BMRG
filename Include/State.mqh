@@ -27,6 +27,11 @@ struct BMRGState
    datetime        lastEntryBarTime;
    ulong           lastDealTicket;
    string          lastAction;
+   // fade confirm (setup → reclaim)
+   ENUM_BMRG_SIDE  fadeSetupSide;
+   int             fadeSetupLevel;
+   int             fadeSetupAgeBars;   // closed bars since arm (0 = armed this bar)
+   datetime        fadeSetupBarTime;
    // failure containment
    int             consecOrderFails;
    int             consecLosses;
@@ -54,6 +59,19 @@ void StateInit()
    g_state.dayStamp = StateDayStamp(TimeCurrent());
    g_state.lastAction = "init";
    g_state.pauseReason = "";
+   g_state.fadeSetupSide = BMRG_SIDE_NONE;
+   g_state.fadeSetupLevel = -1;
+   g_state.fadeSetupAgeBars = 0;
+   g_state.fadeSetupBarTime = 0;
+  }
+
+//+------------------------------------------------------------------+
+void StateClearFadeSetup()
+  {
+   g_state.fadeSetupSide = BMRG_SIDE_NONE;
+   g_state.fadeSetupLevel = -1;
+   g_state.fadeSetupAgeBars = 0;
+   g_state.fadeSetupBarTime = 0;
   }
 
 //+------------------------------------------------------------------+

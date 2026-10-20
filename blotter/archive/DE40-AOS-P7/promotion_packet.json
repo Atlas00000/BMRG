@@ -1,0 +1,201 @@
+{
+  "aos_task": "DE40-AOS-P7",
+  "packet_id": "DE40_M15_AOS_RESEARCH_v1",
+  "preset_alias": "DE40stack",
+  "generated_utc": "2026-10-19T15:15:09.340148+00:00",
+  "framework_unified": "1.0",
+  "framework_de40": "0.1.0",
+  "canvas": "display_only",
+  "scope": {
+    "sleeve": "DE40/DE30 M15 expansion research OS",
+    "not": [
+      "AUDUSD / EURUSD / UK100 live book replace",
+      "PRODUCTION-WORTHY full G0\u2013G5 admit",
+      "L2 AI LIVE_WITHHOLD",
+      "geometry retune (SL/TP/BB)",
+      "H13 LIVE (HOLD only \u2014 Aug FP)"
+    ]
+  },
+  "identity": {
+    "engine_magic": 26101902,
+    "research_os_magic": 26141907,
+    "research_os_magic_p4_pre_hitl": 26141904,
+    "ea_version_min": "compile with AOS_L2det_de.mqh",
+    "preset_armed": "DE40stack.set",
+    "preset_armed_alias": "BMRG-M15-DE40-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "BMRG-M15-DE40-6M-P0_balanced_chart.set",
+    "symbol": "DE30",
+    "asset": "DE40",
+    "tf": "M15",
+    "tester_paths": [
+      "Presets/DE40stack.set",
+      "Presets/BMRG-M15-DE40-6M-P7_research_OS_ARMED.set",
+      "Profiles/Tester/BMRG/DE40/DE40stack.set",
+      "Profiles/Tester/BMRG/DE40/BMRG-M15-DE40-6M-P7_research_OS_ARMED.set"
+    ]
+  },
+  "armed_stack": {
+    "engine": "Balanced P0 G0 FIXED_RR RR1.25 BB2.2 session08\u201317 skipTue ATR4070",
+    "L2det": "L2det_de40_v1_BUY_near_atr LIVE_WITHHOLD (BUY\u2227nearATR@0.9\u00d74070)",
+    "L2AI": "DISARM (AUC\u22480.52 \u00b7 chrono FREQ_STALL)",
+    "L3": "ON DD25% / BELOW halt",
+    "L4": "ON size mod \u00b7 W50",
+    "L6": "ledger ON",
+    "L8": "advise-only cash-sleeve (not live abort)",
+    "L9": "Frank/H08/H13 HOLD_SHADOW \u2014 not LIVE in this packet",
+    "ATR_max": 4070,
+    "Leak_source": "prior_9.8pp_until_deals",
+    "Leak_pp": 9.8,
+    "lot": 0.1,
+    "risk_pct": 0.5
+  },
+  "baseline_ref": "DE40_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_MayOct": {
+      "n": 77,
+      "WR": 58.44,
+      "E_N": 0.3149,
+      "EF_prior_pp": 4.197
+    },
+    "offline_arm_tip": {
+      "n_fire": 62,
+      "n_skip": 15,
+      "WR": 62.9,
+      "E_N": 0.4153,
+      "EF_pp": 8.659,
+      "delta_E_N_vs_engine": 0.1004,
+      "fire_retention_pct": 80.5,
+      "L3_halt": 0
+    },
+    "note": "Tester EA ledger for magic 26141907 not yet run \u2014 offline P4 tip ARM stack is the CF basis for HITL. Run DE40stack.set in Strategy Tester next."
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+    "expansion_EF": "PASS tip OS EF>0 under prior Leak 9.8 pp",
+    "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR4070 declared (P6-T03)",
+    "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+    "G5_stress": "PARTIAL \u2014 L2 \u00b110% PASS_WITH_NOTES (P6); SL/TP not stressed",
+    "Leak_measured": "OPEN \u2014 prior 9.8 pp (deal-measured preferred before capital)",
+    "L2AI": "DISARM \u2014 tip AUC 0.519 \u00b7 chrono REJECT_FREQUENCY_STALL",
+    "verdict_ladder": "EXPANSION_OS_ARMED \u2014 not PRODUCTION-WORTHY \u00b7 not live FX/UK replace"
+  },
+  "p6_harden_summary": {
+    "L9": "no_LIVE \u2014 Frank/H08 HOLD \u00b7 spread DISARM",
+    "L2_stress": "PASS_WITH_NOTES",
+    "ATR_G3": "PASS",
+    "nearATR_keep": "0.9 / 4070"
+  },
+  "ledger_sample": {
+    "ledger_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\blotter\\archive\\DE40-AOS-P4\\ledger_det_arm_BUY_near_atr.csv",
+    "source": "offline_P4_tip_arm_shadow",
+    "n_rows": 77,
+    "decision_counts": {
+      "FIRE_OK": 62,
+      "WOULD_SKIP": 15
+    },
+    "l2det_reasons": {
+      "L2DET_SKIP_BUY_NEAR_ATR": 15
+    },
+    "head_skip": [
+      {
+        "t": "2026.05.07 13:45",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_BUY_NEAR_ATR|L8_ADVISE_ABORT_FAST_SL_NEAR_ATR",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.11 12:00",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_BUY_NEAR_ATR",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.14 13:30",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_BUY_NEAR_ATR",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.29 11:30",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_BUY_NEAR_ATR|L8_ADVISE_ABORT_FAST_SL_NEAR_ATR",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.06.03 13:45",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_BUY_NEAR_ATR|L8_ADVISE_ABORT_FAST_SL_NEAR_ATR",
+        "mode": "SHADOW"
+      }
+    ],
+    "head_fire": [
+      {
+        "t": "2026.05.11 08:45",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.11 15:30",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.25 14:30",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK|L8_ADVISE_ABORT_FLASH_SL",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.25 15:15",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.27 12:00",
+        "side": "BUY",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      }
+    ]
+  },
+  "rollback": {
+    "ai_pin": "python infra/artefacts/models/L2skip_de40/rollback_l2skip_de40.py rollback --to DISARM",
+    "ea_det_off": "InpAOS_DE_L2detEnable=false",
+    "ea_aos_off": "InpAOS_Enable=false \u2192 load P0 balanced chart set",
+    "kill_switch": "InpAiKillSwitch=true"
+  },
+  "hitl": {
+    "status": "SIGNED",
+    "signed_utc": "2026-10-19T15:15:09.340148+00:00",
+    "signed_local": "2026-10-19T16:10:00+01:00",
+    "signer": "operator (chat HITL confirmation \u2014 proceed with P7 + DE40stack)",
+    "decision": "ARM_RESEARCH_OS",
+    "acknowledged": [
+      "Not AUD/EUR/UK live book replace",
+      "Not production G0\u2013G5 admit",
+      "Leak still prior 9.8 pp (measured OPEN)",
+      "L2 AI remains DISARM",
+      "L9 Frankfurt/H08/H13 shadow only \u2014 not LIVE",
+      "Expansion sleeve only \u00b7 DE40stack name"
+    ]
+  },
+  "verdict": "ACCEPT_ARM_RESEARCH_OS"
+}

@@ -1,0 +1,151 @@
+{
+  "P0_tip": {
+    "n": 123,
+    "final": 707.42,
+    "max_dd": 10.651,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-11.44"
+    ],
+    "life_counts": {
+      "BELOW": 11,
+      "COMPRESSING": 3,
+      "EXPANDING": 30,
+      "NEAR": 36,
+      "STABLE": 29
+    },
+    "bus_counts": {
+      "DERISK": 5,
+      "L3_HALT": 103,
+      "NONE": 15
+    },
+    "max_loss_streak": 7,
+    "freq_stall_ticks": 10,
+    "cost_drift_ticks": 0,
+    "last_en15": -0.25,
+    "last_en20": -0.1,
+    "last_en50": 0.125,
+    "last_life": "BELOW",
+    "halt_latched": true
+  },
+  "v1b_kept": {
+    "n": 110,
+    "final": 758.25,
+    "max_dd": 10.337,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-4.78"
+    ],
+    "life_counts": {
+      "BELOW": 5,
+      "COMPRESSING": 4,
+      "EXPANDING": 30,
+      "NEAR": 28,
+      "STABLE": 29
+    },
+    "bus_counts": {
+      "DERISK": 11,
+      "L3_HALT": 75,
+      "NONE": 24
+    },
+    "max_loss_streak": 7,
+    "freq_stall_ticks": 10,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.05,
+    "last_en20": 0.125,
+    "last_en50": 0.305,
+    "last_life": "NEAR",
+    "halt_latched": true
+  },
+  "H14_16_aggressive_kept": {
+    "n": 110,
+    "final": 739.95,
+    "max_dd": 8.893,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-4.78"
+    ],
+    "life_counts": {
+      "BELOW": 2,
+      "COMPRESSING": 4,
+      "EXPANDING": 29,
+      "NEAR": 32,
+      "STABLE": 29
+    },
+    "bus_counts": {
+      "DERISK": 11,
+      "L3_HALT": 76,
+      "NONE": 23
+    },
+    "max_loss_streak": 6,
+    "freq_stall_ticks": 10,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.05,
+    "last_en20": 0.0125,
+    "last_en50": 0.215,
+    "last_life": "NEAR",
+    "halt_latched": true
+  },
+  "P0_ytd": {
+    "n": 208,
+    "final": 821.29,
+    "max_dd": 11.153,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-18.11"
+    ],
+    "life_counts": {
+      "BELOW": 30,
+      "COMPRESSING": 8,
+      "EXPANDING": 60,
+      "NEAR": 50,
+      "STABLE": 46
+    },
+    "bus_counts": {
+      "DERISK": 10,
+      "INVESTIGATE": 3,
+      "L3_HALT": 152,
+      "NONE": 42,
+      "STREAK_WATCH": 1
+    },
+    "max_loss_streak": 7,
+    "freq_stall_ticks": 20,
+    "cost_drift_ticks": 0,
+    "last_en15": -0.25,
+    "last_en20": 0.0125,
+    "last_en50": 0.125,
+    "last_life": "NEAR",
+    "halt_latched": true
+  },
+  "v1b_ytd_kept": {
+    "n": 187,
+    "final": 827.39,
+    "max_dd": 10.168,
+    "trips": 1,
+    "trip_reasons": [
+      "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-4.78"
+    ],
+    "life_counts": {
+      "BELOW": 27,
+      "COMPRESSING": 9,
+      "EXPANDING": 56,
+      "NEAR": 44,
+      "STABLE": 37
+    },
+    "bus_counts": {
+      "DERISK": 11,
+      "INVESTIGATE": 4,
+      "L3_HALT": 140,
+      "NONE": 31,
+      "STREAK_WATCH": 1
+    },
+    "max_loss_streak": 7,
+    "freq_stall_ticks": 20,
+    "cost_drift_ticks": 0,
+    "last_en15": 0.05,
+    "last_en20": 0.125,
+    "last_en50": 0.305,
+    "last_life": "NEAR",
+    "halt_latched": true
+  }
+}

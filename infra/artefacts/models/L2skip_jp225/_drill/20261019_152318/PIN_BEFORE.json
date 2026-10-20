@@ -1,0 +1,11 @@
+{
+  "semver": "L2skip_jp225_p_pretip_20261019_152317",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "overlay_champ": "L2det_jp225_v1_May_OR_Jul",
+  "ai_champ": null,
+  "updated_utc": "2026-10-19T15:23:17.880601+00:00",
+  "auc_tip_oos": 0.4934640522875817,
+  "best_verdict": "SHADOW_CANDIDATE",
+  "chrono_holdout_verdict": "SHADOW_CANDIDATE"
+}

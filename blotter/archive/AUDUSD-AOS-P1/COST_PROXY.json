@@ -1,0 +1,32 @@
+{
+  "task": "AUDUSD-AOS-P1 / P0-T03 proxy",
+  "window": "2026.05.01-2026.08.31",
+  "magic": 8230901,
+  "n": 41,
+  "WR": 0.634146,
+  "BM_pp": 13.4146,
+  "E_N": 0.268293,
+  "spread_pts_entry": {
+    "median": 15.0,
+    "mean": 14.854,
+    "min": 13,
+    "max": 19
+  },
+  "atr_pts_entry": {
+    "median": 57.5,
+    "mean": 59.63,
+    "p75": 68.4,
+    "n_missing": 0
+  },
+  "nights_held_share": 0.5854,
+  "SL_pts": 300.0,
+  "R_design": 1.0,
+  "c_R_proxy_2x_med": 0.1,
+  "Leak_proxy_pp": 5.0,
+  "EF_proxy_pp": 8.4146,
+  "Leak_prior_pp": 2.4,
+  "EF_prior_pp": 11.0146,
+  "Leak_source": "journal_2x_entry_spread_median",
+  "note": "Not full deal blotter (no exit spread/commission/swap). Overnight swap still required for measured Leak.",
+  "zone": "Robust_proxy"
+}

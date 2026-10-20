@@ -1,0 +1,198 @@
+{
+  "aos_task": "EURUSD-AOS-P7",
+  "packet_id": "EURUSD_M15_AOS_RESEARCH_v1",
+  "generated_utc": "2026-10-18T15:16:45.105576+00:00",
+  "framework_unified": "1.0",
+  "framework_eurusd_m15": "0.1.0",
+  "canvas": "display_only",
+  "scope": {
+    "sleeve": "EURUSD M15 expansion research OS",
+    "not": [
+      "EURUSD M5 Harvest live replace (8210xxx / 8399xxx)",
+      "AUDUSD / UK100 / AAPL L2 pin reuse",
+      "PRODUCTION-WORTHY full G0\u2013G5 admit",
+      "L2 AI LIVE_WITHHOLD",
+      "geometry retune (SL/TP/BB/CD)"
+    ]
+  },
+  "identity": {
+    "engine_magic": 26101817,
+    "research_os_magic": 26121807,
+    "research_os_magic_p4_pre_hitl": 26121804,
+    "ea_version_min": "compile with AOS_L2det_eur.mqh",
+    "preset_armed": "BMRG-M15-EURUSD-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "BMRG-M15-EURUSD-6M-P2_light_selective_chart.set",
+    "symbol": "EURUSD",
+    "tf": "M15",
+    "tester_paths": [
+      "Presets/BMRG-M15-EURUSD-6M-P7_research_OS_ARMED.set",
+      "Profiles/Tester/BMRG/EURUSD/BMRG-M15-EURUSD-6M-P7_research_OS_ARMED.set"
+    ]
+  },
+  "armed_stack": {
+    "engine": "P2 light G0 FIXED_RR RR1.25 BB2.3 CD3 session12\u201320 skipTue",
+    "L2det": "L2det_eur_m15_v1b LIVE_WITHHOLD (Thu OR BUY\u2227nearATR@0.9\u00d774)",
+    "L2AI": "DISARM (chrono holdout)",
+    "L3": "ON DD25% / BELOW halt",
+    "L4": "ON size mod \u00b7 W50",
+    "L6": "ledger ON",
+    "L8": "advise-only overnight-primary (not live abort)",
+    "L9": "H19 ARM_SOFT approved shadow \u2014 not LIVE in this packet",
+    "ATR_max": 74,
+    "Leak_source": "journal_2x_entry_spread_median",
+    "Leak_pp": 1.19,
+    "lot": 0.01,
+    "risk_pct": 0.5
+  },
+  "baseline_ref": "EURUSD_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_MayOct": {
+      "n": 45,
+      "WR": 46.67,
+      "E_N": 0.05,
+      "EF_journal_pp": 1.037
+    },
+    "offline_v1b_tip": {
+      "n_fire": 31,
+      "n_skip": 14,
+      "WR": 54.84,
+      "E_N": 0.2339,
+      "EF_pp": 9.209,
+      "delta_E_N_vs_engine": 0.1839,
+      "fire_retention_pct": 68.9,
+      "L3_halt": 0
+    },
+    "note": "Tester EA ledger for magic 26121807 not yet run \u2014 offline P4 tip stack is the CF basis for HITL. Run P7 .set in Strategy Tester next."
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+    "expansion_EF": "PASS tip OS EF>0 under journal Leak 1.19 pp",
+    "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR74 declared (P6-T03)",
+    "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+    "G5_stress": "PARTIAL \u2014 L2 \u00b110% PASS_WITH_NOTES (P6); SL/TP not stressed",
+    "Leak_measured": "OPEN \u2014 journal proxy 1.19 pp (swap-aware deal export)",
+    "L2AI": "DISARM \u2014 tip AUC 0.58 \u00b7 chrono holdout DISARM",
+    "verdict_ladder": "EXPANSION_OS_ARMED \u2014 not PRODUCTION-WORTHY \u00b7 not M5 replace"
+  },
+  "p6_harden_summary": {
+    "L9_H19": "ARM_SOFT_shadow",
+    "L2_stress": "PASS_WITH_NOTES",
+    "ATR_G3": "PASS",
+    "nearATR_keep": "0.9 / 74"
+  },
+  "ledger_sample": {
+    "ledger_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\blotter\\archive\\EURUSD-AOS-P4\\ledger_det_v1b.csv",
+    "source": "offline_P4_tip_shadow",
+    "n_rows": 45,
+    "decision_counts": {
+      "FIRE_OK": 31,
+      "WOULD_SKIP": 14
+    },
+    "l2det_reasons": {
+      "L2DET_SKIP_THU": 6,
+      "L2DET_SKIP_BUY_NEAR_ATR": 6,
+      "L2DET_SKIP_THU|L2DET_SKIP_BUY_NEAR_ATR": 2
+    },
+    "head_skip": [
+      {
+        "t": "2026.05.07 17:30",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_THU|L2DET_SKIP_BUY_NEAR_ATR",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.14 12:00",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_THU",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.14 19:45",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_THU",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.28 12:45",
+        "side": "SELL",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_THU|L8_ADVISE_ABORT_OVERNIGHT_SL",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.06.22 13:30",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_BUY_NEAR_ATR|L8_ADVISE_ABORT_OVERNIGHT_SL",
+        "mode": "SHADOW"
+      }
+    ],
+    "head_fire": [
+      {
+        "t": "2026.05.11 13:15",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.18 19:00",
+        "side": "BUY",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK|L8_ADVISE_ABORT_OVERNIGHT_SL",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.20 14:30",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK|L8_ADVISE_ABORT_FAST_SL_NEAR_ATR",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.25 12:45",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.05.29 15:00",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      }
+    ]
+  },
+  "rollback": {
+    "ai_pin": "python infra/artefacts/models/L2skip_eur_m15/rollback_l2skip_eur_m15.py rollback --to DISARM",
+    "ea_det_off": "InpAOS_EUR_L2detEnable=false",
+    "ea_aos_off": "InpAOS_Enable=false \u2192 load P2 light chart set",
+    "kill_switch": "InpAiKillSwitch=true"
+  },
+  "hitl": {
+    "status": "SIGNED",
+    "signed_utc": "2026-10-18T15:15:00+00:00",
+    "signed_local": "2026-10-18T16:15:00+01:00",
+    "signer": "operator (chat HITL confirmation \u2014 proceed with P7)",
+    "decision": "ARM_RESEARCH_OS",
+    "acknowledged": [
+      "Not M5 Harvest live replace",
+      "Not production G0\u2013G5 admit",
+      "Leak still journal proxy (measured+swap OPEN)",
+      "L2 AI remains DISARM",
+      "L9 H19 shadow only \u2014 not LIVE",
+      "Expansion sleeve only"
+    ]
+  },
+  "verdict": "ACCEPT_ARM_RESEARCH_OS"
+}

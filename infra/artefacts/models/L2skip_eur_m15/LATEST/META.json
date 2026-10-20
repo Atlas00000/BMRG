@@ -1,0 +1,11 @@
+{
+  "semver": "L2skip_eur_m15_p_pretip_20261018_150651",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "symbol": "EURUSD",
+  "tf": "M15",
+  "magic_engine": 26101817,
+  "mqh_exported": false,
+  "live_withhold": false,
+  "policy": "doc/assets/EURUSD/aos_l5_retrain.md"
+}

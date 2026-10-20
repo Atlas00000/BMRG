@@ -1,0 +1,245 @@
+20261008 [0] 2026.01.01->2026.10.07 mag=8230921 AOS=true mode=2 orders=252 final=417.24 aos_hits=131
+  RF	0	12:49:11.078	Core 01	  === AOS (AI OS) ====
+  IE	0	12:49:11.078	Core 01	2026.01.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  FQ	0	12:49:11.078	Core 01	2026.01.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  JO	0	12:49:11.078	Core 01	2026.01.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  IE	0	12:49:11.078	Core 01	2026.01.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  RI	0	12:49:11.078	Core 01	2026.01.05 13:30:19   [BMRG][INFO] AOS close TP | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  EM	0	12:49:11.078	Core 01	2026.01.08 03:05:37   [BMRG][INFO] AOS close TP | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JP	0	12:49:11.078	Core 01	2026.01.12 16:15:35   [BMRG][INFO] AOS close TP | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GG	0	12:49:11.078	Core 01	2026.01.15 16:18:13   [BMRG][INFO] AOS close TP | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MM	0	12:49:11.078	Core 01	2026.01.16 15:40:30   [BMRG][INFO] AOS close SL | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  LR	0	12:49:11.078	Core 01	2026.01.19 10:52:32   [BMRG][INFO] AOS close TP | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IM	0	12:49:11.078	Core 01	2026.01.22 03:56:17   [BMRG][INFO] AOS close SL | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FO	0	12:49:11.078	Core 01	2026.01.22 17:52:21   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  KJ	0	12:49:11.078	Core 01	2026.01.25 22:05:00   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JG	0	12:49:11.078	Core 01	2026.01.28 20:39:37   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  KS	0	12:49:11.078	Core 01	2026.01.29 15:12:40   [BMRG][INFO] AOS close TP | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  KE	0	12:49:11.078	Core 01	2026.01.29 15:17:30   [BMRG][INFO] AOS close SL | n=12 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PF	0	12:49:11.078	Core 01	2026.01.29 16:15:41   [BMRG][INFO] AOS close TP | n=13 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CJ	0	12:49:11.078	Core 01	2026.01.30 14:48:38   [BMRG][INFO] AOS close TP | n=14 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CM	0	12:49:11.078	Core 01	2026.01.30 19:00:41   [BMRG][INFO] AOS close TP | n=15 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [1] 2026.05.01->2026.08.31 mag=8230921 AOS=true mode=2 orders=96 final=457.10 aos_hits=52
+  DP	0	12:49:44.526	Core 01	  === AOS (AI OS) ====
+  OG	0	12:49:44.526	Core 01	2026.05.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  LS	0	12:49:44.526	Core 01	2026.05.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  PM	0	12:49:44.526	Core 01	2026.05.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  OG	0	12:49:44.526	Core 01	2026.05.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  GR	0	12:49:44.526	Core 01	2026.05.04 10:05:41   [BMRG][INFO] AOS close TP | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NP	0	12:49:44.526	Core 01	2026.05.07 19:59:37   [BMRG][INFO] AOS close TP | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IR	0	12:49:44.526	Core 01	2026.05.12 07:07:34   [BMRG][INFO] AOS close SL | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CN	0	12:49:44.526	Core 01	2026.05.14 13:36:35   [BMRG][INFO] AOS close TP | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MJ	0	12:49:44.526	Core 01	2026.05.15 01:31:38   [BMRG][INFO] AOS close SL | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  II	0	12:49:44.526	Core 01	2026.05.17 23:41:28   [BMRG][INFO] AOS close TP | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  HM	0	12:49:44.526	Core 01	2026.05.20 14:52:15   [BMRG][INFO] AOS close TP | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MR	0	12:49:44.526	Core 01	2026.05.21 01:49:41   [BMRG][INFO] AOS close TP | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OQ	0	12:49:44.526	Core 01	2026.05.21 17:15:28   [BMRG][INFO] AOS close TP | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  EF	0	12:49:44.526	Core 01	2026.05.22 11:30:37   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  RR	0	12:49:44.526	Core 01	2026.05.25 01:23:05   [BMRG][INFO] AOS close SL | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IS	0	12:49:44.526	Core 01	2026.05.28 03:30:34   [BMRG][INFO] AOS close TP | n=12 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PL	0	12:49:44.526	Core 01	2026.05.29 12:52:01   [BMRG][INFO] AOS close SL | n=13 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FL	0	12:49:44.526	Core 01	2026.06.01 13:11:19   [BMRG][INFO] AOS close TP | n=14 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PF	0	12:49:44.526	Core 01	2026.06.05 01:21:37   [BMRG][INFO] AOS close SL | n=15 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [2] 2026.01.01->2026.04.30 mag=8230921 AOS=true mode=2 orders=126 final=381.47 aos_hits=67
+  GO	0	12:50:32.076	Core 01	  === AOS (AI OS) ====
+  HL	0	12:50:32.076	Core 01	2026.01.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  CH	0	12:50:32.076	Core 01	2026.01.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  GD	0	12:50:32.076	Core 01	2026.01.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  HL	0	12:50:32.076	Core 01	2026.01.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  OF	0	12:50:32.076	Core 01	2026.01.05 13:30:19   [BMRG][INFO] AOS close TP | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  DJ	0	12:50:32.076	Core 01	2026.01.08 03:05:37   [BMRG][INFO] AOS close TP | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GI	0	12:50:32.076	Core 01	2026.01.12 16:15:35   [BMRG][INFO] AOS close TP | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JL	0	12:50:32.076	Core 01	2026.01.15 16:18:13   [BMRG][INFO] AOS close TP | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  LD	0	12:50:32.076	Core 01	2026.01.16 15:40:30   [BMRG][INFO] AOS close SL | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MK	0	12:50:32.076	Core 01	2026.01.19 10:52:32   [BMRG][INFO] AOS close TP | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PD	0	12:50:32.076	Core 01	2026.01.22 03:56:17   [BMRG][INFO] AOS close SL | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CF	0	12:50:32.076	Core 01	2026.01.22 17:52:21   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NQ	0	12:50:32.076	Core 01	2026.01.25 22:05:00   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GN	0	12:50:32.076	Core 01	2026.01.28 20:39:37   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NJ	0	12:50:32.076	Core 01	2026.01.29 15:12:40   [BMRG][INFO] AOS close TP | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NN	0	12:50:32.076	Core 01	2026.01.29 15:17:30   [BMRG][INFO] AOS close SL | n=12 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QQ	0	12:50:32.076	Core 01	2026.01.29 16:15:41   [BMRG][INFO] AOS close TP | n=13 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NR	0	12:50:32.076	Core 01	2026.01.30 14:48:38   [BMRG][INFO] AOS close TP | n=14 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FD	0	12:50:32.076	Core 01	2026.01.30 19:00:41   [BMRG][INFO] AOS close TP | n=15 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [3] 2026.09.01->2026.10.07 mag=8230921 AOS=true mode=2 orders=26 final=378.98 aos_hits=18
+  QQ	0	12:51:36.439	Core 01	  === AOS (AI OS) ====
+  JF	0	12:51:36.439	Core 01	2026.09.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  ER	0	12:51:36.439	Core 01	2026.09.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  IR	0	12:51:36.439	Core 01	2026.09.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  JF	0	12:51:36.439	Core 01	2026.09.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  KL	0	12:51:36.439	Core 01	2026.09.03 09:23:33   [BMRG][INFO] AOS close SL | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OM	0	12:51:36.439	Core 01	2026.09.04 12:30:39   [BMRG][INFO] AOS close SL | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MM	0	12:51:36.439	Core 01	2026.09.09 07:18:35   [BMRG][INFO] AOS close SL | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IQ	0	12:51:36.439	Core 01	2026.09.10 11:09:32   [BMRG][INFO] AOS close TP | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GI	0	12:51:36.439	Core 01	2026.09.14 08:04:59   [BMRG][INFO] AOS close SL | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QE	0	12:51:36.439	Core 01	2026.09.16 18:34:41   [BMRG][INFO] AOS close SL | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  ON	0	12:51:36.439	Core 01	2026.09.18 03:33:35   [BMRG][INFO] AOS close TP | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CS	0	12:51:36.439	Core 01	2026.09.23 08:05:35   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QQ	0	12:51:36.439	Core 01	2026.09.23 17:02:37   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MH	0	12:51:36.439	Core 01	2026.09.29 05:42:47   [BMRG][INFO] AOS close SL | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QF	0	12:51:36.439	Core 01	2026.10.01 15:18:39   [BMRG][INFO] AOS close SL | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  RM	0	12:51:36.439	Core 01	2026.10.02 04:04:36   [BMRG][INFO] AOS close TP | n=12 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MG	0	12:51:36.439	Core 01	2026.10.05 02:57:36   [BMRG][INFO] AOS close SL | n=13 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [4] 2026.06.01->2026.06.30 mag=8230921 AOS=true mode=2 orders=24 final=410.90 aos_hits=16
+  LD	0	12:52:01.192	Core 01	  === AOS (AI OS) ====
+  JK	0	12:52:01.192	Core 01	2026.06.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  ED	0	12:52:01.192	Core 01	2026.06.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  II	0	12:52:01.192	Core 01	2026.06.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  JK	0	12:52:01.192	Core 01	2026.06.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  MK	0	12:52:01.192	Core 01	2026.06.05 01:21:37   [BMRG][INFO] AOS close SL | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FI	0	12:52:01.192	Core 01	2026.06.05 14:12:28   [BMRG][INFO] AOS close SL | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  DS	0	12:52:01.192	Core 01	2026.06.08 11:20:41   [BMRG][INFO] AOS close TP | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JR	0	12:52:01.192	Core 01	2026.06.10 19:14:40   [BMRG][INFO] AOS close TP | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  KR	0	12:52:01.192	Core 01	2026.06.11 17:32:41   [BMRG][INFO] AOS close TP | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  RF	0	12:52:01.192	Core 01	2026.06.12 15:26:40   [BMRG][INFO] AOS close SL | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PL	0	12:52:01.192	Core 01	2026.06.14 21:43:33   [BMRG][INFO] AOS close TP | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FN	0	12:52:01.192	Core 01	2026.06.17 18:11:05   [BMRG][INFO] AOS close TP | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NL	0	12:52:01.192	Core 01	2026.06.17 19:23:41   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JQ	0	12:52:01.192	Core 01	2026.06.19 04:01:04   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JE	0	12:52:01.192	Core 01	2026.06.23 00:09:59   [BMRG][INFO] AOS close TP | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [5] 2026.07.01->2026.07.31 mag=8230921 AOS=true mode=2 orders=24 final=409.66 aos_hits=16
+  GH	0	12:52:22.994	Core 01	  === AOS (AI OS) ====
+  JO	0	12:52:22.994	Core 01	2026.07.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  EK	0	12:52:22.994	Core 01	2026.07.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  ME	0	12:52:22.994	Core 01	2026.07.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  JO	0	12:52:22.994	Core 01	2026.07.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  EF	0	12:52:22.994	Core 01	2026.07.02 12:30:39   [BMRG][INFO] AOS close TP | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OO	0	12:52:22.994	Core 01	2026.07.06 17:26:32   [BMRG][INFO] AOS close TP | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PL	0	12:52:22.994	Core 01	2026.07.10 01:15:29   [BMRG][INFO] AOS close TP | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PH	0	12:52:22.994	Core 01	2026.07.13 19:36:35   [BMRG][INFO] AOS close SL | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PJ	0	12:52:22.994	Core 01	2026.07.19 21:02:00   [BMRG][INFO] AOS close TP | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PO	0	12:52:22.994	Core 01	2026.07.23 01:37:28   [BMRG][INFO] AOS close TP | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CD	0	12:52:22.994	Core 01	2026.07.24 15:15:40   [BMRG][INFO] AOS close TP | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  RK	0	12:52:22.994	Core 01	2026.07.29 01:30:15   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  ER	0	12:52:22.994	Core 01	2026.07.29 18:45:42   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OF	0	12:52:22.994	Core 01	2026.07.29 19:51:41   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QL	0	12:52:22.994	Core 01	2026.07.30 14:16:41   [BMRG][INFO] AOS close SL | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [6] 2026.09.01->2026.09.30 mag=8230921 AOS=true mode=2 orders=20 final=381.97 aos_hits=15
+  CL	0	12:52:53.794	Core 01	  === AOS (AI OS) ====
+  PR	0	12:52:53.794	Core 01	2026.09.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  KO	0	12:52:53.794	Core 01	2026.09.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  KF	0	12:52:53.794	Core 01	2026.09.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  PR	0	12:52:53.794	Core 01	2026.09.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  IP	0	12:52:53.794	Core 01	2026.09.03 09:23:33   [BMRG][INFO] AOS close SL | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IQ	0	12:52:53.794	Core 01	2026.09.04 12:30:39   [BMRG][INFO] AOS close SL | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CR	0	12:52:53.794	Core 01	2026.09.09 07:18:35   [BMRG][INFO] AOS close SL | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OE	0	12:52:53.794	Core 01	2026.09.10 11:09:32   [BMRG][INFO] AOS close TP | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IM	0	12:52:53.794	Core 01	2026.09.14 08:04:59   [BMRG][INFO] AOS close SL | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OI	0	12:52:53.794	Core 01	2026.09.16 18:34:41   [BMRG][INFO] AOS close SL | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QR	0	12:52:53.794	Core 01	2026.09.18 03:33:35   [BMRG][INFO] AOS close TP | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QG	0	12:52:53.794	Core 01	2026.09.23 08:05:35   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CE	0	12:52:53.794	Core 01	2026.09.23 17:02:37   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CL	0	12:52:53.794	Core 01	2026.09.29 05:42:47   [BMRG][INFO] AOS close SL | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [7] 2026.06.01->2026.06.30 mag=8230921 AOS=true mode=2 orders=24 final=410.90 aos_hits=16
+  MN	0	12:54:06.888	Core 01	  === AOS (AI OS) ====
+  GM	0	12:54:06.888	Core 01	2026.06.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  DN	0	12:54:06.888	Core 01	2026.06.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  HG	0	12:54:06.888	Core 01	2026.06.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  GM	0	12:54:06.888	Core 01	2026.06.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  LQ	0	12:54:06.888	Core 01	2026.06.05 01:21:37   [BMRG][INFO] AOS close SL | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CG	0	12:54:06.888	Core 01	2026.06.05 14:12:28   [BMRG][INFO] AOS close SL | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  EI	0	12:54:06.888	Core 01	2026.06.08 11:20:41   [BMRG][INFO] AOS close TP | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GH	0	12:54:06.888	Core 01	2026.06.10 19:14:40   [BMRG][INFO] AOS close TP | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NH	0	12:54:06.888	Core 01	2026.06.11 17:32:41   [BMRG][INFO] AOS close TP | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OL	0	12:54:06.888	Core 01	2026.06.12 15:26:40   [BMRG][INFO] AOS close SL | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QJ	0	12:54:06.888	Core 01	2026.06.14 21:43:33   [BMRG][INFO] AOS close TP | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CD	0	12:54:06.888	Core 01	2026.06.17 18:11:05   [BMRG][INFO] AOS close TP | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  KJ	0	12:54:06.888	Core 01	2026.06.17 19:23:41   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GK	0	12:54:06.888	Core 01	2026.06.19 04:01:04   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GO	0	12:54:06.888	Core 01	2026.06.23 00:09:59   [BMRG][INFO] AOS close TP | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [8] 2026.07.01->2026.07.31 mag=8230921 AOS=true mode=2 orders=24 final=409.66 aos_hits=16
+  RR	0	12:55:02.930	Core 01	  === AOS (AI OS) ====
+  OQ	0	12:55:02.930	Core 01	2026.07.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  LM	0	12:55:02.930	Core 01	2026.07.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  DS	0	12:55:02.930	Core 01	2026.07.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  OQ	0	12:55:02.930	Core 01	2026.07.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  LL	0	12:55:02.930	Core 01	2026.07.02 12:30:39   [BMRG][INFO] AOS close TP | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JE	0	12:55:02.930	Core 01	2026.07.06 17:26:32   [BMRG][INFO] AOS close TP | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IJ	0	12:55:02.930	Core 01	2026.07.10 01:15:29   [BMRG][INFO] AOS close TP | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IF	0	12:55:02.930	Core 01	2026.07.13 19:36:35   [BMRG][INFO] AOS close SL | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IP	0	12:55:02.930	Core 01	2026.07.19 21:02:00   [BMRG][INFO] AOS close TP | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IE	0	12:55:02.930	Core 01	2026.07.23 01:37:28   [BMRG][INFO] AOS close TP | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NR	0	12:55:02.930	Core 01	2026.07.24 15:15:40   [BMRG][INFO] AOS close TP | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GQ	0	12:55:02.930	Core 01	2026.07.29 01:30:15   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  LH	0	12:55:02.930	Core 01	2026.07.29 18:45:42   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JP	0	12:55:02.930	Core 01	2026.07.29 19:51:41   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  HF	0	12:55:02.930	Core 01	2026.07.30 14:16:41   [BMRG][INFO] AOS close SL | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [9] 2026.01.01->2026.01.31 mag=8230921 AOS=true mode=2 orders=30 final=413.35 aos_hits=20
+  GG	0	12:55:39.584	Core 01	  === AOS (AI OS) ====
+  DD	0	12:55:39.584	Core 01	2026.01.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  GP	0	12:55:39.584	Core 01	2026.01.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  OL	0	12:55:39.584	Core 01	2026.01.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  DD	0	12:55:39.584	Core 01	2026.01.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  KN	0	12:55:39.584	Core 01	2026.01.05 13:30:19   [BMRG][INFO] AOS close TP | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  HR	0	12:55:39.584	Core 01	2026.01.08 03:05:37   [BMRG][INFO] AOS close TP | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CQ	0	12:55:39.584	Core 01	2026.01.12 16:15:35   [BMRG][INFO] AOS close TP | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  RD	0	12:55:39.584	Core 01	2026.01.15 16:18:13   [BMRG][INFO] AOS close TP | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  DM	0	12:55:39.584	Core 01	2026.01.16 15:40:30   [BMRG][INFO] AOS close SL | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  ER	0	12:55:39.584	Core 01	2026.01.19 10:52:32   [BMRG][INFO] AOS close TP | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PL	0	12:55:39.584	Core 01	2026.01.22 03:56:17   [BMRG][INFO] AOS close SL | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GN	0	12:55:39.584	Core 01	2026.01.22 17:52:21   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FI	0	12:55:39.584	Core 01	2026.01.25 22:05:00   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OG	0	12:55:39.584	Core 01	2026.01.28 20:39:37   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FS	0	12:55:39.584	Core 01	2026.01.29 15:12:40   [BMRG][INFO] AOS close TP | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  RF	0	12:55:39.584	Core 01	2026.01.29 15:17:30   [BMRG][INFO] AOS close SL | n=12 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MI	0	12:55:39.584	Core 01	2026.01.29 16:15:41   [BMRG][INFO] AOS close TP | n=13 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NJ	0	12:55:39.584	Core 01	2026.01.30 14:48:38   [BMRG][INFO] AOS close TP | n=14 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JL	0	12:55:39.584	Core 01	2026.01.30 19:00:41   [BMRG][INFO] AOS close TP | n=15 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [10] 2026.02.01->2026.02.28 mag=8230921 AOS=true mode=2 orders=32 final=379.95 aos_hits=20
+  IR	0	12:55:55.456	Core 01	  === AOS (AI OS) ====
+  GQ	0	12:55:55.456	Core 01	2026.02.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  DM	0	12:55:55.456	Core 01	2026.02.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  HS	0	12:55:55.456	Core 01	2026.02.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  GQ	0	12:55:55.456	Core 01	2026.02.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  FE	0	12:55:55.456	Core 01	2026.02.04 16:03:43   [BMRG][INFO] AOS close SL | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  ES	0	12:55:55.456	Core 01	2026.02.05 15:27:05   [BMRG][INFO] AOS close SL | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  KQ	0	12:55:55.456	Core 01	2026.02.05 23:19:51   [BMRG][INFO] AOS close SL | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FS	0	12:55:55.456	Core 01	2026.02.06 17:30:36   [BMRG][INFO] AOS close SL | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  DF	0	12:55:55.456	Core 01	2026.02.11 13:30:40   [BMRG][INFO] AOS close SL | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  FF	0	12:55:55.456	Core 01	2026.02.11 15:28:05   [BMRG][INFO] AOS close TP | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CQ	0	12:55:55.456	Core 01	2026.02.13 05:29:15   [BMRG][INFO] AOS close SL | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JS	0	12:55:55.456	Core 01	2026.02.13 18:46:29   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  RK	0	12:55:55.456	Core 01	2026.02.18 19:36:27   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  NR	0	12:55:55.456	Core 01	2026.02.20 15:01:21   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GM	0	12:55:55.456	Core 01	2026.02.20 18:46:26   [BMRG][INFO] AOS close SL | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  CJ	0	12:55:55.456	Core 01	2026.02.26 00:46:53   [BMRG][INFO] AOS close SL | n=12 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  JE	0	12:55:55.456	Core 01	2026.02.26 15:18:16   [BMRG][INFO] AOS close SL | n=13 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  EH	0	12:55:55.456	Core 01	2026.02.27 02:30:38   [BMRG][INFO] AOS close TP | n=14 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  MM	0	12:55:55.456	Core 01	2026.02.27 15:38:19   [BMRG][INFO] AOS close TP | n=15 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261008 [11] 2026.02.01->2026.02.28 mag=8230921 AOS=true mode=2 orders=32 final=379.95 aos_hits=20
+  KQ	0	12:55:58.253	Core 01	  === AOS (AI OS) ====
+  MF	0	12:55:58.253	Core 01	2026.02.01 00:00:00   [BMRG][WARN] AOS model semver mismatch input=L2skip_inf_p92_20260927_223519||L2skip_inf_p92_20260927_223519||0||0||N baked=L2skip_in
+  RR	0	12:55:58.253	Core 01	2026.02.01 00:00:00   [BMRG][INFO] AOS ledger -> COMMON\Files\BMRG_AOS_ledger_8230921.csv
+  NR	0	12:55:58.253	Core 01	2026.02.01 00:00:00   [BMRG][INFO] AOS ON | L3=1 L4size=1 L2mode=LIVE_WITHHOLD kill=0 DDlim=25.0 W=250 model=L2skip_inf_p92_20260927_223519
+  MF	0	12:55:58.253	Core 01	2026.02.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230921 aos=1
+  PF	0	12:55:58.253	Core 01	2026.02.04 16:03:43   [BMRG][INFO] AOS close SL | n=1 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OL	0	12:55:58.253	Core 01	2026.02.05 15:27:05   [BMRG][INFO] AOS close SL | n=2 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  IR	0	12:55:58.253	Core 01	2026.02.05 23:19:51   [BMRG][INFO] AOS close SL | n=3 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PL	0	12:55:58.253	Core 01	2026.02.06 17:30:36   [BMRG][INFO] AOS close SL | n=4 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  RG	0	12:55:58.253	Core 01	2026.02.11 13:30:40   [BMRG][INFO] AOS close SL | n=5 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  PQ	0	12:55:58.253	Core 01	2026.02.11 15:28:05   [BMRG][INFO] AOS close TP | n=6 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QR	0	12:55:58.253	Core 01	2026.02.13 05:29:15   [BMRG][INFO] AOS close SL | n=7 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  LL	0	12:55:58.253	Core 01	2026.02.13 18:46:29   [BMRG][INFO] AOS close SL | n=8 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  DD	0	12:55:58.253	Core 01	2026.02.18 19:36:27   [BMRG][INFO] AOS close SL | n=9 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  HS	0	12:55:58.253	Core 01	2026.02.20 15:01:21   [BMRG][INFO] AOS close TP | n=10 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  ML	0	12:55:58.253	Core 01	2026.02.20 18:46:26   [BMRG][INFO] AOS close SL | n=11 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  QI	0	12:55:58.253	Core 01	2026.02.26 00:46:53   [BMRG][INFO] AOS close SL | n=12 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  LD	0	12:55:58.253	Core 01	2026.02.26 15:18:16   [BMRG][INFO] AOS close SL | n=13 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  OI	0	12:55:58.253	Core 01	2026.02.27 02:30:38   [BMRG][INFO] AOS close TP | n=14 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+  GJ	0	12:55:58.253	Core 01	2026.02.27 15:38:19   [BMRG][INFO] AOS close TP | n=15 life=Stable f=0.75 W250 EF=0.00 EN=0.000 halt=0
+20261007 [21] 2026.05.01->2026.08.31 mag=8230501 AOS=false mode=0 orders=96 final=457.10 aos_hits=3
+  QD	0	17:33:42.741	Core 01	  === AOS (AI OS) ====
+  CH	0	17:33:42.741	Core 01	2026.05.01 00:00:00   [BMRG][INFO] AOS disabled
+  GP	0	17:33:42.741	Core 01	2026.05.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230501 aos=0
+20261007 [22] 2026.05.01->2026.08.31 mag=8230501 AOS=false mode=0 orders=118 final=444.39 aos_hits=3
+  HD	0	17:33:58.897	Core 01	  === AOS (AI OS) ====
+  NH	0	17:33:58.897	Core 01	2026.05.01 00:00:00   [BMRG][INFO] AOS disabled
+  JP	0	17:33:58.897	Core 01	2026.05.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230501 aos=0
+20261007 [24] 2026.05.01->2026.08.31 mag=8230502 AOS=false mode=0 orders=96 final=457.10 aos_hits=3
+  RK	0	17:37:49.103	Core 01	  === AOS (AI OS) ====
+  DK	0	17:37:49.103	Core 01	2026.05.01 00:00:00   [BMRG][INFO] AOS disabled
+  EF	0	17:37:49.103	Core 01	2026.05.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230502 aos=0
+20261007 [25] 2026.05.01->2026.10.06 mag=8230502 AOS=false mode=0 orders=122 final=439.10 aos_hits=3
+  EM	0	17:40:01.111	Core 01	  === AOS (AI OS) ====
+  OQ	0	17:40:01.111	Core 01	2026.05.01 00:00:00   [BMRG][INFO] AOS disabled
+  FK	0	17:40:01.111	Core 01	2026.05.01 00:00:00   [BMRG][INFO] BMRG init OK | AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230502 aos=0

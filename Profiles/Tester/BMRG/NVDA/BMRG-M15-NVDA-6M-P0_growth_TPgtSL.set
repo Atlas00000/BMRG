@@ -1,0 +1,85 @@
+; BMRG-M15-NVDA-6M-P0_growth_TPgtSL.set
+; Status: RESEARCH ALT / UNTESTED — returns-leaning (TP > SL)
+; EA: BMRG v1.21 · G0 · AOS OFF · Magic 26101931
+; Symbol: NVDA | TF: M15 | Window: 2026.05.01 → 2026.10.16
+; HARD RULE: never TP < SL → TP 820 > SL 550 · RR≈1.49
+;
+; M15* probe (14–20 · skip Tue · BB 2.2 · ATR 54–155 · BBW 0.25–1.80):
+;   n≈33 · WR≈45.5% · E_N≈+0.13R · EF≈+1.7pp @ 50pt cost prior
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid (G0) ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.5||0.5||0.100000||5.000000||N
+;=== Lot ===
+InpLotMode=0||0||0||1||N
+InpLot=1.0||1.0||0.010000||100.000000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.0||1.0||0.010000||100.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||1.000000||N
+;=== Stops — Growth RR≈1.49 ===
+InpSL_Points=550||550||1||5000||N
+InpTP_Points=820||820||1||7500||N
+InpMaxSpread=70||70||1||500||N
+InpSlippage=25||25||1||200||N
+InpCooldownBars=3||3||1||30||N
+;=== Exposure ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=15.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=2.5||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||20.0||1.000000||50.000000||N
+InpMaxDailyLossPct=2.5||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time 14–20 · skip Tue ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=14||14||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=20||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=true||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime ATR+BBW ===
+InpUseATRRegime=true||false||0||true||N
+InpATRMinPoints=54.0||54.0||0.000000||2000.000000||N
+InpATRMaxPoints=155.0||155.0||0.000000||2000.000000||N
+InpUseBBWidthRegime=true||false||0||true||N
+InpBBWidthMinPct=0.25||0.25||0.000000||5.000000||N
+InpBBWidthMaxPct=1.80||1.80||0.000000||5.000000||N
+;=== Failure ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=26101931||26101931||1||82100099||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=true||false||0||true||N
+;=== AOS OFF ===
+InpAOS_Enable=false||false||0||true||N
+InpAOS_L3_Enable=false||false||0||true||N
+InpAOS_L4_SizeMod=false||false||0||true||N
+InpAiOsMode=0||0||0||2||N
+InpAiModelSemver=L2skip_inf_p92_20260927_223519
+InpAiKillSwitch=true||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=true||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=40.1||50.0||1.000000||90.000000||N
+InpAOS_Leak=3.7||2.2||0.100000||20.000000||N
+InpAOS_R=1.49||1.0||0.100000||5.000000||N
+InpAOS_W250=250||250||1||500||N
+InpAOS_Ledger=false||false||0||true||N

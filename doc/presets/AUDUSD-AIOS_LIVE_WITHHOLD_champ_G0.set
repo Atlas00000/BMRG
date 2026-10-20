@@ -1,0 +1,82 @@
+; AUDUSD-AIOS_LIVE_WITHHOLD_champ_G0.set
+; AUDUSD AIOS FT — engine CHAMP (Start13+skipMon/Tue · 300/300)
+; AOS ON · LIVE_WITHHOLD · L3/L4 on · ledger on · InpAOS_W250=250
+; L2: AUDUSD-native bake (see Include/AOS_L2skip_aud.mqh) — not EUR INF
+; Magic 8230921 · Expert Experts\BMRG\BMRG.ex5 · AUDUSD M5
+;
+;=== Indicators ===
+InpBBPeriod=20||20||1||200||N
+InpBBDev=2.2||2.2||0.200000||20.000000||N
+InpATRPeriod=14||14||1||140||N
+;=== Grid ===
+InpMaxLevels=1||1||1||30||N
+InpLevelStepSigma=0.7||0.7||0.100000||5.000000||N
+;=== Lot / risk % ===
+InpLotMode=1||0||0||1||N
+InpLot=0.01||0.01||0.001000||0.100000||N
+InpRiskPercent=0.5||0.5||0.100000||5.000000||N
+InpRiskBase=1||0||0||1||N
+InpMaxLot=1.0||1.0||0.010000||10.000000||N
+InpMinLotOverride=0.0||0.0||0.000000||0.100000||N
+;=== Stops & friction ===
+InpSL_Points=300||300||1||3000||N
+InpTP_Points=300||300||1||4500||N
+InpMaxSpread=30||30||1||350||N
+InpSlippage=20||20||1||200||N
+InpCooldownBars=3||3||1||30||N
+;=== Exposure & account gates ===
+InpMaxEntries=1||1||1||30||N
+InpMaxExposurePct=20.0||20.0||1.000000||100.000000||N
+InpMinFreeMarginPct=50.0||50.0||1.000000||100.000000||N
+InpMaxBasketLossPct=3.0||3.0||0.500000||20.000000||N
+InpEquityHaltPct=15.0||15.0||1.000000||50.000000||N
+InpMaxDailyLossPct=3.0||3.0||0.500000||20.000000||N
+InpMaxDailyEntries=12||12||1||50||N
+;=== Time filter (server) ===
+InpUseTimeFilter=true||false||0||true||N
+InpStartHour=13||12||1||23||N
+InpStartMinute=0||0||1||59||N
+InpEndHour=20||20||1||23||N
+InpEndMinute=0||0||1||59||N
+InpTradeMon=false||false||0||true||N
+InpTradeTue=false||false||0||true||N
+InpTradeWed=true||false||0||true||N
+InpTradeThu=true||false||0||true||N
+InpTradeFri=true||false||0||true||N
+InpTradeSat=false||false||0||true||N
+InpTradeSun=false||false||0||true||N
+;=== Regime gates ===
+InpUseATRRegime=false||false||0||true||N
+InpATRMinPoints=0.0||0.0||0.000000||500.000000||N
+InpATRMaxPoints=0.0||0.0||0.000000||500.000000||N
+InpUseBBWidthRegime=false||false||0||true||N
+InpBBWidthMinPct=0.0||0.0||0.000000||5.000000||N
+InpBBWidthMaxPct=0.0||0.0||0.000000||5.000000||N
+;=== Failure containment ===
+InpMaxOrderFails=3||3||1||30||N
+InpMaxLossStreak=3||3||1||30||N
+InpFailPauseBars=12||12||1||120||N
+InpCloseOnDailyLoss=true||false||0||true||N
+InpBlockBusyTradeCtx=true||false||0||true||N
+;=== Permissions ===
+InpAllowBuy=true||false||0||true||N
+InpAllowSell=true||false||0||true||N
+InpMagic=8230921||8221103||1||82211999||N
+;=== Logging ===
+InpLogToComment=true||false||0||true||N
+InpLogGateBlocks=false||false||0||true||N
+;=== AOS INF LIVE_WITHHOLD (AUDUSD FT) ===
+InpAOS_Enable=true||false||0||true||N
+InpAOS_L3_Enable=true||false||0||true||N
+InpAOS_L4_SizeMod=true||false||0||true||N
+InpAiOsMode=2||0||0||2||N
+InpAiModelSemver=L2skip_aud_p90_20261008_122523||L2skip_aud_p90_20261008_122523||0||0||N
+InpAiKillSwitch=false||false||0||true||N
+InpAOS_L2AI_Enable=false||false||0||true||N
+InpAOS_L2AI_Shadow=false||false||0||true||N
+InpAOS_DD_Limit=25.0||25.0||1.000000||50.000000||N
+InpAOS_BWR=50.0||50.0||1.000000||99.000000||N
+InpAOS_Leak=2.4||2.2||0.100000||10.000000||N
+InpAOS_R=1.0||1.0||0.100000||5.000000||N
+InpAOS_W250=50||50||50||600||N
+InpAOS_Ledger=true||false||0||true||N

@@ -1,0 +1,221 @@
+{
+  "aos_task": "JP225-AOS-P7",
+  "packet_id": "JP225_M15_AOS_RESEARCH_v1",
+  "preset_alias": "JPN225stack",
+  "generated_utc": "2026-10-19T15:51:46.562664+00:00",
+  "framework_unified": "1.0",
+  "framework_jp225": "0.1.6",
+  "canvas": "display_only",
+  "scope": {
+    "sleeve": "JP225/JPN225 M15 expansion research OS",
+    "not": [
+      "AUDUSD / EURUSD / UK100 / DE40 live book replace",
+      "PRODUCTION-WORTHY full G0\u2013G5 admit",
+      "L2 AI LIVE_WITHHOLD",
+      "geometry retune (SL/TP/BB)",
+      "Wed LIVE (HOLD only \u2014 Aug FP)",
+      "L9 London/H08/H14 LIVE"
+    ]
+  },
+  "identity": {
+    "engine_magic": 26101904,
+    "research_os_magic": 26151907,
+    "ea_version_min": "compile with AOS_L2det_jp.mqh",
+    "preset_armed": "JPN225stack.set",
+    "preset_armed_alias": "BMRG-M15-JP225-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "BMRG-M15-JP225-6M-P1_wrLift_fade_chart.set",
+    "symbol": "JPN225",
+    "asset": "JP225",
+    "tf": "M15",
+    "tester_paths": [
+      "Presets/JPN225stack.set",
+      "Presets/BMRG-M15-JP225-6M-P7_research_OS_ARMED.set",
+      "Profiles/Tester/BMRG/JP225/JPN225stack.set",
+      "Profiles/Tester/BMRG/JP225/BMRG-M15-JP225-6M-P7_research_OS_ARMED.set",
+      "MQL5/Profiles/Tester/BMRG/JP225/JPN225stack.set"
+    ]
+  },
+  "armed_stack": {
+    "engine": "Growth P1 wrLift fade RR1.50 BB2.3 session08\u201317 skipTue ATR19670 FadeON",
+    "L2det": "L2det_jp225_v1_May_OR_Jul LIVE_WITHHOLD",
+    "L2AI": "DISARM (AUC\u22480.49)",
+    "L3": "ON DD25% / BELOW halt",
+    "L4": "ON size mod \u00b7 W50",
+    "L6": "ledger ON",
+    "L8": "advise-only index sleeve (not live abort)",
+    "L9": "London/H08/H14 HOLD_SHADOW \u2014 not LIVE in this packet",
+    "ATR_max": 19670,
+    "Leak_source": "measured_median_deal_fill",
+    "Leak_pp": 2.45,
+    "lot": 0.1,
+    "risk_pct": 0.5
+  },
+  "baseline_ref": "JP225_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_prior": {
+      "n": 79,
+      "WR": 43.04,
+      "E_N": 0.0759,
+      "EF_prior_pp": -1.262
+    },
+    "engine_tip_measured": {
+      "n": 79,
+      "WR": 43.04,
+      "BM_pp": 3.038,
+      "E_N": 0.0759,
+      "Leak_pp": 2.447,
+      "EF_pp": 0.591,
+      "tip_EF_cleared": true
+    },
+    "offline_arm_tip_p4": {
+      "n_fire": 30,
+      "n_skip": 36,
+      "WR": 43.33,
+      "E_N": 0.0833,
+      "EF_measured_pp": 0.886,
+      "fire_retention_pct": 38.0,
+      "L3_halt": 13
+    },
+    "skip_only_May_OR_Jul_measured": {
+      "n": 43,
+      "WR": 53.49,
+      "BM_pp": 13.488,
+      "E_N": 0.3372,
+      "Leak_pp": 2.447,
+      "EF_pp": 11.041,
+      "tip_EF_cleared": true
+    },
+    "note": "Tester EA ledger for magic 26151907 not yet run \u2014 offline P4 tip May\u2228Jul stack + measured Leak tip EF>0 is the CF basis for HITL. Run JPN225stack.set in Strategy Tester next."
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+    "expansion_EF": "PASS tip EF +0.59 pp under measured Leak 2.45 pp (engine); arm +11.0 pp skip-only",
+    "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR19670 declared (P6-T03)",
+    "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+    "G5_stress": "PARTIAL \u2014 L2 arm-width PASS_WITH_NOTES (P6); SL/TP not stressed",
+    "Leak_measured": "CLOSED \u2014 2.45 pp deal-fill median (live ~2300 pts = re-check)",
+    "L2AI": "DISARM \u2014 tip AUC 0.493 \u00b7 challenger EMPTY",
+    "verdict_ladder": "EXPANSION_OS_ARMED \u2014 not PRODUCTION-WORTHY \u00b7 not live FX/EU replace"
+  },
+  "p6_harden_summary": {
+    "L9": "no_LIVE \u2014 London/H08 HOLD \u00b7 spread DISARM",
+    "L2_stress": "PASS_WITH_NOTES",
+    "ATR_G3": "PASS",
+    "keep": "May\u2228Jul \u00b7 Wed widen stall"
+  },
+  "ledger_sample": {
+    "ledger_path": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\blotter\\archive\\JP225-AOS-P4\\ledger_det_may_or_jul.csv",
+    "source": "offline_P4_tip_may_or_jul_shadow",
+    "n_rows": 79,
+    "decision_counts": {
+      "WOULD_SKIP": 36,
+      "FIRE_OK": 30,
+      "HALT": 13
+    },
+    "l2det_reasons": {
+      "L2DET_SKIP_MAY": 23,
+      "L2DET_SKIP_JUL": 13
+    },
+    "head_skip": [
+      {
+        "t": "2026.05.01 13:15",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_MAY",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.01 14:30",
+        "side": "SELL",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_MAY|L8_ADVISE_ABORT_OVERNIGHT_SL",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.04 10:30",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_MAY",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.04 16:30",
+        "side": "BUY",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_MAY",
+        "mode": "SHADOW"
+      },
+      {
+        "t": "2026.05.06 08:30",
+        "side": "SELL",
+        "decision": "WOULD_SKIP",
+        "reason": "L2DET_SKIP_MAY",
+        "mode": "SHADOW"
+      }
+    ],
+    "head_fire": [
+      {
+        "t": "2026.06.01 13:00",
+        "side": "SELL",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.06.01 13:45",
+        "side": "BUY",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK|L8_ADVISE_ABORT_FLASH_SL",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.06.01 14:15",
+        "side": "BUY",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.06.03 13:00",
+        "side": "BUY",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      },
+      {
+        "t": "2026.06.04 09:30",
+        "side": "BUY",
+        "decision": "FIRE_OK",
+        "reason": "FIRE_OK",
+        "life": "WARMUP",
+        "f_rec": 1.0
+      }
+    ]
+  },
+  "rollback": {
+    "ai_pin": "python infra/artefacts/models/L2skip_jp225/rollback_l2skip_jp225.py rollback --to DISARM",
+    "ea_det_off": "InpAOS_JP_L2detEnable=false",
+    "ea_aos_off": "InpAOS_Enable=false \u2192 load P1 wrLift fade chart set",
+    "kill_switch": "InpAiKillSwitch=true"
+  },
+  "hitl": {
+    "status": "SIGNED",
+    "signed_utc": "2026-10-19T15:51:46.562664+00:00",
+    "signed_local": "2026-10-19T16:45:00+01:00",
+    "signer": "operator (chat HITL \u2014 proceed with P7 + JPN225stack)",
+    "decision": "ARM_RESEARCH_OS",
+    "acknowledged": [
+      "Not AUD/EUR/UK/DE40 live book replace",
+      "Not production G0\u2013G5 admit",
+      "Leak measured 2.45 pp (live spread re-check before capital)",
+      "L2 AI remains DISARM",
+      "L9 London/H08/H14 shadow only \u2014 not LIVE",
+      "Expansion sleeve only \u00b7 JPN225stack name"
+    ]
+  },
+  "verdict": "ACCEPT_ARM_RESEARCH_OS"
+}

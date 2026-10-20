@@ -1,0 +1,136 @@
+{
+  "aos_task": "AAPL-M5-AOS-P7",
+  "packet_id": "AAPL_M5_AOS_RESEARCH_v1",
+  "generated_utc": "2026-10-20T14:10:00+00:00",
+  "hitl_signed_utc": "2026-10-20T14:10:00+00:00",
+  "hitl_source": "operator confirmation in chat — proceed P7 + AAPL_5m_stack",
+  "framework_unified": "1.0",
+  "framework_aapl": "0.1.1",
+  "roadmap": "aios_roadmap_M5 0.1.7",
+  "canvas": "display_only",
+  "verdict": "ARM_RESEARCH_OS",
+  "scope": {
+    "sleeve": "AAPL/Apple M5 Balanced expansion research OS (tip WATCH)",
+    "not": [
+      "M15 Harvest candidate replace (26092501)",
+      "EURUSD/AUDUSD/DE40/UK100 live replace",
+      "PRODUCTION-WORTHY full G0–G5 admit",
+      "L2 AI LIVE_WITHHOLD",
+      "geometry retune / thin SL under fat spread",
+      "L9 RTH/spread LIVE",
+      "M15 L2det_aapl Thu/18 pin on M5"
+    ]
+  },
+  "identity": {
+    "engine_magic": 26102011,
+    "research_os_magic": 26162017,
+    "ea_version_min": "1.24",
+    "preset_armed": "AAPL_5m_stack.set",
+    "preset_armed_alias": "BMRG-M5-AAPL-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "BMRG-M5-AAPL-6M-Balanced_TPgtSL.set",
+    "preset_p4_tester": "BMRG-M5-AAPL-6M-P4_research_OS_W50.set",
+    "symbol": "AAPL",
+    "mt5_symbol": "Apple",
+    "tf": "M5",
+    "pool_role": "tip_WATCH"
+  },
+  "armed_stack": {
+    "engine": "Balanced P0 M5 G0 FIXED_RR RR≈1.47 SL190/TP280",
+    "L2det": "L2det_aapl_m5_v1b LIVE_WITHHOLD (Jul ∨ Wed)",
+    "L2AI": "DISARM",
+    "L3": "ON DD25% / BELOW halt · W20 EN>0×2 unlatch",
+    "L4": "ON size mod · W50",
+    "L6": "ledger ON",
+    "L8": "advise-only (not live abort)",
+    "L9": "H14/overnight DISARM · H18/H19 HOLD_SHADOW · spread≥30 no L9 LIVE",
+    "ATR_min_max": [24, 98],
+    "BBw_pct": [0.3, 2.0],
+    "Leak_source": "profile_authority",
+    "Leak_pp": 15.3
+  },
+  "baseline_ref": "AAPL_M5_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_MayOct": {
+      "n": 77,
+      "WR": 46.8,
+      "E_N": 0.16,
+      "BM_pp": 6.3,
+      "final_delta_usd": 44.5,
+      "Stage0": "PASS",
+      "Stage1_true_Leak": "FAIL_Fragile"
+    },
+    "offline_v1b_tip_P2": {
+      "n_kept": 44,
+      "E_N": 0.349,
+      "delta_E_N_vs_engine": 0.193,
+      "delta_EF_profile_pp": 7.79,
+      "retention_pct": 57.1,
+      "skip_precision_losers": 0.636,
+      "fp_may": 1,
+      "fp_mon": 0
+    },
+    "p4_det_stack": {
+      "n_fire": 41,
+      "n_l2det_skip": 33,
+      "n_l3_halt": 3,
+      "WR": 53.66,
+      "E_N": 0.3273,
+      "EF_profile_pp": -2.067,
+      "final_life": "NEAR",
+      "l8_advise_on_losers": 21,
+      "delta_E_N_vs_baseline": 0.1708
+    },
+    "p3_health": {
+      "P0_tip_BELOW_trips": 1,
+      "v1b_tip_BELOW_trips": 1,
+      "v1b_max_dd_pct": 2.565,
+      "P0_max_dd_pct": 7.947,
+      "note": "L3 BELOW retained · v1b cuts MaxDD vs P0"
+    },
+    "p5_ai": {
+      "semver": "L2skip_aapl_m5_p_prior_20261020_140136",
+      "auc_tip_oos": 0.501,
+      "verdict": "DISARM",
+      "challenger": "EMPTY",
+      "rollback_drill": "PASS"
+    },
+    "p6_harden": {
+      "L9": "no_LIVE",
+      "L2_bound": "keep_v1b_Jul_OR_Wed",
+      "ATR_BBW_G3": "PASS_24_98_BBW_0.30_2.00"
+    }
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS — magic/preset locked; G0 MaxLevels=1",
+    "expansion_E_N": "PASS tip OS E_N>0 under det_v1b (+0.327R fire book)",
+    "expansion_EF_profile": "HOLD — EF_profile still <0 under Leak 15.3pp (−2.1 pp); measured Leak OPEN; Stage-1 Fragile acknowledged",
+    "G3_regime_filtered": "PASS — ATR 24–98 · BBw 0.30–2.00 declared (P6-T03)",
+    "G4_MC": "DEFERRED — expansion research; not production admit",
+    "G5_live": "DEFERRED — not M15 Harvest / FX live replace"
+  },
+  "hitl_acknowledgements": [
+    "Not a replace for M15 Harvest candidate (26092501) or EUR/AUD/DE40/UK live books",
+    "Not a twin of M15 L2det_aapl Thu/18 — M5 map is Jul∨Wed only",
+    "Expansion research arm only — full G0–G5 production admit deferred",
+    "Leak still profile 15.3 pp (measured deal Leak OPEN) · Stage-1 Fragile",
+    "EF_profile under Leak still negative on det stack — iterate / measure Leak before Robust claim",
+    "L2 AI remains DISARM (tip AUC ~0.50)",
+    "L9 RTH/spread approved as shadow only — not LIVE in this arm",
+    "Never thin SL under fat spread · never borrow M15 Thu/18 on M5",
+    "Operator HITL confirmed 2026-10-20 — final preset AAPL_5m_stack"
+  ],
+  "attach": {
+    "symbol": "Apple",
+    "tf": "M5",
+    "preset": "AAPL_5m_stack.set",
+    "magic": 26162017,
+    "ledger": "COMMON\\Files\\BMRG_AOS_ledger_26162017.csv",
+    "compare_window_default": "2026.05.01-2026.10.19 tip"
+  },
+  "rollback": {
+    "det_off": "InpAOS_AAPL_M5_L2detEnable=false",
+    "aos_off": "InpAOS_Enable=false · reload Balanced_TPgtSL P0",
+    "kill_l2": "InpAiKillSwitch=true",
+    "ai_pin": "rollback_l2skip_aapl_m5.py rollback --to DISARM (AI unused in this arm)"
+  }
+}

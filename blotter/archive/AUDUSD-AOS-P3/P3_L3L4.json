@@ -1,0 +1,222 @@
+{
+  "task": "AUDUSD-AOS-P3",
+  "generated_utc": "2026-10-19T14:34:23.195165+00:00",
+  "l2det_preferred": "L2det_aud_m15_v1 = BUY AND month==May",
+  "bindings": {
+    "DD_Limit_pct": 25.0,
+    "derisk_at_pct": 20.0,
+    "EquityHalt_pct": 15.0,
+    "BWR": 50.0,
+    "R": 1.0,
+    "Leak_proxy_pp": 5.0,
+    "deposit": 400.0,
+    "W_health": [
+      15,
+      20
+    ],
+    "W250_preset": 250,
+    "W250_research_floor": 50,
+    "W250_note": "Preset InpAOS_W250=250 will not arm lifecycle on tip n~41. Expansion OS uses W15/W20; set InpAOS_W250=50 when wiring research .set. Live Track B (8230931) already uses W250 \u2014 do not collide.",
+    "baseline_tip_E_N": 0.2683,
+    "baseline_fires_90d": 30,
+    "spread_baseline_med": 15.0,
+    "overnight_note": "AUDUSD M15 tip overnight_share ~0.59 \u2014 L3 MaxDD path includes multi-session inventory; measured swap still OPEN. Roadmap L8 overnight MAE advisor is P4."
+  },
+  "sims": {
+    "P0_tip": {
+      "label": "P0_tip",
+      "n": 41,
+      "final_equity": 433.0,
+      "net_pnl": 33.0,
+      "max_dd_peak_pct": 4.433,
+      "max_loss_streak": 4,
+      "max_overnight_cluster": 7,
+      "overnight_share": 0.585,
+      "trips": [
+        {
+          "i": 19,
+          "time": "2026-06-23 00:09:59",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-8.33",
+          "equity": 400.0,
+          "dd_peak": 1.48,
+          "en15": -0.0667,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 2,
+        "COMPRESSING": 1,
+        "EXPANDING": 16,
+        "NEAR": 5,
+        "STABLE": 3
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 22,
+        "NONE": 14
+      },
+      "halt_latched": true,
+      "last_life": "STABLE",
+      "last_en15": 0.3333,
+      "last_en20": 0.5,
+      "last_ef15_pp": 11.667,
+      "path_len": 41
+    },
+    "v1_BUY_May_kept": {
+      "label": "v1_BUY_May_kept",
+      "n": 39,
+      "final_equity": 439.0,
+      "net_pnl": 39.0,
+      "max_dd_peak_pct": 3.667,
+      "max_loss_streak": 3,
+      "max_overnight_cluster": 7,
+      "overnight_share": 0.615,
+      "trips": [],
+      "trip_count": 0,
+      "life_counts": {
+        "COMPRESSING": 1,
+        "EXPANDING": 16,
+        "NEAR": 5,
+        "STABLE": 3
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "INVESTIGATE": 1,
+        "NONE": 33
+      },
+      "halt_latched": false,
+      "last_life": "STABLE",
+      "last_en15": 0.3333,
+      "last_en20": 0.5,
+      "last_ef15_pp": 11.667,
+      "path_len": 39
+    },
+    "alt_BUY_Thu_kept": {
+      "label": "alt_BUY_Thu_kept",
+      "n": 36,
+      "final_equity": 436.0,
+      "net_pnl": 36.0,
+      "max_dd_peak_pct": 2.934,
+      "max_loss_streak": 3,
+      "max_overnight_cluster": 6,
+      "overnight_share": 0.611,
+      "trips": [],
+      "trip_count": 0,
+      "life_counts": {
+        "COMPRESSING": 1,
+        "EXPANDING": 12,
+        "NEAR": 4,
+        "STABLE": 5
+      },
+      "bus_counts": {
+        "DERISK": 4,
+        "INVESTIGATE": 1,
+        "NONE": 31
+      },
+      "halt_latched": false,
+      "last_life": "STABLE",
+      "last_en15": 0.3333,
+      "last_en20": 0.5,
+      "last_ef15_pp": 11.667,
+      "path_len": 36
+    },
+    "P0_long_diagnostic": {
+      "label": "P0_long_diagnostic",
+      "n": 95,
+      "final_equity": 439.0,
+      "net_pnl": 39.0,
+      "max_dd_peak_pct": 6.459,
+      "max_loss_streak": 7,
+      "max_overnight_cluster": 7,
+      "overnight_share": 0.453,
+      "trips": [
+        {
+          "i": 20,
+          "time": "2026-02-22 23:47:27",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-8.33",
+          "equity": 403.0,
+          "dd_peak": 1.47,
+          "en15": -0.0667,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 33,
+        "COMPRESSING": 2,
+        "EXPANDING": 20,
+        "NEAR": 14,
+        "STABLE": 12
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 75,
+        "NONE": 15
+      },
+      "halt_latched": true,
+      "last_life": "STABLE",
+      "last_en15": 0.3333,
+      "last_en20": 0.5,
+      "last_ef15_pp": 11.667,
+      "path_len": 95
+    },
+    "v1_long_kept_diagnostic": {
+      "label": "v1_long_kept_diagnostic",
+      "n": 93,
+      "final_equity": 445.0,
+      "net_pnl": 45.0,
+      "max_dd_peak_pct": 6.459,
+      "max_loss_streak": 7,
+      "max_overnight_cluster": 7,
+      "overnight_share": 0.462,
+      "trips": [
+        {
+          "i": 20,
+          "time": "2026-02-22 23:47:27",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-8.33",
+          "equity": 403.0,
+          "dd_peak": 1.47,
+          "en15": -0.0667,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 25,
+        "COMPRESSING": 2,
+        "EXPANDING": 21,
+        "NEAR": 18,
+        "STABLE": 13
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 73,
+        "NONE": 15
+      },
+      "halt_latched": true,
+      "last_life": "STABLE",
+      "last_en15": 0.3333,
+      "last_en20": 0.5,
+      "last_ef15_pp": 11.667,
+      "path_len": 93
+    }
+  },
+  "recommend_bus": {
+    "BELOW": "L3_HALT f=0",
+    "COMPRESSING": "INVESTIGATE (regime/execution) \u00b7 f=0.5",
+    "NEAR / DERISK_0.8_DD": "DERISK f<=0.5",
+    "STREAK>=5": "STREAK_WATCH \u00b7 align engine pause",
+    "FREQUENCY_STALL": "WARN only \u2014 do not lift ATR max / drop CD / re-enable MonTue",
+    "COST_DRIFT": "INVESTIGATE (spread \u226b tip median 15)",
+    "EXPANDING/STABLE": "NONE f=1.0",
+    "L2det WOULD_SKIP": "skip fire (not an L3 trip)",
+    "OVERNIGHT_CLUSTER": "note for L8 / measured swap (P4) \u2014 not auto-halt"
+  },
+  "unlatch": {
+    "HALT_f0_BELOW_FRONTIER": "Clear latch only when W20 E_N > 0 for 2 consecutive evals and dd_peak < 20%."
+  }
+}

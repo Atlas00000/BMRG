@@ -3,7 +3,7 @@
 //| Execution engine + filters, regimes, risk%, exposure, containment  |
 //+------------------------------------------------------------------+
 #property copyright "BMRG Phase 1 + AOS INF"
-#property version   "1.21"
+#property version   "1.24"
 
 #include "Include/Config.mqh"
 #include "Include/Logger.mqh"
@@ -37,11 +37,11 @@ int OnInit()
    AOSInit();
 
    LogInfo(StringFormat(
-              "BMRG init OK | %s %s | BB(%d,%.1f) ATR(%d) lotMode=%d lot=%.2f risk%%=%.2f maxExp%%=%.1f magic=%d aos=%d",
+              "BMRG init OK | %s %s | BB(%d,%.1f) ATR(%d) lotMode=%d lot=%.2f risk%%=%.2f maxExp%%=%.1f magic=%d aos=%d fade=%d",
               _Symbol, EnumToString(_Period),
               InpBBPeriod, InpBBDev, InpATRPeriod,
               (int)InpLotMode, InpLot, InpRiskPercent, InpMaxExposurePct, (int)InpMagic,
-              (int)InpAOS_Enable));
+              (int)InpAOS_Enable, (int)InpUseFadeConfirm));
 
    LogCommentUpdate(InpAOS_Enable ? "BMRG+AOS ready" : "BMRG ready");
    return INIT_SUCCEEDED;

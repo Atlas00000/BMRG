@@ -1,0 +1,118 @@
+{
+  "task": "UK100-AOS-P3",
+  "generated_utc": "2026-10-12T22:32:06.409706+00:00",
+  "bindings": {
+    "DD_Limit_pct": 25.0,
+    "derisk_at_pct": 20.0,
+    "EquityHalt_pct": 15.0,
+    "BWR": 44.4,
+    "R": 1.25,
+    "Leak_proxy_pp": 4.266699999999999,
+    "W_health": [
+      15,
+      20
+    ],
+    "W250_preset": 250,
+    "W250_note": "Preset InpAOS_W250=250 will not arm lifecycle on tip n~50. Expansion OS uses W15/W20 until n allows W100/W250.",
+    "baseline_fires_90d": 40
+  },
+  "sims": {
+    "P0_tip": {
+      "label": "P0_tip",
+      "n": 51,
+      "final_equity": 513.12,
+      "net_pnl": 13.12,
+      "max_dd_peak_pct": 3.524,
+      "max_loss_streak": 6,
+      "trips": [
+        {
+          "i": 29,
+          "time": "2026-08-05 11:08:38",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.100 EF15=-8.71",
+          "equity": 503.75,
+          "dd_peak": 2.07,
+          "en15": -0.1,
+          "en20": -0.1,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 10,
+        "COMPRESSING": 1,
+        "EXPANDING": 14,
+        "NEAR": 10,
+        "STABLE": 2
+      },
+      "bus_counts": {
+        "DERISK": 7,
+        "INVESTIGATE": 1,
+        "L3_HALT": 22,
+        "NONE": 21
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.35,
+      "last_en20": 0.2375,
+      "path_len": 51
+    },
+    "v1b_kept": {
+      "label": "v1b_kept",
+      "n": 33,
+      "final_equity": 530.0,
+      "net_pnl": 30.0,
+      "max_dd_peak_pct": 1.435,
+      "max_loss_streak": 3,
+      "trips": [],
+      "trip_count": 0,
+      "life_counts": {
+        "COMPRESSING": 3,
+        "EXPANDING": 13,
+        "STABLE": 3
+      },
+      "bus_counts": {
+        "FREQUENCY_STALL_WARN": 3,
+        "INVESTIGATE": 3,
+        "NONE": 27
+      },
+      "halt_latched": false,
+      "last_life": "EXPANDING",
+      "last_en15": 0.2,
+      "last_en20": 0.2375,
+      "path_len": 33
+    },
+    "v1b_plus_Jul_kept": {
+      "label": "v1b_plus_Jul_kept",
+      "n": 29,
+      "final_equity": 528.75,
+      "net_pnl": 28.75,
+      "max_dd_peak_pct": 1.439,
+      "max_loss_streak": 3,
+      "trips": [],
+      "trip_count": 0,
+      "life_counts": {
+        "COMPRESSING": 1,
+        "EXPANDING": 12,
+        "STABLE": 2
+      },
+      "bus_counts": {
+        "FREQUENCY_STALL_WARN": 5,
+        "INVESTIGATE": 1,
+        "NONE": 23
+      },
+      "halt_latched": false,
+      "last_life": "EXPANDING",
+      "last_en15": 0.2,
+      "last_en20": 0.35,
+      "path_len": 29
+    }
+  },
+  "recommend_bus": {
+    "BELOW": "L3_HALT f=0",
+    "COMPRESSING": "INVESTIGATE (regime/execution) \u00b7 f=0.5",
+    "NEAR / DERISK_0.8_DD": "DERISK f<=0.5",
+    "STREAK>=5": "STREAK_WATCH \u00b7 align engine pause",
+    "FREQUENCY_STALL": "WARN only \u2014 do not lift ATR max",
+    "EXPANDING/STABLE": "NONE f=1.0"
+  }
+}

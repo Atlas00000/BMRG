@@ -1,5 +1,6 @@
+import { useMemo } from 'react';
 import { useAuth } from '../api/AuthContext';
-import { fetchBlotterCurrent, fetchBlotterIndex } from '../api/client';
+import { fetchBlotterCurrent, fetchBlotterIndex, fetchLiveStatus } from '../api/client';
 import { useAsync } from '../api/useAsync';
 import { PageEnter } from '../components/motion';
 import { EmptyState, SkeletonMetricStrip } from '../components/patterns';
@@ -7,6 +8,12 @@ import { Badge, Button, Surface, Text } from '../components/primitives';
 import { PageFrame } from '../components/shells';
 import { AuthGate } from '../features/auth/AuthGate';
 import { PRESET_CATALOG } from '../features/presets/catalog';
+import {
+  parseBlotterCurrent,
+  presetDisplayName,
+  productVerdictLabel,
+} from '../lib/productCopy';
+import { verdictTone } from '../../design/backendMap';
 
 const REVIEW_CHECKLIST = [
   'Scores reviewed for the active task',
@@ -43,8 +50,24 @@ function presetStackLabel(stack: string): string {
 export function Records() {
   const current = useAsync(() => fetchBlotterCurrent(), []);
   const index = useAsync(() => fetchBlotterIndex(), []);
+  const live = useAsync(() => fetchLiveStatus(), []);
   const { allows, auth, setRole } = useAuth();
   const ftLive = allows('AOS_LIVE_FT');
+
+  const pointer = current.status === 'ok' ? parseBlotterCurrent(current.data) : null;
+  const attachedPreset =
+    live.status === 'ok' ? String(live.data.preset_id ?? '') : '';
+
+  const presets = useMemo(() => {
+    const list = [...PRESET_CATALOG];
+    if (!attachedPreset) return list;
+    return list.sort((a, b) => {
+      const aHit = a.file.includes(attachedPreset) || attachedPreset.includes(a.file.replace(/\.set$/i, ''));
+      const bHit = b.file.includes(attachedPreset) || attachedPreset.includes(b.file.replace(/\.set$/i, ''));
+      if (aHit === bHit) return 0;
+      return aHit ? -1 : 1;
+    });
+  }, [attachedPreset]);
 
   return (
     <PageFrame
@@ -71,25 +94,38 @@ export function Records() {
       {(current.status === 'loading' || index.status === 'loading') && <SkeletonMetricStrip />}
 
       <PageEnter delay={1}>
-        <Surface className="ln-section" accent="signal">
-          <Text as="div" variant="label" tone="faint">
-            Current pointer
-          </Text>
+        <Surface className="ln-section" accent="signal" aria-label="Current pointer">
           {current.status === 'error' ? (
             <EmptyState title="Pointer missing" detail="No current review pointer." />
-          ) : current.status === 'ok' ? (
-            <pre className="ln-journal" style={{ whiteSpace: 'pre-wrap' }}>
-              {current.data}
-            </pre>
+          ) : pointer ? (
+            <>
+              <Text as="h2" variant="title">
+                {pointer.taskId || 'Unscored'}
+              </Text>
+              <dl className="ln-kv">
+                <dt>Verdict</dt>
+                <dd>
+                  <Badge tone={verdictTone(pointer.verdict)}>
+                    {productVerdictLabel(pointer.verdict.split('—')[0]?.trim() || pointer.verdict)}
+                  </Badge>
+                  {pointer.verdict.includes('—') ? (
+                    <Text as="span" variant="micro" tone="muted" style={{ marginLeft: '0.5rem' }}>
+                      {pointer.verdict.split('—').slice(1).join('—').trim()}
+                    </Text>
+                  ) : null}
+                </dd>
+                <dt>Archived</dt>
+                <dd>{pointer.archivedAt || '—'}</dd>
+                <dt>Path</dt>
+                <dd>{pointer.archivePath || '—'}</dd>
+              </dl>
+            </>
           ) : null}
         </Surface>
       </PageEnter>
 
       <PageEnter delay={2}>
-        <Surface className="ln-section">
-          <Text as="div" variant="label" tone="faint">
-            Inbox
-          </Text>
+        <Surface className="ln-section" aria-label="Inbox">
           {index.status === 'ok' ? (
             <Text as="p" tone="muted">
               {index.data.inbox.length === 0
@@ -103,10 +139,7 @@ export function Records() {
       </PageEnter>
 
       <PageEnter delay={3}>
-        <Surface className="ln-section">
-          <Text as="div" variant="label" tone="faint">
-            Archive
-          </Text>
+        <Surface className="ln-section" aria-label="Archive">
           {index.status === 'ok' ? (
             <table className="ln-table">
               <thead>
@@ -131,10 +164,12 @@ export function Records() {
       </PageEnter>
 
       <PageEnter delay={4}>
-        <Surface className="ln-section">
-          <Text as="div" variant="label" tone="faint">
-            Preset library
-          </Text>
+        <Surface className="ln-section" aria-label="Preset library">
+          {attachedPreset ? (
+            <Text as="p" variant="micro" tone="muted">
+              Attached now: {presetDisplayName(attachedPreset)}
+            </Text>
+          ) : null}
           <table className="ln-table">
             <thead>
               <tr>
@@ -143,26 +178,32 @@ export function Records() {
               </tr>
             </thead>
             <tbody>
-              {PRESET_CATALOG.map((p) => (
-                <tr key={p.role}>
-                  <td>{p.role}</td>
-                  <td>
-                    <Badge tone={presetStackLabel(p.stack) === 'Paper' ? 'skip' : 'signal'}>
-                      {presetStackLabel(p.stack)}
-                    </Badge>
-                  </td>
-                </tr>
-              ))}
+              {presets.map((p) => {
+                const isAttach =
+                  !!attachedPreset &&
+                  (p.file.includes(attachedPreset) ||
+                    attachedPreset.includes(p.file.replace(/\.set$/i, '')));
+                return (
+                  <tr key={p.role} className={isAttach ? 'ln-table__row--active' : undefined}>
+                    <td>
+                      {p.role}
+                      {isAttach ? ' · attached' : ''}
+                    </td>
+                    <td>
+                      <Badge tone={presetStackLabel(p.stack) === 'Paper' ? 'skip' : 'signal'}>
+                        {presetStackLabel(p.stack)}
+                      </Badge>
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </Surface>
       </PageEnter>
 
       <PageEnter delay={5}>
-        <Surface className="ln-section">
-          <Text as="div" variant="label" tone="faint">
-            Forward-test prep
-          </Text>
+        <Surface className="ln-section" aria-label="Forward-test prep">
           <Badge tone={ftLive ? 'ok' : 'halt'}>{ftLive ? 'Programme open' : 'Blocked'}</Badge>
           <Text as="p" variant="micro" tone="muted">
             Attach checklist and metrics contract. Programme mutate stays blocked without extra
@@ -208,10 +249,7 @@ export function Records() {
       </PageEnter>
 
       <PageEnter delay={6}>
-        <Surface className="ln-section" elevation="plane2">
-          <Text as="div" variant="label" tone="faint">
-            Review checklist
-          </Text>
+        <Surface className="ln-section" elevation="plane2" aria-label="Review checklist">
           <ol style={{ margin: '0.5rem 0 0', paddingLeft: '1.1rem' }}>
             {REVIEW_CHECKLIST.map((item) => (
               <li key={item} style={{ marginBottom: '0.4rem' }}>

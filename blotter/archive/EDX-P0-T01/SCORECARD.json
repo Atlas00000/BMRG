@@ -1,0 +1,81 @@
+{
+  "task": "EDX-P0-T01",
+  "identity_ok": true,
+  "expected_preset": "EDX-P0-T01_baseline_G0_AUDUSD-M5_MayAug.set",
+  "expected_magic": "8230101",
+  "observed_magic": "8230101",
+  "observed_sl_tp": "300/300",
+  "observed_bb": "2.2",
+  "window": "2026.05.01->2026.08.31",
+  "n": 58,
+  "WR": 62.07,
+  "AW": 1.0,
+  "AL": 1.0,
+  "R": 1.0,
+  "RR": 1.0,
+  "RR_R": 0.0,
+  "BWR": 50.0,
+  "BM_pp": 12.07,
+  "FMI": 0.241,
+  "med_spread_pts": 15,
+  "c_R": 0.15,
+  "Leak_pp": 7.5,
+  "EF_pp": 4.57,
+  "M_wilson_pp": 12.12,
+  "M_normal_pp": 12.49,
+  "E_N": 0.241,
+  "PF": 1.636,
+  "final": 444.39,
+  "pnl": 44.39,
+  "zone": "Fragile",
+  "tier": "Insufficient",
+  "side": "WR-side",
+  "al_claim": "REJECTED (R~RR; AL~1R)",
+  "max_loss_streak": 3,
+  "expected_worst_streak": 4.2,
+  "monthly": {
+    "2026-05": {
+      "n": 17,
+      "WR": 70.6,
+      "E_N": 0.412
+    },
+    "2026-06": {
+      "n": 13,
+      "WR": 53.8,
+      "E_N": 0.077
+    },
+    "2026-07": {
+      "n": 19,
+      "WR": 63.2,
+      "E_N": 0.263
+    },
+    "2026-08": {
+      "n": 9,
+      "WR": 55.6,
+      "E_N": 0.111
+    }
+  },
+  "W20": [
+    {
+      "i": 0,
+      "wr": 0.65,
+      "e_n": 0.30000000000000004
+    },
+    {
+      "i": 10,
+      "wr": 0.65,
+      "e_n": 0.30000000000000004
+    },
+    {
+      "i": 20,
+      "wr": 0.65,
+      "e_n": 0.30000000000000004
+    },
+    {
+      "i": 30,
+      "wr": 0.6,
+      "e_n": 0.19999999999999996
+    }
+  ],
+  "init": "AUDUSD PERIOD_M5 | BB(20,2.2) ATR(14) lotMode=1 lot=0.01 risk%=0.50 maxExp%=20.0 magic=8230101 aos=0"
+}

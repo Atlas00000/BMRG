@@ -1,0 +1,12 @@
+{
+  "semver": null,
+  "status": "EMPTY",
+  "role": "ai_challenger",
+  "note": "No AI challenger set. Promote gates not cleared (AUC / tip CF / chrono). Overlay champ L2det_usdjpy_v1c_near_atr_OR_H16.",
+  "last_train_semver": "L2skip_usdjpy_p_pretip_20261019_155324",
+  "last_auc_tip_oos": 0.4706994328922495,
+  "last_best_verdict": "HOLD_SHADOW",
+  "last_chrono_verdict": "SHADOW_CANDIDATE",
+  "shadow_candidate_eligible": false,
+  "updated_utc": "2026-10-19T15:53:24.075187+00:00"
+}

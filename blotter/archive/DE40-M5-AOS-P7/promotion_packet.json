@@ -1,0 +1,127 @@
+{
+  "aos_task": "DE40-M5-AOS-P7",
+  "packet_id": "DE40_M5_AOS_RESEARCH_v1",
+  "generated_utc": "2026-10-20T12:25:00+00:00",
+  "hitl_signed_utc": "2026-10-20T12:25:00+00:00",
+  "hitl_source": "operator confirmation in chat — proceed P7 + DE40_5m_stack",
+  "framework_unified": "1.0",
+  "framework_de40": "0.1.0",
+  "canvas": "display_only",
+  "verdict": "ARM_RESEARCH_OS",
+  "scope": {
+    "sleeve": "DE40/DE30 M5 expansion research OS",
+    "not": [
+      "EURUSD/AUDUSD/UK100 live replace",
+      "DE40 M15 research OS twin (DE40stack / 26141907)",
+      "PRODUCTION-WORTHY full G0–G5 admit",
+      "L2 AI LIVE_WITHHOLD",
+      "geometry retune / thin SL",
+      "L9 Frankfurt/H13/spread LIVE",
+      "M15 L2det BUY∧nearATR pin on M5"
+    ]
+  },
+  "identity": {
+    "engine_magic": 26101903,
+    "research_os_magic": 26151907,
+    "ea_version_min": "1.24",
+    "preset_armed": "DE40_5m_stack.set",
+    "preset_armed_alias": "BMRG-M5-DE40-6M-P7_research_OS_ARMED.set",
+    "preset_engine": "BMRG-M5-DE40-6M-P0_balanced_chart.set",
+    "preset_p4_tester": "BMRG-M5-DE40-6M-P4_research_OS_W50.set",
+    "symbol": "DE40",
+    "mt5_symbol": "DE30",
+    "tf": "M5"
+  },
+  "armed_stack": {
+    "engine": "Balanced P0 M5 G0 FIXED_RR RR1.25 SL7000/TP8750",
+    "L2det": "L2det_de40_m5_v1b LIVE_WITHHOLD ((BUY∧H14|16)∨(BUY∧Oct))",
+    "L2AI": "DISARM",
+    "L3": "ON DD25% / BELOW halt · W20 EN>0×2 unlatch",
+    "L4": "ON size mod · W50",
+    "L6": "ledger ON",
+    "L8": "advise-only (not live abort)",
+    "L9": "Frankfurt/H08 DISARM · H13/spread HOLD_SHADOW — not LIVE",
+    "ATR_max": 2380,
+    "Leak_source": "prior_authority",
+    "Leak_pp": 7.0
+  },
+  "baseline_ref": "DE40_M5_AOS_BASELINE_v1",
+  "health_cf": {
+    "engine_tip_MayOct": {
+      "n": 123,
+      "WR": 53.7,
+      "E_N": 0.207,
+      "EF_prior_pp": 2.2,
+      "final_delta_usd": 207.76
+    },
+    "offline_v1b_tip_P2": {
+      "n_kept": 110,
+      "WR": 57.3,
+      "E_N": 0.289,
+      "EF_prior_pp": 5.83,
+      "delta_E_N_vs_engine": 0.081,
+      "retention_pct": 89.4,
+      "skip_precision_losers": 0.769
+    },
+    "p4_det_stack": {
+      "n_fire": 104,
+      "n_l2det_skip": 13,
+      "n_l3_halt": 6,
+      "WR": 57.69,
+      "E_N": 0.2981,
+      "EF_prior_pp": 6.248,
+      "final_life": "STABLE",
+      "l8_advise_on_losers": 14
+    },
+    "p3_health": {
+      "P0_tip_BELOW_trips": 1,
+      "v1b_tip_BELOW_trips": 1,
+      "v1b_end_life": "NEAR",
+      "note": "L3 BELOW retained · v1b improves end-health vs P0 BELOW finish"
+    },
+    "p5_ai": {
+      "semver": "L2skip_de40_m5_p_prior_20261020_121202",
+      "auc_tip_oos": 0.51,
+      "verdict": "DISARM",
+      "challenger": "EMPTY",
+      "rollback_drill": "PASS"
+    },
+    "p6_harden": {
+      "L9_frank_H08": "DISARM",
+      "L9_H13_spread": "HOLD_SHADOW_not_LIVE",
+      "L2_bound": "keep_v1b",
+      "ATR_G3": "PASS_2380"
+    }
+  },
+  "gates_edge_framework": {
+    "G0_identity": "PASS — magic/preset locked; G0 MaxLevels=1",
+    "expansion_EF": "PASS tip OS EF>0 under Leak prior 7.0pp",
+    "G3_regime_filtered": "PASS — session+skipTue+ATR2380 declared (P6-T03)",
+    "G4_MC": "DEFERRED — expansion research; not production admit",
+    "G5_live": "DEFERRED — not FX/UK/M15 live replace"
+  },
+  "hitl_acknowledgements": [
+    "Not a replace for EURUSD / AUDUSD / UK100 live or research books",
+    "Not a twin of DE40 M15 research OS (DE40stack / 26141907 / L2det BUY∧nearATR)",
+    "Expansion research arm only — full G0–G5 production admit deferred",
+    "Leak still prior 7.0 pp (measured deal Leak OPEN)",
+    "L2 AI remains DISARM (tip AUC ~0.51)",
+    "L9 Frankfurt/H13/spread approved as shadow only — not LIVE in this arm",
+    "Never thin SL under fat spread · never borrow M15 L2det on M5",
+    "Operator HITL confirmed 2026-10-20 — final preset DE40_5m_stack"
+  ],
+  "attach": {
+    "symbol": "DE30",
+    "tf": "M5",
+    "preset": "DE40_5m_stack.set",
+    "magic": 26151907,
+    "ledger": "COMMON\\Files\\BMRG_AOS_ledger_26151907.csv",
+    "compare_window_default": "2026.05.01-2026.10.19 tip"
+  },
+  "rollback": {
+    "det_off": "InpAOS_DE_M5_L2detEnable=false",
+    "aos_off": "InpAOS_Enable=false · reload P0 balanced M5",
+    "kill_l2": "InpAiKillSwitch=true",
+    "ai_pin": "rollback_l2skip_de40_m5.py rollback --to DISARM (AI unused in this arm)"
+  }
+}

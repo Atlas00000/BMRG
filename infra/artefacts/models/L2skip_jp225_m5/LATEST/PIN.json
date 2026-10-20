@@ -1,0 +1,12 @@
+{
+  "semver": "L2skip_jp225_m5_p_prior_20261020_130822",
+  "mode": "SHADOW_ONLY",
+  "role": "shadow_artifact",
+  "overlay_champ": "L2det_jp225_m5_v1c",
+  "ai_champ": null,
+  "updated_utc": "2026-10-20T13:08:22.534225+00:00",
+  "restore_reason": "P5-T03_rollback_drill_restore",
+  "previous_semver": null,
+  "auc_tip_oos": 0.49044289044289036,
+  "best_verdict": "DISARM"
+}

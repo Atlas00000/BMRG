@@ -1,0 +1,332 @@
+{
+  "task": "JP225-AOS-P3",
+  "generated_utc": "2026-10-19T15:06:31.518843+00:00",
+  "bindings": {
+    "DD_Limit_pct": 25.0,
+    "derisk_at_pct": 20.0,
+    "EquityHalt_pct": 15.0,
+    "BWR": 40.0,
+    "R": 1.5,
+    "Leak_prior_pp": 4.3,
+    "Leak_proxy_pp": 4.8151,
+    "Leak_source_authority": "prior_4.3pp_until_deals",
+    "W_health": [
+      15,
+      20
+    ],
+    "W50_optional": 50,
+    "W250_preset": 250,
+    "W250_note": "Preset InpAOS_W250=250 will not arm lifecycle on tip n=79. Expansion OS uses W15/W20; adopt W50 when wiring research .set.",
+    "baseline_tip_E_N": 0.0759,
+    "baseline_fires_90d": 60,
+    "l2_overlay": "May\u2228Jul ARM_SOFT \u00b7 Wed/H14 HOLD \u00b7 SELL\u2227May ARM narrow",
+    "overnight_note": "Index cash sleeve \u2014 L8 secondary (P4); cluster note only"
+  },
+  "sims": {
+    "P1_tip": {
+      "label": "P1_tip",
+      "n": 79,
+      "final_equity": 509.28,
+      "net_pnl": 9.28,
+      "max_dd_peak_pct": 3.672,
+      "max_loss_streak": 11,
+      "max_overnight_cluster": 1,
+      "nights_held_share": 0.0886,
+      "trips": [
+        {
+          "i": 19,
+          "time": "2026-05-28 14:12:21",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=-0.375 EF15=-30.97",
+          "equity": 488.4,
+          "dd_peak": 3.37,
+          "en15": -0.6667,
+          "en20": -0.375,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 26,
+        "EXPANDING": 25,
+        "NEAR": 9,
+        "STABLE": 5
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 60,
+        "NONE": 8,
+        "STREAK_WATCH": 6
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.6667,
+      "last_en20": 0.375,
+      "last_en50": 0.2,
+      "last_ef15_prior_pp": 22.367,
+      "path_len": 79
+    },
+    "arm_May_OR_Jul_kept": {
+      "label": "arm_May_OR_Jul_kept",
+      "n": 43,
+      "final_equity": 522.43,
+      "net_pnl": 22.43,
+      "max_dd_peak_pct": 1.512,
+      "max_loss_streak": 4,
+      "max_overnight_cluster": 1,
+      "nights_held_share": 0.0465,
+      "trips": [
+        {
+          "i": 29,
+          "time": "2026-08-12 12:57:39",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-10.97",
+          "equity": 503.87,
+          "dd_peak": 1.51,
+          "en15": -0.1667,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 5,
+        "EXPANDING": 16,
+        "NEAR": 5,
+        "STABLE": 3
+      },
+      "bus_counts": {
+        "DERISK": 4,
+        "FREQUENCY_STALL_WARN": 5,
+        "L3_HALT": 14,
+        "NONE": 20
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.6667,
+      "last_en20": 0.375,
+      "last_en50": null,
+      "last_ef15_prior_pp": 22.367,
+      "path_len": 43
+    },
+    "arm_May_only_kept": {
+      "label": "arm_May_only_kept",
+      "n": 56,
+      "final_equity": 517.79,
+      "net_pnl": 17.79,
+      "max_dd_peak_pct": 2.419,
+      "max_loss_streak": 4,
+      "max_overnight_cluster": 1,
+      "nights_held_share": 0.0536,
+      "trips": [
+        {
+          "i": 31,
+          "time": "2026-07-24 14:17:42",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-4.30",
+          "equity": 508.51,
+          "dd_peak": 0.6,
+          "en15": 0.0,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 17,
+        "EXPANDING": 17,
+        "NEAR": 4,
+        "STABLE": 4
+      },
+      "bus_counts": {
+        "DERISK": 4,
+        "L3_HALT": 25,
+        "NONE": 27
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.6667,
+      "last_en20": 0.375,
+      "last_en50": 0.2,
+      "last_ef15_prior_pp": 22.367,
+      "path_len": 56
+    },
+    "hold_Wed_kept": {
+      "label": "hold_Wed_kept",
+      "n": 59,
+      "final_equity": 517.02,
+      "net_pnl": 17.02,
+      "max_dd_peak_pct": 2.295,
+      "max_loss_streak": 7,
+      "max_overnight_cluster": 1,
+      "nights_held_share": 0.1186,
+      "trips": [
+        {
+          "i": 19,
+          "time": "2026-06-04 14:03:30",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-10.97",
+          "equity": 500.0,
+          "dd_peak": 1.07,
+          "en15": -0.1667,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 14,
+        "COMPRESSING": 1,
+        "EXPANDING": 19,
+        "NEAR": 8,
+        "STABLE": 3
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 40,
+        "NONE": 11,
+        "STREAK_WATCH": 3
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.3333,
+      "last_en20": 0.125,
+      "last_en50": 0.25,
+      "last_ef15_prior_pp": 9.033,
+      "path_len": 59
+    },
+    "arm_SELL_AND_May_kept": {
+      "label": "arm_SELL_AND_May_kept",
+      "n": 65,
+      "final_equity": 523.2,
+      "net_pnl": 23.2,
+      "max_dd_peak_pct": 2.393,
+      "max_loss_streak": 4,
+      "max_overnight_cluster": 1,
+      "nights_held_share": 0.0769,
+      "trips": [
+        {
+          "i": 40,
+          "time": "2026-07-24 14:17:42",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-4.30",
+          "equity": 513.92,
+          "dd_peak": 0.6,
+          "en15": 0.0,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 17,
+        "EXPANDING": 23,
+        "NEAR": 5,
+        "STABLE": 6
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 25,
+        "NONE": 35
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.6667,
+      "last_en20": 0.375,
+      "last_en50": 0.2,
+      "last_ef15_prior_pp": 22.367,
+      "path_len": 65
+    },
+    "P1_janaug": {
+      "label": "P1_janaug",
+      "n": 143,
+      "final_equity": 510.83,
+      "net_pnl": 10.83,
+      "max_dd_peak_pct": 4.39,
+      "max_loss_streak": 11,
+      "max_overnight_cluster": 1,
+      "nights_held_share": 0.0909,
+      "trips": [
+        {
+          "i": 33,
+          "time": "2026-02-26 17:49:39",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-10.97",
+          "equity": 505.41,
+          "dd_peak": 1.06,
+          "en15": -0.1667,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 65,
+        "EXPANDING": 43,
+        "NEAR": 13,
+        "STABLE": 8
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 110,
+        "NONE": 27,
+        "STREAK_WATCH": 1
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.6667,
+      "last_en20": 0.375,
+      "last_en50": 0.2,
+      "last_ef15_prior_pp": 22.367,
+      "path_len": 143
+    },
+    "arm_May_OR_Jul_janaug_kept": {
+      "label": "arm_May_OR_Jul_janaug_kept",
+      "n": 107,
+      "final_equity": 523.98,
+      "net_pnl": 23.98,
+      "max_dd_peak_pct": 2.725,
+      "max_loss_streak": 6,
+      "max_overnight_cluster": 1,
+      "nights_held_share": 0.0748,
+      "trips": [
+        {
+          "i": 33,
+          "time": "2026-02-26 17:49:39",
+          "reason": "HALT_f0_BELOW_FRONTIER EN20=0.000 EF15=-10.97",
+          "equity": 505.41,
+          "dd_peak": 1.06,
+          "en15": -0.1667,
+          "en20": 0.0,
+          "life": "BELOW"
+        }
+      ],
+      "trip_count": 1,
+      "life_counts": {
+        "BELOW": 34,
+        "EXPANDING": 40,
+        "NEAR": 13,
+        "STABLE": 6
+      },
+      "bus_counts": {
+        "DERISK": 5,
+        "L3_HALT": 74,
+        "NONE": 27,
+        "STREAK_WATCH": 1
+      },
+      "halt_latched": true,
+      "last_life": "EXPANDING",
+      "last_en15": 0.6667,
+      "last_en20": 0.375,
+      "last_en50": 0.3,
+      "last_ef15_prior_pp": 22.367,
+      "path_len": 107
+    }
+  },
+  "recommend_bus": {
+    "BELOW": "L3_HALT f=0",
+    "COMPRESSING": "INVESTIGATE (regime/execution) \u00b7 f=0.5",
+    "NEAR / DERISK_0.8_DD": "DERISK f<=0.5",
+    "STREAK>=5": "STREAK_WATCH \u00b7 align engine pause",
+    "FREQUENCY_STALL": "WARN only \u2014 do not lift ATR max / drop Fade",
+    "COST_DRIFT": "INVESTIGATE (vs journal median; live ~2300 prior separate)",
+    "EXPANDING/STABLE": "NONE f=1.0",
+    "L2det WOULD_SKIP": "skip fire (f=0 for that event) \u2014 not an L3 trip",
+    "OVERNIGHT_CLUSTER": "note \u2192 L8 (P4) \u2014 not auto-halt"
+  },
+  "unlatch_below": "After HALT_f0_BELOW_FRONTIER, clear latch only when W20 E_N > 0 for 2 consecutive evals and dd_peak < 20%."
+}

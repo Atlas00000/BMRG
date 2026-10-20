@@ -1,0 +1,29 @@
+{
+  "task": "DE40-M5-AOS-P1",
+  "window": "2026.05.01-2026.10.19",
+  "magic": 26101903,
+  "symbol": "DE30",
+  "tf": "M5",
+  "n": 123,
+  "WR": 0.536585,
+  "BM_pp": 9.2141,
+  "E_N": 0.207317,
+  "spread_pts_entry": {
+    "median": 84.0,
+    "mean": 127.886,
+    "min": 80,
+    "max": 740
+  },
+  "atr_pts_present": 123,
+  "near_atr_cap_n": 36,
+  "SL_pts": 7000.0,
+  "ATR_max": 2380.0,
+  "R_design": 1.25,
+  "c_R_proxy_2x_med": 0.024,
+  "Leak_proxy_pp": 1.0667,
+  "EF_proxy_pp": 8.1474,
+  "Leak_prior_pp": 7.000000000000001,
+  "EF_prior_pp": 2.2141,
+  "Leak_source": "journal_2x_entry_spread_median",
+  "note": "Not full deal blotter. Tester entry spreads understate live ~1020 pts. Prior 7.0 pp remains Stage-1 authority until measured deals."
+}
