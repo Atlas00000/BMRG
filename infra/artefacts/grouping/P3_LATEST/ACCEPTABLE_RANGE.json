@@ -1,0 +1,3373 @@
+{
+  "task_id": "GRP-P3-T01",
+  "generated_utc": "2026-10-22T13:30:17.487174+00:00",
+  "n": 24,
+  "rank_order": "recommended_f_budget metrics: m_hit \u2192 q_hit \u2192 sum_R \u2192 -|CVaR| \u2192 -|maxDD|",
+  "groups": [
+    {
+      "group_id": "JP225+DE40",
+      "k": 2,
+      "members": [
+        "JP225",
+        "DE40"
+      ],
+      "recommended": {
+        "scheme": "hrp",
+        "weights": {
+          "JP225": 0.483186,
+          "DE40": 0.516814
+        },
+        "metrics": {
+          "sum_R": 31.0336,
+          "mean_daily_R": 0.180428,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 5.1723,
+          "CVaR_m20": 1.5168,
+          "maxDD": -2.4496,
+          "worst_month": 0.5788,
+          "best_month": 12.1239
+        },
+        "vs_equal_sum_R": 0.0336
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.5,
+          "DE40": 0.5
+        },
+        "metrics": {
+          "sum_R": 31.0,
+          "mean_daily_R": 0.180233,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 5.1667,
+          "CVaR_m20": 1.5,
+          "maxDD": -2.5,
+          "worst_month": 0.625,
+          "best_month": 12.25
+        },
+        "notes": [
+          "JP225 clipped to research_cap 0.4",
+          "DE40 clipped to research_cap 0.4"
+        ],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 1.0,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 31.0,
+        "mean_daily_R": 0.180233,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 5.1667,
+        "CVaR_m20": 1.5,
+        "maxDD": -2.5,
+        "worst_month": 0.625,
+        "best_month": 12.25
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "JP225": 0.5,
+            "DE40": 0.5
+          },
+          "sum_R": 31.0,
+          "month_hit": 1.0,
+          "maxDD": -2.5,
+          "f_budget_sum_R": 31.0,
+          "f_budget_weights": {
+            "JP225": 0.5,
+            "DE40": 0.5
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "JP225": 0.491591,
+            "DE40": 0.508409
+          },
+          "sum_R": 31.0168,
+          "month_hit": 1.0,
+          "maxDD": -2.4748,
+          "f_budget_sum_R": 31.0,
+          "f_budget_weights": {
+            "JP225": 0.5,
+            "DE40": 0.5
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "JP225": 0.491591,
+            "DE40": 0.508409
+          },
+          "sum_R": 31.0168,
+          "month_hit": 1.0,
+          "maxDD": -2.4748,
+          "f_budget_sum_R": 31.0,
+          "f_budget_weights": {
+            "JP225": 0.5,
+            "DE40": 0.5
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "JP225": 0.483186,
+            "DE40": 0.516814
+          },
+          "sum_R": 31.0336,
+          "month_hit": 1.0,
+          "maxDD": -2.4496,
+          "f_budget_sum_R": 31.0,
+          "f_budget_weights": {
+            "JP225": 0.5,
+            "DE40": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+JP225+DE40",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "JP225": 0.333333,
+          "DE40": 0.333333
+        },
+        "metrics": {
+          "sum_R": 27.3333,
+          "mean_daily_R": 0.158915,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.5556,
+          "CVaR_m20": 1.2083,
+          "maxDD": -2.6667,
+          "worst_month": 0.0833,
+          "best_month": 9.8333
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "JP225": 0.333333,
+          "DE40": 0.333333
+        },
+        "metrics": {
+          "sum_R": 27.3333,
+          "mean_daily_R": 0.158915,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.5556,
+          "CVaR_m20": 1.2083,
+          "maxDD": -2.6667,
+          "worst_month": 0.0833,
+          "best_month": 9.8333
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.333333,
+          "research_w": 0.666666,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 27.3333,
+        "mean_daily_R": 0.158915,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 4.5556,
+        "CVaR_m20": 1.2083,
+        "maxDD": -2.6667,
+        "worst_month": 0.0833,
+        "best_month": 9.8333
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.333333,
+            "JP225": 0.333333,
+            "DE40": 0.333333
+          },
+          "sum_R": 27.3333,
+          "month_hit": 1.0,
+          "maxDD": -2.6667,
+          "f_budget_sum_R": 27.3333,
+          "f_budget_weights": {
+            "EURUSD": 0.333333,
+            "JP225": 0.333333,
+            "DE40": 0.333333
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.375991,
+            "JP225": 0.306757,
+            "DE40": 0.317252
+          },
+          "sum_R": 26.8746,
+          "month_hit": 0.8333,
+          "maxDD": -2.6723,
+          "f_budget_sum_R": 26.8746,
+          "f_budget_weights": {
+            "EURUSD": 0.375991,
+            "JP225": 0.306757,
+            "DE40": 0.317252
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.383814,
+            "JP225": 0.289911,
+            "DE40": 0.326275
+          },
+          "sum_R": 26.8144,
+          "month_hit": 0.8333,
+          "maxDD": -2.6374,
+          "f_budget_sum_R": 26.8144,
+          "f_budget_weights": {
+            "EURUSD": 0.383814,
+            "JP225": 0.289911,
+            "DE40": 0.326275
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.414182,
+            "JP225": 0.275692,
+            "DE40": 0.310126
+          },
+          "sum_R": 26.4784,
+          "month_hit": 0.8333,
+          "maxDD": -2.682,
+          "f_budget_sum_R": 26.4784,
+          "f_budget_weights": {
+            "EURUSD": 0.414182,
+            "JP225": 0.275692,
+            "DE40": 0.310126
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "JP225+DE40+USDJPY",
+      "k": 3,
+      "members": [
+        "JP225",
+        "DE40",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.333333,
+          "DE40": 0.333333,
+          "USDJPY": 0.333333
+        },
+        "metrics": {
+          "sum_R": 25.6,
+          "mean_daily_R": 0.148837,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.2667,
+          "CVaR_m20": 1.4,
+          "maxDD": -1.6,
+          "worst_month": 1.2167,
+          "best_month": 7.9
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.333333,
+          "DE40": 0.333333,
+          "USDJPY": 0.333333
+        },
+        "metrics": {
+          "sum_R": 25.6,
+          "mean_daily_R": 0.148837,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.2667,
+          "CVaR_m20": 1.4,
+          "maxDD": -1.6,
+          "worst_month": 1.2167,
+          "best_month": 7.9
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 0.999999,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 25.6,
+        "mean_daily_R": 0.148837,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 4.2667,
+        "CVaR_m20": 1.4,
+        "maxDD": -1.6,
+        "worst_month": 1.2167,
+        "best_month": 7.9
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "JP225": 0.333333,
+            "DE40": 0.333333,
+            "USDJPY": 0.333333
+          },
+          "sum_R": 25.6,
+          "month_hit": 1.0,
+          "maxDD": -1.6,
+          "f_budget_sum_R": 25.6,
+          "f_budget_weights": {
+            "JP225": 0.333333,
+            "DE40": 0.333333,
+            "USDJPY": 0.333333
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "JP225": 0.252274,
+            "DE40": 0.260905,
+            "USDJPY": 0.486821
+          },
+          "sum_R": 23.1221,
+          "month_hit": 1.0,
+          "maxDD": -1.6676,
+          "f_budget_sum_R": 23.9134,
+          "f_budget_weights": {
+            "JP225": 0.276259,
+            "DE40": 0.285711,
+            "USDJPY": 0.43803
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "JP225": 0.262993,
+            "DE40": 0.255228,
+            "USDJPY": 0.481779
+          },
+          "sum_R": 23.1874,
+          "month_hit": 1.0,
+          "maxDD": -1.6407,
+          "f_budget_sum_R": 23.9344,
+          "f_budget_weights": {
+            "JP225": 0.286416,
+            "DE40": 0.277959,
+            "USDJPY": 0.435625
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "JP225": 0.205601,
+            "DE40": 0.17726,
+            "USDJPY": 0.617139
+          },
+          "sum_R": 20.974,
+          "month_hit": 1.0,
+          "maxDD": -1.671,
+          "f_budget_sum_R": 22.6865,
+          "f_budget_weights": {
+            "JP225": 0.262628,
+            "DE40": 0.226426,
+            "USDJPY": 0.510946
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+JP225",
+      "k": 2,
+      "members": [
+        "EURUSD",
+        "JP225"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.5,
+          "JP225": 0.5
+        },
+        "metrics": {
+          "sum_R": 25.0,
+          "mean_daily_R": 0.145349,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.1667,
+          "CVaR_m20": 0.75,
+          "maxDD": -4.0,
+          "worst_month": 0.5,
+          "best_month": 10.5
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.555556,
+          "JP225": 0.444444
+        },
+        "metrics": {
+          "sum_R": 24.4444,
+          "mean_daily_R": 0.142119,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.0741,
+          "CVaR_m20": 0.7222,
+          "maxDD": -4.0,
+          "worst_month": 0.3333,
+          "best_month": 9.8889
+        },
+        "notes": [
+          "JP225 clipped to research_cap 0.4"
+        ],
+        "budget_mix": {
+          "production_w": 0.555556,
+          "research_w": 0.444444,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": -0.5556
+      },
+      "equal_metrics": {
+        "sum_R": 25.0,
+        "mean_daily_R": 0.145349,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 4.1667,
+        "CVaR_m20": 0.75,
+        "maxDD": -4.0,
+        "worst_month": 0.5,
+        "best_month": 10.5
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.5,
+            "JP225": 0.5
+          },
+          "sum_R": 25.0,
+          "month_hit": 1.0,
+          "maxDD": -4.0,
+          "f_budget_sum_R": 24.4444,
+          "f_budget_weights": {
+            "EURUSD": 0.555556,
+            "JP225": 0.444444
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.550702,
+            "JP225": 0.449298
+          },
+          "sum_R": 24.493,
+          "month_hit": 1.0,
+          "maxDD": -4.0,
+          "f_budget_sum_R": 24.4444,
+          "f_budget_weights": {
+            "EURUSD": 0.555556,
+            "JP225": 0.444444
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.550702,
+            "JP225": 0.449298
+          },
+          "sum_R": 24.493,
+          "month_hit": 1.0,
+          "maxDD": -4.0,
+          "f_budget_sum_R": 24.4444,
+          "f_budget_weights": {
+            "EURUSD": 0.555556,
+            "JP225": 0.444444
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.600373,
+            "JP225": 0.399627
+          },
+          "sum_R": 23.9963,
+          "month_hit": 1.0,
+          "maxDD": -4.0,
+          "f_budget_sum_R": 24.4421,
+          "f_budget_weights": {
+            "EURUSD": 0.555786,
+            "JP225": 0.444214
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+JP225+DE40+USDJPY",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.25,
+          "JP225": 0.25,
+          "DE40": 0.25,
+          "USDJPY": 0.25
+        },
+        "metrics": {
+          "sum_R": 24.2,
+          "mean_daily_R": 0.140698,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.0333,
+          "CVaR_m20": 1.675,
+          "maxDD": -1.7,
+          "worst_month": 0.6625,
+          "best_month": 7.175
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.25,
+          "JP225": 0.25,
+          "DE40": 0.25,
+          "USDJPY": 0.25
+        },
+        "metrics": {
+          "sum_R": 24.2,
+          "mean_daily_R": 0.140698,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.0333,
+          "CVaR_m20": 1.675,
+          "maxDD": -1.7,
+          "worst_month": 0.6625,
+          "best_month": 7.175
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.25,
+          "research_w": 0.75,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 24.2,
+        "mean_daily_R": 0.140698,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 4.0333,
+        "CVaR_m20": 1.675,
+        "maxDD": -1.7,
+        "worst_month": 0.6625,
+        "best_month": 7.175
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.25,
+            "DE40": 0.25,
+            "USDJPY": 0.25
+          },
+          "sum_R": 24.2,
+          "month_hit": 1.0,
+          "maxDD": -1.7,
+          "f_budget_sum_R": 24.2,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.25,
+            "DE40": 0.25,
+            "USDJPY": 0.25
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.236182,
+            "JP225": 0.192692,
+            "DE40": 0.199284,
+            "USDJPY": 0.371843
+          },
+          "sum_R": 22.3848,
+          "month_hit": 1.0,
+          "maxDD": -1.608,
+          "f_budget_sum_R": 22.3416,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.189206,
+            "DE40": 0.195679,
+            "USDJPY": 0.365116
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.250502,
+            "JP225": 0.192571,
+            "DE40": 0.203297,
+            "USDJPY": 0.353629
+          },
+          "sum_R": 22.5264,
+          "month_hit": 1.0,
+          "maxDD": -1.6041,
+          "f_budget_sum_R": 22.5264,
+          "f_budget_weights": {
+            "EURUSD": 0.250502,
+            "JP225": 0.192571,
+            "DE40": 0.203297,
+            "USDJPY": 0.353629
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.228808,
+            "JP225": 0.152302,
+            "DE40": 0.138097,
+            "USDJPY": 0.480793
+          },
+          "sum_R": 20.6801,
+          "month_hit": 1.0,
+          "maxDD": -1.7096,
+          "f_budget_sum_R": 21.1952,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.16545,
+            "DE40": 0.150019,
+            "USDJPY": 0.434531
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+JP225+UK100",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "UK100"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "JP225": 0.333333,
+          "UK100": 0.333333
+        },
+        "metrics": {
+          "sum_R": 23.5833,
+          "mean_daily_R": 0.137112,
+          "month_hit": 1.0,
+          "n_months": 5,
+          "quarter_hit": 1.0,
+          "E_month": 4.7167,
+          "CVaR_m20": 0.3333,
+          "maxDD": -2.6667,
+          "worst_month": 0.3333,
+          "best_month": 8.8333
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.363636,
+          "JP225": 0.363636,
+          "UK100": 0.272727
+        },
+        "metrics": {
+          "sum_R": 23.8409,
+          "mean_daily_R": 0.13861,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.9735,
+          "CVaR_m20": 0.2727,
+          "maxDD": -2.9091,
+          "worst_month": 0.1818,
+          "best_month": 9.1364
+        },
+        "notes": [
+          "UK100 clipped to caution_cap 0.25"
+        ],
+        "budget_mix": {
+          "production_w": 0.363636,
+          "research_w": 0.363636,
+          "caution_w": 0.272727
+        },
+        "vs_equal_sum_R": 0.2576
+      },
+      "equal_metrics": {
+        "sum_R": 23.5833,
+        "mean_daily_R": 0.137112,
+        "month_hit": 1.0,
+        "n_months": 5,
+        "quarter_hit": 1.0,
+        "E_month": 4.7167,
+        "CVaR_m20": 0.3333,
+        "maxDD": -2.6667,
+        "worst_month": 0.3333,
+        "best_month": 8.8333
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.333333,
+            "JP225": 0.333333,
+            "UK100": 0.333333
+          },
+          "sum_R": 23.5833,
+          "month_hit": 1.0,
+          "maxDD": -2.6667,
+          "f_budget_sum_R": 23.8409,
+          "f_budget_weights": {
+            "EURUSD": 0.363636,
+            "JP225": 0.363636,
+            "UK100": 0.272727
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.370157,
+            "JP225": 0.301997,
+            "UK100": 0.327846
+          },
+          "sum_R": 23.2659,
+          "month_hit": 1.0,
+          "maxDD": -2.6886,
+          "f_budget_sum_R": 23.4782,
+          "f_budget_weights": {
+            "EURUSD": 0.401405,
+            "JP225": 0.327491,
+            "UK100": 0.271104
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.369611,
+            "JP225": 0.303194,
+            "UK100": 0.327195
+          },
+          "sum_R": 23.2773,
+          "month_hit": 1.0,
+          "maxDD": -2.6912,
+          "f_budget_sum_R": 23.4888,
+          "f_budget_weights": {
+            "EURUSD": 0.40053,
+            "JP225": 0.328557,
+            "UK100": 0.270913
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.401917,
+            "JP225": 0.282796,
+            "UK100": 0.315287
+          },
+          "sum_R": 23.0644,
+          "month_hit": 1.0,
+          "maxDD": -2.7389,
+          "f_budget_sum_R": 23.2261,
+          "f_budget_weights": {
+            "EURUSD": 0.42999,
+            "JP225": 0.302548,
+            "UK100": 0.267462
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "DE40+USDJPY",
+      "k": 2,
+      "members": [
+        "DE40",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "DE40": 0.5,
+          "USDJPY": 0.5
+        },
+        "metrics": {
+          "sum_R": 23.4,
+          "mean_daily_R": 0.136047,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.9,
+          "CVaR_m20": 1.6,
+          "maxDD": -4.275,
+          "worst_month": 0.825,
+          "best_month": 9.425
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "DE40": 0.5,
+          "USDJPY": 0.5
+        },
+        "metrics": {
+          "sum_R": 23.4,
+          "mean_daily_R": 0.136047,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.9,
+          "CVaR_m20": 1.6,
+          "maxDD": -4.275,
+          "worst_month": 0.825,
+          "best_month": 9.425
+        },
+        "notes": [
+          "DE40 clipped to research_cap 0.4",
+          "USDJPY clipped to research_cap 0.4"
+        ],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 1.0,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 23.4,
+        "mean_daily_R": 0.136047,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.9,
+        "CVaR_m20": 1.6,
+        "maxDD": -4.275,
+        "worst_month": 0.825,
+        "best_month": 9.425
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "DE40": 0.5,
+            "USDJPY": 0.5
+          },
+          "sum_R": 23.4,
+          "month_hit": 1.0,
+          "maxDD": -4.275,
+          "f_budget_sum_R": 23.4,
+          "f_budget_weights": {
+            "DE40": 0.5,
+            "USDJPY": 0.5
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "DE40": 0.348932,
+            "USDJPY": 0.651068
+          },
+          "sum_R": 20.8016,
+          "month_hit": 1.0,
+          "maxDD": -3.8293,
+          "f_budget_sum_R": 22.8136,
+          "f_budget_weights": {
+            "DE40": 0.465906,
+            "USDJPY": 0.534094
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "DE40": 0.348932,
+            "USDJPY": 0.651068
+          },
+          "sum_R": 20.8016,
+          "month_hit": 1.0,
+          "maxDD": -3.8293,
+          "f_budget_sum_R": 22.8136,
+          "f_budget_weights": {
+            "DE40": 0.465906,
+            "USDJPY": 0.534094
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "DE40": 0.223137,
+            "USDJPY": 0.776863
+          },
+          "sum_R": 18.638,
+          "month_hit": 1.0,
+          "maxDD": -3.4583,
+          "f_budget_sum_R": 20.9591,
+          "f_budget_weights": {
+            "DE40": 0.358087,
+            "USDJPY": 0.641913
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "JP225+USDJPY",
+      "k": 2,
+      "members": [
+        "JP225",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.5,
+          "USDJPY": 0.5
+        },
+        "metrics": {
+          "sum_R": 22.4,
+          "mean_daily_R": 0.130233,
+          "month_hit": 1.0,
+          "n_months": 5,
+          "quarter_hit": 1.0,
+          "E_month": 4.48,
+          "CVaR_m20": 1.8,
+          "maxDD": -1.5,
+          "worst_month": 1.8,
+          "best_month": 7.6
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.5,
+          "USDJPY": 0.5
+        },
+        "metrics": {
+          "sum_R": 22.4,
+          "mean_daily_R": 0.130233,
+          "month_hit": 1.0,
+          "n_months": 5,
+          "quarter_hit": 1.0,
+          "E_month": 4.48,
+          "CVaR_m20": 1.8,
+          "maxDD": -1.5,
+          "worst_month": 1.8,
+          "best_month": 7.6
+        },
+        "notes": [
+          "JP225 clipped to research_cap 0.4",
+          "USDJPY clipped to research_cap 0.4"
+        ],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 1.0,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 22.4,
+        "mean_daily_R": 0.130233,
+        "month_hit": 1.0,
+        "n_months": 5,
+        "quarter_hit": 1.0,
+        "E_month": 4.48,
+        "CVaR_m20": 1.8,
+        "maxDD": -1.5,
+        "worst_month": 1.8,
+        "best_month": 7.6
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "JP225": 0.5,
+            "USDJPY": 0.5
+          },
+          "sum_R": 22.4,
+          "month_hit": 1.0,
+          "maxDD": -1.5,
+          "f_budget_sum_R": 22.4,
+          "f_budget_weights": {
+            "JP225": 0.5,
+            "USDJPY": 0.5
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "JP225": 0.341329,
+            "USDJPY": 0.658671
+          },
+          "sum_R": 19.9882,
+          "month_hit": 1.0,
+          "maxDD": -1.6587,
+          "f_budget_sum_R": 21.7985,
+          "f_budget_weights": {
+            "JP225": 0.460429,
+            "USDJPY": 0.539571
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "JP225": 0.341329,
+            "USDJPY": 0.658671
+          },
+          "sum_R": 19.9882,
+          "month_hit": 1.0,
+          "maxDD": -1.6587,
+          "f_budget_sum_R": 21.7985,
+          "f_budget_weights": {
+            "JP225": 0.460429,
+            "USDJPY": 0.539571
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "JP225": 0.211692,
+            "USDJPY": 0.788308
+          },
+          "sum_R": 18.0177,
+          "month_hit": 1.0,
+          "maxDD": -2.1532,
+          "f_budget_sum_R": 20.0604,
+          "f_budget_weights": {
+            "JP225": 0.346076,
+            "USDJPY": 0.653924
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+DE40+USDJPY",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "DE40",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "DE40": 0.333333,
+          "USDJPY": 0.333333
+        },
+        "metrics": {
+          "sum_R": 22.2666,
+          "mean_daily_R": 0.129457,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.7111,
+          "CVaR_m20": 1.475,
+          "maxDD": -1.6667,
+          "worst_month": 0.2167,
+          "best_month": 6.95
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "DE40": 0.333333,
+          "USDJPY": 0.333333
+        },
+        "metrics": {
+          "sum_R": 22.2666,
+          "mean_daily_R": 0.129457,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.7111,
+          "CVaR_m20": 1.475,
+          "maxDD": -1.6667,
+          "worst_month": 0.2167,
+          "best_month": 6.95
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.333333,
+          "research_w": 0.666666,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 22.2666,
+        "mean_daily_R": 0.129457,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.7111,
+        "CVaR_m20": 1.475,
+        "maxDD": -1.6667,
+        "worst_month": 0.2167,
+        "best_month": 6.95
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.333333,
+            "DE40": 0.333333,
+            "USDJPY": 0.333333
+          },
+          "sum_R": 22.2666,
+          "month_hit": 1.0,
+          "maxDD": -1.6667,
+          "f_budget_sum_R": 22.2666,
+          "f_budget_weights": {
+            "EURUSD": 0.333333,
+            "DE40": 0.333333,
+            "USDJPY": 0.333333
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.292554,
+            "DE40": 0.24685,
+            "USDJPY": 0.460596
+          },
+          "sum_R": 20.5671,
+          "month_hit": 1.0,
+          "maxDD": -1.7531,
+          "f_budget_sum_R": 20.9391,
+          "f_budget_weights": {
+            "EURUSD": 0.311425,
+            "DE40": 0.262773,
+            "USDJPY": 0.425802
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.313624,
+            "DE40": 0.252643,
+            "USDJPY": 0.433734
+          },
+          "sum_R": 20.7763,
+          "month_hit": 1.0,
+          "maxDD": -1.7474,
+          "f_budget_sum_R": 20.9849,
+          "f_budget_weights": {
+            "EURUSD": 0.324573,
+            "DE40": 0.261463,
+            "USDJPY": 0.413964
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.279966,
+            "DE40": 0.160666,
+            "USDJPY": 0.559368
+          },
+          "sum_R": 19.0193,
+          "month_hit": 1.0,
+          "maxDD": -1.8393,
+          "f_budget_sum_R": 19.8192,
+          "f_budget_weights": {
+            "EURUSD": 0.333042,
+            "DE40": 0.191125,
+            "USDJPY": 0.475832
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+JP225+USDJPY",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "JP225": 0.333333,
+          "USDJPY": 0.333333
+        },
+        "metrics": {
+          "sum_R": 21.6,
+          "mean_daily_R": 0.125581,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.6,
+          "CVaR_m20": 1.5,
+          "maxDD": -2.0,
+          "worst_month": 1.1333,
+          "best_month": 7.1333
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "JP225": 0.333333,
+          "USDJPY": 0.333333
+        },
+        "metrics": {
+          "sum_R": 21.6,
+          "mean_daily_R": 0.125581,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.6,
+          "CVaR_m20": 1.5,
+          "maxDD": -2.0,
+          "worst_month": 1.1333,
+          "best_month": 7.1333
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.333333,
+          "research_w": 0.666666,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 21.6,
+        "mean_daily_R": 0.125581,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.6,
+        "CVaR_m20": 1.5,
+        "maxDD": -2.0,
+        "worst_month": 1.1333,
+        "best_month": 7.1333
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.333333,
+            "JP225": 0.333333,
+            "USDJPY": 0.333333
+          },
+          "sum_R": 21.6,
+          "month_hit": 1.0,
+          "maxDD": -2.0,
+          "f_budget_sum_R": 21.6,
+          "f_budget_weights": {
+            "EURUSD": 0.333333,
+            "JP225": 0.333333,
+            "USDJPY": 0.333333
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.294963,
+            "JP225": 0.240649,
+            "USDJPY": 0.464388
+          },
+          "sum_R": 19.9917,
+          "month_hit": 1.0,
+          "maxDD": -1.7594,
+          "f_budget_sum_R": 20.349,
+          "f_budget_weights": {
+            "EURUSD": 0.315262,
+            "JP225": 0.25721,
+            "USDJPY": 0.427528
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.291388,
+            "JP225": 0.241011,
+            "USDJPY": 0.467601
+          },
+          "sum_R": 19.9786,
+          "month_hit": 1.0,
+          "maxDD": -1.759,
+          "f_budget_sum_R": 20.354,
+          "f_budget_weights": {
+            "EURUSD": 0.312514,
+            "JP225": 0.258485,
+            "USDJPY": 0.429001
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.234055,
+            "JP225": 0.155794,
+            "USDJPY": 0.610151
+          },
+          "sum_R": 18.3852,
+          "month_hit": 1.0,
+          "maxDD": -1.8442,
+          "f_budget_sum_R": 19.339,
+          "f_budget_weights": {
+            "EURUSD": 0.296329,
+            "JP225": 0.197245,
+            "USDJPY": 0.506426
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+JP225+USDJPY+UK100",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "USDJPY",
+        "UK100"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.25,
+          "JP225": 0.25,
+          "USDJPY": 0.25,
+          "UK100": 0.25
+        },
+        "metrics": {
+          "sum_R": 21.3875,
+          "mean_daily_R": 0.124346,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.5646,
+          "CVaR_m20": 0.875,
+          "maxDD": -1.75,
+          "worst_month": 0.85,
+          "best_month": 7.0375
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.25,
+          "JP225": 0.25,
+          "USDJPY": 0.25,
+          "UK100": 0.25
+        },
+        "metrics": {
+          "sum_R": 21.3875,
+          "mean_daily_R": 0.124346,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.5646,
+          "CVaR_m20": 0.875,
+          "maxDD": -1.75,
+          "worst_month": 0.85,
+          "best_month": 7.0375
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.25,
+          "research_w": 0.5,
+          "caution_w": 0.25
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 21.3875,
+        "mean_daily_R": 0.124346,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.5646,
+        "CVaR_m20": 0.875,
+        "maxDD": -1.75,
+        "worst_month": 0.85,
+        "best_month": 7.0375
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.25,
+            "USDJPY": 0.25,
+            "UK100": 0.25
+          },
+          "sum_R": 21.3875,
+          "month_hit": 1.0,
+          "maxDD": -1.75,
+          "f_budget_sum_R": 21.3875,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.25,
+            "USDJPY": 0.25,
+            "UK100": 0.25
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.233866,
+            "JP225": 0.190803,
+            "USDJPY": 0.368197,
+            "UK100": 0.207134
+          },
+          "sum_R": 20.1488,
+          "month_hit": 1.0,
+          "maxDD": -1.4173,
+          "f_budget_sum_R": 20.1456,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.186785,
+            "USDJPY": 0.360443,
+            "UK100": 0.202772
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.22054,
+            "JP225": 0.183609,
+            "USDJPY": 0.385193,
+            "UK100": 0.210658
+          },
+          "sum_R": 19.9911,
+          "month_hit": 1.0,
+          "maxDD": -1.4205,
+          "f_budget_sum_R": 19.9914,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.176669,
+            "USDJPY": 0.370634,
+            "UK100": 0.202696
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.208489,
+            "JP225": 0.132934,
+            "USDJPY": 0.495027,
+            "UK100": 0.16355
+          },
+          "sum_R": 18.8779,
+          "month_hit": 1.0,
+          "maxDD": -1.4991,
+          "f_budget_sum_R": 19.3237,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "JP225": 0.143148,
+            "USDJPY": 0.430735,
+            "UK100": 0.176117
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "DE40+USDJPY+AAPL",
+      "k": 3,
+      "members": [
+        "DE40",
+        "USDJPY",
+        "AAPL"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "DE40": 0.333333,
+          "USDJPY": 0.333333,
+          "AAPL": 0.333333
+        },
+        "metrics": {
+          "sum_R": 20.8807,
+          "mean_daily_R": 0.121399,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.4801,
+          "CVaR_m20": 1.0403,
+          "maxDD": -2.3588,
+          "worst_month": 0.5325,
+          "best_month": 8.3886
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "DE40": 0.363636,
+          "USDJPY": 0.363636,
+          "AAPL": 0.272727
+        },
+        "metrics": {
+          "sum_R": 21.3387,
+          "mean_daily_R": 0.124062,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.5565,
+          "CVaR_m20": 1.1421,
+          "maxDD": -2.7072,
+          "worst_month": 0.5856,
+          "best_month": 8.577
+        },
+        "notes": [
+          "AAPL clipped to caution_cap 0.25"
+        ],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 0.727272,
+          "caution_w": 0.272727
+        },
+        "vs_equal_sum_R": 0.458
+      },
+      "equal_metrics": {
+        "sum_R": 20.8807,
+        "mean_daily_R": 0.121399,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.4801,
+        "CVaR_m20": 1.0403,
+        "maxDD": -2.3588,
+        "worst_month": 0.5325,
+        "best_month": 8.3886
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "DE40": 0.333333,
+            "USDJPY": 0.333333,
+            "AAPL": 0.333333
+          },
+          "sum_R": 20.8807,
+          "month_hit": 1.0,
+          "maxDD": -2.3588,
+          "f_budget_sum_R": 21.3387,
+          "f_budget_weights": {
+            "DE40": 0.363636,
+            "USDJPY": 0.363636,
+            "AAPL": 0.272727
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "DE40": 0.229545,
+            "USDJPY": 0.428306,
+            "AAPL": 0.342149
+          },
+          "sum_R": 19.1047,
+          "month_hit": 1.0,
+          "maxDD": -2.0149,
+          "f_budget_sum_R": 19.5851,
+          "f_budget_weights": {
+            "DE40": 0.260982,
+            "USDJPY": 0.454781,
+            "AAPL": 0.284238
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "DE40": 0.228508,
+            "USDJPY": 0.415919,
+            "AAPL": 0.355573
+          },
+          "sum_R": 19.1009,
+          "month_hit": 1.0,
+          "maxDD": -1.9545,
+          "f_budget_sum_R": 19.5704,
+          "f_budget_weights": {
+            "DE40": 0.260109,
+            "USDJPY": 0.455317,
+            "AAPL": 0.284573
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "DE40": 0.138162,
+            "USDJPY": 0.481019,
+            "AAPL": 0.380818
+          },
+          "sum_R": 17.5732,
+          "month_hit": 1.0,
+          "maxDD": -1.5801,
+          "f_budget_sum_R": 18.1456,
+          "f_budget_weights": {
+            "DE40": 0.175296,
+            "USDJPY": 0.50751,
+            "AAPL": 0.317194
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+DE40+USDJPY+AAPL",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "DE40",
+        "USDJPY",
+        "AAPL"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.25,
+          "DE40": 0.25,
+          "USDJPY": 0.25,
+          "AAPL": 0.25
+        },
+        "metrics": {
+          "sum_R": 20.6605,
+          "mean_daily_R": 0.120119,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.4434,
+          "CVaR_m20": 1.4053,
+          "maxDD": -1.1316,
+          "worst_month": 0.1493,
+          "best_month": 6.7914
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.25,
+          "DE40": 0.25,
+          "USDJPY": 0.25,
+          "AAPL": 0.25
+        },
+        "metrics": {
+          "sum_R": 20.6605,
+          "mean_daily_R": 0.120119,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.4434,
+          "CVaR_m20": 1.4053,
+          "maxDD": -1.1316,
+          "worst_month": 0.1493,
+          "best_month": 6.7914
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.25,
+          "research_w": 0.5,
+          "caution_w": 0.25
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 20.6605,
+        "mean_daily_R": 0.120119,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.4434,
+        "CVaR_m20": 1.4053,
+        "maxDD": -1.1316,
+        "worst_month": 0.1493,
+        "best_month": 6.7914
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.25,
+            "DE40": 0.25,
+            "USDJPY": 0.25,
+            "AAPL": 0.25
+          },
+          "sum_R": 20.6605,
+          "month_hit": 1.0,
+          "maxDD": -1.1316,
+          "f_budget_sum_R": 20.6605,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "DE40": 0.25,
+            "USDJPY": 0.25,
+            "AAPL": 0.25
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.213864,
+            "DE40": 0.180454,
+            "USDJPY": 0.336707,
+            "AAPL": 0.268975
+          },
+          "sum_R": 19.2962,
+          "month_hit": 1.0,
+          "maxDD": -1.1542,
+          "f_budget_sum_R": 19.3891,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "DE40": 0.176417,
+            "USDJPY": 0.329175,
+            "AAPL": 0.244408
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.232777,
+            "DE40": 0.18424,
+            "USDJPY": 0.307783,
+            "AAPL": 0.2752
+          },
+          "sum_R": 19.4662,
+          "month_hit": 1.0,
+          "maxDD": -1.135,
+          "f_budget_sum_R": 19.5663,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "DE40": 0.186221,
+            "USDJPY": 0.311092,
+            "AAPL": 0.252688
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.197147,
+            "DE40": 0.109562,
+            "USDJPY": 0.381447,
+            "AAPL": 0.311844
+          },
+          "sum_R": 18.0346,
+          "month_hit": 1.0,
+          "maxDD": -1.119,
+          "f_budget_sum_R": 18.271,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "DE40": 0.110891,
+            "USDJPY": 0.386075,
+            "AAPL": 0.253033
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+USDJPY+UK100",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "USDJPY",
+        "UK100"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "USDJPY": 0.333333,
+          "UK100": 0.333333
+        },
+        "metrics": {
+          "sum_R": 18.5166,
+          "mean_daily_R": 0.107655,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.0861,
+          "CVaR_m20": 0.8333,
+          "maxDD": -2.1667,
+          "worst_month": 0.4667,
+          "best_month": 6.3833
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.363636,
+          "USDJPY": 0.363636,
+          "UK100": 0.272727
+        },
+        "metrics": {
+          "sum_R": 18.3136,
+          "mean_daily_R": 0.106475,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.0523,
+          "CVaR_m20": 1.0,
+          "maxDD": -1.9545,
+          "worst_month": 0.5091,
+          "best_month": 6.35
+        },
+        "notes": [
+          "UK100 clipped to caution_cap 0.25"
+        ],
+        "budget_mix": {
+          "production_w": 0.363636,
+          "research_w": 0.363636,
+          "caution_w": 0.272727
+        },
+        "vs_equal_sum_R": -0.203
+      },
+      "equal_metrics": {
+        "sum_R": 18.5166,
+        "mean_daily_R": 0.107655,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.0861,
+        "CVaR_m20": 0.8333,
+        "maxDD": -2.1667,
+        "worst_month": 0.4667,
+        "best_month": 6.3833
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.333333,
+            "USDJPY": 0.333333,
+            "UK100": 0.333333
+          },
+          "sum_R": 18.5166,
+          "month_hit": 1.0,
+          "maxDD": -2.1667,
+          "f_budget_sum_R": 18.3136,
+          "f_budget_weights": {
+            "EURUSD": 0.363636,
+            "USDJPY": 0.363636,
+            "UK100": 0.272727
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.28901,
+            "USDJPY": 0.455015,
+            "UK100": 0.255975
+          },
+          "sum_R": 17.8259,
+          "month_hit": 1.0,
+          "maxDD": -1.7299,
+          "f_budget_sum_R": 17.9846,
+          "f_budget_weights": {
+            "EURUSD": 0.307782,
+            "USDJPY": 0.425981,
+            "UK100": 0.266238
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.27225,
+            "USDJPY": 0.467509,
+            "UK100": 0.260241
+          },
+          "sum_R": 17.7641,
+          "month_hit": 1.0,
+          "maxDD": -1.7156,
+          "f_budget_sum_R": 17.948,
+          "f_budget_weights": {
+            "EURUSD": 0.295202,
+            "USDJPY": 0.433722,
+            "UK100": 0.271076
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.227034,
+            "USDJPY": 0.594867,
+            "UK100": 0.178099
+          },
+          "sum_R": 17.0403,
+          "month_hit": 1.0,
+          "maxDD": -1.5993,
+          "f_budget_sum_R": 17.5825,
+          "f_budget_weights": {
+            "EURUSD": 0.281983,
+            "USDJPY": 0.496812,
+            "UK100": 0.221204
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+USDJPY+UK100+AAPL",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "USDJPY",
+        "UK100",
+        "AAPL"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.25,
+          "USDJPY": 0.25,
+          "UK100": 0.25,
+          "AAPL": 0.25
+        },
+        "metrics": {
+          "sum_R": 17.848,
+          "mean_daily_R": 0.103768,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.9747,
+          "CVaR_m20": 0.8428,
+          "maxDD": -1.5625,
+          "worst_month": 0.3368,
+          "best_month": 6.4974
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.25,
+          "USDJPY": 0.25,
+          "UK100": 0.25,
+          "AAPL": 0.25
+        },
+        "metrics": {
+          "sum_R": 17.848,
+          "mean_daily_R": 0.103768,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.9747,
+          "CVaR_m20": 0.8428,
+          "maxDD": -1.5625,
+          "worst_month": 0.3368,
+          "best_month": 6.4974
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.25,
+          "research_w": 0.25,
+          "caution_w": 0.5
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 17.848,
+        "mean_daily_R": 0.103768,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 2.9747,
+        "CVaR_m20": 0.8428,
+        "maxDD": -1.5625,
+        "worst_month": 0.3368,
+        "best_month": 6.4974
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.25,
+            "USDJPY": 0.25,
+            "UK100": 0.25,
+            "AAPL": 0.25
+          },
+          "sum_R": 17.848,
+          "month_hit": 1.0,
+          "maxDD": -1.5625,
+          "f_budget_sum_R": 17.848,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "USDJPY": 0.25,
+            "UK100": 0.25,
+            "AAPL": 0.25
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.211964,
+            "USDJPY": 0.333715,
+            "UK100": 0.187736,
+            "AAPL": 0.266585
+          },
+          "sum_R": 17.2971,
+          "month_hit": 1.0,
+          "maxDD": -1.2764,
+          "f_budget_sum_R": 17.4393,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "USDJPY": 0.324436,
+            "UK100": 0.182516,
+            "AAPL": 0.243048
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.198986,
+            "USDJPY": 0.327876,
+            "UK100": 0.19893,
+            "AAPL": 0.274208
+          },
+          "sum_R": 17.3041,
+          "month_hit": 1.0,
+          "maxDD": -1.3186,
+          "f_budget_sum_R": 17.4943,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "USDJPY": 0.316562,
+            "UK100": 0.192065,
+            "AAPL": 0.241373
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.170956,
+            "USDJPY": 0.424221,
+            "UK100": 0.134108,
+            "AAPL": 0.270715
+          },
+          "sum_R": 16.769,
+          "month_hit": 1.0,
+          "maxDD": -1.0116,
+          "f_budget_sum_R": 17.1124,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "USDJPY": 0.3826,
+            "UK100": 0.128274,
+            "AAPL": 0.239125
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+USDJPY",
+      "k": 2,
+      "members": [
+        "EURUSD",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.5,
+          "USDJPY": 0.5
+        },
+        "metrics": {
+          "sum_R": 17.4,
+          "mean_daily_R": 0.101163,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.9,
+          "CVaR_m20": 1.4,
+          "maxDD": -2.0,
+          "worst_month": 0.7,
+          "best_month": 6.2
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.555556,
+          "USDJPY": 0.444444
+        },
+        "metrics": {
+          "sum_R": 17.6889,
+          "mean_daily_R": 0.102842,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.9481,
+          "CVaR_m20": 1.4667,
+          "maxDD": -2.0444,
+          "worst_month": 0.5111,
+          "best_month": 6.2889
+        },
+        "notes": [
+          "USDJPY clipped to research_cap 0.4"
+        ],
+        "budget_mix": {
+          "production_w": 0.555556,
+          "research_w": 0.444444,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.2889
+      },
+      "equal_metrics": {
+        "sum_R": 17.4,
+        "mean_daily_R": 0.101163,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 2.9,
+        "CVaR_m20": 1.4,
+        "maxDD": -2.0,
+        "worst_month": 0.7,
+        "best_month": 6.2
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.5,
+            "USDJPY": 0.5
+          },
+          "sum_R": 17.4,
+          "month_hit": 1.0,
+          "maxDD": -2.0,
+          "f_budget_sum_R": 17.6889,
+          "f_budget_weights": {
+            "EURUSD": 0.555556,
+            "USDJPY": 0.444444
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.388441,
+            "USDJPY": 0.611559
+          },
+          "sum_R": 16.8199,
+          "month_hit": 1.0,
+          "maxDD": -2.0,
+          "f_budget_sum_R": 17.3619,
+          "f_budget_weights": {
+            "EURUSD": 0.49267,
+            "USDJPY": 0.50733
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.388441,
+            "USDJPY": 0.611559
+          },
+          "sum_R": 16.8199,
+          "month_hit": 1.0,
+          "maxDD": -2.0,
+          "f_budget_sum_R": 17.3619,
+          "f_budget_weights": {
+            "EURUSD": 0.49267,
+            "USDJPY": 0.50733
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.287463,
+            "USDJPY": 0.712537
+          },
+          "sum_R": 16.2948,
+          "month_hit": 1.0,
+          "maxDD": -2.0,
+          "f_budget_sum_R": 16.9744,
+          "f_budget_weights": {
+            "EURUSD": 0.418151,
+            "USDJPY": 0.581849
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "EURUSD+USDJPY+AAPL",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "USDJPY",
+        "AAPL"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.333333,
+          "USDJPY": 0.333333,
+          "AAPL": 0.333333
+        },
+        "metrics": {
+          "sum_R": 16.8807,
+          "mean_daily_R": 0.098144,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.8134,
+          "CVaR_m20": 0.9246,
+          "maxDD": -1.1754,
+          "worst_month": 0.4491,
+          "best_month": 4.9965
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "EURUSD": 0.363636,
+          "USDJPY": 0.363636,
+          "AAPL": 0.272727
+        },
+        "metrics": {
+          "sum_R": 16.9751,
+          "mean_daily_R": 0.098692,
+          "month_hit": 1.0,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.8292,
+          "CVaR_m20": 1.011,
+          "maxDD": -1.3254,
+          "worst_month": 0.4947,
+          "best_month": 4.5608
+        },
+        "notes": [
+          "AAPL clipped to caution_cap 0.25"
+        ],
+        "budget_mix": {
+          "production_w": 0.363636,
+          "research_w": 0.363636,
+          "caution_w": 0.272727
+        },
+        "vs_equal_sum_R": 0.0944
+      },
+      "equal_metrics": {
+        "sum_R": 16.8807,
+        "mean_daily_R": 0.098144,
+        "month_hit": 1.0,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 2.8134,
+        "CVaR_m20": 0.9246,
+        "maxDD": -1.1754,
+        "worst_month": 0.4491,
+        "best_month": 4.9965
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "EURUSD": 0.333333,
+            "USDJPY": 0.333333,
+            "AAPL": 0.333333
+          },
+          "sum_R": 16.8807,
+          "month_hit": 1.0,
+          "maxDD": -1.1754,
+          "f_budget_sum_R": 16.9751,
+          "f_budget_weights": {
+            "EURUSD": 0.363636,
+            "USDJPY": 0.363636,
+            "AAPL": 0.272727
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "EURUSD": 0.260955,
+            "USDJPY": 0.410845,
+            "AAPL": 0.3282
+          },
+          "sum_R": 16.499,
+          "month_hit": 1.0,
+          "maxDD": -1.1881,
+          "f_budget_sum_R": 16.5756,
+          "f_budget_weights": {
+            "EURUSD": 0.286463,
+            "USDJPY": 0.4391,
+            "AAPL": 0.274437
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "EURUSD": 0.266215,
+            "USDJPY": 0.401018,
+            "AAPL": 0.332767
+          },
+          "sum_R": 16.5311,
+          "month_hit": 1.0,
+          "maxDD": -1.1768,
+          "f_budget_sum_R": 16.5953,
+          "f_budget_weights": {
+            "EURUSD": 0.29056,
+            "USDJPY": 0.436579,
+            "AAPL": 0.272862
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "EURUSD": 0.206375,
+            "USDJPY": 0.484465,
+            "AAPL": 0.30916
+          },
+          "sum_R": 16.1953,
+          "month_hit": 1.0,
+          "maxDD": -1.2781,
+          "f_budget_sum_R": 16.4006,
+          "f_budget_weights": {
+            "EURUSD": 0.25,
+            "USDJPY": 0.461538,
+            "AAPL": 0.288462
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "JP225+DE40+AUDUSD",
+      "k": 3,
+      "members": [
+        "JP225",
+        "DE40",
+        "AUDUSD"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.333333,
+          "DE40": 0.333333,
+          "AUDUSD": 0.333333
+        },
+        "metrics": {
+          "sum_R": 25.0,
+          "mean_daily_R": 0.145349,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.1667,
+          "CVaR_m20": 0.0,
+          "maxDD": -2.0,
+          "worst_month": -0.0833,
+          "best_month": 9.5
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.333333,
+          "DE40": 0.333333,
+          "AUDUSD": 0.333333
+        },
+        "metrics": {
+          "sum_R": 25.0,
+          "mean_daily_R": 0.145349,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 4.1667,
+          "CVaR_m20": 0.0,
+          "maxDD": -2.0,
+          "worst_month": -0.0833,
+          "best_month": 9.5
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 0.999999,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 25.0,
+        "mean_daily_R": 0.145349,
+        "month_hit": 0.8333,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 4.1667,
+        "CVaR_m20": 0.0,
+        "maxDD": -2.0,
+        "worst_month": -0.0833,
+        "best_month": 9.5
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "JP225": 0.333333,
+            "DE40": 0.333333,
+            "AUDUSD": 0.333333
+          },
+          "sum_R": 25.0,
+          "month_hit": 0.8333,
+          "maxDD": -2.0,
+          "f_budget_sum_R": 25.0,
+          "f_budget_weights": {
+            "JP225": 0.333333,
+            "DE40": 0.333333,
+            "AUDUSD": 0.333333
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "JP225": 0.28025,
+            "DE40": 0.289838,
+            "AUDUSD": 0.429911
+          },
+          "sum_R": 23.2712,
+          "month_hit": 0.6667,
+          "maxDD": -2.1446,
+          "f_budget_sum_R": 23.5879,
+          "f_budget_weights": {
+            "JP225": 0.288891,
+            "DE40": 0.298775,
+            "AUDUSD": 0.412334
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "JP225": 0.277126,
+            "DE40": 0.298866,
+            "AUDUSD": 0.424009
+          },
+          "sum_R": 23.3896,
+          "month_hit": 0.6667,
+          "maxDD": -2.1251,
+          "f_budget_sum_R": 23.6452,
+          "f_budget_weights": {
+            "JP225": 0.283943,
+            "DE40": 0.306218,
+            "AUDUSD": 0.409839
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "JP225": 0.217261,
+            "DE40": 0.271473,
+            "AUDUSD": 0.511266
+          },
+          "sum_R": 21.8514,
+          "month_hit": 0.6667,
+          "maxDD": -3.2798,
+          "f_budget_sum_R": 22.9596,
+          "f_budget_weights": {
+            "JP225": 0.244461,
+            "DE40": 0.30546,
+            "AUDUSD": 0.450078
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "JP225+DE40+AUDUSD+USDJPY",
+      "k": 4,
+      "members": [
+        "JP225",
+        "DE40",
+        "AUDUSD",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.25,
+          "DE40": 0.25,
+          "AUDUSD": 0.25,
+          "USDJPY": 0.25
+        },
+        "metrics": {
+          "sum_R": 22.45,
+          "mean_daily_R": 0.130523,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.7417,
+          "CVaR_m20": 0.3,
+          "maxDD": -1.5,
+          "worst_month": -0.0625,
+          "best_month": 6.925
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.25,
+          "DE40": 0.25,
+          "AUDUSD": 0.25,
+          "USDJPY": 0.25
+        },
+        "metrics": {
+          "sum_R": 22.45,
+          "mean_daily_R": 0.130523,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.7417,
+          "CVaR_m20": 0.3,
+          "maxDD": -1.5,
+          "worst_month": -0.0625,
+          "best_month": 6.925
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 1.0,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 22.45,
+        "mean_daily_R": 0.130523,
+        "month_hit": 0.8333,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.7417,
+        "CVaR_m20": 0.3,
+        "maxDD": -1.5,
+        "worst_month": -0.0625,
+        "best_month": 6.925
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "JP225": 0.25,
+            "DE40": 0.25,
+            "AUDUSD": 0.25,
+            "USDJPY": 0.25
+          },
+          "sum_R": 22.45,
+          "month_hit": 0.8333,
+          "maxDD": -1.5,
+          "f_budget_sum_R": 22.45,
+          "f_budget_weights": {
+            "JP225": 0.25,
+            "DE40": 0.25,
+            "AUDUSD": 0.25,
+            "USDJPY": 0.25
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "JP225": 0.181885,
+            "DE40": 0.188108,
+            "AUDUSD": 0.279017,
+            "USDJPY": 0.350989
+          },
+          "sum_R": 20.2979,
+          "month_hit": 0.8333,
+          "maxDD": -1.3919,
+          "f_budget_sum_R": 20.2979,
+          "f_budget_weights": {
+            "JP225": 0.181885,
+            "DE40": 0.188108,
+            "AUDUSD": 0.279017,
+            "USDJPY": 0.350989
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "JP225": 0.174261,
+            "DE40": 0.176092,
+            "AUDUSD": 0.286927,
+            "USDJPY": 0.36272
+          },
+          "sum_R": 19.9611,
+          "month_hit": 0.8333,
+          "maxDD": -1.5048,
+          "f_budget_sum_R": 19.9611,
+          "f_budget_weights": {
+            "JP225": 0.174261,
+            "DE40": 0.176092,
+            "AUDUSD": 0.286927,
+            "USDJPY": 0.36272
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "JP225": 0.127113,
+            "DE40": 0.128027,
+            "AUDUSD": 0.299127,
+            "USDJPY": 0.445732
+          },
+          "sum_R": 18.3957,
+          "month_hit": 0.8333,
+          "maxDD": -1.8178,
+          "f_budget_sum_R": 18.5681,
+          "f_budget_weights": {
+            "JP225": 0.133205,
+            "DE40": 0.134163,
+            "AUDUSD": 0.313463,
+            "USDJPY": 0.41917
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "JP225+USDJPY+UK100",
+      "k": 3,
+      "members": [
+        "JP225",
+        "USDJPY",
+        "UK100"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.333333,
+          "USDJPY": 0.333333,
+          "UK100": 0.333333
+        },
+        "metrics": {
+          "sum_R": 21.85,
+          "mean_daily_R": 0.127035,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.6417,
+          "CVaR_m20": 0.1833,
+          "maxDD": -2.3333,
+          "worst_month": -0.1667,
+          "best_month": 7.05
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "JP225": 0.363636,
+          "USDJPY": 0.363636,
+          "UK100": 0.272727
+        },
+        "metrics": {
+          "sum_R": 21.95,
+          "mean_daily_R": 0.127616,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.6583,
+          "CVaR_m20": 0.3136,
+          "maxDD": -2.0909,
+          "worst_month": -0.1364,
+          "best_month": 7.0773
+        },
+        "notes": [
+          "UK100 clipped to caution_cap 0.25"
+        ],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 0.727272,
+          "caution_w": 0.272727
+        },
+        "vs_equal_sum_R": 0.1
+      },
+      "equal_metrics": {
+        "sum_R": 21.85,
+        "mean_daily_R": 0.127035,
+        "month_hit": 0.8333,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.6417,
+        "CVaR_m20": 0.1833,
+        "maxDD": -2.3333,
+        "worst_month": -0.1667,
+        "best_month": 7.05
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "JP225": 0.333333,
+            "USDJPY": 0.333333,
+            "UK100": 0.333333
+          },
+          "sum_R": 21.85,
+          "month_hit": 0.8333,
+          "maxDD": -2.3333,
+          "f_budget_sum_R": 21.95,
+          "f_budget_weights": {
+            "JP225": 0.363636,
+            "USDJPY": 0.363636,
+            "UK100": 0.272727
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "JP225": 0.249046,
+            "USDJPY": 0.480591,
+            "UK100": 0.270363
+          },
+          "sum_R": 20.1942,
+          "month_hit": 0.8333,
+          "maxDD": -1.8499,
+          "f_budget_sum_R": 20.6651,
+          "f_budget_weights": {
+            "JP225": 0.277011,
+            "USDJPY": 0.444916,
+            "UK100": 0.278073
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "JP225": 0.235499,
+            "USDJPY": 0.492458,
+            "UK100": 0.272044
+          },
+          "sum_R": 19.9983,
+          "month_hit": 0.8333,
+          "maxDD": -1.8312,
+          "f_budget_sum_R": 20.5223,
+          "f_budget_weights": {
+            "JP225": 0.265951,
+            "USDJPY": 0.451723,
+            "UK100": 0.282327
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "JP225": 0.164868,
+            "USDJPY": 0.640832,
+            "UK100": 0.1943
+          },
+          "sum_R": 18.4621,
+          "month_hit": 0.8333,
+          "maxDD": -1.6119,
+          "f_budget_sum_R": 19.6238,
+          "f_budget_weights": {
+            "JP225": 0.217169,
+            "USDJPY": 0.526893,
+            "UK100": 0.255938
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "DE40+AUDUSD+USDJPY",
+      "k": 3,
+      "members": [
+        "DE40",
+        "AUDUSD",
+        "USDJPY"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "DE40": 0.333333,
+          "AUDUSD": 0.333333,
+          "USDJPY": 0.333333
+        },
+        "metrics": {
+          "sum_R": 19.9333,
+          "mean_daily_R": 0.115891,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.3222,
+          "CVaR_m20": 0.0667,
+          "maxDD": -1.85,
+          "worst_month": -0.0833,
+          "best_month": 7.6167
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "DE40": 0.333333,
+          "AUDUSD": 0.333333,
+          "USDJPY": 0.333333
+        },
+        "metrics": {
+          "sum_R": 19.9333,
+          "mean_daily_R": 0.115891,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.3222,
+          "CVaR_m20": 0.0667,
+          "maxDD": -1.85,
+          "worst_month": -0.0833,
+          "best_month": 7.6167
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 0.999999,
+          "caution_w": 0
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 19.9333,
+        "mean_daily_R": 0.115891,
+        "month_hit": 0.8333,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.3222,
+        "CVaR_m20": 0.0667,
+        "maxDD": -1.85,
+        "worst_month": -0.0833,
+        "best_month": 7.6167
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "DE40": 0.333333,
+            "AUDUSD": 0.333333,
+            "USDJPY": 0.333333
+          },
+          "sum_R": 19.9333,
+          "month_hit": 0.8333,
+          "maxDD": -1.85,
+          "f_budget_sum_R": 19.9333,
+          "f_budget_weights": {
+            "DE40": 0.333333,
+            "AUDUSD": 0.333333,
+            "USDJPY": 0.333333
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "DE40": 0.229929,
+            "AUDUSD": 0.341049,
+            "USDJPY": 0.429022
+          },
+          "sum_R": 18.1409,
+          "month_hit": 0.8333,
+          "maxDD": -2.1536,
+          "f_budget_sum_R": 18.2407,
+          "f_budget_weights": {
+            "DE40": 0.236801,
+            "AUDUSD": 0.351243,
+            "USDJPY": 0.411956
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "DE40": 0.210426,
+            "AUDUSD": 0.35867,
+            "USDJPY": 0.430904
+          },
+          "sum_R": 17.7737,
+          "month_hit": 0.8333,
+          "maxDD": -2.3433,
+          "f_budget_sum_R": 17.8685,
+          "f_budget_weights": {
+            "DE40": 0.217136,
+            "AUDUSD": 0.370108,
+            "USDJPY": 0.412756
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "DE40": 0.138676,
+            "AUDUSD": 0.378514,
+            "USDJPY": 0.482809
+          },
+          "sum_R": 16.5039,
+          "month_hit": 0.8333,
+          "maxDD": -2.6814,
+          "f_budget_sum_R": 16.6578,
+          "f_budget_weights": {
+            "DE40": 0.151197,
+            "AUDUSD": 0.412689,
+            "USDJPY": 0.436115
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "DE40+AUDUSD+USDJPY+AAPL",
+      "k": 4,
+      "members": [
+        "DE40",
+        "AUDUSD",
+        "USDJPY",
+        "AAPL"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "DE40": 0.25,
+          "AUDUSD": 0.25,
+          "USDJPY": 0.25,
+          "AAPL": 0.25
+        },
+        "metrics": {
+          "sum_R": 18.9105,
+          "mean_daily_R": 0.109945,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.1518,
+          "CVaR_m20": 0.0303,
+          "maxDD": -2.0875,
+          "worst_month": -0.0888,
+          "best_month": 7.2914
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "DE40": 0.25,
+          "AUDUSD": 0.25,
+          "USDJPY": 0.25,
+          "AAPL": 0.25
+        },
+        "metrics": {
+          "sum_R": 18.9105,
+          "mean_daily_R": 0.109945,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 3.1518,
+          "CVaR_m20": 0.0303,
+          "maxDD": -2.0875,
+          "worst_month": -0.0888,
+          "best_month": 7.2914
+        },
+        "notes": [],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 0.75,
+          "caution_w": 0.25
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "equal_metrics": {
+        "sum_R": 18.9105,
+        "mean_daily_R": 0.109945,
+        "month_hit": 0.8333,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 3.1518,
+        "CVaR_m20": 0.0303,
+        "maxDD": -2.0875,
+        "worst_month": -0.0888,
+        "best_month": 7.2914
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "DE40": 0.25,
+            "AUDUSD": 0.25,
+            "USDJPY": 0.25,
+            "AAPL": 0.25
+          },
+          "sum_R": 18.9105,
+          "month_hit": 0.8333,
+          "maxDD": -2.0875,
+          "f_budget_sum_R": 18.9105,
+          "f_budget_weights": {
+            "DE40": 0.25,
+            "AUDUSD": 0.25,
+            "USDJPY": 0.25,
+            "AAPL": 0.25
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "DE40": 0.171241,
+            "AUDUSD": 0.253998,
+            "USDJPY": 0.319517,
+            "AAPL": 0.255244
+          },
+          "sum_R": 17.5541,
+          "month_hit": 0.8333,
+          "maxDD": -1.886,
+          "f_budget_sum_R": 17.5632,
+          "f_budget_weights": {
+            "DE40": 0.172144,
+            "AUDUSD": 0.255337,
+            "USDJPY": 0.321201,
+            "AAPL": 0.251318
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "DE40": 0.158813,
+            "AUDUSD": 0.2707,
+            "USDJPY": 0.317266,
+            "AAPL": 0.253221
+          },
+          "sum_R": 17.3082,
+          "month_hit": 0.8333,
+          "maxDD": -2.0484,
+          "f_budget_sum_R": 17.3129,
+          "f_budget_weights": {
+            "DE40": 0.159326,
+            "AUDUSD": 0.271575,
+            "USDJPY": 0.318291,
+            "AAPL": 0.250808
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "DE40": 0.099752,
+            "AUDUSD": 0.275126,
+            "USDJPY": 0.347291,
+            "AAPL": 0.277831
+          },
+          "sum_R": 16.31,
+          "month_hit": 0.8333,
+          "maxDD": -2.2702,
+          "f_budget_sum_R": 16.3234,
+          "f_budget_weights": {
+            "DE40": 0.102608,
+            "AUDUSD": 0.283002,
+            "USDJPY": 0.357233,
+            "AAPL": 0.257157
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "USDJPY+UK100",
+      "k": 2,
+      "members": [
+        "USDJPY",
+        "UK100"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "USDJPY": 0.5,
+          "UK100": 0.5
+        },
+        "metrics": {
+          "sum_R": 17.775,
+          "mean_daily_R": 0.103343,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.9625,
+          "CVaR_m20": 0.275,
+          "maxDD": -2.625,
+          "worst_month": -0.25,
+          "best_month": 7.6
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "USDJPY": 0.615385,
+          "UK100": 0.384615
+        },
+        "metrics": {
+          "sum_R": 17.0885,
+          "mean_daily_R": 0.099352,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.8481,
+          "CVaR_m20": 0.6269,
+          "maxDD": -2.3231,
+          "worst_month": -0.1923,
+          "best_month": 6.8154
+        },
+        "notes": [
+          "USDJPY clipped to research_cap 0.4",
+          "UK100 clipped to caution_cap 0.25"
+        ],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 0.615385,
+          "caution_w": 0.384615
+        },
+        "vs_equal_sum_R": -0.6865
+      },
+      "equal_metrics": {
+        "sum_R": 17.775,
+        "mean_daily_R": 0.103343,
+        "month_hit": 0.8333,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 2.9625,
+        "CVaR_m20": 0.275,
+        "maxDD": -2.625,
+        "worst_month": -0.25,
+        "best_month": 7.6
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "USDJPY": 0.5,
+            "UK100": 0.5
+          },
+          "sum_R": 17.775,
+          "month_hit": 0.8333,
+          "maxDD": -2.625,
+          "f_budget_sum_R": 17.0885,
+          "f_budget_weights": {
+            "USDJPY": 0.615385,
+            "UK100": 0.384615
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "USDJPY": 0.639974,
+            "UK100": 0.360026
+          },
+          "sum_R": 16.9422,
+          "month_hit": 0.8333,
+          "maxDD": -2.4559,
+          "f_budget_sum_R": 17.0885,
+          "f_budget_weights": {
+            "USDJPY": 0.615385,
+            "UK100": 0.384615
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "USDJPY": 0.639974,
+            "UK100": 0.360026
+          },
+          "sum_R": 16.9422,
+          "month_hit": 0.8333,
+          "maxDD": -2.4559,
+          "f_budget_sum_R": 17.0885,
+          "f_budget_weights": {
+            "USDJPY": 0.615385,
+            "UK100": 0.384615
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "USDJPY": 0.759603,
+            "UK100": 0.240397
+          },
+          "sum_R": 16.2304,
+          "month_hit": 0.8333,
+          "maxDD": -3.1019,
+          "f_budget_sum_R": 17.0336,
+          "f_budget_weights": {
+            "USDJPY": 0.624613,
+            "UK100": 0.375387
+          }
+        }
+      ]
+    },
+    {
+      "group_id": "USDJPY+UK100+AAPL",
+      "k": 3,
+      "members": [
+        "USDJPY",
+        "UK100",
+        "AAPL"
+      ],
+      "recommended": {
+        "scheme": "equal",
+        "weights": {
+          "USDJPY": 0.333333,
+          "UK100": 0.333333,
+          "AAPL": 0.333333
+        },
+        "metrics": {
+          "sum_R": 17.1307,
+          "mean_daily_R": 0.099597,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.8551,
+          "CVaR_m20": 0.2904,
+          "maxDD": -1.8333,
+          "worst_month": -0.2018,
+          "best_month": 8.3298
+        },
+        "vs_equal_sum_R": 0.0
+      },
+      "recommended_f_budget": {
+        "scheme": "equal",
+        "weights": {
+          "USDJPY": 0.4,
+          "UK100": 0.3,
+          "AAPL": 0.3
+        },
+        "metrics": {
+          "sum_R": 16.8976,
+          "mean_daily_R": 0.098242,
+          "month_hit": 0.8333,
+          "n_months": 6,
+          "quarter_hit": 1.0,
+          "E_month": 2.8163,
+          "CVaR_m20": 0.3813,
+          "maxDD": -1.65,
+          "worst_month": -0.1816,
+          "best_month": 7.9168
+        },
+        "notes": [
+          "UK100 clipped to caution_cap 0.25",
+          "AAPL clipped to caution_cap 0.25"
+        ],
+        "budget_mix": {
+          "production_w": 0.0,
+          "research_w": 0.4,
+          "caution_w": 0.6
+        },
+        "vs_equal_sum_R": -0.2331
+      },
+      "equal_metrics": {
+        "sum_R": 17.1307,
+        "mean_daily_R": 0.099597,
+        "month_hit": 0.8333,
+        "n_months": 6,
+        "quarter_hit": 1.0,
+        "E_month": 2.8551,
+        "CVaR_m20": 0.2904,
+        "maxDD": -1.8333,
+        "worst_month": -0.2018,
+        "best_month": 8.3298
+      },
+      "scheme_summary": [
+        {
+          "scheme": "equal",
+          "weights": {
+            "USDJPY": 0.333333,
+            "UK100": 0.333333,
+            "AAPL": 0.333333
+          },
+          "sum_R": 17.1307,
+          "month_hit": 0.8333,
+          "maxDD": -1.8333,
+          "f_budget_sum_R": 16.8976,
+          "f_budget_weights": {
+            "USDJPY": 0.4,
+            "UK100": 0.3,
+            "AAPL": 0.3
+          }
+        },
+        {
+          "scheme": "inv_vol",
+          "weights": {
+            "USDJPY": 0.423477,
+            "UK100": 0.238233,
+            "AAPL": 0.338291
+          },
+          "sum_R": 16.57,
+          "month_hit": 0.8333,
+          "maxDD": -1.4103,
+          "f_budget_sum_R": 16.6892,
+          "f_budget_weights": {
+            "USDJPY": 0.450332,
+            "UK100": 0.26821,
+            "AAPL": 0.281458
+          }
+        },
+        {
+          "scheme": "risk_parity",
+          "weights": {
+            "USDJPY": 0.413522,
+            "UK100": 0.253117,
+            "AAPL": 0.333361
+          },
+          "sum_R": 16.6534,
+          "month_hit": 0.8333,
+          "maxDD": -1.4724,
+          "f_budget_sum_R": 16.7423,
+          "f_budget_weights": {
+            "USDJPY": 0.444444,
+            "UK100": 0.277778,
+            "AAPL": 0.277778
+          }
+        },
+        {
+          "scheme": "hrp",
+          "weights": {
+            "USDJPY": 0.507018,
+            "UK100": 0.169429,
+            "AAPL": 0.323553
+          },
+          "sum_R": 16.1453,
+          "month_hit": 0.8333,
+          "maxDD": -1.5846,
+          "f_budget_sum_R": 16.3482,
+          "f_budget_weights": {
+            "USDJPY": 0.488145,
+            "UK100": 0.206765,
+            "AAPL": 0.30509
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "task_id": "UK100-L3v1c-CF",
+  "generated_utc": "2026-10-22T15:44:43.750958+00:00",
+  "preset": "UK100_5m_stack.set",
+  "magic": 26121907,
+  "ea": "1.25 dualBelow confirmN=2 softDerisk",
+  "window": "2026.05.01->2026.10.20",
+  "tester_final_balance_USD": 548.79,
+  "tip": {
+    "n": 112,
+    "sum_R": 20.75,
+    "E_N": 0.1853,
+    "WR": 0.5268,
+    "maxDD_R": -5.0,
+    "EF_pp": 2.349,
+    "month_hit": 0.75,
+    "quarter_hit": 1.0,
+    "date_min": "2026-05-01",
+    "date_max": "2026-08-26"
+  },
+  "monthly": [
+    {
+      "month": "2026-05",
+      "sum_R": 11.0,
+      "hit": true
+    },
+    {
+      "month": "2026-06",
+      "sum_R": 6.75,
+      "hit": true
+    },
+    {
+      "month": "2026-07",
+      "sum_R": 5.5,
+      "hit": true
+    },
+    {
+      "month": "2026-08",
+      "sum_R": -2.5,
+      "hit": false
+    }
+  ],
+  "halt": {
+    "reason_counts": {
+      "HALT_f0_BELOW_FRONTIER": 81
+    },
+    "max_below_streak": 10204,
+    "first": "DE\t0\t16:38:07.738\tCore 01\t2026.08.26 14:55:00   [BMRG][INFO] Entry blocked: AOS L3 HALT_f0_BELOW_FRONTIER EN20=-0.1000 EF15=-17.00 streak=8",
+    "last": "CO\t0\t16:38:07.738\tCore 01\t2026.10.19 13:35:00   [BMRG][INFO] Entry blocked: AOS L3 HALT_f0_BELOW_FRONTIER EN20=-0.1000 EF15=-17.00 streak=10204"
+  },
+  "gates": {
+    "n_ge_121": false,
+    "n_toward_153": false,
+    "sum_R_ge_20_8": false,
+    "month_hit_ge_60": true
+  },
+  "contrast": {
+    "live_prior_L3_ENonly": {
+      "n": 121,
+      "sum_R": 20.75,
+      "month_hit": 0.6,
+      "maxDD_R": -5.75,
+      "date_max": "2026-09-04"
+    },
+    "p0_AOS_OFF": {
+      "n": 153,
+      "sum_R": 22.5,
+      "month_hit": 0.6667,
+      "maxDD_R": -8.0
+    }
+  },
+  "findings": {
+    "l3v1c_wired": true,
+    "outcome_identical_to_prior_live": false,
+    "streak_latch": true,
+    "root_cause": "After first dual-BELOW hard halt, no new closes \u2192 WR ring frozen \u2192 EN20/EF15 stuck \u2192 belowStreak increments every bar forever. Trading stays dark through Oct; tip tape ends early Sep. Need unlatch / time-decay / synthetic health ticks without new fires."
+  },
+  "verdict": "PARTIAL_FAIL_STREAK_LATCH"
+}

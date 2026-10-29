@@ -1,0 +1,6 @@
+group_id,k,members,policy_label,month_hit,quarter_hit,sum_R,E_month,CVaR_m20,maxDD,fuse_days,max_tail_dep,val_sum_R
+JP225+DE40,2,JP225|DE40,max_sum_R,1.0,1.0,31.0,5.1667,1.5,-2.5,0,0.3333,3.0
+DE40+USDJPY,2,DE40|USDJPY,max_holdout_val,1.0,1.0,23.4,3.9,1.6,-4.275,1,0.375,3.2
+JP225+USDJPY,2,JP225|USDJPY,best_CVaR,1.0,1.0,22.4,4.48,1.8,-1.5,0,0.45,2.2
+EURUSD+DE40+USDJPY+AAPL,4,EURUSD|DE40|USDJPY|AAPL,min_maxDD,1.0,1.0,20.6605,3.4434,1.4053,-1.1316,0,0.4875,2.8105
+USDJPY+UK100,2,USDJPY|UK100,min_tail,0.8333,1.0,17.775,2.9625,0.275,-2.625,1,0.254,0.95

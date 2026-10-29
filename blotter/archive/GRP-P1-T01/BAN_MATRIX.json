@@ -1,0 +1,101 @@
+{
+  "thresholds": {
+    "co_loss_hard": 0.4,
+    "co_loss_soft": 0.3,
+    "min_n_both": 6
+  },
+  "hard_bans": [
+    {
+      "a": "AUDUSD",
+      "b": "EURUSD",
+      "level": "hard",
+      "reasons": [
+        "seed_hard_ban",
+        "usd_fade_twin"
+      ],
+      "co_loss_rate": 0.2632,
+      "n_both_active": 38,
+      "corr_active": 0.4348
+    }
+  ],
+  "soft_penalties": [
+    {
+      "a": "DE40",
+      "b": "UK100",
+      "level": "soft",
+      "reasons": [
+        "seed_soft_penalty",
+        "eu_index_twin"
+      ],
+      "co_loss_rate": 0.0816,
+      "n_both_active": 49,
+      "corr_active": 0.1111
+    },
+    {
+      "a": "JP225",
+      "b": "AAPL",
+      "level": "soft",
+      "reasons": [
+        "co_loss>=0.3",
+        "measured_co_loss>=0.3"
+      ],
+      "co_loss_rate": 0.3333,
+      "n_both_active": 12,
+      "corr_active": -0.4581
+    }
+  ],
+  "hard_ban_pairs": [
+    [
+      "AUDUSD",
+      "EURUSD"
+    ]
+  ],
+  "soft_penalty_pairs": [
+    [
+      "AAPL",
+      "JP225"
+    ],
+    [
+      "DE40",
+      "UK100"
+    ]
+  ],
+  "do_not_combine_raw": [
+    {
+      "a": "JP225",
+      "b": "AAPL",
+      "n_both_active": 12,
+      "co_loss_rate": 0.3333,
+      "co_win_rate": 0.0,
+      "same_sign_rate": 0.3333,
+      "corr_active": -0.4581,
+      "reasons": [
+        "co_loss>=0.3"
+      ]
+    },
+    {
+      "a": "EURUSD",
+      "b": "AUDUSD",
+      "n_both_active": 38,
+      "co_loss_rate": 0.2632,
+      "co_win_rate": 0.3947,
+      "same_sign_rate": 0.6579,
+      "corr_active": 0.4348,
+      "reasons": [
+        "known_twin_hypothesis"
+      ]
+    },
+    {
+      "a": "DE40",
+      "b": "UK100",
+      "n_both_active": 49,
+      "co_loss_rate": 0.0816,
+      "co_win_rate": 0.449,
+      "same_sign_rate": 0.5306,
+      "corr_active": 0.1111,
+      "reasons": [
+        "known_twin_hypothesis"
+      ]
+    }
+  ]
+}

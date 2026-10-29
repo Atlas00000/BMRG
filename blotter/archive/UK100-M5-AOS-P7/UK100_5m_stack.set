@@ -1,11 +1,11 @@
 ; UK100_5m_stack.set
 ; Alias: BMRG-M5-UK100-6M-P7_research_OS_ARMED.set
-; Status: P7 HITL RESEARCH OS ARM — Tester / paper / tiny-f · NOT FX live replace
+; Status: P7 HITL RESEARCH OS ARM + L3v1c BELOW retune — Tester / paper / tiny-f · NOT FX live replace
 ; Name: UK100_5m_stack · Balanced P0 M5 + AIOS L2det_uk_m5_v1b LIVE_WITHHOLD
-; EA: BMRG ≥ v1.24 · G0 · Symbol UK100 · Chart TF M5
-; Framework: doc/assets/UK100/AIOS_SIGNOFF_M5.md · aios_roadmap_M5.md · aos_p6_harden_M5.md
+; EA: BMRG ≥ v1.26 · G0 · Symbol UK100 · Chart TF M5
+; Framework: doc/assets/UK100/AIOS_SIGNOFF_M5.md · aos_l3l4_policy_M5.md · doc/UK100_L3_RETUNE_CF.md
 ; Packet: blotter/archive/UK100-M5-AOS-P7/promotion_packet.json · UK100_M5_AOS_RESEARCH_v1
-; HITL signed 2026-10-20 · ARM_RESEARCH_OS
+; HITL signed 2026-10-20 · ARM_RESEARCH_OS · L3v1c 2026-10-22 · L3v1d probe-unlatch after CF fail
 ; AI challenger SHADOW store only — L2AI OFF in EA
 ; HARD RULE: never emit TP < SL → InpTP_Points (2250) > InpSL_Points (1800) · RR=1.25
 ;
@@ -13,11 +13,13 @@
 ;   Engine Balanced P0 M5 freeze (26101905 geometry) · magic 26121907
 ;   L2det_uk_m5_v1b LIVE_WITHHOLD ((Mon ∧ H12–13) ∨ (SELL ∧ H12–13))
 ;   L3 halt + L4 size W50 + L6 ledger ON
+;   L3v1d: dual BELOW · confirm on closes only · soft derisk · HaltMaxBars=500 probe unlatch
 ;   L2 AI OFF · L9 H14+/spread NOT LIVE
 ;   ATR max 869 · session 08–17 · skip Tue
 ;
-; Compile BMRG.mq5 ≥ 1.24 · ledger COMMON\Files\BMRG_AOS_ledger_26121907.csv
+; Compile BMRG.mq5 ≥ 1.26 · ledger COMMON\Files\BMRG_AOS_ledger_26121907.csv
 ; Load: Presets/UK100_5m_stack.set · Profiles/Tester/BMRG/UK100/UK100_5m_stack.set
+; CF: doc/UK100_L3_RETUNE_CF.md · magic 26121907 tip 2026.05.01→2026.10.20
 ; Not M15 UK OS (26111307) · not EUR/AUD live.
 ;
 ;=== Indicators ===
@@ -95,6 +97,11 @@ InpAOS_BWR=44.4||50.0||1.000000||90.000000||N
 InpAOS_Leak=5.93||2.2||0.100000||10.000000||N
 InpAOS_R=1.25||1.0||0.100000||5.000000||N
 InpAOS_W250=50||250||1||500||N
+;=== L3v1c BELOW retune (false-trip harden) ===
+InpAOS_L3_BelowDualWindow=true||false||0||true||N
+InpAOS_L3_BelowConfirmN=2||2||1||10||N
+InpAOS_L3_BelowSoftDerisk=true||false||0||true||N
+InpAOS_L3_BelowHaltMaxBars=500||500||0||5000||N
 InpAOS_Ledger=true||false||0||true||N
 ;=== UK100 M15 L2det — OFF on M5 sleeve ===
 InpAOS_UK_L2detEnable=false||false||0||true||N

@@ -1,0 +1,28 @@
+{
+  "task_id": "GRP-P2-T01",
+  "generated_utc": "2026-10-22T13:21:02.428947+00:00",
+  "roadmap": "doc/asset_grouping_roadmap.md",
+  "caveat": "Block bootstrap of tip months/weeks + May-Aug/Sep-Oct holdout + fuse stub (next-day suppress after multi-sleeve R_p < -1R). OOS-stable clears provisional for tip panel only \u2014 still not a live f / attach promotion.",
+  "p1_ref": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\grouping\\P1_LATEST\\ACCEPTABLE_RANGE.json",
+  "thresholds": {
+    "boot_hit_p10_floor": 0.5,
+    "val_sum_floor": 0.0,
+    "val_hit_floor": 0.5,
+    "fuse_hit_drop_max": 0.34,
+    "month_hit_floor_ref": 0.67,
+    "n_boot": 1000,
+    "seed": 42,
+    "candidate_source": "clean_resilient"
+  },
+  "panel": {
+    "n_days": 172,
+    "date_min": "2026-05-01",
+    "date_max": "2026-10-19"
+  },
+  "n_candidates": 32,
+  "n_oos_stable": 24,
+  "n_oos_fail": 8,
+  "reject_tallies": {
+    "holdout_val_sum": 8
+  }
+}

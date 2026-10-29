@@ -1,0 +1,10 @@
+{
+  "boot_hit_p10_floor": 0.5,
+  "val_sum_floor": 0.0,
+  "val_hit_floor": 0.5,
+  "fuse_hit_drop_max": 0.34,
+  "month_hit_floor_ref": 0.67,
+  "n_boot": 1000,
+  "seed": 42,
+  "candidate_source": "clean_resilient"
+}

@@ -1,0 +1,125 @@
+{
+  "task_id": "UK100-NOHALT-P0",
+  "generated_utc": "2026-10-22T15:08:59.243187+00:00",
+  "preset": "Profiles/Tester/BMRG/UK100/BMRG-M5-UK100-6M-P0_balanced_chart.set",
+  "true_magic_in_set": 26101905,
+  "parser_note": "Header magic 26101905; parse remaps to live 26121907 via UK100 symbol map \u2014 trades are still the P0 AOS-OFF run.",
+  "aos": "OFF (InpAOS_Enable=false \u2014 no L3 halt)",
+  "window": "2026.01.01->2026.10.20",
+  "tester_final_balance_USD": 555.23,
+  "jan_oct": {
+    "label": "Jan-Oct P0 AOS-OFF",
+    "n": 272,
+    "sum_R": 25.0,
+    "E_N": 0.0919,
+    "WR": 0.4853,
+    "maxDD_R": -10.0,
+    "EF_pp": -1.801,
+    "month_hit": 0.5,
+    "quarter_hit": 1.0,
+    "n_months": 10,
+    "date_min": "2026-01-02",
+    "date_max": "2026-10-19"
+  },
+  "tip_subset": {
+    "label": "May-Oct tip subset of P0",
+    "n": 153,
+    "sum_R": 22.5,
+    "E_N": 0.1471,
+    "WR": 0.5098,
+    "maxDD_R": -8.0,
+    "EF_pp": 0.65,
+    "month_hit": 0.6667,
+    "quarter_hit": 1.0,
+    "n_months": 6,
+    "date_min": "2026-05-01",
+    "date_max": "2026-10-19"
+  },
+  "live_tip_contrast": {
+    "label": "Live tip panel (UK100_5m_stack AOS ON \u00b7 26121907)",
+    "n": 121,
+    "sum_R": 20.75,
+    "E_N": 0.1715,
+    "WR": 0.5207,
+    "maxDD_R": -5.75,
+    "month_hit": 0.6,
+    "quarter_hit": 1.0
+  },
+  "monthly": [
+    {
+      "month": "2026-01",
+      "sum_R": 11.75,
+      "hit": true
+    },
+    {
+      "month": "2026-02",
+      "sum_R": -4.0,
+      "hit": false
+    },
+    {
+      "month": "2026-03",
+      "sum_R": -1.5,
+      "hit": false
+    },
+    {
+      "month": "2026-04",
+      "sum_R": -3.75,
+      "hit": false
+    },
+    {
+      "month": "2026-05",
+      "sum_R": 11.0,
+      "hit": true
+    },
+    {
+      "month": "2026-06",
+      "sum_R": 6.75,
+      "hit": true
+    },
+    {
+      "month": "2026-07",
+      "sum_R": 5.5,
+      "hit": true
+    },
+    {
+      "month": "2026-08",
+      "sum_R": -2.0,
+      "hit": false
+    },
+    {
+      "month": "2026-09",
+      "sum_R": -2.5,
+      "hit": false
+    },
+    {
+      "month": "2026-10",
+      "sum_R": 3.75,
+      "hit": true
+    }
+  ],
+  "usdjpy_uk100_group": {
+    "group_id": "USDJPY+UK100",
+    "weights": "equal 50/50 (designed R)",
+    "usdjpy_source": "GRP-ALT-MINMAXDD-CF Jan-Oct",
+    "uk_source": "P0 AOS-OFF Jan-Oct",
+    "group": {
+      "sum_R": 20.2,
+      "month_hit": 0.6,
+      "quarter_hit": 1.0,
+      "E_month": 2.02,
+      "CVaR_m20": -2.3875,
+      "maxDD": -4.925,
+      "worst_month": -2.775,
+      "best_month": 7.6
+    },
+    "holdout_val_sum_R": 1.825,
+    "boot_hit_p10": 0.4,
+    "tip_pareto_watch_ref": {
+      "sum_R": 17.775,
+      "month_hit": 0.8333,
+      "note": "tip live UK with halt \u2014 prior watch"
+    }
+  },
+  "verdict": "HALT_IS_THE_DRAG",
+  "caveat": "Research P0 chart \u00b7 AOS OFF \u00b7 different magic from live stack. Confirms halt truncates edge; does NOT auto-promote P0 to VPS."
+}

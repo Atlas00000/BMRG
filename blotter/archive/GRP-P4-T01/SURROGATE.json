@@ -1,0 +1,310 @@
+{
+  "ok": true,
+  "n": 32,
+  "intercept": 0.9219,
+  "coefficients": {
+    "k": 0.0068,
+    "n_core": 0.009,
+    "n_watch": -0.0032,
+    "n_caution": -0.001,
+    "has_eur": 0.0259,
+    "has_aud": -0.0477,
+    "has_uk": -0.0047,
+    "has_aapl": 0.0036,
+    "mean_freq": -0.0119,
+    "freq_spread": -0.0015,
+    "max_tail": -0.0109,
+    "max_coloss": -0.0033,
+    "mean_corr": 0.0184
+  },
+  "loo_r2": 0.6234,
+  "rmse": 0.0316,
+  "feature_scale_mean": [
+    3.0,
+    1.25,
+    1.15625,
+    0.59375,
+    0.375,
+    0.375,
+    0.34375,
+    0.25,
+    14.94322916666667,
+    12.096875,
+    0.45085624999999974,
+    0.17041250000000002,
+    -0.050865625
+  ],
+  "feature_scale_std": [
+    0.7071067811865476,
+    0.82915619758885,
+    0.6179287479151622,
+    0.6547602137424051,
+    0.4841229182759271,
+    0.4841229182759271,
+    0.47495887979908324,
+    0.4330127018922193,
+    2.561193296153263,
+    5.813964029332742,
+    0.10440370843958321,
+    0.05652087418600317,
+    0.12492032363014184
+  ],
+  "predictions": [
+    {
+      "group_id": "EURUSD+DE40+USDJPY",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 1.0011,
+      "residual": -0.0011,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+USDJPY",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 1.0009,
+      "residual": -0.0009,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+JP225+DE40",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 1.0025,
+      "residual": -0.0025,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+JP225",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 1.0104,
+      "residual": -0.0104,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+JP225+DE40+USDJPY",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 1.0201,
+      "residual": -0.0201,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "DE40+USDJPY",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9745,
+      "residual": 0.0255,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+JP225+USDJPY",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 1.0098,
+      "residual": -0.0098,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+DE40",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9555,
+      "residual": 0.0445,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+DE40+USDJPY+AAPL",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 1.0194,
+      "residual": -0.0194,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+DE40+USDJPY",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9619,
+      "residual": 0.0381,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+USDJPY+AAPL",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 1.0063,
+      "residual": -0.0063,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+USDJPY+UK100",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9615,
+      "residual": 0.0385,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+JP225+USDJPY+UK100",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9896,
+      "residual": 0.0104,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+USDJPY",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9408,
+      "residual": 0.0592,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+JP225+UK100",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9902,
+      "residual": 0.0098,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "DE40+USDJPY+AAPL",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9653,
+      "residual": 0.0347,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "EURUSD+USDJPY+UK100+AAPL",
+      "month_hit_obs": 1.0,
+      "month_hit_pred": 0.9754,
+      "residual": 0.0246,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+USDJPY+UK100",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.9101,
+      "residual": -0.0768,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "USDJPY+UK100",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8873,
+      "residual": -0.054,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+DE40+AUDUSD+USDJPY",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8576,
+      "residual": -0.0243,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "USDJPY+UK100+AAPL",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8939,
+      "residual": -0.0606,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "DE40+AUDUSD+USDJPY",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8335,
+      "residual": -0.0002,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "DE40+AUDUSD+USDJPY+AAPL",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8517,
+      "residual": -0.0184,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+DE40+AUDUSD",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.861,
+      "residual": -0.0277,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+AUDUSD",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8765,
+      "residual": -0.0432,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+AUDUSD+UK100",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8249,
+      "residual": 0.0084,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+AUDUSD+USDJPY+UK100",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8161,
+      "residual": 0.0172,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "JP225+AUDUSD+USDJPY",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8401,
+      "residual": -0.0068,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "AUDUSD+USDJPY+UK100",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.7944,
+      "residual": 0.0389,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "AUDUSD+USDJPY+UK100+AAPL",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.792,
+      "residual": 0.0413,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "AUDUSD+USDJPY+AAPL",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8277,
+      "residual": 0.0056,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    },
+    {
+      "group_id": "AUDUSD+USDJPY",
+      "month_hit_obs": 0.8333,
+      "month_hit_pred": 0.8474,
+      "residual": -0.0141,
+      "fragile_flag": false,
+      "optimistic_flag": false
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "task_id": "GRP-P0-T01",
+  "generated_utc": "2026-10-22T13:07:50.545059+00:00",
+  "roadmap": "doc/asset_grouping_roadmap.md",
+  "caveat": "Equal-weight tip 6m designed R. Admission rules 1\u20134 only \u2014 bootstrap/holdout (rule 5) is GRP-P2. Provisional range; do not raise live f or auto-attach.",
+  "panel": {
+    "source": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\diversify\\P2_LATEST\\sleeves",
+    "n_days": 172,
+    "date_min": "2026-05-01",
+    "date_max": "2026-10-19",
+    "sleeves": [
+      "EURUSD",
+      "JP225",
+      "DE40",
+      "AUDUSD",
+      "USDJPY",
+      "UK100",
+      "AAPL"
+    ],
+    "sleeve_n_trades": {
+      "EURUSD": 110,
+      "JP225": 72,
+      "DE40": 112,
+      "AUDUSD": 63,
+      "USDJPY": 49,
+      "UK100": 121,
+      "AAPL": 46
+    }
+  },
+  "thresholds": {
+    "month_hit_floor": 0.67,
+    "quarter_hit_floor": 0.67,
+    "eur_hit_slack": 0.1,
+    "cvar_tolerance_R": 2.0,
+    "ks": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "hard_ban_pairs": [
+      [
+        "AUDUSD",
+        "EURUSD"
+      ]
+    ],
+    "soft_penalty_pairs": [
+      [
+        "DE40",
+        "UK100"
+      ]
+    ]
+  },
+  "eur_baseline": {
+    "members": [
+      "EURUSD"
+    ],
+    "group_id": "EURUSD",
+    "k": 1,
+    "n_days": 172,
+    "active_days": 74,
+    "sum_R": 20.0,
+    "mean_daily_R": 0.116279,
+    "month_hit": 0.8333,
+    "n_months": 6,
+    "quarter_hit": 0.6667,
+    "n_quarters": 3,
+    "year_hit": 1.0,
+    "n_years": 1,
+    "E_month": 3.3333,
+    "E_quarter": 6.6667,
+    "CVaR_m20": 0.0,
+    "worst_month": -1.0,
+    "best_month": 7.0,
+    "maxDD": -5.0,
+    "fuse_days": 0,
+    "co_loss": 0.0,
+    "hard_ban": false,
+    "hard_ban_pairs": [],
+    "soft_flags": [],
+    "soft_penalty_pairs": [],
+    "freq_min": 19.5,
+    "freq_max": 19.5,
+    "freq_all_high": false,
+    "freq_all_low": false,
+    "tiers": [
+      "core"
+    ],
+    "caution_only": false,
+    "n_core": 1,
+    "n_watch": 0,
+    "n_caution": 0
+  },
+  "n_enumerated": 112,
+  "n_accepted_provisional": 66,
+  "n_rejected": 46,
+  "universe": [
+    {
+      "asset_id": "EURUSD",
+      "magic": 8210204,
+      "tier": "core",
+      "trades_per_30d": 19.5
+    },
+    {
+      "asset_id": "JP225",
+      "magic": 26161907,
+      "tier": "core",
+      "trades_per_30d": 12.8
+    },
+    {
+      "asset_id": "DE40",
+      "magic": 26151907,
+      "tier": "core",
+      "trades_per_30d": 20.6
+    },
+    {
+      "asset_id": "AUDUSD",
+      "magic": 8230931,
+      "tier": "watch",
+      "trades_per_30d": 11.2
+    },
+    {
+      "asset_id": "USDJPY",
+      "magic": 26131807,
+      "tier": "watch",
+      "trades_per_30d": 9.5
+    },
+    {
+      "asset_id": "UK100",
+      "magic": 26121907,
+      "tier": "caution",
+      "trades_per_30d": 28.6
+    },
+    {
+      "asset_id": "AAPL",
+      "magic": 26162017,
+      "tier": "caution",
+      "trades_per_30d": 8.4
+    }
+  ]
+}

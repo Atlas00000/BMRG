@@ -112,7 +112,11 @@ input double   InpAOS_DD_Limit      = 25.0;     // L3 MaxDD % from peak equity
 input double   InpAOS_BWR           = 50.0;     // Break-even WR % (R=1 → 50)
 input double   InpAOS_Leak          = 2.2;      // Leak pp for EF
 input double   InpAOS_R             = 1.0;      // Designed R for E_N
-input int      InpAOS_W250          = 250;      // Rolling window for L4/L3
+input int      InpAOS_W250          = 250;      // Primary rolling window for L4/L3 observer
+input bool     InpAOS_L3_BelowDualWindow = true; // BELOW halt needs W20 EN≤0 AND W15 EF≤0 (signed P3)
+input int      InpAOS_L3_BelowConfirmN   = 2;    // Consecutive BELOW *closes* before hard halt (1=legacy immediate)
+input bool     InpAOS_L3_BelowSoftDerisk = true; // While confirming BELOW: f≤0.25 derisk instead of f=0
+input int      InpAOS_L3_BelowHaltMaxBars = 500; // Bars after hard BELOW halt → probe unlatch (0=off). M5≈2 sessions
 input bool     InpAOS_Ledger        = true;     // Write AOS ledger CSV (COMMON\\Files)
 // Apple M15 L2det (only when Apple/AAPL and NOT M5 — see AOS_L2det_aapl.mqh)
 input bool     InpAOS_AAPL_L2detEnable = false; // Enable Apple M15 Thu/hour-18 L2det map
@@ -180,15 +184,40 @@ bool ConfigIsHedgingAccount()
   }
 
 //+------------------------------------------------------------------+
+// Trading gate: true once the connected account is confirmed hedging.
+// Rechecked every tick until it passes, so a pre-sync read cannot
+// permanently disable the EA; a real netting account never trades.
+bool g_cfgAccountModeOK     = false;
+bool g_cfgAccountModeLogged = false;
+
+bool ConfigAccountModeOK()
+  {
+   if(g_cfgAccountModeOK)
+      return true;
+   if(!TerminalInfoInteger(TERMINAL_CONNECTED) || AccountInfoInteger(ACCOUNT_LOGIN) == 0)
+      return false;
+   if(!ConfigIsHedgingAccount())
+     {
+      if(!g_cfgAccountModeLogged)
+        {
+         Print("[BMRG][WARN] Trading paused: account not reported as hedging (netting unsupported) — rechecking each tick");
+         g_cfgAccountModeLogged = true;
+        }
+      return false;
+     }
+   g_cfgAccountModeOK = true;
+   Print("[BMRG][INFO] Account check OK: hedging");
+   return true;
+  }
+
+//+------------------------------------------------------------------+
+// Account margin mode is not checked here: in OnInit after a VPS restart the
+// account may not be synchronized yet and reports a non-hedging default.
+// See ConfigAccountModeOK(), called from OnTick.
 bool ConfigValidate(string &reason)
   {
    reason = "";
 
-   if(!ConfigIsHedgingAccount())
-     {
-      reason = "Hedging account required (netting unsupported)";
-      return false;
-     }
    if(InpBBPeriod < 2) { reason = "BBPeriod must be >= 2"; return false; }
    if(InpBBDev <= 0.0) { reason = "BBDev must be > 0"; return false; }
    if(InpATRPeriod < 1) { reason = "ATRPeriod must be >= 1"; return false; }

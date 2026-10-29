@@ -1,0 +1,207 @@
+{
+  "task_id": "GRP-ALT-MINMAXDD-CF",
+  "generated_utc": "2026-10-22T15:00:11.184231+00:00",
+  "cluster": "EURUSD+DE40+USDJPY+AAPL",
+  "weights": {
+    "EURUSD": 0.25,
+    "DE40": 0.25,
+    "USDJPY": 0.25,
+    "AAPL": 0.25
+  },
+  "splice": {
+    "EURUSD": "2026.01.01->2026.10.20",
+    "DE40": "2026.01.01->2026.10.20",
+    "USDJPY": "2026.01.01->2026.10.20",
+    "AAPL": "2026.05.01->2026.10.20 tip (Jan-Apr zero; halt avoided)"
+  },
+  "sleeves": {
+    "EURUSD": {
+      "n": 214,
+      "sum_R": 36.0,
+      "date_min": "2026-01-04",
+      "date_max": "2026-10-16",
+      "window_note": "Jan-Oct 2026 (prior CF)"
+    },
+    "DE40": {
+      "n": 190,
+      "sum_R": 41.75,
+      "date_min": "2026-01-02",
+      "date_max": "2026-10-13",
+      "window_note": "Jan-Oct 2026 (prior CF)"
+    },
+    "USDJPY": {
+      "n": 55,
+      "sum_R": 15.4,
+      "date_min": "2026-01-08",
+      "date_max": "2026-10-12",
+      "window_note": "Jan-Oct 2026 (prior CF)"
+    },
+    "AAPL": {
+      "n": 46,
+      "sum_R": 15.8421,
+      "date_min": "2026-05-05",
+      "date_max": "2026-10-16",
+      "window_note": "May-Oct tip (halt-avoid re-run)"
+    }
+  },
+  "group": {
+    "group_id": "EURUSD+DE40+USDJPY+AAPL",
+    "k": 4,
+    "n_days": 288,
+    "active_days": 194,
+    "sum_R": 27.248,
+    "mean_daily_R": 0.094611,
+    "month_hit": 0.9,
+    "n_months": 10,
+    "quarter_hit": 1.0,
+    "n_quarters": 4,
+    "year_hit": 1.0,
+    "E_month": 2.7248,
+    "E_quarter": 6.812,
+    "CVaR_m20": -0.0191,
+    "worst_month": -0.1875,
+    "best_month": 6.7914,
+    "maxDD": -1.4375,
+    "fuse_days": 0,
+    "co_loss": 0.095
+  },
+  "holdout": {
+    "val_months": [
+      9,
+      10
+    ],
+    "val_sum_R": 2.8105,
+    "val_month_hit": 1.0,
+    "fit_month_hit": 1.0,
+    "val": {
+      "n_days": 46,
+      "sum_R": 2.8105,
+      "month_hit": 1.0,
+      "n_months": 2,
+      "E_month": 1.4053,
+      "CVaR_m20": null,
+      "maxDD": -0.8375,
+      "worst_month": 0.1493,
+      "best_month": 2.6612
+    }
+  },
+  "bootstrap_month": {
+    "hit_p10": 0.8,
+    "hit_mean": 0.8957,
+    "obs_hit": 0.9,
+    "sum_p10": 19.5559
+  },
+  "fuse": {
+    "sum_R_fused": 27.248,
+    "sum_R_base": 27.248,
+    "sum_R_delta": 0.0,
+    "month_hit_fused": 0.9,
+    "maxDD_fused": -1.4375,
+    "fuse": {
+      "thresh_R": -1.0,
+      "min_losers": 2,
+      "n_trigger_days": 0,
+      "n_days_suppressed": 0,
+      "trigger_dates": []
+    }
+  },
+  "prior_jan_oct_aapl_halt": {
+    "sum_R": 21.9191,
+    "month_hit": 0.9,
+    "AAPL_sum_R": -5.4737
+  },
+  "verdict": "PASS_EXTENDED_AAPL_TIP",
+  "monthly": [
+    {
+      "month": "2026-01",
+      "group_R": 2.3625,
+      "EURUSD": -1.0,
+      "DE40": 9.25,
+      "USDJPY": 1.2,
+      "AAPL": 0.0,
+      "hit": true
+    },
+    {
+      "month": "2026-02",
+      "group_R": -0.1875,
+      "EURUSD": 5.0,
+      "DE40": -5.75,
+      "USDJPY": 0.0,
+      "AAPL": 0.0,
+      "hit": false
+    },
+    {
+      "month": "2026-03",
+      "group_R": 2.55,
+      "EURUSD": 10.0,
+      "DE40": -1.0,
+      "USDJPY": 1.2,
+      "AAPL": 0.0,
+      "hit": true
+    },
+    {
+      "month": "2026-04",
+      "group_R": 2.3625,
+      "EURUSD": 3.0,
+      "DE40": 8.25,
+      "USDJPY": -1.8,
+      "AAPL": 0.0,
+      "hit": true
+    },
+    {
+      "month": "2026-05",
+      "group_R": 4.2474,
+      "EURUSD": 0.0,
+      "DE40": 3.0,
+      "USDJPY": 4.2,
+      "AAPL": 9.7895,
+      "hit": true
+    },
+    {
+      "month": "2026-06",
+      "group_R": 3.3862,
+      "EURUSD": 7.0,
+      "DE40": 1.25,
+      "USDJPY": 5.4,
+      "AAPL": -0.1053,
+      "hit": true
+    },
+    {
+      "month": "2026-07",
+      "group_R": 2.925,
+      "EURUSD": 5.0,
+      "DE40": 7.5,
+      "USDJPY": -0.8,
+      "AAPL": 0.0,
+      "hit": true
+    },
+    {
+      "month": "2026-08",
+      "group_R": 6.7914,
+      "EURUSD": 2.0,
+      "DE40": 15.25,
+      "USDJPY": 3.6,
+      "AAPL": 6.3158,
+      "hit": true
+    },
+    {
+      "month": "2026-09",
+      "group_R": 2.6612,
+      "EURUSD": 6.0,
+      "DE40": 4.75,
+      "USDJPY": 0.0,
+      "AAPL": -0.1053,
+      "hit": true
+    },
+    {
+      "month": "2026-10",
+      "group_R": 0.1493,
+      "EURUSD": -1.0,
+      "DE40": -0.75,
+      "USDJPY": 2.4,
+      "AAPL": -0.0526,
+      "hit": true
+    }
+  ],
+  "tester_aapl_final_balance_USD": 531.18
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "a": "EURUSD",
+    "b": "AUDUSD",
+    "n_both_active": 50,
+    "co_loss_rate": 0.3,
+    "co_win_rate": 0.34,
+    "same_sign_rate": 0.64,
+    "corr_active": 0.2834,
+    "reasons": [
+      "known_twin_hypothesis"
+    ]
+  },
+  {
+    "a": "UK100",
+    "b": "DE40",
+    "n_both_active": 88,
+    "co_loss_rate": 0.1023,
+    "co_win_rate": 0.3977,
+    "same_sign_rate": 0.5,
+    "corr_active": 0.2353,
+    "reasons": [
+      "known_twin_hypothesis"
+    ]
+  }
+]

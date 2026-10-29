@@ -1,0 +1,2528 @@
+{
+  "n": 46,
+  "groups": [
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "AUDUSD"
+      ],
+      "group_id": "EURUSD+JP225+AUDUSD",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 87,
+      "sum_R": 21.0,
+      "mean_daily_R": 0.122093,
+      "month_hit": 1.0,
+      "n_months": 5,
+      "quarter_hit": 1.0,
+      "n_quarters": 2,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 4.2,
+      "E_quarter": 10.5,
+      "CVaR_m20": 0.3333,
+      "worst_month": 0.3333,
+      "best_month": 8.3333,
+      "maxDD": -2.3333,
+      "fuse_days": 1,
+      "co_loss": 0.1748,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 11.2,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 1,
+      "n_caution": 0,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AUDUSD",
+        "USDJPY"
+      ],
+      "group_id": "EURUSD+AUDUSD+USDJPY",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 91,
+      "sum_R": 15.9333,
+      "mean_daily_R": 0.092636,
+      "month_hit": 1.0,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.6556,
+      "E_quarter": 5.3111,
+      "CVaR_m20": 0.2333,
+      "worst_month": 0.1333,
+      "best_month": 5.4667,
+      "maxDD": -1.9333,
+      "fuse_days": 1,
+      "co_loss": 0.1262,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 9.5,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 2,
+      "n_caution": 0,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "AUDUSD",
+        "USDJPY"
+      ],
+      "group_id": "EURUSD+JP225+AUDUSD+USDJPY",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 98,
+      "sum_R": 19.45,
+      "mean_daily_R": 0.113081,
+      "month_hit": 1.0,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.2417,
+      "E_quarter": 6.4833,
+      "CVaR_m20": 0.425,
+      "worst_month": 0.25,
+      "best_month": 6.35,
+      "maxDD": -1.45,
+      "fuse_days": 0,
+      "co_loss": 0.1964,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 9.5,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 2,
+      "n_caution": 0,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "AUDUSD",
+        "UK100"
+      ],
+      "group_id": "EURUSD+JP225+AUDUSD+UK100",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 106,
+      "sum_R": 20.9375,
+      "mean_daily_R": 0.12173,
+      "month_hit": 1.0,
+      "n_months": 5,
+      "quarter_hit": 1.0,
+      "n_quarters": 2,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 4.1875,
+      "E_quarter": 10.4688,
+      "CVaR_m20": 0.125,
+      "worst_month": 0.125,
+      "best_month": 7.625,
+      "maxDD": -1.75,
+      "fuse_days": 0,
+      "co_loss": 0.2261,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 11.2,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AUDUSD",
+        "USDJPY",
+        "UK100"
+      ],
+      "group_id": "EURUSD+AUDUSD+USDJPY+UK100",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 107,
+      "sum_R": 17.1375,
+      "mean_daily_R": 0.099637,
+      "month_hit": 1.0,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.8562,
+      "E_quarter": 5.7125,
+      "CVaR_m20": 0.1125,
+      "worst_month": 0.1,
+      "best_month": 5.8,
+      "maxDD": -1.6375,
+      "fuse_days": 0,
+      "co_loss": 0.1607,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 9.5,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 2,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AUDUSD",
+        "USDJPY",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+AUDUSD+USDJPY+AAPL",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 107,
+      "sum_R": 15.9105,
+      "mean_daily_R": 0.092503,
+      "month_hit": 1.0,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.6518,
+      "E_quarter": 5.3035,
+      "CVaR_m20": 0.1553,
+      "worst_month": 0.0868,
+      "best_month": 5.4974,
+      "maxDD": -1.5447,
+      "fuse_days": 0,
+      "co_loss": 0.1368,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 2,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40",
+        "AUDUSD",
+        "USDJPY"
+      ],
+      "group_id": "EURUSD+JP225+DE40+AUDUSD+USDJPY",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 112,
+      "sum_R": 21.96,
+      "mean_daily_R": 0.127674,
+      "month_hit": 1.0,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.66,
+      "E_quarter": 7.32,
+      "CVaR_m20": 0.74,
+      "worst_month": 0.33,
+      "best_month": 6.54,
+      "maxDD": -1.2,
+      "fuse_days": 0,
+      "co_loss": 0.2419,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 9.5,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "core",
+        "watch",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 3,
+      "n_watch": 2,
+      "n_caution": 0,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "AUDUSD",
+        "USDJPY",
+        "UK100"
+      ],
+      "group_id": "EURUSD+JP225+AUDUSD+USDJPY+UK100",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 111,
+      "sum_R": 19.71,
+      "mean_daily_R": 0.114593,
+      "month_hit": 1.0,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.285,
+      "E_quarter": 6.57,
+      "CVaR_m20": 0.29,
+      "worst_month": 0.1,
+      "best_month": 6.43,
+      "maxDD": -1.0,
+      "fuse_days": 0,
+      "co_loss": 0.2542,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 9.5,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 2,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "AUDUSD",
+        "USDJPY",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+JP225+AUDUSD+USDJPY+AAPL",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 113,
+      "sum_R": 18.7284,
+      "mean_daily_R": 0.108886,
+      "month_hit": 1.0,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.1214,
+      "E_quarter": 6.2428,
+      "CVaR_m20": 0.3242,
+      "worst_month": 0.1789,
+      "best_month": 5.0589,
+      "maxDD": -1.16,
+      "fuse_days": 0,
+      "co_loss": 0.2016,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 2,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AUDUSD",
+        "USDJPY",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+AUDUSD+USDJPY+UK100+AAPL",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 121,
+      "sum_R": 16.8784,
+      "mean_daily_R": 0.09813,
+      "month_hit": 1.0,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.8131,
+      "E_quarter": 5.6261,
+      "CVaR_m20": 0.0742,
+      "worst_month": 0.0695,
+      "best_month": 6.5979,
+      "maxDD": -1.2653,
+      "fuse_days": 0,
+      "co_loss": 0.1855,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "watch",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 2,
+      "n_caution": 2,
+      "reject_reasons": [
+        "hard_ban_pair"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": true
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40"
+      ],
+      "group_id": "EURUSD+DE40",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 100,
+      "sum_R": 26.0,
+      "mean_daily_R": 0.151163,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 4.3333,
+      "E_quarter": 8.6667,
+      "CVaR_m20": 0.5625,
+      "worst_month": -0.875,
+      "best_month": 8.625,
+      "maxDD": -3.5,
+      "fuse_days": 0,
+      "co_loss": 0.0374,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 19.5,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 0,
+      "n_caution": 0,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AUDUSD"
+      ],
+      "group_id": "EURUSD+AUDUSD",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 77,
+      "sum_R": 16.5,
+      "mean_daily_R": 0.09593,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.75,
+      "E_quarter": 5.5,
+      "CVaR_m20": -0.25,
+      "worst_month": -1.0,
+      "best_month": 5.5,
+      "maxDD": -3.5,
+      "fuse_days": 5,
+      "co_loss": 0.1124,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 11.2,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 1,
+      "n_caution": 0,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+AAPL",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 87,
+      "sum_R": 17.9211,
+      "mean_daily_R": 0.104192,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.9868,
+      "E_quarter": 5.9737,
+      "CVaR_m20": 0.9868,
+      "worst_month": -0.5263,
+      "best_month": 5.3947,
+      "maxDD": -2.5,
+      "fuse_days": 0,
+      "co_loss": 0.0426,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 0,
+      "n_caution": 1,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "DE40",
+        "UK100"
+      ],
+      "group_id": "DE40+UK100",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 91,
+      "sum_R": 26.375,
+      "mean_daily_R": 0.153343,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 4.3958,
+      "E_quarter": 8.7917,
+      "CVaR_m20": 0.875,
+      "worst_month": -0.375,
+      "best_month": 7.0,
+      "maxDD": -2.875,
+      "fuse_days": 3,
+      "co_loss": 0.044,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [
+        "eu_index_twin",
+        "freq_all_high"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 20.6,
+      "freq_max": 28.6,
+      "freq_all_high": true,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 0,
+      "n_caution": 1,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "DE40",
+        "AAPL"
+      ],
+      "group_id": "DE40+AAPL",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 93,
+      "sum_R": 23.9211,
+      "mean_daily_R": 0.139076,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.9868,
+      "E_quarter": 7.9737,
+      "CVaR_m20": 0.0855,
+      "worst_month": -0.4013,
+      "best_month": 10.7829,
+      "maxDD": -2.875,
+      "fuse_days": 0,
+      "co_loss": 0.0538,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 0,
+      "n_caution": 1,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "AUDUSD"
+      ],
+      "group_id": "EURUSD+DE40+AUDUSD",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 105,
+      "sum_R": 21.6667,
+      "mean_daily_R": 0.125969,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.6111,
+      "E_quarter": 7.2222,
+      "CVaR_m20": 0.5,
+      "worst_month": -0.9167,
+      "best_month": 7.0833,
+      "maxDD": -3.0,
+      "fuse_days": 1,
+      "co_loss": 0.1565,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 11.2,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 1,
+      "n_caution": 0,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "UK100"
+      ],
+      "group_id": "EURUSD+DE40+UK100",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 114,
+      "sum_R": 24.25,
+      "mean_daily_R": 0.140988,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 4.0417,
+      "E_quarter": 8.0833,
+      "CVaR_m20": 1.4167,
+      "worst_month": -0.5833,
+      "best_month": 6.3333,
+      "maxDD": -1.8333,
+      "fuse_days": 0,
+      "co_loss": 0.1017,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 19.5,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 0,
+      "n_caution": 1,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+DE40+AAPL",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 110,
+      "sum_R": 22.614,
+      "mean_daily_R": 0.131477,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.769,
+      "E_quarter": 7.538,
+      "CVaR_m20": 1.057,
+      "worst_month": -0.6009,
+      "best_month": 7.8553,
+      "maxDD": -2.0921,
+      "fuse_days": 0,
+      "co_loss": 0.0948,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 0,
+      "n_caution": 1,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AUDUSD",
+        "UK100"
+      ],
+      "group_id": "EURUSD+AUDUSD+UK100",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 104,
+      "sum_R": 17.9167,
+      "mean_daily_R": 0.104167,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.9861,
+      "E_quarter": 5.9722,
+      "CVaR_m20": -0.25,
+      "worst_month": -0.6667,
+      "best_month": 6.3333,
+      "maxDD": -2.5833,
+      "fuse_days": 2,
+      "co_loss": 0.1389,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 11.2,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AUDUSD",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+AUDUSD+AAPL",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 94,
+      "sum_R": 16.2807,
+      "mean_daily_R": 0.094655,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.7135,
+      "E_quarter": 5.4269,
+      "CVaR_m20": -0.193,
+      "worst_month": -0.6842,
+      "best_month": 5.9298,
+      "maxDD": -2.8596,
+      "fuse_days": 2,
+      "co_loss": 0.125,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+UK100+AAPL",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 108,
+      "sum_R": 18.864,
+      "mean_daily_R": 0.109675,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.144,
+      "E_quarter": 6.288,
+      "CVaR_m20": 0.7237,
+      "worst_month": -0.3509,
+      "best_month": 7.2632,
+      "maxDD": -2.1754,
+      "fuse_days": 2,
+      "co_loss": 0.0893,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 0,
+      "n_caution": 2,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "DE40",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "DE40+UK100+AAPL",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 105,
+      "sum_R": 22.864,
+      "mean_daily_R": 0.13293,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.8107,
+      "E_quarter": 7.6213,
+      "CVaR_m20": 0.557,
+      "worst_month": -0.2675,
+      "best_month": 7.9298,
+      "maxDD": -1.9167,
+      "fuse_days": 0,
+      "co_loss": 0.1048,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 0,
+      "n_caution": 2,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40",
+        "AUDUSD"
+      ],
+      "group_id": "EURUSD+JP225+DE40+AUDUSD",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 107,
+      "sum_R": 23.75,
+      "mean_daily_R": 0.138081,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.9583,
+      "E_quarter": 7.9167,
+      "CVaR_m20": 0.625,
+      "worst_month": -0.1875,
+      "best_month": 8.375,
+      "maxDD": -1.75,
+      "fuse_days": 0,
+      "co_loss": 0.2167,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 11.2,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "core",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 3,
+      "n_watch": 1,
+      "n_caution": 0,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "AUDUSD",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+JP225+AUDUSD+AAPL",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 103,
+      "sum_R": 19.7105,
+      "mean_daily_R": 0.114596,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.2851,
+      "E_quarter": 6.5702,
+      "CVaR_m20": 0.1053,
+      "worst_month": -0.0132,
+      "best_month": 6.25,
+      "maxDD": -2.0,
+      "fuse_days": 0,
+      "co_loss": 0.181,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 19.5,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "AUDUSD",
+        "USDJPY"
+      ],
+      "group_id": "EURUSD+DE40+AUDUSD+USDJPY",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 112,
+      "sum_R": 19.95,
+      "mean_daily_R": 0.115988,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.325,
+      "E_quarter": 6.65,
+      "CVaR_m20": 0.675,
+      "worst_month": -0.0875,
+      "best_month": 6.2125,
+      "maxDD": -1.3,
+      "fuse_days": 0,
+      "co_loss": 0.1736,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 9.5,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 2,
+      "n_caution": 0,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "AUDUSD",
+        "UK100"
+      ],
+      "group_id": "EURUSD+DE40+AUDUSD+UK100",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 118,
+      "sum_R": 21.4375,
+      "mean_daily_R": 0.124637,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.5729,
+      "E_quarter": 7.1458,
+      "CVaR_m20": 0.3125,
+      "worst_month": -0.6875,
+      "best_month": 5.75,
+      "maxDD": -1.875,
+      "fuse_days": 0,
+      "co_loss": 0.2016,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 11.2,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "AUDUSD",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+DE40+AUDUSD+AAPL",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 115,
+      "sum_R": 20.2105,
+      "mean_daily_R": 0.117503,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.3684,
+      "E_quarter": 6.7368,
+      "CVaR_m20": 0.3553,
+      "worst_month": -0.7007,
+      "best_month": 6.8914,
+      "maxDD": -2.1875,
+      "fuse_days": 1,
+      "co_loss": 0.1885,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+DE40+UK100+AAPL",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 120,
+      "sum_R": 22.148,
+      "mean_daily_R": 0.128768,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.6913,
+      "E_quarter": 7.3827,
+      "CVaR_m20": 1.0428,
+      "worst_month": -0.4507,
+      "best_month": 6.1974,
+      "maxDD": -1.625,
+      "fuse_days": 0,
+      "co_loss": 0.168,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 0,
+      "n_caution": 2,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AUDUSD",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+AUDUSD+UK100+AAPL",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 117,
+      "sum_R": 17.398,
+      "mean_daily_R": 0.101151,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.8997,
+      "E_quarter": 5.7993,
+      "CVaR_m20": -0.2072,
+      "worst_month": -0.5132,
+      "best_month": 7.1974,
+      "maxDD": -2.1447,
+      "fuse_days": 0,
+      "co_loss": 0.1667,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 1,
+      "n_caution": 2,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40",
+        "AUDUSD",
+        "UK100"
+      ],
+      "group_id": "EURUSD+JP225+DE40+AUDUSD+UK100",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 114,
+      "sum_R": 23.15,
+      "mean_daily_R": 0.134593,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.8583,
+      "E_quarter": 7.7167,
+      "CVaR_m20": 0.45,
+      "worst_month": -0.15,
+      "best_month": 7.8,
+      "maxDD": -1.35,
+      "fuse_days": 0,
+      "co_loss": 0.272,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 11.2,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 3,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40",
+        "AUDUSD",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+JP225+DE40+AUDUSD+AAPL",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 117,
+      "sum_R": 22.1684,
+      "mean_daily_R": 0.128886,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.6947,
+      "E_quarter": 7.3895,
+      "CVaR_m20": 0.4842,
+      "worst_month": -0.1605,
+      "best_month": 6.7,
+      "maxDD": -1.55,
+      "fuse_days": 0,
+      "co_loss": 0.254,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 3,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "AUDUSD",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+JP225+AUDUSD+UK100+AAPL",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 119,
+      "sum_R": 19.9184,
+      "mean_daily_R": 0.115805,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.3197,
+      "E_quarter": 6.6395,
+      "CVaR_m20": 0.0342,
+      "worst_month": -0.0105,
+      "best_month": 6.3579,
+      "maxDD": -1.6,
+      "fuse_days": 0,
+      "co_loss": 0.246,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 1,
+      "n_caution": 2,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "AUDUSD",
+        "USDJPY",
+        "UK100"
+      ],
+      "group_id": "EURUSD+DE40+AUDUSD+USDJPY+UK100",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 120,
+      "sum_R": 20.11,
+      "mean_daily_R": 0.116919,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.3517,
+      "E_quarter": 6.7033,
+      "CVaR_m20": 0.49,
+      "worst_month": -0.07,
+      "best_month": 5.24,
+      "maxDD": -1.14,
+      "fuse_days": 0,
+      "co_loss": 0.2222,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 9.5,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 2,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "AUDUSD",
+        "USDJPY",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+DE40+AUDUSD+USDJPY+AAPL",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 121,
+      "sum_R": 19.1284,
+      "mean_daily_R": 0.111212,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.1881,
+      "E_quarter": 6.3761,
+      "CVaR_m20": 0.5242,
+      "worst_month": -0.0805,
+      "best_month": 6.2332,
+      "maxDD": -1.27,
+      "fuse_days": 0,
+      "co_loss": 0.2031,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 2,
+      "n_caution": 1,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "AUDUSD",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "EURUSD+DE40+AUDUSD+UK100+AAPL",
+      "k": 5,
+      "n_days": 172,
+      "active_days": 125,
+      "sum_R": 20.3184,
+      "mean_daily_R": 0.11813,
+      "month_hit": 0.8333,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.3864,
+      "E_quarter": 6.7728,
+      "CVaR_m20": 0.2342,
+      "worst_month": -0.5605,
+      "best_month": 6.3579,
+      "maxDD": -1.75,
+      "fuse_days": 0,
+      "co_loss": 0.2462,
+      "hard_ban": true,
+      "hard_ban_pairs": [
+        [
+          "AUDUSD",
+          "EURUSD"
+        ]
+      ],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "core",
+        "watch",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 2,
+      "n_watch": 1,
+      "n_caution": 2,
+      "reject_reasons": [
+        "hard_ban_pair",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "UK100"
+      ],
+      "group_id": "EURUSD+UK100",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 98,
+      "sum_R": 20.375,
+      "mean_daily_R": 0.118459,
+      "month_hit": 0.8,
+      "n_months": 5,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 4.075,
+      "E_quarter": 6.7917,
+      "CVaR_m20": -0.5,
+      "worst_month": -0.5,
+      "best_month": 6.875,
+      "maxDD": -3.375,
+      "fuse_days": 4,
+      "co_loss": 0.0404,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 19.5,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 0,
+      "n_caution": 1,
+      "reject_reasons": [
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "JP225",
+        "UK100"
+      ],
+      "group_id": "JP225+UK100",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 86,
+      "sum_R": 25.375,
+      "mean_daily_R": 0.147529,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 4.2292,
+      "E_quarter": 8.4583,
+      "CVaR_m20": -0.625,
+      "worst_month": -1.0,
+      "best_month": 10.75,
+      "maxDD": -3.5,
+      "fuse_days": 4,
+      "co_loss": 0.0568,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 12.8,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 0,
+      "n_caution": 1,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "DE40",
+        "AUDUSD"
+      ],
+      "group_id": "DE40+AUDUSD",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 95,
+      "sum_R": 22.5,
+      "mean_daily_R": 0.130814,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.75,
+      "E_quarter": 7.5,
+      "CVaR_m20": -0.5,
+      "worst_month": -0.875,
+      "best_month": 9.625,
+      "maxDD": -3.625,
+      "fuse_days": 3,
+      "co_loss": 0.0612,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 11.2,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 1,
+      "n_caution": 0,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "AUDUSD",
+        "UK100"
+      ],
+      "group_id": "AUDUSD+UK100",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 88,
+      "sum_R": 16.875,
+      "mean_daily_R": 0.09811,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.8125,
+      "E_quarter": 5.625,
+      "CVaR_m20": -1.625,
+      "worst_month": -2.75,
+      "best_month": 9.0,
+      "maxDD": -6.375,
+      "fuse_days": 1,
+      "co_loss": 0.0341,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 11.2,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 0,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "AUDUSD",
+        "AAPL"
+      ],
+      "group_id": "AUDUSD+AAPL",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 74,
+      "sum_R": 14.4211,
+      "mean_daily_R": 0.083843,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.4035,
+      "E_quarter": 4.807,
+      "CVaR_m20": -1.5395,
+      "worst_month": -2.5526,
+      "best_month": 8.3947,
+      "maxDD": -6.0526,
+      "fuse_days": 1,
+      "co_loss": 0.0649,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 11.2,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 0,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "USDJPY",
+        "AAPL"
+      ],
+      "group_id": "USDJPY+AAPL",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 69,
+      "sum_R": 15.321,
+      "mean_daily_R": 0.089076,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 1.0,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.5535,
+      "E_quarter": 5.107,
+      "CVaR_m20": -0.2263,
+      "worst_month": -0.4,
+      "best_month": 6.9947,
+      "maxDD": -2.1632,
+      "fuse_days": 0,
+      "co_loss": 0.0,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [
+        "freq_all_low"
+      ],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 9.5,
+      "freq_all_high": false,
+      "freq_all_low": true,
+      "tiers": [
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 0,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "UK100+AAPL",
+      "k": 2,
+      "n_days": 172,
+      "active_days": 86,
+      "sum_R": 18.2961,
+      "mean_daily_R": 0.106372,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.0493,
+      "E_quarter": 6.0987,
+      "CVaR_m20": -0.1645,
+      "worst_month": -0.3026,
+      "best_month": 10.3947,
+      "maxDD": -2.7632,
+      "fuse_days": 0,
+      "co_loss": 0.0233,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [
+        "caution_only"
+      ],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "caution",
+        "caution"
+      ],
+      "caution_only": true,
+      "n_core": 0,
+      "n_watch": 0,
+      "n_caution": 2,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "DE40",
+        "AUDUSD",
+        "UK100"
+      ],
+      "group_id": "DE40+AUDUSD+UK100",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 107,
+      "sum_R": 21.9167,
+      "mean_daily_R": 0.127422,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.6528,
+      "E_quarter": 7.3056,
+      "CVaR_m20": -0.4167,
+      "worst_month": -0.5833,
+      "best_month": 7.0,
+      "maxDD": -2.6667,
+      "fuse_days": 2,
+      "co_loss": 0.1019,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 11.2,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "DE40",
+        "AUDUSD",
+        "AAPL"
+      ],
+      "group_id": "DE40+AUDUSD+AAPL",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 105,
+      "sum_R": 20.2807,
+      "mean_daily_R": 0.117911,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.3801,
+      "E_quarter": 6.7602,
+      "CVaR_m20": -0.3596,
+      "worst_month": -0.6009,
+      "best_month": 8.5219,
+      "maxDD": -3.5833,
+      "fuse_days": 1,
+      "co_loss": 0.1111,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 20.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 1,
+      "n_caution": 1,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "AUDUSD",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "AUDUSD+UK100+AAPL",
+      "k": 3,
+      "n_days": 172,
+      "active_days": 103,
+      "sum_R": 16.5307,
+      "mean_daily_R": 0.096109,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 2.7551,
+      "E_quarter": 5.5102,
+      "CVaR_m20": -1.1096,
+      "worst_month": -1.8684,
+      "best_month": 9.2632,
+      "maxDD": -4.4781,
+      "fuse_days": 0,
+      "co_loss": 0.0962,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [],
+      "soft_penalty_pairs": [],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "watch",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 0,
+      "n_watch": 1,
+      "n_caution": 2,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    },
+    {
+      "members": [
+        "DE40",
+        "AUDUSD",
+        "UK100",
+        "AAPL"
+      ],
+      "group_id": "DE40+AUDUSD+UK100+AAPL",
+      "k": 4,
+      "n_days": 172,
+      "active_days": 115,
+      "sum_R": 20.398,
+      "mean_daily_R": 0.118593,
+      "month_hit": 0.6667,
+      "n_months": 6,
+      "quarter_hit": 0.6667,
+      "n_quarters": 3,
+      "year_hit": 1.0,
+      "n_years": 1,
+      "E_month": 3.3997,
+      "E_quarter": 6.7993,
+      "CVaR_m20": -0.3322,
+      "worst_month": -0.4507,
+      "best_month": 7.6974,
+      "maxDD": -2.6875,
+      "fuse_days": 0,
+      "co_loss": 0.1624,
+      "hard_ban": false,
+      "hard_ban_pairs": [],
+      "soft_flags": [
+        "eu_index_twin"
+      ],
+      "soft_penalty_pairs": [
+        [
+          "DE40",
+          "UK100"
+        ]
+      ],
+      "freq_min": 8.4,
+      "freq_max": 28.6,
+      "freq_all_high": false,
+      "freq_all_low": false,
+      "tiers": [
+        "core",
+        "watch",
+        "caution",
+        "caution"
+      ],
+      "caution_only": false,
+      "n_core": 1,
+      "n_watch": 1,
+      "n_caution": 2,
+      "reject_reasons": [
+        "month_hit=0.6667<0.67 and below EUR slack",
+        "quarter_hit=0.6667<0.67"
+      ],
+      "provisional_pending_bootstrap": true,
+      "beats_eur_month_hit": false
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "blotter/archive/AAPL-M5-AOS-P7/promotion_packet.json": {
+    "verdict": "ARM_RESEARCH_OS",
+    "identity": {
+      "engine_magic": 26102011,
+      "research_os_magic": 26162017,
+      "ea_version_min": "1.24",
+      "preset_armed": "AAPL_5m_stack.set",
+      "preset_armed_alias": "BMRG-M5-AAPL-6M-P7_research_OS_ARMED.set",
+      "preset_engine": "BMRG-M5-AAPL-6M-Balanced_TPgtSL.set",
+      "preset_p4_tester": "BMRG-M5-AAPL-6M-P4_research_OS_W50.set",
+      "symbol": "AAPL",
+      "mt5_symbol": "Apple",
+      "tf": "M5",
+      "pool_role": "tip_WATCH"
+    },
+    "armed_stack": {
+      "engine": "Balanced P0 M5 G0 FIXED_RR RR\u22481.47 SL190/TP280",
+      "L2det": "L2det_aapl_m5_v1b LIVE_WITHHOLD (Jul \u2228 Wed)",
+      "L2AI": "DISARM",
+      "L3": "ON DD25% / BELOW halt \u00b7 W20 EN>0\u00d72 unlatch",
+      "L4": "ON size mod \u00b7 W50",
+      "L6": "ledger ON",
+      "L8": "advise-only (not live abort)",
+      "L9": "H14/overnight DISARM \u00b7 H18/H19 HOLD_SHADOW \u00b7 spread\u226530 no L9 LIVE",
+      "ATR_min_max": [
+        24,
+        98
+      ],
+      "BBw_pct": [
+        0.3,
+        2.0
+      ],
+      "Leak_source": "profile_authority",
+      "Leak_pp": 15.3
+    },
+    "baseline_ref": "AAPL_M5_AOS_BASELINE_v1",
+    "health_cf": {
+      "engine_tip_MayOct": {
+        "n": 77,
+        "WR": 46.8,
+        "E_N": 0.16,
+        "BM_pp": 6.3,
+        "final_delta_usd": 44.5,
+        "Stage0": "PASS",
+        "Stage1_true_Leak": "FAIL_Fragile"
+      },
+      "offline_v1b_tip_P2": {
+        "n_kept": 44,
+        "E_N": 0.349,
+        "delta_E_N_vs_engine": 0.193,
+        "delta_EF_profile_pp": 7.79,
+        "retention_pct": 57.1,
+        "skip_precision_losers": 0.636,
+        "fp_may": 1,
+        "fp_mon": 0
+      },
+      "p4_det_stack": {
+        "n_fire": 41,
+        "n_l2det_skip": 33,
+        "n_l3_halt": 3,
+        "WR": 53.66,
+        "E_N": 0.3273,
+        "EF_profile_pp": -2.067,
+        "final_life": "NEAR",
+        "l8_advise_on_losers": 21,
+        "delta_E_N_vs_baseline": 0.1708
+      },
+      "p3_health": {
+        "P0_tip_BELOW_trips": 1,
+        "v1b_tip_BELOW_trips": 1,
+        "v1b_max_dd_pct": 2.565,
+        "P0_max_dd_pct": 7.947,
+        "note": "L3 BELOW retained \u00b7 v1b cuts MaxDD vs P0"
+      },
+      "p5_ai": {
+        "semver": "L2skip_aapl_m5_p_prior_20261020_140136",
+        "auc_tip_oos": 0.501,
+        "verdict": "DISARM",
+        "challenger": "EMPTY",
+        "rollback_drill": "PASS"
+      },
+      "p6_harden": {
+        "L9": "no_LIVE",
+        "L2_bound": "keep_v1b_Jul_OR_Wed",
+        "ATR_BBW_G3": "PASS_24_98_BBW_0.30_2.00"
+      }
+    },
+    "gates_edge_framework": {
+      "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+      "expansion_E_N": "PASS tip OS E_N>0 under det_v1b (+0.327R fire book)",
+      "expansion_EF_profile": "HOLD \u2014 EF_profile still <0 under Leak 15.3pp (\u22122.1 pp); measured Leak OPEN; Stage-1 Fragile acknowledged",
+      "G3_regime_filtered": "PASS \u2014 ATR 24\u201398 \u00b7 BBw 0.30\u20132.00 declared (P6-T03)",
+      "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+      "G5_live": "DEFERRED \u2014 not M15 Harvest / FX live replace"
+    },
+    "attach": {
+      "symbol": "Apple",
+      "tf": "M5",
+      "preset": "AAPL_5m_stack.set",
+      "magic": 26162017,
+      "ledger": "COMMON\\Files\\BMRG_AOS_ledger_26162017.csv",
+      "compare_window_default": "2026.05.01-2026.10.19 tip"
+    }
+  },
+  "blotter/archive/UK100-M5-AOS-P7/promotion_packet.json": {
+    "verdict": "ARM_RESEARCH_OS",
+    "identity": {
+      "engine_magic": 26101905,
+      "research_os_magic": 26121907,
+      "ea_version_min": "1.24",
+      "preset_armed": "UK100_5m_stack.set",
+      "preset_armed_alias": "BMRG-M5-UK100-6M-P7_research_OS_ARMED.set",
+      "preset_engine": "BMRG-M5-UK100-6M-P0_balanced_chart.set",
+      "preset_p4_tester": "BMRG-M5-UK100-6M-P4_research_OS_W50.set",
+      "symbol": "UK100",
+      "tf": "M5"
+    },
+    "armed_stack": {
+      "engine": "Balanced P0 M5 G0 FIXED_RR RR1.25 SL1800/TP2250",
+      "L2det": "L2det_uk_m5_v1b LIVE_WITHHOLD ((Mon\u2227H12-13)\u2228(SELL\u2227H12-13))",
+      "L2AI": "DISARM",
+      "L3": "ON DD25% / BELOW halt",
+      "L4": "ON size mod \u00b7 W50",
+      "L6": "ledger ON",
+      "L8": "advise-only (not live abort)",
+      "L9": "H14+ / spread_p66 ARM_SOFT shadow \u2014 not LIVE in this packet",
+      "ATR_max": 869,
+      "Leak_source": "journal_2x_entry_spread_median",
+      "Leak_pp": 5.93
+    },
+    "baseline_ref": "UK100_M5_AOS_BASELINE_v1",
+    "health_cf": {
+      "engine_tip_MayAug": {
+        "n": 116,
+        "WR": 52.6,
+        "E_N": 0.183,
+        "EF_prior_pp": 4.1,
+        "EF_journal_pp": 2.22,
+        "final_delta_usd": 51.16
+      },
+      "offline_v1b_tip": {
+        "n_fire": 83,
+        "WR": 61.45,
+        "E_N": 0.383,
+        "EF_pp": 11.08,
+        "delta_E_N_vs_engine": 0.199,
+        "L3_trips": 0,
+        "skip_precision_losers": 0.697
+      },
+      "p3_health": {
+        "P0_tip_L3_trips": 1,
+        "v1b_tip_L3_trips": 0,
+        "v1b_last_life": "EXPANDING",
+        "v1b_last_W20_E_N": 0.46
+      },
+      "p5_ai": {
+        "auc_tip_oos": 0.409,
+        "verdict": "DISARM",
+        "challenger": "EMPTY"
+      },
+      "p6_harden": {
+        "L9_morning": "DISARM",
+        "L9_H14_spread": "ARM_SOFT_SHADOW",
+        "hour_window": "keep_H12_13",
+        "ATR_G3": "PASS_869"
+      }
+    },
+    "gates_edge_framework": {
+      "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+      "expansion_EF": "PASS tip OS EF>0 under journal Leak",
+      "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR869 declared (P6-T03)",
+      "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+      "G5_live": "DEFERRED \u2014 not FX live replace"
+    },
+    "attach": {
+      "symbol": "UK100",
+      "tf": "M5",
+      "preset": "UK100_5m_stack.set",
+      "magic": 26121907,
+      "ledger": "COMMON\\Files\\BMRG_AOS_ledger_26121907.csv",
+      "compare_window_default": "2026.05.01-2026.08.31 tip"
+    }
+  },
+  "blotter/archive/DE40-M5-AOS-P7/promotion_packet.json": {
+    "verdict": "ARM_RESEARCH_OS",
+    "identity": {
+      "engine_magic": 26101903,
+      "research_os_magic": 26151907,
+      "ea_version_min": "1.24",
+      "preset_armed": "DE40_5m_stack.set",
+      "preset_armed_alias": "BMRG-M5-DE40-6M-P7_research_OS_ARMED.set",
+      "preset_engine": "BMRG-M5-DE40-6M-P0_balanced_chart.set",
+      "preset_p4_tester": "BMRG-M5-DE40-6M-P4_research_OS_W50.set",
+      "symbol": "DE40",
+      "mt5_symbol": "DE30",
+      "tf": "M5"
+    },
+    "armed_stack": {
+      "engine": "Balanced P0 M5 G0 FIXED_RR RR1.25 SL7000/TP8750",
+      "L2det": "L2det_de40_m5_v1b LIVE_WITHHOLD ((BUY\u2227H14|16)\u2228(BUY\u2227Oct))",
+      "L2AI": "DISARM",
+      "L3": "ON DD25% / BELOW halt \u00b7 W20 EN>0\u00d72 unlatch",
+      "L4": "ON size mod \u00b7 W50",
+      "L6": "ledger ON",
+      "L8": "advise-only (not live abort)",
+      "L9": "Frankfurt/H08 DISARM \u00b7 H13/spread HOLD_SHADOW \u2014 not LIVE",
+      "ATR_max": 2380,
+      "Leak_source": "prior_authority",
+      "Leak_pp": 7.0
+    },
+    "baseline_ref": "DE40_M5_AOS_BASELINE_v1",
+    "health_cf": {
+      "engine_tip_MayOct": {
+        "n": 123,
+        "WR": 53.7,
+        "E_N": 0.207,
+        "EF_prior_pp": 2.2,
+        "final_delta_usd": 207.76
+      },
+      "offline_v1b_tip_P2": {
+        "n_kept": 110,
+        "WR": 57.3,
+        "E_N": 0.289,
+        "EF_prior_pp": 5.83,
+        "delta_E_N_vs_engine": 0.081,
+        "retention_pct": 89.4,
+        "skip_precision_losers": 0.769
+      },
+      "p4_det_stack": {
+        "n_fire": 104,
+        "n_l2det_skip": 13,
+        "n_l3_halt": 6,
+        "WR": 57.69,
+        "E_N": 0.2981,
+        "EF_prior_pp": 6.248,
+        "final_life": "STABLE",
+        "l8_advise_on_losers": 14
+      },
+      "p3_health": {
+        "P0_tip_BELOW_trips": 1,
+        "v1b_tip_BELOW_trips": 1,
+        "v1b_end_life": "NEAR",
+        "note": "L3 BELOW retained \u00b7 v1b improves end-health vs P0 BELOW finish"
+      },
+      "p5_ai": {
+        "semver": "L2skip_de40_m5_p_prior_20261020_121202",
+        "auc_tip_oos": 0.51,
+        "verdict": "DISARM",
+        "challenger": "EMPTY",
+        "rollback_drill": "PASS"
+      },
+      "p6_harden": {
+        "L9_frank_H08": "DISARM",
+        "L9_H13_spread": "HOLD_SHADOW_not_LIVE",
+        "L2_bound": "keep_v1b",
+        "ATR_G3": "PASS_2380"
+      }
+    },
+    "gates_edge_framework": {
+      "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+      "expansion_EF": "PASS tip OS EF>0 under Leak prior 7.0pp",
+      "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR2380 declared (P6-T03)",
+      "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+      "G5_live": "DEFERRED \u2014 not FX/UK/M15 live replace"
+    },
+    "attach": {
+      "symbol": "DE30",
+      "tf": "M5",
+      "preset": "DE40_5m_stack.set",
+      "magic": 26151907,
+      "ledger": "COMMON\\Files\\BMRG_AOS_ledger_26151907.csv",
+      "compare_window_default": "2026.05.01-2026.10.19 tip"
+    }
+  },
+  "blotter/archive/JP225-M5-AOS-P7/promotion_packet.json": {
+    "verdict": "ARM_RESEARCH_OS",
+    "identity": {
+      "engine_magic": 26101906,
+      "research_os_magic": 26161907,
+      "ea_version_min": "1.24",
+      "preset_armed": "JPN225_5m_stack.set",
+      "preset_armed_alias": "BMRG-M5-JP225-6M-P7_research_OS_ARMED.set",
+      "preset_engine": "BMRG-M5-JP225-6M-P0_growth_chart.set",
+      "preset_p4_tester": "BMRG-M5-JP225-6M-P4_research_OS_W50.set",
+      "symbol": "JP225",
+      "mt5_symbol": "JPN225",
+      "tf": "M5"
+    },
+    "armed_stack": {
+      "engine": "Growth P0 M5 G0 FIXED_RR RR2.00 SL25000/TP50000",
+      "L2det": "L2det_jp225_m5_v1c LIVE_WITHHOLD ((BUY\u2227MATCH Aug/Sep)\u2228(BUY\u2227H09|13|16))",
+      "L2AI": "DISARM",
+      "L3": "ON DD25% / BELOW halt \u00b7 W20 EN>0\u00d72 unlatch",
+      "L4": "ON size mod \u00b7 W50",
+      "L6": "ledger ON",
+      "L8": "advise-only (not live abort)",
+      "L9": "H08/London/H10 DISARM \u00b7 BUY\u2227H08/spread HOLD_SHADOW \u2014 not LIVE",
+      "ATR_band": [
+        7610,
+        11285
+      ],
+      "Leak_source": "prior_authority",
+      "Leak_pp": 3.3
+    },
+    "baseline_ref": "JP225_M5_AOS_BASELINE_v1",
+    "health_cf": {
+      "engine_tip_MayOct": {
+        "n": 94,
+        "WR": 41.5,
+        "E_N": 0.245,
+        "EF_prior_pp": 4.9,
+        "final_delta_usd": 35.34
+      },
+      "offline_v1c_tip_P2": {
+        "n_kept": 69,
+        "WR": 49.3,
+        "E_N": 0.478,
+        "EF_prior_pp": 12.64,
+        "delta_E_N_vs_engine": 0.234,
+        "retention_pct": 73.4,
+        "jul_fp": 1,
+        "sell_fp": 0
+      },
+      "p4_det_stack": {
+        "n_fire": 69,
+        "n_l3_halt": 0,
+        "WR": 49.3,
+        "E_N": 0.478,
+        "EF_prior_pp": 12.6,
+        "final_life": "EXPANDING",
+        "l8_advise_on_losers": "21/21"
+      },
+      "p3_health": {
+        "P0_tip_BELOW_trips": 1,
+        "v1c_tip_BELOW_trips": 0,
+        "v1c_MaxDD_pct": 1.3,
+        "v1c_end_life": "EXPANDING",
+        "note": "v1c clears tip Sep BELOW \u00b7 MaxDD 3.4%\u21921.3%"
+      },
+      "p5_ai": {
+        "semver": "L2skip_jp225_m5_p_prior_20261020_130822",
+        "auc_tip_oos": 0.49,
+        "verdict": "DISARM",
+        "challenger": "EMPTY",
+        "rollback_drill": "PASS"
+      },
+      "p6_harden": {
+        "L9_H08_London_H10": "DISARM",
+        "L9_BUY_H08_spread": "HOLD_SHADOW_not_LIVE",
+        "L2_bound": "keep_v1c",
+        "ATR_G3": "PASS_7610_11285"
+      }
+    },
+    "gates_edge_framework": {
+      "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+      "expansion_EF": "PASS tip OS EF>0 under Leak prior 3.3pp (engine +4.9 \u00b7 OS +12.6)",
+      "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR 7610\u201311285 declared (P6-T03)",
+      "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+      "G5_live": "DEFERRED \u2014 not FX/UK/DE/M15 live replace"
+    },
+    "attach": {
+      "symbol": "JPN225",
+      "tf": "M5",
+      "preset": "JPN225_5m_stack.set",
+      "magic": 26161907,
+      "ledger": "COMMON\\Files\\BMRG_AOS_ledger_26161907.csv",
+      "compare_window_default": "2026.05.01-2026.10.19 tip"
+    }
+  },
+  "blotter/archive/USDJPY-AOS-P7/promotion_packet.json": {
+    "verdict": "ACCEPT_ARM_RESEARCH_OS",
+    "identity": {
+      "engine_magic": 26101828,
+      "research_os_magic": 26131807,
+      "research_os_magic_p4_pre_hitl": 26131804,
+      "ea_version_min": "compile with AOS_L2det_usdjpy.mqh",
+      "preset_armed": "USDJPYstack.set",
+      "preset_armed_alias": "BMRG-M15-USDJPY-6M-P7_research_OS_ARMED.set",
+      "preset_engine": "BMRG-M15-USDJPY-6M-P0_balanced_chart.set",
+      "symbol": "USDJPY",
+      "asset": "USDJPY",
+      "tf": "M15",
+      "tester_paths": [
+        "Presets/USDJPYstack.set",
+        "Presets/BMRG-M15-USDJPY-6M-P7_research_OS_ARMED.set",
+        "Profiles/Tester/BMRG/USDJPY/USDJPYstack.set",
+        "Profiles/Tester/BMRG/USDJPY/BMRG-M15-USDJPY-6M-P7_research_OS_ARMED.set"
+      ]
+    },
+    "armed_stack": {
+      "engine": "Balanced P0 G0 FIXED_RR RR1.20 BB2.2 session12\u201320 skipTue ATR70",
+      "L2det": "L2det_usdjpy_v1c LIVE_WITHHOLD (nearATR@0.9\u00d770 OR H16)",
+      "L2AI": "DISARM (AUC\u22480.47 \u00b7 BUY FP on tip CF)",
+      "L3": "ON DD25% / BELOW halt",
+      "L4": "ON size mod \u00b7 W50",
+      "L6": "ledger ON",
+      "L8": "advise-only session-sleeve (not live abort)",
+      "L9": "H14/spread/Jul HOLD_SHADOW \u2014 not LIVE in this packet",
+      "ATR_max": 70,
+      "Leak_source": "prior_11.4pp_until_deals",
+      "Leak_pp": 11.4,
+      "lot": 0.01,
+      "risk_pct": 0.5
+    },
+    "baseline_ref": "USDJPY_AOS_BASELINE_v1",
+    "health_cf": {
+      "engine_tip_path": {
+        "n": 46,
+        "WR": 50.0,
+        "E_N": 0.1,
+        "EF_prior_pp": -6.855,
+        "note": "path tip n=46 (dedicated tip n=56 \u2014 path dependency)"
+      },
+      "offline_v1c_tip": {
+        "n_fire": 37,
+        "n_skip": 9,
+        "WR": 62.16,
+        "E_N": 0.3676,
+        "EF_pp": 5.308,
+        "delta_E_N_vs_engine": 0.2676,
+        "fire_retention_pct": 80.4,
+        "L3_halt": 0
+      },
+      "note": "Tester EA ledger for magic 26131807 not yet run \u2014 offline P4 tip v1c stack is the CF basis for HITL. Run USDJPYstack.set in Strategy Tester next."
+    },
+    "gates_edge_framework": {
+      "G0_identity": "PASS \u2014 magic/preset locked; G0 MaxLevels=1",
+      "expansion_EF": "PASS tip OS EF>0 under prior Leak 11.4 pp after v1c",
+      "G3_regime_filtered": "PASS \u2014 session+skipTue+ATR70 declared (P6-T03)",
+      "G4_MC": "DEFERRED \u2014 expansion research; not production admit",
+      "G5_stress": "PARTIAL \u2014 L2 \u00b110% PASS_WITH_NOTES (P6); SL/TP not stressed",
+      "Leak_measured": "OPEN \u2014 prior 11.4 pp (deal-measured preferred before capital)",
+      "L2AI": "DISARM \u2014 tip AUC 0.471 \u00b7 CHALLENGER EMPTY",
+      "verdict_ladder": "EXPANSION_OS_ARMED \u2014 not PRODUCTION-WORTHY \u00b7 not live FX replace"
+    },
+    "attach": null
+  }
+}

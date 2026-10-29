@@ -1,0 +1,191 @@
+[
+  {
+    "a": "AAPL",
+    "b": "JP225",
+    "n_both_active": 53,
+    "co_loss_rate": 0.3208,
+    "co_win_rate": 0.1321,
+    "same_sign_rate": 0.4528,
+    "corr_active": -0.1026
+  },
+  {
+    "a": "EURUSD",
+    "b": "AUDUSD",
+    "n_both_active": 50,
+    "co_loss_rate": 0.3,
+    "co_win_rate": 0.34,
+    "same_sign_rate": 0.64,
+    "corr_active": 0.2834
+  },
+  {
+    "a": "UK100",
+    "b": "JP225",
+    "n_both_active": 58,
+    "co_loss_rate": 0.2759,
+    "co_win_rate": 0.2414,
+    "same_sign_rate": 0.5172,
+    "corr_active": 0.0891
+  },
+  {
+    "a": "AAPL",
+    "b": "UK100",
+    "n_both_active": 62,
+    "co_loss_rate": 0.2742,
+    "co_win_rate": 0.2903,
+    "same_sign_rate": 0.5645,
+    "corr_active": 0.0187
+  },
+  {
+    "a": "EURUSD",
+    "b": "AAPL",
+    "n_both_active": 145,
+    "co_loss_rate": 0.2552,
+    "co_win_rate": 0.2069,
+    "same_sign_rate": 0.4621,
+    "corr_active": -0.1102
+  },
+  {
+    "a": "AUDUSD",
+    "b": "AAPL",
+    "n_both_active": 28,
+    "co_loss_rate": 0.25,
+    "co_win_rate": 0.25,
+    "same_sign_rate": 0.5,
+    "corr_active": -0.0441
+  },
+  {
+    "a": "AUDUSD",
+    "b": "UK100",
+    "n_both_active": 42,
+    "co_loss_rate": 0.2143,
+    "co_win_rate": 0.4048,
+    "same_sign_rate": 0.619,
+    "corr_active": 0.1362
+  },
+  {
+    "a": "EURUSD",
+    "b": "JP225",
+    "n_both_active": 57,
+    "co_loss_rate": 0.2105,
+    "co_win_rate": 0.2456,
+    "same_sign_rate": 0.4561,
+    "corr_active": -0.029
+  },
+  {
+    "a": "AUDUSD",
+    "b": "JP225",
+    "n_both_active": 38,
+    "co_loss_rate": 0.2105,
+    "co_win_rate": 0.2368,
+    "same_sign_rate": 0.4474,
+    "corr_active": -0.1277
+  },
+  {
+    "a": "EURUSD",
+    "b": "USDJPY",
+    "n_both_active": 24,
+    "co_loss_rate": 0.2083,
+    "co_win_rate": 0.3333,
+    "same_sign_rate": 0.5417,
+    "corr_active": 0.07
+  },
+  {
+    "a": "JP225",
+    "b": "USDJPY",
+    "n_both_active": 24,
+    "co_loss_rate": 0.2083,
+    "co_win_rate": 0.3333,
+    "same_sign_rate": 0.5417,
+    "corr_active": 0.1235
+  },
+  {
+    "a": "JP225",
+    "b": "DE40",
+    "n_both_active": 63,
+    "co_loss_rate": 0.2063,
+    "co_win_rate": 0.2857,
+    "same_sign_rate": 0.4921,
+    "corr_active": 0.0842
+  },
+  {
+    "a": "DE40",
+    "b": "USDJPY",
+    "n_both_active": 28,
+    "co_loss_rate": 0.1786,
+    "co_win_rate": 0.4286,
+    "same_sign_rate": 0.6071,
+    "corr_active": 0.1252
+  },
+  {
+    "a": "AAPL",
+    "b": "USDJPY",
+    "n_both_active": 29,
+    "co_loss_rate": 0.1724,
+    "co_win_rate": 0.4483,
+    "same_sign_rate": 0.6207,
+    "corr_active": 0.3587
+  },
+  {
+    "a": "EURUSD",
+    "b": "UK100",
+    "n_both_active": 64,
+    "co_loss_rate": 0.1719,
+    "co_win_rate": 0.3594,
+    "same_sign_rate": 0.5312,
+    "corr_active": 0.02
+  },
+  {
+    "a": "AAPL",
+    "b": "DE40",
+    "n_both_active": 74,
+    "co_loss_rate": 0.1622,
+    "co_win_rate": 0.2568,
+    "same_sign_rate": 0.4189,
+    "corr_active": 0.0062
+  },
+  {
+    "a": "EURUSD",
+    "b": "DE40",
+    "n_both_active": 69,
+    "co_loss_rate": 0.1304,
+    "co_win_rate": 0.3333,
+    "same_sign_rate": 0.4638,
+    "corr_active": -0.173
+  },
+  {
+    "a": "UK100",
+    "b": "USDJPY",
+    "n_both_active": 31,
+    "co_loss_rate": 0.129,
+    "co_win_rate": 0.3871,
+    "same_sign_rate": 0.5161,
+    "corr_active": -0.1501
+  },
+  {
+    "a": "UK100",
+    "b": "DE40",
+    "n_both_active": 88,
+    "co_loss_rate": 0.1023,
+    "co_win_rate": 0.3977,
+    "same_sign_rate": 0.5,
+    "corr_active": 0.2353
+  },
+  {
+    "a": "AUDUSD",
+    "b": "DE40",
+    "n_both_active": 41,
+    "co_loss_rate": 0.0976,
+    "co_win_rate": 0.3902,
+    "same_sign_rate": 0.4878,
+    "corr_active": -0.0803
+  },
+  {
+    "a": "AUDUSD",
+    "b": "USDJPY",
+    "n_both_active": 14,
+    "co_loss_rate": 0.0,
+    "co_win_rate": 0.2857,
+    "same_sign_rate": 0.2857,
+    "corr_active": -0.4098
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "AUDUSD": [
+    {
+      "asset_id": "AUDUSD",
+      "month": 2,
+      "label": "Feb soft",
+      "source": "AUDUSD aos_bad_cells / profile"
+    },
+    {
+      "asset_id": "AUDUSD",
+      "month": 3,
+      "label": "Mar soft",
+      "source": "AUDUSD aos_bad_cells / profile"
+    },
+    {
+      "asset_id": "AUDUSD",
+      "month": 5,
+      "label": "May soft",
+      "source": "AUDUSD aos_bad_cells"
+    }
+  ],
+  "AAPL": [
+    {
+      "asset_id": "AAPL",
+      "month": 5,
+      "label": "May cell",
+      "source": "AAPL aos_bad_cells_M5"
+    },
+    {
+      "asset_id": "AAPL",
+      "month": 7,
+      "label": "Jul cell",
+      "source": "AAPL aos_bad_cells_M5"
+    }
+  ],
+  "UK100": [
+    {
+      "asset_id": "UK100",
+      "month": 9,
+      "label": "Sep tip soft",
+      "source": "UK100 M5 profile / P1"
+    }
+  ],
+  "DE40": [
+    {
+      "asset_id": "DE40",
+      "month": 2,
+      "label": "Feb stress-month",
+      "source": "DE40 aos_bad_cells"
+    },
+    {
+      "asset_id": "DE40",
+      "month": 3,
+      "label": "Mar FRAGILE",
+      "source": "DE40 aos_bad_cells"
+    }
+  ],
+  "JP225": [
+    {
+      "asset_id": "JP225",
+      "month": 2,
+      "label": "Feb soft",
+      "source": "JP225 aos_bad_cells_M5"
+    },
+    {
+      "asset_id": "JP225",
+      "month": 4,
+      "label": "Apr soft",
+      "source": "JP225 aos_bad_cells_M5"
+    },
+    {
+      "asset_id": "JP225",
+      "month": 8,
+      "label": "Aug MATCH tax",
+      "source": "JP225 aos_bad_cells_M5"
+    },
+    {
+      "asset_id": "JP225",
+      "month": 9,
+      "label": "Sep MATCH tax",
+      "source": "JP225 aos_bad_cells_M5"
+    }
+  ],
+  "USDJPY": [
+    {
+      "asset_id": "USDJPY",
+      "month": 7,
+      "label": "Jul sleeve caution",
+      "source": "USDJPY aos_bad_cells / P6"
+    }
+  ],
+  "EURUSD": [
+    {
+      "asset_id": "EURUSD",
+      "month": 9,
+      "label": "Sep soft proxy",
+      "source": "EURUSD edge / historical tip"
+    }
+  ]
+}

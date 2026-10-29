@@ -1,0 +1,15 @@
+{
+  "task_id": "GRP-P5-T01",
+  "generated_utc": "2026-10-22T13:48:34.312492+00:00",
+  "primary_group": "JP225+DE40",
+  "n_secondaries": 4,
+  "attach_postures": {
+    "EURUSD": "full",
+    "JP225": "full",
+    "DE40": "full",
+    "USDJPY": "light",
+    "AAPL": "light",
+    "UK100": "off_pending_halt_review",
+    "AUDUSD": "ft_twin_only"
+  }
+}

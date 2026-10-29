@@ -1,0 +1,2272 @@
+{
+  "task_id": "GRP-P2-T01",
+  "generated_utc": "2026-10-22T13:21:02.428947+00:00",
+  "provisional_pending_bootstrap": false,
+  "n": 24,
+  "thresholds": {
+    "boot_hit_p10_floor": 0.5,
+    "val_sum_floor": 0.0,
+    "val_hit_floor": 0.5,
+    "fuse_hit_drop_max": 0.34,
+    "month_hit_floor_ref": 0.67,
+    "n_boot": 1000,
+    "seed": 42,
+    "candidate_source": "clean_resilient"
+  },
+  "rank_order": "clean \u2192 boot_hit_p10 \u2192 val_sum_R \u2192 month_hit \u2192 sum_R",
+  "groups": [
+    {
+      "group_id": "EURUSD+DE40+USDJPY",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "DE40",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 22.2667,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 22.2667,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 22.3372,
+          "sum_p10": 15.8383,
+          "sum_p50": 22.4667,
+          "sum_p90": 28.7633
+        },
+        "week": {
+          "n_periods": 25,
+          "obs_hit": 0.76,
+          "obs_sum_R": 22.2667,
+          "n_boot": 1000,
+          "hit_mean": 0.7594,
+          "hit_p10": 0.64,
+          "hit_p50": 0.76,
+          "hit_p90": 0.88,
+          "sum_mean": 22.4327,
+          "sum_p10": 14.9633,
+          "sum_p50": 22.0667,
+          "sum_p90": 30.1717
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 3.8,
+        "fit_sum_R": 18.4667,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 18.4667,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.6167,
+          "CVaR_m20": 2.7333,
+          "maxDD": -1.6667,
+          "worst_month": 2.7333,
+          "best_month": 6.95
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 3.8,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.9,
+          "CVaR_m20": null,
+          "maxDD": -1.0,
+          "worst_month": 0.2167,
+          "best_month": 3.5833
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 1,
+          "n_days_suppressed": 1,
+          "trigger_dates": [
+            "2026-05-14"
+          ]
+        },
+        "sum_R_fused": 22.6,
+        "sum_R_base": 22.2667,
+        "sum_R_delta": 0.3333,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.5833,
+        "maxDD_base": -1.6667
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+USDJPY",
+      "k": 2,
+      "members": [
+        "EURUSD",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 17.4,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 17.4,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 17.5004,
+          "sum_p10": 12.1,
+          "sum_p50": 17.4,
+          "sum_p90": 22.9
+        },
+        "week": {
+          "n_periods": 21,
+          "obs_hit": 0.7143,
+          "obs_sum_R": 17.4,
+          "n_boot": 1000,
+          "hit_mean": 0.717,
+          "hit_p10": 0.5714,
+          "hit_p50": 0.7143,
+          "hit_p90": 0.8571,
+          "sum_mean": 17.3968,
+          "sum_p10": 9.9,
+          "sum_p50": 17.1,
+          "sum_p90": 25.81
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 3.7,
+        "fit_sum_R": 13.7,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 13.7,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 3.425,
+          "CVaR_m20": 2.1,
+          "maxDD": -2.0,
+          "worst_month": 2.1,
+          "best_month": 6.2
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 3.7,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.85,
+          "CVaR_m20": null,
+          "maxDD": -1.5,
+          "worst_month": 0.7,
+          "best_month": 3.0
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 1,
+          "n_days_suppressed": 1,
+          "trigger_dates": [
+            "2026-05-14"
+          ]
+        },
+        "sum_R_fused": 17.9,
+        "sum_R_base": 17.4,
+        "sum_R_delta": 0.5,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.5,
+        "maxDD_base": -2.0
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+JP225+DE40",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 27.3333,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 27.3333,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 26.9381,
+          "sum_p10": 17.5833,
+          "sum_p50": 27.25,
+          "sum_p90": 36.4167
+        },
+        "week": {
+          "n_periods": 26,
+          "obs_hit": 0.7692,
+          "obs_sum_R": 27.3333,
+          "n_boot": 1000,
+          "hit_mean": 0.7711,
+          "hit_p10": 0.6538,
+          "hit_p50": 0.7692,
+          "hit_p90": 0.8846,
+          "sum_mean": 27.6683,
+          "sum_p10": 17.5,
+          "sum_p50": 27.2917,
+          "sum_p90": 38.175
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 3.6667,
+        "fit_sum_R": 23.6667,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 23.6667,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 5.9167,
+          "CVaR_m20": 2.3333,
+          "maxDD": -2.0,
+          "worst_month": 2.3333,
+          "best_month": 9.8333
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 3.6667,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.8333,
+          "CVaR_m20": null,
+          "maxDD": -2.6667,
+          "worst_month": 0.0833,
+          "best_month": 3.5833
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 27.3333,
+        "sum_R_base": 27.3333,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -2.6667,
+        "maxDD_base": -2.6667
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+JP225",
+      "k": 2,
+      "members": [
+        "EURUSD",
+        "JP225"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 25.0,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 25.0,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 24.988,
+          "sum_p10": 13.5,
+          "sum_p50": 24.5,
+          "sum_p90": 37.0
+        },
+        "week": {
+          "n_periods": 25,
+          "obs_hit": 0.76,
+          "obs_sum_R": 25.0,
+          "n_boot": 1000,
+          "hit_mean": 0.7584,
+          "hit_p10": 0.64,
+          "hit_p50": 0.76,
+          "hit_p90": 0.88,
+          "sum_mean": 24.746,
+          "sum_p10": 12.0,
+          "sum_p50": 24.5,
+          "sum_p90": 37.5
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 3.5,
+        "fit_sum_R": 21.5,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 21.5,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 5.375,
+          "CVaR_m20": 1.0,
+          "maxDD": -3.0,
+          "worst_month": 1.0,
+          "best_month": 10.5
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 3.5,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.75,
+          "CVaR_m20": null,
+          "maxDD": -4.0,
+          "worst_month": 0.5,
+          "best_month": 3.0
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 2,
+          "n_days_suppressed": 1,
+          "trigger_dates": [
+            "2026-10-14",
+            "2026-10-16"
+          ]
+        },
+        "sum_R_fused": 24.5,
+        "sum_R_base": 25.0,
+        "sum_R_delta": -0.5,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -4.5,
+        "maxDD_base": -4.0
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+JP225+DE40+USDJPY",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 24.2,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 24.2,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 24.0411,
+          "sum_p10": 17.3,
+          "sum_p50": 24.025,
+          "sum_p90": 31.1
+        },
+        "week": {
+          "n_periods": 26,
+          "obs_hit": 0.8077,
+          "obs_sum_R": 24.2,
+          "n_boot": 1000,
+          "hit_mean": 0.8075,
+          "hit_p10": 0.6923,
+          "hit_p50": 0.8077,
+          "hit_p90": 0.8885,
+          "sum_mean": 24.57,
+          "sum_p10": 16.45,
+          "sum_p50": 24.4062,
+          "sum_p90": 33.1025
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 3.35,
+        "fit_sum_R": 20.85,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 20.85,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 5.2125,
+          "CVaR_m20": 2.8,
+          "maxDD": -1.5,
+          "worst_month": 2.8,
+          "best_month": 7.175
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 3.35,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.675,
+          "CVaR_m20": null,
+          "maxDD": -1.7,
+          "worst_month": 0.6625,
+          "best_month": 2.6875
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 24.2,
+        "sum_R_base": 24.2,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.7,
+        "maxDD_base": -1.7
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "DE40+USDJPY",
+      "k": 2,
+      "members": [
+        "DE40",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 23.4,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 23.4,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 23.2758,
+          "sum_p10": 15.49,
+          "sum_p50": 22.5625,
+          "sum_p90": 32.0
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 23.4,
+          "n_boot": 1000,
+          "hit_mean": 0.8323,
+          "hit_p10": 0.75,
+          "hit_p50": 0.8333,
+          "hit_p90": 0.9167,
+          "sum_mean": 23.277,
+          "sum_p10": 14.5725,
+          "sum_p50": 23.4625,
+          "sum_p90": 31.8
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 3.2,
+        "fit_sum_R": 20.2,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 20.2,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 5.05,
+          "CVaR_m20": 3.325,
+          "maxDD": -4.275,
+          "worst_month": 3.325,
+          "best_month": 9.425
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 3.2,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.6,
+          "CVaR_m20": null,
+          "maxDD": -1.375,
+          "worst_month": 0.825,
+          "best_month": 2.375
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 1,
+          "n_days_suppressed": 0,
+          "trigger_dates": [
+            "2026-05-14"
+          ]
+        },
+        "sum_R_fused": 23.4,
+        "sum_R_base": 23.4,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -4.275,
+        "maxDD_base": -4.275
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+JP225+USDJPY",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 21.6,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 21.6,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 21.6793,
+          "sum_p10": 14.8667,
+          "sum_p50": 21.4667,
+          "sum_p90": 29.6
+        },
+        "week": {
+          "n_periods": 26,
+          "obs_hit": 0.7692,
+          "obs_sum_R": 21.6,
+          "n_boot": 1000,
+          "hit_mean": 0.7709,
+          "hit_p10": 0.6538,
+          "hit_p50": 0.7692,
+          "hit_p90": 0.8846,
+          "sum_mean": 21.9307,
+          "sum_p10": 12.7933,
+          "sum_p50": 21.3333,
+          "sum_p90": 31.7333
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 3.1333,
+        "fit_sum_R": 18.4667,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 18.4667,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.6167,
+          "CVaR_m20": 1.8667,
+          "maxDD": -1.8667,
+          "worst_month": 1.8667,
+          "best_month": 7.1333
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 3.1333,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.5667,
+          "CVaR_m20": null,
+          "maxDD": -2.0,
+          "worst_month": 1.1333,
+          "best_month": 2.0
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 21.6,
+        "sum_R_base": 21.6,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -2.0,
+        "maxDD_base": -2.0
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "JP225+DE40",
+      "k": 2,
+      "members": [
+        "JP225",
+        "DE40"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 31.0,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 31.0,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 30.9796,
+          "sum_p10": 19.0,
+          "sum_p50": 31.0,
+          "sum_p90": 43.25
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.75,
+          "obs_sum_R": 31.0,
+          "n_boot": 1000,
+          "hit_mean": 0.7496,
+          "hit_p10": 0.625,
+          "hit_p50": 0.75,
+          "hit_p90": 0.875,
+          "sum_mean": 30.6386,
+          "sum_p10": 19.0,
+          "sum_p50": 30.375,
+          "sum_p90": 42.5
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 3.0,
+        "fit_sum_R": 28.0,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 28.0,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 7.0,
+          "CVaR_m20": 3.0,
+          "maxDD": -2.0,
+          "worst_month": 3.0,
+          "best_month": 12.25
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 3.0,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.5,
+          "CVaR_m20": null,
+          "maxDD": -2.5,
+          "worst_month": 0.625,
+          "best_month": 2.375
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 31.0,
+        "sum_R_base": 31.0,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -2.5,
+        "maxDD_base": -2.5
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+DE40+USDJPY+AAPL",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "DE40",
+        "USDJPY",
+        "AAPL"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 20.6605,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 20.6605,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 20.8481,
+          "sum_p10": 14.5322,
+          "sum_p50": 20.6605,
+          "sum_p90": 27.3026
+        },
+        "week": {
+          "n_periods": 25,
+          "obs_hit": 0.84,
+          "obs_sum_R": 20.6605,
+          "n_boot": 1000,
+          "hit_mean": 0.8367,
+          "hit_p10": 0.72,
+          "hit_p50": 0.84,
+          "hit_p90": 0.92,
+          "sum_mean": 20.5689,
+          "sum_p10": 14.8605,
+          "sum_p50": 20.4543,
+          "sum_p90": 26.0915
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 2.8105,
+        "fit_sum_R": 17.85,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 17.85,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.4625,
+          "CVaR_m20": 3.175,
+          "maxDD": -1.1316,
+          "worst_month": 3.175,
+          "best_month": 6.7914
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 2.8105,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.4053,
+          "CVaR_m20": null,
+          "maxDD": -0.8375,
+          "worst_month": 0.1493,
+          "best_month": 2.6612
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 20.6605,
+        "sum_R_base": 20.6605,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.1316,
+        "maxDD_base": -1.1316
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "JP225+DE40+USDJPY",
+      "k": 3,
+      "members": [
+        "JP225",
+        "DE40",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 25.6,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 25.6,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 25.6462,
+          "sum_p10": 17.97,
+          "sum_p50": 25.6667,
+          "sum_p90": 33.35
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.75,
+          "obs_sum_R": 25.6,
+          "n_boot": 1000,
+          "hit_mean": 0.7504,
+          "hit_p10": 0.625,
+          "hit_p50": 0.75,
+          "hit_p90": 0.875,
+          "sum_mean": 25.4034,
+          "sum_p10": 16.815,
+          "sum_p50": 25.3,
+          "sum_p90": 33.9717
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 2.8,
+        "fit_sum_R": 22.8,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 22.8,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 5.7,
+          "CVaR_m20": 3.4,
+          "maxDD": -1.6,
+          "worst_month": 3.4,
+          "best_month": 7.9
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 2.8,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.4,
+          "CVaR_m20": null,
+          "maxDD": -1.5833,
+          "worst_month": 1.2167,
+          "best_month": 1.5833
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 25.6,
+        "sum_R_base": 25.6,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.6,
+        "maxDD_base": -1.6
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+USDJPY+AAPL",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "USDJPY",
+        "AAPL"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 16.8807,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 16.8807,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 16.6326,
+          "sum_p10": 11.3698,
+          "sum_p50": 16.4421,
+          "sum_p90": 21.993
+        },
+        "week": {
+          "n_periods": 23,
+          "obs_hit": 0.913,
+          "obs_sum_R": 16.8807,
+          "n_boot": 1000,
+          "hit_mean": 0.9133,
+          "hit_p10": 0.8261,
+          "hit_p50": 0.913,
+          "hit_p90": 1.0,
+          "sum_mean": 16.8231,
+          "sum_p10": 12.1467,
+          "sum_p50": 16.6965,
+          "sum_p90": 21.6084
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 2.414,
+        "fit_sum_R": 14.4667,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 14.4667,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 3.6167,
+          "CVaR_m20": 1.4,
+          "maxDD": -1.1754,
+          "worst_month": 1.4,
+          "best_month": 4.9965
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 2.414,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.207,
+          "CVaR_m20": null,
+          "maxDD": -1.0,
+          "worst_month": 0.4491,
+          "best_month": 1.9649
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 16.8807,
+        "sum_R_base": 16.8807,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.1754,
+        "maxDD_base": -1.1754
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+USDJPY+UK100",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "USDJPY",
+        "UK100"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 18.5167,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 18.5167,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 18.4461,
+          "sum_p10": 11.8,
+          "sum_p50": 18.2667,
+          "sum_p90": 25.24
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.7917,
+          "obs_sum_R": 18.5167,
+          "n_boot": 1000,
+          "hit_mean": 0.7929,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.7917,
+          "hit_p90": 0.875,
+          "sum_mean": 18.731,
+          "sum_p10": 10.8583,
+          "sum_p50": 18.475,
+          "sum_p90": 26.8367
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 2.3,
+        "fit_sum_R": 16.2167,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 16.2167,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.0542,
+          "CVaR_m20": 1.2,
+          "maxDD": -2.1667,
+          "worst_month": 1.2,
+          "best_month": 6.3833
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 2.3,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.15,
+          "CVaR_m20": null,
+          "maxDD": -1.0,
+          "worst_month": 0.4667,
+          "best_month": 1.8333
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 3,
+          "n_days_suppressed": 0,
+          "trigger_dates": [
+            "2026-07-10",
+            "2026-08-07",
+            "2026-08-24"
+          ]
+        },
+        "sum_R_fused": 18.5167,
+        "sum_R_base": 18.5167,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -2.1667,
+        "maxDD_base": -2.1667
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+JP225+USDJPY+UK100",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "USDJPY",
+        "UK100"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 21.3875,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 21.3875,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 21.4668,
+          "sum_p10": 12.4375,
+          "sum_p50": 21.3875,
+          "sum_p90": 29.775
+        },
+        "week": {
+          "n_periods": 26,
+          "obs_hit": 0.8077,
+          "obs_sum_R": 21.3875,
+          "n_boot": 1000,
+          "hit_mean": 0.8062,
+          "hit_p10": 0.6923,
+          "hit_p50": 0.8077,
+          "hit_p90": 0.8846,
+          "sum_mean": 20.8832,
+          "sum_p10": 12.1375,
+          "sum_p50": 20.775,
+          "sum_p90": 29.695
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 2.225,
+        "fit_sum_R": 19.1625,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 19.1625,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.7906,
+          "CVaR_m20": 0.9,
+          "maxDD": -1.75,
+          "worst_month": 0.9,
+          "best_month": 7.0375
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 2.225,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.1125,
+          "CVaR_m20": null,
+          "maxDD": -1.5,
+          "worst_month": 0.85,
+          "best_month": 1.375
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 1,
+          "n_days_suppressed": 0,
+          "trigger_dates": [
+            "2026-08-07"
+          ]
+        },
+        "sum_R_fused": 21.3875,
+        "sum_R_base": 21.3875,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.75,
+        "maxDD_base": -1.75
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "JP225+USDJPY",
+      "k": 2,
+      "members": [
+        "JP225",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 22.4,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 5,
+          "obs_hit": 1.0,
+          "obs_sum_R": 22.4,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 22.2992,
+          "sum_p10": 15.6,
+          "sum_p50": 22.4,
+          "sum_p90": 29.6
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.625,
+          "obs_sum_R": 22.4,
+          "n_boot": 1000,
+          "hit_mean": 0.6272,
+          "hit_p10": 0.5,
+          "hit_p50": 0.625,
+          "hit_p90": 0.75,
+          "sum_mean": 22.5366,
+          "sum_p10": 11.99,
+          "sum_p50": 22.0,
+          "sum_p90": 33.71
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 2.2,
+        "fit_sum_R": 20.2,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 20.2,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 5.05,
+          "CVaR_m20": 1.8,
+          "maxDD": -1.5,
+          "worst_month": 1.8,
+          "best_month": 7.6
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 2.2,
+          "month_hit": 1.0,
+          "n_months": 1,
+          "E_month": 2.2,
+          "CVaR_m20": null,
+          "maxDD": -1.5,
+          "worst_month": 2.2,
+          "best_month": 2.2
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 22.4,
+        "sum_R_base": 22.4,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.5,
+        "maxDD_base": -1.5
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+JP225+UK100",
+      "k": 3,
+      "members": [
+        "EURUSD",
+        "JP225",
+        "UK100"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 23.5833,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 5,
+          "obs_hit": 1.0,
+          "obs_sum_R": 23.5833,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 23.0248,
+          "sum_p10": 13.1667,
+          "sum_p50": 23.3333,
+          "sum_p90": 33.1667
+        },
+        "week": {
+          "n_periods": 26,
+          "obs_hit": 0.8077,
+          "obs_sum_R": 23.5833,
+          "n_boot": 1000,
+          "hit_mean": 0.8087,
+          "hit_p10": 0.6923,
+          "hit_p50": 0.8077,
+          "hit_p90": 0.8846,
+          "sum_mean": 24.072,
+          "sum_p10": 13.6667,
+          "sum_p50": 23.875,
+          "sum_p90": 34.6917
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 2.1667,
+        "fit_sum_R": 21.4167,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 21.4167,
+          "month_hit": 1.0,
+          "n_months": 3,
+          "E_month": 7.1389,
+          "CVaR_m20": 5.0,
+          "maxDD": -2.3333,
+          "worst_month": 5.0,
+          "best_month": 8.8333
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 2.1667,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.0833,
+          "CVaR_m20": null,
+          "maxDD": -2.6667,
+          "worst_month": 0.3333,
+          "best_month": 1.8333
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 1,
+          "n_days_suppressed": 0,
+          "trigger_dates": [
+            "2026-08-07"
+          ]
+        },
+        "sum_R_fused": 23.5833,
+        "sum_R_base": 23.5833,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -2.6667,
+        "maxDD_base": -2.6667
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "DE40+USDJPY+AAPL",
+      "k": 3,
+      "members": [
+        "DE40",
+        "USDJPY",
+        "AAPL"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 20.8807,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 20.8807,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 21.1099,
+          "sum_p10": 12.6395,
+          "sum_p50": 20.7219,
+          "sum_p90": 29.7553
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 20.8807,
+          "n_boot": 1000,
+          "hit_mean": 0.8353,
+          "hit_p10": 0.75,
+          "hit_p50": 0.8333,
+          "hit_p90": 0.9167,
+          "sum_mean": 21.0709,
+          "sum_p10": 14.7356,
+          "sum_p50": 21.1504,
+          "sum_p90": 27.3411
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 2.0807,
+        "fit_sum_R": 18.8,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 18.8,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.7,
+          "CVaR_m20": 2.1816,
+          "maxDD": -2.3588,
+          "worst_month": 2.1816,
+          "best_month": 8.3886
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 2.0807,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 1.0404,
+          "CVaR_m20": null,
+          "maxDD": -1.6667,
+          "worst_month": 0.5325,
+          "best_month": 1.5482
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 20.8807,
+        "sum_R_base": 20.8807,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -2.3588,
+        "maxDD_base": -2.3588
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "EURUSD+USDJPY+UK100+AAPL",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "USDJPY",
+        "UK100",
+        "AAPL"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 17.848,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 1.0,
+          "obs_sum_R": 17.848,
+          "n_boot": 1000,
+          "hit_mean": 1.0,
+          "hit_p10": 1.0,
+          "hit_p50": 1.0,
+          "hit_p90": 1.0,
+          "sum_mean": 17.4599,
+          "sum_p10": 10.6207,
+          "sum_p50": 17.627,
+          "sum_p90": 23.9546
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 17.848,
+          "n_boot": 1000,
+          "hit_mean": 0.8307,
+          "hit_p10": 0.7083,
+          "hit_p50": 0.8333,
+          "hit_p90": 0.9167,
+          "sum_mean": 17.9704,
+          "sum_p10": 12.6718,
+          "sum_p50": 17.6059,
+          "sum_p90": 23.7986
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 1.0,
+        "val_sum_R": 1.6855,
+        "fit_sum_R": 16.1625,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 16.1625,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.0406,
+          "CVaR_m20": 2.425,
+          "maxDD": -1.5625,
+          "worst_month": 2.425,
+          "best_month": 6.4974
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 1.6855,
+          "month_hit": 1.0,
+          "n_months": 2,
+          "E_month": 0.8428,
+          "CVaR_m20": null,
+          "maxDD": -0.75,
+          "worst_month": 0.3368,
+          "best_month": 1.3487
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 17.848,
+        "sum_R_base": 17.848,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 1.0,
+        "month_hit_base": 1.0,
+        "maxDD_fused": -1.5625,
+        "maxDD_base": -1.5625
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 1.0,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "JP225+USDJPY+UK100",
+      "k": 3,
+      "members": [
+        "JP225",
+        "USDJPY",
+        "UK100"
+      ],
+      "month_hit": 0.8333,
+      "quarter_hit": 1.0,
+      "sum_R": 21.85,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 21.85,
+          "n_boot": 1000,
+          "hit_mean": 0.8288,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.8333,
+          "hit_p90": 1.0,
+          "sum_mean": 21.7469,
+          "sum_p10": 11.6667,
+          "sum_p50": 21.7,
+          "sum_p90": 32.6833
+        },
+        "week": {
+          "n_periods": 25,
+          "obs_hit": 0.6,
+          "obs_sum_R": 21.85,
+          "n_boot": 1000,
+          "hit_mean": 0.6018,
+          "hit_p10": 0.48,
+          "hit_p50": 0.6,
+          "hit_p90": 0.72,
+          "sum_mean": 21.7535,
+          "sum_p10": 12.2667,
+          "sum_p50": 21.75,
+          "sum_p90": 31.3183
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 0.5,
+        "val_sum_R": 1.3,
+        "fit_sum_R": 20.55,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 20.55,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 5.1375,
+          "CVaR_m20": 0.5333,
+          "maxDD": -2.3333,
+          "worst_month": 0.5333,
+          "best_month": 7.05
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 1.3,
+          "month_hit": 0.5,
+          "n_months": 2,
+          "E_month": 0.65,
+          "CVaR_m20": null,
+          "maxDD": -1.0,
+          "worst_month": -0.1667,
+          "best_month": 1.4667
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 1,
+          "n_days_suppressed": 0,
+          "trigger_dates": [
+            "2026-08-07"
+          ]
+        },
+        "sum_R_fused": 21.85,
+        "sum_R_base": 21.85,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 0.8333,
+        "month_hit_base": 0.8333,
+        "maxDD_fused": -2.3333,
+        "maxDD_base": -2.3333
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 0.6667,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "USDJPY+UK100",
+      "k": 2,
+      "members": [
+        "USDJPY",
+        "UK100"
+      ],
+      "month_hit": 0.8333,
+      "quarter_hit": 1.0,
+      "sum_R": 17.775,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 17.775,
+          "n_boot": 1000,
+          "hit_mean": 0.8243,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.8333,
+          "hit_p90": 1.0,
+          "sum_mean": 17.7466,
+          "sum_p10": 8.7975,
+          "sum_p50": 17.3875,
+          "sum_p90": 27.1825
+        },
+        "week": {
+          "n_periods": 21,
+          "obs_hit": 0.8095,
+          "obs_sum_R": 17.775,
+          "n_boot": 1000,
+          "hit_mean": 0.8047,
+          "hit_p10": 0.7143,
+          "hit_p50": 0.8095,
+          "hit_p90": 0.9048,
+          "sum_mean": 17.4587,
+          "sum_p10": 8.225,
+          "sum_p50": 17.25,
+          "sum_p90": 26.9025
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 0.5,
+        "val_sum_R": 0.95,
+        "fit_sum_R": 16.825,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 16.825,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.2062,
+          "CVaR_m20": 0.8,
+          "maxDD": -2.625,
+          "worst_month": 0.8,
+          "best_month": 7.6
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 0.95,
+          "month_hit": 0.5,
+          "n_months": 2,
+          "E_month": 0.475,
+          "CVaR_m20": null,
+          "maxDD": -0.5,
+          "worst_month": -0.25,
+          "best_month": 1.2
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 1,
+          "n_days_suppressed": 0,
+          "trigger_dates": [
+            "2026-07-10"
+          ]
+        },
+        "sum_R_fused": 17.775,
+        "sum_R_base": 17.775,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 0.8333,
+        "month_hit_base": 0.8333,
+        "maxDD_fused": -2.625,
+        "maxDD_base": -2.625
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 0.6667,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "JP225+DE40+AUDUSD+USDJPY",
+      "k": 4,
+      "members": [
+        "JP225",
+        "DE40",
+        "AUDUSD",
+        "USDJPY"
+      ],
+      "month_hit": 0.8333,
+      "quarter_hit": 1.0,
+      "sum_R": 22.45,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 22.45,
+          "n_boot": 1000,
+          "hit_mean": 0.8297,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.8333,
+          "hit_p90": 1.0,
+          "sum_mean": 22.3315,
+          "sum_p10": 14.125,
+          "sum_p50": 22.45,
+          "sum_p90": 30.2375
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.75,
+          "obs_sum_R": 22.45,
+          "n_boot": 1000,
+          "hit_mean": 0.7482,
+          "hit_p10": 0.625,
+          "hit_p50": 0.75,
+          "hit_p90": 0.875,
+          "sum_mean": 22.2727,
+          "sum_p10": 14.7975,
+          "sum_p50": 22.0562,
+          "sum_p90": 29.9
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 0.5,
+        "val_sum_R": 0.6,
+        "fit_sum_R": 21.85,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 21.85,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 5.4625,
+          "CVaR_m20": 4.3,
+          "maxDD": -1.0,
+          "worst_month": 4.3,
+          "best_month": 6.925
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 0.6,
+          "month_hit": 0.5,
+          "n_months": 2,
+          "E_month": 0.3,
+          "CVaR_m20": null,
+          "maxDD": -1.5,
+          "worst_month": -0.0625,
+          "best_month": 0.6625
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 22.45,
+        "sum_R_base": 22.45,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 0.8333,
+        "month_hit_base": 0.8333,
+        "maxDD_fused": -1.5,
+        "maxDD_base": -1.5
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 0.6667,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "USDJPY+UK100+AAPL",
+      "k": 3,
+      "members": [
+        "USDJPY",
+        "UK100",
+        "AAPL"
+      ],
+      "month_hit": 0.8333,
+      "quarter_hit": 1.0,
+      "sum_R": 17.1307,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 17.1307,
+          "n_boot": 1000,
+          "hit_mean": 0.8252,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.8333,
+          "hit_p90": 1.0,
+          "sum_mean": 17.0075,
+          "sum_p10": 8.5991,
+          "sum_p50": 16.5386,
+          "sum_p90": 25.6623
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.7083,
+          "obs_sum_R": 17.1307,
+          "n_boot": 1000,
+          "hit_mean": 0.711,
+          "hit_p10": 0.5833,
+          "hit_p50": 0.7083,
+          "hit_p90": 0.8333,
+          "sum_mean": 17.2204,
+          "sum_p10": 10.7948,
+          "sum_p50": 17.0974,
+          "sum_p90": 23.7153
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 0.5,
+        "val_sum_R": 0.5807,
+        "fit_sum_R": 16.55,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 16.55,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.1375,
+          "CVaR_m20": 1.5667,
+          "maxDD": -1.8333,
+          "worst_month": 1.5667,
+          "best_month": 8.3298
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 0.5807,
+          "month_hit": 0.5,
+          "n_months": 2,
+          "E_month": 0.2904,
+          "CVaR_m20": null,
+          "maxDD": -1.0,
+          "worst_month": -0.2018,
+          "best_month": 0.7825
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 17.1307,
+        "sum_R_base": 17.1307,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 0.8333,
+        "month_hit_base": 0.8333,
+        "maxDD_fused": -1.8333,
+        "maxDD_base": -1.8333
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 0.6667,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "DE40+AUDUSD+USDJPY",
+      "k": 3,
+      "members": [
+        "DE40",
+        "AUDUSD",
+        "USDJPY"
+      ],
+      "month_hit": 0.8333,
+      "quarter_hit": 1.0,
+      "sum_R": 19.9333,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 19.9333,
+          "n_boot": 1000,
+          "hit_mean": 0.8315,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.8333,
+          "hit_p90": 1.0,
+          "sum_mean": 19.8827,
+          "sum_p10": 11.4333,
+          "sum_p50": 19.9,
+          "sum_p90": 28.1667
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.7917,
+          "obs_sum_R": 19.9333,
+          "n_boot": 1000,
+          "hit_mean": 0.7916,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.7917,
+          "hit_p90": 0.9167,
+          "sum_mean": 19.6758,
+          "sum_p10": 12.0333,
+          "sum_p50": 19.9583,
+          "sum_p90": 26.7733
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 0.5,
+        "val_sum_R": 0.1333,
+        "fit_sum_R": 19.8,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 19.8,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.95,
+          "CVaR_m20": 3.55,
+          "maxDD": -1.85,
+          "worst_month": 3.55,
+          "best_month": 7.6167
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 0.1333,
+          "month_hit": 0.5,
+          "n_months": 2,
+          "E_month": 0.0667,
+          "CVaR_m20": null,
+          "maxDD": -1.8333,
+          "worst_month": -0.0833,
+          "best_month": 0.2167
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 19.9333,
+        "sum_R_base": 19.9333,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 0.8333,
+        "month_hit_base": 0.8333,
+        "maxDD_fused": -1.85,
+        "maxDD_base": -1.85
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 0.6667,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "DE40+AUDUSD+USDJPY+AAPL",
+      "k": 4,
+      "members": [
+        "DE40",
+        "AUDUSD",
+        "USDJPY",
+        "AAPL"
+      ],
+      "month_hit": 0.8333,
+      "quarter_hit": 1.0,
+      "sum_R": 18.9105,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 18.9105,
+          "n_boot": 1000,
+          "hit_mean": 0.8292,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.8333,
+          "hit_p90": 1.0,
+          "sum_mean": 18.6151,
+          "sum_p10": 10.0249,
+          "sum_p50": 18.6724,
+          "sum_p90": 26.8945
+        },
+        "week": {
+          "n_periods": 25,
+          "obs_hit": 0.84,
+          "obs_sum_R": 18.9105,
+          "n_boot": 1000,
+          "hit_mean": 0.8384,
+          "hit_p10": 0.72,
+          "hit_p50": 0.84,
+          "hit_p90": 0.92,
+          "sum_mean": 18.8723,
+          "sum_p10": 12.6295,
+          "sum_p50": 18.701,
+          "sum_p90": 25.363
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 0.5,
+        "val_sum_R": 0.0605,
+        "fit_sum_R": 18.85,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 18.85,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 4.7125,
+          "CVaR_m20": 2.6362,
+          "maxDD": -1.0191,
+          "worst_month": 2.6362,
+          "best_month": 7.2914
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 0.0605,
+          "month_hit": 0.5,
+          "n_months": 2,
+          "E_month": 0.0303,
+          "CVaR_m20": null,
+          "maxDD": -2.0875,
+          "worst_month": -0.0888,
+          "best_month": 0.1493
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 18.9105,
+        "sum_R_base": 18.9105,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 0.8333,
+        "month_hit_base": 0.8333,
+        "maxDD_fused": -2.0875,
+        "maxDD_base": -2.0875
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 0.6667,
+      "provisional_pending_bootstrap": false
+    },
+    {
+      "group_id": "JP225+DE40+AUDUSD",
+      "k": 3,
+      "members": [
+        "JP225",
+        "DE40",
+        "AUDUSD"
+      ],
+      "month_hit": 0.8333,
+      "quarter_hit": 1.0,
+      "sum_R": 25.0,
+      "p1_penalty": 0.0,
+      "p1_tags": [],
+      "clean": true,
+      "bootstrap": {
+        "month": {
+          "n_periods": 6,
+          "obs_hit": 0.8333,
+          "obs_sum_R": 25.0,
+          "n_boot": 1000,
+          "hit_mean": 0.8308,
+          "hit_p10": 0.6667,
+          "hit_p50": 0.8333,
+          "hit_p90": 1.0,
+          "sum_mean": 25.089,
+          "sum_p10": 14.075,
+          "sum_p50": 25.0,
+          "sum_p90": 35.2583
+        },
+        "week": {
+          "n_periods": 24,
+          "obs_hit": 0.7083,
+          "obs_sum_R": 25.0,
+          "n_boot": 1000,
+          "hit_mean": 0.7073,
+          "hit_p10": 0.5833,
+          "hit_p50": 0.7083,
+          "hit_p90": 0.8333,
+          "sum_mean": 24.6607,
+          "sum_p10": 15.8333,
+          "sum_p50": 24.5,
+          "sum_p90": 33.9167
+        }
+      },
+      "holdout": {
+        "fit_month_hit": 1.0,
+        "val_month_hit": 0.5,
+        "val_sum_R": 0.0,
+        "fit_sum_R": 25.0,
+        "fit": {
+          "n_days": 123,
+          "sum_R": 25.0,
+          "month_hit": 1.0,
+          "n_months": 4,
+          "E_month": 6.25,
+          "CVaR_m20": 4.3333,
+          "maxDD": -1.3333,
+          "worst_month": 4.3333,
+          "best_month": 9.5
+        },
+        "val": {
+          "n_days": 49,
+          "sum_R": 0.0,
+          "month_hit": 0.5,
+          "n_months": 2,
+          "E_month": -0.0,
+          "CVaR_m20": null,
+          "maxDD": -2.0,
+          "worst_month": -0.0833,
+          "best_month": 0.0833
+        }
+      },
+      "fuse": {
+        "fuse": {
+          "thresh_R": -1.0,
+          "min_losers": 2,
+          "n_trigger_days": 0,
+          "n_days_suppressed": 0,
+          "trigger_dates": []
+        },
+        "sum_R_fused": 25.0,
+        "sum_R_base": 25.0,
+        "sum_R_delta": 0.0,
+        "month_hit_fused": 0.8333,
+        "month_hit_base": 0.8333,
+        "maxDD_fused": -2.0,
+        "maxDD_base": -2.0
+      },
+      "oos_pass": true,
+      "oos_reject_reasons": [],
+      "boot_month_hit_p10": 0.6667,
+      "provisional_pending_bootstrap": false
+    }
+  ]
+}

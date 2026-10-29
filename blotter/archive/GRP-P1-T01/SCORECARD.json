@@ -1,0 +1,124 @@
+{
+  "task_id": "GRP-P1-T01",
+  "generated_utc": "2026-10-22T13:17:11.185325+00:00",
+  "roadmap": "doc/asset_grouping_roadmap.md",
+  "caveat": "Tip-panel dependence + twin stress. Soft EU-index pairs may escalate to hard if co_loss>=0.40. Adverse = Sep/Oct tip months + curated stress calendar. Still provisional until GRP-P2 bootstrap.",
+  "p0_ref": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\grouping\\LATEST\\ACCEPTABLE_RANGE.json",
+  "panel": {
+    "n_days": 172,
+    "date_min": "2026-05-01",
+    "date_max": "2026-10-19"
+  },
+  "stress": {
+    "n_days": 172,
+    "n_tip_adverse_days": 49,
+    "n_curated_stress_days": 47,
+    "tip_adverse_months": [
+      9,
+      10
+    ],
+    "curated_stress_months": [
+      {
+        "asset_id": "AUDUSD",
+        "month": 2,
+        "label": "Feb soft"
+      },
+      {
+        "asset_id": "AUDUSD",
+        "month": 3,
+        "label": "Mar soft"
+      },
+      {
+        "asset_id": "AUDUSD",
+        "month": 5,
+        "label": "May soft"
+      },
+      {
+        "asset_id": "AAPL",
+        "month": 5,
+        "label": "May cell"
+      },
+      {
+        "asset_id": "AAPL",
+        "month": 7,
+        "label": "Jul cell"
+      },
+      {
+        "asset_id": "UK100",
+        "month": 9,
+        "label": "Sep tip soft"
+      },
+      {
+        "asset_id": "DE40",
+        "month": 2,
+        "label": "Feb stress-month"
+      },
+      {
+        "asset_id": "DE40",
+        "month": 3,
+        "label": "Mar FRAGILE"
+      },
+      {
+        "asset_id": "JP225",
+        "month": 2,
+        "label": "Feb soft"
+      },
+      {
+        "asset_id": "JP225",
+        "month": 4,
+        "label": "Apr soft"
+      },
+      {
+        "asset_id": "JP225",
+        "month": 8,
+        "label": "Aug MATCH tax"
+      },
+      {
+        "asset_id": "JP225",
+        "month": 9,
+        "label": "Sep MATCH tax"
+      },
+      {
+        "asset_id": "USDJPY",
+        "month": 7,
+        "label": "Jul sleeve caution"
+      },
+      {
+        "asset_id": "EURUSD",
+        "month": 9,
+        "label": "Sep soft proxy"
+      }
+    ],
+    "n_days_any_sleeve_stress": 47
+  },
+  "ban_summary": {
+    "n_hard": 1,
+    "n_soft": 2,
+    "hard_ban_pairs": [
+      [
+        "AUDUSD",
+        "EURUSD"
+      ]
+    ],
+    "soft_penalty_pairs": [
+      [
+        "AAPL",
+        "JP225"
+      ],
+      [
+        "DE40",
+        "UK100"
+      ]
+    ],
+    "thresholds": {
+      "co_loss_hard": 0.4,
+      "co_loss_soft": 0.3,
+      "min_n_both": 6
+    }
+  },
+  "p0_accepted": 66,
+  "p1_kept": 66,
+  "p1_dropped_hard": 0,
+  "p1_resilient_tip_adverse": 66,
+  "p1_clean_resilient": 32
+}

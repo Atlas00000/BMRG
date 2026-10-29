@@ -1,0 +1,177 @@
+{
+  "n": 5,
+  "groups": [
+    {
+      "group_id": "JP225+DE40",
+      "k": 2,
+      "members": [
+        "JP225",
+        "DE40"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 31.0,
+      "E_month": 5.1667,
+      "CVaR_m20": 1.5,
+      "maxDD": -2.5,
+      "fuse_days": 0,
+      "worst_month": 0.625,
+      "n_months": 6,
+      "val_sum_R": 3.0,
+      "boot_month_hit_p10": 1.0,
+      "max_tail_dep": 0.3333,
+      "max_coloss": 0.1176,
+      "mean_pair_corr": -0.0398,
+      "oos_pass": true,
+      "pareto": true,
+      "pareto_score": [
+        1.0,
+        1.0,
+        5.1667,
+        1.5,
+        -2.5,
+        -0.0,
+        -0.3333
+      ],
+      "policy_label": "max_sum_R"
+    },
+    {
+      "group_id": "DE40+USDJPY",
+      "k": 2,
+      "members": [
+        "DE40",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 23.4,
+      "E_month": 3.9,
+      "CVaR_m20": 1.6,
+      "maxDD": -4.275,
+      "fuse_days": 1,
+      "worst_month": 0.825,
+      "n_months": 6,
+      "val_sum_R": 3.2,
+      "boot_month_hit_p10": 1.0,
+      "max_tail_dep": 0.375,
+      "max_coloss": 0.1481,
+      "mean_pair_corr": 0.1934,
+      "oos_pass": true,
+      "pareto": true,
+      "pareto_score": [
+        1.0,
+        1.0,
+        3.9,
+        1.6,
+        -4.275,
+        -1.0,
+        -0.375
+      ],
+      "policy_label": "max_holdout_val"
+    },
+    {
+      "group_id": "JP225+USDJPY",
+      "k": 2,
+      "members": [
+        "JP225",
+        "USDJPY"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 22.4,
+      "E_month": 4.48,
+      "CVaR_m20": 1.8,
+      "maxDD": -1.5,
+      "fuse_days": 0,
+      "worst_month": 1.8,
+      "n_months": 5,
+      "val_sum_R": 2.2,
+      "boot_month_hit_p10": 1.0,
+      "max_tail_dep": 0.45,
+      "max_coloss": 0.05,
+      "mean_pair_corr": -0.1567,
+      "oos_pass": true,
+      "pareto": true,
+      "pareto_score": [
+        1.0,
+        1.0,
+        4.48,
+        1.8,
+        -1.5,
+        -0.0,
+        -0.45
+      ],
+      "policy_label": "best_CVaR"
+    },
+    {
+      "group_id": "EURUSD+DE40+USDJPY+AAPL",
+      "k": 4,
+      "members": [
+        "EURUSD",
+        "DE40",
+        "USDJPY",
+        "AAPL"
+      ],
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 20.6605,
+      "E_month": 3.4434,
+      "CVaR_m20": 1.4053,
+      "maxDD": -1.1316,
+      "fuse_days": 0,
+      "worst_month": 0.1493,
+      "n_months": 6,
+      "val_sum_R": 2.8105,
+      "boot_month_hit_p10": 1.0,
+      "max_tail_dep": 0.4875,
+      "max_coloss": 0.1852,
+      "mean_pair_corr": -0.0363,
+      "oos_pass": true,
+      "pareto": true,
+      "pareto_score": [
+        1.0,
+        1.0,
+        3.4434,
+        1.4053,
+        -1.1316,
+        -0.0,
+        -0.4875
+      ],
+      "policy_label": "min_maxDD"
+    },
+    {
+      "group_id": "USDJPY+UK100",
+      "k": 2,
+      "members": [
+        "USDJPY",
+        "UK100"
+      ],
+      "month_hit": 0.8333,
+      "quarter_hit": 1.0,
+      "sum_R": 17.775,
+      "E_month": 2.9625,
+      "CVaR_m20": 0.275,
+      "maxDD": -2.625,
+      "fuse_days": 1,
+      "worst_month": -0.25,
+      "n_months": 6,
+      "val_sum_R": 0.95,
+      "boot_month_hit_p10": 0.6667,
+      "max_tail_dep": 0.254,
+      "max_coloss": 0.069,
+      "mean_pair_corr": -0.2226,
+      "oos_pass": true,
+      "pareto": true,
+      "pareto_score": [
+        0.8333,
+        1.0,
+        2.9625,
+        0.275,
+        -2.625,
+        -1.0,
+        -0.254
+      ],
+      "policy_label": "min_tail"
+    }
+  ]
+}

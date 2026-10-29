@@ -1,0 +1,298 @@
+{
+  "freq": "Q",
+  "value": "rich",
+  "periods": [
+    "2026-Q1",
+    "2026-Q2",
+    "2026-Q3"
+  ],
+  "assets": {
+    "AAPL": {
+      "2026-Q1": {
+        "positive_cycle": false,
+        "n": 30,
+        "sum_R": -2.7895,
+        "E_N": -0.093,
+        "WR": 0.3667,
+        "EF_pp": -19.033,
+        "EF_zone": "Below",
+        "maxDD_R": -6.5263,
+        "max_loss_streak": 6,
+        "trades_per_30d": 10.71,
+        "worst_day_R": -1.0
+      },
+      "2026-Q2": {
+        "positive_cycle": true,
+        "n": 20,
+        "sum_R": 7.2105,
+        "E_N": 0.3605,
+        "WR": 0.55,
+        "EF_pp": -0.7,
+        "EF_zone": "Below",
+        "maxDD_R": -3.0,
+        "max_loss_streak": 3,
+        "trades_per_30d": 7.23,
+        "worst_day_R": -1.0
+      },
+      "2026-Q3": {
+        "positive_cycle": true,
+        "n": 21,
+        "sum_R": 6.2105,
+        "E_N": 0.2957,
+        "WR": 0.5238,
+        "EF_pp": -3.319,
+        "EF_zone": "Below",
+        "maxDD_R": -2.0,
+        "max_loss_streak": 2,
+        "trades_per_30d": 10.86,
+        "worst_day_R": -1.0
+      }
+    },
+    "AUDUSD": {
+      "2026-Q1": {
+        "positive_cycle": false,
+        "n": 34,
+        "sum_R": -2.0,
+        "E_N": -0.0588,
+        "WR": 0.4706,
+        "EF_pp": -5.341,
+        "EF_zone": "Below",
+        "maxDD_R": -7.0,
+        "max_loss_streak": 4,
+        "trades_per_30d": 12.59,
+        "worst_day_R": -2.0
+      },
+      "2026-Q2": {
+        "positive_cycle": true,
+        "n": 34,
+        "sum_R": 10.0,
+        "E_N": 0.2941,
+        "WR": 0.6471,
+        "EF_pp": 12.306,
+        "EF_zone": "Strong",
+        "maxDD_R": -3.0,
+        "max_loss_streak": 3,
+        "trades_per_30d": 11.21,
+        "worst_day_R": -2.0
+      },
+      "2026-Q3": {
+        "positive_cycle": true,
+        "n": 32,
+        "sum_R": 2.0,
+        "E_N": 0.0625,
+        "WR": 0.5312,
+        "EF_pp": 0.725,
+        "EF_zone": "Fragile",
+        "maxDD_R": -6.0,
+        "max_loss_streak": 4,
+        "trades_per_30d": 10.67,
+        "worst_day_R": -3.0
+      }
+    },
+    "DE40": {
+      "2026-Q1": {
+        "positive_cycle": true,
+        "n": 56,
+        "sum_R": 0.25,
+        "E_N": 0.0045,
+        "WR": 0.4464,
+        "EF_pp": -6.757,
+        "EF_zone": "Below",
+        "maxDD_R": -9.25,
+        "max_loss_streak": 6,
+        "trades_per_30d": 22.7,
+        "worst_day_R": -2.0
+      },
+      "2026-Q2": {
+        "positive_cycle": true,
+        "n": 41,
+        "sum_R": 8.5,
+        "E_N": 0.2073,
+        "WR": 0.5366,
+        "EF_pp": 2.259,
+        "EF_zone": "Fragile",
+        "maxDD_R": -4.0,
+        "max_loss_streak": 4,
+        "trades_per_30d": 15.19,
+        "worst_day_R": -2.0
+      },
+      "2026-Q3": {
+        "positive_cycle": true,
+        "n": 73,
+        "sum_R": 28.25,
+        "E_N": 0.387,
+        "WR": 0.6164,
+        "EF_pp": 10.244,
+        "EF_zone": "Strong",
+        "maxDD_R": -4.0,
+        "max_loss_streak": 4,
+        "trades_per_30d": 25.17,
+        "worst_day_R": -3.0
+      }
+    },
+    "EURUSD": {
+      "2026-Q1": {
+        "positive_cycle": true,
+        "n": 77,
+        "sum_R": 13.0,
+        "E_N": 0.1688,
+        "WR": 0.5844,
+        "EF_pp": 6.242,
+        "EF_zone": "Strong",
+        "maxDD_R": -4.0,
+        "max_loss_streak": 3,
+        "trades_per_30d": 26.55,
+        "worst_day_R": -2.0
+      },
+      "2026-Q2": {
+        "positive_cycle": true,
+        "n": 42,
+        "sum_R": 2.0,
+        "E_N": 0.0476,
+        "WR": 0.5238,
+        "EF_pp": 0.181,
+        "EF_zone": "Fragile",
+        "maxDD_R": -8.0,
+        "max_loss_streak": 4,
+        "trades_per_30d": 14.0,
+        "worst_day_R": -2.0
+      },
+      "2026-Q3": {
+        "positive_cycle": true,
+        "n": 54,
+        "sum_R": 14.0,
+        "E_N": 0.2593,
+        "WR": 0.6296,
+        "EF_pp": 10.763,
+        "EF_zone": "Strong",
+        "maxDD_R": -4.0,
+        "max_loss_streak": 4,
+        "trades_per_30d": 17.8,
+        "worst_day_R": -2.0
+      }
+    },
+    "JP225": {
+      "2026-Q1": {
+        "positive_cycle": true,
+        "n": 23,
+        "sum_R": 1.0,
+        "E_N": 0.0435,
+        "WR": 0.3478,
+        "EF_pp": -1.817,
+        "EF_zone": "Below",
+        "maxDD_R": -8.0,
+        "max_loss_streak": 6,
+        "trades_per_30d": 8.12,
+        "worst_day_R": -2.0
+      },
+      "2026-Q2": {
+        "positive_cycle": false,
+        "n": 28,
+        "sum_R": -7.0,
+        "E_N": -0.25,
+        "WR": 0.25,
+        "EF_pp": -11.6,
+        "EF_zone": "Below",
+        "maxDD_R": -12.0,
+        "max_loss_streak": 9,
+        "trades_per_30d": 9.66,
+        "worst_day_R": -1.0
+      },
+      "2026-Q3": {
+        "positive_cycle": true,
+        "n": 34,
+        "sum_R": 14.0,
+        "E_N": 0.4118,
+        "WR": 0.4706,
+        "EF_pp": 10.459,
+        "EF_zone": "Strong",
+        "maxDD_R": -4.0,
+        "max_loss_streak": 4,
+        "trades_per_30d": 11.33,
+        "worst_day_R": -1.0
+      }
+    },
+    "UK100": {
+      "2026-Q1": {
+        "positive_cycle": true,
+        "n": 85,
+        "sum_R": 9.5,
+        "E_N": 0.1118,
+        "WR": 0.4941,
+        "EF_pp": -0.918,
+        "EF_zone": "Below",
+        "maxDD_R": -7.0,
+        "max_loss_streak": 7,
+        "trades_per_30d": 28.98,
+        "worst_day_R": -3.0
+      },
+      "2026-Q2": {
+        "positive_cycle": true,
+        "n": 69,
+        "sum_R": 16.5,
+        "E_N": 0.2391,
+        "WR": 0.5507,
+        "EF_pp": 4.742,
+        "EF_zone": "Strong",
+        "maxDD_R": -7.75,
+        "max_loss_streak": 5,
+        "trades_per_30d": 23.79,
+        "worst_day_R": -3.0
+      },
+      "2026-Q3": {
+        "positive_cycle": true,
+        "n": 82,
+        "sum_R": 3.5,
+        "E_N": 0.0427,
+        "WR": 0.4634,
+        "EF_pp": -3.989,
+        "EF_zone": "Below",
+        "maxDD_R": -6.25,
+        "max_loss_streak": 5,
+        "trades_per_30d": 27.33,
+        "worst_day_R": -3.0
+      }
+    },
+    "USDJPY": {
+      "2026-Q1": {
+        "positive_cycle": true,
+        "n": 2,
+        "sum_R": 2.4,
+        "E_N": 1.2,
+        "WR": 1.0,
+        "EF_pp": 43.1,
+        "EF_zone": "Strong",
+        "maxDD_R": 0.0,
+        "max_loss_streak": 0,
+        "trades_per_30d": 0.77,
+        "worst_day_R": 1.2
+      },
+      "2026-Q2": {
+        "positive_cycle": true,
+        "n": 34,
+        "sum_R": 7.8,
+        "E_N": 0.2294,
+        "WR": 0.5588,
+        "EF_pp": -1.018,
+        "EF_zone": "Below",
+        "maxDD_R": -3.0,
+        "max_loss_streak": 3,
+        "trades_per_30d": 12.91,
+        "worst_day_R": -2.0
+      },
+      "2026-Q3": {
+        "positive_cycle": true,
+        "n": 15,
+        "sum_R": 0.4,
+        "E_N": 0.0267,
+        "WR": 0.4667,
+        "EF_pp": -10.233,
+        "EF_zone": "Below",
+        "maxDD_R": -5.6,
+        "max_loss_streak": 5,
+        "trades_per_30d": 7.26,
+        "worst_day_R": -1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "members": [
+      "EURUSD",
+      "JP225",
+      "DE40"
+    ],
+    "adverse_sum_R": 26.1667,
+    "adverse_n_days": 284,
+    "full_month_hit": 0.6667,
+    "full_sum_R": 35.8333
+  },
+  {
+    "members": [
+      "JP225",
+      "DE40"
+    ],
+    "adverse_sum_R": 24.25,
+    "adverse_n_days": 284,
+    "full_month_hit": 0.8,
+    "full_sum_R": 29.75
+  },
+  {
+    "members": [
+      "EURUSD",
+      "DE40",
+      "USDJPY"
+    ],
+    "adverse_sum_R": 21.7667,
+    "adverse_n_days": 284,
+    "full_month_hit": 0.6667,
+    "full_sum_R": 32.3667
+  },
+  {
+    "members": [
+      "EURUSD",
+      "USDJPY"
+    ],
+    "adverse_sum_R": 20.9,
+    "adverse_n_days": 284,
+    "full_month_hit": 0.65,
+    "full_sum_R": 28.8
+  },
+  {
+    "members": [
+      "EURUSD",
+      "UK100",
+      "USDJPY"
+    ],
+    "adverse_sum_R": 20.0167,
+    "adverse_n_days": 284,
+    "full_month_hit": 0.7143,
+    "full_sum_R": 27.1167
+  },
+  {
+    "members": [
+      "DE40",
+      "USDJPY"
+    ],
+    "adverse_sum_R": 17.65,
+    "adverse_n_days": 284,
+    "full_month_hit": 0.6875,
+    "full_sum_R": 24.55
+  },
+  {
+    "members": [
+      "AUDUSD",
+      "JP225",
+      "DE40"
+    ],
+    "adverse_sum_R": 16.8333,
+    "adverse_n_days": 284,
+    "full_month_hit": 0.75,
+    "full_sum_R": 24.1667
+  },
+  {
+    "members": [
+      "EURUSD",
+      "AAPL",
+      "UK100"
+    ],
+    "adverse_sum_R": 13.4342,
+    "adverse_n_days": 284,
+    "full_month_hit": 0.6364,
+    "full_sum_R": 23.2324
+  }
+]

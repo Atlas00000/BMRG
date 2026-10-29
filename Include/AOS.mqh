@@ -80,6 +80,9 @@ struct AOSRuntime
    double            lastAIProba;
    bool              lastAISkip;
    ENUM_AOS_LIFE     life;
+   int               belowStreak;    // consecutive dual-window BELOW *closes*
+   int               belowStreakRingN; // ringN when streak last incremented
+   int               belowHaltBars;  // bars spent in hard BELOW halt (probe unlatch)
    // ring of closed outcomes: 1=TP/win, 0=SL/loss
    int               ring[AOS_RING_MAX];
    int               ringN;
@@ -173,10 +176,13 @@ void AOSInit()
      }
 
    LogInfo(StringFormat(
-              "AOS ON | L3=%d L4size=%d L2mode=%s kill=%d DDlim=%.1f W=%d model=%s sym=%s",
+              "AOS ON | L3=%d L4size=%d L2mode=%s kill=%d DDlim=%.1f W=%d dualBelow=%d confirmN=%d softDerisk=%d haltMaxBars=%d model=%s sym=%s",
               (int)InpAOS_L3_Enable, (int)InpAOS_L4_SizeMod,
               AOSModeToString(AOSEffectiveL2Mode()), (int)InpAiKillSwitch,
-              InpAOS_DD_Limit, InpAOS_W250, baked, _Symbol));
+              InpAOS_DD_Limit, InpAOS_W250,
+              (int)InpAOS_L3_BelowDualWindow, InpAOS_L3_BelowConfirmN,
+              (int)InpAOS_L3_BelowSoftDerisk, InpAOS_L3_BelowHaltMaxBars,
+              baked, _Symbol));
   }
 
 //+------------------------------------------------------------------+
@@ -282,13 +288,31 @@ void AOSUpdateObserver()
       g_aos.w250EF = ef;
      }
 
-   // Lifecycle (v0)
+   // Dual confirm windows (signed P3: W20 E_N · W15 EF) — used only for BELOW halt gate
+   double wr15 = 0, en15 = 0, ef15 = 0, m15 = 0;
+   double wr20 = 0, en20 = 0, ef20 = 0, m20 = 0;
+   const bool have15 = AOSWindowStats(15, wr15, en15, ef15, m15);
+   const bool have20 = AOSWindowStats(20, wr20, en20, ef20, m20);
+
+   bool belowRaw = false;
+   if(InpAOS_L3_BelowDualWindow)
+     {
+      // Policy BELOW: W20 E_N ≤ 0 AND W15 EF ≤ 0 (need both windows armed)
+      belowRaw = (have20 && have15 && en20 <= 0.0 && ef15 <= 0.0);
+     }
+   else if(have)
+     {
+      // Legacy: primary window E_N ≤ 0 alone
+      belowRaw = (en <= 0.0);
+     }
+
+   // Lifecycle for L4 size (primary window) — soft: EN≤0 without dual BELOW → NEAR not BELOW
    ENUM_AOS_LIFE life = AOS_LIFE_STABLE;
    if(have)
      {
-      if(en <= 0.0)
+      if(belowRaw)
          life = AOS_LIFE_BELOW;
-      else if(ef <= 0.0)
+      else if(en <= 0.0 || ef <= 0.0)
          life = AOS_LIFE_NEAR;
       else if(ef <= m)
          life = AOS_LIFE_COMPRESSING;
@@ -296,6 +320,25 @@ void AOSUpdateObserver()
          life = AOS_LIFE_EXPANDING;
      }
    g_aos.life = life;
+
+   // Streak counts closed trades only — bar spam while halted must not latch forever
+   if(belowRaw)
+     {
+      if(g_aos.ringN != g_aos.belowStreakRingN)
+        {
+         g_aos.belowStreak++;
+         g_aos.belowStreakRingN = g_aos.ringN;
+        }
+     }
+   else
+     {
+      g_aos.belowStreak = 0;
+      g_aos.belowHaltBars = 0;
+     }
+
+   int confirmN = InpAOS_L3_BelowConfirmN;
+   if(confirmN < 1)
+      confirmN = 1;
 
    double f = 1.0;
    switch(life)
@@ -307,7 +350,7 @@ void AOSUpdateObserver()
       case AOS_LIFE_BELOW:       f = 0.00; break;
      }
 
-   // L3 MaxDD / derisk
+   // L3 MaxDD / derisk / BELOW (dual-window + confirm-on-close + probe unlatch)
    g_aos.haltL3 = false;
    g_aos.deriskL3 = false;
    g_aos.haltReason = "";
@@ -327,11 +370,45 @@ void AOSUpdateObserver()
          g_aos.haltReason = StringFormat("DERISK_0.8_DD dd=%.1f", dd);
         }
 
-      if(have && life == AOS_LIFE_BELOW)
+      if(belowRaw)
         {
-         g_aos.haltL3 = true;
-         g_aos.haltReason = StringFormat("HALT_f0_BELOW_FRONTIER EN=%.4f EF=%.2f", en, ef);
-         f = 0.0;
+         if(g_aos.belowStreak >= confirmN)
+           {
+            g_aos.haltL3 = true;
+            g_aos.belowHaltBars++;
+            g_aos.haltReason = StringFormat(
+                                  "HALT_f0_BELOW_FRONTIER EN20=%.4f EF15=%.2f streak=%d haltBars=%d",
+                                  (have20 ? en20 : en), (have15 ? ef15 : ef),
+                                  g_aos.belowStreak, g_aos.belowHaltBars);
+            f = 0.0;
+
+            // Probe unlatch: frozen ring cannot self-heal — allow soft re-entry after MaxBars
+            if(InpAOS_L3_BelowHaltMaxBars > 0 &&
+               g_aos.belowHaltBars >= InpAOS_L3_BelowHaltMaxBars)
+              {
+               g_aos.haltL3 = false;
+               g_aos.belowStreak = 0;
+               g_aos.belowHaltBars = 0;
+               g_aos.deriskL3 = true;
+               f = 0.25;
+               g_aos.haltReason = StringFormat(
+                                     "UNLATCH_BELOW_MAXBARS_PROBE after %d bars EN20=%.4f EF15=%.2f",
+                                     InpAOS_L3_BelowHaltMaxBars,
+                                     (have20 ? en20 : en), (have15 ? ef15 : ef));
+              }
+           }
+         else if(InpAOS_L3_BelowSoftDerisk)
+           {
+            // life BELOW already mapped f to 0; keep trading at probe size so the
+            // confirming close can arrive (f=0 here freezes the ring forever).
+            g_aos.deriskL3 = true;
+            if(!g_aos.haltL3)
+               f = 0.25;
+            g_aos.haltReason = StringFormat(
+                                  "DERISK_BELOW_CONFIRM EN20=%.4f EF15=%.2f streak=%d/%d",
+                                  (have20 ? en20 : en), (have15 ? ef15 : ef),
+                                  g_aos.belowStreak, confirmN);
+           }
         }
      }
 

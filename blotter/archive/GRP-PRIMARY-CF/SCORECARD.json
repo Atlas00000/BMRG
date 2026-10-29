@@ -1,0 +1,141 @@
+{
+  "task_id": "GRP-PRIMARY-CF",
+  "generated_utc": "2026-10-22T14:23:22.159890+00:00",
+  "cluster": "JP225+DE40",
+  "weights": {
+    "JP225": 0.5,
+    "DE40": 0.5
+  },
+  "window": "2026.05.01->2026.10.20",
+  "source_log": "Tester/logs/20261022.log",
+  "tester_account": {
+    "JP225_final_balance_USD": 543.09,
+    "DE40_final_balance_USD": 756.18,
+    "note": "Tester deposit path equity \u2014 designed R is authority for group CF"
+  },
+  "sleeves": {
+    "JP225": {
+      "n": 72,
+      "magic": 26161907,
+      "sum_R": 30.0,
+      "E_N": 0.4167,
+      "WR": 0.4722,
+      "maxDD_R": -4.0,
+      "month_hit": 0.6667,
+      "quarter_hit": 1.0,
+      "EF_pp": 10.622,
+      "date_min": "2026-05-04",
+      "date_max": "2026-10-19"
+    },
+    "DE40": {
+      "n": 112,
+      "magic": 26151907,
+      "sum_R": 32.0,
+      "E_N": 0.2857,
+      "WR": 0.5714,
+      "maxDD_R": -7.0,
+      "month_hit": 0.8333,
+      "quarter_hit": 0.6667,
+      "EF_pp": 5.743,
+      "date_min": "2026-05-04",
+      "date_max": "2026-10-13"
+    }
+  },
+  "group": {
+    "group_id": "JP225+DE40",
+    "k": 2,
+    "n_days": 172,
+    "active_days": 96,
+    "sum_R": 31.0,
+    "mean_daily_R": 0.180233,
+    "month_hit": 1.0,
+    "n_months": 6,
+    "quarter_hit": 1.0,
+    "n_quarters": 3,
+    "year_hit": 1.0,
+    "E_month": 5.1667,
+    "E_quarter": 10.3333,
+    "CVaR_m20": 1.5,
+    "worst_month": 0.625,
+    "best_month": 12.25,
+    "maxDD": -2.5,
+    "fuse_days": 0,
+    "co_loss": 0.0408
+  },
+  "holdout": {
+    "val_months": [
+      9,
+      10
+    ],
+    "val_sum_R": 3.0,
+    "val_month_hit": 1.0,
+    "fit_month_hit": 1.0,
+    "val": {
+      "n_days": 49,
+      "sum_R": 3.0,
+      "month_hit": 1.0,
+      "n_months": 2,
+      "E_month": 1.5,
+      "CVaR_m20": null,
+      "maxDD": -2.5,
+      "worst_month": 0.625,
+      "best_month": 2.375
+    }
+  },
+  "bootstrap_month": {
+    "hit_p10": 1.0,
+    "raw_keys": [
+      "n_periods",
+      "obs_hit",
+      "obs_sum_R",
+      "n_boot",
+      "hit_mean",
+      "hit_p10",
+      "hit_p50",
+      "hit_p90",
+      "sum_mean",
+      "sum_p10",
+      "sum_p50",
+      "sum_p90"
+    ]
+  },
+  "fuse": {
+    "sum_R_fused": 31.0,
+    "sum_R_base": 31.0,
+    "sum_R_delta": 0.0,
+    "month_hit_fused": 1.0,
+    "maxDD_fused": -2.5,
+    "fuse": {
+      "thresh_R": -1.0,
+      "min_losers": 2,
+      "n_trigger_days": 0,
+      "n_days_suppressed": 0,
+      "trigger_dates": []
+    }
+  },
+  "frozen_GRP_P5": {
+    "sum_R": 31.0,
+    "month_hit": 1.0,
+    "quarter_hit": 1.0,
+    "E_month": 5.1667,
+    "CVaR_m20": 1.5,
+    "maxDD": -2.5,
+    "worst_month": 0.625,
+    "co_loss": 0.0408,
+    "active_days": 96,
+    "Sep_Oct_sum_R": 3.0
+  },
+  "match_frozen": true,
+  "deltas_vs_frozen": {
+    "sum_R": 0.0,
+    "month_hit": 0.0,
+    "quarter_hit": 0.0,
+    "E_month": 0.0,
+    "CVaR_m20": 0.0,
+    "maxDD": 0.0,
+    "worst_month": 0.0,
+    "co_loss": 0.0,
+    "active_days": 0
+  },
+  "val_sum_R_vs_frozen_SepOct": 0.0
+}

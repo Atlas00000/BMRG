@@ -1,0 +1,26 @@
+{
+  "task_id": "GRP-P3-T01",
+  "generated_utc": "2026-10-22T13:30:17.487174+00:00",
+  "roadmap": "doc/asset_grouping_roadmap.md",
+  "caveat": "Weights from tip daily R cov. f_budget caps are research hints (EURUSD floor/cap \u00b7 research/caution caps) \u2014 not VPS attach policy. Still HITL for GRP-P5.",
+  "p2_ref": "C:\\Users\\emili\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Experts\\BMRG\\infra\\artefacts\\grouping\\P2_LATEST\\ACCEPTABLE_RANGE.json",
+  "n_groups": 24,
+  "schemes": [
+    "equal",
+    "inv_vol",
+    "risk_parity",
+    "hrp"
+  ],
+  "scheme_wins_raw": {
+    "hrp": 1,
+    "equal": 23
+  },
+  "scheme_wins_f_budget": {
+    "equal": 24
+  },
+  "panel": {
+    "n_days": 172,
+    "date_min": "2026-05-01",
+    "date_max": "2026-10-19"
+  }
+}

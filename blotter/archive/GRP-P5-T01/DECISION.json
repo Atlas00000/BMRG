@@ -1,0 +1,229 @@
+{
+  "task_id": "GRP-P5-T01",
+  "generated_utc": "2026-10-22T13:48:34.312492+00:00",
+  "roadmap": "doc/asset_grouping_roadmap.md",
+  "hitl_status": "FROZEN",
+  "caveat": "HITL capital-map freeze from tip 6m grouping (P0\u2013P4). Designed R. Does not raise live f. Canvas/display secondary to this scorecard + live_asset_profile.md.",
+  "panel": "2026.05.01 \u2192 2026.10.20 tip",
+  "primary": {
+    "group_id": "JP225+DE40",
+    "role": "primary_research_cluster",
+    "policy": "max_sum_R",
+    "rationale": "Highest tip designed sum_R among OOS-stable/Pareto; clean tiers; equal 50/50; shallow fuse; keep EURUSD as separate production sleeve.",
+    "members": [
+      "JP225",
+      "DE40"
+    ],
+    "policy_label": "max_sum_R",
+    "metrics": {
+      "month_hit": 1.0,
+      "quarter_hit": 1.0,
+      "sum_R": 31.0,
+      "E_month": 5.1667,
+      "CVaR_m20": 1.5,
+      "maxDD": -2.5,
+      "fuse_days": 0,
+      "max_tail_dep": 0.3333,
+      "val_sum_R": 3.0,
+      "boot_month_hit_p10": 1.0
+    },
+    "weights": {
+      "JP225": 0.5,
+      "DE40": 0.5
+    },
+    "weight_scheme": "equal",
+    "magics": {
+      "JP225": 26161907,
+      "DE40": 26151907
+    }
+  },
+  "secondaries": [
+    {
+      "group_id": "DE40+USDJPY",
+      "role": "holdout_alternate",
+      "policy": "max_holdout_val",
+      "rationale": "Best Sep\u2013Oct holdout among Pareto front; use when prioritizing recent tip resilience.",
+      "members": [
+        "DE40",
+        "USDJPY"
+      ],
+      "policy_label": "max_holdout_val",
+      "metrics": {
+        "month_hit": 1.0,
+        "quarter_hit": 1.0,
+        "sum_R": 23.4,
+        "E_month": 3.9,
+        "CVaR_m20": 1.6,
+        "maxDD": -4.275,
+        "fuse_days": 1,
+        "max_tail_dep": 0.375,
+        "val_sum_R": 3.2,
+        "boot_month_hit_p10": 1.0
+      },
+      "weights": {
+        "DE40": 0.5,
+        "USDJPY": 0.5
+      },
+      "weight_scheme": "equal",
+      "magics": {
+        "DE40": 26151907,
+        "USDJPY": 26131807
+      }
+    },
+    {
+      "group_id": "JP225+USDJPY",
+      "role": "path_alternate",
+      "policy": "best_CVaR",
+      "rationale": "Best CVaR / shallow maxDD on front; Asia+JPY diversifier without DE.",
+      "members": [
+        "JP225",
+        "USDJPY"
+      ],
+      "policy_label": "best_CVaR",
+      "metrics": {
+        "month_hit": 1.0,
+        "quarter_hit": 1.0,
+        "sum_R": 22.4,
+        "E_month": 4.48,
+        "CVaR_m20": 1.8,
+        "maxDD": -1.5,
+        "fuse_days": 0,
+        "max_tail_dep": 0.45,
+        "val_sum_R": 2.2,
+        "boot_month_hit_p10": 1.0
+      },
+      "weights": {
+        "JP225": 0.5,
+        "USDJPY": 0.5
+      },
+      "weight_scheme": "equal",
+      "magics": {
+        "JP225": 26161907,
+        "USDJPY": 26131807
+      }
+    },
+    {
+      "group_id": "EURUSD+DE40+USDJPY+AAPL",
+      "role": "production_anchored_shallow_dd",
+      "policy": "min_maxDD",
+      "rationale": "Only Pareto champion that includes production EURUSD; shallowest maxDD. AAPL at equal 25% \u2014 keep light / caution in attach policy.",
+      "members": [
+        "EURUSD",
+        "DE40",
+        "USDJPY",
+        "AAPL"
+      ],
+      "policy_label": "min_maxDD",
+      "metrics": {
+        "month_hit": 1.0,
+        "quarter_hit": 1.0,
+        "sum_R": 20.6605,
+        "E_month": 3.4434,
+        "CVaR_m20": 1.4053,
+        "maxDD": -1.1316,
+        "fuse_days": 0,
+        "max_tail_dep": 0.4875,
+        "val_sum_R": 2.8105,
+        "boot_month_hit_p10": 1.0
+      },
+      "weights": {
+        "EURUSD": 0.25,
+        "DE40": 0.25,
+        "USDJPY": 0.25,
+        "AAPL": 0.25
+      },
+      "weight_scheme": "equal",
+      "magics": {
+        "EURUSD": 8210204,
+        "DE40": 26151907,
+        "USDJPY": 26131807,
+        "AAPL": 26162017
+      }
+    },
+    {
+      "group_id": "USDJPY+UK100",
+      "role": "min_tail_watch",
+      "policy": "min_tail",
+      "rationale": "Lowest max pairwise tail_dep on front but weaker tip hit / holdout; UK100 halt history \u2014 watch only, not default capital.",
+      "members": [
+        "USDJPY",
+        "UK100"
+      ],
+      "policy_label": "min_tail",
+      "metrics": {
+        "month_hit": 0.8333,
+        "quarter_hit": 1.0,
+        "sum_R": 17.775,
+        "E_month": 2.9625,
+        "CVaR_m20": 0.275,
+        "maxDD": -2.625,
+        "fuse_days": 1,
+        "max_tail_dep": 0.254,
+        "val_sum_R": 0.95,
+        "boot_month_hit_p10": 0.6667
+      },
+      "weights": {
+        "USDJPY": 0.615385,
+        "UK100": 0.384615
+      },
+      "weight_scheme": "equal",
+      "magics": {
+        "USDJPY": 26131807,
+        "UK100": 26121907
+      }
+    }
+  ],
+  "attach_policy": {
+    "EURUSD": {
+      "posture": "full",
+      "bucket": "production",
+      "note": "Standalone production INF \u2014 not inside primary JP225+DE40 cluster"
+    },
+    "JP225": {
+      "posture": "full",
+      "bucket": "research_cluster_primary",
+      "note": "Primary cluster member \u00b7 equal 0.50 with DE40"
+    },
+    "DE40": {
+      "posture": "full",
+      "bucket": "research_cluster_primary",
+      "note": "Primary cluster member \u00b7 equal 0.50 with JP225"
+    },
+    "USDJPY": {
+      "posture": "light",
+      "bucket": "research_optional",
+      "note": "On for alternate maps (DE+JPY / JP+JPY); light until HITL picks alternate"
+    },
+    "AAPL": {
+      "posture": "light",
+      "bucket": "caution",
+      "note": "Only if production-anchored map selected; EF Below / Leak 15.3"
+    },
+    "UK100": {
+      "posture": "off_pending_halt_review",
+      "bucket": "caution",
+      "note": "Tip halt ~4 Sep; min_tail champion only \u2014 do not default-on"
+    },
+    "AUDUSD": {
+      "posture": "ft_twin_only",
+      "bucket": "fx_twin_excluded_from_groups",
+      "note": "Hard-ban with EUR in groups; P2 holdout kills AUD packs; keep FT twin @ 0.5%, not SCALE in clusters"
+    }
+  },
+  "hard_bans_remain": [
+    [
+      "EURUSD",
+      "AUDUSD"
+    ]
+  ],
+  "soft_watch": [
+    [
+      "DE40",
+      "UK100"
+    ],
+    [
+      "JP225",
+      "AAPL"
+    ]
+  ]
+}

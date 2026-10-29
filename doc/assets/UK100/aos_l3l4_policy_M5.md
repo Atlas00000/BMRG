@@ -1,11 +1,11 @@
 # UK100 M5 — L3 / L4 policy (P3)
 
-**Version:** 1.0.0  
-**Tasks:** UK100-M5-AOS-P3-T01 … T04  
-**Date:** 2026-10-20  
-**Evidence:** `blotter/archive/UK100-M5-AOS-P3/P3_L3L4.json` · `health_path_*.csv`  
+**Version:** 1.1.0  
+**Tasks:** UK100-M5-AOS-P3-T01 … T04 · **L3v1c wire 2026-10-22**  
+**Date:** 2026-10-20 · retune 2026-10-22  
+**Evidence:** `blotter/archive/UK100-M5-AOS-P3/P3_L3L4.json` · `health_path_*.csv` · `doc/UK100_L3_RETUNE_CF.md` · `UK100-NOHALT-P0`  
 **Upstream:** [`aos_l2_policy_M5.md`](./aos_l2_policy_M5.md) v1b stack · [`aos_l2_size_table_M5.md`](./aos_l2_size_table_M5.md)  
-**Mode:** **SHADOW / research OS** — not live attach · no M15 L3 pin reuse
+**Mode:** **RESEARCH OS armed** (magic 26121907) · L3v1c BELOW dual-window · CF pending
 
 L3 **outranks** L2det / L4 size. L2det skips still apply first on the fire; L3/L4 operate on the **remaining** path.
 
@@ -32,10 +32,12 @@ L3 **outranks** L2det / L4 size. L2det skips still apply first on the fire; L3/L
 | --- | --- | ---: |
 | `dd_peak ≥ 25%` | `HALT_MAXDD` | 0 |
 | `dd_peak ≥ 20%` | `DERISK_0.8_DD` | ≤0.5 |
-| Lifecycle **BELOW** (W20 E_N≤0 **and** W15 EF_proxy≤0) | `HALT_f0_BELOW_FRONTIER` | 0 |
+| Lifecycle **BELOW** (W20 E_N≤0 **and** W15 EF_proxy≤0) · **≥2 consecutive** | `HALT_f0_BELOW_FRONTIER` | 0 |
+| BELOW raw but streak &lt; confirmN | `DERISK_BELOW_CONFIRM` | ≤0.25 |
+| Primary W50 EN≤0 **without** dual BELOW | **NEAR** (not hard halt) | 0.25 |
 | Kill-switch | hard OFF | 0 |
 
-**Unlatch (expansion research):** after `HALT_f0_BELOW_FRONTIER`, clear latch only when **W20 E_N > 0 for 2 consecutive evals** and dd_peak &lt; 20%.
+**L3v1c (EA ≥1.25):** `InpAOS_L3_BelowDualWindow=true` · `ConfirmN=2` · `BelowSoftDerisk=true`. Fixes ≤1.24 bug where W50 EN≤0 alone hard-halted (false-trip vs signed dual-window policy). Observer is non-latching: streak resets when dual BELOW clears.
 
 ### Offline sim (tip May→Aug)
 

@@ -3,7 +3,7 @@
 //| Execution engine + filters, regimes, risk%, exposure, containment  |
 //+------------------------------------------------------------------+
 #property copyright "BMRG Phase 1 + AOS INF"
-#property version   "1.24"
+#property version   "1.28"
 
 #include "Include/Config.mqh"
 #include "Include/Logger.mqh"
@@ -161,6 +161,8 @@ void ProcessClosedBar()
 //+------------------------------------------------------------------+
 void OnTick()
   {
+   if(!ConfigAccountModeOK())
+      return;
    if(!IsNewBar())
       return;
    ProcessClosedBar();

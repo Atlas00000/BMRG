@@ -1,0 +1,968 @@
+{
+  "task_id": "DIV-P0-T01",
+  "generated_utc": "2026-10-21T16:39:43.753394+00:00",
+  "roadmap": "doc/diversification_roadmap.md",
+  "caveat": "P0 uses engine/research fire-tape proxies \u2014 not locked live-OS Tester exports. Do not raise live f from this scorecard.",
+  "panel": {
+    "n_days": 653,
+    "date_min": "2025-01-02",
+    "date_max": "2026-10-16",
+    "assets": [
+      "EURUSD",
+      "AUDUSD",
+      "AAPL",
+      "UK100",
+      "JP225",
+      "DE40",
+      "USDJPY"
+    ]
+  },
+  "sleeve_summaries": {
+    "EURUSD": {
+      "n": 530,
+      "E_N": 0.0906,
+      "WR": 0.5453,
+      "date_min": "2025-01-02",
+      "date_max": "2026-09-22"
+    },
+    "AUDUSD": {
+      "n": 95,
+      "E_N": 0.1368,
+      "WR": 0.5684,
+      "date_min": "2026-01-05",
+      "date_max": "2026-08-28"
+    },
+    "AAPL": {
+      "n": 289,
+      "E_N": -0.0071,
+      "WR": 0.4014,
+      "date_min": "2025-01-02",
+      "date_max": "2026-10-16"
+    },
+    "UK100": {
+      "n": 235,
+      "E_N": 0.1011,
+      "WR": 0.4894,
+      "date_min": "2026-01-02",
+      "date_max": "2026-08-28"
+    },
+    "JP225": {
+      "n": 130,
+      "E_N": 0.1538,
+      "WR": 0.3846,
+      "date_min": "2026-01-05",
+      "date_max": "2026-10-16"
+    },
+    "DE40": {
+      "n": 208,
+      "E_N": 0.1899,
+      "WR": 0.5288,
+      "date_min": "2026-01-02",
+      "date_max": "2026-10-16"
+    },
+    "USDJPY": {
+      "n": 63,
+      "E_N": 0.1524,
+      "WR": 0.5238,
+      "date_min": "2025-04-18",
+      "date_max": "2026-10-12"
+    }
+  },
+  "baseline_EURUSD": {
+    "members": [
+      "EURUSD"
+    ],
+    "k": 1,
+    "n_days": 653,
+    "sum_R": 48.0,
+    "mean_daily_R": 0.073507,
+    "month_hit": 0.6667,
+    "n_months": 18,
+    "quarter_hit": 0.7143,
+    "n_quarters": 7,
+    "CVaR_m20": -3.25,
+    "worst_month": -6.0,
+    "best_month": 10.0,
+    "maxDD": -21.0,
+    "fuse_days": 0,
+    "active_days": 307
+  },
+  "top_clusters_k2_k3_clean": [
+    {
+      "members": [
+        "JP225",
+        "DE40"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 29.75,
+      "mean_daily_R": 0.045559,
+      "month_hit": 0.8,
+      "n_months": 10,
+      "quarter_hit": 1.0,
+      "n_quarters": 4,
+      "CVaR_m20": -2.6875,
+      "worst_month": -4.75,
+      "best_month": 11.25,
+      "maxDD": -6.375,
+      "fuse_days": 3,
+      "active_days": 162,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "AUDUSD",
+        "JP225",
+        "DE40"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 24.1667,
+      "mean_daily_R": 0.037009,
+      "month_hit": 0.75,
+      "n_months": 8,
+      "quarter_hit": 1.0,
+      "n_quarters": 4,
+      "CVaR_m20": -1.9583,
+      "worst_month": -3.5,
+      "best_month": 9.5,
+      "maxDD": -5.1667,
+      "fuse_days": 2,
+      "active_days": 166,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "UK100",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 27.1167,
+      "mean_daily_R": 0.041526,
+      "month_hit": 0.7143,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1333,
+      "worst_month": -2.0,
+      "best_month": 6.3167,
+      "maxDD": -7.6,
+      "fuse_days": 5,
+      "active_days": 364,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 24.55,
+      "mean_daily_R": 0.037596,
+      "month_hit": 0.6875,
+      "n_months": 16,
+      "quarter_hit": 0.7143,
+      "n_quarters": 7,
+      "CVaR_m20": -1.1875,
+      "worst_month": -2.75,
+      "best_month": 9.05,
+      "maxDD": -4.525,
+      "fuse_days": 2,
+      "active_days": 150,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 35.8333,
+      "mean_daily_R": 0.054875,
+      "month_hit": 0.6667,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1667,
+      "worst_month": -2.0,
+      "best_month": 9.1667,
+      "maxDD": -7.0,
+      "fuse_days": 0,
+      "active_days": 372,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 32.3667,
+      "mean_daily_R": 0.049566,
+      "month_hit": 0.6667,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1333,
+      "worst_month": -2.0,
+      "best_month": 6.7,
+      "maxDD": -7.6833,
+      "fuse_days": 1,
+      "active_days": 375,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "USDJPY"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 28.8,
+      "mean_daily_R": 0.044104,
+      "month_hit": 0.65,
+      "n_months": 20,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.875,
+      "worst_month": -3.0,
+      "best_month": 6.1,
+      "maxDD": -10.9,
+      "fuse_days": 1,
+      "active_days": 333,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AAPL",
+        "UK100"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 23.2324,
+      "mean_daily_R": 0.035578,
+      "month_hit": 0.6364,
+      "n_months": 22,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.9132,
+      "worst_month": -2.0351,
+      "best_month": 6.5965,
+      "maxDD": -9.8728,
+      "fuse_days": 7,
+      "active_days": 396,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AAPL",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 18.5158,
+      "mean_daily_R": 0.028355,
+      "month_hit": 0.6364,
+      "n_months": 22,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -2.1151,
+      "worst_month": -2.6842,
+      "best_month": 4.7719,
+      "maxDD": -10.0982,
+      "fuse_days": 2,
+      "active_days": 376,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "AAPL",
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 15.6824,
+      "mean_daily_R": 0.024016,
+      "month_hit": 0.6364,
+      "n_months": 22,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -2.0765,
+      "worst_month": -4.2018,
+      "best_month": 7.6298,
+      "maxDD": -6.3263,
+      "fuse_days": 1,
+      "active_days": 301,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AAPL",
+        "DE40"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 28.4824,
+      "mean_daily_R": 0.043618,
+      "month_hit": 0.6364,
+      "n_months": 22,
+      "quarter_hit": 0.625,
+      "n_quarters": 8,
+      "CVaR_m20": -1.8684,
+      "worst_month": -2.5351,
+      "best_month": 7.4298,
+      "maxDD": -9.7149,
+      "fuse_days": 5,
+      "active_days": 399,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "UK100"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 35.875,
+      "mean_daily_R": 0.054939,
+      "month_hit": 0.6316,
+      "n_months": 19,
+      "quarter_hit": 0.7143,
+      "n_quarters": 7,
+      "CVaR_m20": -1.625,
+      "worst_month": -3.0,
+      "best_month": 6.875,
+      "maxDD": -10.5,
+      "fuse_days": 8,
+      "active_days": 351,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "AUDUSD",
+        "JP225"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 16.5,
+      "mean_daily_R": 0.025268,
+      "month_hit": 0.625,
+      "n_months": 8,
+      "quarter_hit": 1.0,
+      "n_quarters": 4,
+      "CVaR_m20": -2.5,
+      "worst_month": -2.5,
+      "best_month": 11.0,
+      "maxDD": -5.5,
+      "fuse_days": 0,
+      "active_days": 115,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "JP225",
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 23.0333,
+      "mean_daily_R": 0.035273,
+      "month_hit": 0.625,
+      "n_months": 16,
+      "quarter_hit": 0.7143,
+      "n_quarters": 7,
+      "CVaR_m20": -1.1458,
+      "worst_month": -3.1667,
+      "best_month": 5.7667,
+      "maxDD": -4.25,
+      "fuse_days": 0,
+      "active_days": 178,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 25.8667,
+      "mean_daily_R": 0.039612,
+      "month_hit": 0.619,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1333,
+      "worst_month": -2.0,
+      "best_month": 6.4,
+      "maxDD": -7.2667,
+      "fuse_days": 0,
+      "active_days": 349,
+      "contains_banned_pair": false
+    }
+  ],
+  "top_clusters_k2_k3_all": [
+    {
+      "members": [
+        "JP225",
+        "DE40"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 29.75,
+      "mean_daily_R": 0.045559,
+      "month_hit": 0.8,
+      "n_months": 10,
+      "quarter_hit": 1.0,
+      "n_quarters": 4,
+      "CVaR_m20": -2.6875,
+      "worst_month": -4.75,
+      "best_month": 11.25,
+      "maxDD": -6.375,
+      "fuse_days": 3,
+      "active_days": 162,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "AUDUSD",
+        "JP225",
+        "DE40"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 24.1667,
+      "mean_daily_R": 0.037009,
+      "month_hit": 0.75,
+      "n_months": 8,
+      "quarter_hit": 1.0,
+      "n_quarters": 4,
+      "CVaR_m20": -1.9583,
+      "worst_month": -3.5,
+      "best_month": 9.5,
+      "maxDD": -5.1667,
+      "fuse_days": 2,
+      "active_days": 166,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "UK100",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 27.1167,
+      "mean_daily_R": 0.041526,
+      "month_hit": 0.7143,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1333,
+      "worst_month": -2.0,
+      "best_month": 6.3167,
+      "maxDD": -7.6,
+      "fuse_days": 5,
+      "active_days": 364,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 24.55,
+      "mean_daily_R": 0.037596,
+      "month_hit": 0.6875,
+      "n_months": 16,
+      "quarter_hit": 0.7143,
+      "n_quarters": 7,
+      "CVaR_m20": -1.1875,
+      "worst_month": -2.75,
+      "best_month": 9.05,
+      "maxDD": -4.525,
+      "fuse_days": 2,
+      "active_days": 150,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "DE40"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 35.8333,
+      "mean_daily_R": 0.054875,
+      "month_hit": 0.6667,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1667,
+      "worst_month": -2.0,
+      "best_month": 9.1667,
+      "maxDD": -7.0,
+      "fuse_days": 0,
+      "active_days": 372,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 32.3667,
+      "mean_daily_R": 0.049566,
+      "month_hit": 0.6667,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1333,
+      "worst_month": -2.0,
+      "best_month": 6.7,
+      "maxDD": -7.6833,
+      "fuse_days": 1,
+      "active_days": 375,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "USDJPY"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 28.8,
+      "mean_daily_R": 0.044104,
+      "month_hit": 0.65,
+      "n_months": 20,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.875,
+      "worst_month": -3.0,
+      "best_month": 6.1,
+      "maxDD": -10.9,
+      "fuse_days": 1,
+      "active_days": 333,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AAPL",
+        "UK100"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 23.2324,
+      "mean_daily_R": 0.035578,
+      "month_hit": 0.6364,
+      "n_months": 22,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.9132,
+      "worst_month": -2.0351,
+      "best_month": 6.5965,
+      "maxDD": -9.8728,
+      "fuse_days": 7,
+      "active_days": 396,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AAPL",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 18.5158,
+      "mean_daily_R": 0.028355,
+      "month_hit": 0.6364,
+      "n_months": 22,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -2.1151,
+      "worst_month": -2.6842,
+      "best_month": 4.7719,
+      "maxDD": -10.0982,
+      "fuse_days": 2,
+      "active_days": 376,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "AAPL",
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 15.6824,
+      "mean_daily_R": 0.024016,
+      "month_hit": 0.6364,
+      "n_months": 22,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -2.0765,
+      "worst_month": -4.2018,
+      "best_month": 7.6298,
+      "maxDD": -6.3263,
+      "fuse_days": 1,
+      "active_days": 301,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "AAPL",
+        "DE40"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 28.4824,
+      "mean_daily_R": 0.043618,
+      "month_hit": 0.6364,
+      "n_months": 22,
+      "quarter_hit": 0.625,
+      "n_quarters": 8,
+      "CVaR_m20": -1.8684,
+      "worst_month": -2.5351,
+      "best_month": 7.4298,
+      "maxDD": -9.7149,
+      "fuse_days": 5,
+      "active_days": 399,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "UK100"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 35.875,
+      "mean_daily_R": 0.054939,
+      "month_hit": 0.6316,
+      "n_months": 19,
+      "quarter_hit": 0.7143,
+      "n_quarters": 7,
+      "CVaR_m20": -1.625,
+      "worst_month": -3.0,
+      "best_month": 6.875,
+      "maxDD": -10.5,
+      "fuse_days": 8,
+      "active_days": 351,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "AUDUSD",
+        "JP225"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 16.5,
+      "mean_daily_R": 0.025268,
+      "month_hit": 0.625,
+      "n_months": 8,
+      "quarter_hit": 1.0,
+      "n_quarters": 4,
+      "CVaR_m20": -2.5,
+      "worst_month": -2.5,
+      "best_month": 11.0,
+      "maxDD": -5.5,
+      "fuse_days": 0,
+      "active_days": 115,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "JP225",
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 23.0333,
+      "mean_daily_R": 0.035273,
+      "month_hit": 0.625,
+      "n_months": 16,
+      "quarter_hit": 0.7143,
+      "n_quarters": 7,
+      "CVaR_m20": -1.1458,
+      "worst_month": -3.1667,
+      "best_month": 5.7667,
+      "maxDD": -4.25,
+      "fuse_days": 0,
+      "active_days": 178,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "JP225",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 25.8667,
+      "mean_daily_R": 0.039612,
+      "month_hit": 0.619,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1333,
+      "worst_month": -2.0,
+      "best_month": 6.4,
+      "maxDD": -7.2667,
+      "fuse_days": 0,
+      "active_days": 349,
+      "contains_banned_pair": false
+    }
+  ],
+  "clusters_beating_EUR_month_hit": [
+    {
+      "members": [
+        "JP225",
+        "DE40"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 29.75,
+      "mean_daily_R": 0.045559,
+      "month_hit": 0.8,
+      "n_months": 10,
+      "quarter_hit": 1.0,
+      "n_quarters": 4,
+      "CVaR_m20": -2.6875,
+      "worst_month": -4.75,
+      "best_month": 11.25,
+      "maxDD": -6.375,
+      "fuse_days": 3,
+      "active_days": 162,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "AUDUSD",
+        "JP225",
+        "DE40"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 24.1667,
+      "mean_daily_R": 0.037009,
+      "month_hit": 0.75,
+      "n_months": 8,
+      "quarter_hit": 1.0,
+      "n_quarters": 4,
+      "CVaR_m20": -1.9583,
+      "worst_month": -3.5,
+      "best_month": 9.5,
+      "maxDD": -5.1667,
+      "fuse_days": 2,
+      "active_days": 166,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "EURUSD",
+        "UK100",
+        "USDJPY"
+      ],
+      "k": 3,
+      "n_days": 653,
+      "sum_R": 27.1167,
+      "mean_daily_R": 0.041526,
+      "month_hit": 0.7143,
+      "n_months": 21,
+      "quarter_hit": 0.75,
+      "n_quarters": 8,
+      "CVaR_m20": -1.1333,
+      "worst_month": -2.0,
+      "best_month": 6.3167,
+      "maxDD": -7.6,
+      "fuse_days": 5,
+      "active_days": 364,
+      "contains_banned_pair": false
+    },
+    {
+      "members": [
+        "DE40",
+        "USDJPY"
+      ],
+      "k": 2,
+      "n_days": 653,
+      "sum_R": 24.55,
+      "mean_daily_R": 0.037596,
+      "month_hit": 0.6875,
+      "n_months": 16,
+      "quarter_hit": 0.7143,
+      "n_quarters": 7,
+      "CVaR_m20": -1.1875,
+      "worst_month": -2.75,
+      "best_month": 9.05,
+      "maxDD": -4.525,
+      "fuse_days": 2,
+      "active_days": 150,
+      "contains_banned_pair": false
+    }
+  ],
+  "do_not_combine": [
+    {
+      "a": "EURUSD",
+      "b": "AUDUSD",
+      "n_both_active": 50,
+      "co_loss_rate": 0.3,
+      "co_win_rate": 0.34,
+      "same_sign_rate": 0.64,
+      "corr_active": 0.2834,
+      "reasons": [
+        "known_twin_hypothesis"
+      ]
+    },
+    {
+      "a": "UK100",
+      "b": "DE40",
+      "n_both_active": 88,
+      "co_loss_rate": 0.1023,
+      "co_win_rate": 0.3977,
+      "same_sign_rate": 0.5,
+      "corr_active": 0.2353,
+      "reasons": [
+        "known_twin_hypothesis"
+      ]
+    }
+  ],
+  "coloss_top": [
+    {
+      "a": "AAPL",
+      "b": "JP225",
+      "n_both_active": 53,
+      "co_loss_rate": 0.3208,
+      "co_win_rate": 0.1321,
+      "same_sign_rate": 0.4528,
+      "corr_active": -0.1026
+    },
+    {
+      "a": "EURUSD",
+      "b": "AUDUSD",
+      "n_both_active": 50,
+      "co_loss_rate": 0.3,
+      "co_win_rate": 0.34,
+      "same_sign_rate": 0.64,
+      "corr_active": 0.2834
+    },
+    {
+      "a": "UK100",
+      "b": "JP225",
+      "n_both_active": 58,
+      "co_loss_rate": 0.2759,
+      "co_win_rate": 0.2414,
+      "same_sign_rate": 0.5172,
+      "corr_active": 0.0891
+    },
+    {
+      "a": "AAPL",
+      "b": "UK100",
+      "n_both_active": 62,
+      "co_loss_rate": 0.2742,
+      "co_win_rate": 0.2903,
+      "same_sign_rate": 0.5645,
+      "corr_active": 0.0187
+    },
+    {
+      "a": "EURUSD",
+      "b": "AAPL",
+      "n_both_active": 145,
+      "co_loss_rate": 0.2552,
+      "co_win_rate": 0.2069,
+      "same_sign_rate": 0.4621,
+      "corr_active": -0.1102
+    },
+    {
+      "a": "AUDUSD",
+      "b": "AAPL",
+      "n_both_active": 28,
+      "co_loss_rate": 0.25,
+      "co_win_rate": 0.25,
+      "same_sign_rate": 0.5,
+      "corr_active": -0.0441
+    },
+    {
+      "a": "AUDUSD",
+      "b": "UK100",
+      "n_both_active": 42,
+      "co_loss_rate": 0.2143,
+      "co_win_rate": 0.4048,
+      "same_sign_rate": 0.619,
+      "corr_active": 0.1362
+    },
+    {
+      "a": "EURUSD",
+      "b": "JP225",
+      "n_both_active": 57,
+      "co_loss_rate": 0.2105,
+      "co_win_rate": 0.2456,
+      "same_sign_rate": 0.4561,
+      "corr_active": -0.029
+    },
+    {
+      "a": "AUDUSD",
+      "b": "JP225",
+      "n_both_active": 38,
+      "co_loss_rate": 0.2105,
+      "co_win_rate": 0.2368,
+      "same_sign_rate": 0.4474,
+      "corr_active": -0.1277
+    },
+    {
+      "a": "EURUSD",
+      "b": "USDJPY",
+      "n_both_active": 24,
+      "co_loss_rate": 0.2083,
+      "co_win_rate": 0.3333,
+      "same_sign_rate": 0.5417,
+      "corr_active": 0.07
+    },
+    {
+      "a": "JP225",
+      "b": "USDJPY",
+      "n_both_active": 24,
+      "co_loss_rate": 0.2083,
+      "co_win_rate": 0.3333,
+      "same_sign_rate": 0.5417,
+      "corr_active": 0.1235
+    },
+    {
+      "a": "JP225",
+      "b": "DE40",
+      "n_both_active": 63,
+      "co_loss_rate": 0.2063,
+      "co_win_rate": 0.2857,
+      "same_sign_rate": 0.4921,
+      "corr_active": 0.0842
+    }
+  ]
+}
